@@ -1,4 +1,6 @@
 # Heart of the Valley
+A web application to help users discover murals in San José, California
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
