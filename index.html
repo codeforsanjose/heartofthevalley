@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heart of the Valley</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./main.css" type="text/css">
+  </head>
+  <body>
+    <div class='sidebar pad2'>Listing</div>
+    <div id='map' class='map pad2'>Map</div>
+    <script>
+    // TODO replace mapbox public key with private token
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoieWNob3kiLCJhIjoiY2oxNnZrczV1MDNhbDMyb2R1ejk0bWlqciJ9.UF9JKtdkWur6UEk4Igj-Ew';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/ychoy/cj5heh9qf44ba2smldujur2yf',
+         // initial position in [lon, lat] format with coordinates for San Jose
+        center: [-121.893028, 37.335480],
+        zoom: 14
+      });
+    </script>
+  </body>
+</html>
