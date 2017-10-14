@@ -235,7 +235,26 @@
       // and fill it with the following
       var details = listing.appendChild(document.createElement('div'));
       details.innerHTML = 'by ' + prop.artist;
-  
+
+      link.addEventListener('click', function(e) {
+        // Update the currentFeature to the store associated with the clicked link
+        var clickedListing = data.features[this.dataPosition];
+
+        // 1. Fly to the point associated with the clicked link
+        flyToArt(clickedListing);
+
+        // 2. Close all other popups and display popup for clicked point
+        createPopUp(clickedListing);
+
+        // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+        var activeItem = document.getElementsByClassName('active');
+
+        if (activeItem[0]) {
+          activeItem[0].classList.remove('active');
+        }
+        this.parentNode.classList.add('active');
+
+      });  
     }
   }
 
