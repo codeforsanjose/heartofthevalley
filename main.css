@@ -1,6 +1,7 @@
+/* TODO: make map responsive, images in map responsive*/
 body {
   color: #404040;
-  font: 500 20px/26px 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -11,11 +12,24 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/*responsive popups on mobile */
+@media only screen and (max-width: 480px) {
+    .mapboxgl-popup-content {
+        max-width: 250px;
+    }
+    .mapboxgl-popup-content div {
+        padding:0em;
+    }
+    .mapboxgl-popup-content p {
+        margin: 0.5em 0.5em;
+    }
+}
 
 h1 {
-  font-size: 22px;
+  font-family: 'Raleway', sans-serif; 
+  font-size: 30px;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 20px;
   padding: 20px 2px;
 }
@@ -117,13 +131,14 @@ a:hover {
 
 /* Marker tweaks */
 .mapboxgl-popup-close-button {
-  display: none;
+  display: auto;
+  color: white;
 }
 
 .mapboxgl-popup-content {
-  font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  font: 400 15px/20px 'Open Sans', 'Raleway', Sans-serif;
   padding: 0;
-  width: 180px;
+  width: 400px;
 }
 
 .mapboxgl-popup-content-wrapper {
@@ -167,12 +182,12 @@ a:hover {
 .marker {
   border: none;
   cursor: pointer;
-  height: 56px;
-  width: 56px;
-  background-image: url(map-marker-icon.png);
+  height: 25px;
+  width: 25px;
+  background-image: url(img/map-marker-icon.png);
   background-color: rgba(0, 0, 0, 0);
 }
 
 .mapboxgl-popup {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
