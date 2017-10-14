@@ -127,7 +127,7 @@
         },
         "properties": {
           "title": "Eastridge Mall Mural - Aaron De La Cruz",
-          "description": "Aaron De La Cruz writes: I remembered taking trips with my Grandmother to the Fulton Mall (located in Downtown Fresno, CA) back in the mid 1980’s. The exterior of the mall had a water feature that ran through the walkway, connecting all the stores. There were many large scale sculptures and water fountains throughout. At the time, I didn’t pay attention to the artwork I was being exposed to, but it did capture my attention. What I’m trying to get at is, I recently found out that one of those sculptures was created by artist Pierre Auguste Renoir and is the only one in the world that the public can actually touch. I liked the idea that this work of art that some would consider inaccessible, was placed where some people could care less about it. I then started to think about all of the large public art pieces I was exposed to as a youth and how I remember thinking, “How could a person create something of that scale with their hands?” I happily accepted the offer, and here is the result.",
+          "description": "Aaron De La Cruz writes: I remembered taking trips with my Grandmother to the Fulton Mall (located in Downtown Fresno, CA) back in the mid 1980’s. The exterior of the mall had a water feature that ran through the walkway, connecting all the arts. There were many large scale sculptures and water fountains throughout. At the time, I didn’t pay attention to the artwork I was being exposed to, but it did capture my attention. What I’m trying to get at is, I recently found out that one of those sculptures was created by artist Pierre Auguste Renoir and is the only one in the world that the public can actually touch. I liked the idea that this work of art that some would consider inaccessible, was placed where some people could care less about it. I then started to think about all of the large public art pieces I was exposed to as a youth and how I remember thinking, “How could a person create something of that scale with their hands?” I happily accepted the offer, and here is the result.",
           "artist": "Aaron De La Cruz",
           "biography": "Aaron De La Cruz's work, though minimal and direct at first, tends to overcome barriers of separation and freely steps in and out of the realms of painting and design. The act and the marks themselves are very simple but tend to take on distinct and sometimes higher meanings in the broad range of mediums and contexts they appear in and on. His work finds strengths in the reduction of his interests in life to minimal information. De La Cruz gains from the idea of exclusion, just because you don't literally see it, doesn't mean that it's not there.",
           "image": "https://static1.squarespace.com/static/53ac662be4b073e1bdee6d0b/57a36d0f29687fa31c429489/591a8ae99f7456bde4022827/1494911729867/ADLC_EASTRIDGE_2017.png",
@@ -164,24 +164,40 @@
     new mapboxgl.Marker(el, { offset: [0, -23] })
       .setLngLat(marker.geometry.coordinates)
       .addTo(map);
+
+    el.addEventListener('click', function(e) {
+      var activeItem = document.getElementsByClassName('active');
+      // 1. Fly to the point
+      flyToArt(marker);
+      // 2. Close all other popups and display popup for clicked art
+      createPopUp(marker);
+      // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+      e.stopPropagation();
+      if (activeItem[0]) {
+        activeItem[0].classList.remove('active');
+      }
+      var listing = document.getElementById('listing-' + i);
+      console.log(listing);
+      listing.classList.add('active');
+    });
   });
 
   function buildLocationList(data) {
-    // Iterate through the list of stores
+    // Iterate through the list of arts
     for (i = 0; i < data.features.length; i++) {
       var currentFeature = data.features[i];
       // Shorten data.feature.properties to just `prop` so we're not
       // writing this long form over and over again.
       var prop = currentFeature.properties;
       // Select the listing container in the HTML and append a div
-      // with the class 'item' for each store
+      // with the class 'item' for each art
       var listings = document.getElementById('listings');
       var listing = listings.appendChild(document.createElement('div'));
       listing.className = 'item';
       listing.id = 'listing-' + i;
 
-      // Create a new link with the class 'title' for each store
-      // and fill it with the store address
+      // Create a new link with the class 'title' for each art
+      // and fill it with the art address
       var link = listing.appendChild(document.createElement('a'));
       link.href = '#';
       link.className = 'title';
