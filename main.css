@@ -3,7 +3,8 @@ body {
   color: #404040;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 5%;
+  padding-top: 70px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -24,9 +25,22 @@ body {
         margin: 0.5em 0.5em;
     }
 }
+.navbar-brand {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-default .navbar-brand {
+    color: darkorchid;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 h1 {
-  font-family: 'Raleway', sans-serif; 
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   margin: 0;
   font-weight: 700;
@@ -100,7 +114,7 @@ a:hover {
 .listings .item .title:hover { color: blue; }
 
 .listings .item.active {
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 ::-webkit-scrollbar {
@@ -115,7 +129,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00853e;
+  background: #420360;
   border-radius: 0;
 }
 
