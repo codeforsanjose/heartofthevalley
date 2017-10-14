@@ -1,27 +1,184 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Heart of the Valley</title>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="./main.css" type="text/css">
-  </head>
-  <body>
-    <div class='sidebar pad2'>Listing</div>
-    <div id='map' class='map pad2'>Map</div>
-    <script>
-    // TODO replace mapbox public key with private token
-    mapboxgl.accessToken =
-      'pk.eyJ1IjoieWNob3kiLCJhIjoiY2oxNnZrczV1MDNhbDMyb2R1ejk0bWlqciJ9.UF9JKtdkWur6UEk4Igj-Ew';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/ychoy/cj5heh9qf44ba2smldujur2yf',
-         // initial position in [lon, lat] format with coordinates for San Jose
-        center: [-121.893028, 37.335480],
-        zoom: 14
-      });
-    </script>
-  </body>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Heart of the Valley</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <!-- Include the Mapbox GL JS library -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.css' rel='stylesheet' />
+  <!-- Include style CSS and JavaScript -->
+  <link href='main.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div class='sidebar pad2'>
+    <div class='header'>
+      Public Art in San Jose
+    </div>
+    <div id='listings' class='listings'></div>
+  </div>
+  
+  <div id='map' class='map'></div>
+  
+    
+  <script>
+  // TODO: Replace with a private token and hide it
+  mapboxgl.accessToken = 'pk.eyJ1IjoibmJiMTI4MDUiLCJhIjoiY2o3eTN4Y3R5NXQ3ZDJ3cW5yMnVwYzVmdyJ9.rA_Z0QLuHzufgnxn-Fgvqw';
+
+  // Initialize a new map in the div with id 'map'
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: [-121.893028, 37.335480],  // position in long, lat format
+    zoom: 12
+  });
+
+   var art = {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.8833868,
+            37.3392621
+          ]
+        },
+        "properties": {
+          "title": "Interview with an Icon",
+          "image": "http://ww2.kqed.org/arts/wp-content/uploads/sites/2/2016/06/IanYoung_CLakey.jpg",
+          "description": "This mural features six, present-day barbers servicing the lustrous locks of six,multicultural icons in their youth. Barber Jaisen Spencer combs the hair of Fela Kuti, the late Nigerian Afrobeat music pioneer and human rights activist. Dave Diggs gives a haircut to Muhammad Ali, late American professional boxer and activist. Mark Maxx, straight-razor shaves Johnny Cash, late American singer-songwriter, guitarist, actor, and author. Alfonzo Jordan cuts the mane of Bruce Lee, late Hong Kong and American actor, film director, martial artist, martial arts instructor, philosopher and founder of the martial art Jeet Kune Do. Ian Young cuts the short ‘fro of Maya Angelou, late American poet, memoirist, and civil rights activist. Amin Munye works on famed musician Carlos Santana's mustache.",
+  "artist": "Ian Young",
+          "website": "http://quietgiantdesign.com/",
+          "biography": "I create captivating visual concepts from scratch. I produce graphic, branding, illustration, hair and just about any other design you can think of.",
+          "address": "332 E. Santa Clara St. San Jose, California ",
+          "city": "San Jose",
+          "country": "United States",
+          "crossStreet": "E Santa Clara Street between S 7th and S 8th Street",
+          "postalCode": "95113",
+          "state": "CA", 'marker-color': '#B5383C', 'marker-size': 'large', 'marker-symbol': 'rocket'
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.8915307,
+              37.3360475
+          ]
+        },
+        "properties": {
+          "title": "Local Color Heart Mural",
+          "image": "/img/LocalColorHeartMural_by_FranciscoRamirez_photoby_YanYinChoy.jpg",
+          "artist": "Francisco Ramirez",
+          "biography": "I’m a self-taught artist from Mexico but mostly raised in San Jose California. I’ve worked with mostly acrylic and watercolor but I’ve also worked with pastel, oil, photography, murals , body painting and other mixed media.",
+          "website": "https://www.instagram.com/fco1980/",
+          "address": "15 Fountain Alley",
+          "city": "San Jose",
+          "country": "United States",
+          "crossStreet": "at Fountain Alley and S 2nd Street",
+          "postalCode": "95113",
+          "state": "CA", 'marker-color': '#B5383C', 'marker-size': 'large', 'marker-symbol': 'rocket'
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.8978591,
+            37.3480803
+          ]
+        },
+        "properties": {
+          "title": "Little Moment",
+          "artist": "NoseGo",
+          "image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5689fdb10ab377ae44ef1402/1451883959062/Final+Nosego.jpg",
+          "biography": "Yis 'Nosego' Goodwin  is a Philadelphia-based artist with a passion for illustration and media arts.  He mixes fine art with a contemporary style to deliver highly energetic work. His designs feature an assemblage of patterns, vibrant colors and characters derived from his imagination and his surrounding environment.",
+          "website": "https://www.nosego.com/",
+          "address": "140 Jackson St, San Jose",
+          "city": "San Jose",
+          "country": "United States",
+          "crossStreet": "at Jackson St between N 3rd St and N 4th St",
+          "postalCode": "95112",
+          "state": "CA", 'marker-color': '#B5383C', 'marker-size': 'large', 'marker-symbol': 'rocket'
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.8155584,
+              37.3255328
+          ]
+        },
+        "properties": {
+          "title": "Eastridge Mall Mural - Aaron De La Cruz",
+          "description": "Aaron De La Cruz writes: I remembered taking trips with my Grandmother to the Fulton Mall (located in Downtown Fresno, CA) back in the mid 1980’s. The exterior of the mall had a water feature that ran through the walkway, connecting all the stores. There were many large scale sculptures and water fountains throughout. At the time, I didn’t pay attention to the artwork I was being exposed to, but it did capture my attention. What I’m trying to get at is, I recently found out that one of those sculptures was created by artist Pierre Auguste Renoir and is the only one in the world that the public can actually touch. I liked the idea that this work of art that some would consider inaccessible, was placed where some people could care less about it. I then started to think about all of the large public art pieces I was exposed to as a youth and how I remember thinking, “How could a person create something of that scale with their hands?” I happily accepted the offer, and here is the result.",
+          "artist": "Aaron De La Cruz",
+          "biography": "Aaron De La Cruz's work, though minimal and direct at first, tends to overcome barriers of separation and freely steps in and out of the realms of painting and design. The act and the marks themselves are very simple but tend to take on distinct and sometimes higher meanings in the broad range of mediums and contexts they appear in and on. His work finds strengths in the reduction of his interests in life to minimal information. De La Cruz gains from the idea of exclusion, just because you don't literally see it, doesn't mean that it's not there.",
+          "image": "https://static1.squarespace.com/static/53ac662be4b073e1bdee6d0b/57a36d0f29687fa31c429489/591a8ae99f7456bde4022827/1494911729867/ADLC_EASTRIDGE_2017.png",
+          "website": "http://www.aarondelacruz.com/",
+          "address": "2200 Eastridge Loop",
+          "city": "San Jose",
+          "country": "United States",
+          "crossStreet": "at Eastridge Loop",
+          "postalCode": "95122",
+          "state": "CA", 'marker-color': '#B5383C', 'marker-size': 'large', 'marker-symbol': 'rocket'
+        }
+      }] 
+  };
+
+  // adds data to map
+  map.on('load', function(e) {
+    map.addLayer({
+      id: 'locations',
+      type: 'symbol',
+  
+      source: {
+        type: 'geojson',
+        data: art
+      },
+      //TODO:  replace restaurant-15 with custom marker
+      layout: {
+        'icon-image': 'restaurant-15',
+        'icon-allow-overlap': true,
+      }
+    });
+    buildLocationList(art); //call function when map loads 
+  });
+
+  function buildLocationList(data) {
+    // Iterate through the list of stores
+    for (i = 0; i < data.features.length; i++) {
+      var currentFeature = data.features[i];
+      // Shorten data.feature.properties to just `prop` so we're not
+      // writing this long form over and over again.
+      var prop = currentFeature.properties;
+      // Select the listing container in the HTML and append a div
+      // with the class 'item' for each store
+      var listings = document.getElementById('listings');
+      var listing = listings.appendChild(document.createElement('div'));
+      listing.className = 'item';
+      listing.id = 'listing-' + i;
+
+      // Create a new link with the class 'title' for each store
+      // and fill it with the store address
+      var link = listing.appendChild(document.createElement('a'));
+      link.href = '#';
+      link.className = 'title';
+      link.dataPosition = i;
+      link.innerHTML = prop.title;
+
+      // Create a new div with the class 'details' for each listing
+      // and fill it with the following
+      var details = listing.appendChild(document.createElement('div'));
+      details.innerHTML = 'by ' + prop.artist;
+    }
+  }
+  </script>
+</body>
 </html>
