@@ -164,7 +164,6 @@ a:hover {
   border-bottom-color: #91c949;
 }
 
-
 .marker {
   border: none;
   cursor: pointer;
@@ -172,4 +171,8 @@ a:hover {
   width: 56px;
   background-image: url(map-marker-icon.png);
   background-color: rgba(0, 0, 0, 0);
+}
+
+.mapboxgl-popup {
+  padding-bottom: 50px;
 }
