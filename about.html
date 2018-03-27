@@ -2,12 +2,13 @@
 <head>
 <meta charset='utf-8' />
   <title>Heart of the Valley</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <!-- <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Include style CSS and JavaScript -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href='main.css' rel='stylesheet' />
@@ -25,33 +26,35 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="">HEART OF THE VALLEY</a>
+        <a class="navbar-brand" href="http://www.codeforsanjose.com/heartofthevalley/">HEART OF THE VALLEY</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-  <div class="jumbotron">
-    <h1>Heart of the Valley</h1>
-    <p>An open source map visualization of public art in San José, California</p>
-    <p><a class="btn btn-primary btn-lg" href="http://codeforsanjose.com/heartofthevalley" role="button">View the map</a></p>
-  </div>
-  <div class="container">
+
+  <div class="container" style="padding-top:20px; width: 100%; margin-bottom: 15px;">
+    <h1 style="font-size: 30px; font-weight: 400; margin-top: 20px;">Heart of the Valley</h1>
+    <div style="font-size: 21px; font-weight: 200;">
+      <p>An open source map visualization of public art in San José, California</p>
+      <br/>
+      <p><a class="btn btn-primary btn-lg" href="http://codeforsanjose.com/heartofthevalley" role="button">View the map</a></p>
+    </div>
+    <br/><br/>
     <h3>About the Project</h3>
     <p>There are so many incredible murals and public art in San José, California. This data visualization map is to help community members find public art and murals.</p>
     <br/>
-    <p>This project came out of a discussion with community members and <a href="https://www.empiresevenstudios.com/" target="_blank">Empire Seven Studios</a>, a local art studio located in Japantown, San José, California. For the initial version of the map, Yan-Yin Choy researched local public art and murals from online sources. The data is updated as of October 1, 2017.</p>
+    <p>This project came out of a discussion with community members and <a href="https://www.empiresevenstudios.com/" target="_blank">Empire Seven Studios</a>, a local art studio located in Japantown, San José, California. For the initial version of the map, Yan-Yin Choy researched local public art and murals from online sources. The data is updated as of October 1, 2017. The map is made with <a href="https://www.mapbox.com/mapbox-gl-js/api/" target="_blank">Mapbox GL JS</a>, a JavaScript library that uses WebGL to render interactive mapsfrom vector tile and Mapbox styles.</p>
     <br/>
     <h3>How to Contribute</h3>
     <p>
     This is an open source project is maintained by <a href="http://codeforsanjose.com" target="_blank">Code for San José</a> volunteers.</p>
     <p>You are welcome to contribute to this project -- we need researchers, designers, developers and map enthusiasts! View our <a href="https://github.com/codeforsanjose/heartofthevalley" target="_blank">GitHub repository</a>.
     </p>
-    <br/>
-    <h4 style="padding-top:100px;">Made with <3 by <a href="http://codeforsanjose.com" target="_blank">Code for San José</a></h4>
+    <h5 style="padding-top:20px;">Made with <3 by <a href="http://codeforsanjose.com" target="_blank">Code for San José</a></h5>
   </div>
 </body>
