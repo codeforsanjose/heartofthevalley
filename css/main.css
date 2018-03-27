@@ -143,6 +143,7 @@ a:hover {
 
 .listings .item .title {
   display: block;
+  padding-top: 25px;
   color: darkorchid;
   font-weight: 700;
   font-size: 16px;
