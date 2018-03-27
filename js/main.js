@@ -65,7 +65,7 @@ art.features.forEach(function(marker) {
 		// 1. Fly to the point
 		flyToArt(marker);
 		// 2. Close all other popups and display popup for clicked art
-		createPopUp(marker);
+		createPopUp(marker, "listing-"+i);
 		// 3. Highlight listing in sidebar (and remove highlight for all other listings)
 		e.stopPropagation();
 		if (activeItem[0]) {
@@ -84,15 +84,23 @@ function flyToArt(currentFeature) {
 		});
 }
 
- function createPopUp(currentFeature) {
+function createPopUp(currentFeature, linkId) {
 	var popUps = document.getElementsByClassName('mapboxgl-popup');
 	if (popUps[0]) popUps[0].remove();
 
+	if (typeof linkId !== 'undefined') {
+		window.location.hash = '#' + linkId;
+	}
 
 	var popup = new mapboxgl.Popup({closeOnClick: true, closeButton: true, anchor: 'top'})
 				.setLngLat(currentFeature.geometry.coordinates)
-				.setHTML('<h3>' + currentFeature.properties.title + '</h3>' +
-					'<h4>' + `by ` + currentFeature.properties.artist + '<br/>' + `Address: ` +  currentFeature.properties.address + ', ' + currentFeature.properties.city + ', ' +  currentFeature.properties.state + ' ' + currentFeature.properties.postalCode + '</h4'
+				.setHTML(
+					'<h3>' + currentFeature.properties.title + '</h3>' +
+					'<h4>' + `by ` + currentFeature.properties.artist + '<br/>' + 
+						`Address: ` +  currentFeature.properties.address + ', ' + 
+						currentFeature.properties.city + ', ' +  
+						currentFeature.properties.state + ' ' + 
+						currentFeature.properties.postalCode + '</h4>'
 				 )
 				.addTo(map);
 }
@@ -135,7 +143,6 @@ function buildLocationList(data) {
 			story.innerHTML = '<br/>' + prop.description;
 		}
 
-
 	 link.addEventListener('click', function(e){
 			// Update the currentFeature to the store associated with the clicked link
 			var clickedListing = data.features[this.dataPosition];
@@ -144,7 +151,7 @@ function buildLocationList(data) {
 			flyToArt(clickedListing);
 
 			// 2. Close all other popups and display popup for clicked point
-			createPopUp(clickedListing);
+			createPopUp(clickedListing, listing.id);
 
 			// 3. Highlight listing in sidebar (and remove highlight for all other listings)
 			var activeItem = document.getElementsByClassName('active');
