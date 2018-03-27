@@ -9,6 +9,9 @@
 # production
 /build
 
+# text editing
+*.sw*
+
 # misc
 .DS_Store
 .env.local
