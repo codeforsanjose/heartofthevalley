@@ -35,6 +35,293 @@ var map = new mapboxgl.Map({
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
+						-121.8965597, 
+            37.3341565
+					]
+				},
+				"properties": {
+					"title": "Vida Abundante",
+					"description": "The mural, “Life Abundant in Face of Death Imminent” by Bay Area tattoo artist Jim Miner in collaboration with the Exhibition District, is inspired by the Egyptian Art Deco interior of the Hotel De Anza. The cornucopia pays homage to San José’s roots in agriculture, “the Valley of Heart’s Delight.’” The mural exhibited on August 26, 2016. It took about 4 weeks to complete, in collaboration with dozens of volunteers and 30 gallons of paint.",
+					"image": "https://static.wixstatic.com/media/382b8e_fecee55573074d63941d24c993ed5574~mv2_d_4809_1973_s_2.jpg/v1/fill/w_480,h_197,al_c,q_90,usm_0.66_1.00_0.01/382b8e_fecee55573074d63941d24c993ed5574~mv2_d_4809_1973_s_2.webp",
+					"artist": "Jim Miner",
+					"address": "233 W Santa Clara St",
+					"city": "San José",
+					"country": "United States",
+					"crossStreet": "On the side of Hotel De Anza, on Santa Clara St., between Notre Dame Ave. and Almaden Blvd.",
+					"postalCode": "95113",
+					"state": "CA"
+				},
+			},
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.8895232,
+              37.3360534
+          ]
+        },
+        "properties": {
+          "title": "Gold Hearted",
+          "artist": "Jorge Camacho",
+          "address": "7 Fountain Alley",
+          "city": "San José",
+          "country": "United States",
+          "crossStreet": "At Fountain Alley between 1st and 2nd Street",
+          "postalCode": "95113",
+          "state": "CA"
+        }
+      },
+      {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.9000958, 
+            37.3258542
+					]
+				},
+				"properties": {
+					"title": "People Ready",
+					"image": "https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/22851857_10155094244171169_6669288944054704727_n.jpg?_nc_cat=0&oh=43c7ffc19e5ce39ff80a22b80baf1a4f&oe=5B725AF4",
+					"artist": "Jeff Meadows",
+					"description": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"address": "486 W San Carlos St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95110",
+					"state": "CA"
+				},
+			},
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.9025201, 
+              37.3297542    
+            ]
+        },"properties": {
+					"title": "Gutter Paraidse",
+					"image": "http://payload549.cargocollective.com/1/0/14342/13287395/pow-wow-san-jose_670.jpg",
+          "website": "http://www.adelerenault.com/",
+					"description": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "Adele Renault",
+					"address": "87 S Autumn St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95110",
+					"state": "CA"
+				},
+			},
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.9025201, 
+              37.3297542    
+            ]
+        },"properties": {
+					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+          "website": "http://www.jetromartinez.com/",
+					"artist": "Jet Martinez",
+					"address": "87 S Autumn St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95110",
+					"state": "CA"
+				},
+			},
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.9025201, 
+              37.3297542    
+            ]
+        },"properties": {
+					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+          "website": "http://caseygray.com/",
+					"artist": "Casey Gray",
+					"address": "87 S Autumn St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95110",
+					"state": "CA"
+				},
+			},
+     {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.8936249, 
+            37.3478549
+          ]
+        },"properties": {
+					"title": "Murals exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "Amine Rastgar . Robbie Api . Griffin . Doper . Wisper",
+					"address": "251 E Empire Street",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95112",
+					"state": "CA"
+				},
+			},
+     {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.8936249, 
+            37.3478549
+          ]
+        },"properties": {
+          "image": "https://instagram.fsnc1-1.fna.fbcdn.net/vp/dcc52ebc6390a2df3584652d6cba91d2/5B5515B1/t51.2885-15/e35/26329622_335078320328136_3078996006495322112_n.jpg",
+					"title": "Cyclorilla",
+          "description": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "<a href='https://www.instagram.com/seanboyles38th/' target='_blank'>Sean Boyles</a>",
+					"address": "251 E Empire Street",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95112",
+					"state": "CA"
+				},
+			},
+
+     {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+             -121.9133071, 
+              37.3312882
+            ]
+        },"properties": {
+					"title": "Murals exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "MESNGR . Lacey Bryant . Ben Henderson",
+					"address": "1068 The Alameda",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95126",
+					"state": "CA"
+				},
+			},
+     {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+             -121.8959579, 
+              37.3330949
+            ]
+        },"properties": {
+					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "pro_gress",
+					"address": "44 S Almaden Blvd",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95113",
+					"state": "CA"
+				},
+			},
+     {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.8987777, 
+              37.3253611
+            ]
+        },"properties": {
+					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "Kristin Farr",
+					"address": "490 W San Carlos St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95110",
+					"state": "CA"
+				},
+			},
+     {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.8927333, 
+            37.3370561 
+           ]
+        },"properties": {
+					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "Ricky Watts",
+					"address": "45 N 1st Street",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95113",
+					"state": "CA"
+				},
+			},
+     {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.9134626, 
+              37.3300271
+            ]
+        },"properties": {
+					"title": "Murals exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "Ken Davis . Lauren Napolitano",
+					"address": "1043 Garland Ave",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95126",
+					"state": "CA"
+				},
+			},
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.8869887, 
+              37.3289321
+            ]
+        },"properties": {
+					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "TRAV MSK",
+					"address": "490 S 1st St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95113",
+					"state": "CA"
+				},
+			},
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+              -121.848412, 
+              37.3452983
+            ]
+        },"properties": {
+					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
+					"artist": "Aaron De La Cruz",
+					"address": "398 King Road",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95116",
+					"state": "CA"
+				},
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
 						-121.8968265,
 						37.3357211
 					]
@@ -261,7 +548,7 @@ var map = new mapboxgl.Map({
 			 },
 			 "properties": {
 				 "title": "Doña Mayfair",
-				 "image": "img/DonaMayfair_by_SamRodriguez_photoby_SamRodriguez.jpeg",
+				 "image": "https://static1.squarespace.com/static/51ffd83de4b0eefc5e9bc8e9/t/584b1f3e5016e1fb956cfb76/1481318221492/?format=1000w",
 				 "artist": "Sam Rodriguez",
 				 "description": "Sam Rodriguez shares: <br/> “I was really excited and proud to participate in this project as East San José, is where my family is rooted. The focus on this mural was the Mayfair neighborhood where the inspiring leader César Chávez once lived. This area was known as 'Sal Si Puede' (leave if you can), a twist on the United Farm Workers campaign slogan 'Si Se Puede' (Yes You Can). Though rich in culture, it's residents, mostly Mexican and other Latino groups, have historically experienced income, and justice inequality along with negative press. Today, it is good to see positive movement blooming throughout the area, as many grassroots efforts are being made to push East San José more toward a 'Si Se Puede' environment.” <a href='http://celebratemayfair.org/dona-mayfair/' target='_blank'>Learn more.</a>",
 				 "website": "http://samrodriguezart.com/",
@@ -765,8 +1052,8 @@ var map = new mapboxgl.Map({
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-							-121.8915307,
-							37.3360475
+					  -121.8894295, 
+            37.3361009
 					]
 				},
 				"properties": {
@@ -775,7 +1062,7 @@ var map = new mapboxgl.Map({
 					"artist": "Francisco Ramirez",
 					"biography": "I’m a self-taught artist from Mexico but mostly raised in San José California. I’ve worked with mostly acrylic and watercolor but I’ve also worked with pastel, oil, photography, murals , body painting and other mixed media.",
 					"website": "https://www.instagram.com/fco1980/",
-					"address": "15 Fountain Alley",
+					"address": "7 Fountain Alley",
 					"city": "San José",
 					"country": "United States",
 					"crossStreet": "at Fountain Alley and S 2nd Street",
@@ -1015,8 +1302,10 @@ function buildLocationList(data) {
 		var address = listing.appendChild(document.createElement('div'));
 		address.innerHTML = prop.address + ', ' + prop.city + ', ' + prop.state + " " + prop.postalCode ;
 
-		var artImage = listing.appendChild(document.createElement('div'));
-		artImage.innerHTML = '<br/>' + "<img src=\"" + prop.image + "\">";
+    if (prop.image) {
+		  var artImage = listing.appendChild(document.createElement('div'));
+		  artImage.innerHTML = '<br/>' + "<img src=\"" + prop.image + "\">";
+    }
 
 		var story = listing.appendChild(document.createElement('div'));
 		if (prop.description) {
