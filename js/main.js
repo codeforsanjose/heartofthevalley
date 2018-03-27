@@ -12,8 +12,7 @@ if (!('remove' in Element.prototype)) {
 	};
 }
 
-// TODO: Replace with a private token and hide it
-mapboxgl.accessToken = 'pk.eyJ1IjoibmJiMTI4MDUiLCJhIjoiY2o3eTN4Y3R5NXQ3ZDJ3cW5yMnVwYzVmdyJ9.rA_Z0QLuHzufgnxn-Fgvqw';
+mapboxgl.accessToken = 'pk.eyJ1IjoieWNob3kiLCJhIjoiY2pmOTYwdzZ5MG52dDJ3b2JycXY4ZDU5ciJ9.m9H_Mqu1b42AObg_u_tjpA';
 
 // Initialize a new map in the div with id 'map'
 var map = new mapboxgl.Map({
@@ -154,6 +153,7 @@ var map = new mapboxgl.Map({
 				 "biography": "Brendan Monroe was born in Santa Barbara and studied at Art Center in Pasadena. The works of Monroe, a sculptor and painter, are available in California and at Galerie L.J. in Paris, and have been exhibited in Asia, Europe and North America.",
 				 "address": "2200 Eastridge Loop",
 				 "city": "San José",
+         "image": "https://static1.squarespace.com/static/587f1c3ca5790a8424115faa/5a5c540a8165f5ec9dee07fe/5a5c56c9ec212d764f015103/1516000986053/IMG_0490-edit.jpg?format=750w",
 				 "country": "United States",
 				 "crossStreet": "at Eastridge Loop",
 				 "postalCode": "95122",
