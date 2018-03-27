@@ -8,9 +8,9 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.css' rel='stylesheet' />
   <!-- Include style CSS and JavaScript -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href='main.css' rel='stylesheet' />
@@ -19,35 +19,43 @@
 
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="">HEART OF THE VALLEY</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.codeforsanjose.com/heartofthevalley/">HEART OF THE VALLEY</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
   <div class="container">
     <div class='sidebar pad2'>
-      <div class='header'>
-        <strong>Public Art in San José</strong>
+      <div class='header' style="padding-top: 50px; padding-bottom:15px;">
+        <h4>Murals & Public Art in San José</h4>
       </div>
-    <div id='listings' class='listings'></div>
+      <div id='listings' class='listings'>
+      </div>
     </div>
     <div id='map' class='map'></div>
   </div>
+<!-- todo add footer 
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-footer">
+        <p className="text-center">© 2018 <a href="http://www.codeforsanjose.com">Code for San José</a></p>
+      </div>
+    </div>
+  </div> --> 
   <script>
 
   // This will let you use the .remove() function later on
@@ -67,7 +75,7 @@
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v9',
     center: [-121.893028, 37.335480],  // position in long, lat format
-    zoom: 11,
+    zoom: 12,
     dragPan: true, // If true , the "drag to pan" interaction is enabled (see DragPanHandler)
     trackResize: true, // If true, the map will automatically resize when the browser window resizes.
     doubleClickZoom: true, //If true double click will zoom
@@ -153,7 +161,7 @@
          "properties": {
            "title": "César E. Chávez Monument: The Arch of Dignity, Equality, and Justice",
            "image": "img/CesarChavezMonument_by_JudithBaca_photoby_yanyinchoy-COLLAGE.jpg",
-           "description": "The Cesar E. Chavez Monument was unveiled at San Jose State University in 2008. Artist and designer Judith F. Baca shares: 'May all those passing through it experience the passage from hope and inspiration, to education, and finally, to action for social and environmental justice.' To learn more read: http://digitalmurallab.com/dml/the-cesar-chavez-monument-is-unveiled-in-san-jose-state-university/.''",
+           "description": "The Cesar E. Chavez Monument was unveiled at San José State University in 2008. Artist and designer Judith F. Baca shares: <br/> “May all those passing through it experience the passage from hope and inspiration, to education, and finally, to action for social and environmental justice.” <br/><br/>To learn more <a href='http://digitalmurallab.com/dml/the-cesar-chavez-monument-is-unveiled-in-san-jose-state-university/'  target='_blank'>go here.</a>",
            "artist": "Judith F. Baca",
            "address": "San José State University, 1 Washington Sq.",
            "city": "San José",
@@ -173,7 +181,7 @@
          },
          "properties": {
            "title": "Eastridge Mall Mural - Aaron De La Cruz",
-           "description": "Aaron De La Cruz writes: I remembered taking trips with my Grandmother to the Fulton Mall (located in Downtown Fresno, CA) back in the mid 1980’s. The exterior of the mall had a water feature that ran through the walkway, connecting all the stores. There were many large scale sculptures and water fountains throughout. At the time, I didn’t pay attention to the artwork I was being exposed to, but it did capture my attention. What I’m trying to get at is, I recently found out that one of those sculptures was created by artist Pierre Auguste Renoir and is the only one in the world that the public can actually touch. I liked the idea that this work of art that some would consider inaccessible, was placed where some people could care less about it. I then started to think about all of the large public art pieces I was exposed to as a youth and how I remember thinking, “How could a person create something of that scale with their hands?” I happily accepted the offer, and here is the result.",
+           "description": "Aaron De La Cruz writes: <br/> “I remembered taking trips with my Grandmother to the Fulton Mall (located in Downtown Fresno, CA) back in the mid 1980’s. The exterior of the mall had a water feature that ran through the walkway, connecting all the stores. There were many large scale sculptures and water fountains throughout. At the time, I didn’t pay attention to the artwork I was being exposed to, but it did capture my attention. What I’m trying to get at is, I recently found out that one of those sculptures was created by artist Pierre Auguste Renoir and is the only one in the world that the public can actually touch. I liked the idea that this work of art that some would consider inaccessible, was placed where some people could care less about it. I then started to think about all of the large public art pieces I was exposed to as a youth and how I remember thinking, “How could a person create something of that scale with their hands?” I happily accepted the offer, and here is the result.”",
            "artist": "Aaron De La Cruz",
            "biography": "Aaron De La Cruz's work, though minimal and direct at first, tends to overcome barriers of separation and freely steps in and out of the realms of painting and design. The act and the marks themselves are very simple but tend to take on distinct and sometimes higher meanings in the broad range of mediums and contexts they appear in and on. His work finds strengths in the reduction of his interests in life to minimal information. De La Cruz gains from the idea of exclusion, just because you don't literally see it, doesn't mean that it's not there.",
            "image": "https://static1.squarespace.com/static/53ac662be4b073e1bdee6d0b/57a36d0f29687fa31c429489/591a8ae99f7456bde4022827/1494911729867/ADLC_EASTRIDGE_2017.png",
@@ -241,7 +249,7 @@
          },
          "properties": {
            "title": "Eastridge Mall Mural - Lila Gamellos",
-           "description": "Lila Gamellos writes: For me, these all represent different sides of San José. What I think San Jose as well as, if not more so, East San Jose and Evergreen need some identity and a little confidence boost.  San Jose is awesome.  Why is it only the Sharks we boast?  What the world needs is love, so let’s start that at home.  I’ve wrapped my W shaped area with overwhelming displays of San Jose affection, past and present.",
+           "description": "Lila Gamellos writes: For me, these all represent different sides of San José. What I think San José as well as, if not more so, East San José and Evergreen need some identity and a little confidence boost.  San Jose is awesome.  Why is it only the Sharks we boast?  What the world needs is love, so let’s start that at home.  I’ve wrapped my W shaped area with overwhelming displays of San Jose affection, past and present.",
            "image": "http://www.gemellosmurals.com/wp-content/uploads/2015/02/20170530_13322886801-768x334.jpg",
            "artist": "Lila Gamellos",
            "website": "http://www.gemellosmurals.com/",
@@ -310,7 +318,7 @@
            "title": "Doña Mayfair",
            "image": "img/DonaMayfair_by_SamRodriguez_photoby_SamRodriguez.jpeg",
            "artist": "Sam Rodriguez",
-           "description": "Sam Rodriguez shares: 'I was really excited and proud to participate in this project as East San José, is where my family is rooted. The focus on this mural was the Mayfair neighborhood where the inspiring leader César Chávez once lived. This area was known as 'Sal Si Puede' (leave if you can), a twist on the United Farm Workers campaign slogan 'Si Se Puede' (Yes You Can). Though rich in culture, it's residents, mostly Mexican and other Latino groups, have historically experienced income, and justice inequality along with negative press. Today, it is good to see positive movement blooming throughout the area, as many grassroots efforts are being made to push East San José more toward a 'Si Se Puede' environment.' Learn more: http://celebratemayfair.org/dona-mayfair/",
+           "description": "Sam Rodriguez shares: <br/> “I was really excited and proud to participate in this project as East San José, is where my family is rooted. The focus on this mural was the Mayfair neighborhood where the inspiring leader César Chávez once lived. This area was known as 'Sal Si Puede' (leave if you can), a twist on the United Farm Workers campaign slogan 'Si Se Puede' (Yes You Can). Though rich in culture, it's residents, mostly Mexican and other Latino groups, have historically experienced income, and justice inequality along with negative press. Today, it is good to see positive movement blooming throughout the area, as many grassroots efforts are being made to push East San José more toward a 'Si Se Puede' environment.” <a href='http://celebratemayfair.org/dona-mayfair/' target='_blank'>Learn more.</a>",
            "website": "http://samrodriguezart.com/",
            "biography": "Sam Rodriguez is an artist based out of San José, CA and have been fortunate to have had shown his work in public art spaces, museums, companies, galleries, internet, and editorial publications. For a number of years he was self-taught through the graffiti scene, until he later decided to expand his studies by pursuing a Bachelor in Fine Arts from California College of the Arts.  He has since blended what he absorbed from both experiences to create his current style.  At the moment, he is interested in two types of portraiture that he calls, 'Topographical Portraiture' and 'Type Faces'.  Topographical Portraits, are made by stylizing a portrait with topographical lines and shapes in a similar manner to those found through images on geographic maps. Type Faces, incorporate typography and portraiture. He developed these through countless studio sessions, to use as a platform for his interest in social, historic, and cultural hybridity.",
            "address": "1700 Alum Rock Avenue",
@@ -377,7 +385,7 @@
         "properties": {
           "title": "Here & There",
           "image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/597287b3cf81e0735c416082/1500678068733/7.jpg",
-          "description": "Likening the murals to journalism, Sam Rodriquez says, 'When I think of murals, I think of outdoor books. This recent wall marks the first of many that I plan to do, which would depict the cultural landscape of San José through observations and interviews of its residents. This will result in pieces that could only be found in San Jose.' Rodriquez was assisted in the execution of the wall by community volunteers. 'A lot of the people who helped out cared as much, if not more, about the painting than I did,” the artist says. 'They held up the standards as I would for my own paintings.' Some of the youth involved in an intervention program (Teaching Adolescents Skills in the Community), who worked on the mural, came back after the mural was finished and proudly showed family members their work.",
+          "description": "Likening the murals to journalism, Sam Rodriquez says, 'When I think of murals, I think of outdoor books. This recent wall marks the first of many that I plan to do, which would depict the cultural landscape of San José through observations and interviews of its residents. This will result in pieces that could only be found in San José.' Rodriquez was assisted in the execution of the wall by community volunteers. 'A lot of the people who helped out cared as much, if not more, about the painting than I did,” the artist says. 'They held up the standards as I would for my own paintings.' Some of the youth involved in an intervention program (Teaching Adolescents Skills in the Community), who worked on the mural, came back after the mural was finished and proudly showed family members their work.",
           "artist": "Sam Rodriguez",
           "website": "http://samrodriguezart.com/",
           "biography": "Sam Rodriguez is an artist based out of San José, CA and have been fortunate to have had shown his work in public art spaces, museums, companies, galleries, internet, and editorial publications. For a number of years he was self-taught through the graffiti scene, until he later decided to expand his studies by pursuing a Bachelor in Fine Arts from California College of the Arts.  He has since blended what he absorbed from both experiences to create his current style.  At the moment, he is interested in two types of portraiture that he calls, 'Topographical Portraiture' and 'Type Faces'.  Topographical Portraits, are made by stylizing a portrait with topographical lines and shapes in a similar manner to those found through images on geographic maps. Type Faces, incorporate typography and portraiture. He developed these through countless studio sessions, to use as a platform for his interest in social, historic, and cultural hybridity.",
@@ -627,7 +635,7 @@
             "artist": "Rigo 23",
             "website": "https://www.facebook.com/pages/Rigo-23/138554102829939",
             "biography": "Rigo 23 is a Portuguese muralist, painter, and political artist residing in San Francisco, California. He is known in the San Francisco community for having painted a number of large, graphic 'sign' murals including: One Tree next to the U.S. Route 101 on-ramp at 10th and Bryant Street, Innercity Home on a large public housing structure, Sky/Ground on a tall abandoned building at 3rd and Mission Street, and Extinct over a Shell gas station.",
-            "description": "On Oct. 16, 1968, Olympics in Mexico City, United States track athletes and San José State University students Tommie Smith and John Carlos were awarded medals for their athletic efforts. However, the great athletic feat would soon be shadowed by one of the most memorable moments in the American Civil Rights Movement. Tommie Smith and John Carlos would protest the poor treatment of African-American people in the United States and stood to empower the African American community. This is a great symbol for the community of San Jose State University. Tommie Smith and John Carlos were both students at this prestigious university and showed San Jose State University students of the present and the future that students can make a difference on the global stage.",
+            "description": "On Oct. 16, 1968, Olympics in Mexico City, United States track athletes and San José State University students Tommie Smith and John Carlos were awarded medals for their athletic efforts. However, the great athletic feat would soon be shadowed by one of the most memorable moments in the American Civil Rights Movement. Tommie Smith and John Carlos would protest the poor treatment of African-American people in the United States and stood to empower the African American community. This is a great symbol for the community of San José State University. Tommie Smith and John Carlos were both students at this prestigious university and showed San José State University students of the present and the future that students can make a difference on the global stage.",
             "address": "1 Washingtown Square",
             "city": "San José",
             "country": "United States",
@@ -1060,14 +1068,14 @@
       artist.innerHTML = 'by ' + prop.artist;
 
       var address = listing.appendChild(document.createElement('div'));
-      address.innerHTML = prop.address + ', ' + prop.city + ', ' + prop.state + " " + prop.postalCode;
+      address.innerHTML = prop.address + ', ' + prop.city + ', ' + prop.state + " " + prop.postalCode ;
 
       var artImage = listing.appendChild(document.createElement('div'));
-      artImage.innerHTML = "<img src=\"" + prop.image + "\">";
+      artImage.innerHTML = '<br/>' + "<img src=\"" + prop.image + "\">";
 
       var story = listing.appendChild(document.createElement('div'));
       if (prop.description) {
-        story.innerHTML = 'Description: ' + prop.description;
+        story.innerHTML = '<br/>' + prop.description;
       }
 
 
