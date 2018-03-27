@@ -41,26 +41,12 @@ art.features.forEach(function(marker, i) {
 	var el = document.createElement('div');
 	el.id = "marker-" + i;
 	el.className = 'marker';
-	//el.style.left='-50px';
-	//el.style.top='-50px';
 	// Add markers to the map at all points
 	new mapboxgl.Marker(el)
 			.setLngLat(marker.geometry.coordinates)
 			.addTo(map);
 
-/* Interactions with DOM markers
-art.features.forEach(function(marker) {
-	// Create a div element for the marker
-	var el = document.createElement('div');
-	// Add a class called 'marker' to each div
-	el.className = 'marker';
-	// By default the image for your custom marker will be anchored
-	// by its center. Adjust the position accordingly
-	new mapboxgl.Marker(el, { offset: [-50 / 2, -50 / 2] })
-		.setLngLat(marker.geometry.coordinates)
-		.addTo(map);
-*/
-	el.addEventListener('click', function(e) {
+el.addEventListener('click', function(e) {
 		var activeItem = document.getElementsByClassName('active');
 		// 1. Fly to the point
 		flyToArt(marker);
@@ -135,8 +121,10 @@ function buildLocationList(data) {
 		var address = listing.appendChild(document.createElement('div'));
 		address.innerHTML = prop.address + ', ' + prop.city + ', ' + prop.state + " " + prop.postalCode ;
 
-		var artImage = listing.appendChild(document.createElement('div'));
-		artImage.innerHTML = '<br/>' + "<img src=\"" + prop.image + "\">";
+    if (prop.image) {
+		  var artImage = listing.appendChild(document.createElement('div'));
+		  artImage.innerHTML = '<br/>' + "<img src=\"" + prop.image + "\">";
+    }
 
 		var story = listing.appendChild(document.createElement('div'));
 		if (prop.description) {
@@ -144,7 +132,7 @@ function buildLocationList(data) {
 		}
 
 	 link.addEventListener('click', function(e){
-			// Update the currentFeature to the store associated with the clicked link
+			// Update the currentFeature to the art associated with the clicked link
 			var clickedListing = data.features[this.dataPosition];
 
 			// 1. Fly to the point
@@ -156,7 +144,6 @@ function buildLocationList(data) {
 			// 3. Highlight listing in sidebar (and remove highlight for all other listings)
 			var activeItem = document.getElementsByClassName('active');
 
-			//TODO: fix issue - classList is not defined
 			if (activeItem[0]) {
 				 activeItem[0].classList.remove('active');
 			}
