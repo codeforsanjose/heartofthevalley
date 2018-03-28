@@ -71,7 +71,69 @@ var art = {
 					"state": "CA"
 				},
 			},
-
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+			 			-121.8872209,
+						37.3377011
+					]
+				},
+				"properties": {
+					"title": "Untitled Mural",
+					"artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
+				  "description": "Located at San José City Hall by 4th and Santa Clara St.",
+					"website": "https://www.instagram.com/fco1980/",
+					"address": "200 E Santa Clara St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95113",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+					 	-121.8738154,
+						37.3233353
+					]
+				},
+				"properties": {
+					"title": "Untitled Mural",
+					"artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
+					"description": "This mural of butterflies, gears and hands is located at Art Ark Gallery.",
+					"website": "https://www.instagram.com/fco1980/",
+					"address": "1035 S 6th St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95112",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.8972243,
+						37.3488104
+					]
+				},
+				"properties": {
+					"title": "Untitled Mural",
+					"artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
+					"description": "This mural of Godzilla, King Kong, Voltron, Ultraman, and Beast King was painted by Francisco Ramirez. It is located on the exterior of Zonkey, on the corner of 4th and Jackson St",
+					"website": "https://www.instagram.com/fco1980/",
+					"address": "2161 Jackson St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95112",
+					"state": "CA"
+				}
+			},
 			{
 			 "type": "Feature",
 			 "geometry": {
@@ -203,6 +265,26 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
+						 -121.9320302,
+						 37.3221995
+					 ]
+				 },
+				 "properties": {
+					 "title": "Untitled Mural",
+					 "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>, Alexander Flores and Ana Gonzalez",
+					 "description": "The mural features hummingbirds, gears, chuparosa, yarn, industrialization, and dandelions. This mural is located behind Time Deli near Bascom and San Carlos St",
+					 "address": "349 S Bascom Ave",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95128",
+					 "state": "CA"
+				 }
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
 						 -121.8970442,
 						 37.3485256
 					 ]
@@ -235,6 +317,87 @@ var art = {
 					 "city": "San José",
 					 "country": "United States",
 					 "postalCode": "95121",
+					 "state": "CA"
+				 }
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.9102589,
+						 37.3204961
+					 ]
+				 },
+				 "properties": {
+					 "title": "Untitled Mural",
+					 "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
+					 "description": "This mural is located at Good Karma Bikes",
+					 "website": "https://www.instagram.com/fco1980/",
+					 "address": "460 Lincoln Ave #25",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95126",
+					 "state": "CA"
+				 }
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.8839672,
+						 37.3273035
+					 ]
+				 },
+				 "properties": {
+					 "title": "Untitled Mural",
+					 "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a> and Ana Gonzalez",
+					 "description": "This mural is located at the corner of Reed and Market",
+					 "address": "S Market St",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95113",
+					 "state": "CA"
+				 }
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.912287,
+						 37.3318896
+					 ]
+				 },
+				 "properties": {
+					 "title": "Untitled Mural",
+					 "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a> and Rick Aswell",
+					 "description": "This mural of the fruits and Southern Pacific Railroad train car is located near Crema Coffee parking lot, on  The Alameda",
+					 "address": "1250 The Alameda",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95126",
+					 "state": "CA"
+				 }
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.8917575,
+						 37.3353364
+					 ]
+				 },
+				 "properties": {
+					 "title": "Untitled Mural at Be The Change Yoga",
+					 "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a> and <a href='https://www.instagram.com/maxdehart/' target='_blank'>Max DeHart</a>",
+					 "description": "This mural is located at Be the Change Yoga",
+					 "address": "52 S 1st St",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95113",
 					 "state": "CA"
 				 }
 			 },
