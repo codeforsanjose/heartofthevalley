@@ -87,6 +87,10 @@ h1 {
   padding: 20px 2px;
 }
 
+h3 a {
+  color: #f2e5f2;
+}
+
 a {
   color: darkorchid;
   text-decoration: none;
