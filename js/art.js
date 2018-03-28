@@ -3,9 +3,78 @@
  *		art.js
  */
 
-	var art = {
+var art = {
 		"type": "FeatureCollection",
 		"features": [
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+					   -121.8940066, 
+             37.3267022
+					]
+				},
+				"properties": {
+					"title": "Sophie Holding the World Up",
+					"description": "Sophie Holding the World Together is a portrait of nine-year-old Sophie Cruz, who has become a face of the American immigration reform movement. Born in Los Angeles to immigrants from Oaxaca, Mexico, Sophie first made headlines in 2015 when she crossed a police barrier during Pope Francis’s visit to Washington, DC, to hand the pontiff a letter asking him to help all immigrant children. <br/>The mural is collaboration between El Mac and The Propeller Group, as part of the collective’s ongoing project, Viet Nam The World Tour. It is commissioned by SJMA, in partnership with Empire 7 Studios and the Children’s Discovery Museum, in connection with the current exhibition, The Propeller Group, on view through March 25, 2018.",
+					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5a53b8e8c83025de53beb873/1515436270190/IMG_E59271.jpg?format=750w",
+					"artist": "<a href='http://elmac.net/' target='_blank'>El Mac (Miles MacGregor)</a>",
+          "website": "http://elmac.net/",
+					"address": "180 Woz Way",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95110",
+					"state": "CA"
+				},
+			},
+      {
+		"type": "FeatureCollection",
+		"features": [
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+					   -121.8853012, 
+             37.3509784
+					]
+				},
+				"properties": {
+					"title": "Unknown",
+					"description": "Katrina Marie Loera painted this mural around 2010. It's located  on the side of the handball court in Bakesto Park, on the 500 block of N 13th Street.",
+					"image": "https://igx.4sqi.net/img/general/width960/11256757_QtS4ZdYatncZx7U0T_anKV_Ki-GzbX1KEBj2DFWOHLc.jpg",
+					"artist": "<a href='https://sanjosecreatives.blogspot.com/2011/12/katrina-marie-loera.html' target='_blank'>Katrina Marie Loera</a>",
+          "website": "https://sanjosecreatives.blogspot.com/2011/12/katrina-marie-loera.html",
+					"address": "512 N. 13th St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95112",
+					"state": "CA"
+				},
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+					  -121.8895621, 
+            37.3490685
+					]
+				},
+				"properties": {
+					"title": "La Gran Cultura Resonance",
+          "description": "This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. This mural is located on the exterior of Guadalajara Market. Within the design is the face of the Maize God. Once held as one of the highest of God’s among the Mayan People, it was worshiped for the gift of the crop Maize (corn).",
+          "image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5684261acbced6a015741cbe/1451501083791/mural-for-web.jpg?format=1500w",
+					"artist": "Jesus Rodriguez, William Moran, Abel Gonzalez, John Barrick, Ivan Gonzalez, Emillo Gallegos and Tamiko Rast",
+          "website": "http://elmac.net/",
+					"address": "452 E Empire St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95112",
+					"state": "CA"
+				},
+			},
 			{
 				"type": "Feature",
 				"geometry": {
@@ -83,7 +152,7 @@
 					"image": "http://payload549.cargocollective.com/1/0/14342/13287395/pow-wow-san-jose_670.jpg",
           "website": "http://www.adelerenault.com/",
 					"description": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
-					"artist": "Adele Renault",
+					"artist": "<a href='http://www.adelerenault.com/' target='_blank'>Adele Renault</a>",
 					"address": "87 S Autumn St",
 					"city": "San José",
 					"country": "United States",
@@ -102,7 +171,7 @@
         },"properties": {
 					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
           "website": "http://www.jetromartinez.com/",
-					"artist": "Jet Martinez",
+					"artist": "<a href='http://www.jetromartinez.com/' target='_blank'>Jet Martinez</a>",
 					"address": "87 S Autumn St",
 					"city": "San José",
 					"country": "United States",
@@ -121,7 +190,7 @@
         },"properties": {
 					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
           "website": "http://caseygray.com/",
-					"artist": "Casey Gray",
+					"artist": "<a href='http://caseygray.com/' target='_blank'>Casey Gray</a>",
 					"address": "87 S Autumn St",
 					"city": "San José",
 					"country": "United States",
@@ -305,7 +374,7 @@
 				},
 				"properties": {
 					"title": "Afternoon",
-					"description": "'Afternoon' depicts a grandmother watching over a boy playing flute.",
+					"description": "'Afternoon' depicts a grandmother watching over a boy playing flute. This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5849d43ce58c620b5971f8da/1489697022793/Afternoon+for+website.jpg",
 					"artist": "Sainer",
 					"address": "87 N Almaden Blvd",
@@ -390,7 +459,7 @@
 			 "properties": {
 				 "title": "Eastridge Mall Mural - Aaron De La Cruz",
 				 "description": "Aaron De La Cruz writes: <br/> “I remembered taking trips with my Grandmother to the Fulton Mall (located in Downtown Fresno, CA) back in the mid 1980’s. The exterior of the mall had a water feature that ran through the walkway, connecting all the stores. There were many large scale sculptures and water fountains throughout. At the time, I didn’t pay attention to the artwork I was being exposed to, but it did capture my attention. What I’m trying to get at is, I recently found out that one of those sculptures was created by artist Pierre Auguste Renoir and is the only one in the world that the public can actually touch. I liked the idea that this work of art that some would consider inaccessible, was placed where some people could care less about it. I then started to think about all of the large public art pieces I was exposed to as a youth and how I remember thinking, “How could a person create something of that scale with their hands?” I happily accepted the offer, and here is the result.”",
-				 "artist": "Aaron De La Cruz",
+				 "artist": "<a href='http://www.aarondelacruz.com/' target='_blank'>Aaron De La Cruz</a>",
 				 "biography": "Aaron De La Cruz's work, though minimal and direct at first, tends to overcome barriers of separation and freely steps in and out of the realms of painting and design. The act and the marks themselves are very simple but tend to take on distinct and sometimes higher meanings in the broad range of mediums and contexts they appear in and on. His work finds strengths in the reduction of his interests in life to minimal information. De La Cruz gains from the idea of exclusion, just because you don't literally see it, doesn't mean that it's not there.",
 				 "image": "https://static1.squarespace.com/static/53ac662be4b073e1bdee6d0b/57a36d0f29687fa31c429489/591a8ae99f7456bde4022827/1494911729867/ADLC_EASTRIDGE_2017.png",
 				 "website": "http://www.aarondelacruz.com/",
@@ -436,7 +505,7 @@
 			 "properties": {
 				 "title": "Eastridge Mall Mural - Cyrcle",
 				 "image": "http://mms.businesswire.com/media/20170608006227/en/591679/4/Money_Shot_Cyrcle_small.jpg",
-				 "artist": "Cyrcle",
+				 "artist": "<a href='http://www.cyrcle.com/' target='_blank'>Cyrcle</a>",
 				 "biography": "CYRCLE is a two-man collective composed of David Leavitt (Davey Detail) and David Torres (Rabi) – both born in L.A. Their works can be seen all over the world and are in public and private collections including that of Shepard Fairey, Ari Emanuel, Sean Combs, and the MGM Grand in Las Vegas.",
 				 "website": "http://www.cyrcle.com/",
 				 "address": "2200 Eastridge Loop",
@@ -460,7 +529,7 @@
 				 "title": "Eastridge Mall Mural - Lila Gamellos",
 				 "description": "Lila Gamellos writes: For me, these all represent different sides of San José. What I think San José as well as, if not more so, East San José and Evergreen need some identity and a little confidence boost.  San Jose is awesome.  Why is it only the Sharks we boast?  What the world needs is love, so let’s start that at home.  I’ve wrapped my W shaped area with overwhelming displays of San Jose affection, past and present.",
 				 "image": "http://www.gemellosmurals.com/wp-content/uploads/2015/02/20170530_13322886801-768x334.jpg",
-				 "artist": "Lila Gamellos",
+				 "artist": "<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gamellos</a>",
 				 "website": "http://www.gemellosmurals.com/",
 				 "biography": 'Born, raised and trained in San José, Lila Gemellos started her own business over 7 years ago as a Mural artist. With over 25 years of training, Gemellos employs different styles confidently while distinguishing herself as a visual story teller and a local creative force. Gemellos brings her strong San José roots to her artistic narratives whenever possible. Gemellos creates new relationships between Art, Business and Technology – finding opportunities to publicize a Corporation’s good will or generate more traffic to a shopping center with hashtags and inspired photography. Lila prides herself in being the bringer of unicorns – making the clients’ vision come to life by listening and continuously asking how to make the mural more meaningful. Gemellos now looks to take her inspired narratives to the public art scene in the Bay Area.',
 				 "address": "2200 Eastridge Loop",
@@ -526,7 +595,7 @@
 			 "properties": {
 				 "title": "Doña Mayfair",
 				 "image": "https://static1.squarespace.com/static/51ffd83de4b0eefc5e9bc8e9/t/584b1f3e5016e1fb956cfb76/1481318221492/?format=1000w",
-				 "artist": "Sam Rodriguez",
+				  "artist": "<a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
 				 "description": "Sam Rodriguez shares: <br/> “I was really excited and proud to participate in this project as East San José, is where my family is rooted. The focus on this mural was the Mayfair neighborhood where the inspiring leader César Chávez once lived. This area was known as 'Sal Si Puede' (leave if you can), a twist on the United Farm Workers campaign slogan 'Si Se Puede' (Yes You Can). Though rich in culture, it's residents, mostly Mexican and other Latino groups, have historically experienced income, and justice inequality along with negative press. Today, it is good to see positive movement blooming throughout the area, as many grassroots efforts are being made to push East San José more toward a 'Si Se Puede' environment.” <a href='http://celebratemayfair.org/dona-mayfair/' target='_blank'>Learn more.</a>",
 				 "website": "http://samrodriguezart.com/",
 				 "biography": "Sam Rodriguez is an artist based out of San José, CA and have been fortunate to have had shown his work in public art spaces, museums, companies, galleries, internet, and editorial publications. For a number of years he was self-taught through the graffiti scene, until he later decided to expand his studies by pursuing a Bachelor in Fine Arts from California College of the Arts.  He has since blended what he absorbed from both experiences to create his current style.  At the moment, he is interested in two types of portraiture that he calls, 'Topographical Portraiture' and 'Type Faces'.  Topographical Portraits, are made by stylizing a portrait with topographical lines and shapes in a similar manner to those found through images on geographic maps. Type Faces, incorporate typography and portraiture. He developed these through countless studio sessions, to use as a platform for his interest in social, historic, and cultural hybridity.",
@@ -550,7 +619,7 @@
 			"properties": {
 				"title": "Guardian Tiger",
 				"image": "http://78.media.tumblr.com/819cf134daec2cf3f7d2cf3c2e64dd29/tumblr_o29cseYH1a1qatyzbo1_1280.jpg",
-				"artist": "Michael Borja",
+				"artist": "<a href='http://mikeborja.tumblr.com/' target='_blank'>Michael Borja</a>",
 				"website": "http://mikeborja.tumblr.com/",
 				"biography": "Mike Borja grew up in San José and studied New Media and Fine Art at the AAU in San Francisco. He loves creating visual art and thinking about concepts and ideas. When he was a little kid he would mix all sorts of liquids in a cup hoping a dragon would magically appear. Now, Mike mixes paint and other materials for other beautiful things to magically appear.",
 				"address": "396 S 1st St.",
@@ -572,7 +641,8 @@
 			"properties": {
 				"title": "Harts Dog Park Mural",
 				"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/582cafaf20099ed10677b69f/1481233516902/Untitled.jpg",
-				"artist": "Roan Victor",
+				"artist": "<a href='https://www.instagram.com/roanvictor/' target='_blank'>Roan Victor</a>",
+				"description": "This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 				"website": "https://www.instagram.com/roanvictor/",
 				"address": "194 W Santa Clara St.",
 				"city": "San José",
@@ -594,8 +664,8 @@
 			"properties": {
 				"title": "Here & There",
 				"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/597287b3cf81e0735c416082/1500678068733/7.jpg",
-				"description": "Likening the murals to journalism, Sam Rodriquez says, 'When I think of murals, I think of outdoor books. This recent wall marks the first of many that I plan to do, which would depict the cultural landscape of San José through observations and interviews of its residents. This will result in pieces that could only be found in San José.' Rodriquez was assisted in the execution of the wall by community volunteers. 'A lot of the people who helped out cared as much, if not more, about the painting than I did,” the artist says. 'They held up the standards as I would for my own paintings.' Some of the youth involved in an intervention program (Teaching Adolescents Skills in the Community), who worked on the mural, came back after the mural was finished and proudly showed family members their work.",
-				"artist": "Sam Rodriguez",
+				"description": "Likening the murals to journalism, Sam Rodriquez says, 'When I think of murals, I think of outdoor books. This recent wall marks the first of many that I plan to do, which would depict the cultural landscape of San José through observations and interviews of its residents. This will result in pieces that could only be found in San José.' Rodriquez was assisted in the execution of the wall by community volunteers. 'A lot of the people who helped out cared as much, if not more, about the painting than I did,” the artist says. 'They held up the standards as I would for my own paintings.' Some of the youth involved in an intervention program (Teaching Adolescents Skills in the Community), who worked on the mural, came back after the mural was finished and proudly showed family members their work. <br/>This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
+			  "artist": "<a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
 				"website": "http://samrodriguezart.com/",
 				"biography": "Sam Rodriguez is an artist based out of San José, CA and have been fortunate to have had shown his work in public art spaces, museums, companies, galleries, internet, and editorial publications. For a number of years he was self-taught through the graffiti scene, until he later decided to expand his studies by pursuing a Bachelor in Fine Arts from California College of the Arts.  He has since blended what he absorbed from both experiences to create his current style.  At the moment, he is interested in two types of portraiture that he calls, 'Topographical Portraiture' and 'Type Faces'.  Topographical Portraits, are made by stylizing a portrait with topographical lines and shapes in a similar manner to those found through images on geographic maps. Type Faces, incorporate typography and portraiture. He developed these through countless studio sessions, to use as a platform for his interest in social, historic, and cultural hybridity.",
 				"address": "349 E Empire St.",
@@ -641,7 +711,7 @@
 					"title": "Interview with an Icon",
 					"image": "http://ww2.kqed.org/arts/wp-content/uploads/sites/2/2016/06/IanYoung_CLakey.jpg",
 					"description": "This mural features six, present-day barbers servicing the lustrous locks of six,multicultural icons in their youth. Barber Jaisen Spencer combs the hair of Fela Kuti, the late Nigerian Afrobeat music pioneer and human rights activist. Dave Diggs gives a haircut to Muhammad Ali, late American professional boxer and activist. Mark Maxx, straight-razor shaves Johnny Cash, late American singer-songwriter, guitarist, actor, and author. Alfonzo Jordan cuts the mane of Bruce Lee, late Hong Kong and American actor, film director, martial artist, martial arts instructor, philosopher and founder of the martial art Jeet Kune Do. Ian Young cuts the short ‘fro of Maya Angelou, late American poet, memoirist, and civil rights activist. Amin Munye works on famed musician Carlos Santana's mustache.",
-					"artist": "Ian Young",
+					"artist": "<a href='http://quietgiantdesign.com/' target='_blank'>Ian Young</a>",
 					"website": "http://quietgiantdesign.com/",
 					"biography": "I create captivating visual concepts from scratch. I produce graphic, branding, illustration, hair and just about any other design you can think of.",
 					"address": "332 E. Santa Clara St.",
@@ -664,7 +734,7 @@
 				"properties": {
 					"title": "Labor of Our Love",
 					"image": "https://ww2.kqed.org/arts/wp-content/uploads/sites/2/2016/06/GalenOback_CLakey.jpg",
-					"artist": "Galen Oback",
+					"artist": "<a href='https://www.instagram.com/galenobackart/' target='_blank'>Galen Oback</a>",
 					"address": "260 N 1st St.",
 					"biography": "Bay Area Artist, Muralist. Doing art by the bay. Commissions/Inquiries: galen.oback@gmail.com",
 					"website": "https://www.instagram.com/galenobackart/",
@@ -686,8 +756,9 @@
 				},
 				"properties": {
 					"title": "Little Moment",
-					"artist": "NoseGo",
+					"artist": "<a href='https://www.nosego.com/' target='_blank'>NoseGo</a>",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5689fdb10ab377ae44ef1402/1451883959062/Final+Nosego.jpg",
+          "description": "This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 					"biography": "Yis 'Nosego' Goodwin  is a Philadelphia-based artist with a passion for illustration and media arts.  He mixes fine art with a contemporary style to deliver highly energetic work. His designs feature an assemblage of patterns, vibrant colors and characters derived from his imagination and his surrounding environment.",
 					"website": "https://www.nosego.com/",
 					"address": "140 Jackson St.",
@@ -753,7 +824,7 @@
 				"properties": {
 					"title": "Mural at The Studio Gym - Denis Korkh",
 					"image": "https://ww2.kqed.org/arts/wp-content/uploads/sites/2/2016/06/Poesia_Borja_Korkh_CLakey.jpg",
-					"artist": "Denis Korkh",
+					"artist": "<a herf='https://deniskorkh.tumblr.com/' target='_blank'>,Denis Korkh</a>",
 					"website": "https://deniskorkh.tumblr.com/",
 					"description": "In the mural collage photo, the one on the left is the one by Poesia, the center one is by Michael Borja and the right one is by Denis Korkh",
 					"address": "396 S 1st St.",
@@ -818,10 +889,11 @@
 				"properties": {
 					"title": "Old SJ",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5684269ba128e6cd9b4cd03e/1451501214715/empirestreet.jpg",
-					"artist": "Sam Rodriguez",
+					"artist": "<a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
 					"website": "http://samrodriguezart.com/",
 					"biography": "Sam Rodriguez is an artist based out of San José, CA and have been fortunate to have had shown his work in public art spaces, museums, companies, galleries, internet, and editorial publications. For a number of years he was self-taught through the graffiti scene, until he later decided to expand his studies by pursuing a Bachelor in Fine Arts from California College of the Arts.  He has since blended what he absorbed from both experiences to create his current style.  At the moment, he is interested in two types of portraiture that he calls, 'Topographical Portraiture' and 'Type Faces'.  Topographical Portraits, are made by stylizing a portrait with topographical lines and shapes in a similar manner to those found through images on geographic maps. Type Faces, incorporate typography and portraiture. He developed these through countless studio sessions, to use as a platform for his interest in social, historic, and cultural hybridity.",
 					"address": "270 E Empire St.",
+          "description": "This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 					"city": "San José",
 					"country": "United States",
 					"crossStreet": "at N 7th St and E Empire St.",
@@ -841,7 +913,7 @@
 				"properties": {
 					"title": "Olympic Black Power Statue - Tommie Smith & John Carlos",
 					"image": "img/TommieSmithJohnCarlosStatues_photoby_YanYinChoy.jpg",
-					"artist": "Rigo 23",
+					"artist": "<a href='https://www.facebook.com/pages/Rigo-23/138554102829939' target='_blank'>Rigo 23</a>",
 					"website": "https://www.facebook.com/pages/Rigo-23/138554102829939",
 					"biography": "Rigo 23 is a Portuguese muralist, painter, and political artist residing in San Francisco, California. He is known in the San Francisco community for having painted a number of large, graphic 'sign' murals including: One Tree next to the U.S. Route 101 on-ramp at 10th and Bryant Street, Innercity Home on a large public housing structure, Sky/Ground on a tall abandoned building at 3rd and Mission Street, and Extinct over a Shell gas station.",
 					"description": "On Oct. 16, 1968, Olympics in Mexico City, United States track athletes and San José State University students Tommie Smith and John Carlos were awarded medals for their athletic efforts. However, the great athletic feat would soon be shadowed by one of the most memorable moments in the American Civil Rights Movement. Tommie Smith and John Carlos would protest the poor treatment of African-American people in the United States and stood to empower the African American community. This is a great symbol for the community of San José State University. Tommie Smith and John Carlos were both students at this prestigious university and showed San José State University students of the present and the future that students can make a difference on the global stage.",
@@ -864,7 +936,7 @@
 				"properties": {
 					"title": "Peeps and Pups",
 					"description": "Mural at Mayfair Community Center Skate Park",
-					"artist": "Force129",
+					"artist": "<a href='http://www.force129.com/' target='_blank'>Force129</a>",
 					"biography": "Fernando 'FORCE129' Amaro Jr born & raised in San José, California. Currently working full time as a Artist & Designer and a stay at home dad. Working in mixed media allows me to work on a variety of projects and styles at any given time. Spray can Art is my first love but I also can work some magic on the computer utilizing Adobe Photoshop to take my art and your projects to the next level. If you are interested in collaborating or networking or having me bring your project to life let's connect send me a detailed message and we can go from there looking forward to hearing from you. Peace / Thanks for your interest in my Art & Design work.",
 					"website": "http://www.force129.com/",
 					"address": "467 S 1st Street",
@@ -886,7 +958,7 @@
 				"properties": {
 					"title": "Phylum of the Free",
 					"image": "http://ww2.kqed.org/arts/wp-content/uploads/sites/2/2016/06/JeffHemming_BEder.jpg",
-					"artist": "Jeffrey Andrade Hemming",
+					"artist": "<a href='http://www.andradehemming.com/' target='_blank'>Jeffrey Andrade Hemming</a>",
 					"website": "http://www.andradehemming.com/",
 					"biography": "Jeff Andrade Hemming is a Bay Area artist who paints in oil and creates  complex works of art. The style of work he makes falls in a maximalist genre. Jeff’s work shows a hyper-exuberant and complex overlaying of converging elements in an entropic manner. The elements are images of materials that connotes society’s excess materialism, and in addition, Jeff amalgamates the concept of the ever changing macro/micro-relations between humanity and his environment.",
 					"address": "30 S 1st St.",
@@ -929,8 +1001,9 @@
 				"properties": {
 					"title": "Santo Market",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/568425c2cbced6a0157418b1/1455301651617/john-barrick_0.jpg",
-					"artist": "John Barrick",
+					"artist": "<a href='https://www.johnbsigns.com/' target='_blank'>John Barrick</a>",
 					"biography": "John Barrick is a multidisciplinary artist from San José, California. His work includes large-scale murals, custom sign painting and fine art commissions.",
+				  "description": "This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 					"website": "https://www.johnbsigns.com/",
 					"address": "245 E Taylor St.",
 					"city": "San José",
@@ -952,7 +1025,7 @@
 				"properties": {
 					"title": "SoFA",
 					"image": "https://i0.wp.com/content-magazine.com/home/wp-content/uploads/2017/05/Murals_0010rt.jpg?resize=768%2C511",
-					"artist": "Sam Rodriguez",
+					"artist": "<a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
 					"description": "This mural about the South First Artwalk District is located behind The Studio gym.",
 					"address": "The Studio, 396 S 1st St",
 					"city": "San José",
@@ -974,7 +1047,7 @@
 					"title": "Symphony of Style; Color, Light, and Sound",
 					"description": "Street print design - located between S 1st Street and San Salvador Street in SOFA District, San José, California",
 					"image": "https://ww2.kqed.org/arts/wp-content/uploads/sites/2/2016/06/ScapeMartinez_CLakey.jpg",
-					"artist": "Scape Martinez",
+					"artist": "<a href='http://www.scapemartinez.com/' target='_blank'>Scape Martinez</a>",
 					"website": "http://www.scapemartinez.com/",
 					"address": "396 S 1st St.",
 					"city": "San José",
@@ -1036,7 +1109,7 @@
 				"properties": {
 					"title": "Untitled",
 					"image": "img/LocalColorHeartMural_by_FranciscoRamirez_photoby_YanYinChoy.jpg",
-					"artist": "Francisco Ramirez",
+					"artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
 					"biography": "I’m a self-taught artist from Mexico but mostly raised in San José California. I’ve worked with mostly acrylic and watercolor but I’ve also worked with pastel, oil, photography, murals , body painting and other mixed media.",
           "description": "Find this mural at Fountain Alley. This mural was produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>",
 					"website": "https://www.instagram.com/fco1980/",
@@ -1081,7 +1154,8 @@
 				"properties": {
 					"title": "Untitled mural by Op",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/59728a5d1b631b490c816ae3/1500678750196img_9003.jpg",
-					"artist": "Op",
+          "description": "This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.", 
+					"artist": "<a href='https://www.instagram.com/ohhpeeskee/' target='_blank'>Op</a>",
 					"website": "https://www.instagram.com/ohhpeeskee/",
 					"address": "748 E St John St.",
 					"city": "San José",
@@ -1165,7 +1239,7 @@
 					"properties": {
 						"title": "You are never strong enough where you don’t need help' - César Chávez",
 						"image": "img/CesarChavezQuoteMural_TomasTalamantes_photoby_yanyinchoy.jpg",
-						"artist": "Tomas Talamantes",
+						"artist": "<a href='https://www.facebook.com/wisper.t.talamantes' target='_blank'>Tomas Talamantes</a>",
 						"description": "Nunca eres lo suficientemente fuerte para no necesitar ayuda - César Chávez",
 						"website": "https://www.facebook.com/wisper.t.talamantes",
 						"address": "899 S 1st St.",
@@ -1175,6 +1249,5 @@
 						"state": "CA"
 					}
 				}
-	 ]
+  	 ]
  };
-
