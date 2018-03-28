@@ -1,5 +1,5 @@
 /*
- *	Heart of the Valley 
+ *	Heart of the Valley
  *		art.js
  */
 
@@ -11,7 +11,7 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					   -121.8940066, 
+					   -121.8940066,
              37.3267022
 					]
 				},
@@ -28,15 +28,12 @@ var art = {
 					"state": "CA"
 				},
 			},
-      {
-		"type": "FeatureCollection",
-		"features": [
 			{
 				"type": "Feature",
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					   -121.8853012, 
+					   -121.8853012,
              37.3509784
 					]
 				},
@@ -58,7 +55,7 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					  -121.8895621, 
+					  -121.8895621,
             37.3490685
 					]
 				},
@@ -80,13 +77,13 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8965597, 
+						-121.8965597,
             37.3341565
 					]
 				},
 				"properties": {
 					"title": "Vida Abundante",
-					"description": "The mural, “Life Abundant in Face of Death Imminent” by Bay Area tattoo artist Jim Miner in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, is inspired by the Egyptian Art Deco interior of the Hotel De Anza. The cornucopia pays homage to San José’s roots in agriculture, “the Valley of Heart’s Delight.’” The mural exhibited on August 26, 2016. It took about 4 weeks to complete, in collaboration with dozens of volunteers and 30 gallons of paint.",
+					"description": "The mural, Vida Abundante, or Life Abundant in Face of Death Imminent, by Bay Area tattoo artist Jim Miner in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, is inspired by the Egyptian Art Deco interior of the Hotel De Anza. The cornucopia pays homage to San José’s roots in agriculture, “the Valley of Heart’s Delight.’” The mural exhibited on August 26, 2016. It took about 4 weeks to complete, in collaboration with dozens of volunteers and 30 gallons of paint.",
 					"image": "https://static.wixstatic.com/media/382b8e_fecee55573074d63941d24c993ed5574~mv2_d_4809_1973_s_2.jpg/v1/fill/w_480,h_197,al_c,q_90,usm_0.66_1.00_0.01/382b8e_fecee55573074d63941d24c993ed5574~mv2_d_4809_1973_s_2.webp",
 					"artist": "Jim Miner",
 					"address": "233 W Santa Clara St",
@@ -123,7 +120,7 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.9000958, 
+						-121.9000958,
             37.3258542
 					]
 				},
@@ -144,8 +141,8 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201, 
-              37.3297542    
+              -121.9025201,
+              37.3297542
             ]
         },"properties": {
 					"title": "Gutter Paraidse",
@@ -165,8 +162,8 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201, 
-              37.3297542    
+              -121.9025201,
+              37.3297542
             ]
         },"properties": {
 					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
@@ -184,8 +181,8 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201, 
-              37.3297542    
+              -121.9025201,
+              37.3297542
             ]
         },"properties": {
 					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
@@ -203,7 +200,7 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8936249, 
+            -121.8936249,
             37.3478549
           ]
         },"properties": {
@@ -221,7 +218,7 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8936249, 
+            -121.8936249,
             37.3478549
           ]
         },"properties": {
@@ -242,7 +239,7 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-             -121.9133071, 
+             -121.9133071,
               37.3312882
             ]
         },"properties": {
@@ -260,7 +257,7 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-             -121.8959579, 
+             -121.8959579,
               37.3330949
             ]
         },"properties": {
@@ -278,7 +275,7 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.8987777, 
+              -121.8987777,
               37.3253611
             ]
         },"properties": {
@@ -296,8 +293,8 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8927333, 
-            37.3370561 
+            -121.8927333,
+            37.3370561
            ]
         },"properties": {
 					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
@@ -314,7 +311,7 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9134626, 
+              -121.9134626,
               37.3300271
             ]
         },"properties": {
@@ -332,7 +329,7 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.8869887, 
+              -121.8869887,
               37.3289321
             ]
         },"properties": {
@@ -350,7 +347,7 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.848412, 
+              -121.848412,
               37.3452983
             ]
         },"properties": {
@@ -1102,7 +1099,7 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					  -121.8894295, 
+					  -121.8894295,
             37.3361009
 					]
 				},
@@ -1154,7 +1151,7 @@ var art = {
 				"properties": {
 					"title": "Untitled mural by Op",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/59728a5d1b631b490c816ae3/1500678750196img_9003.jpg",
-          "description": "This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.", 
+          "description": "This mural was produced by <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 					"artist": "<a href='https://www.instagram.com/ohhpeeskee/' target='_blank'>Op</a>",
 					"website": "https://www.instagram.com/ohhpeeskee/",
 					"address": "748 E St John St.",
