@@ -1,5 +1,5 @@
 /*
- *	Heart of the Valley 
+ *	Heart of the Valley
  *		main.js
  */
 
@@ -19,7 +19,7 @@ var map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/light-v9',
 	center: [-121.893028, 37.335480],  // position in long, lat format
-	zoom: 12,
+	zoom: 10,
 	dragPan: true, // If true , the "drag to pan" interaction is enabled (see DragPanHandler)
 	trackResize: true, // If true, the map will automatically resize when the browser window resizes.
 	doubleClickZoom: true, //If true double click will zoom
@@ -82,10 +82,10 @@ function createPopUp(currentFeature, linkId) {
 				.setLngLat(currentFeature.geometry.coordinates)
 				.setHTML(
 					'<h3>' + currentFeature.properties.title + '</h3>' +
-					'<h4>' + `by ` + currentFeature.properties.artist + '<br/>' + 
-						`Address: ` +  currentFeature.properties.address + ', ' + 
-						currentFeature.properties.city + ', ' +  
-						currentFeature.properties.state + ' ' + 
+					'<h4>' + `by ` + currentFeature.properties.artist + '<br/>' +
+						`Address: ` +  currentFeature.properties.address + ', ' +
+						currentFeature.properties.city + ', ' +
+						currentFeature.properties.state + ' ' +
 						currentFeature.properties.postalCode + '</h4>'
 				 )
 				.addTo(map);
@@ -152,4 +152,3 @@ function buildLocationList(data) {
 		});
 	}
 }
-
