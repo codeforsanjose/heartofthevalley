@@ -142,8 +142,8 @@ var art = {
 				},
 				"properties": {
 					"title": "San José",
-					"artist": "<a href= https://www.instagram.com/j.duh_/' target='_blank'>J.Duh</a>",
-					"description": "This mural was painted by <a href= https://www.instagram.com/j.duh_/' target='_blank'>J.Duh</a>, and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>. It is located on the exterior of the PWC Building on Balbach St.",
+					"artist": "<a href='https://www.instagram.com/j.duh_/' target='_blank'>J.Duh</a>",
+					"description": "This mural was painted by <a href='https://www.instagram.com/j.duh_/' target='_blank'>J.Duh</a>, and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>. It is located on the exterior of the PWC Building on Balbach St.",
 					"address": "488 Almaden Blvd, Ste 1800",
 					"city": "San José",
 					"country": "United States",
@@ -840,8 +840,7 @@ var art = {
 				},
 				"properties": {
 					"title": "Mural at Crema Coffee - part of the Rolling Your Way Bike mural series On The Alameda",
-					"description": "The mural is part of the #RollingYourWay bike mural series #OnTheAlameda, painted by <a href='https://www.instagram.com/nandoid2485/' target='_blank'>@Nandoid2485</a>, and produced in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, was painted in collaboration with dozens of volunteers. It exhibited August 2016. Image source: <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>",
-					"image": "https://www.instagram.com/p/BH7elF0gOpF/?taken-by=the_exd",
+					"description": "The mural is part of the #RollingYourWay bike mural series #OnTheAlameda, painted by <a href='https://www.instagram.com/nandoid2485/' target='_blank'>@Nandoid2485</a>, and produced in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, was painted in collaboration with dozens of volunteers. It exhibited August 2016. View a photo <a href='https://www.instagram.com/p/BH7elF0gOpF/?taken-by=the_exd' target='_blank'>of the mural</a>",
 					"artist": "<a href='https://www.instagram.com/nandoid2485/' target='_blank'>@Nandoid2485</a>",
 					"address": "950 The Alameda",
 					"city": "San José",
@@ -1769,8 +1768,9 @@ var art = {
 			},
 			"properties": {
 				"title": "Guardian Tiger",
-				"artist": "<a href='http://mikeborja.tumblr.com/' target='_blank'>Michael Borja</a>",
+				"artist": "<a href='http://mikeborja.tumblr.com/' target='_blank'>Mike Borja</a>",
 				"website": "http://mikeborja.tumblr.com/",
+				"description": "This mural is the middle in a series of three murals on the exterior wall of The Studio gym, facing the E San Salvador St. This mural is painted by Mike Borja.",
 				"address": "396 S 1st St.",
 				"city": "San José",
 				"country": "United States",
