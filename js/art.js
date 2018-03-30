@@ -11,8 +11,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-             -121.8887115,
-						 37.3310773
+             -121.88859,
+						 37.33113
 					]
 				},
 				"properties": {
@@ -32,8 +32,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					   -121.8940066,
-             37.3267022
+					   -121.89177,
+						 37.32663
 					]
 				},
 				"properties": {
@@ -54,8 +54,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						 -121.8940066,
-						 37.3267022
+						-121.89177,
+						37.32663
 					]
 				},
 				"properties": {
@@ -76,14 +76,114 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-			 			-121.8872209,
-						37.3377011
+						-121.87912,
+						37.32193
+					]
+				},
+				"properties": {
+					"title": "Clandestine Mural",
+					"artist": "<a href='https://www.instagram.com/jimmypaints/' target='_blank'>Jim Fonseca</a> and <a href='https://www.instagram.com/itg3000/' target='_blank'>Ivan Gonzalez</a>",
+					"description": "This mural was painted by <a href='https://www.instagram.com/jimmypaints/' target='_blank'>Jim Fonseca</a> and <a href='https://www.instagram.com/itg3000/' target='_blank'>Ivan Gonzalez</a>, and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>. It is located at Clandestine Brewery.",
+					"address": "980 S 1st Street Ste B",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95113",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.86209,
+						37.33759
+					]
+				},
+				"properties": {
+					"title": "McKinley Elementary School Community Garden Mural",
+					"artist": "<a href='http://mikeborja.tumblr.com/' target='_blank'>Mike Borja</a> and <a href='https://www.instagram.com/upbeat111/' target='_blank'>Freddie Vega</a>",
+					"description": "This mural was spearheaded by <a href='http://mikeborja.tumblr.com/' target='_blank'>Mike Borja</a>. <a href='https://www.instagram.com/upbeat111/' target='_blank'>Freddie Vega</a> assisted with the painting. In February 2014, Heart of Chaos produced this mural in collaboration with McKinley Elementary School, Veggielution, Living Better Lives and the local community. <a href=‘https://heartofchaosblog.wordpress.com/2014/02/02/mckinley-elementary-school-community-mural-garden/' target=‘_blank’>Learn more.</a>",
+					"address": "651 Macredes Ave",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95116",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.89137,
+ 						37.33591
+					]
+				},
+				"properties": {
+					"title": "Untitled Mural",
+					"artist": "<a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant",
+					"description": "This mural was painted by <a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant</a>, and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>. It is located on the exterior of the Chase building on Santa Clara St.",
+					"address": "55 W Santa Clara St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95113",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.88887,
+						37.32718
+					]
+				},
+				"properties": {
+					"title": "San José",
+					"artist": "<a href= https://www.instagram.com/j.duh_/' target='_blank'>J.Duh</a>",
+					"description": "This mural was painted by <a href= https://www.instagram.com/j.duh_/' target='_blank'>J.Duh</a>, and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>. It is located on the exterior of the PWC Building on Balbach St.",
+					"address": "488 Almaden Blvd, Ste 1800",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95113",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						 -121.88875,
+						 37.33871
+					]
+				},
+				"properties": {
+					"title": "Spartan Superway",
+					"artist": "<a href='https://www.instagram.com/jimmypaints/' target='_blank'>Jim Fonseca</a> and <a href='https://www.instagram.com/itg3000/' target='_blank'>Ivan Gonzalez</a>",
+					"description": "This mural was painted by <a href='https://www.instagram.com/jimmypaints/' target='_blank'>Jim Fonseca</a> and <a href='https://www.instagram.com/itg3000/' target='_blank'>Ivan Gonzalez</a>, and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a> and <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. It is located at the Spartan Superway St. John Station.",
+					"address": "128 E St John St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95113",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+			 			-121.88673,
+						37.33789
 					]
 				},
 				"properties": {
 					"title": "Untitled Mural",
 					"artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
-				  "description": "Located at San José City Hall by 4th and Santa Clara St.",
+				  "description": "Located near 4th and Santa Clara St.",
 					"website": "https://www.instagram.com/fco1980/",
 					"address": "200 E Santa Clara St",
 					"city": "San José",
@@ -97,8 +197,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					 	-121.8738154,
-						37.3233353
+					 	-121.87376,
+						37.32312
 					]
 				},
 				"properties": {
@@ -118,8 +218,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8972243,
-						37.3488104
+						-121.89538,
+						37.34864
 					]
 				},
 				"properties": {
@@ -139,8 +239,8 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-					 	-121.8864028,
-						37.3298237
+					 	-121.88656,
+						37.32986
 				 ]
 			 },
 			 "properties": {
@@ -161,8 +261,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8808869,
-						 37.3226982
+						 -121.88047,
+						 37.32275
 					 ]
 				 },
 				 "properties": {
@@ -183,8 +283,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8832655,
-						 37.3351874
+						 -121.88261,
+						 37.33537
 					 ]
 				 },
 				 "properties": {
@@ -205,8 +305,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8989314,
-						 37.3509711
+						 -121.89674,
+						 37.35094
 					 ]
 				 },
 				 "properties": {
@@ -225,14 +325,14 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-								-121.8096313,
-								37.3456295
+								-121.80626,
+								37.34729
 					 ]
 				 },
 				 "properties": {
 					 "title": "A Seed of Infinite Creation",
-					 "artist": "Carlos Rodriguez",
-					 "description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a> and produced in collaboration with City Year San José; it is located at Mt. Pleasant High School.",
+					 "artist": "<a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>",
+					 "description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a> and produced in collaboration with City Year San José and Mt Pleasant High School community; it is located at Mt. Pleasant High School.",
 					 "address": "1750 S White Rd",
 					 "city": "San José",
 					 "country": "United States",
@@ -245,8 +345,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-							-121.8863278,
-							37.3324797
+							-121.88659,
+							37.33234
 					 ]
 				 },
 				 "properties": {
@@ -265,8 +365,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.9320302,
-						 37.3221995
+						 -121.93194,
+						 37.32262
 					 ]
 				 },
 				 "properties": {
@@ -285,8 +385,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8970442,
-						 37.3485256
+						 -121.89471,
+						 37.34861
 					 ]
 				 },
 				 "properties": {
@@ -305,8 +405,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 	-121.8431044,
-							37.3114214
+							-121.84104,
+							37.31150
 					 ]
 				 },
 				 "properties": {
@@ -325,8 +425,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.9102589,
-						 37.3204961
+						-121.90828,
+						37.32002
 					 ]
 				 },
 				 "properties": {
@@ -346,8 +446,8 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8839672,
-						 37.3273035
+						 -121.88385,
+						 37.32748
 					 ]
 				 },
 				 "properties": {
@@ -366,15 +466,15 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.912287,
-						 37.3318896
+						 -121.91176,
+						 37.33177
 					 ]
 				 },
 				 "properties": {
 					 "title": "Untitled Mural",
 					 "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a> and Rick Aswell",
-					 "description": "This mural of the fruits and Southern Pacific Railroad train car is located near Crema Coffee parking lot, on  The Alameda",
-					 "address": "1250 The Alameda",
+					 "description": "This mural of the fruits and Southern Pacific Railroad train car is located on the exterior of Crema Coffee Roasting, near its parking lot, on  The Alameda in San José.",
+					 "address": "1202 The Alameda",
 					 "city": "San José",
 					 "country": "United States",
 					 "postalCode": "95126",
@@ -386,15 +486,15 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8917575,
-						 37.3353364
+						 -121.88972,
+						 37.33526
 					 ]
 				 },
 				 "properties": {
 					 "title": "Untitled Mural at Be The Change Yoga",
 					 "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a> and <a href='https://www.instagram.com/maxdehart/' target='_blank'>Max DeHart</a>",
 					 "description": "This mural is located at Be the Change Yoga",
-					 "address": "52 S 1st St",
+					 "address": "52 S 1st St, Suite 320",
 					 "city": "San José",
 					 "country": "United States",
 					 "postalCode": "95113",
@@ -406,15 +506,15 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 		-121.8301674,
-								37.3657906
+						 		-121.82746,
+								37.36551
 					 ]
 				 },
 				 "properties": {
-					 "title": "Heart of the Valley's Delight (East San José, California Alum Rock Village Mural)",
-					 "artist": "Carlos Rodriguez and James Lick High School students",
-					 "description": "Students from James Lick High School came up with the ideas for the mural. The students and the community collaborated with artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a> to produce the mural at the corner of Alum Rock and White Rd. To learn more, view the video from <a href='https://www.youtube.com/watch?v=vZIMbmhevBs&feature=share' target='_blank'>Alum Rock Village Action Committee</a>.",
-					 "address": "1 S White Rd",
+					 "title": "Heart of the Valley's Delight",
+					 "artist": "<a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a> and James Lick High School students",
+					 "description": "Students from James Lick High School came up with the ideas for the mural. The students and the community collaborated with artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a> to produce the mural at the corner of Alum Rock and White Rd. To learn more, view the video from <a href='https://www.youtube.com/watch?v=vZIMbmhevBs&feature=share' target='_blank'>Alum Rock Village Action Committee</a>. The mural is located at the corner of Alum Rock Ave and S White Rd, on the exterior wall of El Rodeo Menswear store.",
+					 "address": "3100 Alum Rock Ave",
 					 "city": "San José",
 					 "country": "United States",
 					 "postalCode": "95127",
@@ -426,14 +526,14 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8957648,
-						 37.3511812
+						 -121.89577,
+						 37.35107
 					 ]
 				 },
 				 "properties": {
 					 "title": "Kokeshis de San Jo",
-					 "artist": "Sam Rodriguez",
-					 "description": "This artbox was painted by Sam Rodriguez. It is located on the corner of 5th and Taylor.",
+					 "artist": "<a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
+					 "description": "This artbox was painted by <a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>. It is located on the corner of 5th and Taylor by Fuji Towers.",
 					 "address": "200 E Taylor St",
 					 "city": "San José",
 					 "country": "United States",
@@ -446,14 +546,14 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8507106,
-						 37.3203132
+						 -121.84928,
+						 37.31914
 					 ]
 				 },
 				 "properties": {
 					 "title": "She's Got Game",
 					 "artist": "Paulette Peterson",
-					 "description": "This public artwork is located at Yerba Buena High School.",
+					 "description": "This public artwork is located at Yerba Buena High School. Yerba Buena High School students created this game boards with installation artist Paulette Peterson and Yerba Buena's art director John Mora. Six concrete lunch tables were into game boards that challenge players to learn womxn history. To learn more, read the <a href='http://www.esuhsd.org/documents/Board%20-%20Admin/News_Releases_ARCHIVE/News_Release_2001/NR_20010227a.pdf' target='_blank'>press release</a>.",
 					 "address": "1855 Lucretia Ave",
 					 "city": "San José",
 					 "country": "United States",
@@ -466,15 +566,15 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-						 -121.8970875,
-						 37.3505002,
+						 -121.89527,
+						 37.34837
 					 ]
 				 },
 				 "properties": {
 					 "title": "Cholo Daruma",
-					 "artist": "Orly Locqulao",
-					 "description": "This artbox was painted by Orly Locqulao. It is located on the corner of 4th and Taylor.",
-					 "address": "149 E Taylor St",
+					 "artist": "<a href='https://www.instagram.com/orlycukui/' target='_blank'>Orly Locquiao</a>",
+					 "description": "This artbox was painted by <a href='https://www.instagram.com/orlycukui/' target='_blank'>Orly Locquiao</a>. It is located on the corner of 4th and Jackson, near Omogari restaurant.",
+					 "address": "",
 					 "city": "San José",
 					 "country": "United States",
 					 "postalCode": "95112",
@@ -486,14 +586,34 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
-		 			 		-121.8682967,
-							37.337472
+		 			 		-121.92268,
+							37.29972
 					 ]
 				 },
 				 "properties": {
-					 "title": "Untitled Mural",
-					 "artist": "Paul J. Gonzalez",
-					 "description": "Find the mural at Olinder Elementary and park",
+					 "title": "Los Gatos Creek Trail at Leigh Ave",
+					 "artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a> and South Bay Clean Creeks Coalition",
+					 "description": "The mural is located at Leigh Ave, underneath the bridge, on the Los Gatos Creek Trail. The mural was painted by Paul J Gonzalez and South Bay Clean Creeks Coalition volunteers in August 2017.",
+					 "address": "Los Gatos Creek Trail, underneath Leigh Avenue bridge",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95126",
+					 "state": "CA"
+				 }
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+		 			 		-121.86613,
+							37.33749
+					 ]
+				 },
+				 "properties": {
+					 "title": "Coyote Creek Mural at Olinder Elementary School",
+					 "artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					 "description": "The mural is located at Selma Olinder Elementary School. Painted by Paul Gonzalez, the mural was produced in collaboration with Liz Neves, Paul Ledesma, Imelda Rodriguez, CommUniverCity San José and the Olinder Elementary School community. The mural features this message: 'Active and caring communities create healthy environments.' It was painted in 2015.",
 					 "address": "890 E William St",
 					 "city": "San José",
 					 "country": "United States",
@@ -506,8 +626,8 @@ var art = {
  				"geometry": {
  					"type": "Point",
  					"coordinates": [
- 					 -121.8990529,
-					 37.3495624
+ 					 -121.89885,
+					 37.34955
  					]
  				},
  				"properties": {
@@ -523,12 +643,32 @@ var art = {
  				},
  			},
 			{
+			 "type": "Feature",
+			 "geometry": {
+				 "type": "Point",
+				 "coordinates": [
+					-121.89096,
+					37.34812
+				 ]
+			 },
+			 "properties": {
+				 "title": "Forever Laughter",
+				 "description": "This mural is painted by <a href='https://www.instagram.com/longneck4life/' target='_blank'>Girafa</a>, and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>, POW!WOW! San José, and <a href='https://www.instagram.com/ungramr/' target='_blank'>Ungramr</a>. It was exhibited at the 2017 POW!WOW! San José festival.",
+				 "artist": "Girafa",
+				 "address": "525 N 7th St",
+				 "city": "San José",
+				 "country": "United States",
+				 "postalCode": "95112",
+				 "state": "CA"
+			 },
+		 },
+			{
 				"type": "Feature",
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-							-121.883625,
-							37.3384318
+						 -121.88382,
+						 37.33829
 					]
 				},
 				"properties": {
@@ -548,15 +688,15 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8507475,
-						37.340311
+						-121.84778,
+						37.34069
 					]
 				},
 				"properties": {
-					"title": "Untitled Mural",
-					"description": "You can find this mural at Veggielution community farm at Emma Prusch Park in San José. <br/>Image source: Yan-Yin Choy.",
+					"title": "Veggielution Farm Outdoor Kitchen Mural",
+					"description": "<a href='http://www.muralmusicarts.org/' target='_blank'>MMAP</a> painted this mural with NVIDIA volunteers at Veggielution, as part of NVIDIA's Project Inspire in 2012. MMAP artist Sarah Woodward and NVIDIA engineer Randy Reynolds collaborated to design the mural. Sarah Woodward, <a href='http://www.sm-artgroup.com/' target='_blank'>Scape Martinez</a>, Laura Nagle and Yetunde Olagbaju completed the mural highlights. The mission was commissioned by NVIDIA. You can find this mural at Veggielution community farm's outdoor kitchen at Emma Prusch Park in San José. Read this <a href='http://www.muralmusicarts.org/blog/nvidia-2012/' target='_blank'>blog</a> to learn more. <br/>Image source: Yan-Yin Choy.",
 					"image": "img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg",
-					"artist": "Unknown",
+					"artist": "<a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a> team, including Sarah Woodward, Scape Martinez, Laura Nagle and Yetunde Olagbaju; Randy Reynolds and NVIDIA volunteers",
 					"address": "647 S King Rd",
 					"city": "San José",
 					"country": "United States",
@@ -569,13 +709,13 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					   -121.8853012,
-             37.3509784
+					   -121.88425,
+						 37.35127
 					]
 				},
 				"properties": {
 					"title": "Untitled Mural",
-					"description": "Katrina Marie Loera painted this mural around 2010. It's located on the side of the handball court in Bakesto Park, on the 500 block of N 13th Street.",
+					"description": "Katrina Marie Loera painted this mural around 2010. It's located on the side of the handball court in Backesto Park, on the 500 block of N 13th Street.",
 					"artist": "<a href='https://sanjosecreatives.blogspot.com/2011/12/katrina-marie-loera.html' target='_blank'>Katrina Marie Loera</a>",
           "website": "https://sanjosecreatives.blogspot.com/2011/12/katrina-marie-loera.html",
 					"address": "512 N. 13th St",
@@ -590,8 +730,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8908322,
-						37.347818
+						-121.89062,
+						37.34796
 					]
 				},
 				"properties": {
@@ -610,8 +750,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
- 						-121.8429264,
-						37.3939433
+ 						-121.84098,
+						37.39408
 					]
 				},
 				"properties": {
@@ -630,16 +770,15 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					  -121.8895621,
-            37.3490685
+					  -121.88721,
+						37.34921
 					]
 				},
 				"properties": {
 					"title": "La Gran Cultura Resonance",
-          "description": "This mural was painted by Jesus Rodriguez, William Moran, Abel Gonzalez, John Barrick, Ivan Gonzalez, Emillo Gallegos and Tamiko Rast,and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. This mural is located on the exterior of Guadalajara Market. Image Source: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+          "description": "The mural is located at the Guadalajara Restaurante, on the side facing North 10th Street. This mural was painted by Jesus Rodriguez, William Moran, Abel Gonzalez, John Barrick, Ivan Gonzalez, Emillo Gallegos and Tamiko Rast,and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. This mural is located on the exterior of Guadalajara Market. Image Source: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
           "image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5684261acbced6a015741cbe/1451501083791/mural-for-web.jpg?format=1500w",
 					"artist": "Jesus Rodriguez, William Moran, Abel Gonzalez, John Barrick, Ivan Gonzalez, Emillo Gallegos and Tamiko Rast",
-          "website": "http://elmac.net/",
 					"address": "452 E Empire St",
 					"city": "San José",
 					"country": "United States",
@@ -652,13 +791,34 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8965597,
-            37.3341565
+						-121.88722,
+						37.34927
+					]
+				},
+				"properties": {
+					"title": "Untitled Mural at Guadalajara Restaurante",
+					"description": "This mural is on the top of Guadalajara Restaurante facing East Empire St. It was painted by <a href='http://www.csuchico.edu/nsci/alumni-friends/distinguished-alumni/2007.shtml' target='_blank'>Edward Earl Tarver III</a> in 1986 and restored in 2007. Image Source: <a href='https://www.flickr.com/people/empirestreet/' target='_blank'>Empire St -- Jackie Vasquez</a>. Learn more about the <a href='https://www.mercurynews.com/2007/08/30/rodriguez-chemist-returns-to-san-jose-to-update-mural/' target='_blank'>mural</a>.",
+					"image": "https://farm1.staticflickr.com/795/27223805168_7a0e664dcd_z.jpg",
+					"artist": "Edward Earl Tarver III",
+					"address": "452 E Empire St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95112",
+					"state": "CA"
+				},
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.89515,
+						37.33436
 					]
 				},
 				"properties": {
 					"title": "Vida Abundante",
-					"description": "The mural, Vida Abundante, or Life Abundant in Face of Death Imminent, by Bay Area tattoo artist Jim Miner in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, was painted in collaboration with dozens of volunteers. It exhibited August 2016. Image source: <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>",
+					"description": "The mural, Vida Abundante, or Life Abundant in Face of Death Imminent, by Bay Area tattoo artist <a href='https://www.instagram.com/tattoosbyjimminer/' target='_blank'>Jim Miner</a> in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, was painted in collaboration with dozens of volunteers. It exhibited August 2016. Image source: <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>",
 					"image": "https://static.wixstatic.com/media/382b8e_fecee55573074d63941d24c993ed5574~mv2_d_4809_1973_s_2.jpg/v1/fill/w_480,h_197,al_c,q_90,usm_0.66_1.00_0.01/382b8e_fecee55573074d63941d24c993ed5574~mv2_d_4809_1973_s_2.webp",
 					"artist": "Jim Miner",
 					"address": "233 W Santa Clara St",
@@ -669,13 +829,35 @@ var art = {
 					"state": "CA"
 				},
 			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.90820,
+						37.33135
+					]
+				},
+				"properties": {
+					"title": "Mural at Crema Coffee - part of the Rolling Your Way Bike mural series On The Alameda",
+					"description": "The mural is part of the #RollingYourWay bike mural series #OnTheAlameda, painted by <a href='https://www.instagram.com/nandoid2485/' target='_blank'>@Nandoid2485</a>, and produced in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, was painted in collaboration with dozens of volunteers. It exhibited August 2016. Image source: <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>",
+					"image": "https://www.instagram.com/p/BH7elF0gOpF/?taken-by=the_exd",
+					"artist": "<a href='https://www.instagram.com/nandoid2485/' target='_blank'>@Nandoid2485</a>",
+					"address": "950 The Alameda",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95126",
+					"state": "CA"
+				},
+			},
+
       {
         "type": "Feature",
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.8895232,
-              37.3360534
+              -121.88960,
+							37.33614
           ]
         },
         "properties": {
@@ -696,14 +878,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-				  	-121.845925,
-						37.3514877
+				  	-121.84412,
+						37.35111
 					]
 				},
 				"properties": {
 					"title": "Garden of Strength",
 					"artist": "Fernanda D'Agostino",
-					"description": "This is located at the Mayfair Community Center.",
+					"description": "This mural is located at the Mayfair Community Center.",
 					"address": "2039 Kammerer Ave",
 					"city": "San José",
 					"country": "United States",
@@ -716,14 +898,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.9000958,
-            37.3258542
+						 -121.89809,
+						 37.32581
 					]
 				},
 				"properties": {
 					"title": "People Ready",
-					"artist": "Jeff Meadows",
-					"description": "This mural was painted by Jeff Meadows, and exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
+					"artist": "<a href='https://www.instagram.com/jeffmeadows_arts/' target='_blank'>Jeff Meadows</a>",
+					"description": "This mural was painted by <a href='https://www.instagram.com/jeffmeadows_arts/' target='_blank'>Jeff Meadows</a>, and exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 					"address": "486 W San Carlos St",
 					"city": "San José",
 					"country": "United States",
@@ -736,13 +918,13 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201,
-              37.3297542
+              -121.90047,
+							37.32970
             ]
         },"properties": {
 					"title": "Gutter Paraidse",
           "website": "http://www.adelerenault.com/",
-					"description": "This mural was painted by Adele Renault, and exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"description": "This mural was painted by <a href='http://www.adelerenault.com/' target='_blank'>Adele Renault</a>, and exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. It is located on the exterior wall of Poor House Bistro, on the side facing San Fernando Street.",
 					"artist": "<a href='http://www.adelerenault.com/' target='_blank'>Adele Renault</a>",
 					"address": "87 S Autumn St",
 					"city": "San José",
@@ -756,11 +938,12 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201,
-              37.3297542
+              -121.90051,
+							37.32971
             ]
         },"properties": {
-					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"title": "Untitled Mural",
+					"description": "This mural was painted by <a href='http://www.jetromartinez.com/' target='_blank'>Jet Martinez</a> and exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. It is located on the exterior wall of Poor House Bistro, on the side facing Montgomery Street.",
           "website": "http://www.jetromartinez.com/",
 					"artist": "<a href='http://www.jetromartinez.com/' target='_blank'>Jet Martinez</a>",
 					"address": "87 S Autumn St",
@@ -775,8 +958,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-				 		-121.8563697,
-						37.352768
+				 		-121.85436,
+						37.35279
 					]
 				},
 				"properties": {
@@ -794,11 +977,12 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201,
-              37.3297542
+              -121.90028,
+							37.32966
             ]
         },"properties": {
-					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"title": "Untitled Mural",
+					"description": "This mural was painted by <a href='http://caseygray.com/' target='_blank'>Casey Gray</a> and exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
           "website": "http://caseygray.com/",
 					"artist": "<a href='http://caseygray.com/' target='_blank'>Casey Gray</a>",
 					"address": "87 S Autumn St",
@@ -813,12 +997,13 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8936249,
-            37.3478549
+            -121.89133,
+						37.34789
           ]
         },"properties": {
-					"title": "Murals exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
-					"artist": "Amine Rastgar, Robbie Api, Griffin, Doper and Wisper",
+					"title": "Untitled Murals",
+					"description": "Murals exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"artist": "<a href='http://instagram.com/gigamelted/' target='_blank'>Amine Rastgar</a>, <a href='http://instagram.com/chgyyrscrenammme/' target='_blank'>Robbie Api</a>, <a href='http://instagram.com/griffinone/' target='_blank'>Griffin</a>, Doper, and <a href='https://www.instagram.com/wispertfl/' target='_blank'>Wisper</a>",
 					"address": "251 E Empire Street",
 					"city": "San José",
 					"country": "United States",
@@ -831,12 +1016,12 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8936249,
-            37.3478549
+            -121.89126,
+						37.34773
           ]
         },"properties": {
         	"title": "Cyclorilla",
-          "description": "Cyclorilla was painted by Sean Boyels. This mural was exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+          "description": "Cyclorilla was painted by <a href='https://www.instagram.com/seanboyles38th/' target='_blank'>Sean Boyles</a>. This mural was exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
 					"artist": "<a href='https://www.instagram.com/seanboyles38th/' target='_blank'>Sean Boyles</a>",
 					"address": "251 E Empire Street",
 					"city": "San José",
@@ -845,19 +1030,37 @@ var art = {
 					"state": "CA"
 				},
 			},
-
+		{
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 	-121.92456,
+							37.33404
+						 ]
+				 },"properties": {
+					 "title": "Park Station Hashery Mural",
+					 "description": "This mural was painted by <a href='https://www.instagram.com/ohmaigawd/' target='_blank'>Ben Henderson</a> and <a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant</a>. It was commissioned by <a href='http://www.parkstationhashery.com/' target='_blank'>Park Station Hashery.</a> View a photo of the <a href='https://www.instagram.com/p/BJCQ8WUBjrV/?taken-by=ohmaigawd' target='_blank'>mural</a>.",
+					 "artist": "<a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant</a> and <a href='https://www.instagram.com/ohmaigawd/' target='_blank'>Ben Henderson</a>",
+					 "address": "1701 Park Ave",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95126",
+					 "state": "CA"
+				 },
+			 },
      {
         "type": "Feature",
         "geometry": {
           "type": "Point",
           "coordinates": [
-             -121.9133071,
-              37.3312882
+             -121.91112,
+						 37.33107
             ]
         },"properties": {
 					"title": "Choose Your Own Adventure",
-					"description": "This mural was painted by Lacey Bryant and Ben Henderson. It was exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
-					"artist": "Lacey Bryant and Ben Henderson",
+					"description": "This mural was painted by <a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant</a> and <a href='https://www.instagram.com/ohmaigawd/' target='_blank'>Ben Henderson</a>. It was exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. View Ben's video of the completed <a href='https://www.instagram.com/p/BeB3oDxFeq6/?taken-by=ohmaigawd' target='_blank'>mural</a>.",
+					"artist": "<a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant</a> and <a href='https://www.instagram.com/ohmaigawd/' target='_blank'>Ben Henderson</a>",
 					"address": "1068 The Alameda",
 					"city": "San José",
 					"country": "United States",
@@ -870,11 +1073,12 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-             -121.8959579,
-              37.3330949
+             -121.89389,
+						 37.33281
             ]
         },"properties": {
-					"title": "Mural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"title": "Untitled Mural",
+					"description": "This mural was painted by pro_gress ural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
 					"artist": "pro_gress",
 					"address": "44 S Almaden Blvd",
 					"city": "San José",
@@ -888,12 +1092,13 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.8987777,
-              37.3253611
+              -121.89815,
+							37.32578
             ]
         },"properties": {
-					"title": "Mural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
-					"artist": "Kristin Farr",
+					"title": "Untitled Mural - San José Learning Center",
+					"description": "Mural painted by <a href='https://www.instagram.com/kristinfarr/' target='_blank'>Kristin Farr</a> and exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"artist": "<a href='https://www.instagram.com/kristinfarr/' target='_blank'>Kristin Farr</a>",
 					"address": "490 W San Carlos St",
 					"city": "San José",
 					"country": "United States",
@@ -906,11 +1111,12 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8927333,
-            37.3370561
+            -121.89095,
+						37.33652
            ]
         },"properties": {
-					"title": "Mural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"title": "Untitled Mural",
+					"description": "Mural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
 					"artist": "Ricky Watts",
 					"address": "45 N 1st Street",
 					"city": "San José",
@@ -924,12 +1130,13 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9134626,
-              37.3300271
+              -121.91117,
+							37.33000
             ]
         },"properties": {
-					"title": "Murals exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
-					"artist": "Ken Davis and Lauren Napolitano",
+					"title": "Rise Above",
+					"description": "This mural was painted by <a href='https://www.instagram.com/coolhandken/' target='_blank'>Ken Davis</a> and <a href='https://www.instagram.com/peptalks/' target='_blank'>Lauren Napolitano</a>. It was exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"artist": "<a href='https://www.instagram.com/coolhandken/' target='_blank'>Ken Davis</a> and <a href='https://www.instagram.com/peptalks/' target='_blank'>Lauren Napolitano</a>",
 					"address": "1043 Garland Ave",
 					"city": "San José",
 					"country": "United States",
@@ -942,12 +1149,13 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.8869887,
-              37.3289321
+              -121.88468,
+							37.32900
             ]
         },"properties": {
-					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
-					"artist": "TRAV MSK",
+					"title": "Mural - The Stage",
+					"description": "This mural was painted by <a href='https://www.instagram.com/travmsk/' target='_blank'>TRAVMSK</a> and exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. The mural is locatead on the exterior back wall of the San José Stage Company.",
+					"artist": "<a href='https://www.instagram.com/travmsk/' target='_blank'>TRAVMSK</a>",
 					"address": "490 S 1st St",
 					"city": "San José",
 					"country": "United States",
@@ -960,14 +1168,14 @@ var art = {
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.848412,
-              37.3452983
+              -121.84772,
+							37.34525
             ]
         },"properties": {
-					"title": "408 Mural",
-					"description": "This mural was painted by Aaron De La Cruz; it was exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
-					"artist": "Aaron De La Cruz",
-					"address": "440 King Road",
+					"title": "Zona Rosa",
+					"description": "This mural was painted by <a href='https://www.instagram.com/aarondelacruz/' target='_blank'>Aaron De La Cruz</a>. It was exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. It is located in the Pink Elephant Shopping Plaza, on the exterior wall facing Virginia Avenue.",
+					"artist": "<a href='http://www.aarondelacruz.com/' target='_blank'>Aaron De La Cruz</a>",
+					"address": "440 S King Road",
 					"city": "San José",
 					"country": "United States",
 					"postalCode": "95116",
@@ -979,8 +1187,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8968265,
-						37.3357211
+						-121.89625,
+						37.33462
 					]
 				},
 				"properties": {
@@ -1001,8 +1209,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8420132,
-						37.3386531
+						-121.84232,
+						37.33859
 					]
 				},
 				"properties": {
@@ -1021,13 +1229,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						 -121.8302482,
-						 37.3653899
+						 -121.82830,
+						 37.36514
 					]
 				},
 				"properties": {
 					"title": "Alum Rock Garden",
 					"artist": "Jim Hirschfield and Sonya Ishii",
+					"description": "This public artwork is located at the Dr. Roberto Cruz Alum Rock Branch Library on Alum Rock Ave and White Rd.",
 					"address": "3090 Alum Rock Ave",
 					"city": "San José",
 					"country": "United States",
@@ -1040,15 +1249,15 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						 -121.8494207,
-						 37.3992851
+						 -121.84700,
+						 37.39939
 					]
 				},
 				"properties": {
 					"title": "Guardians of the Garden City",
 					"artist": "Kipp Kobayashi and Marta Perlas",
 					"description": "Public artwork located at Fire Station 19",
-					"address": "3292  Sierra Road",
+					"address": "3292 Sierra Road",
 					"city": "San José",
 					"country": "United States",
 					"postalCode": "95132",
@@ -1060,8 +1269,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-			 			-121.9714065,
-						37.4246249
+			 			-121.96910,
+						37.42463
 					]
 				},
 				"properties": {
@@ -1080,8 +1289,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8335001,
-						 37.3687324
+						-121.83202,
+						37.36983
 					]
 				},
 				"properties": {
@@ -1100,8 +1309,8 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-					-121.8825436,
-					37.3222816,
+					-121.88019,
+					37.32226
 				]
 			},
 			"properties": {
@@ -1115,13 +1324,34 @@ var art = {
 				"state": "CA"
 			},
 		},
+	{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+ 						-121.89022,
+						37.33543
+				]
+			},
+			"properties": {
+				"title": "Good Karma Artisan Ales & Cafe Mural",
+				"artist": "<a href='https://www.instagram.com/ohmaigawd/' target='_blank'>Ben Henderson</a>, <a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant</a>, <a href='https://www.instagram.com/drewroulette/' target='_blank'>Drew Roulette</a>, and <a href='https://www.instagram.com/sir.beardo/' target='_blank'>Sir Beardo</a>",
+				"description": "This mural was painted by <a href='https://www.instagram.com/ohmaigawd/' target='_blank'>Ben Henderson</a>, <a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant</a>, <a href='https://www.instagram.com/drewroulette/' target='_blank'>Drew Roulette</a>, and <a href='https://www.instagram.com/sir.beardo/' target='_blank'>Sir Beardo</a>. It is located on the exterior wall of <a href='http://goodkarmasj.com/' target='_blank'>Good Karma Artisan Ales & Cafe</a>, a local vegan cafe with craft ales.",
+				"address": "37 S 1st St",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95113",
+				"state": "CA"
+			},
+		},
+
 		{
 			"type": "Feature",
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
- 						-121.8847259,
-						37.3284362
+ 						-121.88479,
+						37.32829
 				]
 			},
 			"properties": {
@@ -1131,7 +1361,7 @@ var art = {
 				"address": "500 S 1st St",
 				"city": "San José",
 				"country": "United States",
-				"postalCode": "95110",
+				"postalCode": "95113",
 				"state": "CA"
 			},
 		},
@@ -1140,18 +1370,18 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-						-121.884416,
-						37.3280113,
+						-121.88403,
+						37.32733
 				]
 			},
 			"properties": {
 				"title": "Red Tree",
 				"artist": "Dio Mendoeza",
-				"description": "Red Tree is located at Parque De Los Pobladores.",
+				"description": "Red Tree is located at the southern point of Parque De Los Pobladores, near the intersection of S Market, S 1st and E Reed St.",
 				"address": "500 S 1st St",
 				"city": "San José",
 				"country": "United States",
-				"postalCode": "95110",
+				"postalCode": "95113",
 				"state": "CA"
 			},
 		},
@@ -1160,8 +1390,8 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-						-121.884416,
-						37.3280113,
+						-121.88457,
+						37.32787
 				]
 			},
 			"properties": {
@@ -1180,18 +1410,18 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-						-121.8732784,
-						37.3444443
+						-121.87183,
+						37.34556
 				]
 			},
 			"properties": {
-				"title": "Urban Rain; Touching the Earth, Touching the River; Spiritual Stonehenge, Shapeshifters 1-3",
-				"artist": "Jackie Brookner, and Scape Martinez",
-				"description": "Urban Rain and Touching the Earth, Touching the River are made by Jackie Brookner. Spiritual Stonehenge, Shapeshifters 1-3 were made by Scape Martinez. These public artworks are located at Parque De Los Pobladores.",
-				"address": "500 S 1st St",
+				"title": "Spiritual Stonehenge",
+				"artist": "<a href='http://www.sm-artgroup.com/' target='_blank'>Scape Martinez</a>",
+				"description": "Spiritual Stonehenge is a series of vinyl murals located inside and outside the Roosevelt Community Center, at the north entrance view, east view (inside), and juice bar view (inside). To learn more <a href='http://www.sm-artgroup.com/project-3/' target='_blank'>read about the murals.</a> The series were created by <a href='http://www.sm-artgroup.com/' target='_blank'>Scape Martinez</a>.",
+				"address": "901 E Santa Clara St",
 				"city": "San José",
 				"country": "United States",
-				"postalCode": "95110",
+				"postalCode": "95116",
 				"state": "CA"
 			},
 		},
@@ -1200,14 +1430,54 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-						-121.835619,
-						37.2850463
+					-121.87176,
+					37.34545
 				]
 			},
 			"properties": {
-				"title": "Various Public Artworks",
-				"artist": "Roman De Salvo, Sam Rodriguez and Therese May",
-				"description": "Roman De Salvo made 'Seven for Seven Trees'. Sam Rodriguez made 'Potential' and 'Create', and Therese May made 'Animal Spiral' and 'Butterfly Dreams'. <br/> These public artworks are located at Seven Trees Community Center.",
+				"title": "Shapeshifters 1-3",
+				"artist": " <a href='http://www.sm-artgroup.com/' target='_blank'>Scape Martinez</a>",
+				"description": "<a href='http://www.sm-artgroup.com/' target='_blank'>Scape Martinez</a> painted these site-integrated murals inside the Roosevelt Community Center. Read more about <a href='http://www.sm-artgroup.com/project-2/'>Shapeshifter 1</a>, <a href='http://www.sm-artgroup.com/project-5/'>Shapeshifter 2</a>, and <a href='http://www.sm-artgroup.com/ss3/'>Shapeshifter 3</a>",
+				"address": "901 E Santa Clara St",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95116",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.87187,
+					37.34554
+				]
+			},
+			"properties": {
+				"title": "Urban Rain; Touching the Earth, and Touching the River",
+				"artist": "Jackie Brookner",
+				"description": "Urban Rain and Touching the Earth, Touching the River were created by Jackie Brookner. You can find these sculptures at the Roosevelt Community Center.",
+				"address": "901 E Santa Clara St",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95116",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+						-121.83368,
+						37.28404
+				]
+			},
+			"properties": {
+				"title": "Potential",
+				"artist": "Sam Rodriguez and Matthew Rodriguez",
+				"description": "Sam Rodriguez and Matthew Rodriguez created these series of panels, consisting of parts of a low rider bicycle model kit. It is located in the Seven Trees Branch Library, between the entrance and the Children's area. <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Potential-Seven-Trees-Branch--494' target='_blank'>Learn more</a>.",
 				"address": "3590 Cas Dr",
 				"city": "San José",
 				"country": "United States",
@@ -1215,14 +1485,73 @@ var art = {
 				"state": "CA"
 			},
 		},
-
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+						-121.83337,
+						37.28407
+				]
+			},
+			"properties": {
+				"title": "Create",
+				"artist": "Sam Rodriguez",
+				"description": "Sam Rodriguez made this bench, with the word 'CREATE', which is located inside the Seven Trees Community Center.",
+				"address": "3590 Cas Dr",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95111",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.83314,
+					37.28401
+				]
+			},
+			"properties": {
+				"title": "Animal Spiral and Butterfly Dreams",
+				"artist": "Therese May",
+				"description": "Therese May created these two 14-foot square quilts. They are located inside the Seven Trees Community Center. They were moved there in 2013; previously the quilts were at the San José Convention Center. <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Animal-Spiral-and-Butterfly-D-510' target='_blank'>Learn more</a>.",
+				"address": "3590 Cas Dr",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95111",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.83304,
+					37.28410
+				]
+			},
+			"properties": {
+				"title": "Seven for Seven Trees",
+				"artist": "Roman de Salvo",
+				"description": "Roman de Salvo designed seven recreational play elements for the recreational area. For the public art elements, Roman used trees that were previously scheduled for removal. <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Seven-for-Seven-Trees-Seven-T-493' target='_blank'>Learn more</a>.",
+				"address": "3590 Cas Dr",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95111",
+				"state": "CA"
+			},
+		},
 			{
 			 "type": "Feature",
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-					 -121.8884402,
-					 37.3306112
+					 -121.88613,
+					 37.33066
 				 ]
 			 },
 			 "properties": {
@@ -1230,7 +1559,7 @@ var art = {
 				 "image": "img/Annodomini-collage_mural_by_CarolynRyderCooley_LenaWolff_DanielJesseLewis_JessieRoseVala_DavidChoe_Bruno9Li_Klone_AdrianLee_KnowHope_photoby_YanYinChoy.jpg",
 				 "artist": "Carolyn Ryder Cooley, Lena Wolff, Daniel Jesse Lewis, Jessie Rose Vala, David Choe, Bruno 9Li, Klone, Adrian Lee, and Know Hope",
 				 "address": "366 S 1st St.",
-				 "description": "This collage of murals on the side of Anno Domini gallery are painted by Carolyn Ryder Cooley, Lena Wolff, Daniel Jesse Lewis, Jessie Rose Vala, David Choe, Bruno 9Li, Klone, Adrian Lee, and Know Hope. <br/>Image source: Yan-Yin Choy.",
+				 "description": "This mural collage is located on the exterior wall of Anno Domini gallery; these murals are painted by Carolyn Ryder Cooley, Lena Wolff, Daniel Jesse Lewis, Jessie Rose Vala, David Choe, Bruno 9Li, Klone, Adrian Lee, and Know Hope. These murals were produced by <a href='http://galleryad.com/' target='_blank'>Anno Domini</a>. <br/>Image source: Yan-Yin Choy.",
 				 "city": "San José",
 				 "country": "United States",
 				 "postalCode": "95113",
@@ -1242,13 +1571,14 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-					 -121.8958982,
-					 37.3199604
+					 -121.89400,
+					 37.31928
 				 ]
 			 },
 			 "properties": {
 				 "title": "Aztec Calendar Mural",
 				 "artist": "Antonio Torres",
+				 "description": "This mural is located at Briebach Park, near the basketball courts.",
 				 "address": "450 W Virginia St.",
 				 "city": "San José",
 				 "country": "United States",
@@ -1261,16 +1591,16 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-					 -121.8815958,
-					 37.3357633
+					 -121.88126,
+					 37.33583
 				 ]
 			 },
 			 "properties": {
 				 "title": "César E. Chávez Monument: The Arch of Dignity, Equality, and Justice",
 				 "image": "img/CesarChavezMonument_by_JudithBaca_photoby_yanyinchoy-COLLAGE.jpg",
-				 "description": "This monument pays tribute to the legacy of César Chávez, Dolores Huerta, Mahatma Gandhi, and the UFW movement for dignity, equality and justice. <br/>Image sources: Yan-Yin Choy.",
+				 "description": "This monument pays tribute to the legacy of César Chávez, Dolores Huerta, Mahatma Gandhi, and the UFW movement for dignity, equality and justice. The monument is located on El Paseo de César E. Chávez, by San José State University - Student Union. <br/>Image sources: Yan-Yin Choy.",
 				 "artist": "Judith F. Baca",
-				 "address": "San José State University, 1 Washington Sq.",
+				 "address": "1 Washington Sq.",
 				 "city": "San José",
 				 "country": "United States",
 				 "postalCode": "95192",
@@ -1282,8 +1612,8 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-						 -121.8155584,
-						 37.3255328
+					 	-121.81454,
+						37.32341
 				 ]
 			 },
 			 "properties": {
@@ -1304,8 +1634,8 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-						 -121.8155584,
-						 37.3255328
+					 	-121.81291,
+						37.32508
 				 ]
 			 },
 			 "properties": {
@@ -1325,8 +1655,8 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-						 -121.8155584,
-						 37.3255328
+					 	-121.81196,
+						37.32639
 				 ]
 			 },
 			 "properties": {
@@ -1347,8 +1677,8 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-						 -121.8155584,
-						 37.3255328
+					 	-121.81191,
+						37.32567
 				 ]
 			 },
 			 "properties": {
@@ -1369,17 +1699,17 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-					 -121.8914073,
-					 37.3474999
+					 -121.89160,
+					 37.34778
 				 ]
 			 },
 			 "properties": {
 				 "title": "Empty Vessel",
 				 "image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5681fe85a2bab87f93eb8fe4/1451359879081/img_6047.jpg?format=750w",
 				 "artist": "Andrew Schoultz",
-				 "description": "This mural was painted by Andrew Schoultz, and produced in collaboration with Empire Seven Studios.<br/>Image Source: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+				 "description": "This mural was painted by Andrew Schoultz, and produced in collaboration with Empire Seven Studios. The mural is located by the train tracks near the intersection of N 6th and E Empire St. <br/>Image Source: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
 				 "website": "http://www.andrewschoultz.com/",
-				 "address": "256 E Empire St.",
+				 "address": "251 E Empire St.",
 				 "city": "San José",
 				 "country": "United States",
 				 "crossStreet": "at 6th St and E Empire St near the train tracks",
@@ -1392,14 +1722,15 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-					 -121.8780478,
-					 37.333793
+					 	-121.87767,
+						37.33338
 				 ]
 			 },
 			 "properties": {
 				 "title": "Dolores Huerta Mural",
 				 "artist": "Tom Dyer",
-				 "address": "327 E San Salvador St.",
+				 "description": "This mural is located near the back of the Associated Students César Chávez Community Action Center Garden; it's located on E San Salvador St between 8th and 9th Streets.",
+				 "address": "372 E San Salvador St.",
 				 "city": "San José",
 				 "country": "United States",
 				 "postalCode": "95112",
@@ -1411,8 +1742,8 @@ var art = {
 			 "geometry": {
 				 "type": "Point",
 				 "coordinates": [
-					 -121.856375,
-					 37.352768
+					 	-121.85467,
+						37.35247
 				 ]
 			 },
 			 "properties": {
@@ -1432,8 +1763,8 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-					-121.8879794,
-					37.3303372
+					-121.88582,
+					37.33022
 				]
 			},
 			"properties": {
@@ -1452,8 +1783,8 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-					-121.8957534,
-					37.334517
+					-121.89338,
+					37.33447
 				]
 			},
 			"properties": {
@@ -1475,8 +1806,8 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-					-121.8921222,
-					37.3484772
+					-121.88981,
+					37.34841
 				]
 			},
 			"properties": {
@@ -1498,34 +1829,13 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-					-121.8921222,
-					37.3484772
-				]
-			},
-			"properties": {
-				"title": "Unrest",
-				"description": "This mural was painted by Poesia and Sam Rodriguez. You can find it at Kiem Service Laundromat.",
-				"artist": "<a href='http://poesiatranscend.com/' target='_blank'>Poesia</a> and <a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
-				"address": "349 E Empire St.",
-				"city": "San José",
-				"country": "United States",
-				"crossStreet": "at N 8th St and E Empire St.",
-				"postalCode": "95112",
-				"state": "CA"
-			}
-		},
-		{
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					-121.8902825,
-					37.3376642
+					-121.88814,
+					37.33756
 				]
 			},
 			"properties": {
 				"title": "Homage",
-				"description": "This mural is a tribute to John Carlos and Tommie Smith’s protest on Oct. 16, 1968 at the Olympics in Mexico City. United States track athletes and San José State University students Tommie Smith and John Carlos took a stand when they received their medals. They protested the unjust treatment of African American people in the United States. They took a stand against poverty and inequality. Image source: Yan-Yin Choy.",
+				"description": "This mural is a tribute to John Carlos and Tommie Smith’s protest on Oct. 16, 1968 at the Olympics in Mexico City. United States track athletes and San José State University students Tommie Smith and John Carlos took a stand when they received their medals. They protested the unjust treatment of African American people in the United States. They took a stand against poverty and inequality. This mural was produced by <a href='http://galleryad.com/' target='_blank'>Anno Domini</a> and <a href='http://sjdowntown.com/' target='_blank'>San José Downtown Association</a> in 2005. Image source: Yan-Yin Choy.",
 				"image": "img/Homage_by_ChrisDuncan_PaulUrich_photoby_yanyinchoy.jpg",
 				"artist": "Chris Duncan and Paul Urich",
 				"address": "135 E Santa Clara St.",
@@ -1541,8 +1851,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8833868,
-						37.3392621
+						-121.88342,
+						37.33934
 					]
 				},
 				"properties": {
@@ -1562,8 +1872,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
- 						-121.8726155,
-						37.3171379
+						-121.87245,
+						37.31647
 					]
 				},
 				"properties": {
@@ -1582,15 +1892,15 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8953685,
-						37.3401058
+						-121.89320,
+						37.34007
 					]
 				},
 				"properties": {
 					"title": "Labor of Our Love",
 					"image": "https://static.wixstatic.com/media/382b8e_9a625a744020419e8cc7e0562fae7ce3~mv2_d_5988_1926_s_2.jpg/v1/fill/w_1200,h_386,al_c,q_90,usm_0.66_1.00_0.01/382b8e_9a625a744020419e8cc7e0562fae7ce3~mv2_d_5988_1926_s_2.webp",
 					"artist": "<a href='https://www.instagram.com/galenobackart/' target='_blank'>Galen Oback</a>",
-					"description": "This mural was painted by <a href='https://www.instagram.com/galenobackart/' target='_blank'>Galen Oback</a>, and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>. <br/>Image Source: <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>",
+					"description": "This mural was painted by <a href='https://www.instagram.com/galenobackart/' target='_blank'>Galen Oback</a>, and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>. It is located on the exterior wall of the Workingman's Emporium. <br/>Image Source: <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>",
 					"address": "260 N 1st St.",
 					"website": "https://www.instagram.com/galenobackart/",
 					"country": "US",
@@ -1605,8 +1915,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8866404,
-						37.3211075
+						-121.88667,
+						37.32101
 					]
 				},
 				"properties": {
@@ -1625,8 +1935,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-							-121.8865341,
-							37.3210563
+						-121.88657,
+						37.32101
 					]
 				},
 				"properties": {
@@ -1645,15 +1955,15 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8978591,
-						37.3480803
+						-121.89563,
+						37.34802
 					]
 				},
 				"properties": {
 					"title": "Little Moment",
 					"artist": "<a href='https://www.nosego.com/' target='_blank'>NoseGo</a>",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5689fdb10ab377ae44ef1402/1451883959062/Final+Nosego.jpg?format=750w",
-          "description": "This mural was done by Yis 'Nosego' Goodwin, and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. <br/>Image Source: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
+          "description": "This mural was done by Yis 'Nosego' Goodwin, and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. It was commissioned by Nichi Bei Bussan store, and it is located on the exterior wall of the store. <br/>Image Source: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 					"website": "https://www.nosego.com/",
 					"address": "140 Jackson St.",
 					"city": "San José",
@@ -1668,13 +1978,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8566928,
-						37.3526833
+						-121.85486,
+						37.35240
 					]
 				},
 				"properties": {
-					"title": "Mural at Mexican Heritage Plaza",
-					"artist": "Unknown",
+					"title": "Espiritu y Corazon",
+					"artist": "Precita Eyes Muralists",
+					"description": "This mural was painted around 2004. It is located at the Mexican Heritage Plaza.",
 					"address": "1700 Alum Rock Ave",
 					"city": "San José",
 					"country": "United States",
@@ -1688,8 +1999,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8566928,
-						37.3526833
+						-121.85488,
+						37.35251
 					]
 				},
 				"properties": {
@@ -1709,8 +2020,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8879794,
-						37.3303372
+						-121.88577,
+						37.33023
 					]
 				},
 				"properties": {
@@ -1730,15 +2041,15 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8879794,
-						37.3303372
+						-121.88584,
+						37.33021
 					]
 				},
 				"properties": {
 					"title": "Untitled Mural",
 					"artist": "<a href='http://poesiatranscend.com/' target='_blank'>Poesia</a>",
 					"website": "http://poesiatranscend.com/",
-					"description": "There are three murals side-by-side on the exterior wall of The Studio Gym.  The mural on the left side is by <a href='http://poesiatranscend.com/' target='_blank'>Poesia</a>.",
+					"description": "There are three murals side-by-side on the exterior wall of The Studio Gym, on the San Salvador St side of the building. The mural on the left side is by <a href='http://poesiatranscend.com/' target='_blank'>Poesia</a>. The murals were supported by <a href='http://www.phantomgalleries.com/' target='_blank'>Phantom Galleries</a>  and the SubZERO Festival.",
 					"address": "396 S 1st St.",
 					"city": "San José",
 					"country": "United States",
@@ -1751,8 +2062,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8386949,
-						37.3439391
+						-121.83723,
+						37.34343
 					]
 				},
 				"properties": {
@@ -1771,8 +2082,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8930177,
-						37.3475237
+						-121.89096,
+						37.34760
 					]
 				},
 				"properties": {
@@ -1781,7 +2092,7 @@ var art = {
 					"artist": "<a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
 					"website": "http://samrodriguezart.com/",
 					"description": "This mural painted by <a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>, and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. Image source: Empire Seven Studios.",
-					"address": "270 E Empire St.",
+					"address": "251 E Empire St.",
 					"city": "San José",
 					"country": "United States",
 					"crossStreet": "at N 7th St and E Empire St.",
@@ -1794,8 +2105,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8877396,
-						37.3289492
+						-121.84412,
+						37.35111
 					]
 				},
 				"properties": {
@@ -1815,8 +2126,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-							-121.976236,
-							37.3053789
+						-121.97798,
+						37.30554
 					]
 				},
 				"properties": {
@@ -1835,13 +2146,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.892009,
-						37.335663
+						-121.88986,
+						37.33567
 					]
 				},
 				"properties": {
 					"title": "Phylum of the Free",
 					"artist": "<a href='http://www.andradehemming.com/' target='_blank'>Jeffrey Andrade Hemming</a>",
+					"description": "This mural was produced by <a href='http://www.phantomgalleries.com/' target='_blank'>Phantom Galleries</a> and <a href='http://sjdowntown.com/' target='_blank'>San José Downtown Association in 2015.</a>",
 					"website": "http://www.andradehemming.com/",
 					"address": "30 S 1st St.",
 					"city": "San José",
@@ -1856,13 +2168,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8945308,
-						37.3493987
+						-121.89391,
+						37.34932
 					]
 				},
 				"properties": {
 					"title": "Ryu",
 					"artist": "Horimoto and State of Grace",
+					"description": "The mural is located on the exterior side of the Shanghai building, on the top, above the Biscuits store.",
 					"address": "221 Jackson St.",
 					"city": "San José",
 					"country": "United States",
@@ -1876,8 +2189,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8973815,
-						37.3516584
+						-121.89527,
+						37.35175
 					]
 				},
 				"properties": {
@@ -1899,8 +2212,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.847156,
-						37.3412365
+						-121.84637,
+						37.34036
 					]
 				},
 				"properties": {
@@ -1919,14 +2232,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8879794,
-						37.3303372
+						-121.88567,
+						37.33031
 					]
 				},
 				"properties": {
 					"title": "SoFA",
-					"artist": "<a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
-					"description": "This mural is located behind The Studio gym.",
+					"artist": "Bu Nation, Abel Gonzalez and <a href='http://samrodriguezart.com/' target='_blank'>Sam Rodriguez</a>",
+					"description": "This mural is located behind The Studio gym. It was produced by <a href='http://www.svcreates.org/about/history/' target='_blank'>1stAct Silicon Valley</a> and <a href='http://sofadistrict.org/' target='_blank'>SoFA District</a> in 2009.",
 					"address": "The Studio, 396 S 1st St",
 					"city": "San José",
 					"country": "United States",
@@ -1939,15 +2252,16 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8879794,
-						37.3303372
+						-121.88598,
+						37.33013
 					]
 				},
 				"properties": {
 					"title": "Symphony of Style; Color, Light, and Sound",
-					"artist": "<a href='http://www.scapemartinez.com/' target='_blank'>Scape Martinez</a>",
-					"website": "http://www.scapemartinez.com/",
-					"address": "396 S 1st St.",
+					"artist": "<a href='http://www.sm-artgroup.com/' target='_blank'>Scape Martinez</a>",
+					"description": "This mural is located at the intersection of S 1st Street and E San Salvador Streets.",
+					"website": "http://www.sm-artgroup.com/",
+					"address": "S 1st St and E San Salvador St.",
 					"city": "San José",
 					"country": "United States",
 					"postalCode": "95113",
@@ -1959,14 +2273,35 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8834871,
-						37.3211268
+						-121.87217,
+						37.35135
 					]
 				},
 				"properties": {
-					"title": "Mural at Washington Elementary School",
+					"title": "Love Mother Earth",
 					"artist": "Carlos Rodriguez",
-					"description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>. It is located at Washington Elementary School.",
+					"description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>. Sunrise Middle School sixth and seventh grade students collaborated to design and implement the mural with Carlos in June 2017. View a <a href='https://www.instagram.com/p/BVDNwNlAseF/?taken-by=carlosrmk' target='_blank'>picture of the mural</a>.",
+					"address": "1149 E Julian St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95116",
+					"state": "CA"
+				}
+			},
+
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.88274,
+						37.32095
+					]
+				},
+				"properties": {
+					"title": "Enlightenment Mural at Washington Elementary School",
+					"artist": "Carlos Rodriguez",
+					"description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>, and produced in collaboration with Santa Clara University and Washington Elementary School. It is located at Washington Elementary School. View a <a href='https://www.instagram.com/p/BSIlGvDA3tF/?taken-by=carlosrmk' target='_blank'>picture of the mural.</a>",
 					"address": "100 Oak St",
 					"city": "San José",
 					"country": "United States",
@@ -1979,15 +2314,15 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8883792,
-						37.3305361
+						-121.88575,
+						37.33050
 					]
 				},
 				"properties": {
 					"title": "Tribute to Rahsaan Roland Kirk",
 					"image": "img/Tribute_to_Rahsaan_Roland_Kirk_muralby_RogerOurthiague_ChrisAnway_photoby_YanYinChoy.jpg",
 					"artist": "Roger Ourthiague and Chris Anway",
-					"description": "This mural was painted by Roger Ourthiague and Chris Anway. You can find it behind Cafe Stritch.Image source: Yan-Yin Choy",
+					"description": "This mural is a tribute to the late jazz legend Rahsaan Roland Kirk; it is located behind Cafe Stritch. The mural was painted by Roger Ourthiague and Chris Anway. The mural was produced by <a href='http://www.cafestritch.com/' target='_blank'>Cafe Stritch</a> in 2014. Image source: Yan-Yin Choy",
 					"address": "374 S 1st St",
 					"city": "San José",
 					"country": "United States",
@@ -2000,13 +2335,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8864959,
-						37.3283802
+						-121.88453,
+						37.32851
 					]
 				},
 				"properties": {
-					"title": "Untitled Mural at <a href='http://maclaarte.org/' target='_blank'>MACLA</a>",
-					"artist": "Aaron De La Cruz",
+					"title": "Untitled Mural",
+					"description": "This mural was painted by <a href='https://www.instagram.com/aarondelacruz/' target='_blank'>Aaron De La Cruz</a>; it is located on the exterior wall of <a href='http://maclaarte.org/' target='_blank'>MACLA.</a>",
+					"artist": "<a href='https://www.instagram.com/aarondelacruz/' target='_blank'>Aaron De La Cruz</a>",
 					"address": "510 S 1st St.",
 					"city": "San José",
 					"country": "United States",
@@ -2019,8 +2355,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					  -121.8894295,
-            37.3361009
+					  -121.88942,
+						37.33619
 					]
 				},
 				"properties": {
@@ -2042,8 +2378,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8440888,
-						37.3509588
+						-121.84456,
+						37.35083
 					]
 				},
 				"properties": {
@@ -2062,20 +2398,20 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8786211,
-						37.3449119
+						-121.87633,
+						37.34490
 					]
 				},
 				"properties": {
 					"title": "Untitled mural by Op",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/59728a5d1b631b490c816ae3/1500678750196img_9003.jpg",
-          "description": "This mural was done by Op, and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. Image source: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
+          "description": "This mural was done by Op, and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. It is located near N 16th Street and E St. John Street. Image source: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.",
 					"artist": "<a href='https://www.instagram.com/ohhpeeskee/' target='_blank'>Op</a>",
 					"website": "https://www.instagram.com/ohhpeeskee/",
 					"address": "748 E St John St.",
 					"city": "San José",
 					"country": "United States",
-					"crossStreet": "at N 6th and St. John St.",
+					"crossStreet": "at N 16th and E St. John St.",
 					"postalCode": "95112",
 					"state": "CA"
 				}
@@ -2085,8 +2421,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8619931,
-						37.3457813
+						-121.86208,
+						37.34577
 					]
 				},
 				"properties": {
@@ -2105,8 +2441,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-							-121.8944242,
-							37.350025
+						-121.89211,
+						37.35021
 					]
 				},
 				"properties": {
@@ -2125,8 +2461,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-		 				-121.8896168,
-		 				37.3321734
+		 				-121.88971,
+						37.33210
 					]
 				},
 				"properties": {
@@ -2145,19 +2481,19 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8879167,
-						37.3283147
+						-121.88576,
+						37.32836
 					]
 				},
 				"properties": {
 					"title": "What You Are I Once Was",
 					"image": "https://static.wixstatic.com/media/382b8e_e14ee182056a4dd4b597e39b0da07316~mv2.jpg/v1/fill/w_1200,h_338,al_c,q_90,usm_0.66_1.00_0.01/382b8e_e14ee182056a4dd4b597e39b0da07316~mv2.webp",
 					"artist": "Stephanie Azevedo",
-					"description": "This mural was produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>. Image source: <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>.",
+					"description": "This mural was painted by <a href='https://www.instagram.com/stefari/' target='_blank'>Stephanie Azevedo</a> and produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a> in 2015. Image source: <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a> in 2015. You can find it on the side of the Brazilian Blowout Bar by the parking.",
 					"address": "489 S Market St.",
 					"city": "San José",
 					"country": "United States",
-					"crossStreet": "at S Market Stand W William St.",
+					"crossStreet": "at S Market St and W William St.",
 					"postalCode": "95113",
 					"state": "CA"
 				}
@@ -2167,8 +2503,8 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-							-121.8891865,
-							37.3323816
+							-121.88901,
+							37.33239
 					]
 				},
 				"properties": {
@@ -2187,8 +2523,8 @@ var art = {
 					"geometry": {
 						"type": "Point",
 						"coordinates": [
-								-121.8858973,
-								 37.3318078
+								-121.88594,
+								37.33174
 						]
 					},
 					"properties": {
