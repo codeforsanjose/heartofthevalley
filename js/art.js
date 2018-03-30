@@ -510,9 +510,9 @@ var art = {
 					 ]
 				 },
 				 "properties": {
-					 "title": "Two Clouds",
+					 "title": "Two Clouds and Sphere",
 					 "artist": "Cliff Garten",
-					 "description": "This public artwork is located at Tully Community Branch Library.",
+					 "description": "This public artwork is located at Tully Community Branch Library. <br/> In 2005, artist Cliff Garten collaborated with the community to create two cloud-like suspended sculptures positioned over the foyer and the Internet cafe. One “cloud” is cast aluminum branches reminiscent of orchard trees in blossom that also alludes to a technological network. The second “cloud” is created from hundreds of cast aluminum apricots and doll-sized human figures that form a topography evocative of the hills surrounding the city.<br/>The juxtaposition of agricultural and technological references addresses the ambiguity of an agricultural past and technological future. To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Two-Clouds-Tully-Branch-Libra-460' target='_blank'>San José Public Art Program</a>.",
 					 "address": "880 Tully Rd",
 					 "city": "San José",
 					 "country": "United States",
@@ -762,6 +762,29 @@ var art = {
 					"state": "CA"
 				}
 			 },
+			 {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+	 					-121.86822,
+						37.34644
+					]
+				},
+				"properties": {
+					"title": "Murals on Columns inside East San José Carnegie Branch Library",
+					"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					"description": "In 1997, Paul J Gonalzez painted murals on columns inside the East San José Carnegie Branch Library. View a <a href='https://www.facebook.com/photo.php?fbid=10155359372619833&set=a.10155359372279833.1073741848.558994832&type=3&theater' target='_blank'>photo of the mural.</a>",
+					"address": "1102 E Santa Clara St",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95116",
+					"state": "CA"
+				}
+			 },
+
+
+
 			 {
 				"type": "Feature",
 				"geometry": {
@@ -1076,13 +1099,93 @@ var art = {
 					]
 				},
 				"properties": {
-					"title": "Window Box 1 & 2; Children's Wing Mural",
+					"title": "Window Box #1 & #2 and Children's Wing Mural",
 					"artist": "Joe Saxe",
-					"description": "These public artworks are located at the Berryessa Branch Library",
+					"description": "In 2005, artist Joe Saxe collaborated with the Berryessa community to create a mural for the Berryessa Branch Library's Children’s area depicting daytime and evening in a very bold graphic style. In addition, he created two large window boxes: one located over the fireplace in the community room (Window Box #1) the other in the foyer (Window Box #2). <br/> The compartments of the window boxes bring together objects and images related to reading, learning and the local community. The colorful style is combination of realist and fantastical imagery that reflects the influence of cartoons, film noir, and graphics.<br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Window-Box-1-2-Childrens-Wing-463' target='_blank'>San José Public Art Program</a>.",
 					"address": "3355 Noble Ave",
 					"city": "San José",
 					"country": "United States",
 					"postalCode": "95132",
+					"state": "CA"
+				},
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.86002,
+						37.40904
+					]
+				},
+				"properties": {
+					"title": "Wishing Wands",
+					"artist": "Wowhause",
+					"description": "In 2009, Wowhause created Wishing Wands. Wishing Wands evoke the childhood tradition of making a wish by blowing on a dandelion seed head. These interactive sculptures are designed to be accessible to children of all physical capabilities: each seed head features 38 2 1/2 inch Austrian Crystals that catch the light, refracting sunlight in prismatic rainbows children can 'catch' and play in. <br/><br/> The three sculptures are sited near an accessible playground in Berryessa Creek Park. Schoolchildren participated in making wishes on each of the crystals before they were incorporated into the sculptures. <br/><br/>To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wishing-Wands-Berryessa-Creek-450' target='_blank'>San José Public Art Program</a>.",
+					"address": "Isadora Drive and Messina Drive",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95132",
+					"state": "CA"
+				},
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.84916,
+						37.39207
+					]
+				},
+				"properties": {
+					"title": "The Valley of the Heart's Delight",
+					"artist": "John Pugh",
+					"description": "In 2003, John Pugh created this mural at the Berryessa Community Center. The Valley of Heart’s Delight is a trompe l’oeil mural (French for “trick of the eye), a style of painting that uses realistic imagery to appear three dimensional on a flat surface, a style that is one of the oldest known in painting, and is the specialty of artist John Pugh.<br/><br/> The mural depicts scenes of San José’s rich agricultural past before the development of the Silicon Valley.<br/><br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Valley-of-the-Hearts-Delight--439' target='_blank'>San José Public Art Program</a>.",
+					"address": "3050 Berryessa Rd ",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95132",
+					"state": "CA"
+				},
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.79587,
+						37.31389
+					]
+				},
+				"properties": {
+					"title": "Discoveries",
+					"artist": "Larry Kirkland",
+					"description": "In 2006, Larry Kirkland created these sculptures. Located in the viewing garden that spans the northeast facade of the Evergreen Branch Library, Larry Kirkland’s sculpture speaks of the human potential for learning and exploration through our senses. According to the artist: <br/> “What unites all people is our search to understand our world and existence. From the moment we are born we begin the process of discovery that continues throughout our lives.  For that reason I have decided to title the sculptures Discoveries.” <br/><br/> The concept of the pieces was to suggest the universal human potential for exploration and learning through our senses.The three large white marble stones were found in Carrara, Italy in the same place where Michelangelo sourced stone for his carvings over 500 years ago. The carving of the stones into an ear, mouth, and eye, show the human forms emerging out of the rough hewn boulders. It is a balance of the beauty of the natural stone and the beautiful carving of the human forms. <br/><br/>To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Soaring-Flight-Evergreen-Park-441' target='_blank'>San José Public Art Program</a>.",
+					"address": "2635 Aborn Road ",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95121",
+					"state": "CA"
+				},
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.76932,
+						37.29858
+					]
+				},
+				"properties": {
+					"title": "Soaring Flight",
+					"artist": "Kent Roberts",
+					"description": "In 2008, Kent Roberts created the artwork at Evergreen Park.<br/>Soaring Flight commemorates flight pioneer John J. Montgomery. The artwork consists of two elements: a vertical 30’ sculptural representation of a glider wing formed of tubular steel and covered in steel mesh, and the colored concrete plaza textured with linear patterns that flow around the wing element in an airflow pattern similar to that around an ascending plane wing. Soaring Flight is positioned with Montgomery Hill as a backdrop, the site of many of his pioneering flights. <br/>Phrases and quotes associated with Montgomery’s work are sandblasted into the plaza; benches are placed around the perimeter of the plaza. Together these elements create, in Roberts’ words, <br/> “A haven where visitors may learn about local history and Montgomery specifically, as well as reflect upon human invention...a subject so significantly linked to San Jose.” <br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Discoveries-Evergreen-Branch--476' target='_blank'>San José Public Art Program</a>.",
+					"address": "Yerba Buena & San Felipe Road ",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95135",
 					"state": "CA"
 				},
 			},
@@ -1285,6 +1388,7 @@ var art = {
 				"properties": {
 					"title": "Untitled artworks at Mexican Heritage School of Arts and Culture",
 					"artist": "Anne Chamberlain and Victor Maria Zaballa",
+					"description": "The main theme of the artwork is Cemanahuac: the location of the individual within his/her community as well as within the cosmos. <br/> According to Mesoamerican indigenous cultures and oral traditions, each of the four cardinal directions (north, south, east, and west) corresponds to an element, a community memory of value, a time of day, and a color of corn a fundamental agricultural symbol: East is fire, family, sunrise, and red corn West is wind, local heroes, sunset, and yellow corn South is earth, work, noon, and blue corn North is water, history, night, and white corn.  These symbols honor the Mexican community in various forms throughout the plaza. The artworks were created in 1999. <br/>To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Mexican-Heritage-Sch-428' target='_blank'>San José Public Art Program</a>.",
 					"address": "1700 Alum Rock Ave",
 					"city": "San José",
 					"country": "United States",
@@ -1529,14 +1633,14 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.84232,
-						37.33859
+						-121.84295,
+						37.33916
 					]
 				},
 				"properties": {
 					"title": "Cultivating Community",
 					"artist": "Valerie Raps",
-					"description": "Located at the Tropicana Shopping Center",
+					"description": "Valerie Raps created this in partnership with Don Imwalle, Imwalle Stegner Development and San José Redevelopment Agency in 2011. The artwork is part of the Alum Rock Cultural History Corridor (ARCHC), which seeks to celebrate the rich cultural history of east San José through artworks and other elements. <br/><br/>Raps’ sculpture is in the form of a life size 'spring-tooth harrow', an iconic piece of farm equipment used to cultivate the land by aerating the soil with curved ‘tines’ that turn the soil as the harrow is pulled along. <br/><br/>The sculpture depicts ten human arms cast in bronze replace the harrow’s curved 'tines', miming the harrow’s purpose but with human hands turning the soil. The sculpture thus symbolically depicts the many human hands that worked the fields and speaks to the agricultural work and hard physical labor that has been such an important part of the community. It further suggests the idea of cultural diversity and the power of people working together to build community. The arms in the artwork are castings of real community members, underscoring the artwork’s connection to the area and to this community (see fact sheet for detail). Each person has a real connection to the idea represented in the work. <br/><br/> To learn more, view the <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Cultivating-Community-Tropica-458' target='_blank'>source: San José Public Art Program.<a/>",
 					"address": "1163 S King Rd",
 					"city": "San José",
 					"country": "United States",
@@ -1556,7 +1660,7 @@ var art = {
 				"properties": {
 					"title": "Alum Rock Garden",
 					"artist": "Jim Hirschfield and Sonya Ishii",
-					"description": "This public artwork is located at the Dr. Roberto Cruz Alum Rock Branch Library on Alum Rock Ave and White Rd.",
+					"description": "In 2005, Jim Hirschfield and Sonya Ishii created these four terrazzo mandalas at the Dr. Roberto Cruz Alum Rock Branch Library. The artwork consists of four terrazzo mandalas (ritualistic geometric designs symbolic of the universe), each 8’ in diameter, inset in the floor. <br/><br/>The pieces commemorate and metaphorically articulate the community’s agricultural history, strong multicultural history, as well as the region’s distinctive geological features and their influence on the area’s history and development. <br/><br/>Learn more and view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Alum-Rock-Garden-Dr-Roberto-C-464'San José Public Art Program.</a>",
 					"address": "3090 Alum Rock Ave",
 					"city": "San José",
 					"country": "United States",
@@ -1576,7 +1680,7 @@ var art = {
 				"properties": {
 					"title": "Guardians of the Garden City",
 					"artist": "Kipp Kobayashi and Marta Perlas",
-					"description": "Public artwork located at Fire Station 19",
+					"description": "In 2010, Kipp Kobayashi and Marta Perlas created these iconic columns for the entrance to Fire Station 19. The concept for the columns was influenced by the multi-functional role each firefighter plays on the team. Also it was influenced by the community and its diversity, as well as how the community relates to and perceives the firefighters (and vice versa). <br/><br/>The 8’ tall columns bases are articulated like the equipment fittings found on the rigs and hydrants. On the stainless steel columns are etched images of firefighters and historic firefighters from cultures from throughout history: 1) Wildland firefighter, 2) Explorers (youth firefighter program), 3) Vigiles Urbani (the first organized fire brigade of Europe), 4) Knight of Malta (where the current Maltese cross on firefighters emblem originated), 5) Edo Firefighter (early Japanese firefighter) and 6) Sapeurs-Pompiers (the first professional firefighters from the French Army of the 19th century). <br/><br/>Each column is divided into three parts that can be turned individually, like a section of a mix ‘n match puzzle so that the figures can be morphed into any number of combinations.<br/>To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Guardians-of-the-Garden-City--436' target='_blank'>San José Public Art Program</a>.",
 					"address": "3292 Sierra Road",
 					"city": "San José",
 					"country": "United States",
@@ -1594,9 +1698,9 @@ var art = {
 					]
 				},
 				"properties": {
-					"title": "Alviso Mandalas",
+					"title": "Alviso Bench & Mandalas",
 					"artist": "Donna Billick",
-					"description": "Public artwork located at Alviso Library",
+					"description": "The bench and mandalas are located at Alviso Library. This project was inspired by the rich natural landscape of Alviso including the wetlands of the National Wildlife Refuge, some of the last open space in the region. <br/> In 2004, Donna Billick worked with the community to create the artwork's three tile mosaic elements: Alviso, a bench in the form of a book that is standing on its side with images depicting indigenous plant life and the wetlands on its “covers”; and the two Alviso Mandalas, each 6’ in diameter. <br/><br/>Together these elements create a visual welcome to the library and offer the community a place to pause and enjoy the setting. <br/><br/>To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Alviso-Bench-Mandalas-Alviso--454' target='_blank'>San José Public Art Program.</a>",
 					"address": "5050 N 1st St",
 					"city": "San José",
 					"country": "United States",
@@ -1614,9 +1718,9 @@ var art = {
 					]
 				},
 				"properties": {
-					"title": "Collaboration with Pala Youth",
+					"title": "Chandelier and Collaboration with Pala Youth",
 					"artist": "Ries Niemi",
-					"description": "Public artwork located at Alum Rock Youth Center",
+					"description": "This public artwork is located at Alum Rock Youth Center. In 2003, Ries Niemi collaborated with nearby middle and high school students to incorporate their drawings as metal panels decorating the opening gate, front doorway, and walls of the youth center. While the artist translated some of the drawings for a cohesive style, the artwork is still distinctively based on the youths’ artwork. <br/><br/>The shape of the chandelier, hanging in the oculus of the lobby, celebrate the themes of life with sculptural elements that look like DNA strands or plant forms.  The use of colored mirrors and gems, reflected by the embedded mirrors, change due to sunlight, thus causing the impact of the piece to shift throughout the day. <br/><br/> <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Chandelier-and-Collaboration--438' target='_blank'>San José Public Art Program.</a>.",
 					"address": "137 N White Rd",
 					"city": "San José",
 					"country": "United States",
@@ -1634,9 +1738,9 @@ var art = {
 				]
 			},
 			"properties": {
-				"title": "La Vida en Dichos; Los Viajeros Vienen a San José",
-				"artist": "Pilar Aguero; Maria Alguilar",
-				"description": "La Vida en Dichos was made by Pilar Aguero, and Los Viajeros Vienen a San José was made by Maria Alguilar. Public artwork located at Biblioteca Latinoamericana Branch Library",
+				"title": "La Vida en Dichos",
+				"artist": "Pilar Aguero",
+				"description": "Pilar Aguero created these murals in 2009; they are located at the Biblioteca Latinoamericana Branch Library. <br/> Five murals composed of numerous panels of various sizes, put together like a puzzle. The themes of each mural relate to San Jose: the land and valley; education; heroes and history; love and art; and ancestors, legacy and future. Images are woven together thematically by Spanish dichos, popular Spanish proverbs and sayings that communicate simple wisdom. The dichos are translated into English through 3-dimensional text mounted on the adjacent walls. <br/><br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-La-Vida-en-Dichos-Biblioteca--420' target='_blank'>San José Public Art Program</a>.",
 				"address": "921 S 1st St",
 				"city": "San José",
 				"country": "United States",
@@ -1644,6 +1748,27 @@ var art = {
 				"state": "CA"
 			},
 		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.88019,
+					37.32226
+				]
+			},
+			"properties": {
+				"title": "Los Viajeros Vienen a San José",
+				"artist": "Maria Alguilar",
+				"description": "The artwork was created in 1991. The work is a story of two travelers on a yellow horse visiting San Jose. The rest of the mural illustrates different venues, most particularly the Freedom Train. The travelers departing from the Freedom Train illustrate the vast ethnic groups that live in the City. <br/> In 2010, this work was moved from its original location at the San Jose International Airport to installed at the Biblioteca Latinoamericana Branch Library. <br/><br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Los-Viajeros-Vienen-a-San-Jos-432' target='_blank'>San José Public Art Program.</a>",
+				"address": "921 S 1st St",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95110",
+				"state": "CA"
+			},
+		},
+
 	{
 			"type": "Feature",
 			"geometry": {
@@ -1664,7 +1789,206 @@ var art = {
 				"state": "CA"
 			},
 		},
-
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.88519,
+					37.33955
+				]
+			},
+			"properties": {
+				"title": "Nature of Life",
+				"artist": "Sayed Alavi",
+				"description":"In 2003, Sayed Alavi created this multi-element project is designed as an integral part of the school environment, so that art and life are harmoniously fused together.  Each piece responds to a particular aspect of the school's physical, social or historical environment. <br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Nature-of-Life-Horace-Mann-Sc-539' target='_blank'>San José Public Art Program</a>.",
+				"address": "55 North 7th St",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95112",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.88447,
+					37.32695
+				]
+			},
+			"properties": {
+				"title": "Voxel Cloud",
+				"artist": "Brian Brush",
+				"description":"Voxel Cloud is visible to thousands of commuters, residents and visitors driving on Interstate 280, as well as aircraft utilizing Mineta San José International Airport.  Draping across the roof line of The Pierce, a residential apartment building in Downtown San Jose, Voxel Cloud serves as a gateway marker for San José’s SoFA Art District, The dynamic, illuminated, data-driven LED sculpture takes its visual cues from natural forms as varied as water particles, interstellar star systems, the crystalline aggregates of silicon carbide, and the multi-chromatic raw materials of semiconductor wafers. <br/><br/> Voxel Cloud was made possible through a partnership between the project owner/developer, Sares Regis Group of Northern California, Pritzker Realty Group, and the City of San José Public Art Program. It was supported in part by an ArtPlace grant (www.artplaceamerica.org). It is the fifth of six Illuminating Downtown Project (IDP) grants awarded for creative placemaking projects in San José, bringing artists and arts organizations together to enrich the city and its communities. IDP combines art and technology to physically manifest San José’s aspiration for creating a more engaging downtown—whether someone is approaching from the surrounding freeways or walking its streets. It was built in 2017.<br/><br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Voxel-Cloud-Pierce-Building-562' target='_blank'>San José Public Art Program</a>.",
+				"address": "2 Pierce Ave",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95110",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.77807,
+					37.33534
+				]
+			},
+			"properties": {
+				"title": "Meditation Bench",
+				"artist": "Glen Rogers",
+				"description":"Meditation Bench is a sculptural chair that is placed on a hill overlooking the park. From afar, the bench appears to be a sculpture, but upon further exploration, one discovers that it is also a private bench to contemplate the view. <br/><br/> The inspiration for the form of the bench is drawn from nature, such as a seed pod or leaf. The spiral designs represents a spirit of renewal and the cycle of life. Thus,  Meditation Bench is intended to connect the sitter to the environment of Groesbeck Hill Park, and the beauty of the natural forms found in nature. <br/><br/>To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Meditation-Bench-Groesbeck-Hi-517' target='_blank'>San José Public Art Program</a>.",
+				"address": "Cedardale Drive and Norbert Court ",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95148",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.86278,
+					37.32551
+				]
+			},
+			"properties": {
+				"title": "Another World",
+				"artist": "Tom Otterness",
+				"description":" <br/>In 2010, the San José Public Art Program collaborated with Happy Hollow Park and Zoo to select internationally recognized artist Tom Otterness to create an artwork for the new entry plaza. The artwork consists of 17 bronze pieces each reflecting an element of the Park or the Zoo. As the artist has said: <br/> “For me the sculptures at HHPZ serve to launch an experience, not to mimic anything inside HHPZ; it’s a fairy tale—animals drive cars and money is food.”<br/> <br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Another-World-Happy-Hollow-Pa-461' target='_blank'>San José Public Art Program</a>.",
+				"address": "1300 Senter Road ",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95112",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.83116,
+					37.33778
+				]
+			},
+			"properties": {
+				"title": "Groundwork and The Shadow Frieze",
+				"artist": "Amy Trachtenberg",
+				"description":"Addressing the mid-century agricultural labor history in East San José, the artist worked with the project architects to design the shape of the rotunda, the columns, the terrazzo flooring and window openings at the Hillview Library. Each of the eight free-standing structural columns is composed of a stack of tractor tires; curved staves milled from recycled old-growth redwood, which are evocative of a harvest basket; the stainless steel can that pays homage to the canneries; and madrone branches, an indigenous tree revered by the local Ohlone Native Americans. <br/><br/>Trachtenberg was also captivated by the intrinsic beauty of the farmed landscape, inspiration which she captured and reflected in the other component of Groundwork: a series of twenty-six paintings called The Shadow Frieze. The paintings that encircle the rotunda below the window openings evoke the aerial views of tilled earth, orchards, and crop rows. <br/><br/> These were created in 2007. <br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Groundwork-and-The-Shadow-Fri-478' target='_blank'>San José Public Art Program</a>.",
+				"address": "1600 Hopkins Dr",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95122",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.93757,
+					37.38121
+				]
+			},
+			"properties": {
+				"title": "Lupe the Mammoth",
+				"artist": "Freya Bardell and Brian Howe (Greenmeme Studio)",
+				"description":"One July Saturday in 2005, a San Jose resident took a walk with his dog along the Guadalupe River, just north of the San Jose International Airport. He recognized that the objects poking out of the ground that day were clearly unusual -- he had discovered the tusks and skeleton of a mammoth.<br/><br/> <em>Lupe the Mammoth</em> was inspired by this discovery. <br/>The artwork is a technology-driven design with hand-crafted sensibilities. While the actual mammoth was a juvenile and about 8’ tall, the sculpture measures 12.5’ in height and is made of galvanized steel. The artwork was painstakingly fabricated at Paramount Roll & Forming; bent piece by piece and fit into a notched support structure after which it was galvanized for its final finish. <br/><br/> The artwork is titled “Lupe,” but has quickly assumed the nickname Lupe the Mammoth as a popular post on social media; #LupeTheMammoth. <br/><br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Lupe-the-Mammoth-Guadalupe-Tr-559' target='_blank'>San José Public Art Program</a>.",
+				"address": "Guadalupe River at Trimble ",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95113",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.86661,
+					37.40349
+				]
+			},
+			"properties": {
+				"title": "Path of 10,000 Leaves",
+				"artist": "Shiela Ghidini",
+				"description":"<em>The fishing –fire;<br/>The waves lapping,<br/>Falling tinted leaves.</em> -Keishi <br/><br/> This haiku is embossed in English and Japanese on the edge of the cement circle at the center of the Path of a Ten Thousand Leaves. It captures the spirit of the path meant to highlight the passage of the seasons and give homage to the site’s agricultural past. <br/> The Path of Ten Thousand Leaves meanders through the 32-acre park with a large circular seating area at the center of the path. <br/><br/>The 1800 foot path is embossed with black walnut and apricrot leaves, thus making the emphemereal process of leaves falling permanent. The embossed leaves also have a fossil-like design nostalgic of the fruit orchards that used to inhabit the site. <br/><br/>Community participation was an integral part of the design of this project. <br/><br/> The project was created in 1999. To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Path-of-10000-Leaves-Cataldi--501' target='_blank'>San José Public Art Program</a>.",
+				"address": "Morrill Ave. and Cataldi Dr. ",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95132",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.81212,
+					37.26884
+				]
+			},
+			"properties": {
+				"title": "Not If But When",
+				"artist": "CoLab Studio - Matthew and Maria Salenger",
+				"description":"The title of this work came from the community's aspirations for each child in Edenvale to find success in life. The artwork consists of two elements: bronze sculptures inset into the exterior walls at each of the three entrances to the building, and vinyl drawings on the large gymnasium windows that face Branham. All the elements are based on objects, images and ideas cultivated by the artists from the community. <br/><br/> The artists engaged in extensive interaction with the Edenvale community in the creation of the artwork. They went out to schools, neighborhood and community gatherings, youth centers and the library to encourage community members to <em>Be a Part of the Art</em> by contributing objects, stories, photos and memorabilia that represented their own lives. <br/><br/> This work was created in 2010; it is located at the Edenvale Community Center. To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Not-If-But-When-Edenvale-Comm-520' target='_blank'>San José Public Art Program</a>.",
+				"address": "330 Branham Lane East",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95111",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.82112,
+					37.26762
+				]
+			},
+			"properties": {
+				"title": "Web of Native Botanicals",
+				"artist": "Troy Corliss",
+				"description":"Entering the Edenvale Library the glass and steel plant forms reveal themselves as a canopy suspended overhead and floats like a huge bouquet cascading into the upper vaulted space of the building. Four different California native plants are represented: redbud, purple needle grass, California buckwheat and black walnut.<br/><br/> The artist hopes the artwork will generate curiosity and create an incentive to go outside and investigate the surrounding local environment that is so much a part of the City’s visual landscape. <br/><br/>This artwork was created in 2009. To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Web-of-Native-Botanicals-Eden-481' target='_blank'>San José Public Art Program</a>.",
+				"address": "101 Branham Lane ",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95111",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.89258,
+					37.32812
+				]
+			},
+			"properties": {
+				"title": "Parade of Animals",
+				"artist": "Michael Boris",
+				"description":"A set of bronze animals represents creatures that might be found along the Guadalupe River. The animals are arranged so that the owl, hawk, and fox are eyeing the rabbit and frog as food sources. The raccoon is placed as an observer, watching all the other animals. <br/> These sculptures were created in 1991 in Discovery Meadows. To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Parade-of-Animals-Discovery-M-497' target='_blank'>San José Public Art Program</a>.",
+				"address": "Woz Way at W. San Carlos",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95110",
+				"state": "CA"
+			},
+		},
 		{
 			"type": "Feature",
 			"geometry": {
@@ -1677,11 +2001,31 @@ var art = {
 			"properties": {
 				"title": "Urban Rooms",
 				"artist": "Teddy Cruz",
-				"description": "Urban Rooms is located at Parque De Los Pobladores.",
+				"description": "Urban Rooms is a new identity to Parque de los Pobladores and a gateway to SoFA and Downtown. Artist Estudio Teddy Cruz + Forman designed the small park as a dynamic platform for cultural programs and event productions. Artist-designed shade structures, urban furniture and curtain walls accommodate many different community interactions for artists, performers, and entrepreneurs – as well as everyday uses of this important public space. The structures were created in June 2017. <br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Urban-Rooms-Parque-de-los-Pob-565' target='_blank'>San José Public Art Program</a>.",
 				"address": "500 S 1st St",
 				"city": "San José",
 				"country": "United States",
 				"postalCode": "95113",
+				"state": "CA"
+			},
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.83956,
+					37.32079
+				]
+			},
+			"properties": {
+				"title": "Jeanne R. Meadows Elementary School Murals",
+				"artist": "Paul J Gonzalez",
+				"description": "The murals are painted by <a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a> in 2011 and 2013. They are located at Jeanne R. Meadows Elementary. <br/> View <a href='https://www.facebook.com/photo.php?fbid=10155359404934833&set=a.10155359372279833.1073741848.558994832&type=3&theater'>images</a>.",
+				"address": "1250 Taper Ln",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95122",
 				"state": "CA"
 			},
 		},
@@ -1716,8 +2060,8 @@ var art = {
 			},
 			"properties": {
 				"title": "Commemoration of the Founding of the Pueblo San Jose de Guadalupe ",
-				"artist": "Wayne Healy",
-				"description": "This public artwork is located at Parque De Los Pobladores.",
+				"artist": "East Los Streetscapers",
+				"description": "In 1997, this public artwork was created at Parque De Los Pobladores. <br/><br/> The founding of the Pueblo San José de Guadalupe on November 29, 1777 established San José as California’s first civil community, supplying necessary agricultural products for the presidios and missions of San Francisco and Monterey. This project honors a pioneer settlement and its founders and the beginnings of a continuous migration of people who have come to this region from north, south, east, and west. <br/><br/> The migration is represented through four columns placed at each point of the compass. <br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Commemoration-of-the-Founding-415' target='_blank'>San José Public Art Program</a>.",
 				"address": "500 S 1st St",
 				"city": "San José",
 				"country": "United States",
@@ -1770,14 +2114,35 @@ var art = {
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
+					-121.87182,
+					37.34526
+				]
+			},
+			"properties": {
+				"title": "Urban Rain 1",
+				"artist": "Jackie Brookner",
+				"description": "In 2009, Jackie Brookner created sculptures at Roosevelt Community Center. One of the sculptures is locatead near the southern entrance. <br/><br/> Jackie Brookner’s site-integrated artwork for Roosevelt Community Center serves as a functional filtration system that assists in diminishing the Center’s environmental impact on nearby Coyote Creek and the City’s storm water system. The artwork, which consists of multiple elements, slows and filters storm water run-off from the building’s roof. <br/><br/>To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Urban-Rain-Roosevelt-Communit-485' target='_blank'>San José Public Art Program</a>.",
+				"address": "901 E Santa Clara St",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95116",
+				"state": "CA"
+			},
+		},
+
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
 					-121.87187,
 					37.34554
 				]
 			},
 			"properties": {
-				"title": "Urban Rain; Touching the Earth, and Touching the River",
+				"title": "Urban Rain 2",
 				"artist": "Jackie Brookner",
-				"description": "Urban Rain and Touching the Earth, Touching the River were created by Jackie Brookner. You can find these sculptures at the Roosevelt Community Center.",
+				"description": "In 2009, Jackie Brookner created sculptures at Roosevelt Community Center. One of the sculptures is locatead near the northeast entrance. <br/><br/> Jackie Brookner’s site-integrated artwork for Roosevelt Community Center serves as a functional filtration system that assists in diminishing the Center’s environmental impact on nearby Coyote Creek and the City’s storm water system. The artwork, which consists of multiple elements, slows and filters storm water run-off from the building’s roof. <br/><br/> To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Urban-Rain-Roosevelt-Communit-485' target='_blank'>San José Public Art Program</a>.",
 				"address": "901 E Santa Clara St",
 				"city": "San José",
 				"country": "United States",
@@ -1857,7 +2222,7 @@ var art = {
 			"properties": {
 				"title": "Seven for Seven Trees",
 				"artist": "Roman de Salvo",
-				"description": "Roman de Salvo designed seven recreational play elements for the recreational area. For the public art elements, Roman used trees that were previously scheduled for removal. <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Seven-for-Seven-Trees-Seven-T-493' target='_blank'>Learn more</a>.",
+				"description": "Roman de Salvo designed seven recreational play elements for the recreational area. For the public art elements, Roman used trees that were previously scheduled for removal. Learn more - view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Seven-for-Seven-Trees-Seven-T-493' target='_blank'>San José Public Art Program.</a>.",
 				"address": "3590 Cas Dr",
 				"city": "San José",
 				"country": "United States",
@@ -2540,7 +2905,7 @@ var art = {
 				"properties": {
 					"title": "A Monument to the Last Barn",
 					"artist": "Gloria Bornstein",
-					"description": "This monument is located at Emma Prusch Memorial Park.",
+					"description": "A native of San José, Emma Prusch bequeathed her 47 acre dairy farm to the City in 1962. The deed to the City specified that the City “will make said park a place of relaxation, recreation, and enjoyment for the people of the City of San José, and in such a manner as will, to extent that such can be reasonably done, give to said park a rural county character and atmosphere.” <br/><br/> Emma Prusch Farm Park includes heritage, high density, and rare fruit orchards, a Plant Science Center, two community gardens, pollinator and butterfly gardens, as well as acres of lush green lawns for picnics and playing. It also has one of the largest free standing wooden barns in California, home to 4H large animals including beef cattle, sheep, and swine. <br/><br/> In 2006, Gloria Bornstein was inspired by the story of Emma Prusch, San José's rich agricultural history and the continuing traditions. <br/><br/>To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-A-Monument-to-the-Last-Barn-E-442' target='_blank'> San José Public Art Program<a/>.",
 					"address": "647 S King Rd",
 					"city": "San José",
 					"country": "United States",
