@@ -465,6 +465,127 @@ var art = {
 				 "geometry": {
 					 "type": "Point",
 					 "coordinates": [
+						 -121.90088,
+						 37.30778
+					 ]
+				 },
+				 "properties": {
+					 "title": "Life in Willow Glen",
+					 "artist": "<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a>",
+					 "description":"Life in Willow Glen pays homage to the past and present heritage, memories and business culture. <a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a> painted the mural. The mural is located on the exterior wall of BevMo! on Lincoln Ave. It was produced with support from San José City Councilmember Pierluigi Oliverio (District 6), the Willow Glen Business Association and property owner Michael Mulcahy. <br/><br/> <a href='http://www.gemellosmurals.com/portfolio/life-in-willow-glen/' target='_blank'>Learn more</a>.",
+					 "address": "1133 Lincoln Ave",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95125",
+					 "state": "CA"
+				 },
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.80164,
+						 37.30662
+					 ]
+				 },
+				 "properties": {
+					 "title": "Montgomery Elementary School Mural",
+					 "artist": "<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a>",
+					 "description":" In 2015, <a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a> painted a mural highlighting the history of flight at John J Montgomery Elementary School. <br/><br/> <a href='http://www.gemellosmurals.com/portfolio/interactive-mural-projects/' target='_blank'>Learn more</a>.",
+					 "address": "2010 Daniel Maloney Dr",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95121",
+					 "state": "CA"
+				 },
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.91303,
+						 37.33204
+					 ]
+				 },
+				 "properties": {
+					 "title": "Bike Mural at Peet's Coffee on The Alameda",
+					 "artist": "<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a>",
+					"description":"As part of the Rolling Your Way Bike mural series On The Alameda, in July 2016, <a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a> painted a bike mural on the exterior wall of Peet's Coffee on The Alameda. The mural was and produced in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a> and Alameda Business Association. <br/><br/> <a href='http://www.gemellosmurals.com/portfolio/interactive-mural-projects/' target='_blank'>Learn more</a>.",
+					 "address": "1295 The Alameda",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95126",
+					 "state": "CA"
+				 },
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.65191,
+						 37.12792
+					 ]
+				 },
+				 "properties": {
+					 "title": "Morgan Hill Mural",
+					 "artist": "<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a>",
+					 "description":"<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a> painted this mural on the exterior wall of the building across from the 4th Street Parking Garage, near Hungtington Station Bar & Grille. The mural highlights the culture, history and heritage of Morgan Hill. This mural was supported by KRP Architects, Imwalle Properties and the City of Morgan Hill. <br/><br/> <a href='http://www.gemellosmurals.com/portfolio/morgan-hill-mural/' target='_blank'>Learn more</a>.",
+					 "address": "17280 Monterey Rd",
+					 "city": "Morgan Hill",
+					 "country": "United States",
+					 "postalCode": "95037",
+					 "state": "CA"
+				 },
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.88748,
+						 37.33225
+					 ]
+				 },
+				 "properties": {
+					 "title": "E7S Wall Street Mural by the Federal Builing in San José",
+					 "artist": "<a href='http://www.bunniereiss.com/' target='_blank'>Bunnie Reiss</a>",
+					 "description":"<a href='http://www.bunniereiss.com/' target='_blank'>Bunnie Reiss</a> painted this brightly colored folk mural along the exterior wall of the the Robert F. Peckham United States Courthouse and Federal Building on S 1st Street. The mural was produced in collaboration with Empire Seven Studios. <br/><br/> <a href='http://www.bunniereiss.com/empire-7/' target='_blank'>Learn more</a>. Photo source: <a href='https://www.empiresevenstudios.com/' target='_blank'>Empire Seven Studios</a>.",
+					 "image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5a53b8e8c83025de53beb868/1515436266158/IMG_E58101.jpg?format=750w",
+					 "address": "280 S 1st St",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95113",
+					 "state": "CA"
+				 },
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
+						 -121.88953,
+						 37.33469
+					 ]
+				 },
+				 "properties": {
+					 "title": "Panda Cafe and Bakery",
+					 "artist": "Phuong-Mai Bui-Quang",
+					 "description":"<a href='https://www.facebook.com/pg/pmbq.studios/' target='_blank'>Phuong-Mai Bui-Quang</a> painted this mural of a panda cafe and bakery. This mural is located on a wall along S 1st Street between San Fernando and Post Streets in downtown San José. <br/><br/> <a href='' target='_blank'>Learn more</a>.",
+					 "address": "S 1st St between San Fernando and Post St",
+					 "city": "San José",
+					 "country": "United States",
+					 "postalCode": "95113",
+					 "state": "CA"
+				 },
+			 },
+			 {
+				 "type": "Feature",
+				 "geometry": {
+					 "type": "Point",
+					 "coordinates": [
 						 -121.93194,
 						 37.32262
 					 ]
@@ -1058,7 +1179,7 @@ var art = {
 					]
 				},
 				"properties": {
-					"title": "Untitled Mural",
+					"title": "Backesto Park Mural",
 					"description": "Katrina Marie Loera painted this mural around 2010. It's located on the side of the handball court in Backesto Park, on the 500 block of N 13th Street.",
 					"artist": "<a href='https://sanjosecreatives.blogspot.com/2011/12/katrina-marie-loera.html' target='_blank'>Katrina Marie Loera</a>",
           "website": "https://sanjosecreatives.blogspot.com/2011/12/katrina-marie-loera.html",
@@ -1264,7 +1385,7 @@ var art = {
 				},
 				"properties": {
 					"title": "Mural at Crema Coffee - part of the Rolling Your Way Bike mural series On The Alameda",
-					"description": "The mural is part of the #RollingYourWay bike mural series #OnTheAlameda, painted by <a href='https://www.instagram.com/nandoid2485/' target='_blank'>@Nandoid2485</a>, and produced in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, was painted in collaboration with dozens of volunteers. It exhibited August 2016. View a photo <a href='https://www.instagram.com/p/BH7elF0gOpF/?taken-by=the_exd' target='_blank'>of the mural</a>",
+					"description": "The mural is part of the #RollingYourWay bike mural series #OnTheAlameda, painted by <a href='https://www.instagram.com/nandoid2485/' target='_blank'>@Nandoid2485</a>, and produced in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a> and Alameda Business Association, was painted in collaboration with dozens of volunteers. It exhibited August 2016. View a photo <a href='https://www.instagram.com/p/BH7elF0gOpF/?taken-by=the_exd' target='_blank'>of the mural</a>",
 					"artist": "<a href='https://www.instagram.com/nandoid2485/' target='_blank'>@Nandoid2485</a>",
 					"address": "950 The Alameda",
 					"city": "San José",
@@ -1308,7 +1429,7 @@ var art = {
 				"properties": {
 					"title": "Garden of Strength",
 					"artist": "Fernanda D'Agostino",
-					"description": "This mural is located at the Mayfair Community Center.",
+					"description": "This mural is located in the Mayfair Community Center. This work was inspired by the diversity, and the rich cultural history, of the Mayfair area and by the spirit of growth and renewal embodied in the flourishing Mayfair Community Garden adjacent to the site, one of San José's oldest community gardens. Garden of Strength is comprised of three distinct artwork elements, Bienvenidos, Garden of Life, and The Three Sisters. To learn more, view the source: <a href='http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Garden-of-Strength-Mayfair-Co-487' target='_blank'>San José Public Art Program</a>.",
 					"address": "2039 Kammerer Ave",
 					"city": "San José",
 					"country": "United States",
@@ -2367,10 +2488,10 @@ var art = {
 				 ]
 			 },
 			 "properties": {
-				 "title": "Eastridge Mall Mural - Lila Gamellos",
-			 	"artist": "<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gamellos</a>",
+				 "title": "Eastridge Mall Mural - Lila Gemellos",
+			 	"artist": "<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a>",
 				 "website": "http://www.gemellosmurals.com/",
-				 "description": "This mural is part of a collection of murals at Eastridge Mall.  <a href='http://eastridgecenter.com/3905-2/' target='_blank'>Learn more</a>.",
+				 "description": "This mural is part of a collection of murals at Eastridge Mall.  <a href='http://www.gemellosmurals.com/portfolio/interactive-mural-projects/' target='_blank'>Learn more</a>.",
 				 "address": "2200 Eastridge Loop",
 				 "city": "San José",
 				 "country": "United States",
@@ -2791,16 +2912,16 @@ var art = {
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.84412,
-						37.35111
+						-121.88526,
+						37.32886
 					]
 				},
 				"properties": {
 					"title": "Peeps and Pups",
-					"description": "Mural at Mayfair Community Center Skate Park",
+					"description": "Fernando 'FORCE129' Amaro Jr painted this mural on S 1st St.",
 					"artist": "<a href='http://www.force129.com/' target='_blank'>Force129</a>",
 					"website": "http://www.force129.com/",
-					"address": "467 S 1st Street",
+					"address": "493 S 1st Street",
 					"city": "San José",
 					"country": "United States",
 					"postalCode": "95113",
