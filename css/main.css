@@ -247,7 +247,7 @@ a:hover {
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
   margin-top: 15px;
-  width: 250px;
+/*  width: 250px; */
 }
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
