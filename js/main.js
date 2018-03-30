@@ -81,13 +81,16 @@ function createPopUp(currentFeature, linkId) {
 	var popup = new mapboxgl.Popup({closeOnClick: true, closeButton: true, anchor: 'top'})
 				.setLngLat(currentFeature.geometry.coordinates)
 				.setHTML(
-					'<h3>' + currentFeature.properties.title + '</h3>' +
-					'<h4>' + `by ` + currentFeature.properties.artist + '<br/>' +
-						`Address: ` +  currentFeature.properties.address + ', ' +
-						currentFeature.properties.city + ', ' +
-						currentFeature.properties.state + ' ' +
-						currentFeature.properties.postalCode + '</h4>'
-				 )
+				 '<h3>' +
+				 currentFeature.properties.title + '</h3><p>' + `by ` +
+				 currentFeature.properties.artist + '<br/><br/>' +
+				 `Address: ` +
+				 currentFeature.properties.address + ', ' +
+				 currentFeature.properties.city + ', ' +
+				 currentFeature.properties.state + ' ' +
+				 currentFeature.properties.postalCode + '<br/><br/>' +
+				 currentFeature.properties.description + '</p>'
+			 )
 				.addTo(map);
 }
 
