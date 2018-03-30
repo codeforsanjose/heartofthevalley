@@ -235,6 +235,106 @@ var art = {
 				}
 			},
 			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						 -122.12760,
+						 37.46786
+					]
+				},
+				"properties": {
+					"title": "We Shouldn't Have to Paint This Mural to Preserve Our Indigenous Baylands",
+					"artist": "<a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a>, lead artist: Omar Ramirez, and students, staff and community members",
+					"description": "In 2002, <a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a> and lead artist Omar Ramirez collaborated with , and students, staff and community members to paint this mural at the East Palo Alto Charter School.",
+					"address": "1286 Runnymede Street",
+					"city": "East Palo Alto",
+					"country": "United States",
+					"postalCode": "94303",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-122.13072,
+						37.46130
+					]
+				},
+				"properties": {
+					"title": "Reflection Eternal",
+					"artist": "<a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a>, lead artist: Omar Ramirez, and students and staff",
+					"description": "In 2001, <a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a> and lead artist Omar Ramirez collaborated with students and staff at Boys & Girls Clubs of the Peninsula - Moldaw-Zaffaroni Clubhouse to paint this mural.",
+					"address": "2031 Pulgas Avenue",
+					"city": "East Palo Alto",
+					"country": "United States",
+					"postalCode": "94303",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+	 					-122.15736,
+						37.46256
+					]
+				},
+				"properties": {
+					"title": "Underneath It All",
+					"artist": "<a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a>, lead artist: Omar Ramirez, students, staff, and volunteers of the Teen Mural Project",
+					"description": "In 2001, <a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a> and lead artist Omar Ramirez collaborated with students, staff, and volunteers of the Teen Mural Project to complete this mural at Willow Oaks Elementary.",
+					"address": "620 Willow Road",
+					"city": "Menlo Park",
+					"country": "United States",
+					"postalCode": "94025",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-122.14605,
+						37.47369
+					]
+				},
+				"properties": {
+					"title": "Sun Stone",
+					"artist": "<a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a>, lead artist Sarah Woodward, students, staff, and parents of César Chávez Academy and Ravenswood City School District",
+					"description": "In 2011, <a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a> and lead artist Sarah Woodward collaborated with students, staff, and parents of César Chávez Academy and Ravenswood City School District collaborated to paint this mural.",
+					"address": "2450 Ralmar Avenue",
+					"city": "East Palo Alto",
+					"country": "United States",
+					"postalCode": "94303",
+					"state": "CA"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-122.13678,
+						37.47403
+					]
+				},
+				"properties": {
+					"title": "Celebrate East Palo Alto",
+					"artist": "<a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a> and <a href='http://www.sm-artgroup.com/' target='_blank'>Scape Martinez</a>",
+					"description": "In 2014, <a href='http://www.muralmusicarts.org/' target='_blank'>MMAP (Mural Music and Arts Project)</a> and lead artist <a href='http://www.sm-artgroup.com/' target='_blank'>Scape Martinez</a> collaborated on this mural; Scape spray painted a vibrant mural along the wall of the Jack Farrell Park.",
+					"address": "2509 Fordham St",
+					"city": "East Palo Alto",
+					"country": "United States",
+					"postalCode": "94303",
+					"state": "CA"
+				}
+			},
+			{
 			 "type": "Feature",
 			 "geometry": {
 				 "type": "Point",
@@ -621,6 +721,227 @@ var art = {
 					 "state": "CA"
 				 }
 			 },
+
+			 {
+			 	"type": "Feature",
+			 	"geometry": {
+			 		"type": "Point",
+			 		"coordinates": [
+			 			 -121.86943,
+						 37.27053
+			 		]
+			 	},
+			 	"properties": {
+			 		"title": "Mural at Terrell Elementary - honoring Randee Sparrer",
+			 		"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>, Monika Rose and Chris Carrillo",
+			 		"description": "A previous mural was vandalized; the mural design concept was updated, with a focus on honoring an incredible teacher who had passed away, Randee Sparrer, who loved to read to the students. The mural shows Randee Sparrer reading two stories, 'Cricket in Times Square' and 'The Swan and The Trumpet.' Paul J Gonzalez painted this mural, with design help from Monika Rose and painting in collaboration with Chris Carrillo.  It was painted in March 2018. View a <a href='https://www.instagram.com/p/BgUbDKlnhrU/?taken-by=pauljgonzalezartist' target='_blank'>photo of the mural.</a>",
+			 		"address": "3925 Pearl Avenue",
+			 		"city": "San José",
+			 		"country": "United States",
+			 		"postalCode": "95136",
+			 		"state": "CA"
+			 	}
+			 },
+			 {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						 -121.98742,
+						 37.35800
+					]
+				},
+				"properties": {
+					"title": "Mural at Briarwood Elementary School",
+					"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					"description": "The mural depicts a panda eating bamboo, a butterfly, a dragonfly and a ladybug. Paul J Gonzalez painted this mural at Briarwood Elementary School. View a <a href='https://www.instagram.com/p/Be3hUs0H-4a/?taken-by=pauljgonzalezartist' target='_blank'>photo of the mural.</a>",
+					"address": "1930 Townsend Ave",
+					"city": "Santa Clara",
+					"country": "United States",
+					"postalCode": "95051",
+					"state": "CA"
+				}
+			 },
+			 {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						 -122.00760,
+						 37.34834
+					]
+				},
+				"properties": {
+					"title": "Mural at Peterson Middle School",
+					"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					"description": "The mural depicts ASB student leaders, promiting a safe, bully-free, drug-free culture that aspires to uphold these values: confidence, inclusion, spirit, service, diversity, passion, advocate, dedication, and community. Paul J Gonzalez painted this mural at Peterson Middle School. View a <a href='https://www.instagram.com/p/BVf-jiVDOQ8/?taken-by=pauljgonzalezartist' target='_blank'>photo of the mural.</a>",
+					"address": "1380 Rosalia Ave",
+					"city": "Sunnyvale",
+					"country": "United States",
+					"postalCode": "94087",
+					"state": "CA"
+				}
+			 },
+			 {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						 -121.86185,
+						 37.33739
+					]
+				},
+				"properties": {
+					"title": "McKinley School Welcomes You!",
+					"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					"description": "In 2005, Paul J Gonzalez painted this mural at McKinley Elementary School. View a <a href='https://www.facebook.com/photo.php?fbid=10155359372684833&set=a.10155359372279833.1073741848.558994832&type=3&theater' target='_blank'>photo of the mural</a>.",
+					"address": "651 Macredes Avenue",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95116",
+					"state": "CA"
+				}
+			 },
+			 {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						 -121.84718,
+						 37.32868
+					]
+				},
+				"properties": {
+					"title": "Santee Elementary School Mural",
+					"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					"description": "In 2003, Paul J Gonzalez painted this mural at Santee Elementary School. View a <a href='https://www.facebook.com/photo.php?fbid=10155359373459833&set=a.10155359372279833.1073741848.558994832&type=3&theater' target='_blank'>photo of the mural</a>.",
+					"address": "1313 Audobon Dr",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95122",
+					"state": "CA"
+				}
+			 },
+			 {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.99574,
+						37.26248
+					]
+				},
+				"properties": {
+					"title": "Marshall Lane Elementary School",
+					"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					"description": "In June 2017, Paul J Gonzalez painted this mural, which highlights the water cycle, at Marshall Lane Elementary School. View a <a href='https://www.instagram.com/p/BVf7Hu6jA0C/?taken-by=pauljgonzalezartist' target='_blank'>photo of the mural</a>.",
+					"address": "14114 Marilyn Lane",
+					"city": "Saratoga",
+					"country": "United States",
+					"postalCode": "95070",
+					"state": "CA"
+				}
+			 },
+			 {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.82005,
+						37.25446
+					]
+				},
+				"properties": {
+					"title": "Oak Grove High School Eagle Mural",
+					"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					"description": "In February 2017, Paul J Gonzalez painted a mural of a large eagle at Oak Grove High School. View a <a href='https://www.instagram.com/p/BQlt8OpDO0x/?taken-by=pauljgonzalezartist' target='_blank'>photo of the mural</a>.",
+					"address": "285 Blossom Hill Rd",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95123",
+					"state": "CA"
+				}
+			 },
+			 {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-121.81377,
+						37.34207
+					]
+				},
+				"properties": {
+					"title": "Ocala Middle School Mural",
+					"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+					"description": "In May 2016, Paul J Gonzalez painted a mural of a cougar at the entrance of Ocala Middle School. View a <a href='https://www.instagram.com/p/BFfVfjRIhZY/?taken-by=pauljgonzalezartist' target='_blank'>photo of the mural</a>.",
+					"address": "2800 Ocala Ave",
+					"city": "San José",
+					"country": "United States",
+					"postalCode": "95148",
+					"state": "CA"
+				}
+			 },
+			 {
+			 "type": "Feature",
+			 "geometry": {
+				 "type": "Point",
+				 "coordinates": [
+					 -121.84510,
+					 37.34881
+				 ]
+			 },
+			 "properties": {
+				 "title": "César Chávez Elementary School Mural",
+				 "artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+				 "description": "In 2017, Paul J Gonzalez painted this mural at César Chávez Elementary School. View a <a href='https://www.facebook.com/photo.php?fbid=10155359412524833&set=a.10155359372279833.1073741848.558994832&type=3&theater' target='_blank'>photo of the mural</a>.",
+				 "address": "2000 Kammerer Ave",
+				 "city": "San José",
+				 "country": "United States",
+				 "postalCode": "95116",
+				 "state": "CA"
+			 }
+			},
+			{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.82326,
+					37.34944
+				]
+			},
+			"properties": {
+				"title": "Thomas P. Ryan Elementary Mural",
+				"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+				"description": "In 2013, Paul J Gonzalez painted two murals at Thomas P. Ryan Elementary School. The murals promote healthy eating, and keeping the body, mind and heart healthy. View a <a href='https://www.facebook.com/photo.php?fbid=10155359404039833&set=a.10155359372279833.1073741848.558994832&type=3&theater' target='_blank'>photo of the mural</a>.",
+				"address": "1241 McGinness Ave",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95127",
+				"state": "CA"
+			}
+		 },
+			{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-121.80189,
+					37.35242
+				]
+			},
+			"properties": {
+				"title": "Robert Sanders Elementary School Mural",
+				"artist": "<a href='http://www.pauljgonzalezartstudios.com/' target='_blank'>Paul J. Gonzalez</a>",
+				"description": "In 2017, Paul J Gonzalez painted this mural at César Chávez Elementary School. View a <a href='https://www.instagram.com/p/BVf9BxbDs9v/?taken-by=pauljgonzalezartist' target='_blank'>photo of the mural</a>.",
+				"address": "3411 Rocky Mountain Dr",
+				"city": "San José",
+				"country": "United States",
+				"postalCode": "95127",
+				"state": "CA"
+			}
+		 },
 			 {
  				"type": "Feature",
  				"geometry": {
