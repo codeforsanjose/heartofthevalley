@@ -266,3 +266,41 @@ a:hover {
 .mapboxgl-popup {
   padding-bottom: 10px;
 }
+.tabs {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .tabs button {
+    width: 50%;
+    font-size: 2rem;
+    background: #fff;
+    color: #000;
+    border: solid 1px;
+    padding: 1rem;
+    z-index: 9;
+    background-color: #f8f8f8;
+    border-color: darkorchid;
+  }
+  .sidebar {
+    display: none;
+    width: 100%;
+  }
+  .map {
+    left: 0%;
+    width: 100%;
+  }
+  .container.list-visible .sidebar {
+    display: block;
+  }
+  .container.list-visible .map {
+    display: none;
+  }
+}
