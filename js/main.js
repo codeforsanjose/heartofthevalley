@@ -135,6 +135,9 @@ function buildLocationList(data) {
 		}
 
 	 link.addEventListener('click', function(e){
+		 	// switch back to map view if on mobile
+			showMap();
+
 			// Update the currentFeature to the art associated with the clicked link
 			var clickedListing = data.features[this.dataPosition];
 
@@ -155,3 +158,17 @@ function buildLocationList(data) {
 		});
 	}
 }
+
+// mobile tabs at bottom of page to switch between map and list view
+var container = document.querySelector('.container');
+document.querySelector('.tabs .list-button').addEventListener('click',function(e) {
+	if(!container.classList.contains('list-visible')) {
+		container.classList.add('list-visible');
+	}
+})
+function showMap() {
+	container.classList.remove('list-visible');
+}
+document.querySelector('.tabs .map-button').addEventListener('click',function(e) {
+	showMap();
+})
