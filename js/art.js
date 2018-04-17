@@ -1,5 +1,5 @@
 /*
- *	Heart of the Valley 
+ *	Heart of the Valley
  *		art.js
  */
 
@@ -11,7 +11,7 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.8965597, 
+						-121.8965597,
             37.3341565
 					]
 				},
@@ -54,7 +54,7 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-121.9000958, 
+						-121.9000958,
             37.3258542
 					]
 				},
@@ -75,8 +75,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201, 
-              37.3297542    
+              -121.9025201,
+              37.3297542
             ]
         },"properties": {
 					"title": "Gutter Paraidse",
@@ -96,8 +96,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201, 
-              37.3297542    
+              -121.9025201,
+              37.3297542
             ]
         },"properties": {
 					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
@@ -115,8 +115,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9025201, 
-              37.3297542    
+              -121.9025201,
+              37.3297542
             ]
         },"properties": {
 					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
@@ -134,7 +134,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8936249, 
+            -121.8936249,
             37.3478549
           ]
         },"properties": {
@@ -152,7 +152,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8936249, 
+            -121.8936249,
             37.3478549
           ]
         },"properties": {
@@ -173,7 +173,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-             -121.9133071, 
+             -121.9133071,
               37.3312882
             ]
         },"properties": {
@@ -191,7 +191,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-             -121.8959579, 
+             -121.8959579,
               37.3330949
             ]
         },"properties": {
@@ -209,7 +209,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.8987777, 
+              -121.8987777,
               37.3253611
             ]
         },"properties": {
@@ -227,8 +227,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -121.8927333, 
-            37.3370561 
+            -121.8927333,
+            37.3370561
            ]
         },"properties": {
 					"title": "Mural exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a>",
@@ -245,7 +245,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.9134626, 
+              -121.9134626,
               37.3300271
             ]
         },"properties": {
@@ -263,7 +263,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.8869887, 
+              -121.8869887,
               37.3289321
             ]
         },"properties": {
@@ -281,7 +281,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-              -121.848412, 
+              -121.848412,
               37.3452983
             ]
         },"properties": {
@@ -1029,7 +1029,7 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-					  -121.8894295, 
+					  -121.8894295,
             37.3361009
 					]
 				},
@@ -1178,3 +1178,13 @@
 	 ]
  };
 
+// sort array of objects based on the title from A-Z
+/* if compare function returns -1 and sort a to a lower index than b
+	 if it returns 1 then sort a to a higher index than b
+	 if it returns 0 then leave a and b unchanged
+*/
+ var sortedArt  = art.features.sort(function compare(a, b) {
+	  var aTitle = a.properties.title.toUpperCase();
+		var bTitle = b.properties.title.toUpperCase();
+    return (aTitle < bTitle) ? -1 : (aTitle > bTitle) ? 1 : 0;
+});
