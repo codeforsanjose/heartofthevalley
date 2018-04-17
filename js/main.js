@@ -1,5 +1,5 @@
 /*
- *	Heart of the Valley 
+ *	Heart of the Valley
  *		main.js
  */
 
@@ -30,7 +30,7 @@ var map = new mapboxgl.Map({
 map.on('load', function(e) {
 	map.addSource('places', {
 			type: 'geojson',
-			data: art
+			data: sortedArt
 	});
 	buildLocationList(art); //initilize list.  call function when map loads
 });
@@ -82,10 +82,10 @@ function createPopUp(currentFeature, linkId) {
 				.setLngLat(currentFeature.geometry.coordinates)
 				.setHTML(
 					'<h3>' + currentFeature.properties.title + '</h3>' +
-					'<h4>' + `by ` + currentFeature.properties.artist + '<br/>' + 
-						`Address: ` +  currentFeature.properties.address + ', ' + 
-						currentFeature.properties.city + ', ' +  
-						currentFeature.properties.state + ' ' + 
+					'<h4>' + `by ` + currentFeature.properties.artist + '<br/>' +
+						`Address: ` +  currentFeature.properties.address + ', ' +
+						currentFeature.properties.city + ', ' +
+						currentFeature.properties.state + ' ' +
 						currentFeature.properties.postalCode + '</h4>'
 				 )
 				.addTo(map);
@@ -152,4 +152,3 @@ function buildLocationList(data) {
 		});
 	}
 }
-
