@@ -28,6 +28,10 @@ h4 {
   box-sizing: border-box;
 }
 
+.navbar-header {
+  padding-bottom: 19px;
+}
+
 /* mobile styles */
 @media only screen and (max-width: 480px) {
     .mapboxgl-popup-content {
@@ -274,7 +278,6 @@ a:hover {
   .tabs {
     display: flex;
     position: absolute;
-    bottom: 0;
     left: 0;
     width: 100%;
   }
@@ -282,7 +285,7 @@ a:hover {
     width: 50%;
     font-size: 2rem;
     background: #fff;
-    color: #000;
+    color: darkorchid;
     border: solid 1px;
     padding: 1rem;
     z-index: 9;

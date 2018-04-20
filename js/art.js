@@ -1,8 +1,3 @@
-/*
- *	Heart of the Valley
- *		art.js
- */
-
 var art = {
 		"type": "FeatureCollection",
 		"features": [
@@ -3347,4 +3342,15 @@ var art = {
 					},
 				}
   	 ]
- };
+};
+
+// sort array of objects based on the title from A-Z
+/* if compare function returns -1 and sort a to a lower index than b
+   if it returns 1 then sort a to a higher index than b
+   if it returns 0 then leave a and b unchanged
+*/
+var sortedArt  = art.features.sort(function compare(a, b) {
+    var aTitle = a.properties.title.toUpperCase();
+    var bTitle = b.properties.title.toUpperCase();
+    return (aTitle < bTitle) ? -1 : (aTitle > bTitle) ? 1 : 0;
+});
