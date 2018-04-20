@@ -1733,7 +1733,7 @@ var art = {
 				},
 				"properties": {
 					"title": "Afternoon",
-					"description": "'Afternoon' was painted by Sainer and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.<br/>Image: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>",
+					"description": "'Afternoon' was painted by Sainer and produced in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>.<br/>Image: <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. Source: Empire Seven Studios, https://www.empiresevenstudios.com",
 					"image": "https://static1.squarespace.com/static/5681ee28841abae3b7d8dec9/5681f5521c12101f97a4de89/5849d43ce58c620b5971f8da/1489697022793/Afternoon+for+website.jpg",
 					"artist": "Sainer",
 					"address": "87 N Almaden Blvd",
