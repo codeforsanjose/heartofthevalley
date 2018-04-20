@@ -1,27 +1,21 @@
 # Heart of the Valley
-There are so many incredible murals and public art in San José, California. This data visualization map is to help community members find public art and murals. 
+Our Valley of Heart's Delight (Santa Clara Valley, or the South Bay Area) has so many incredible murals and public art. This open source project visualizes and maps data about local public art and murals. We hope that this will help community members discover the beautiful murals and public art that make our communities vibrant. We also hope the map can help community members discover local artists and creatives in the South Bay.
 
-This project came out of a discussion with community members and [Empire Seven Studios](https://www.empiresevenstudios.com/), a local art studio located in Japantown, San José, California. For the initial version of the map, Yan-Yin Choy researched local public art and murals from online sources, Instagram, and Facebook. Images are either linked from the online sources; all downloaded images in the ```Img``` folder include sources in the name of the file. The data is updated as of October 1, 2017. 
+This is an open source project.
+
+It is maintained by [Code for San José](http://codeforsanjose.com) volunteers.
+
+Questions about forking or using this project? Read our [license](https://github.com/codeforsanjose/heartofthevalley/blob/master/license).
 
 ## Technologies:
 - Mapbox GL JS
+- Open Street Maps
 - JavaScript
 - Bootstrap
 - HTML
 - CSS
 
-I need help with the following: 
-## TODO:
-- Data needs to be expanded to include all new murals and public art installed/created in San José, California since October 2017.
-- The data currently resides in a geojson file; it would be better to create an API that can be updated by administrators. Also, the images shouldn't be in the img folder--it should come from the link source of the image of the public art. 
-- Add private token
-- Add about page 
-- Add footer
-- Create user accounts so community members can suggest changes or add a suggested mural/public art
-- Allow the art to be filted by proximity, by artist, etc
-- CMS admin backend
+## How to contribute
+Want to contribute data about local public art/murals? Submit the data as an issue, or in our [contact form](http://www.codeforsanjose.com/heartofthevalley/about.html)
 
-## How to contribute 
-Check out our list of issues on GitHub, and join our discussion on [Slack](https://slackin-c4sj.herokuapp.com/): #public-art channel. 
-
-Visit us at a Civic Hack night. Check out our [upcoming meetings](https://www.meetup.com/code-for-san-jose/) and RSVP.
+Contribute your research, development or design skills. Check out our list of issues on GitHub, and join our discussion on [Slack](https://slackin-c4sj.herokuapp.com/): #public-art channel.

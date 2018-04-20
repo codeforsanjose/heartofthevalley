@@ -19,18 +19,19 @@ var map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/light-v9',
 	center: [-121.893028, 37.335480],  // position in long, lat format
-	zoom: 12,
+	zoom: 8,
 	dragPan: true, // If true , the "drag to pan" interaction is enabled (see DragPanHandler)
 	trackResize: true, // If true, the map will automatically resize when the browser window resizes.
 	doubleClickZoom: true, //If true double click will zoom
 	keyboard: true //If true will enable keyboard shortcuts
 });
 
+
 // adds data to map
 map.on('load', function(e) {
 	map.addSource('places', {
 			type: 'geojson',
-			data: sortedArt
+			data: art
 	});
 	buildLocationList(art); //initilize list.  call function when map loads
 });
@@ -45,6 +46,7 @@ art.features.forEach(function(marker, i) {
 	new mapboxgl.Marker(el)
 			.setLngLat(marker.geometry.coordinates)
 			.addTo(map);
+
 
 el.addEventListener('click', function(e) {
 		var activeItem = document.getElementsByClassName('active');
@@ -81,13 +83,16 @@ function createPopUp(currentFeature, linkId) {
 	var popup = new mapboxgl.Popup({closeOnClick: true, closeButton: true, anchor: 'top'})
 				.setLngLat(currentFeature.geometry.coordinates)
 				.setHTML(
-					'<h3>' + currentFeature.properties.title + '</h3>' +
-					'<h4>' + `by ` + currentFeature.properties.artist + '<br/>' +
-						`Address: ` +  currentFeature.properties.address + ', ' +
-						currentFeature.properties.city + ', ' +
-						currentFeature.properties.state + ' ' +
-						currentFeature.properties.postalCode + '</h4>'
-				 )
+				 '<h3>' +
+				 currentFeature.properties.title + '</h3><p>' + `by ` +
+				 currentFeature.properties.artist + '<br/><br/>' +
+				 `Address: ` +
+				 currentFeature.properties.address + ', ' +
+				 currentFeature.properties.city + ', ' +
+				 currentFeature.properties.state + ' ' +
+				 currentFeature.properties.postalCode + '<br/><br/>' +
+				 currentFeature.properties.description + '</p>'
+			 )
 				.addTo(map);
 }
 
@@ -132,6 +137,9 @@ function buildLocationList(data) {
 		}
 
 	 link.addEventListener('click', function(e){
+		 	// switch back to map view if on mobile
+			showMap();
+
 			// Update the currentFeature to the art associated with the clicked link
 			var clickedListing = data.features[this.dataPosition];
 
@@ -152,3 +160,17 @@ function buildLocationList(data) {
 		});
 	}
 }
+
+// mobile tabs at bottom of page to switch between map and list view
+var container = document.querySelector('.container');
+document.querySelector('.tabs .list-button').addEventListener('click',function(e) {
+	if(!container.classList.contains('list-visible')) {
+		container.classList.add('list-visible');
+	}
+})
+function showMap() {
+	container.classList.remove('list-visible');
+}
+document.querySelector('.tabs .map-button').addEventListener('click',function(e) {
+	showMap();
+})

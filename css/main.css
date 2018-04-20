@@ -14,8 +14,8 @@ p {
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 30px
+  font-size: 20px;
+  line-height: 24px
 }
 
 h4 {
@@ -28,10 +28,14 @@ h4 {
   box-sizing: border-box;
 }
 
-/*responsive popups on mobile */
+.navbar-header {
+  padding-bottom: 19px;
+}
+
+/* mobile styles */
 @media only screen and (max-width: 480px) {
     .mapboxgl-popup-content {
-        max-width: 250px;
+        max-width: 300px;
     }
     .mapboxgl-popup-content div {
         padding:0em;
@@ -62,7 +66,6 @@ h4 {
     bottom: 0;
   }
 
-
 }
 .navbar-brand {
     font-family: 'Raleway', sans-serif;
@@ -85,6 +88,10 @@ h1 {
   font-weight: 700;
   line-height: 20px;
   padding: 20px 2px;
+}
+
+h3 a {
+  color: #f2e5f2;
 }
 
 a {
@@ -146,6 +153,7 @@ a:hover {
   padding-top: 25px;
   color: darkorchid;
   font-weight: 700;
+  line-height: 20px;
   font-size: 16px;
 }
 
@@ -186,8 +194,10 @@ a:hover {
 
 /* Marker tweaks */
 .mapboxgl-popup-close-button {
-  display: auto;
   color: white;
+  font-weight: 700;
+  font-size: 20px;
+  padding-right: 5px;
 }
 
 .mapboxgl-popup-content {
@@ -205,20 +215,29 @@ a:hover {
   color: #fff;
   margin: 0;
   display: block;
-  padding: 10px;
+  padding: 20px 20px 20px 20px;
   border-radius: 3px 3px 0 0;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 24px;
   margin-top: -15px;
 }
 
 .mapboxgl-popup-content h4 {
   margin: 0;
   display: block;
-  padding: 10px;
-  line-height: 24px;
-  font-size: 18px;
+  padding: 20px 20px 20px 20px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mapboxgl-popup-content p {
+  margin: 0;
+  display: block;
+  padding: 20px 20px 20px 20px;
+  line-height: 18px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -232,6 +251,7 @@ a:hover {
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
   margin-top: 15px;
+/*  width: 250px; */
 }
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
@@ -249,4 +269,41 @@ a:hover {
 
 .mapboxgl-popup {
   padding-bottom: 10px;
+}
+.tabs {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  .tabs button {
+    width: 50%;
+    font-size: 2rem;
+    background: #fff;
+    color: darkorchid;
+    border: solid 1px;
+    padding: 1rem;
+    z-index: 9;
+    background-color: #f8f8f8;
+    border-color: darkorchid;
+  }
+  .sidebar {
+    display: none;
+    width: 100%;
+  }
+  .map {
+    left: 0%;
+    width: 100%;
+  }
+  .container.list-visible .sidebar {
+    display: block;
+  }
+  .container.list-visible .map {
+    display: none;
+  }
 }
