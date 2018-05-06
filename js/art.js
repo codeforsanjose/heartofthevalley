@@ -507,7 +507,7 @@ var art = {
 				 "properties": {
 					 "title": "Bike Mural at Peet's Coffee on The Alameda",
 					 "artist": "<a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a>",
-					 "description":"As part of the Rolling Your Way Bike mural series On The Alameda, in July 2016, <a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a> painted a bike mural on the exterior wall of Peet's Coffee on The Alameda. The mural was and produced in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a> and Alameda Business Association. <br/><br/> Source: Source: Gemellos, Lila. “Interactive Mural Projects” Creative Force Lila Gemellos, 28 Mar. 2018, http://www.gemellosmurals.com/portfolio/interactive-mural-projects/",
+					 "description":"As part of the Rolling Your Way Bike mural series On The Alameda, in July 2016, <a href='http://www.gemellosmurals.com/' target='_blank'>Lila Gemellos</a> painted a bike mural on the exterior wall of Peet's Coffee on The Alameda. The mural was and produced in collaboration with the <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a> and Alameda Business Association. <br/><br/> Source: Gemellos, Lila. “Interactive Mural Projects” Creative Force Lila Gemellos, 28 Mar. 2018, http://www.gemellosmurals.com/portfolio/interactive-mural-projects/",
 					 "address": "1295 The Alameda",
 					 "city": "San José",
 					 "country": "United States",
@@ -3275,7 +3275,7 @@ var art = {
 				"properties": {
 					"title": "Tara Mechani",
 					"artist": "Dana Albany",
-					"description": "Tara Mechani by Dana Albany is located at Plaza de César Chávez. This public artwork is part of the Playa to Paseo initiative, a partnership between the San José Office of Cultural Affairs and Burning Man Project.",
+					"description": "Tara Mechani by Dana Albany is located at Plaza de César Chávez. This public artwork is part of the Playa to Paseo initiative, a partnership between the San José Office of Cultural Affairs and Burning Man Project. Source: City of San Jose. Playa to Paseo, http://www.sanjoseca.gov/index.aspx?nid=5876.",
 					"address": "1 Paseo De San Antonio",
 					"city": "San José",
 					"country": "United States",
@@ -3317,7 +3317,7 @@ var art = {
 				"properties": {
 					"title": "Ursa Mater",
 					"artist": "Mr. and Mrs. Fergeson",
-					"description": "Ursa Mater (Mother Bear), a sculpture by artists <a href='https://www.mr-and-mrs-ferguson.com/' target='_blank'>Mr. and Mrs. Fergeson,</a> will be in downtown San José from March to June 2018. This public artwork is part of the Playa to Paseo initiative, a partnership between the San José Office of Cultural Affairs and Burning Man Project.",
+					"description": "Ursa Mater (Mother Bear), a sculpture by artists <a href='https://www.mr-and-mrs-ferguson.com/' target='_blank'>Mr. and Mrs. Fergeson,</a> will be in downtown San José from March to June 2018. This public artwork is part of the Playa to Paseo initiative, a partnership between the San José Office of Cultural Affairs and Burning Man Project. Source: City of San Jose. Playa to Paseo, http://www.sanjoseca.gov/index.aspx?nid=5876.",
 					"address": "2 Paseo De San Antonio",
 					"city": "San José",
 					"country": "United States",
