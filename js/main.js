@@ -117,7 +117,7 @@ function buildLocationList(data) {
 		var link = listing.appendChild(document.createElement('a'));
 		link.href = '#';
 		link.className = 'title';
-		link.innerHTML = prop.title;
+		link.innerHTML = '<br/>' + prop.title;
 		link.listingFeature = currentFeature;
 		link.listingId = 'listing-' + i;
 
