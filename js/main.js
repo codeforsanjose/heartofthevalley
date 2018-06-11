@@ -60,7 +60,7 @@ el.addEventListener('click', function(e) {
 			activeItem[0].classList.remove('active');
 		}
 		var listing = document.getElementById('listing-' + i);
-		console.log(listing);
+
 		listing.classList.add('active');
 	});
 });
@@ -96,6 +96,9 @@ function createPopUp(currentFeature, linkId) {
 				.addTo(map);
 }
 
+
+
+
 function buildLocationList(data) {
 	// Iterate through the list of arts
 	for (i = 0; i < data.features.length; i++) {
@@ -109,14 +112,14 @@ function buildLocationList(data) {
 		var listing = listings.appendChild(document.createElement('div'));
 		listing.className = 'item';
 		listing.id = 'listing-' + i;
-
 		// Create a new link with the class 'title' for each art
 		// and fill it with the art address
 		var link = listing.appendChild(document.createElement('a'));
 		link.href = '#';
 		link.className = 'title';
-		link.dataPosition = i;
-		link.innerHTML = prop.title;
+		link.innerHTML = '<br/>' + prop.title;
+		link.listingFeature = currentFeature;
+		link.listingId = 'listing-' + i;
 
 		// Create a new div with the class 'details' for each listing
 		// and fill it with the following
@@ -136,29 +139,30 @@ function buildLocationList(data) {
 			story.innerHTML = '<br/>' + prop.description;
 		}
 
-	 link.addEventListener('click', function(e){
-		 	// switch back to map view if on mobile
-			showMap();
-
-			// Update the currentFeature to the art associated with the clicked link
-			var clickedListing = data.features[this.dataPosition];
-
-			// 1. Fly to the point
-			flyToArt(clickedListing);
-
-			// 2. Close all other popups and display popup for clicked point
-			createPopUp(clickedListing, listing.id);
-
-			// 3. Highlight listing in sidebar (and remove highlight for all other listings)
-			var activeItem = document.getElementsByClassName('active');
-
-			if (activeItem[0]) {
-				 activeItem[0].classList.remove('active');
-			}
-			this.parentNode.classList.add('active');
-
-		});
+	 link.addEventListener('click', linkOnClickHandler);
 	}
+}
+
+//Series of action to perform after a listing link is clicked.
+function linkOnClickHandler(e) {
+		 // switch back to map view if on mobile
+		 showMap();
+		 // Update the currentFeature to the art associated with the clicked link
+		 // var clickedListing = data.features[this.dataPosition];
+		 var clickedListing = this.listingFeature;
+		 // 1. Fly to the point
+		 flyToArt(clickedListing);
+		 // 2. Close all other popups and display popup for clicked point
+		 createPopUp(clickedListing, this.listingId);
+
+		 // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+		 var activeItem = document.getElementsByClassName('active');
+
+		 if (activeItem[0]) {
+				activeItem[0].classList.remove('active');
+		 }
+		 this.parentNode.classList.add('active');
+
 }
 
 // mobile tabs at bottom of page to switch between map and list view
