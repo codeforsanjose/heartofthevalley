@@ -49,13 +49,7 @@ function cleanUpItem(item) {
  */
 function setYear(item) {
   let year = item.description.match(/\d{4}/);
-  if (year) {
-    year = parseInt(year[0]);
-    item.year = year;
-    item.description = item.description.replace(year, '');
-  } else {
-    item.year = null;
-  }
+  item.year = year ? parseInt(year[0]) : null;
   return item;
 }
 
@@ -110,6 +104,9 @@ function scrapeAndWriteData() {
       for (let artwork of artworks) {
         artwork = cleanUpItem(artwork);
         artwork = setYear(artwork);
+        if (artwork.year) {
+          artwork.description = artwork.description.replace(artwork.year, '');
+        }
         cleanedArtworks.push(artwork);
       }
       fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
