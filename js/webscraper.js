@@ -17,6 +17,7 @@ let counter = 0;
  */
 const CLEAN_UP_RULES = {
   artist: [/artists*:/i, /\d+/],
+  title: [/\r\n/gm],
   description: [
     function(item) {
       const { artist, title } = item;
