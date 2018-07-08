@@ -1,10 +1,12 @@
+const readline = require('readline');
 const osmosis = require('osmosis');
 const fs = require('fs');
-const URL = 'http://sanjoseca.gov/Facilities/Facility/Search';
+const HOST = 'http://sanjoseca.gov';
+const URL = `${HOST}/Facilities/Facility/Search`;
 const PATH_OUTPUT_FILE = 'wip_artworks.json';
 const artworks = [];
 const numArtworksToScrape = 10; // number of artwork listings per page
-const categoryIDs = 15; // categoryID = 15 is 'public art'
+const categoryIDs = 15; // categoryID = 15 is category for 'public art'
 const httpBody = `featureIDs=&categoryIDs=${categoryIDs}&occupants=null&keywords=&pageSize=${numArtworksToScrape}&pageNumber=1&sortBy=3&currentLatitude=null&currentLongitude=null&isReservableOnly=false`;
 let counter = 0;
 
@@ -55,20 +57,25 @@ function cleanText(key, item, rules) {
     }
     item[key] = newText;
   }
+
   return item[key].trim();
 }
 
-function main() {
+function scrape() {
   console.log('scraping data...');
 
-  osmosis
+  return osmosis
     .post(URL, httpBody)
     .find('h3 > a') // selector for links to indivdual pages about art work
+    .set({ url: '@href' })
+    .then((_content, data) => {
+      data.url = HOST + data.url;
+    })
     .follow('@href') // follow link to individual page about the art work
     .set({
       // grab and store the appropriate details about the art work
       title: '.editorContent .Subhead1',
-      artist: '.Subhead2',
+      artist: '.editorContent .Subhead2',
       description: '.editorContent'
     })
     .data(function(_data) {
@@ -90,6 +97,36 @@ function main() {
         }
       });
       console.log(`data successfully written to ${PATH_OUTPUT_FILE}`);
+    });
+}
+
+function main() {
+  let rl;
+
+  new Promise((resolve, reject) => {
+    rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    rl.question(
+      `This action will overwrite ${PATH_OUTPUT_FILE} if it exists. Are you sure you want to continue?`,
+      answer => {
+        answer = answer.toLowerCase();
+        if (answer === 'yes' || answer === 'y') {
+          return resolve();
+        }
+        reject();
+      }
+    );
+  })
+    .then(() => {
+      rl.close();
+      scrape();
+    })
+    .catch(() => {
+      console.log('aborted.');
+      rl.close();
     });
 }
 
