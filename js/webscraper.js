@@ -125,38 +125,47 @@ function scrapeAndWriteData(singleArtworkUrl = null) {
   const HOST = 'http://sanjoseca.gov';
   const URL = `${HOST}/Facilities/Facility/Search`;
   let counter = 0;
+  const setMap = {
+    // grab and store the appropriate details about the art work
+    title: '.editorContent .Subhead1',
+    artist: '.editorContent .Subhead2',
+    description: '.editorContent'
+  };
+
+  function cleanData(artworks) {
+    console.log('scraping done.');
+    console.log('formatting data...');
+    const cleanedArtworks = [];
+    for (let artwork of artworks) {
+      Object.assign(artwork, { description: cleanDescriptionByRules(artwork) });
+      Object.assign(artwork, getTitleYearArtists(artwork));
+      Object.assign(artwork, { description: removeTitleArtistYearFromDescription(artwork) });
+      cleanedArtworks.push(artwork);
+    }
+    fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
+      if (err) {
+        throw error;
+      }
+    });
+    console.log(`data successfully written to '${PATH_OUTPUT_FILE}'`);
+  }
+
+  function storeArtwork(_data) {
+    console.log('artwork number: ', ++counter);
+    artworks.push(_data);
+  }
 
   console.log('scraping data...');
 
   if (singleArtworkUrl) {
     return osmosis
       .get(singleArtworkUrl)
-      .set({
-        // grab and store the appropriate details about the art work
-        title: '.editorContent .Subhead1',
-        artist: '.editorContent .Subhead2',
-        description: '.editorContent'
-      })
+      .set(setMap)
       .data(function(_data) {
-        console.log('artwork number: ', ++counter);
-        artworks.push(_data);
+        storeArtwork(_data);
       })
       .done(function() {
-        console.log('scraping done.');
-        console.log('formatting data...');
-        const cleanedArtworks = [];
-        for (let artwork of artworks) {
-          Object.assign(artwork, { description: cleanDescriptionByRules(artwork) });
-          Object.assign(artwork, getTitleYearArtists(artwork));
-          Object.assign(artwork, { description: removeTitleArtistYearFromDescription(artwork) });
-          cleanedArtworks.push(artwork);
-        }
-        fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
-          if (err) {
-            throw error;
-          }
-        });
-        console.log(`data successfully written to '${PATH_OUTPUT_FILE}'`);
+        cleanData(artworks);
       });
   }
 
@@ -168,32 +177,12 @@ function scrapeAndWriteData(singleArtworkUrl = null) {
       data.url = HOST + data.url;
     })
     .follow('@href') // follow link to individual page about the art work
-    .set({
-      // grab and store the appropriate details about the art work
-      title: '.editorContent .Subhead1',
-      artist: '.editorContent .Subhead2',
-      description: '.editorContent'
-    })
+    .set(setMap)
     .data(function(_data) {
-      console.log('artwork number: ', ++counter);
-      artworks.push(_data);
+      storeArtwork(_data);
     })
     .done(function() {
-      console.log('scraping done.');
-      console.log('formatting data...');
-      const cleanedArtworks = [];
-      for (let artwork of artworks) {
-        Object.assign(artwork, { description: cleanDescriptionByRules(artwork) });
-        Object.assign(artwork, getTitleYearArtists(artwork));
-        Object.assign(artwork, { description: removeTitleArtistYearFromDescription(artwork) });
-        cleanedArtworks.push(artwork);
-      }
-      fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
-        if (err) {
-          throw error;
-        }
-      });
-      console.log(`data successfully written to ${PATH_OUTPUT_FILE}`);
+      cleanData(artworks);
     });
 }
 
@@ -228,8 +217,7 @@ function scrapeAndWriteData(singleArtworkUrl = null) {
       }
       scrapeAndWriteData();
     })
-    .catch(err => {
-      throw err;
+    .catch(() => {
       console.log('aborted.');
       if (!DEBUG_MODE) {
         readlineInterface.close();
