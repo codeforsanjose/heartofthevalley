@@ -118,7 +118,7 @@ function scrapeAndWriteData() {
     });
 }
 
-function main() {
+(function main() {
   let rl;
 
   new Promise((resolve, reject) => {
@@ -146,6 +146,4 @@ function main() {
       console.log('aborted.');
       rl.close();
     });
-}
-
-main();
+})();
