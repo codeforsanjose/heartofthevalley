@@ -1,14 +1,7 @@
 const readline = require('readline');
 const osmosis = require('osmosis');
 const fs = require('fs');
-const HOST = 'http://sanjoseca.gov';
-const URL = `${HOST}/Facilities/Facility/Search`;
 const PATH_OUTPUT_FILE = 'wip_artworks.json';
-const artworks = [];
-const numArtworksToScrape = 10; // number of artwork listings per page
-const categoryIDs = 15; // categoryID = 15 is category for 'public art'
-const httpBody = `featureIDs=&categoryIDs=${categoryIDs}&occupants=null&keywords=&pageSize=${numArtworksToScrape}&pageNumber=1&sortBy=3&currentLatitude=null&currentLongitude=null&isReservableOnly=false`;
-let counter = 0;
 
 /**
  * Used for matching text content to be removed.
@@ -19,65 +12,153 @@ const CLEAN_UP_RULES = {
   artist: [/artists*:/i, /\d+/],
   title: [/\r\n/gm],
   description: [
-    function(item) {
-      const { artist, title } = item;
-      return item.description.replace(artist, '').replace(title, '');
-    },
     /report a concern/i,
     '(408) 793-4330',
     'publicart@sanjoseca.gov',
     /[\r\n]+/gm,
-    /artists*:/i,
     /District.*/g // To remove HTML styling data at end of description
   ]
 };
 
 /**
- * @param {Object} item
- * @return {Object} item
+ *
+ * @param {String} s
+ * @return {String}
  */
-function cleanUpItem(item) {
-  for (let key in item) {
-    item[key] = cleanText(key, item, CLEAN_UP_RULES);
-  }
-  return item;
-}
-
-/**
- * @param {Object} item
- * @return {Object} item
- */
-function setYear(item) {
-  let year = item.description.match(/\d{4}/);
-  item.year = year ? parseInt(year[0]) : null;
-  return item;
+function getTitle(s) {
+  const match = s.match(/(.*)artists*/i);
+  return match && match[1] ? match[1].trim() : '';
 }
 
 /**
  *
- * @param {String} key
- * @param {Object} item
- * @param {Object} rules
- * @return {Object} item
+ * @param {String} s
+ * @return {Number}
  */
-function cleanText(key, item, rules) {
-  if (rules[key]) {
-    let newText = item[key];
-    for (let rule of rules[key]) {
-      if (typeof rule === 'function') {
-        newText = rule(item);
-        continue;
-      }
-      newText = newText.replace(rule, '');
-    }
-    item[key] = newText;
-  }
-
-  return item[key].trim();
+function getYear(s) {
+  const match = s.match(/artists*.*(\d{4})/i);
+  return match && match[1] ? parseInt(match[1].trim()) : '';
 }
 
-function scrapeAndWriteData() {
+/**
+ * @param {String} s
+ * @return {String}
+ */
+function getArtist(s) {
+  const match = s.match(/artists*:(.*)\d{4}/i);
+  return match && match[1] ? match[1].trim() : '';
+}
+
+/**
+ *
+ * @param {Object} item
+ * @return {Object}
+ */
+function getTitleYearArtists(item) {
+  const { description } = item;
+  return {
+    title: getTitle(description),
+    year: getYear(description),
+    artist: getArtist(description)
+  };
+}
+
+function cleanDescriptionByRules(item) {
+  const { title, year, artists, description } = item;
+  let cleanedDescription = cleanByRules(description, 'description');
+  [(title, year, artists)].forEach(prop => {
+    if (prop) {
+      cleanedDescription = cleanedDescription.replace(prop, '');
+    }
+  });
+  return cleanedDescription.trim();
+}
+
+function removeTitleArtistYearFromDescription(item) {
+  const { description, title, artist, year } = item;
+  let cleanedDescription = description;
+  [title, artist, year].forEach(category => {
+    if (category) {
+      cleanedDescription = cleanedDescription.replace(category, '');
+    } else {
+      console.error(
+        `Error attempting to remove title, artist and year from description of artwork:`
+      );
+      console.error();
+      console.error(`Title:`);
+      console.error(`${item.title}`);
+      console.error();
+      console.error(`URL:`);
+      console.error(`${item.url}`);
+      console.error();
+    }
+  });
+  cleanedDescription = cleanedDescription.replace(/artists*:/i, '');
+
+  return cleanedDescription.trim();
+}
+
+/**
+ *
+ * @param {String} s
+ * @param {String} ruleCategory
+ * @return {String}
+ */
+function cleanByRules(s, ruleCategory) {
+  let cleanString = s;
+  const rules = CLEAN_UP_RULES[ruleCategory];
+  if (!rules) {
+    throw 'No rules defined for that category type';
+  }
+
+  rules.forEach(rule => {
+    cleanString = cleanString.replace(rule, '');
+  });
+  return cleanString;
+}
+
+function scrapeAndWriteData(singleArtworkUrl = null) {
+  const artworks = [];
+  const numArtworksToScrape = 20; // number of artwork listings per page
+  const categoryIDs = 15; // categoryID = 15 is category for 'public art'
+  const httpBody = `featureIDs=&categoryIDs=${categoryIDs}&occupants=null&keywords=&pageSize=${numArtworksToScrape}&pageNumber=1&sortBy=3&currentLatitude=null&currentLongitude=null&isReservableOnly=false`;
+  const HOST = 'http://sanjoseca.gov';
+  const URL = `${HOST}/Facilities/Facility/Search`;
+  let counter = 0;
+
   console.log('scraping data...');
+
+  if (singleArtworkUrl) {
+    return osmosis
+      .get(singleArtworkUrl)
+      .set({
+        // grab and store the appropriate details about the art work
+        title: '.editorContent .Subhead1',
+        artist: '.editorContent .Subhead2',
+        description: '.editorContent'
+      })
+      .data(function(_data) {
+        console.log('artwork number: ', ++counter);
+        artworks.push(_data);
+      })
+      .done(function() {
+        console.log('scraping done.');
+        console.log('formatting data...');
+        const cleanedArtworks = [];
+        for (let artwork of artworks) {
+          Object.assign(artwork, { description: cleanDescriptionByRules(artwork) });
+          Object.assign(artwork, getTitleYearArtists(artwork));
+          Object.assign(artwork, { description: removeTitleArtistYearFromDescription(artwork) });
+          cleanedArtworks.push(artwork);
+        }
+        fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
+          if (err) {
+            throw error;
+          }
+        });
+        console.log(`data successfully written to '${PATH_OUTPUT_FILE}'`);
+      });
+  }
 
   return osmosis
     .post(URL, httpBody)
@@ -102,11 +183,9 @@ function scrapeAndWriteData() {
       console.log('formatting data...');
       const cleanedArtworks = [];
       for (let artwork of artworks) {
-        artwork = cleanUpItem(artwork);
-        artwork = setYear(artwork);
-        if (artwork.year) {
-          artwork.description = artwork.description.replace(artwork.year, '');
-        }
+        Object.assign(artwork, { description: cleanDescriptionByRules(artwork) });
+        Object.assign(artwork, getTitleYearArtists(artwork));
+        Object.assign(artwork, { description: removeTitleArtistYearFromDescription(artwork) });
         cleanedArtworks.push(artwork);
       }
       fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
@@ -119,16 +198,21 @@ function scrapeAndWriteData() {
 }
 
 (function main() {
-  let rl;
+  let readlineInterface;
+  const DEBUG_MODE = false; // Debug mode skips terminal prompt; necessary if running the program through IDE debugger.
 
   new Promise((resolve, reject) => {
-    rl = readline.createInterface({
+    if (DEBUG_MODE) {
+      return resolve();
+    }
+
+    readlineInterface = readline.createInterface({
       input: process.stdin,
       output: process.stdout
     });
 
-    rl.question(
-      `This action will overwrite ${PATH_OUTPUT_FILE} if it exists. Are you sure you want to continue?\n`,
+    readlineInterface.question(
+      `This action will overwrite '${PATH_OUTPUT_FILE}' if it exists. Are you sure you want to continue?\n`,
       answer => {
         answer = answer.toLowerCase();
         if (answer === 'yes' || answer === 'y') {
@@ -139,11 +223,16 @@ function scrapeAndWriteData() {
     );
   })
     .then(() => {
-      rl.close();
+      if (!DEBUG_MODE) {
+        readlineInterface.close();
+      }
       scrapeAndWriteData();
     })
-    .catch(() => {
+    .catch(err => {
+      throw err;
       console.log('aborted.');
-      rl.close();
+      if (!DEBUG_MODE) {
+        readlineInterface.close();
+      }
     });
 })();
