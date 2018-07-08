@@ -21,7 +21,6 @@ const CLEAN_UP_RULES = {
 };
 
 /**
- *
  * @param {String} s
  * @return {String}
  */
@@ -31,7 +30,6 @@ function getTitle(s) {
 }
 
 /**
- *
  * @param {String} s
  * @return {Number}
  */
@@ -50,7 +48,6 @@ function getArtist(s) {
 }
 
 /**
- *
  * @param {Object} item
  * @return {Object}
  */
@@ -99,7 +96,6 @@ function removeTitleArtistYearFromDescription(item) {
 }
 
 /**
- *
  * @param {String} s
  * @param {String} ruleCategory
  * @return {String}
