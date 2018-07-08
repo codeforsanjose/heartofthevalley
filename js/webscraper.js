@@ -74,24 +74,22 @@ function cleanDescriptionByRules(item) {
 function removeTitleArtistYearFromDescription(item) {
   const { description, title, artist, year } = item;
   let cleanedDescription = description;
-  [title, artist, year].forEach(category => {
-    if (category) {
+  if (title && artist && year) {
+    [title, artist, year].forEach(category => {
       cleanedDescription = cleanedDescription.replace(category, '');
-    } else {
-      console.error(
-        `Error attempting to remove title, artist and year from description of artwork:`
-      );
-      console.error();
-      console.error(`Title:`);
-      console.error(`${item.title}`);
-      console.error();
-      console.error(`URL:`);
-      console.error(`${item.url}`);
-      console.error();
-    }
-  });
-  cleanedDescription = cleanedDescription.replace(/artists*:/i, '');
+    });
+  } else {
+    console.error(`Error attempting to remove title, artist and year from description of artwork:`);
+    console.error();
+    console.error(`Title:`);
+    console.error(`${item.title}`);
+    console.error();
+    console.error(`URL:`);
+    console.error(`${item.url}`);
+    console.error();
+  }
 
+  cleanedDescription = cleanedDescription.replace(/artists*:/i, '');
   return cleanedDescription.trim();
 }
 
