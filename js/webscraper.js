@@ -81,7 +81,7 @@ function cleanText(key, item, rules) {
   return item[key].trim();
 }
 
-function scrape() {
+function scrapeAndWriteData() {
   console.log('scraping data...');
 
   return osmosis
@@ -130,7 +130,7 @@ function main() {
     });
 
     rl.question(
-      `This action will overwrite ${PATH_OUTPUT_FILE} if it exists. Are you sure you want to continue?`,
+      `This action will overwrite ${PATH_OUTPUT_FILE} if it exists. Are you sure you want to continue?\n`,
       answer => {
         answer = answer.toLowerCase();
         if (answer === 'yes' || answer === 'y') {
@@ -142,7 +142,7 @@ function main() {
   })
     .then(() => {
       rl.close();
-      scrape();
+      scrapeAndWriteData();
     })
     .catch(() => {
       console.log('aborted.');
