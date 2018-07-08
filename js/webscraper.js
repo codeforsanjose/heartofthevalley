@@ -10,6 +10,11 @@ const categoryIDs = 15; // categoryID = 15 is category for 'public art'
 const httpBody = `featureIDs=&categoryIDs=${categoryIDs}&occupants=null&keywords=&pageSize=${numArtworksToScrape}&pageNumber=1&sortBy=3&currentLatitude=null&currentLongitude=null&isReservableOnly=false`;
 let counter = 0;
 
+/**
+ * Used for matching text content to be removed.
+ * key - artwork category
+ * value - regex rules or function.
+ */
 const CLEAN_UP_RULES = {
   artist: [/artists*:/i, /\d+/],
   description: [
@@ -22,10 +27,14 @@ const CLEAN_UP_RULES = {
     'publicart@sanjoseca.gov',
     /[\r\n]+/gm,
     /artists*:/i,
-    /District.*/g
+    /District.*/g // To remove HTML styling data at end of description
   ]
 };
 
+/**
+ * @param {Object} item
+ * @return {Object} item
+ */
 function cleanUpItem(item) {
   for (let key in item) {
     item[key] = cleanText(key, item, CLEAN_UP_RULES);
@@ -33,6 +42,10 @@ function cleanUpItem(item) {
   return item;
 }
 
+/**
+ * @param {Object} item
+ * @return {Object} item
+ */
 function setYear(item) {
   let year = item.description.match(/\d{4}/);
   if (year) {
@@ -45,6 +58,13 @@ function setYear(item) {
   return item;
 }
 
+/**
+ *
+ * @param {String} key
+ * @param {Object} item
+ * @param {Object} rules
+ * @return {Object} item
+ */
 function cleanText(key, item, rules) {
   if (rules[key]) {
     let newText = item[key];
