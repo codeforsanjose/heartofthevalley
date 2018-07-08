@@ -25,7 +25,7 @@ const CLEAN_UP_RULES = {
  * @return {String}
  */
 function getTitle(s) {
-  const match = s.match(/(.*)artists*/i);
+  const match = s.match(/(.*)artists*:/i);
   return match && match[1] ? match[1].trim() : '';
 }
 
@@ -184,7 +184,7 @@ function scrapeAndWriteData(singleArtworkUrl = null) {
 
 (function main() {
   let readlineInterface;
-  const DEBUG_MODE = false; // Debug mode skips terminal prompt; necessary if running the program through IDE debugger.
+  const DEBUG_MODE = true; // Debug mode skips terminal prompt; necessary if running the program through IDE debugger.
 
   new Promise((resolve, reject) => {
     if (DEBUG_MODE) {
