@@ -3,11 +3,12 @@ const fs = require('fs');
 const URL = 'http://sanjoseca.gov/Facilities/Facility/Search';
 const PATH_OUTPUT_FILE = 'wip_artworks.json';
 const artworks = [];
-const pageSize = 1; // number of artwork listings per page
+const numArtworksToScrape = 10; // number of artwork listings per page
 const categoryIDs = 15; // categoryID = 15 is 'public art'
-const httpBody = `featureIDs=&categoryIDs=${categoryIDs}&occupants=null&keywords=&pageSize=${pageSize}&pageNumber=1&sortBy=3&currentLatitude=null&currentLongitude=null&isReservableOnly=false`;
+const httpBody = `featureIDs=&categoryIDs=${categoryIDs}&occupants=null&keywords=&pageSize=${numArtworksToScrape}&pageNumber=1&sortBy=3&currentLatitude=null&currentLongitude=null&isReservableOnly=false`;
+let counter = 0;
 
-const cleanUpRules = {
+const CLEAN_UP_RULES = {
   artist: [/artists*:/i, /\d+/],
   description: [
     function(item) {
@@ -25,7 +26,7 @@ const cleanUpRules = {
 
 function cleanUpItem(item) {
   for (let key in item) {
-    item[key] = cleanText(key, item);
+    item[key] = cleanText(key, item, CLEAN_UP_RULES);
   }
   return item;
 }
@@ -42,10 +43,10 @@ function setYear(item) {
   return item;
 }
 
-function cleanText(key, item) {
-  if (cleanUpRules[key]) {
+function cleanText(key, item, rules) {
+  if (rules[key]) {
     let newText = item[key];
-    for (let rule of cleanUpRules[key]) {
+    for (let rule of rules[key]) {
       if (typeof rule === 'function') {
         newText = rule(item);
         continue;
@@ -57,34 +58,39 @@ function cleanText(key, item) {
   return item[key].trim();
 }
 
-console.log('scraping data...')
+function main() {
+  console.log('scraping data...');
 
-osmosis
-  .post(URL, httpBody)
-  .find('h3 > a') // selector for links to indivdual pages about art work
-  .follow('@href') // follow link to individual page about the art work
-  .set({
-    // grab and store the appropriate details about the art work
-    title: '.editorContent .Subhead1',
-    artist: '.Subhead2',
-    description: '.editorContent'
-  })
-  .data(function(_data) {
-    artworks.push(_data);
-  })
-  .done(function() {
-    console.log('scraping done.')
-    console.log('formatting data...')
-    const cleanedArtworks = [];
-    for (let artwork of artworks) {
-      artwork = cleanUpItem(artwork);
-      artwork = setYear(artwork);
-      cleanedArtworks.push(artwork);
-    }
-    fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
-      if (err) {
-        throw error
+  osmosis
+    .post(URL, httpBody)
+    .find('h3 > a') // selector for links to indivdual pages about art work
+    .follow('@href') // follow link to individual page about the art work
+    .set({
+      // grab and store the appropriate details about the art work
+      title: '.editorContent .Subhead1',
+      artist: '.Subhead2',
+      description: '.editorContent'
+    })
+    .data(function(_data) {
+      console.log('artwork number: ', ++counter);
+      artworks.push(_data);
+    })
+    .done(function() {
+      console.log('scraping done.');
+      console.log('formatting data...');
+      const cleanedArtworks = [];
+      for (let artwork of artworks) {
+        artwork = cleanUpItem(artwork);
+        artwork = setYear(artwork);
+        cleanedArtworks.push(artwork);
       }
+      fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
+        if (err) {
+          throw error;
+        }
+      });
+      console.log(`data successfully written to ${PATH_OUTPUT_FILE}`);
     });
-    console.log(`data successfully written to ${PATH_OUTPUT_FILE}`)
-  });
+}
+
+main();
