@@ -1,6 +1,7 @@
 const osmosis = require('osmosis');
 const fs = require('fs');
-const url = 'http://sanjoseca.gov/Facilities/Facility/Search';
+const URL = 'http://sanjoseca.gov/Facilities/Facility/Search';
+const PATH_OUTPUT_FILE = 'wip_artworks.json';
 const artworks = [];
 const pageSize = 1; // number of artwork listings per page
 const categoryIDs = 15; // categoryID = 15 is 'public art'
@@ -21,34 +22,6 @@ const cleanUpRules = {
     /District.*/g
   ]
 };
-
-osmosis
-  .post(url, httpBody)
-  .find('h3 > a') // selector for links to indivdual pages about art work
-  .follow('@href') // follow link to individual page about the art work
-  .set({
-    // grab and store the appropriate details about the art work
-    title: '.editorContent .Subhead1',
-    artist: '.Subhead2',
-    description: '.editorContent'
-  })
-  .data(function(_data) {
-    artworks.push(_data);
-  })
-  .done(function() {
-    const cleanedArtworks = [];
-    for (let artwork of artworks) {
-      artwork = cleanUpItem(artwork);
-      artwork = setYear(artwork);
-      cleanedArtworks.push(artwork);
-    }
-    fs.writeFile('wip_artworks.json', JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
-      if (err) {
-        console.error(err);
-      }
-    });
-    console.log('all done!');
-  });
 
 function cleanUpItem(item) {
   for (let key in item) {
@@ -83,3 +56,35 @@ function cleanText(key, item) {
   }
   return item[key].trim();
 }
+
+console.log('scraping data...')
+
+osmosis
+  .post(URL, httpBody)
+  .find('h3 > a') // selector for links to indivdual pages about art work
+  .follow('@href') // follow link to individual page about the art work
+  .set({
+    // grab and store the appropriate details about the art work
+    title: '.editorContent .Subhead1',
+    artist: '.Subhead2',
+    description: '.editorContent'
+  })
+  .data(function(_data) {
+    artworks.push(_data);
+  })
+  .done(function() {
+    console.log('scraping done.')
+    console.log('formatting data...')
+    const cleanedArtworks = [];
+    for (let artwork of artworks) {
+      artwork = cleanUpItem(artwork);
+      artwork = setYear(artwork);
+      cleanedArtworks.push(artwork);
+    }
+    fs.writeFile(PATH_OUTPUT_FILE, JSON.stringify(cleanedArtworks), { flags: 'r+' }, err => {
+      if (err) {
+        throw error
+      }
+    });
+    console.log(`data successfully written to ${PATH_OUTPUT_FILE}`)
+  });
