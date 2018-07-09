@@ -9,7 +9,7 @@ module.exports = class ArtworkScraper {
     this.host = host;
 
     /**
-     * Used for matching text content to be remov =>d.
+     * Used for matching text content to be removed.
      * key - artwork category
      * value - regex rules or function
      */
