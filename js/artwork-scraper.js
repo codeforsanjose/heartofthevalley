@@ -137,7 +137,7 @@ module.exports = class ArtworkScraper {
    * @return {Number}
    */
   getYear(s) {
-    const match = s.match(/artists*.*(\d{4})/i);
+    const match = s.match(/artists*.*?(\d{4})/i);
     return match && match[1] ? parseInt(match[1].trim()) : '';
   }
 
@@ -146,7 +146,7 @@ module.exports = class ArtworkScraper {
    * @return {String}
    */
   getArtist(s) {
-    const match = s.match(/artists*:(.*)\d{4}/i);
+    const match = s.match(/artists*:(.*?)\d{4}/i);
     return match && match[1] ? match[1].trim() : '';
   }
 

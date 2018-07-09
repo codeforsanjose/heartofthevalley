@@ -3,7 +3,7 @@ const PATH_OUTPUT_FILE = 'wip_artworks.json';
 const ArtworkScraper = require('./artwork-scraper');
 
 // Config
-const numArtworksToScrape = 2; // number of artwork listings per page
+const numArtworksToScrape = 20; // number of artwork listings per page
 const categoryIDs = 15; // categoryID = 15 is category for 'public art'
 const httpBody = `featureIDs=&categoryIDs=${categoryIDs}&occupants=null&keywords=&pageSize=${numArtworksToScrape}&pageNumber=1&sortBy=3&currentLatitude=null&currentLongitude=null&isReservableOnly=false`;
 const HOST = 'http://sanjoseca.gov';
