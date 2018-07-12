@@ -1,6 +1,107 @@
 var art = {
 		"type": "FeatureCollection",
 		"features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.85796,
+            37.31823
+          ]
+        },
+        "properties": {
+            "title": "Mariscos San Juan Mural",
+					  "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
+            "description": "Mural of a mermaid, octopus, sharks, turtles and sea life along the wall of the parking lot of the  Mariscos San Juan restaurant. Source: Francisco Ramirez.",
+            "address": "1718 Senter Rd",
+            "city": "San José",
+            "country": "United States",
+            "postalCode": "95112",
+            "state": "CA"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.78678,
+            37.31922
+          ]
+        },
+        "properties": {
+            "title": "Mural at Millbrook Elementary School",
+            "artist": "<a href='https://www.instagram.com/arte.machuca33/' target='_blank'>Miguel Machuca</a> and DDEF Studio",
+            "description": "40' by 13' mural at Millbrook Elementary School by Miguel Machuca and <a href='https://instagram.com/ddefstudio/' target='_blank'>DDEF Studio</a>. Sponsored by Millbrook ELementary School Student Council. Source: DDEF Studio",
+            "address": "3200 Millbrook Dr",
+            "city": "San José",
+            "country": "United States",
+            "postalCode": "95148",
+            "state": "CA"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.93162,
+            37.32116
+          ]
+        },
+        "properties": {
+            "title": "Sacred Mask Mural",
+            "artist": "<a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a> and Your Property Next",
+            "description": "Sacred Mask mural painted by Carlos Rodriguez and Your Property Next on the side of The Kingston Yard, a local art supplies store and art gallery. Source: Carlos Rodriguez.",
+            "address": "418 S Bascom Ave",
+            "city": "San José",
+            "country": "United States",
+            "postalCode": "95128",
+            "state": "CA"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.8867007,
+            37.3306511
+          ]
+        },
+        "properties": {
+            "title": "Sade",
+            "artist": "<a href='https://www.instagram.com/royyaldog/' target='_blank'>Royyal Dog</a>",
+            "description": "Mural of legendary singer and songwriter Sade. Sade (Helen Folasade Adu or Sade Adu) is the lead vocalist of the iconic British band Sade, and a British Nigerian singer and songwriter. Royyal Dog painted this mural at the back of The Continental bar. It was produced with POW!WOW! San Jose and Empire Seven Studios. Source: Empire Seven Studios, https://www.empiresevenstudios.com/blog-empiresevenstudios-e7s-artgallery/2018/6/6/royyal-dog-visits-san-jose. Photo by Empire Seven Studios.",
+            "image": "img/SadeMural_byRoyyalDog_PhotobyEmpireSevenStudios.jpeg",
+            "address": "349 S 1st St",
+            "city": "San José",
+            "country": "United States",
+            "postalCode": "95113",
+            "state": "CA"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.91184,
+            37.32704
+          ]
+        },
+        "properties": {
+            "title": "Here, Kitty!",
+            "artist": "Catrina Sida",
+            "description": "Small arch on the side of the house at 153 Race Street. Child standing on a box reaching up with a twig to coax down a kitten perched on the top of the window. Small dog watching from below. Art by Catrina Sida. Source: Loui Tucker,",
+            "address": "153 Race Street",
+            "city": "San José",
+            "country": "United States",
+            "postalCode": "95126",
+            "state": "CA"
+        }
+      },
 			{
 				"type": "Feature",
 				"geometry": {
@@ -116,7 +217,7 @@ var art = {
 					]
 				},
 				"properties": {
-					"title": "Untitled Mural",
+					"title": "Untitled Mural at Chase Bank",
 					"artist": "<a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant",
 					"description": "<a href='https://www.instagram.com/evilrobot42/' target='_blank'>Lacey Bryant</a> painted this six-panel mural. It was produced in collaboration with <a href='https://www.exhibitiondistrict.com/' target='_blank'>Exhibition District</a>, San José Downtown Association and Chase Bank. It is located on the exterior of the Chase building on Santa Clara St. <br/> View a <a href='https://www.instagram.com/p/BhZIFD8BVOk/?taken-by=evilrobot42' target='_blank'>photo of the mural</a>. Source: Exhibition District, https://www.exhibitiondistrict.com/",
 					"address": "55 W Santa Clara St",
