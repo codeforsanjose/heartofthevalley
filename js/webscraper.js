@@ -1,6 +1,6 @@
 const readline = require('readline');
 const path = require('path');
-const PATH_OUTPUT_FILE = path.resolve(__dirname + '/../artwork-data/wip_artworks.json');
+const PATH_OUTPUT_FILE = path.resolve(__dirname + '/../artwork-data/wip-artworks.json');
 const ArtworkScraper = require('../lib/artwork-scraper');
 
 // Config
