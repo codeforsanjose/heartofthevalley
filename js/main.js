@@ -12,7 +12,7 @@ if (!('remove' in Element.prototype)) {
 	};
 }
 
-mapboxgl.accessToken = 'pk.eyJ1IjoieWNob3kiLCJhIjoiY2pmOTYwdzZ5MG52dDJ3b2JycXY4ZDU5ciJ9.m9H_Mqu1b42AObg_u_tjpA';
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiY2pmY3U3M3dlMXY1OTMzb2IxOGZkNW5wcyJ9.0qZCHLOM2Vy_JEE_Zx5-1g';
 
 // Initialize a new map in the div with id 'map'
 var map = new mapboxgl.Map({
