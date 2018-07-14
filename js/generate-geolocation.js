@@ -1,45 +1,81 @@
 const fs = require('fs');
-const mbxGeocodingService = require('../lib/mapbox-geocoding-service');
-let artworks;
-fs.readFile('../arwork-data/wip-artworks.json', (err, data) => {
-  if (err) {
-    throw err;
-  }
+const Nominatim = require('nominatim-browser');
+const CONSTANTS = require('./constants');
 
-  artworks = JSON.parse(data);
-});
-
-function setGelocationForArtworks(artworks) {
-  const promises = artworks.map(artwork => {
-    return setGeolocationForArtwork(artwork);
+function setGeolocationForArtworks(artworks) {
+  return getGeolocationForArtworks(artworks).then(results => {
+    return results.map(result => {
+      const { artwork, geolocation } = result;
+      if (geolocation) {
+        return Object.assign({}, artwork, { lat: geolocation.lat, long: geolocation.long });
+      }
+      return Object.assign({}, artwork, { geolocationError: true });
+    });
   });
+}
 
-  Promise.all(promises).then(results => {});
+function getGeolocationForArtworks(artworks) {
+  const promises = artworks.map(artwork => {
+    return getGeolocationForArtwork(artwork);
+  });
+  return Promise.all(promises).then(results => {
+    return results;
+  });
 }
 
 function getGeolocationForArtwork(artwork) {
-  const postalAddress = `${artwork.streetAddress} ${artwork.city} ${artwork.state} ${
-    artwork.postalCode
-  }`;
-  return getGeolocation(postalAddress).then(coordinates => {
-    return { artwork, coordinates };
+  const { streetAddress: street, city, state, postalCode: postalcode } = artwork;
+
+  return getGeolocation({
+    street,
+    city,
+    state,
+    country: 'US',
+    postalcode
+  }).then(geolocation => {
+    return { artwork, geolocation };
   });
 }
 
 function getGeolocation(query) {
-  const config = { query, mode: 'mapbox.places-permanent', countries: ['US'] };
-  return mbxGeocodingService
-    .forwardGeocode(config)
-    .send()
-    .then(
-      res => {
-        const { body } = res;
-        return body.geometry.coordinates;
-      },
-      err => {
-        if (err) {
-          throw err;
-        }
-      }
-    );
+  return Nominatim.geocode(query).then(results => {
+    query;
+    const firstResult = results[0];
+    if (firstResult) {
+      return firstResult && { lat: firstResult.lat, long: firstResult.lon };
+    }
+    return null;
+  });
 }
+
+new Promise(resolve => {
+  console.log(
+    `Reading artworks from file: '${CONSTANTS.PATH_ARTWORKS_SCRAPED_FROM_SAN_JOSE_SITE}'`
+  );
+  fs.readFile(CONSTANTS.PATH_ARTWORKS_SCRAPED_FROM_SAN_JOSE_SITE, (err, data) => {
+    if (err) {
+      console.error(
+        `There was an error in reading the file '${
+          CONSTANTS.PATH_ARTWORKS_SCRAPED_FROM_SAN_JOSE_SITE
+        }'`
+      );
+      throw err;
+    }
+    console.log('Data read... Now fetching and setting geolocation data.');
+    resolve(setGeolocationForArtworks(JSON.parse(data)));
+  });
+}).then(artworks => {
+  console.log(`Writing updated data to '${CONSTANTS.PATH_ARTWORKS_WITH_GEOLOCATION}'`);
+  fs.writeFile(
+    CONSTANTS.PATH_ARTWORKS_WITH_GEOLOCATION,
+    JSON.stringify(artworks),
+    { encoding: 'utf8' },
+    err => {
+      if (err) {
+        console.error(`Error writing data to file '${CONSTANTS.PATH_ARTWORKS_WITH_GEOLOCATION}'`);
+        throw err;
+      }
+      console.log('Writing to file complete!');
+    }
+  );
+});
