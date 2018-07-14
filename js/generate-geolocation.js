@@ -7,7 +7,7 @@ function setGeolocationForArtworks(artworks) {
     return results.map(result => {
       const { artwork, geolocation } = result;
       if (geolocation) {
-        return Object.assign({}, artwork, { lat: geolocation.lat, long: geolocation.long });
+        return Object.assign({}, artwork, { coordinates: [geolocation.long, geolocation.lat] });
       }
       return Object.assign({}, artwork, { geolocationError: true });
     });
