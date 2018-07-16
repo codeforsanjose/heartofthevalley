@@ -8,5 +8,6 @@ module.exports = {
   ),
   PATH_ARTWORKS_SCRAPED_FROM_SAN_JOSE_SITE: path.resolve(
     __dirname + '/../artwork-data/wip-artworks.json'
-  )
+  ),
+  PATH_CONSOLIDATED_ARTWORKS: path.resolve(__dirname + '/../ar')
 };
