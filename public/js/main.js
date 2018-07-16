@@ -4,8 +4,20 @@
  */
 
 (async function() {
-  const res = await fetch('http://localhost:3000/api/artworks');
-  const art = await res.json();
+  let res;
+  let art;
+
+  try {
+    res = await fetch('http://localhost:3000/api/artworks');
+    if (res.ok) {
+      art = await res.json();
+    } else {
+      art = { features: [] };
+      throw 'Error in fetching artworks';
+    }
+  } catch (e) {
+    console.error(e);
+  }
 
   // This will let you use the .remove() function later on
   if (!('remove' in Element.prototype)) {
@@ -37,7 +49,13 @@
       type: 'geojson',
       data: art
     });
-    buildLocationList(art); //initilize list.  call function when map loads
+    if (art && art.features && art.features.length > 0) {
+      buildLocationList(art); //initilize list.  call function when map loads
+    } else {
+      const notice = document.createElement('div');
+      notice.innerText = 'No artworks found.';
+      document.getElementById('listings').appendChild(notice);
+    }
   });
 
   //Interaction with DOM markers
