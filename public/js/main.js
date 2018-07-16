@@ -42,6 +42,10 @@
 
   //Interaction with DOM markers
   art.features.forEach(function(marker, i) {
+    if (!marker.coordinates) {
+      continue;
+    }
+    
     // Create an img class='responsive' element for the marker
     var el = document.createElement('div');
     el.id = 'marker-' + i;
