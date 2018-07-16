@@ -1,6 +1,4 @@
-const fs = require('fs');
 const Nominatim = require('nominatim-browser');
-const CONSTANTS = require('./constants');
 
 function setGeolocationForArtworks(artworks) {
   return getGeolocationForArtworks(artworks).then(results => {
