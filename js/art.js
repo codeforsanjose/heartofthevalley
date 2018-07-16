@@ -3460,3 +3460,9 @@ var sortedArt  = art.features.sort(function compare(a, b) {
     var bTitle = b.properties.title.toUpperCase();
     return (aTitle < bTitle) ? -1 : (aTitle > bTitle) ? 1 : 0;
 });
+
+try {
+  module.exports = art;
+} catch (e) {
+  // don't care, just want to use this in node;
+}
