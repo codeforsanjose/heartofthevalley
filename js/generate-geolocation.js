@@ -48,34 +48,4 @@ function getGeolocation(query) {
   });
 }
 
-new Promise(resolve => {
-  console.log(
-    `Reading artworks from file: '${CONSTANTS.PATH_ARTWORKS_SCRAPED_FROM_SAN_JOSE_SITE}'`
-  );
-  fs.readFile(CONSTANTS.PATH_ARTWORKS_SCRAPED_FROM_SAN_JOSE_SITE, (err, data) => {
-    if (err) {
-      console.error(
-        `There was an error in reading the file '${
-          CONSTANTS.PATH_ARTWORKS_SCRAPED_FROM_SAN_JOSE_SITE
-        }'`
-      );
-      throw err;
-    }
-    console.log('Data read... Now fetching and setting geolocation data.');
-    resolve(setGeolocationForArtworks(JSON.parse(data)));
-  });
-}).then(artworks => {
-  console.log(`Writing updated data to '${CONSTANTS.PATH_ARTWORKS_WITH_GEOLOCATION}'`);
-  fs.writeFile(
-    CONSTANTS.PATH_ARTWORKS_WITH_GEOLOCATION,
-    JSON.stringify(artworks),
-    { encoding: 'utf8' },
-    err => {
-      if (err) {
-        console.error(`Error writing data to file '${CONSTANTS.PATH_ARTWORKS_WITH_GEOLOCATION}'`);
-        throw err;
-      }
-      console.log('Writing to file complete!');
-    }
-  );
-});
+module.exports = setGeolocationForArtworks;
