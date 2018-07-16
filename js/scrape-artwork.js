@@ -24,7 +24,9 @@ const DEBUG_MODE = true; // Debug mode skips terminal prompt; necessary if runni
     });
 
     readlineInterface.question(
-      `This action will overwrite '${CONSTANTS.PATH_ARTWORKS_LIST}' if it exists. Are you sure you want to continue?\n`,
+      `This action will overwrite '${
+        CONSTANTS.PATH_ARTWORKS_LIST
+      }' if it exists. Are you sure you want to continue?\n`,
       answer => {
         answer = answer.toLowerCase();
         if (answer === 'yes' || answer === 'y') {
