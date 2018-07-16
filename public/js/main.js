@@ -60,10 +60,10 @@
 
   //Interaction with DOM markers
   art.features.forEach(function(marker, i) {
-    if (!marker.coordinates) {
-      continue;
+    if (!marker.geometry || !marker.geometry.coordinates) {
+      return;
     }
-    
+
     // Create an img class='responsive' element for the marker
     var el = document.createElement('div');
     el.id = 'marker-' + i;
