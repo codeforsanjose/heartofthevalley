@@ -3,12 +3,12 @@ const CONSTANTS = require('../config/constants');
 const ArtworkScraper = require('../lib/artwork-scraper');
 
 // Config
-const numArtworksToScrape = 1; // number of artwork listings per page
+const numArtworksToScrape = 300; // number of artwork listings per page
 const categoryIDs = 15; // categoryID = 15 is category for 'public art'
 const httpBody = `featureIDs=&categoryIDs=${categoryIDs}&occupants=null&keywords=&pageSize=${numArtworksToScrape}&pageNumber=1&sortBy=3&currentLatitude=null&currentLongitude=null&isReservableOnly=false`;
 const HOST = 'http://sanjoseca.gov';
 const URL = `${HOST}/Facilities/Facility/Search`;
-const DEBUG_MODE = true; // Debug mode skips terminal prompt; necessary if running the program through IDE .
+const DEBUG_MODE = false; // Debug mode skips terminal prompt; necessary if running the program through IDE .
 
 (function main() {
   let readlineInterface;
