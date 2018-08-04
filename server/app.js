@@ -13,4 +13,8 @@ app.get('/api/artworks', (_req, res) => {
   res.sendFile(CONSTANTS.PATH_ARTWORKS_LIST);
 });
 
+app.get('/api/mapboxkeys', (req, res) => {
+  res.send({'mapbox_token': CONSTANTS.MAPBOX_API_TOKEN});
+});
+
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
