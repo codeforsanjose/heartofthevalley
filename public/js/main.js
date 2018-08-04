@@ -35,7 +35,6 @@
             res = await fetch('http://localhost:3000/api/mapboxkeys');
             if (res.ok) {
                 keys = await res.json();
-                console.log('got the keys')
                 mapboxMapArtwork(keys['mapbox_token'])
             } else {
                 art = { features: [] };
@@ -58,9 +57,9 @@
             doubleClickZoom: true, //If true double click will zoom
             keyboard: true //If true will enable keyboard shortcuts
         });
+        addFeaturesToMap()
 
         // adds data to map
-        console.log('load the map')
         map.on('load', function(e) {
             map.addSource('places', {
                 type: 'geojson',
