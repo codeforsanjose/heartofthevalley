@@ -90,24 +90,28 @@
             el.className = 'marker';
             // Add markers to the map at all points
 
-            
-            new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
+            try {
+                new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
 
-            el.addEventListener('click', function(e) {
-                var activeItem = document.getElementsByClassName('active');
-                // 1. Fly to the point
-                flyToArt(marker);
-                // 2. Close all other popups and display popup for clicked art
-                createPopUp(marker, 'listing-' + i);
-                // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-                e.stopPropagation();
-                if (activeItem[0]) {
-                    activeItem[0].classList.remove('active');
-                }
-                var listing = document.getElementById('listing-' + i);
+                el.addEventListener('click', function(e) {
+                    var activeItem = document.getElementsByClassName('active');
+                    // 1. Fly to the point
+                    flyToArt(marker);
+                    // 2. Close all other popups and display popup for clicked art
+                    createPopUp(marker, 'listing-' + i);
+                    // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+                    e.stopPropagation();
+                    if (activeItem[0]) {
+                        activeItem[0].classList.remove('active');
+                    }
+                    var listing = document.getElementById('listing-' + i);
 
-                listing.classList.add('active');
-            });
+                    listing.classList.add('active');
+                });
+            }
+            catch (exception) {
+                console.log(exception);
+            }
         });
     };
   
