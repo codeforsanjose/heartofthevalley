@@ -61,7 +61,9 @@
   //Interaction with DOM markers
   art.features.forEach(function(marker, i) {
     if (!marker.geometry || !marker.geometry.coordinates) {
-      return;
+      return console.error(
+        `Missing coordinates for marker: "${marker.properties.title}". Marker not added to map.`
+      );
     }
 
     // Create an img class='responsive' element for the marker
@@ -179,6 +181,15 @@
     // Update the currentFeature to the art associated with the clicked link
     // var clickedListing = data.features[this.dataPosition];
     var clickedListing = this.listingFeature;
+
+    if (!clickedListing.geometry.coordinates) {
+      return console.error(
+        `Missing coordinates for listing: "${
+          clickedListing.properties.title
+        }". There is no marker on the map for this listing.`
+      );
+    }
+
     // 1. Fly to the point
     flyToArt(clickedListing);
     // 2. Close all other popups and display popup for clicked point
