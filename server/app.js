@@ -12,7 +12,6 @@ app.get('/', (_req, res) => {
 app.get('/api/artworks', (_req, res) => {
   res.sendFile(CONSTANTS.PATH_ARTWORKS_LIST, {}, err => {
     console.error(err);
-    console.error('something wrong happened while trying to find artworks file');
   });
 });
 
