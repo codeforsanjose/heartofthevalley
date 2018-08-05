@@ -22,5 +22,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-artworks*.json
+artworks-scraped.json
 .eslintrc.js
+artworks.json
