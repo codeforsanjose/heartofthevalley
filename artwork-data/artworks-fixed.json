@@ -4277,7 +4277,7 @@
     {
       "errors": [{ "type": "coordinates" }],
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": null },
+      "geometry": { "type": "Point", "coordinates": [-121.897149, 37.333035] },
       "properties": {
         "address": "W. Santa Clara St. and Guadalupe Parkway",
         "artist": "Tony May",
