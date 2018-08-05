@@ -10,7 +10,7 @@ app.get('/', (_req, res) => {
 });
 
 app.get('/api/artworks', (_req, res) => {
-  res.sendFile(CONSTANTS.PATH_ARTWORKS_LIST);
+  res.sendFile(CONSTANTS.PATH_ARTWORKS_LIST_PUBLIC);
 });
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
