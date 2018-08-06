@@ -23,7 +23,7 @@ const DEBUG_MODE = false; // Debug mode skips terminal prompt; necessary if runn
 
     readlineInterface.question(
       `This action will overwrite '${
-        CONSTANTS.PATH_ARTWORKS_LIST
+        CONSTANTS.PATH_ARTWORKS_SCRAPED
       }' if it exists. Are you sure you want to continue?\n`,
       answer => {
         answer = answer.toLowerCase();
@@ -39,7 +39,7 @@ const DEBUG_MODE = false; // Debug mode skips terminal prompt; necessary if runn
         readlineInterface.close();
       }
       new ArtworkScraper(
-        CONSTANTS.PATH_ARTWORKS_LIST,
+        CONSTANTS.PATH_ARTWORKS_SCRAPED,
         CONSTANTS.URL_SAN_JOSE_GOV,
         `${CONSTANTS.URL_SAN_JOSE_GOV}/Facilities/Facility/Search`,
         QUERY
