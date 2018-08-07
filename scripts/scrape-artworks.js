@@ -22,9 +22,9 @@ const DEBUG_MODE = false; // Debug mode skips terminal prompt; necessary if runn
     });
 
     readlineInterface.question(
-      `This action will overwrite '${
-        CONSTANTS.PATH_ARTWORKS_SCRAPED
-      }' if it exists. Are you sure you want to continue?\n`,
+      `This action will overwrite the two files \n\n${CONSTANTS.PATH_ARTWORKS_SCRAPED} \n${
+        CONSTANTS.PATH_ARTWORKS_ERRORS
+      } \n\nif it exists. Are you sure you want to continue?\n`,
       answer => {
         answer = answer.toLowerCase();
         if (answer === 'yes' || answer === 'y') {
