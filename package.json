@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/app.js",
-    "scrapeArtworks": "node scripts/scrape-artworks.js"
+    "scrapeArtworks": "node scripts/scrape-artworks.js",
+    "consolidateArtworkFiles": "node scripts/consolidate-artworks-files.js"
   },
   "keywords": [],
   "author": "",
