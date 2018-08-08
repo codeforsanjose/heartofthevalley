@@ -3,14 +3,16 @@ const CONSTANTS = require('../config/constants');
 const ArtworkScraper = require('../lib/artwork-scraper');
 
 // number of artwork listings per page, as of 7/16/18, there are 128 artwork pages at http://sanjoseca.gov/Facilities
-const NUM_ARTWORKS_TO_SCRAPE = 1;
+const NUM_ARTWORKS_TO_SCRAPE = 20;
+const MERGE_OVERRIDES = true;
 // Debug mode skips terminal prompt; necessary if running the program through IDE .
-const DEBUG_MODE = false;
+const DEBUG_MODE = true;
 
 (function main() {
   let readlineInterface;
 
   new Promise((resolve, reject) => {
+    console.log(`Debug mode is: ${DEBUG_MODE ? 'on' : 'off'}`);
     if (DEBUG_MODE) {
       return resolve();
     }
@@ -34,7 +36,10 @@ const DEBUG_MODE = false;
     );
   })
     .then(() => {
-      return new ArtworkScraper(NUM_ARTWORKS_TO_SCRAPE).run();
+      return new ArtworkScraper({
+        numArtworksToScrape: NUM_ARTWORKS_TO_SCRAPE,
+        mergeOverrides: MERGE_OVERRIDES
+      }).run();
     })
     .catch(err => {
       console.error('Aborted.');
