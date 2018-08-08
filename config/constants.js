@@ -8,6 +8,7 @@ module.exports = {
   PATH_ARTWORKS_SCRAPED: path.resolve(__dirname + '/../artwork-data/artworks-scraped.json'),
   PATH_ARTWORKS_PUBLIC: path.resolve(__dirname + '/../artwork-data/artworks-scraped.json'),
   PATH_ARTWORKS_ERRORS: path.resolve(__dirname + '/../artwork-data/artworks-errors.json'),
+  PATH_ARTWORKS_OVERRIDES: path.resolve(__dirname + '/../artwork-data/artworks-overrides.json'),
   URL_SAN_JOSE_GOV,
   URL_SEARCH: `${URL_SAN_JOSE_GOV}/Facilities/Facility/Search`
 };
