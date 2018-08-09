@@ -38,7 +38,7 @@
     "geometry": { "type": "Point", "coordinates": [-121.9139669, 37.3522017] },
     "properties": {
       "title": "Wall of Recognition",
-      "artist": null,
+      "artist": "Carlos Perez",
       "address": "1701 Airport Blvd.",
       "city": "San Jose",
       "state": "CA",
@@ -48,15 +48,14 @@
       "description": "This illustrated wall installation recognizes three prime-movers behind San Jose’s airport: Ernie Renzel, James Nissen and Norman Y. Mineta.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wall-of-Recognition-Norman-Y--411",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["artist"]
+    }
   },
   {
     "type": "Feature",
     "geometry": { "type": "Point", "coordinates": [-121.895537862069, 37.3292420517241] },
     "properties": {
       "title": "Veterans Memorial of San José ~ Santa Clara Valley",
-      "artist": null,
+      "artist": "Manhattan Projects",
       "address": "350 Park Avenue",
       "city": "San Jose",
       "state": "CA",
@@ -66,15 +65,14 @@
       "description": "Located on Park Avenue at the Guadalupe River, the Veterans Memorial is an enduring tribute to the men and women who have served our country in peacetime and in times of war. The artwork is comprised of 76 white flags on stainless steel poles in formation beyond a wall of glass imprinted with photos of local soldiers and communications sent back home during times of service; the threshold in front of the glass is inlaid with military insignias.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Veterans-Memorial-of-San-Jos--417",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["artist"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8642665, 37.3194275] },
     "properties": {
-      "title": "Untitled -",
-      "artist": null,
+      "title": "Untitled",
+      "artist": "Therman Staton",
       "address": "1500 South Tenth Street",
       "city": "San Jose",
       "state": "CA",
@@ -84,12 +82,11 @@
       "description": "",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Sharks-Ice-at-San-Jo-425",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["artist", "description", "coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.891267, 37.3471033] },
     "properties": {
       "title": "Transcendance",
       "artist": "Diana Pumpelly-Bates",
@@ -102,14 +99,13 @@
       "description": "The artwork for the Northside Community Center celebrates life and struggle. The ascending and descending bird-like forms of the sculpture suggest transition and represent flight from one location to another and is intended to designate space for building community.The sculpture is an abstraction of three characteristic elements employed in two dances from the Philippines. The larger forms affixed to the poles references both a tikling bird – a reference to the Tinikling dance; as well as a fan which appears in the Singkil dance. The two poles reference the bamboo poles used in both dances.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Transcendance-Northside-Commu-453",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8968202, 37.3372149] },
     "properties": {
-      "title": "Thomas Fallon Statue*",
+      "title": "Thomas Fallon Statue",
       "artist": "Robert Glen",
       "address": "W. Julian St. at W. St James St.",
       "city": "San Jose",
@@ -120,15 +116,14 @@
       "description": "This statue of Captain Thomas Fallon was commissioned in 1988.  It memorializes the raising of the U.S. flag in San Jose in 1846, when California was still a part of Mexico.  Scheduled to be installed in 1990, the statue generated an intense controversy.  Supporters of the artwork believed that it commemorated an important historical event in San Jose's history.  Opponents of the statue responded that it represented a troubling moment in American history, when the United States used the Mexican -American War as a reason to annex California from Mexico. To address the issues arising from the controversy, the City appointed a Historic Art Advisory Committee.     The committee recommended that the City's public art must represent all perspectives of the City's history.  Four additional projects were recommended - artworks commemorating the Ohlone Way of Life, the life of Dr. Ernesto Galarza, the Founding of the Pueblo, and the Agricultural History of the Valley.  These works have been installed in various locations around the city.  This artwork is a reminder that a community's historic events can be interpreted in many ways, depending upon one's perspective.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Thomas-Fallon-Statue-496",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
     "geometry": { "type": "Point", "coordinates": [-121.9312634, 37.2513184] },
     "properties": {
       "title": "Swimmers",
-      "artist": null,
+      "artist": "Anne Lamborn and Ceevah F.Sobel",
       "address": "3369 Union Avenue",
       "city": "San Jose",
       "state": "CA",
@@ -138,15 +133,14 @@
       "description": "This piece expands the space of the pool area by transforming the 10-foot property-line wall into an illusion of water. The fanciful silhouettes of swimmers, half submerged, swim across the blue wall surrounding the Camden Community Center's pool,",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Swimmers-Camden-Lifetime-Acti-426",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["artist"]
+    }
   },
   {
     "type": "Feature",
     "geometry": { "type": "Point", "coordinates": [-121.865548826801, 37.2207169102402] },
     "properties": {
       "title": "Teaching Stones",
-      "artist": null,
+      "artist": "Academy of Art University Graduate Students under the direction of Professor Donna Schumacher",
       "address": "6445 Camden Ave.",
       "city": "San Jose",
       "state": "CA",
@@ -156,12 +150,11 @@
       "description": "Teaching Stones is a tribute to Doris Dillon, a beloved teacher and community member. Doris Dillon was known for her generous spirit and passion for teaching.  She engaged students through games, and it was often said that she could “teach a rock to read.”  Teaching Stones consists of two primary elements. The first is a reading/sitting area, inspired by one of Doris’ favorite activities: story telling. The reading area provides a place to sit and share stories in the traditional manner of gathering in a circle. The decomposed granite interior of the circle extends outward to the sidewalk forming the overall shape of a keyhole, a reflection of Doris’ belief that reading is a key to learning and knowledge, which she shared through teaching.The second element is a series of nine large smooth-surfaced granite stones that are placed throughout the Liquid Amber Tree grove where the project is sited.  Each stone is inscribed with a ribbon containing words from one of the elements of language: nouns, verbs, etc. The words chosen and sandblasted into the stones were collected inspired by Doris Dillon’s life and work. In the same spirit in which Doris fostered learning through play, the stones can serve as a playful learning tool for future generations: rubbings can be done on the stones with pencil and paper, with students moving from stone to stone, gathering a noun from one, a verb from another and onward until a full sentence is collected.This commemorative artwork honors Doris Dillon’s legacy of mixing learning with pleasure in the form of a gift to the community she loved so well.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Teaching-Stones-Almaden-Commu-480",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["artist"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8489222, 37.2429472] },
     "properties": {
       "title": "Spring-tailed Dalmatian",
       "artist": "Gerald Heffernon",
@@ -174,12 +167,11 @@
       "description": "The Spring-Tailed Dalmatian appears to be descending a fire pole, but with a twist: the dog's tail is coiled like a spring to soften the landing. The sculpture speculates whimsically on a specialized breed of fire dog, one that is particularly well-suited for its fire station duties.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Springtailed-Dalmatian-Fire-S-435",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.9793918, 37.3023684] },
     "properties": {
       "title": "Seats, Secrets, Stories, and Searches",
       "artist": "Elizabeth Conner",
@@ -192,14 +184,13 @@
       "description": "The three elements of the artwork at West Valley Branch Library weave together stories about searches through the forest, fantastic larger-than life vegetables, and objects with magical qualities. The first element, Waterfeature, is a giant-sized artichoke, a  sculpture captures rainwater from the roof of the building and cascades it down though the leaves into a drain.  The second artwork, Seating Transformed, is a group of three lettuce-leaf sculptures placed inside the library stacks. These provide children with perfect places to curl up and read a book.  The third element, The Tree, recalls a magical tree in a fairy tale. Composed of a collection of suspended colorful everyday objects, the sculpture is interwoven with sparkling lights and creates a canopy over the children’s reading area.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Seats-Secrets-Stories-and-Sea-446",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.897106, 37.333053] },
     "properties": {
-      "title": "Remembering Agriculture*",
+      "title": "Remembering Agriculture",
       "artist": "Tony May",
       "address": "W. Santa Clara St. and Guadalupe Parkway",
       "city": "San Jose",
@@ -210,12 +201,11 @@
       "description": "Remembering Agriculture recalls the rich agricultural history that was the driving force in San Jose’s economy for more than 150 years. The project recreates the distinctive shapes of those once familiar archetypal clusters of farm buildings that are seen less and less frequently in the Santa Clara Valley. Once prolific, they are now most often decaying and abandoned, glimpsed only briefly from a distance by motorists on the freeway. The structures, a water tank tower, a windmill, a barn and a small shed, are intended to be somewhat ghost-like in their transparent appearance. The structures also function as arbors for a carefully chosen selection of ivies and other perennial climbing plants.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Remembering-Agriculture-521",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8884029, 37.3308059] },
     "properties": {
       "title": "Plumed Serpent",
       "artist": "Robert Graham",
@@ -228,16 +218,15 @@
       "description": "Plumed Serpent is a stylized image of Quetzalcóatl, one of the most important mythological deities of the Mesoamerican pantheon. It was created for the City of San Jose to symbolize the spirit of social harmony and diversity.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Plumed-Serpent-Plaza-de-Csar--498",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.896619, 37.330847] },
     "properties": {
       "title": "Sensing YOU / Sensing WATER",
       "artist": "Dan Corson",
-      "address": "Hwy 87 at Santa Clara St.",
+      "address": "Hwy 87 at Santa Clara St. & Hwy 87 at San Fernando St.",
       "city": "San Jose",
       "state": "CA",
       "postalCode": "95113",
@@ -246,15 +235,14 @@
       "description": "Sensing YOU and Sensing WATER are two artworks geographically and conceptually linked but distinctly\r\ndifferent. The projects are part of the “Illuminating Downtown Project (IDP).” The intent of IDP is to visually reinforce downtown\r\nSan Jose as the Capital of Silicon Valley, and that this energy would be transmitted at a number of scales\r\n– building tops, gateways, on the street and as one passes through the downtown. It is a way to engage art,\r\nlight and technology in a larger vision of the downtown, while considering ways of making the downtown\r\na more livable, enjoyable, engaging place.\r\nSensing YOU is an interactive artwork defined by over 1000 painted circles and 81 individually controlled illuminated rings that play a variety of patterns and low-resolution mapped video over the ceiling surface of the I-87 highway underpass at Santa Clara Street. The patterns are activated by pedestrians and bicyclists moving through the space- setting off pre-programmed sequences.Sensing WATER, a weather-responding and interactive artwork utilizing light and paint to define the downtown gateway at Highway 87 and San Fernando St. The project is composed of 2 elements, the massive painted sloped wall that abstractly references flowing water, and the overhead evening lighting that illuminates with rippling patterns of light the underpass. The project uses real-time NOAA weather data to compose different patterns of light on the ceiling. (e.g.: 0-5mph winds vs thunderstorms)",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Sensing-YOU-Sensing-WATER-Hwy-555",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8839829, 37.3330683] },
     "properties": {
       "title": "San Carlos Street Lantern Relay",
-      "artist": "Steve Durie & Bruce GardnerDecember",
+      "artist": "Steve Durie & Bruce Gardner",
       "address": "San Carlos at 4th Street",
       "city": "San Jose",
       "state": "CA",
@@ -264,12 +252,11 @@
       "description": "San Carlos Lantern Relay is comprised on eight 6' tall lanterns along E. San Carlos Street between the San Jose State University campus and the downtown cultural and events district. The lanterns are programmed to \"play\" a range of lighting programs and respond to pedestrian traffic. Interrupting the programmed lighting, people are invited to activate the lanterns via a button on the support pole.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-San-Carlos-Street-Lantern-Rel-557",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8809223, 37.313529] },
     "properties": {
       "title": "Padre Sheedy's Umbrella",
       "artist": "San Jose State University “Art in Community” Students with Tony May, Instructor",
@@ -282,12 +269,11 @@
       "description": "The artwork is a stylized, 50' tall, cut-metal umbrella mounted in a colorful, ceramic tile mosaic base that features images and remembrances of Padre Sheedy. The umbrella form of the artwork is an analogy for Padre Sheedy's protective influence in the community through the many programs he undertook with such joy. The umbrella also suggests Padre Sheedy's high aspirations of service and the sense of welcome that he extended towards everyone.Padre Sheedy's Umbrella was created by San Jose State University art professor Tony May and the students in his Art in Community class in commemoration of Father Mateo Sheedy. The SJSU artists engaged in a thoughtful process of developing the public art to ensure that it would serve as a fitting tribute to Padre Sheedy's vision and legacy.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Padre-Sheedys-Umbrella-Parque-499",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8872454, 37.3331523] },
     "properties": {
       "title": "Jump Cuts",
       "artist": "Diller + Scofidio with Paul Lewis",
@@ -300,8 +286,7 @@
       "description": "The movie marquee became a familiar downtown architectural feature with the popularization of cinema in the 1920's and 1930's. Its objective of transmitting information to the street was fully realized at night with illuminated displays as a form of urban seduction.  A contemporary interpretation of the marquee suggests not only technical revision for this transmission of information, but a rethinking of urban communication. Jump Cuts reinterprets the mechanism of the marquee through sculptural, electronic and video elements, broadcasting images and texts, both informational and contemplative, to the street. The artwork transforms the visual accessibility of the lobby by alternating between the actual view from the street and live video views from within, thus flipping the building inside-out and back, electronically.  The project includes twelve 5' by 6'- 8\" liquid-crystal display panels mounted on the outside of the glass facade of the building. By day, viewers see text permanently etched onto the surface of the glass panels.  From the outside, the text reads, \"Truth is stranger than fiction is stranger than truth...\"  From inside the lobby, the text reads, \"Life imitates art imitates life...\" In the evening, the LCD panels  are transformed into video screens.  Images projected onto the screens sequence between movie trailers and live feed from video cameras mounted inside the lobby.  In between these sequences, the screens become transparent, allowing full view of the interior lobby.  A computer controls all of the dynamic elements of the marquee, including activating the panels, turning them translucent and providing the surface upon which images can be projected.  The image sequencing is preprogrammed for the twelve months of the year to begin operation at dusk and continue through midnight.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Jump-Cuts-Camera-Cinemas-419",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
@@ -323,7 +308,7 @@
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8642665, 37.3194275] },
     "properties": {
       "title": "Ice Play",
       "artist": "JoeSam",
@@ -336,12 +321,11 @@
       "description": "The word “ICE” painted in colorful letters on the corrugated metal façade, creates a vivid backdrop to the 7 aluminum figures, painted in brilliant colors and reflecting San Jose’s cultural diversity. These figures range in height from 15 - 18 feet, represent ice dancing, skating and playing hockey, and illustrate the fun and excitement of ice skating. Two of the figures represent enthusiastic spectators. Artist JoeSam stated that this piece is about warmth, color, and humor as seen through these playful figures.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Ice-Play-Sharks-Ice-at-San-Jo-423",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8852113, 37.2473593] },
     "properties": {
       "title": "Fuel Tank",
       "artist": "Gordon Huether",
@@ -354,12 +338,11 @@
       "description": "Fuel Tank brings together a mirror-polished aluminum recycled jet fuel tank and pieces of dichroic glass to create a 20' sculpture that suggests an abstracted flame. The sculpture is highly reflective, both in the sheen of the aluminum and the colored reflection of the dichroic glass. Dichroic glass is highly light sensitive and shifts in color dependent on the angle of viewing and direction of light. Through the day, sunlight interacts with the glass to create moving patterns of colored light across the ground; by night, lit from within, the artwork glows.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Fuel-Tank-Fire-Station-17-434",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [37.302498, -122.000031] },
     "properties": {
       "title": "Commemoration to Carol Murdock",
       "artist": "Linda Rosenus Walsh",
@@ -372,12 +355,11 @@
       "description": "This artwork can be found near the South entryway of the Murdock Park.  The artist created a group of tree guards and a bench, all made of cast bronze with a light green patina.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Commemoration-to-Carol-Murdoc-504",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.8430265, 37.3398803] },
     "properties": {
       "title": "Coatlique Shopping, Tula Sentries, & Mandalas",
       "artist": "Einar and Jamex de la Torre",
@@ -390,12 +372,11 @@
       "description": "The San José Public Art Program in association with project developer Blake Hunt Ventures, commissioned Einar and Jamex de la Torre to collaborate with the community in the creation of artwork for the Story & King Development. The artists created three different artworks, positioned in locations throughout the shopping center parking lot and also on the front and side wall of the Target store. The three distinct works make reference to historic Mexican art forms while integrating the artists' distinct and often humorous take on contemporary culture.  The de la Torre brothers incorporate time-honored styles such as Mexican folk art and  symbols of Catholicism as well as universal subjects such gender roles and cultural integration. As a result, viewers of their work are able to place one foot in the worlds of pre-Columbian Mexico while the other is planted firmly in contemporary society",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Coatlique-Shopping-Tula-Sentr-515",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": null },
+    "geometry": { "type": "Point", "coordinates": [-121.891267, 37.3471033] },
     "properties": {
       "title": "Capiz",
       "artist": "Peter Molica",
@@ -408,7 +389,6 @@
       "description": "Capiz, a series of stained-glass artisan windows welcome all visitors entering the main foyer of the JTC Northside Community Center in San Jose.  Kaleidoscopic and delicate, the artwork references the rich history of the intricate art of stained glass making.  The tradition of colored glass can be traced back to ancient times: both the Egyptians and the Romans were skillful masters at the manufacture of small colored glass objects.  Early Christians inherited the ancient art form which consequently reached its height during the Romanesque and Gothic periods in Medieval Europe.",
       "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Capiz-JTS-Northside-Community-457",
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
-    },
-    "errors": ["coordinates"]
+    }
   }
 ]
