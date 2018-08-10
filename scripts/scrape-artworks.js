@@ -4,7 +4,6 @@ const ArtworkScraper = require('../lib/artwork-scraper');
 
 // number of artwork listings per page, as of 7/16/18, there are 128 artwork pages at http://sanjoseca.gov/Facilities
 const NUM_ARTWORKS_TO_SCRAPE = 300;
-const MERGE_OVERRIDES = false;
 // Debug mode skips terminal prompt; necessary if running the program through IDE .
 const DEBUG_MODE = false;
 
