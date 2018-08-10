@@ -6,11 +6,13 @@
 (async function() {
   let res;
   let art;
+  let map;
 
   try {
     res = await fetch('http://localhost:3000/api/artworks');
     if (res.ok) {
       art = await res.json();
+      getMapboxAPIKey();
     } else {
       art = { features: [] };
       throw 'Error in fetching artworks';
@@ -27,66 +29,92 @@
       }
     };
   }
-
-  mapboxgl.accessToken =
-    'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiY2pmY3U3M3dlMXY1OTMzb2IxOGZkNW5wcyJ9.0qZCHLOM2Vy_JEE_Zx5-1g';
-
-  // Initialize a new map in the div with id 'map'
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v9',
-    center: [-121.893028, 37.33548], // position in long, lat format
-    zoom: 8,
-    dragPan: true, // If true , the "drag to pan" interaction is enabled (see DragPanHandler)
-    trackResize: true, // If true, the map will automatically resize when the browser window resizes.
-    doubleClickZoom: true, //If true double click will zoom
-    keyboard: true //If true will enable keyboard shortcuts
-  });
-
-  // adds data to map
-  map.on('load', function(e) {
-    map.addSource('places', {
-      type: 'geojson',
-      data: art
-    });
-    if (art && art.features && art.features.length > 0) {
-      buildLocationList(art); //initilize list.  call function when map loads
-    } else {
-      const notice = document.createElement('div');
-      notice.innerText = 'No artworks found.';
-      document.getElementById('listings').appendChild(notice);
+    
+    async function getMapboxAPIKey() {
+        try {
+            res = await fetch('http://localhost:3000/api/mapboxkeys');
+            if (res.ok) {
+                keys = await res.json();
+                mapboxMapArtwork(keys['mapbox_token'])
+            } else {
+                art = { features: [] };
+                throw 'Error in fetching keys';
+            }
+        } catch (e) {
+            console.error(e);
+        }
     }
-  });
+    function mapboxMapArtwork(key) {
+        mapboxgl.accessToken = key;
+        // Initialize a new map in the div with id 'map'
+        map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [-121.893028, 37.33548], // position in long, lat format
+            zoom: 8,
+            dragPan: true, // If true , the "drag to pan" interaction is enabled (see DragPanHandler)
+            trackResize: true, // If true, the map will automatically resize when the browser window resizes.
+            doubleClickZoom: true, //If true double click will zoom
+            keyboard: true //If true will enable keyboard shortcuts
+        });
+        addFeaturesToMap()
 
-  //Interaction with DOM markers
-  art.features.forEach(function(marker, i) {
-    if (!marker.geometry || !marker.geometry.coordinates) {
-      return;
+        // adds data to map
+        map.on('load', function(e) {
+            map.addSource('places', {
+                type: 'geojson',
+                data: art
+            });
+            if (art && art.features && art.features.length > 0) {
+                buildLocationList(art); //initilize list.  call function when map loads
+            }
+            else {
+                const notice = document.createElement('div');
+                notice.innerText = 'No artworks found.';
+                document.getElementById('listings').appendChild(notice);
+            }
+        });
+        
     }
 
-    // Create an img class='responsive' element for the marker
-    var el = document.createElement('div');
-    el.id = 'marker-' + i;
-    el.className = 'marker';
-    // Add markers to the map at all points
-    new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
+    function addFeaturesToMap( ) {
+        //Interaction with DOM markers
+        art.features.forEach(function(marker, i) {
+            if (!marker.geometry || !marker.geometry.coordinates) {
+                return;
+            }
 
-    el.addEventListener('click', function(e) {
-      var activeItem = document.getElementsByClassName('active');
-      // 1. Fly to the point
-      flyToArt(marker);
-      // 2. Close all other popups and display popup for clicked art
-      createPopUp(marker, 'listing-' + i);
-      // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-      e.stopPropagation();
-      if (activeItem[0]) {
-        activeItem[0].classList.remove('active');
-      }
-      var listing = document.getElementById('listing-' + i);
+            // Create an img class='responsive' element for the marker
+            var el = document.createElement('div');
+            el.id = 'marker-' + i;
+            el.className = 'marker';
+            // Add markers to the map at all points
 
-      listing.classList.add('active');
-    });
-  });
+            try {
+                new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
+
+                el.addEventListener('click', function(e) {
+                    var activeItem = document.getElementsByClassName('active');
+                    // 1. Fly to the point
+                    flyToArt(marker);
+                    // 2. Close all other popups and display popup for clicked art
+                    createPopUp(marker, 'listing-' + i);
+                    // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+                    e.stopPropagation();
+                    if (activeItem[0]) {
+                        activeItem[0].classList.remove('active');
+                    }
+                    var listing = document.getElementById('listing-' + i);
+
+                    listing.classList.add('active');
+                });
+            }
+            catch (exception) {
+                console.log(exception);
+            }
+        });
+    };
+  
 
   function flyToArt(currentFeature) {
     map.flyTo({
