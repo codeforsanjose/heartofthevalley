@@ -38,7 +38,7 @@ const DEBUG_MODE = false;
     .then(() => {
       return new ArtworkScraper({
         numArtworksToScrape: NUM_ARTWORKS_TO_SCRAPE,
-        mergeOverrides: MERGE_OVERRIDES
+        startID: 169
       }).run();
     })
     .catch(err => {
