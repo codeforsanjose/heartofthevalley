@@ -187,7 +187,7 @@
     var clickedListing = this.listingFeature;
 
     if (!clickedListing.geometry.coordinates) {
-      return console.error(
+      return console.warn(
         `Missing coordinates for listing: "${
           clickedListing.properties.title
         }". There is no marker on the map for this listing.`
