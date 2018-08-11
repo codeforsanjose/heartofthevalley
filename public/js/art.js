@@ -2213,7 +2213,7 @@ const art = {
     },
     {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [37.302498, -122.000031] },
+      geometry: { type: 'Point', coordinates: [-122.000031, 37.302498] },
       properties: {
         title: 'Commemoration to Carol Murdock',
         artist: 'Linda Rosenus Walsh',
@@ -2325,7 +2325,8 @@ const art = {
         sourceOfInformation: 'http://sanjoseca.gov/Facilities'
       },
       errors: ['coordinates'],
-      id: 1924483022
+      id: 1924483022,
+      addToMap: false
     },
     {
       type: 'Feature',
