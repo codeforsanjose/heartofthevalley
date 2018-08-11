@@ -6,8 +6,9 @@
 (async function() {
   let res;
 
-  MAPBOX_API_TOKEN = 'pk.eyJ1IjoieWNob3kiLCJhIjoiY2pmOTYwdzZ5MG52dDJ3b2JycXY4ZDU5ciJ9.m9H_Mqu1b42AObg_u_tjpA';
-  
+  MAPBOX_API_TOKEN =
+    'pk.eyJ1IjoieWNob3kiLCJhIjoiY2pmOTYwdzZ5MG52dDJ3b2JycXY4ZDU5ciJ9.m9H_Mqu1b42AObg_u_tjpA';
+
   // This will let you use the .remove() function later on
   if (!('remove' in Element.prototype)) {
     Element.prototype.remove = function() {
