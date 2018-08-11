@@ -24,3 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 selenium-debug.log
 CHROME_68.0.3440.106_Mac OS X_landing.xml
+selenium-server-standalone-3.13.0.jar
+chromedriver
