@@ -49,13 +49,18 @@
 
   function addFeaturesToMap() {
     //Interaction with DOM markers
-    art.features.forEach(function(marker, i) {
-      if (!marker.geometry || !marker.geometry.coordinates) {
-        return console.error(
+    let i = 0;
+    for (let marker of art.features) {
+      if (marker.addToMap === false) {
+        console.warn(`"${marker.properties.title}" is explicitly not added to the map.`);
+        continue;
+      } else if (!marker.geometry || !marker.geometry.coordinates) {
+        console.error(
           `Missing coordinates for listing: "${
             marker.properties.title
           }". No marker will be added to map.`
         );
+        continue;
       }
 
       // Create an img class='responsive' element for the marker
@@ -85,7 +90,8 @@
       } catch (exception) {
         console.log(exception);
       }
-    });
+      i++;
+    }
   }
 
   function flyToArt(currentFeature) {
