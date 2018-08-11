@@ -4,8 +4,6 @@
  */
 
 (async function() {
-  let res;
-
   MAPBOX_API_TOKEN =
     'pk.eyJ1IjoieWNob3kiLCJhIjoiY2pmOTYwdzZ5MG52dDJ3b2JycXY4ZDU5ciJ9.m9H_Mqu1b42AObg_u_tjpA';
 
@@ -105,7 +103,7 @@
       window.location.hash = '#' + linkId;
     }
 
-    var popup = new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: 'top' })
+    new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: 'top' })
       .setLngLat(currentFeature.geometry.coordinates)
       .setHTML(
         '<h3>' +
@@ -131,7 +129,7 @@
 
   function buildLocationList(data) {
     // Iterate through the list of arts
-    for (i = 0; i < data.features.length; i++) {
+    for (let i = 0; i < data.features.length; i++) {
       var currentFeature = data.features[i];
       // Shorten data.feature.properties to just `prop` so we're not
       // writing this long form over and over again.
