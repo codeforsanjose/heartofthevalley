@@ -547,5 +547,54 @@
       "sourceOfInformation": "http://sanjoseca.gov/Facilities"
     },
     "id": 2548680338
+  },
+  {
+    "type": "Feature",
+    "geometry": { "type": "Point", "coordinates": null },
+    "properties": {
+      "title": "Ripple Effect and Run River Run",
+      "artist": "Deborah Kennedy and Diana Pumpelly Bates",
+      "address": "Levee Road",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95134",
+      "image": "http://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2854%2fIMG_2365_201406091938309485.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+      "description": "Ripple Effect, by artist Deborah Kennedy, is a blue concrete platform shaped with naturalistic curves and embedded with quartz boulders designed to suggest a pond. Two bronze inlays represent the ripples formed by throwing a rock into a pond.  Run River Run, by artist Diana Pumpelly Bates, is a gate fabricated from stainless steel water jet cut panels that reference Coyote Creek and its by-pass channel at Montague Expressway. The asymmetrical flowing lines and shapes created by the surface finish references the fork where Coyote Creek overflows into the by-pass channel. The abundance of water, potentially on the cusp of flooding, is meant to inspire in viewers a reverential respect for the unknown power of this life-sustaining resource.",
+      "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Ripple-Effect-and-Run-River-R-448",
+      "sourceOfInformation": "http://sanjoseca.gov/Facilities"
+    },
+    "id": 1648674869
+  },
+  {
+    "type": "Feature",
+    "geometry": { "type": "Point", "coordinates": [-121.9287577, 37.3700405] },
+    "properties": {
+      "title": "Wave Matter Tessellation",
+      "artist": "Gregory Kucera",
+      "address": "1701 Airport Drive",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95110",
+      "image": "http://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2487%2fWave+Matter_1_photo+by+Kucera_201401301702281764.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+      "description": "Integrated within 8 columns located at the south end of the Concourse, are pixelated panels composed of thousands of holes, interpreting various waves – ripples in a pond, electromagnetic, radio, sound, radar, and gravitational.",
+      "sourceURL": "http://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wave-Matter-Tessellation-Norm-410",
+      "sourceOfInformation": "http://sanjoseca.gov/Facilities"
+    },
+    "id": 1003945280
+  },
+  {
+    "type": "Feature",
+    "geometry": { "type": "Point", "coordinates": [-121.937552, 37.381220] },
+    "properties": {
+      "title": "Lupe the Mammoth",
+      "artist": "Freya Bardell and Brian Howe (Greenmeme Studio)",
+      "description": "One July Saturday in 2005, a San Jose resident took a walk with his dog along the Guadalupe River, just north of the San Jose International Airport. He recognized that the objects poking out of the ground that day were clearly unusual -- he had discovered the tusks and skeleton of a mammoth.<br/><br/> <em>Lupe the Mammoth</em> was inspired by this discovery. <br/>The artwork is a technology-driven design with hand-crafted sensibilities. While the actual mammoth was a juvenile and about 8’ tall, the sculpture measures 12.5’ in height and is made of galvanized steel. The artwork was painstakingly fabricated at Paramount Roll & Forming; bent piece by piece and fit into a notched support structure after which it was galvanized for its final finish. <br/><br/> The artwork is titled “Lupe,” but has quickly assumed the nickname Lupe the Mammoth as a popular post on social media; #LupeTheMammoth. <br/><br/> Source: City of San José Public Art Program, http://www.sanjoseca.gov/Facilities/Facility/Details/Public-Art-Lupe-the-Mammoth-Guadalupe-Tr-559",
+      "address": "Guadalupe River at Trimble ",
+      "city": "San José",
+      "country": "United States",
+      "postalCode": "95113",
+      "state": "CA"
+    },
+    "id": 4221614521
   }
 ]

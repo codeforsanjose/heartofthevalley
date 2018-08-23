@@ -1337,7 +1337,7 @@ const art = {
     },
     {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [-121.40156, 36.88916] },
+      geometry: { type: 'Point', coordinates: [-121.9287577, 37.3700405] },
       properties: {
         title: 'Wave Matter Tessellation',
         artist: 'Gregory Kucera',
@@ -1998,7 +1998,7 @@ const art = {
     },
     {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [-122.4970913, 37.9398179] },
+      geometry: { type: 'Point', coordinates: null },
       properties: {
         title: 'Ripple Effect and Run River Run',
         artist: 'Deborah Kennedy and Diana Pumpelly Bates',
@@ -4861,7 +4861,7 @@ const art = {
     },
     {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [-121.93757, 37.38121] },
+      geometry: { type: 'Point', coordinates: [-121.937552, 37.38122] },
       properties: {
         title: 'Lupe the Mammoth',
         artist: 'Freya Bardell and Brian Howe (Greenmeme Studio)',
