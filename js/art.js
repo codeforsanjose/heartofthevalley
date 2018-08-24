@@ -1337,7 +1337,7 @@ const art = {
     },
     {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [-121.40156, 36.88916] },
+      geometry: { type: 'Point', coordinates: [-121.9287577, 37.3700405] },
       properties: {
         title: 'Wave Matter Tessellation',
         artist: 'Gregory Kucera',
@@ -1998,7 +1998,7 @@ const art = {
     },
     {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [-122.4970913, 37.9398179] },
+      geometry: { type: 'Point', coordinates: null },
       properties: {
         title: 'Ripple Effect and Run River Run',
         artist: 'Deborah Kennedy and Diana Pumpelly Bates',
@@ -2964,8 +2964,7 @@ const art = {
       geometry: { type: 'Point', coordinates: [-121.8615136, 37.3720834] },
       properties: {
         title: 'FOGWASTE',
-        artist:
-          'Brett Snyder and Claire NapawanFOGWASTE is a public art installation and community outreach effort. The project targets communities with a three-phase approach that together reinforce the important work of DOT’s sewer maintenance staff, the importance of the community in understanding of FOG (Fat Oil and Grease), the sanitary sewer infrastructure, and the potential actions that residents can take to achieve a positive impact on the sewer system, the environment, and their communities. The project elements work together to stimulate community curiosity, encourage participation in best household practices, and promote environmental stewardship:Doorhanger:  Addressing the issue directly at the household, a bold graphic poster is distributed as a door hanger by DOT crews in the vicinity of recent sanitary sewer maintenance activity. The poster features simple and engaging icons to educate about various FOG wastes and common household products not to be put in sinks; the poster also brings awareness to features of the infrastructure system. Printed in the project’s signature electric green color, the door hanger connects to the other art elements described below. Multi-lingual text provides explanation and vocabulary for a more informed community. Manhole Marker: Bringing attention to the infrastructure below the streets, manholes of recently serviced sewer lines were painted in the project’s signature electric green color, creating awareness of this largely unnoticed infrastructure. Painting of the manholes coincided with the distribution of door hangers creating a connection from the front door to the system under the street. Maintenance Truck Graphic: A bold vinyl graphic was applied to select sewer maintenance trucks traveling to the target neighborhoods that features a design that calls out the 24/7 sewer maintenance service provided by the City. The vinyl graphic will be rendered in the project’s signature electric green color reinforcing the connection between the truck, door hangers and manhole markers and the workforce that is constantly on the move to manage the system. DistrictCity Wide Report a concern (408) 793-4330 or publicart@sanjoseca.go',
+        artist: 'Brett Snyder and Claire Napawan',
         address: '1404 Mabury Road',
         city: 'San Jose',
         state: 'CA',
@@ -4862,7 +4861,7 @@ const art = {
     },
     {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [-121.93757, 37.38121] },
+      geometry: { type: 'Point', coordinates: [-121.937552, 37.38122] },
       properties: {
         title: 'Lupe the Mammoth',
         artist: 'Freya Bardell and Brian Howe (Greenmeme Studio)',
