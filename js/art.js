@@ -3,7 +3,87 @@ const art = {
   features: [
     {
       type: 'Feature',
-      geometry: { type: 'Point', coordinates: [-121.88887, 37.32718] },
+      geometry: { type: 'Point', coordinates: [-121.88657, 37.33123] },
+      properties: {
+        title: '100 Block San Jose Mural Project',
+        artist: "Various Artists & Exhibition District (producer)",
+        description:
+          "The mural is made of 100 canvases that was painted by 100 artists. Exhibition District brought together artists for this project. It is located at the Valley Title building, across from California Theater.",
+        address: '300 First St',
+        city: 'San José',
+        country: 'United States',
+        postalCode: '95113',
+        state: 'CA'
+      },
+      id: 00000001
+    },
+    {
+      type: 'Feature',
+      geometry: { type: 'Point', coordinates: [-121.88604, 37.33342] },
+      properties: {
+        title: 'Unknown Title',
+        artist: "t.w.five'",
+        description:
+          "This mural was painted as part of POW!WOW! San Jose 2018, which was organized by Empire Seven Studios and POW!WOW! San Jose",
+        address: '108 Paseo De San Antonio',
+        city: 'San José',
+        country: 'United States',
+        postalCode: '95113',
+        state: 'CA'
+      },
+      id: 00000002
+    },
+    {
+      type: 'Feature',
+      geometry: { type: 'Point', coordinates: [-121.91099, 37.33089] },
+      properties: {
+        title: 'Unknown Title',
+        artist: "Frances Marin and J.Duh",
+        description:
+        "This mural was painted as part of POW!WOW! San Jose 2018, which was organized by Empire Seven Studios and POW!WOW! San Jose",
+        address: '1068 The Alameda',
+        city: 'San José',
+        country: 'United States',
+        postalCode: '95126',
+        state: 'CA'
+      },
+      id: 00000003
+    },
+    {
+      type: 'Feature',
+      geometry: { type: 'Point', coordinates: [-121.89361, 37.33462] },
+      properties: {
+        title: 'Unknown Title',
+        artist: "Harumo Sato",
+        description:
+        "This mural was painted as part of POW!WOW! San Jose 2018, which was organized by Empire Seven Studios and POW!WOW! San Jose",
+        address: '194 W Santa Clara St',
+        city: 'San José',
+        country: 'United States',
+        postalCode: '95113',
+        state: 'CA'
+      },
+      id: 00000004
+    },
+    {
+      type: 'Feature',
+      geometry: { type: 'Point', coordinates: [ -121.89116, 37.33691] },
+      properties: {
+        title: 'Unknown Title',
+        artist: "Apexer",
+        description:
+        "This mural was painted as part of POW!WOW! San Jose 2018, which was organized by Empire Seven Studios and POW!WOW! San Jose",
+        address: '25 N 1st St',
+        city: 'San José',
+        country: 'United States',
+        postalCode: '95113',
+        state: 'CA'
+      },
+      id: 00000005
+    },
+    {
+      type: 'Feature',
+      geometry: { type: 'Point', coordinates: [-121.89361, 37.33462] },
       properties: {
         title: 'San José',
         artist: "<a href='https://www.instagram.com/j.duh_/' target='_blank'>J.Duh</a>",

@@ -6,6 +6,182 @@
         "errors": null,
         "geometry": {
             "coordinates": [
+                -121.88657, 
+                37.33123
+            ],
+            "type": "Point"
+        },
+        "id": 00000001,
+        "properties": {
+            "AdditionalURL": [],
+            "address": "300 S First St",
+            "artist": "100 various artists",
+            "city": "San Jos\u00e9",
+            "country": "United States",
+            "crossStreet": null,
+            "description": "The mural is made of 100 canvases that was painted by 100 artists. Exhibition District brought together artists for this project. It is located at the Valley Title building, across from California Theater.",
+            "image": null,
+            "postalCode": 95113,
+            "sourceOfInformation": "Exhibition District",
+            "sourceURL": "https://www.exhibitiondistrict.com",
+            "state": "CA",
+            "title": "100 Block San Jose Mural Project",
+            "website": "['https://www.exhibitiondistrict.com/']"
+        },
+        "type": "Feature"
+    },
+    {
+        "addToMap": null,
+        "errors": null,
+        "geometry": {
+            "coordinates": [
+                -121.88604, 
+                37.33342
+            ],
+            "type": "Point"
+        },
+        "id": 00000002,
+        "properties": {
+            "AdditionalURL": [],
+            "address": "108 Paseo De San Antonio",
+            "artist": "t.w.five",
+            "city": "San Jos\u00e9",
+            "country": "United States",
+            "crossStreet": null,
+            "description": "This mural was painted as part of POW!WOW! San Jose 2018, which was organized by Empire Seven Studios and POW!WOW! San Jose",
+            "image": null,
+            "postalCode": 95113,
+            "sourceOfInformation": "POW!WOW!San Jose",
+            "sourceURL": "https://www.powwowsanjose.com",
+            "state": "CA",
+            "title": "Unknown Title",
+            "website": "['https://www.powwowsanjose.com/']"
+        },
+        "type": "Feature"
+    },
+    {
+        "addToMap": null,
+        "errors": null,
+        "geometry": {
+            "coordinates": [
+                -121.91099, 
+                37.33089
+            ],
+            "type": "Point"
+        },
+        "id": 00000003,
+        "properties": {
+            "AdditionalURL": [],
+            "address": "1068 The Alameda",
+            "artist": "Frances Marin and J.Duh",
+            "city": "San Jos\u00e9",
+            "country": "United States",
+            "crossStreet": null,
+            "description": "This mural was painted as part of POW!WOW! San Jose 2018, which was organized by Empire Seven Studios and POW!WOW! San Jose",
+            "image": null,
+            "postalCode": 95126,
+            "sourceOfInformation": "POW!WOW!San Jose",
+            "sourceURL": "https://www.powwowsanjose.com",
+            "state": "CA",
+            "title": "Unknown Title",
+            "website": "['https://www.powwowsanjose.com/']"
+        },
+        "type": "Feature"
+    },
+    {
+        "addToMap": null,
+        "errors": null,
+        "geometry": {
+            "coordinates": [
+                -121.89361, 
+                37.33462
+            ],
+            "type": "Point"
+        },
+        "id": 00000004,
+        "properties": {
+            "AdditionalURL": [],
+            "address": "194 W Santa Clara St",
+            "artist": "Harumo Sato",
+            "city": "San Jos\u00e9",
+            "country": "United States",
+            "crossStreet": null,
+            "description": "This mural was painted as part of POW!WOW! San Jose 2018, which was organized by Empire Seven Studios and POW!WOW! San Jose",
+            "image": null,
+            "postalCode": 95113,
+            "sourceOfInformation": "POW!WOW!San Jose",
+            "sourceURL": "https://www.powwowsanjose.com",
+            "state": "CA",
+            "title": "Unknown Title",
+            "website": "['https://www.powwowsanjose.com/']"
+        },
+        "type": "Feature"
+    },
+    {
+        "addToMap": null,
+        "errors": null,
+        "geometry": {
+            "coordinates": [
+                -121.89116, 
+                37.33691
+            ],
+            "type": "Point"
+        },
+        "id": 00000005,
+        "properties": {
+            "AdditionalURL": [],
+            "address": "25 N 1st St",
+            "artist": "Apexer",
+            "city": "San Jos\u00e9",
+            "country": "United States",
+            "crossStreet": null,
+            "description": "This mural was painted as part of POW!WOW! San Jose 2018, which was organized by Empire Seven Studios and POW!WOW! San Jose",
+            "image": null,
+            "postalCode": 95113,
+            "sourceOfInformation": "POW!WOW!San Jose",
+            "sourceURL": "https://www.powwowsanjose.com",
+            "state": "CA",
+            "title": "Unknown Title",
+            "website": "['https://www.powwowsanjose.com/']"
+        },
+        "type": "Feature"
+    },
+    {
+        "addToMap": null,
+        "errors": null,
+        "geometry": {
+            "coordinates": [
+                -121.88887,
+                37.32718
+            ],
+            "type": "Point"
+        },
+        "id": 10667523,
+        "properties": {
+            "AdditionalURL": [
+                "https://www.instagram.com/j.duh_/"
+            ],
+            "address": "488 Almaden Blvd, Ste 1800",
+            "artist": "Jorge Camacho",
+            "city": "San Jos\u00e9",
+            "country": "United States",
+            "crossStreet": null,
+            "description": "This mural was painted by J.Duh, and produced in collaboration with Exhibition District. It is located on the exterior of the PWC Building on Balbach St.  ",
+            "image": null,
+            "postalCode": 95113,
+            "sourceOfInformation": "Exhibition District",
+            "sourceURL": "https://www.exhibitiondistrict.com",
+            "state": "CA",
+            "title": "San Jos\u00e9",
+            "website": "['https://www.instagram.com/j.duh_/', 'http://www.jduhdesigns.com/bio.html']"
+        },
+        "type": "Feature"
+    },
+    {
+        "addToMap": null,
+        "errors": null,
+        "geometry": {
+            "coordinates": [
                 -121.88887,
                 37.32718
             ],
