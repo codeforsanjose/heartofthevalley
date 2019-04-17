@@ -1,18 +1,26 @@
 {
-  "name": "CodeForSanJose",
+  "name": "heart_of_the_valley",
   "version": "1.0.0",
-  "description": "",
+  "description": "Our Valley of Heart's Delight (Santa Clara Valley, or the South Bay Area) has so many incredible murals and public art. This open source project visualizes and maps data about local public art and murals. We hope that this will help community members discover the beautiful murals and public art that make our communities vibrant. We also hope the map can help community members discover local artists and creatives in the South Bay.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scrapeArtworks": "node scripts/scrape-artworks.js",
-    "consolidateArtworkFiles": "node scripts/consolidate-artwork-files.js"
+    "mergeArtworkFiles": "node scripts/consolidate-artwork-files.js",
+    "listUntitled": "node scripts/list-mural-by-title.js",
+    "lookupAddresses": "node scripts/lookup-addresses.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "San Jose",
+    "Art",
+    "Map",
+    "Heart of the Valley"
+  ],
+  "author": "Code For San Jose",
+  "license": "MIT",
   "dependencies": {
     "@mapbox/mapbox-sdk": "0.2.0",
+    "crypto-js": "^3.1.9-1",
     "express": "4.16.4",
     "nominatim-browser": "2.0.2",
     "osmosis": "1.1.10",

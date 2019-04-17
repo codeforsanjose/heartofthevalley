@@ -1,4 +1,4 @@
-const URL_SAN_JOSE_GOV = 'http://sanjoseca.gov';
+const URL_SAN_JOSE_GOV = 'https://sanjoseca.gov';
 
 module.exports = {
   URL_SAN_JOSE_GOV,

@@ -49,49 +49,50 @@
 
   function addFeaturesToMap() {
     //Interaction with DOM markers
-    let i = 0;
-    for (let marker of art.features) {
+    art.features.forEach(marker => {
+      
       if (marker.addToMap === false) {
         console.warn(`"${marker.properties.title}" is explicitly not added to the map.`);
-        continue;
       } else if (!marker.geometry || !marker.geometry.coordinates) {
-        console.error(
+        console.warn(
           `Missing coordinates for listing: "${
             marker.properties.title
           }". No marker will be added to map.`
         );
-        continue;
+      } else {
+        // Create an img class='responsive' element for the marker
+        let el = document.createElement('div');
+        el.id = 'marker-' + marker.id;
+        el.className = 'marker';
+        // Add markers to the map at all points
+
+        try {
+          new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
+          let marker_elem = marker
+          let listing_id = 'listing-' + marker.id
+          el.addEventListener('click', function(e) {
+            console.log('marker has been clicked', marker_elem.id)
+            let activeItem = document.getElementsByClassName('active');
+            // 1. Fly to the point
+            flyToArt(marker_elem);
+            // 2. Close all other popups and display popup for clicked art
+            createPopUp(marker_elem, listing_id);
+            // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+            e.stopPropagation();
+            if (activeItem[0]) {
+              console.log('activeItem: ', activeItem)
+              activeItem[0].classList.remove('active');
+            }
+            console.log('attempting to show listing for '+listing_id)
+            let listing = document.getElementById(listing_id);
+
+            listing.classList.add('active');
+          });
+        } catch (exception) {
+          console.error(exception);
+        }
       }
-
-      // Create an img class='responsive' element for the marker
-      var el = document.createElement('div');
-      el.id = 'marker-' + i;
-      el.className = 'marker';
-      // Add markers to the map at all points
-
-      try {
-        new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
-
-        el.addEventListener('click', function(e) {
-          var activeItem = document.getElementsByClassName('active');
-          // 1. Fly to the point
-          flyToArt(marker);
-          // 2. Close all other popups and display popup for clicked art
-          createPopUp(marker, 'listing-' + i);
-          // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-          e.stopPropagation();
-          if (activeItem[0]) {
-            activeItem[0].classList.remove('active');
-          }
-          var listing = document.getElementById('listing-' + i);
-
-          listing.classList.add('active');
-        });
-      } catch (exception) {
-        console.log(exception);
-      }
-      i++;
-    }
+    });
   }
 
   function flyToArt(currentFeature) {
@@ -109,6 +110,7 @@
       window.location.hash = '#' + linkId;
     }
 
+    console.log('showing popup for ', currentFeature.properties.title)
     new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: 'top' })
       .setLngLat(currentFeature.geometry.coordinates)
       .setHTML(
@@ -137,6 +139,17 @@
     // Iterate through the list of arts
     for (let i = 0; i < data.features.length; i++) {
       var currentFeature = data.features[i];
+      if (currentFeature.addToMap === false) {
+        console.warn(`"${currentFeature.properties.title}" is explicitly not added to the locations list.`);
+        continue;
+      } else if (!currentFeature.geometry || !currentFeature.geometry.coordinates) {
+        console.warn(
+          `Missing coordinates for listing: "${
+            currentFeature.properties.title
+          }". No entry will be made in the locations list.`
+        );
+        continue;
+      }
       // Shorten data.feature.properties to just `prop` so we're not
       // writing this long form over and over again.
       var prop = currentFeature.properties;
@@ -145,7 +158,7 @@
       var listings = document.getElementById('listings');
       var listing = listings.appendChild(document.createElement('div'));
       listing.className = 'item';
-      listing.id = 'listing-' + i;
+      listing.id = 'listing-' + currentFeature.id;
       // Create a new link with the class 'title' for each art
       // and fill it with the art address
       var link = listing.appendChild(document.createElement('a'));
@@ -153,7 +166,7 @@
       link.className = 'title';
       link.innerHTML = '<br/>' + prop.title;
       link.listingFeature = currentFeature;
-      link.listingId = 'listing-' + i;
+      link.listingId = 'listing-' + currentFeature.id;
 
       // Create a new div with the class 'details' for each listing
       // and fill it with the following

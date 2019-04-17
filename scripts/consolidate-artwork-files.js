@@ -20,7 +20,7 @@ const DEBUG_MODE = true;
 
     readlineInterface.question(
       `This action will overwrite the public file: '${
-        PATHS.PATH_CONSOLIDATED_ARTWORKS
+      PATHS.PATH_CONSOLIDATED_ARTWORKS
       }' if it exists. Are you sure you want to continue?\n`,
       answer => {
         answer = answer.toLowerCase();
@@ -30,21 +30,16 @@ const DEBUG_MODE = true;
         reject('Aborted.');
       }
     );
-  })
-    .then(() => {
-      return ArtworkScraper.mergeArtworksIntoFile(PATHS.PATH_CONSOLIDATED_ARTWORKS, [
-        PATHS.PATH_LEGACY_ARTWORKS,
-        PATHS.PATH_SCRAPED_ARTWORKS,
-        PATHS.PATH_SCRAPED_ARTWORKS_ERRORS,
-        PATHS.PATH_ARTWORKS_OVERRIDES
-      ]);
-    })
-    .catch(err => {
-      console.error(err);
-    })
-    .then(() => {
-      if (readlineInterface) {
-        readlineInterface.close();
-      }
-    });
+  }).then(() => {
+    return ArtworkScraper.mergeArtworksIntoFile(PATHS.PATH_CONSOLIDATED_ARTWORKS, [
+      PATHS.PATH_SCRAPED_ARTWORKS,
+      PATHS.PATH_ARTWORKS_OVERRIDES
+    ]);
+  }).catch(err => {
+    console.error(err);
+  }).then(() => {
+    if (readlineInterface) {
+      readlineInterface.close();
+    }
+  });
 })();
