@@ -661,5 +661,20 @@
       "state": "CA"
     },
     "id": "art_e4ba6e9e83ce8480e58aa94885bca229ad1583e0748cc602cea648ab5fe952f7"
+  },
+  {
+    "type": "Feature",
+    "geometry": { "type": "Point", "coordinates": [-121.929514, 37.406643] },
+    "properties": {
+      "title": "Ripple Effect and Run River Run",
+      "artist": "Deborah Kennedy and Diana Pumpelly Bates",
+      "description": "Ripple Effect, by artist Deborah Kennedy, is a blue concrete platform shaped with naturalistic curves and embedded with quartz boulders designed to suggest a pond. Two bronze inlays represent the ripples formed by throwing a rock into a pond.  Run River Run, by artist Diana Pumpelly Bates, is a gate fabricated from stainless steel water jet cut panels that reference Coyote Creek and its by-pass channel at Montague Expressway. The asymmetrical flowing lines and shapes created by the surface finish references the fork where Coyote Creek overflows into the by-pass channel. The abundance of water, potentially on the cusp of flooding, is meant to inspire in viewers a reverential respect for the unknown power of this life-sustaining resource.",
+      "address": "Levee Road",
+      "city": "San José",
+      "country": "United States",
+      "postalCode": "95134",
+      "state": "CA"
+    },
+    "id": "art_b960b1e410b14a2e4ad4b9353ee3bcdac8298ff1f366b2572c7855352913ab27"
   }
 ]

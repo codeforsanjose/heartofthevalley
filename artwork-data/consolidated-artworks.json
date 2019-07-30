@@ -282,8 +282,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.8878698,
-          37.2453968
+          -121.8858162,
+          37.2466622
         ]
       },
       "properties": {
@@ -420,8 +420,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9194898,
-          37.3624371
+          -121.9149771,
+          37.3571484
         ]
       },
       "properties": {
@@ -581,8 +581,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9194898,
-          37.3624371
+          -121.9149771,
+          37.3571484
         ]
       },
       "properties": {
@@ -739,8 +739,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9194898,
-          37.3624371
+          -121.9149771,
+          37.3571484
         ]
       },
       "properties": {
@@ -785,8 +785,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9194898,
-          37.3624371
+          -121.9149771,
+          37.3571484
         ]
       },
       "properties": {
@@ -848,8 +848,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.890012127867,
-          37.3336686
+          -121.890024364468,
+          37.33368095
         ]
       },
       "properties": {
@@ -1078,8 +1078,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9194898,
-          37.3624371
+          -121.9149771,
+          37.3571484
         ]
       },
       "properties": {
@@ -1350,8 +1350,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.8857436,
-          37.3335479
+          -121.8868931,
+          37.3338757
         ]
       },
       "properties": {
@@ -1416,8 +1416,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.8998794,
-          37.3027025
+          -121.90008479417,
+          37.30299955
         ]
       },
       "properties": {
@@ -1666,8 +1666,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.888393524839,
-          37.3349928541096
+          -121.889087023609,
+          37.3345839821445
         ]
       },
       "properties": {
@@ -1824,21 +1824,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.6937992,
-          38.4002755
+          -121.929514,
+          37.406643
         ]
       },
       "properties": {
         "title": "Ripple Effect and Run River Run",
         "artist": "Deborah Kennedy and Diana Pumpelly Bates",
-        "address": "Levee Road",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95134",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2854%2fIMG_2365_201406091938309485.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
         "description": "Ripple Effect, by artist Deborah Kennedy, is a blue concrete platform shaped with naturalistic curves and embedded with quartz boulders designed to suggest a pond. Two bronze inlays represent the ripples formed by throwing a rock into a pond.  Run River Run, by artist Diana Pumpelly Bates, is a gate fabricated from stainless steel water jet cut panels that reference Coyote Creek and its by-pass channel at Montague Expressway. The asymmetrical flowing lines and shapes created by the surface finish references the fork where Coyote Creek overflows into the by-pass channel. The abundance of water, potentially on the cusp of flooding, is meant to inspire in viewers a reverential respect for the unknown power of this life-sustaining resource.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Ripple-Effect-and-Run-River-R-448",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
+        "address": "Levee Road",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95134",
+        "state": "CA"
       },
       "id": "art_b960b1e410b14a2e4ad4b9353ee3bcdac8298ff1f366b2572c7855352913ab27"
     },
@@ -2008,8 +2006,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.7742945,
-          37.23883
+          -121.7344316,
+          37.211925
         ]
       },
       "properties": {
@@ -2031,8 +2029,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9194898,
-          37.3624371
+          -121.9149771,
+          37.3571484
         ]
       },
       "properties": {
@@ -2166,8 +2164,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9194898,
-          37.3624371
+          -121.9149771,
+          37.3571484
         ]
       },
       "properties": {
@@ -2808,8 +2806,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.8998794,
-          37.3027025
+          -121.90008479417,
+          37.30299955
         ]
       },
       "properties": {
