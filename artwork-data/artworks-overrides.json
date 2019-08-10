@@ -792,7 +792,7 @@
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": [-121.911122, 37.331321] },
+    "geometry": { "type": "Point", "coordinates": [-121.910998, 37.330997] },
     "properties": {
       "title": "Paletero",
       "artist": "J. Duh",
@@ -824,7 +824,7 @@
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": [-121.911122, 37.331321] },
+    "geometry": { "type": "Point", "coordinates": [-121.911039, 37.331279] },
     "properties": {
       "title": "Untitled",
       "artist": "Frances Marin",
@@ -920,7 +920,7 @@
   },
   {
     "type": "Feature",
-    "geometry": { "type": "Point", "coordinates": [] },
+    "geometry": { "type": "Point", "coordinates": [-121.886042, 37.333439] },
     "properties": {
       "title": "Untitled",
       "artist": "t.w. five",
