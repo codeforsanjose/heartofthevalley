@@ -1890,21 +1890,19 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.6937992,
-          38.4002755
+          -121.929514,
+          37.406643
         ]
       },
       "properties": {
         "title": "Ripple Effect and Run River Run",
         "artist": "Deborah Kennedy and Diana Pumpelly Bates",
-        "address": "Levee Road",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95134",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2854%2fIMG_2365_201406091938309485.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
         "description": "Ripple Effect, by artist Deborah Kennedy, is a blue concrete platform shaped with naturalistic curves and embedded with quartz boulders designed to suggest a pond. Two bronze inlays represent the ripples formed by throwing a rock into a pond.  Run River Run, by artist Diana Pumpelly Bates, is a gate fabricated from stainless steel water jet cut panels that reference Coyote Creek and its by-pass channel at Montague Expressway. The asymmetrical flowing lines and shapes created by the surface finish references the fork where Coyote Creek overflows into the by-pass channel. The abundance of water, potentially on the cusp of flooding, is meant to inspire in viewers a reverential respect for the unknown power of this life-sustaining resource.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Ripple-Effect-and-Run-River-R-448",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
+        "address": "Levee Road",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95134",
+        "state": "CA"
       },
       "id": "art_b960b1e410b14a2e4ad4b9353ee3bcdac8298ff1f366b2572c7855352913ab27"
     },
@@ -2642,22 +2640,22 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.886042,
-          37.333439
+          -121.882476,
+          37.325584
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "t.w. five",
-        "address": "108 Paseo De San Antonio",
+        "artist": "Roan Victor and Sean Boyles",
+        "address": "702 S 1st Street",
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/ian_twFive2.jpg",
-        "description": "t.w. five is an international artist duo based in San Francisco, California. They work with adhesive backed vinyl focusing largely on the process. All shapes are hand-cut into strips from larger rolls of solid color vinyl and then carefully applied to the surface of the work. 'We usually create massive scale installations and integrate the gallery space with our art.'",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/twfive/"
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/SeanRoan_Final.jpg",
+        "description": "Co-owning and operating The Arsenal with her husband, artist Sean Boyles, Roan Victor is utterly dedicated to her art. Sublime, ethereal paintings in oil, and lately watercolor, her work expresses—often through flowers, linens, and obscured faces—the camouflage or privacy we all seek in an increasingly changing world. “I’m a painter. I work in watercolor, oil and latex paint. Watercolors keep me in order and oil painting is a party. When I paint walls, encountering various scales, proportions and settings excite me. I revel in the different ways I can present a figure in such a large format.” Sean mostly draws and paints. His day job is teaching others to do the same whether at Mission College, CSU Monterey Bay or at The Arsenal, which Sean opened with his wife Roan Victor in 2011. The aesthetic of Sean’s work comes from watching cartoons, playing video games, painting graffiti, collecting garbage pail kids, reading comic books, watching Star Wars, kung fu, ninja, sci-fi, and giant monster movies. Sean creates his work between his heart and head; between what he knows and what he feels. Sean tries to be both detailed and gestural, clean and messy, smooth and gritty, fluid and structured, soft subtleties with loud splattery edges.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/roanvictor/"
       },
-      "id": "art_2326b2670d2dd91915104a6dcf1f2ec236ebd0f66b007718e15d5869c099a465"
+      "id": "art_8362bca37ed5a95cc0b5ff5840e969f5ddbc123c643fc4b2288f2a4829855340"
     },
     {
       "type": "Feature",
@@ -2774,28 +2772,6 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.881928,
-          37.324921
-        ]
-      },
-      "properties": {
-        "title": "Untitled",
-        "artist": "Dragon76 and Woes",
-        "address": "748 S 1st Street",
-        "city": "San José",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/SNDLOT_homie_final.jpg",
-        "description": "Born in Shiga, Japan, Dragon76 is a Japanese artist who specializes in large-scale live painting at galleries, music events and alternative spaces world-wide. His intricate and complex style is rooted in a combination of Graffiti, Manga, and Ukiyo-e. Working fast, in classic graffiti “throw up” style, Dragon76 paints with acrylic and marker pen as well as using stenciling techniques. His art is described by many as passionate and energetic and the concept of his art style is the co-existence of two opposites such as the past and future, stillness and motion, evil and justice. Be it music, dance, bathing in sunshine or marching against injustice, his talent lies in capturing an energy that conveys action, Dragon76 creates stunning works that feel as well as look wonderful. Dragon76 also performs improvised and dynamic live painting shows around the world, which always attracts large audiences. Dragon76 lives and works in New York, where his art and style continue to progress. He is a two-time winner of the 2017 New York Art Battle. Woes was born on the Hawaiian Island of Oahu, but spent most of his childhood growing up and moving from Southern California to Nevada before finally landing back into Hawaii during his Junior year in high school. In 1998 a car accident changed everything; this life-threatening experience inspired him to leave the island once again, this time to Seattle, Washington. Inspired by the people, rain and being indoors, he started playing around with different art mediums again. Woes then left back to Hawaii with a new perspective. Having roots in graffiti, Woes started rocking his iconic Panda characters to leave a mark in different cities, countries around the world and became addicted leaving his character of a species in jeopardy. Woes has shown in galleries and been published in magazines across the US mainland to Asia , South East Asia, South Pacific and all over Europe. Woes has worked on project swith companies & collective such as Mind Style toys, Disney, Flab Slab, Kidrobot, Fitted Hawaii /New Era, Kicks Hawaii.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/dragon76/"
-      },
-      "id": "art_b07ea4a722ca33dbc56143af55291c39c17280ac85cfa45cf26a53c66ef95a8d"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -121.892926,
           37.326789
         ]
@@ -2812,6 +2788,28 @@ const art = {
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/nikkeatakagi/"
       },
       "id": "art_1451f6a0f7ddf01bcc4ebea7ef1789a270551c399f842b00f66a9d9ba60faf24"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.881928,
+          37.324921
+        ]
+      },
+      "properties": {
+        "title": "Untitled",
+        "artist": "Dragon76 and Woes",
+        "address": "748 S 1st Street",
+        "city": "San José",
+        "state": "CA",
+        "postalCode": "95113",
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/SNDLOT_homie_final.jpg",
+        "description": "Born in Shiga, Japan, Dragon76 is a Japanese artist who specializes in large-scale live painting at galleries, music events and alternative spaces world-wide. His intricate and complex style is rooted in a combination of Graffiti, Manga, and Ukiyo-e. Working fast, in classic graffiti “throw up” style, Dragon76 paints with acrylic and marker pen as well as using stenciling techniques. His art is described by many as passionate and energetic and the concept of his art style is the co-existence of two opposites such as the past and future, stillness and motion, evil and justice. Be it music, dance, bathing in sunshine or marching against injustice, his talent lies in capturing an energy that conveys action, Dragon76 creates stunning works that feel as well as look wonderful. Dragon76 also performs improvised and dynamic live painting shows around the world, which always attracts large audiences. Dragon76 lives and works in New York, where his art and style continue to progress. He is a two-time winner of the 2017 New York Art Battle. Woes was born on the Hawaiian Island of Oahu, but spent most of his childhood growing up and moving from Southern California to Nevada before finally landing back into Hawaii during his Junior year in high school. In 1998 a car accident changed everything; this life-threatening experience inspired him to leave the island once again, this time to Seattle, Washington. Inspired by the people, rain and being indoors, he started playing around with different art mediums again. Woes then left back to Hawaii with a new perspective. Having roots in graffiti, Woes started rocking his iconic Panda characters to leave a mark in different cities, countries around the world and became addicted leaving his character of a species in jeopardy. Woes has shown in galleries and been published in magazines across the US mainland to Asia , South East Asia, South Pacific and all over Europe. Woes has worked on project swith companies & collective such as Mind Style toys, Disney, Flab Slab, Kidrobot, Fitted Hawaii /New Era, Kicks Hawaii.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/dragon76/"
+      },
+      "id": "art_b07ea4a722ca33dbc56143af55291c39c17280ac85cfa45cf26a53c66ef95a8d"
     },
     {
       "type": "Feature",
@@ -2862,22 +2860,22 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.882476,
-          37.325584
+          -121.886042,
+          37.333439
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "Roan Victor and Sean Boyles",
-        "address": "702 S 1st Street",
+        "artist": "t.w. five",
+        "address": "108 Paseo De San Antonio",
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/SeanRoan_Final.jpg",
-        "description": "Co-owning and operating The Arsenal with her husband, artist Sean Boyles, Roan Victor is utterly dedicated to her art. Sublime, ethereal paintings in oil, and lately watercolor, her work expresses—often through flowers, linens, and obscured faces—the camouflage or privacy we all seek in an increasingly changing world. “I’m a painter. I work in watercolor, oil and latex paint. Watercolors keep me in order and oil painting is a party. When I paint walls, encountering various scales, proportions and settings excite me. I revel in the different ways I can present a figure in such a large format.” Sean mostly draws and paints. His day job is teaching others to do the same whether at Mission College, CSU Monterey Bay or at The Arsenal, which Sean opened with his wife Roan Victor in 2011. The aesthetic of Sean’s work comes from watching cartoons, playing video games, painting graffiti, collecting garbage pail kids, reading comic books, watching Star Wars, kung fu, ninja, sci-fi, and giant monster movies. Sean creates his work between his heart and head; between what he knows and what he feels. Sean tries to be both detailed and gestural, clean and messy, smooth and gritty, fluid and structured, soft subtleties with loud splattery edges.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/roanvictor/"
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/ian_twFive2.jpg",
+        "description": "t.w. five is an international artist duo based in San Francisco, California. They work with adhesive backed vinyl focusing largely on the process. All shapes are hand-cut into strips from larger rolls of solid color vinyl and then carefully applied to the surface of the work. 'We usually create massive scale installations and integrate the gallery space with our art.'",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/twfive/"
       },
-      "id": "art_8362bca37ed5a95cc0b5ff5840e969f5ddbc123c643fc4b2288f2a4829855340"
+      "id": "art_2326b2670d2dd91915104a6dcf1f2ec236ebd0f66b007718e15d5869c099a465"
     },
     {
       "type": "Feature",
