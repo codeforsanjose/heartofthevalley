@@ -3,6 +3,102 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-121.8422, 37.35762] },
+      "properties": {
+        "title": "Untitled mural at Rocketship Fuerza",
+        "artist": "Carlos Rodriguez",
+        "image": "https://images.squarespace-cdn.com/content/v1/59bf0eb7f14aa1b6bbaa0901/1553533392672-H68X3PWUJTARQSZKLDUS/ke17ZwdGBToddI8pDm48kG7_gvmX098b7CoL_LrucAh7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWRK4ZzUIbBOw32KEbtuebj1CNKBYKz_34ZgGQoruh0zchU0LD5eNWUVd3tZidBHnQ/Rocketship+Fuerza+Mural-0614.JPG?format=2500w",
+        "description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>. It is located at Rocketship Fuerza Community Prep. The design was created by the Rocketship Fuerza community of parents, students, teachers and staff. Source: Carlos Rodriguez",
+        "address": "70 S Jackson Ave",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95116",
+        "state": "CA",
+        "sourceURL": "https://www.carlosrodriguezart.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-121.88627, 37.32069] },
+      "properties": {
+        "title": "Jaguar Warrior",
+        "artist": "Carlos Rodriguez",
+        "image": "https://images.squarespace-cdn.com/content/v1/59bf0eb7f14aa1b6bbaa0901/1518569955404-NRXG1U82ZX3P7THYSI5D/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/IMG_8599.JPG?format=2500w",
+        "description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>. It is located on the exterior wall of Sidhu Market on Locust Street. This mural was sponsored by The Health Trust. Source: Carlos Rodriguez",
+        "address": "801 Locust St",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95110",
+        "state": "CA",
+        "sourceURL": "https://www.carlosrodriguezart.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-121.86616, 37.33739] },
+      "properties": {
+        "title": "Owl's Nest Mural",
+        "artist": "<a href='https://www.carlosrodriguezart.com//' target='_blank'>Carlos Rodriguez</a>",
+        "description": "This mural is located at Olinder Elementary School. It is inspired by Coyote Creek San Jose and the energy of the students learning there. This mural is funded by Catholic Charities USA, and painted in collaboration with the after school program children. Source: Carlos Rodriguez",
+        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/c0f01afc0b74c8addb6a14c6dadf1041/5DD273E0/t51.2885-15/sh0.08/e35/s750x750/59375917_1613514172146171_782394753876307404_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
+        "address": "890 E William St",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95116",
+        "state": "CA",
+        "sourceURL": "https://www.carlosrodriguezart.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-121.79904, 37.34739] },
+      "properties": {
+        "title": "Sacred Land, Cosmic People",
+        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/2ea022c0e5fdffd771c986c5edde4736/5DE38E70/t51.2885-15/sh0.08/e35/s750x750/57883128_436280103612283_2656074219356986584_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
+        "description": "Produced by August Boeger Middle School in collaboration with City Year San Jose. Part of the mural was created with over 60 members of the community during Martin Luther King, Jr. Service Day 2019. Source: Carlos Rodriguez",
+        "artist": "<a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>",
+        "address": "1944 Flint Ave",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95148",
+        "state": "CA",
+        "sourceURL": "https://www.carlosrodriguezart.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-121.90488, 37.33217] },
+      "properties": {
+        "title": "Sharks Territory",
+        "description": "Mural by <a href='https://instagram.com/nychos' target='_blank'>Nychos</a>. Produced by Empire Seven Studios, in collaboration with <a href='https://instagram.com/mightydesign.io' target='_blank'>MightyDesign.io</a> and Modera at The Alameda. <br/><br/>Image Source: Empire Seven Studios, Lanny Nguyen",
+        "image": "https://images.squarespace-cdn.com/content/v1/5681ee28841abae3b7d8dec9/1564981281084-LHH98MV6YMKFML6A216T/ke17ZwdGBToddI8pDm48kGVtKhNv8EgRFIzMCkk2ccl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0g9xiYCO_4ze-uEG5pWlE5OTfArnLoRaCjM25y8_G6e3nF44MhEqaMT7n1nuP9KxBA/final.jpeg?format=2500w",
+        "artist": "Nychos",
+        "address": "777 The Alameda",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95126",
+        "state": "CA",
+        "sourceURL": "https://www.empiresevenstudios.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-121.88209, 37.32574] },
+      "properties": {
+        "title": "Untitled",
+        "description": "Mural by <a href='https://instagram.com/theartofskinner' target='_blank'>Skinner</a>, and <a href='https://instagram.com/urbanaztec' target='_blank'>Jesse Hernandez</a>. Produced by Empire Seven Studios, in collaboration with <a href='https://instagram.com/mightydesign.io' target='_blank'>MightyDesign.io</a>, UnGramr, and POW! WOW! San Jose 2018. It is located on Margaret Street, behind Camino Brewery Company.<br/><br/>Image Source: Lanny Nguyen",
+        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/dbf5d26bc62c7b5cb71ceeb9ba0eb5ab/5DD37FF8/t51.2885-15/sh0.08/e35/s750x750/43985967_195540588024035_5264609171699583481_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
+        "artist": "Skinner and Jesse Hernandez",
+        "address": "718 S 1st St",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95113",
+        "state": "CA",
+        "sourceURL": "https://www.empiresevenstudios.com"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-121.88382, 37.33829] },
       "properties": {
         "title": "7th Street Mural Project",
@@ -22,6 +118,7 @@
       "geometry": { "type": "Point", "coordinates": [-121.80626, 37.34729] },
       "properties": {
         "title": "A Seed of Infinite Creation",
+        "image": "https://images.squarespace-cdn.com/content/v1/59bf0eb7f14aa1b6bbaa0901/1547521383352-LXNQBG0C84RQ79J34YZM/ke17ZwdGBToddI8pDm48kKIbEEwTJZMtH1o2W1iFEeUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dscmwtxE1NZjDq2jb-SDekF8o-2uG8UcVfSDs4IPluPf3WUfc_ZsVm9Mi1E6FasEnQ/IMG_9902.JPG?format=2500w",
         "artist": "<a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>",
         "description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a> and produced in collaboration with City Year San José and Mt Pleasant High School community; it is located at Mt. Pleasant High School. Source: Carlos Rodriguez",
         "address": "1750 S White Rd",
@@ -436,6 +533,7 @@
       "geometry": { "type": "Point", "coordinates": [-121.88274, 37.32095] },
       "properties": {
         "title": "Enlightenment Mural at Washington Elementary School",
+        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/216e146f9259f45dcc80330b4780e95a/5DE8413E/t51.2885-15/e35/s480x480/65188860_113761009710791_6216448838859168977_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
         "artist": "Carlos Rodriguez",
         "description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>, and produced in collaboration with Santa Clara University and Washington Elementary School. It is located at Washington Elementary School. View a <a href='https://www.instagram.com/p/BSIlGvDA3tF/?taken-by=carlosrmk' target='_blank'>picture of the mural.</a> Source: Carlos Rodriguez",
         "address": "100 Oak St",
@@ -1419,7 +1517,10 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-121.8867007, 37.3306511] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.8867007, 37.3306511]
+      },
       "properties": {
         "title": "Sade",
         "artist": "<a href='https://www.instagram.com/royyaldog/' target='_blank'>Royyal Dog</a>",
@@ -1491,6 +1592,7 @@
       "properties": {
         "title": "Señora de Los Nopales",
         "artist": "Carlos Rodriguez",
+        "image": "https://images.squarespace-cdn.com/content/v1/59bf0eb7f14aa1b6bbaa0901/1518570051541-OCBSRDPCJZ8QRR29L620/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/IMG_8591.JPG?format=2500w",
         "description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>. It is located on the side of Sidhu Market. This mural was sponsored by The Health Trust. Source: Carlos Rodriguez",
         "address": "801 Locust St",
         "city": "San José",
@@ -4601,7 +4703,7 @@
         "state": "CA",
         "postalCode": "95113",
         "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/drew_final_lannysphotos.jpg",
-        "description": "Drew Flores, an artist from San Jose, interests range in various traditional cultural forms within areas of American traditional, Japanese, and Aztec/Mayan styles. Drew’s cross-cultural influence reinterprets Mexico’s ancient imagery as he blends together with Japanese bold compositions.",
+        "description": "Drew Flores, an artist from San Jose, interests range in various traditional cultural forms within areas of American traditional, Japanese, and Aztec/Mayan styles. Drew’s cross-cultural influence reinterprets Mexico’s ancient imagery as he blends together with Japanese bold compositions. The mural is on the outside wall of La Peñita Restaurant.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/drewflores/"
       },
       "id": "art_4d4d4e599c0478711027ccc19921bc02042676a333dbb1b914552df9f91a1980"
