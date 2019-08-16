@@ -162,6 +162,7 @@
         );
         continue;
       }
+
       // Shorten data.feature.properties to just `prop` so we're not
       // writing this long form over and over again.
       var prop = currentFeature.properties;
