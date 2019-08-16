@@ -23,7 +23,7 @@
       container: "map",
       style: "mapbox://styles/mapbox/light-v9",
       center: [-121.893028, 37.33548], // position in long, lat format
-      zoom: 8,
+      zoom: 10,
       dragPan: true, // If true , the "drag to pan" interaction is enabled (see DragPanHandler)
       trackResize: true, // If true, the map will automatically resize when the browser window resizes.
       doubleClickZoom: true, //If true double click will zoom
