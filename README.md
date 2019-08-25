@@ -40,3 +40,6 @@ The following steps are involved in updating the artwork data:
 This project is completely static, so simply open `index.html` in Chrome or Firefox.
 
 You can also run the project in a local web server on the project directory. One way to do this is to use the `ws` command, which can be installed using `npm install -g local-web-server`, then start the webserver by running `ws --http2` in the project folder and going to `https://127.0.0.1:8000` in your web browser. [See the documentation for this program for more information](https://www.npmjs.com/package/local-web-server).
+
+#### Running unit tests
+Unit tests use the testing framework [Jest](https://jestjs.io/docs/en/getting-started). To run the unit tests, run `npm run test` from the command line.
