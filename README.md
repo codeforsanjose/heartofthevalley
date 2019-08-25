@@ -30,11 +30,11 @@ Fork, then clone the project and run `npm install` to install the required packa
 
 The following steps are involved in updating the artwork data:
 
-1. **Scrape the Artwork files from sanjoseca.gov** -  Run `npm run scrapeArtworks`. This will fetch data from sanjoseca.gov and populate the `artwork-data/_scraped-artworks.json` file with the fetched data. A unique ID is assigned to each artwork.
+1. **Scrape the Artwork files from sanjoseca.gov** -  Run `npm run scrapeArtworks`. This will fetch data from sanjoseca.gov and populate the `artwork-data/_scraped-artworks.json` file with the fetched data.
 2. **Merge the scraped artwork data with the artwork overrides** - Run `npm run mergeArtworkFiles`. Some artwork files have incorrect addresses or addresses which cannot be looked up with Nomanatim. The `artwork-data/artworks-overrides.json` file exists as a way to reliably fix the data associated with the artwork so that Nominatim can find the location.
 3. **Check for untitled art** (optional) - Run `npm run listUntitled`. Some art is reported as "untitled" for the "title" field. If you know the title of the art, then add an override for it in the `artworks-overrides.json` and re-run step 2.
 4. **Lookup addresses with [OSM/Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim)** - Run `npm run lookupAddresses`. This will use the artwork address field to attempt to get the geolocation (latitude and longitude). The output of this command will indicate if there are failures to lookup the address. If you know the location, then add an override for it in the `artworks-overrides.json` and re-run step 2, then re-run step 4.
-5. **Copy the artwork JSON data into art.js** - Finally, copy the contents of `artwork-data/consolidated-artworks.json` into `js/art.js`, prefixing the content with `const art = `. (TODO: write a script to automate this step)
+5. **Copy the artwork JSON data into art.js** - Finally, run `npm run moveArtToOutputDir` to copy the contents of `artwork-data/consolidated-artworks.json` into `js/art.js`, prefixing the content with `const art = `. This is the final step and is needed before the changes can be visible in the web application.
 
 #### Running the project locally
 This project is completely static, so simply open `index.html` in Chrome or Firefox.
