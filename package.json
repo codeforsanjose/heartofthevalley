@@ -8,7 +8,8 @@
     "scrapeArtworks": "node scripts/scrape-artworks.js",
     "mergeArtworkFiles": "node scripts/consolidate-artwork-files.js",
     "listUntitled": "node scripts/list-mural-by-title.js",
-    "lookupAddresses": "node scripts/lookup-addresses.js"
+    "lookupAddresses": "node scripts/lookup-addresses.js",
+    "moveArtToOutputDir" : "node scripts/copy-art-to-prod.js"
   },
   "keywords": [
     "San Jose",

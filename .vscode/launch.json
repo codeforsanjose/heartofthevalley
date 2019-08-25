@@ -28,5 +28,11 @@
             "name": "lookup Addresses",
             "program": "${workspaceFolder}/scripts/lookup-addresses.js"
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "move Art To Output Dir",
+            "program": "${workspaceFolder}/scripts/copy-art-to-prod.js"
+        },
     ]
 }
