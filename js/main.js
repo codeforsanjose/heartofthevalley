@@ -110,7 +110,7 @@
     if (popUps[0]) popUps[0].remove();
 
     if (typeof linkId !== "undefined") {
-      window.location.hash = "#" + linkId;
+      setTimeout(() => { window.location.hash = "#" + linkId; }, 250);
     }
 
     console.log("showing popup for ", currentFeature.properties.title);
@@ -162,58 +162,71 @@
         );
         continue;
       }
+    displayEntry(currentFeature);
+    }
+  }
 
-      // Shorten data.feature.properties to just `prop` so we're not
-      // writing this long form over and over again.
-      var prop = currentFeature.properties;
-      // Select the listing container in the HTML and append a div
-      // with the class 'item' for each art
-      var listings = document.getElementById("listings");
-      var listing = listings.appendChild(document.createElement("div"));
-      listing.className = "item";
-      listing.id = "listing-" + currentFeature.id;
-      // Create a new link with the class 'title' for each art
-      // and fill it with the art address
-      var link = listing.appendChild(document.createElement("a"));
-      link.href = "#";
-      link.className = "title";
-      link.innerHTML = "<br/>" + prop.title;
-      link.listingFeature = currentFeature;
-      link.listingId = "listing-" + currentFeature.id;
+  function displayEntry(currentFeature) {
+    // Shorten data.feature.properties to just `prop` so we're not
+    // writing this long form over and over again.
+    var prop = currentFeature.properties;
+    // Select the listing container in the HTML and append a div
+    // with the class 'item' for each art
+    var listings = document.getElementById("listings");
+    var listing = listings.appendChild(document.createElement("div"));
+    listing.className = "item";
+    listing.id = "listing-" + currentFeature.id;
+    // Create a new link with the class 'title' for each art
+    // and fill it with the art address
+    var link = listing.appendChild(document.createElement("a"));
+    link.href = "#";
+    link.className = "title";
+    link.innerHTML = "<br/>" + prop.title;
+    link.listingFeature = currentFeature;
+    link.listingId = "listing-" + currentFeature.id;
 
-      // Create a new div with the class 'details' for each listing
-      // and fill it with the following
-      var artist = listing.appendChild(document.createElement("div"));
-      artist.innerHTML = "by " + prop.artist;
+    // Create a new div with the class 'details' for each listing
+    // and fill it with the following
+    var artist = listing.appendChild(document.createElement("div"));
+    artist.className = "artist";
+    artist.innerHTML = "by " + prop.artist;
 
-      var address = listing.appendChild(document.createElement("div"));
-      address.innerHTML =
-        prop.address +
-        ", " +
-        prop.city +
-        ", " +
-        prop.state +
-        " " +
-        prop.postalCode;
+    var address = listing.appendChild(document.createElement("div"));
+    address.className = "address";
+    address.innerHTML =
+      prop.address +
+      ", " +
+      prop.city +
+      ", " +
+      prop.state +
+      " " +
+      prop.postalCode;
 
-      if (prop.image) {
-        var artImage = listing.appendChild(document.createElement("div"));
-        artImage.innerHTML = "<br/>" + '<img src="' + prop.image + '">';
-      }
-
+      // TODO: Load image on active only. Currently every user DDOSes the SJ.gov site by loading all pages
+      // TODO: SJ.gov has updated their website and scrapping + JSON no longer point to valid URLs.
+      // if (prop.image) { 
+      //   var artImage = listing.appendChild(document.createElement("div"));
+      //   artImage.style.maxHeight="0%";
+      //   artImage.className = "artImage full";
+      //   artImage.innerHTML = "<br/>" + '<img src="' + prop.image + '">';
+      // }
+  
       var story = listing.appendChild(document.createElement("div"));
+      story.style.maxHeight="0%";
+      story.className = "story full";
       if (prop.description) {
         story.innerHTML = "<br/>" + prop.description + "<br/>";
       }
-
+  
       var info = listing.appendChild(document.createElement("a"));
+      info.style.maxHeight="0%";
+      info.className = "info full";
+
       if (prop.sourceURL) {
         info.href = prop.sourceURL;
         info.innerHTML = "Source: " + prop.sourceURL;
       }
-
-      link.addEventListener("click", linkOnClickHandler);
-    }
+    link.addEventListener("click", linkOnClickHandler);
   }
 
   //Series of action to perform after a listing link is clicked.
@@ -223,7 +236,6 @@
     // Update the currentFeature to the art associated with the clicked link
     // var clickedListing = data.features[this.dataPosition];
     var clickedListing = this.listingFeature;
-
     if (!clickedListing.geometry.coordinates) {
       return console.warn(
         `Missing coordinates for listing: "${
@@ -239,11 +251,19 @@
 
     // 3. Highlight listing in sidebar (and remove highlight for all other listings)
     var activeItem = document.getElementsByClassName("active");
-
-    if (activeItem[0]) {
+    if (activeItem[0]) { 
+      let activeProps = activeItem[0].getElementsByClassName("full");
+      for(let i = 0; i < activeProps.length; i++) {
+        activeProps[i].style.maxHeight="0%";
+      }
       activeItem[0].classList.remove("active");
     }
     this.parentNode.classList.add("active");
+    let hiddenProps = this.parentNode.getElementsByClassName("full");
+    
+    for(let i = 0; i < hiddenProps.length; i++) {
+      hiddenProps[i].style.maxHeight="100%";
+    }
   }
 
   // mobile tabs at bottom of page to switch between map and list view

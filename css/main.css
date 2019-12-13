@@ -133,36 +133,38 @@ a:hover {
   padding: 0 10px;
 }
 
-.listings {
+#listings {
   height: 88%;
   overflow: auto;
   padding-bottom: 60px;
 }
 
-.listings .item {
+#listings .item {
   display: block;
   border-bottom: 1px solid #eee;
   padding: 10px;
   text-decoration: none;
 }
 
-.listings .item:last-child { border-bottom: none; }
+/* #listings .item:last-child { border-bottom: none; } */
 
-.listings .item .title {
+#listings .item .title {
   display: block;
-  padding-top: 25px;
   color: darkorchid;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
 }
 
-.listings .item .title small { font-weight: 400; }
+#listings .item .title small { font-weight: 400; }
 
-.listings .item.active .title,
-.listings .item .title:hover { color: blue; }
+#listings .item.active .title,
+#listings .item .title:hover { 
+  color: blue;
+  text-decoration: none;
+}
 
-.listings .item.active {
+#listings .item.active {
   background-color: lightgrey;
 }
 
@@ -306,4 +308,9 @@ a:hover {
   .container.list-visible .map {
     display: none;
   }
+}
+
+.full {
+  transition: max-height 0.25s ease-out;
+  overflow: hidden;
 }
