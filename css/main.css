@@ -326,5 +326,23 @@ a:hover {
 
 .full {
   transition: max-height 0.25s ease-out;
-  overflow: hidden;
+  display: none;
+}
+
+.thumbnails {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  overflow: hidden
+}
+
+.thumbnails img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
 }

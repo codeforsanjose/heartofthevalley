@@ -187,14 +187,14 @@
     displayArtist(listing, prop);
     displayAddress(listing, prop);
 
-    // TODO: Load image on active only. Currently every user DDOSes the SJ.gov site by loading all images
-    // TODO: SJ.gov has updated their website and scrapping + JSON no longer point to valid URLs.
-    // if (prop.image) { 
-    //   var artImage = listing.appendChild(document.createElement("div"));
-    //   artImage.style.maxHeight="0%";
-    //   artImage.className = "artImage full";
-    //   artImage.innerHTML = "<br/>" + '<img src="' + prop.image + '">';
-    // }
+    // TODO: Pagination so we don't overload external servers
+    // TODO: Scrapper needs to be updated due to changes to the San Jose government's website.
+    if (prop.image) { 
+      var artImage = listing.appendChild(document.createElement("div"));
+      artImage.style.display = "none";
+      artImage.className = "artImage full";
+      artImage.innerHTML = "<br/>" + '<img src="' + prop.image + '">';
+    }
   
     displayDescription(listing, prop);
     displayURL(listing, prop);
@@ -204,31 +204,30 @@
 
   function displayTitle(listing, prop) {
     let title = listing.appendChild(document.createElement("div"));
-    title.className="title";
+    title.className = "title";
     title.innerHTML = "<br/>" + prop.title;
   }
 
   function displayArtist(listing, prop, full=true) {
     let artist = listing.appendChild(document.createElement("div"));
-    artist.style.maxHeight="0%";
+    artist.style.display = "none";
     artist.className = full ? "artist full" : "artist";
     artist.innerHTML = "by " + prop.artist;
   }
 
   function displayThumbnail(listing, prop) {
     let thumbnail = listing.appendChild(document.createElement("div"));
-    thumbnail.className="thumbnail";
-    thumbnail.style.maxWidth="100px";
-    thumbnail.style.float="right";
-    thumbnail.style.clear="both";
-    thumbnail.innerHTML = "<img src='https://www.w3schools.com/howto/img_forest.jpg'/>";
-    // if(prop.image) {
-    //   thumbnail.innerHTML = '<img src="' + prop.image + '">';
-    // }
+    thumbnail.className = "thumbnails";
+    thumbnail.style.maxWidth = "100px";
+    thumbnail.style.float = "right";
+    thumbnail.style.clear = "both";
+    if(prop.image) {
+      thumbnail.innerHTML = '<img src="' + prop.image + '">';
+    }
   }
   function displayAddress(listing, prop) {
     let address = listing.appendChild(document.createElement("div"));
-    address.style.maxHeight="0%";
+    address.style.display = "none";
     address.className = "address full";
     address.innerHTML =
       prop.address +
@@ -242,7 +241,7 @@
 
   function displayDescription(listing, prop) {
     let story = listing.appendChild(document.createElement("div"));
-    story.style.maxHeight="0%";
+    story.style.display = "none";
     story.className = "story full";
     if (prop.description) {
       story.innerHTML = "<br/>" + prop.description + "<br/>";
@@ -251,7 +250,7 @@
 
   function displayURL(listing, prop) {
     let info = listing.appendChild(document.createElement("div"));
-    info.style.maxHeight="0%";
+    info.style.display = "none";
     info.className = "info full";
 
     if (prop.sourceURL) {
@@ -290,9 +289,9 @@ function deselectListing() {
   if (activeItem[0]) { 
     let activeProps = activeItem[0].getElementsByClassName("full");
     for(let i = 0; i < activeProps.length; i++) {
-      activeProps[i].style.maxHeight="0%";
+      activeProps[i].style.display = "none";
     }
-    activeItem[0].getElementsByClassName("thumbnail")[0].style.display="block";
+    activeItem[0].getElementsByClassName("thumbnails")[0].style.display = "block";
     activeItem[0].classList.remove("active");
   }
 }
@@ -302,10 +301,10 @@ function selectListing(node) {
   let hiddenProps = node.getElementsByClassName("full");
   
   for(let i = 0; i < hiddenProps.length; i++) {
-    hiddenProps[i].style.maxHeight="100%";
+    hiddenProps[i].style.display = "block";
   }
 
-  node.getElementsByClassName("thumbnail")[0].style.display="none";
+  node.getElementsByClassName("thumbnails")[0].style.display = "none";
 }
 
   // mobile tabs at bottom of page to switch between map and list view
