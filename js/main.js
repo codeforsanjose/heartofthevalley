@@ -85,7 +85,6 @@
             console.log("attempting to show listing for " + listing_id);
             let listing = document.getElementById(listing_id);
             selectListing(listing);
-            // listing.classList.add("active");
           });
         } catch (exception) {
           console.error(exception);
@@ -163,32 +162,51 @@
   }
 
   function displayEntry(currentFeature) {
-    // Shorten data.feature.properties to just `prop` so we're not
-    // writing this long form over and over again.
-    var prop = currentFeature.properties;
-    // Select the listing container in the HTML and append a div
-    // with the class 'item' for each art
-    var listings = document.getElementById("listings");
-    var listing = listings.appendChild(document.createElement("div"));
+    // Simplify properties variable
+    let prop = currentFeature.properties;
+
+    // Create a listing entry
+    let listings = document.getElementById("listings");
+    let listing = listings.appendChild(document.createElement("div"));
     listing.className = "item";
     listing.id = "listing-" + currentFeature.id;
-    // Create a new link with the class 'title' for each art
-    // and fill it with the art address
-    var link = listing.appendChild(document.createElement("a"));
+    
+    // Display title
+    let link = listing.appendChild(document.createElement("a"));
     link.href = "#";
     link.className = "title";
     link.innerHTML = "<br/>" + prop.title;
     link.listingFeature = currentFeature;
     link.listingId = "listing-" + currentFeature.id;
 
-    // Create a new div with the class 'details' for each listing
-    // and fill it with the following
-    var artist = listing.appendChild(document.createElement("div"));
+    displayArtist(listing, prop);
+    displayAddress(listing, prop);
+
+    // TODO: Load image on active only. Currently every user DDOSes the SJ.gov site by loading all pages
+    // TODO: SJ.gov has updated their website and scrapping + JSON no longer point to valid URLs.
+    // if (prop.image) { 
+    //   var artImage = listing.appendChild(document.createElement("div"));
+    //   artImage.style.maxHeight="0%";
+    //   artImage.className = "artImage full";
+    //   artImage.innerHTML = "<br/>" + '<img src="' + prop.image + '">';
+    // }
+  
+    displayDescription(listing, prop);
+    displayURL(listing, prop);
+
+    link.addEventListener("click", linkOnClickHandler);
+  }
+
+  function displayArtist(listing, prop) {
+    let artist = listing.appendChild(document.createElement("div"));
     artist.className = "artist";
     artist.innerHTML = "by " + prop.artist;
+  }
 
-    var address = listing.appendChild(document.createElement("div"));
-    address.className = "address";
+  function displayAddress(listing, prop) {
+    let address = listing.appendChild(document.createElement("div"));
+    address.style.maxHeight="0%";
+    address.className = "address full";
     address.innerHTML =
       prop.address +
       ", " +
@@ -197,32 +215,27 @@
       prop.state +
       " " +
       prop.postalCode;
+  }
 
-      // TODO: Load image on active only. Currently every user DDOSes the SJ.gov site by loading all pages
-      // TODO: SJ.gov has updated their website and scrapping + JSON no longer point to valid URLs.
-      // if (prop.image) { 
-      //   var artImage = listing.appendChild(document.createElement("div"));
-      //   artImage.style.maxHeight="0%";
-      //   artImage.className = "artImage full";
-      //   artImage.innerHTML = "<br/>" + '<img src="' + prop.image + '">';
-      // }
-  
-      var story = listing.appendChild(document.createElement("div"));
-      story.style.maxHeight="0%";
-      story.className = "story full";
-      if (prop.description) {
-        story.innerHTML = "<br/>" + prop.description + "<br/>";
-      }
-  
-      var info = listing.appendChild(document.createElement("a"));
-      info.style.maxHeight="0%";
-      info.className = "info full";
+  function displayDescription(listing, prop) {
+    let story = listing.appendChild(document.createElement("div"));
+    story.style.maxHeight="0%";
+    story.className = "story full";
+    if (prop.description) {
+      story.innerHTML = "<br/>" + prop.description + "<br/>";
+    }
+  }
 
-      if (prop.sourceURL) {
-        info.href = prop.sourceURL;
-        info.innerHTML = "Source: " + prop.sourceURL;
-      }
-    link.addEventListener("click", linkOnClickHandler);
+  function displayURL(listing, prop) {
+    let info = listing.appendChild(document.createElement("div"));
+    info.style.maxHeight="0%";
+    info.className = "info full";
+
+    if (prop.sourceURL) {
+      let url = info.appendChild(document.createElement("a"));
+      url.href = prop.sourceURL;
+      url.innerHTML = "Source";
+    }
   }
 
   //Series of action to perform after a listing link is clicked.
