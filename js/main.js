@@ -75,21 +75,17 @@
           let listing_id = "listing-" + marker.id;
           el.addEventListener("click", function(e) {
             console.log("marker has been clicked", marker_elem.id);
-            let activeItem = document.getElementsByClassName("active");
             // 1. Fly to the point
             flyToArt(marker_elem);
             // 2. Close all other popups and display popup for clicked art
             createPopUp(marker_elem, listing_id);
             // 3. Highlight listing in sidebar (and remove highlight for all other listings)
             e.stopPropagation();
-            if (activeItem[0]) {
-              console.log("activeItem: ", activeItem);
-              activeItem[0].classList.remove("active");
-            }
+            deselectListing();
             console.log("attempting to show listing for " + listing_id);
             let listing = document.getElementById(listing_id);
-
-            listing.classList.add("active");
+            selectListing(listing);
+            // listing.classList.add("active");
           });
         } catch (exception) {
           console.error(exception);
@@ -248,23 +244,30 @@
     flyToArt(clickedListing);
     // 2. Close all other popups and display popup for clicked point
     createPopUp(clickedListing, this.listingId);
-
-    // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-    var activeItem = document.getElementsByClassName("active");
-    if (activeItem[0]) { 
-      let activeProps = activeItem[0].getElementsByClassName("full");
-      for(let i = 0; i < activeProps.length; i++) {
-        activeProps[i].style.maxHeight="0%";
-      }
-      activeItem[0].classList.remove("active");
-    }
-    this.parentNode.classList.add("active");
-    let hiddenProps = this.parentNode.getElementsByClassName("full");
-    
-    for(let i = 0; i < hiddenProps.length; i++) {
-      hiddenProps[i].style.maxHeight="100%";
-    }
+    // 3. Show full info and highlight listing in sidebar (and remove highlight for all other listings)
+    deselectListing();
+    selectListing(this.parentNode);
   }
+
+function deselectListing() {
+  var activeItem = document.getElementsByClassName("active");
+  if (activeItem[0]) { 
+    let activeProps = activeItem[0].getElementsByClassName("full");
+    for(let i = 0; i < activeProps.length; i++) {
+      activeProps[i].style.maxHeight="0%";
+    }
+    activeItem[0].classList.remove("active");
+  }
+}
+
+function selectListing(node) {
+  node.classList.add("active");
+  let hiddenProps = node.getElementsByClassName("full");
+  
+  for(let i = 0; i < hiddenProps.length; i++) {
+    hiddenProps[i].style.maxHeight="100%";
+  }
+}
 
   // mobile tabs at bottom of page to switch between map and list view
   var container = document.querySelector(".container");
