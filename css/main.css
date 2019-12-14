@@ -148,6 +148,20 @@ a:hover {
 
 /* #listings .item:last-child { border-bottom: none; } */
 
+#listings .item .entry { 
+  display: block;
+}
+
+#listings .item .entry:hover { 
+  color: blue;
+  text-decoration: none;
+}
+
+.artist {
+  color: black;
+  text-decoration: none;
+}
+
 #listings .item .title {
   display: block;
   color: darkorchid;

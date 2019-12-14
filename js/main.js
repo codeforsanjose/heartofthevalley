@@ -166,23 +166,28 @@
     let prop = currentFeature.properties;
 
     // Create a listing entry
-    let listings = document.getElementById("listings");
-    let listing = listings.appendChild(document.createElement("div"));
+    let listing = document.getElementById("listings").appendChild(document.createElement("div"));
     listing.className = "item";
     listing.id = "listing-" + currentFeature.id;
     
-    // Display title
+    // Display inactive entry box
     let link = listing.appendChild(document.createElement("a"));
     link.href = "#";
-    link.className = "title";
-    link.innerHTML = "<br/>" + prop.title;
+    link.className = "entry";
     link.listingFeature = currentFeature;
     link.listingId = "listing-" + currentFeature.id;
+    link.style.overflow = "hidden";
 
+    // Display inactive details
+    displayTitle(link, prop);
+    displayArtist(link, prop, false);
+    displayThumbnail(link, prop);
+
+    // Display active details
     displayArtist(listing, prop);
     displayAddress(listing, prop);
 
-    // TODO: Load image on active only. Currently every user DDOSes the SJ.gov site by loading all pages
+    // TODO: Load image on active only. Currently every user DDOSes the SJ.gov site by loading all images
     // TODO: SJ.gov has updated their website and scrapping + JSON no longer point to valid URLs.
     // if (prop.image) { 
     //   var artImage = listing.appendChild(document.createElement("div"));
@@ -197,12 +202,30 @@
     link.addEventListener("click", linkOnClickHandler);
   }
 
-  function displayArtist(listing, prop) {
+  function displayTitle(listing, prop) {
+    let title = listing.appendChild(document.createElement("div"));
+    title.className="title";
+    title.innerHTML = "<br/>" + prop.title;
+  }
+
+  function displayArtist(listing, prop, full=true) {
     let artist = listing.appendChild(document.createElement("div"));
-    artist.className = "artist";
+    artist.style.maxHeight="0%";
+    artist.className = full ? "artist full" : "artist";
     artist.innerHTML = "by " + prop.artist;
   }
 
+  function displayThumbnail(listing, prop) {
+    let thumbnail = listing.appendChild(document.createElement("div"));
+    thumbnail.className="thumbnail";
+    thumbnail.style.maxWidth="100px";
+    thumbnail.style.float="right";
+    thumbnail.style.clear="both";
+    thumbnail.innerHTML = "<img src='https://www.w3schools.com/howto/img_forest.jpg'/>";
+    // if(prop.image) {
+    //   thumbnail.innerHTML = '<img src="' + prop.image + '">';
+    // }
+  }
   function displayAddress(listing, prop) {
     let address = listing.appendChild(document.createElement("div"));
     address.style.maxHeight="0%";
@@ -269,6 +292,7 @@ function deselectListing() {
     for(let i = 0; i < activeProps.length; i++) {
       activeProps[i].style.maxHeight="0%";
     }
+    activeItem[0].getElementsByClassName("thumbnail")[0].style.display="block";
     activeItem[0].classList.remove("active");
   }
 }
@@ -280,6 +304,8 @@ function selectListing(node) {
   for(let i = 0; i < hiddenProps.length; i++) {
     hiddenProps[i].style.maxHeight="100%";
   }
+
+  node.getElementsByClassName("thumbnail")[0].style.display="none";
 }
 
   // mobile tabs at bottom of page to switch between map and list view
