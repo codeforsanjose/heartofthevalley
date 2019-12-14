@@ -180,7 +180,6 @@
 
     // Display inactive details
     displayTitle(link, prop);
-    displayArtist(link, prop, false);
     displayThumbnail(link, prop);
 
     // Display active details
@@ -208,10 +207,9 @@
     title.innerHTML = "<br/>" + prop.title;
   }
 
-  function displayArtist(listing, prop, full=true) {
+  function displayArtist(listing, prop) {
     let artist = listing.appendChild(document.createElement("div"));
-    artist.style.display = "none";
-    artist.className = full ? "artist full" : "artist";
+    artist.className = "artist full";
     artist.innerHTML = "by " + prop.artist;
   }
 
@@ -291,8 +289,10 @@ function deselectListing() {
     for(let i = 0; i < activeProps.length; i++) {
       activeProps[i].style.display = "none";
     }
-    activeItem[0].getElementsByClassName("thumbnails")[0].style.display = "block";
-    activeItem[0].classList.remove("active");
+    if(activeItem[0].getElementsByClassName("thumbnails").length > 0) {
+      activeItem[0].getElementsByClassName("thumbnails")[0].style.display = "block";
+      activeItem[0].classList.remove("active");
+    }
   }
 }
 
@@ -303,8 +303,10 @@ function selectListing(node) {
   for(let i = 0; i < hiddenProps.length; i++) {
     hiddenProps[i].style.display = "block";
   }
-
-  node.getElementsByClassName("thumbnails")[0].style.display = "none";
+  console.log(node.getElementsByClassName("thumbnails"));
+  if(node.getElementsByClassName("thumbnails").length > 0) {
+    node.getElementsByClassName("thumbnails")[0].style.display = "none";
+  }
 }
 
   // mobile tabs at bottom of page to switch between map and list view
