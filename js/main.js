@@ -75,21 +75,16 @@
           let listing_id = "listing-" + marker.id;
           el.addEventListener("click", function(e) {
             console.log("marker has been clicked", marker_elem.id);
-            let activeItem = document.getElementsByClassName("active");
             // 1. Fly to the point
             flyToArt(marker_elem);
             // 2. Close all other popups and display popup for clicked art
             createPopUp(marker_elem, listing_id);
             // 3. Highlight listing in sidebar (and remove highlight for all other listings)
             e.stopPropagation();
-            if (activeItem[0]) {
-              console.log("activeItem: ", activeItem);
-              activeItem[0].classList.remove("active");
-            }
+            deselectListing();
             console.log("attempting to show listing for " + listing_id);
             let listing = document.getElementById(listing_id);
-
-            listing.classList.add("active");
+            selectListing(listing);
           });
         } catch (exception) {
           console.error(exception);
@@ -110,7 +105,7 @@
     if (popUps[0]) popUps[0].remove();
 
     if (typeof linkId !== "undefined") {
-      window.location.hash = "#" + linkId;
+      setTimeout(() => { window.location.hash = "#" + linkId; }, 250);
     }
 
     console.log("showing popup for ", currentFeature.properties.title);
@@ -162,57 +157,104 @@
         );
         continue;
       }
+    displayEntry(currentFeature);
+    }
+  }
 
-      // Shorten data.feature.properties to just `prop` so we're not
-      // writing this long form over and over again.
-      var prop = currentFeature.properties;
-      // Select the listing container in the HTML and append a div
-      // with the class 'item' for each art
-      var listings = document.getElementById("listings");
-      var listing = listings.appendChild(document.createElement("div"));
-      listing.className = "item";
-      listing.id = "listing-" + currentFeature.id;
-      // Create a new link with the class 'title' for each art
-      // and fill it with the art address
-      var link = listing.appendChild(document.createElement("a"));
-      link.href = "#";
-      link.className = "title";
-      link.innerHTML = "<br/>" + prop.title;
-      link.listingFeature = currentFeature;
-      link.listingId = "listing-" + currentFeature.id;
+  function displayEntry(currentFeature) {
+    // Simplify properties variable
+    let prop = currentFeature.properties;
 
-      // Create a new div with the class 'details' for each listing
-      // and fill it with the following
-      var artist = listing.appendChild(document.createElement("div"));
-      artist.innerHTML = "by " + prop.artist;
+    // Create a listing entry
+    let listing = document.getElementById("listings").appendChild(document.createElement("div"));
+    listing.className = "item";
+    listing.id = "listing-" + currentFeature.id;
+    
+    // Display inactive entry box
+    let link = listing.appendChild(document.createElement("a"));
+    link.href = "#";
+    link.className = "entry";
+    link.listingFeature = currentFeature;
+    link.listingId = "listing-" + currentFeature.id;
+    link.style.overflow = "hidden";
 
-      var address = listing.appendChild(document.createElement("div"));
-      address.innerHTML =
-        prop.address +
-        ", " +
-        prop.city +
-        ", " +
-        prop.state +
-        " " +
-        prop.postalCode;
+    // Display inactive details
+    displayTitle(link, prop);
+    displayThumbnail(link, prop);
 
-      if (prop.image) {
-        var artImage = listing.appendChild(document.createElement("div"));
-        artImage.innerHTML = "<br/>" + '<img src="' + prop.image + '">';
-      }
+    // Display active details
+    displayArtist(listing, prop);
+    displayAddress(listing, prop);
 
-      var story = listing.appendChild(document.createElement("div"));
-      if (prop.description) {
-        story.innerHTML = "<br/>" + prop.description + "<br/>";
-      }
+    // TODO: Pagination so we don't overload external servers
+    // TODO: Scrapper needs to be updated due to changes to the San Jose government's website.
+    if (prop.image) { 
+      var artImage = listing.appendChild(document.createElement("div"));
+      artImage.style.display = "none";
+      artImage.className = "artImage full";
+      artImage.innerHTML = "<br/>" + '<img src="' + prop.image + '">';
+    }
+  
+    displayDescription(listing, prop);
+    displayURL(listing, prop);
 
-      var info = listing.appendChild(document.createElement("a"));
-      if (prop.sourceURL) {
-        info.href = prop.sourceURL;
-        info.innerHTML = "Source: " + prop.sourceURL;
-      }
+    link.addEventListener("click", linkOnClickHandler);
+  }
 
-      link.addEventListener("click", linkOnClickHandler);
+  function displayTitle(listing, prop) {
+    let title = listing.appendChild(document.createElement("div"));
+    title.className = "title";
+    title.innerHTML = "<br/>" + prop.title;
+  }
+
+  function displayArtist(listing, prop) {
+    let artist = listing.appendChild(document.createElement("div"));
+    artist.className = "artist full";
+    artist.innerHTML = "by " + prop.artist;
+  }
+
+  function displayThumbnail(listing, prop) {
+    let thumbnail = listing.appendChild(document.createElement("div"));
+    thumbnail.className = "thumbnails";
+    thumbnail.style.maxWidth = "100px";
+    thumbnail.style.float = "right";
+    thumbnail.style.clear = "both";
+    if(prop.image) {
+      thumbnail.innerHTML = '<img src="' + prop.image + '">';
+    }
+  }
+  function displayAddress(listing, prop) {
+    let address = listing.appendChild(document.createElement("div"));
+    address.style.display = "none";
+    address.className = "address full";
+    address.innerHTML =
+      prop.address +
+      ", " +
+      prop.city +
+      ", " +
+      prop.state +
+      " " +
+      prop.postalCode;
+  }
+
+  function displayDescription(listing, prop) {
+    let story = listing.appendChild(document.createElement("div"));
+    story.style.display = "none";
+    story.className = "story full";
+    if (prop.description) {
+      story.innerHTML = "<br/>" + prop.description + "<br/>";
+    }
+  }
+
+  function displayURL(listing, prop) {
+    let info = listing.appendChild(document.createElement("div"));
+    info.style.display = "none";
+    info.className = "info full";
+
+    if (prop.sourceURL) {
+      let url = info.appendChild(document.createElement("a"));
+      url.href = prop.sourceURL;
+      url.innerHTML = "Source";
     }
   }
 
@@ -223,7 +265,6 @@
     // Update the currentFeature to the art associated with the clicked link
     // var clickedListing = data.features[this.dataPosition];
     var clickedListing = this.listingFeature;
-
     if (!clickedListing.geometry.coordinates) {
       return console.warn(
         `Missing coordinates for listing: "${
@@ -236,15 +277,37 @@
     flyToArt(clickedListing);
     // 2. Close all other popups and display popup for clicked point
     createPopUp(clickedListing, this.listingId);
+    // 3. Show full info and highlight listing in sidebar (and remove highlight for all other listings)
+    deselectListing();
+    selectListing(this.parentNode);
+  }
 
-    // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-    var activeItem = document.getElementsByClassName("active");
-
-    if (activeItem[0]) {
+function deselectListing() {
+  var activeItem = document.getElementsByClassName("active");
+  if (activeItem[0]) { 
+    let activeProps = activeItem[0].getElementsByClassName("full");
+    for(let i = 0; i < activeProps.length; i++) {
+      activeProps[i].style.display = "none";
+    }
+    if(activeItem[0].getElementsByClassName("thumbnails").length > 0) {
+      activeItem[0].getElementsByClassName("thumbnails")[0].style.display = "block";
       activeItem[0].classList.remove("active");
     }
-    this.parentNode.classList.add("active");
   }
+}
+
+function selectListing(node) {
+  node.classList.add("active");
+  let hiddenProps = node.getElementsByClassName("full");
+  
+  for(let i = 0; i < hiddenProps.length; i++) {
+    hiddenProps[i].style.display = "block";
+  }
+  console.log(node.getElementsByClassName("thumbnails"));
+  if(node.getElementsByClassName("thumbnails").length > 0) {
+    node.getElementsByClassName("thumbnails")[0].style.display = "none";
+  }
+}
 
   // mobile tabs at bottom of page to switch between map and list view
   var container = document.querySelector(".container");

@@ -133,36 +133,52 @@ a:hover {
   padding: 0 10px;
 }
 
-.listings {
+#listings {
   height: 88%;
   overflow: auto;
   padding-bottom: 60px;
 }
 
-.listings .item {
+#listings .item {
   display: block;
   border-bottom: 1px solid #eee;
   padding: 10px;
   text-decoration: none;
 }
 
-.listings .item:last-child { border-bottom: none; }
+/* #listings .item:last-child { border-bottom: none; } */
 
-.listings .item .title {
+#listings .item .entry { 
   display: block;
-  padding-top: 25px;
+}
+
+#listings .item .entry:hover { 
+  color: blue;
+  text-decoration: none;
+}
+
+.artist {
+  color: black;
+  text-decoration: none;
+}
+
+#listings .item .title {
+  display: block;
   color: darkorchid;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
 }
 
-.listings .item .title small { font-weight: 400; }
+#listings .item .title small { font-weight: 400; }
 
-.listings .item.active .title,
-.listings .item .title:hover { color: blue; }
+#listings .item.active .title,
+#listings .item .title:hover { 
+  color: blue;
+  text-decoration: none;
+}
 
-.listings .item.active {
+#listings .item.active {
   background-color: lightgrey;
 }
 
@@ -306,4 +322,26 @@ a:hover {
   .container.list-visible .map {
     display: none;
   }
+}
+
+.full {
+  display: none;
+}
+
+.thumbnails {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.thumbnails img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
 }
