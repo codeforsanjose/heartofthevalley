@@ -307,3 +307,50 @@ a:hover {
     display: none;
   }
 }
+
+/* expand-contract controls for description */
+
+input[type=checkbox] ~ span.description {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+  /* line-height x lines to show = max-height */
+  max-height: 3.6em;
+  
+}
+
+input[type=checkbox]:checked ~ span.description {
+  display: inline;
+}
+
+input[type=checkbox] ~ label.readMore {
+  display: inline;
+}
+
+input[type=checkbox]:checked ~ label.readMore {
+  display: none;
+}
+
+input[type=checkbox] ~ label.readLess {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ label.readLess {
+  display: inline;
+}
+
+
+input[type=checkbox]#toggleDescription {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+}
+
+
+
+
+
+
+

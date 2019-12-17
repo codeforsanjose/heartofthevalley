@@ -112,7 +112,6 @@
     if (typeof linkId !== "undefined") {
       window.location.hash = "#" + linkId;
     }
-
     console.log("showing popup for ", currentFeature.properties.title);
     new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: "top" })
       .setLngLat(currentFeature.geometry.coordinates)
@@ -132,7 +131,17 @@
           " " +
           currentFeature.properties.postalCode +
           "<br/><br/>" +
-          currentFeature.properties.description +
+            `
+            <input type='checkbox' id="toggleDescription">
+            <span class='description'>
+              ${currentFeature.properties.description}
+            </span>
+            <br/>
+            <label for='toggleDescription' class='readMore'><a>...Read More</a></label>
+            <label for='toggleDescription' class='readLess'><a>...Read Less</a></label>
+            
+            ` 
+          +
           "<br/><br/> Source: " +
           currentFeature.properties.sourceURL +
           "</p>"
@@ -236,7 +245,6 @@
     flyToArt(clickedListing);
     // 2. Close all other popups and display popup for clicked point
     createPopUp(clickedListing, this.listingId);
-
     // 3. Highlight listing in sidebar (and remove highlight for all other listings)
     var activeItem = document.getElementsByClassName("active");
 
