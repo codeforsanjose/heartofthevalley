@@ -26,38 +26,18 @@
       "coordinates": null
     },
     "properties": {
-      "title": "Commemoration to Carol Murdock",
-      "artist": "Linda Rosenus Walsh",
-      "address": "Castle Glenn Ave at Wunderlich",
+      "title": "8 Minutes",
+      "artist": "Merge Conceptual Design (Franka Diehnelt and Claudia Reisenberger)",
+      "address": "1924 Yerba Buena Road",
       "city": "San Jose",
       "state": "CA",
-      "postalCode": "95129",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5074/636715764271570000",
-      "description": ")\r\n\r\nThis artwork can be found near the South entryway of the Murdock Park.  The artist created a group of tree guards and a bench, all made of cast bronze with a light green patina.\r\nDistrict: 1\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nFeatures\r\n\r\n    (Public Art) Historic Commemorations & Memorials\r\n    (Public Art) Parks & Trails\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2523/1396",
+      "postalCode": "95121",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4878/636714226994330000",
+      "description": ")\r\n \r\nThe National Fire Protection Association recommends a target of 8 minutes as “standard response time” for emergency calls. The artwork 8 Minutes approaches the topic of the 8-minute response in three ways:\r\n\r\n    A visual measurement of 8 minutes,\r\n    A conveyor of Fire Station 24th continuous efforts on behalf of the community, and\r\n    Connecting the community to the station via the eight minute duration.\r\n\r\nAll the elements complement each other to create a rich understanding of time in the context of Fire Station 24.\r\nThe first element is the LED Countdown Timer placed over the apparatus bay. The timer is connected to the fire pager system; when a response call is received it automatically starts an 8-minute counter that travels as a light across the sign. After the 8-minute light completes its travel across the sign, the \"call time\" is added to a list of the 8 most recent call times displayed on the sign. The second and third components of the artwork are a series of tiles in the fire station entryway. One set of tiles is a compilation of text about the number 8 and 8-minute duration. For example: “A fallen or lying down 8 is used to represent infinity in mathematics.” The third component is a series of 8-minute time-lapsed community photographs that depict every day activities to the same time frame of the recommended standard response time – to provide visitors to the station a visceral sense of the anxiety-filled 8 minutes awaiting emergency response versus the same 8-minutes washing a car, skateboarding or barbecuing. \r\nDistrict: 8\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    8 Minutes (Fire Station 24) - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Permanent Artworks\r\n    (Public Art) Public Safety - Police & Fire Stations",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2477/1396",
       "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
     },
-    "id": "art_60959344875913664631aaa216d1b2957ba58a8f6bb8d78cf22060282b2b37f4"
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": null
-    },
-    "properties": {
-      "title": "Amaden Sphere",
-      "artist": "Ray King",
-      "address": "6445 Camden Avenue",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95120",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4904/636714293808630000",
-      "description": ")\r\n\r\nSphere is a celestial shower of light and color suspended from a web of stainless steel cables in the entry lobby of the Community Center and Library. Designed to interact with both the natural sunlight and the interior lights, the sculpture is a modern interpretation of the tradition of grand crystal chandeliers that adorned great halls. Comprised of 5,000 dichroic glass prisms Sphere measures 18’ diameter and 23’ high and weighs approximately 800 pounds.\r\nThe artist desired to create a sculpture that evokes a sense of fascination, stimulation, beauty, contemplation, and intrigue.\r\nDistrict: 10\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Almaden Sphere - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Community & Youth Centers\r\n    (Public Art) Libraries\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2483/1396",
-      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
-    },
-    "id": "art_2f60914229d184ac0977b856938b191aaf8bd3bf0b9e59416a54996e310dca73"
+    "id": "art_adecde87320141fd9bbe26ee81daa004c5a1a5455ea73211fa20ebb97df03dbc"
   },
   {
     "type": "Feature",
@@ -67,7 +47,7 @@
     },
     "properties": {
       "title": "A Small Part of What We Do",
-      "artist": "Tad Savinar (September )",
+      "artist": "Tad Savinar (September 2000)",
       "address": "255 North Market Street",
       "city": "San Jose",
       "state": "CA",
@@ -77,7 +57,7 @@
       "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2481/1396",
       "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
     },
-    "id": "art_506bcc20ab1f7756582c3118428785a7edfe7975951d007076a0c4298d1962ec"
+    "id": "art_c91cb4d97189176f724eed88a191b21616e4e883603448f8f4541f8b67471e9f"
   },
   {
     "type": "Feature",
@@ -106,18 +86,18 @@
       "coordinates": null
     },
     "properties": {
-      "title": "Civic Stage Set",
-      "artist": "David Bottini",
-      "address": "201 South Market Street ",
+      "title": "Commemoration of the Founding of the Pueblo San Jose de Guadalupe",
+      "artist": "East Los Streetscapers",
+      "address": "South 1st Street & South Market Street",
       "city": "San Jose",
       "state": "CA",
       "postalCode": "95113",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5052/636715758100770000",
-      "description": ")\r\n\r\nThis bright geometric abstract piece is located by the Tech Museum on Park Avenue. It was created by contemporary Northern California sculptor David Bottini who works in the styles of pure abstraction and neo-constructivism.\r\nDistrict: 3\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Civic Stage Set - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Downtown\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2517/1396",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5068/636715763099270000",
+      "description": ")\r\n\r\n\r\nThe founding of the Pueblo San José de Guadalupe on November 29, 1777 established San José as California’s first civil community, supplying necessary agricultural products for the presidios and missions of San Francisco and Monterey. This project honors a pioneer settlement and its founders and the beginnings of a continuous migration of people who have come to this region from north, south, east, and west. \r\nThe migration is represented through four columns placed at each point of the compass. Each triangle shaped column has cast relief images on the outside walls and a tile mural on the inner face. Polished granite slabs top each of the columns with a descriptive title for the art on the face of the column. A tile floor map depicts the trek of the original settlers from the Sonora desert to what is today the city of San José.\r\nDistrict: 3\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Commemoration of the Founding of the Pueblo - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Downtown\r\n    (Public Art) Historic Commemorations & Memorials\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2521/1396",
       "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
     },
-    "id": "art_0c63535c002a70d6d020129f9c45a8c203986da15fddb44414b63ece67a5b82a"
+    "id": "art_575deb1897e96388c9ad1484962763dc7a7f89380f2e72a20561f35ef4b58690"
   },
   {
     "type": "Feature",
@@ -146,58 +126,58 @@
       "coordinates": null
     },
     "properties": {
-      "title": "Commemoration of the Founding of the Pueblo San Jose de Guadalupe",
-      "artist": "East Los Streetscapers",
-      "address": "South 1st Street & South Market Street",
+      "title": "Amaden Sphere",
+      "artist": "Ray King",
+      "address": "6445 Camden Avenue",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95120",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4904/636714293808630000",
+      "description": ")\r\n\r\nSphere is a celestial shower of light and color suspended from a web of stainless steel cables in the entry lobby of the Community Center and Library. Designed to interact with both the natural sunlight and the interior lights, the sculpture is a modern interpretation of the tradition of grand crystal chandeliers that adorned great halls. Comprised of 5,000 dichroic glass prisms Sphere measures 18’ diameter and 23’ high and weighs approximately 800 pounds.\r\nThe artist desired to create a sculpture that evokes a sense of fascination, stimulation, beauty, contemplation, and intrigue.\r\nDistrict: 10\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Almaden Sphere - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Community & Youth Centers\r\n    (Public Art) Libraries\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2483/1396",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_2f60914229d184ac0977b856938b191aaf8bd3bf0b9e59416a54996e310dca73"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": null
+    },
+    "properties": {
+      "title": "Commemoration to Carol Murdock",
+      "artist": "Linda Rosenus Walsh",
+      "address": "Castle Glenn Ave at Wunderlich",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95129",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5074/636715764271570000",
+      "description": ")\r\n\r\nThis artwork can be found near the South entryway of the Murdock Park.  The artist created a group of tree guards and a bench, all made of cast bronze with a light green patina.\r\nDistrict: 1\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nFeatures\r\n\r\n    (Public Art) Historic Commemorations & Memorials\r\n    (Public Art) Parks & Trails\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2523/1396",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_60959344875913664631aaa216d1b2957ba58a8f6bb8d78cf22060282b2b37f4"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": null
+    },
+    "properties": {
+      "title": "Civic Stage Set",
+      "artist": "David Bottini",
+      "address": "201 South Market Street ",
       "city": "San Jose",
       "state": "CA",
       "postalCode": "95113",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5068/636715763099270000",
-      "description": ")\r\n\r\n\r\nThe founding of the Pueblo San José de Guadalupe on November 29, 1777 established San José as California’s first civil community, supplying necessary agricultural products for the presidios and missions of San Francisco and Monterey. This project honors a pioneer settlement and its founders and the beginnings of a continuous migration of people who have come to this region from north, south, east, and west. \r\nThe migration is represented through four columns placed at each point of the compass. Each triangle shaped column has cast relief images on the outside walls and a tile mural on the inner face. Polished granite slabs top each of the columns with a descriptive title for the art on the face of the column. A tile floor map depicts the trek of the original settlers from the Sonora desert to what is today the city of San José.\r\nDistrict: 3\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Commemoration of the Founding of the Pueblo - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Downtown\r\n    (Public Art) Historic Commemorations & Memorials\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2521/1396",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5052/636715758100770000",
+      "description": ")\r\n\r\nThis bright geometric abstract piece is located by the Tech Museum on Park Avenue. It was created by contemporary Northern California sculptor David Bottini who works in the styles of pure abstraction and neo-constructivism.\r\nDistrict: 3\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Civic Stage Set - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Downtown\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2517/1396",
       "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
     },
-    "id": "art_575deb1897e96388c9ad1484962763dc7a7f89380f2e72a20561f35ef4b58690"
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": null
-    },
-    "properties": {
-      "title": "Chronos and Kairos",
-      "artist": "Banny Banerjee, Matt Gorbet, Susan LK Gorbet and Margaret Orth",
-      "address": "1701 Airport Boulevard",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95110",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5024/636715232760970000",
-      "description": ")\r\n\r\nExplore time through the movement of this suspended sculpture that breathes, ripples and reacts to passengers while maintaining its abacus-like counting pattern.  As each row completes its count, the movement is marked by the closing of a single element.  The counting then resumes until the total array closes; time stands still until the counting begins again.\r\nDistrict: 3\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2511/1396",
-      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
-    },
-    "id": "art_023c60c9769bcd354725f16145a04edb9dd47813d2de70999fec98f67e54623f"
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": null
-    },
-    "properties": {
-      "title": "Chandelier and Collaboration with Pala Youth",
-      "artist": "Ries Niemi",
-      "address": "149 North White Road",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95127",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5012/636715231694800000",
-      "description": ")\r\n\r\nThis work features drawings by youth from the surrounding middle and high schools rendered as metal panels decorating the opening gate, front doorway, and walls of the youth center. While the artist translated some of the drawings for a cohesive style, the artwork is still distinctively based on the youths’ artwork.\r\nThe shape of the chandelier, hanging in the oculus of the lobby, celebrate the themes of life with sculptural elements that look like DNA strands or plant forms.  The use of colored mirrors and gems, reflected by the embedded mirrors, change due to sunlight, thus causing the impact of the piece to shift throughout the day.\r\nDistrict: 5\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\t\r\n\r\n    Chandelier - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Community & Youth Centers\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2509/1396",
-      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
-    },
-    "id": "art_f7c8bfbf956fc698ec398317943bcf71d97601ad4a1b2085214fbad031136ec5"
+    "id": "art_0c63535c002a70d6d020129f9c45a8c203986da15fddb44414b63ece67a5b82a"
   },
   {
     "type": "Feature",
@@ -226,26 +206,6 @@
       "coordinates": null
     },
     "properties": {
-      "title": "Carpet of Leaves",
-      "artist": "Cynthia Handel",
-      "address": "1865 Monrovia Drive",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95121",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4998/636715228920830000",
-      "description": ")\r\nThe artwork is a commemoration of the black walnut trees that once covered the area. The artwork, five cast concrete vessel seats with bronze leaf and seed elements cast into the top of each, creates a contemplative space within the park.  Inset bronze leaves, spirals and black walnut centers are placed at junctions along the pathways in the park.\r\nCynthia Handel participated in the City of San José Public Art Program’s Artist’s Training Project in 1997. Following the workshop series, participants were invited to submit proposals for upcoming City-funded public art projects. Cynthia’s proposal for the upgrading of Meadowfair Park was one of the accepted proposals.\r\nDistrict: 8\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Meadowfair Park - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Parks & Trails\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2505/1396",
-      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
-    },
-    "id": "art_ac5f934a6270c1cbd28aff45b811068344668f4f6c8515a5330e5b5bb5b0af4d"
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": null
-    },
-    "properties": {
       "title": "Circle of Heroes",
       "artist": "Stephen Farley",
       "address": "520 West Virginia Street",
@@ -266,38 +226,18 @@
       "coordinates": null
     },
     "properties": {
-      "title": "Capiz",
-      "artist": "Peter Molica",
-      "address": "488 North 6th",
+      "title": "Chandelier and Collaboration with Pala Youth",
+      "artist": "Ries Niemi",
+      "address": "149 North White Road",
       "city": "San Jose",
       "state": "CA",
-      "postalCode": "95112",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4992/636715227865900000",
-      "description": ")\r\nCapiz, a series of stained-glass artisan windows welcome all visitors entering the main foyer of the JTC Northside Community Center in San Jose.  Kaleidoscopic and delicate, the artwork references the rich history of the intricate art of stained glass making.  The tradition of colored glass can be traced back to ancient times: both the Egyptians and the Romans were skillful masters at the manufacture of small colored glass objects.  Early Christians inherited the ancient art form which consequently reached its height during the Romanesque and Gothic periods in Medieval Europe.\r\nDistrict: 3\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\t\r\n\r\n    Capiz - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Community & Youth Centers\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2503/1396",
+      "postalCode": "95127",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5012/636715231694800000",
+      "description": ")\r\n\r\nThis work features drawings by youth from the surrounding middle and high schools rendered as metal panels decorating the opening gate, front doorway, and walls of the youth center. While the artist translated some of the drawings for a cohesive style, the artwork is still distinctively based on the youths’ artwork.\r\nThe shape of the chandelier, hanging in the oculus of the lobby, celebrate the themes of life with sculptural elements that look like DNA strands or plant forms.  The use of colored mirrors and gems, reflected by the embedded mirrors, change due to sunlight, thus causing the impact of the piece to shift throughout the day.\r\nDistrict: 5\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\t\r\n\r\n    Chandelier - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Community & Youth Centers\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2509/1396",
       "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
     },
-    "id": "art_8a60e31c38f07375481a4144693e2883f50727acc8e1d702e527034aaa50b544"
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": null
-    },
-    "properties": {
-      "title": "8 Minutes",
-      "artist": "Merge Conceptual Design (Franka Diehnelt and Claudia Reisenberger)",
-      "address": "1924 Yerba Buena Road",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95121",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4878/636714226994330000",
-      "description": ")\r\n \r\nThe National Fire Protection Association recommends a target of 8 minutes as “standard response time” for emergency calls. The artwork 8 Minutes approaches the topic of the 8-minute response in three ways:\r\n\r\n    A visual measurement of 8 minutes,\r\n    A conveyor of Fire Station 24th continuous efforts on behalf of the community, and\r\n    Connecting the community to the station via the eight minute duration.\r\n\r\nAll the elements complement each other to create a rich understanding of time in the context of Fire Station 24.\r\nThe first element is the LED Countdown Timer placed over the apparatus bay. The timer is connected to the fire pager system; when a response call is received it automatically starts an 8-minute counter that travels as a light across the sign. After the 8-minute light completes its travel across the sign, the \"call time\" is added to a list of the 8 most recent call times displayed on the sign. The second and third components of the artwork are a series of tiles in the fire station entryway. One set of tiles is a compilation of text about the number 8 and 8-minute duration. For example: “A fallen or lying down 8 is used to represent infinity in mathematics.” The third component is a series of 8-minute time-lapsed community photographs that depict every day activities to the same time frame of the recommended standard response time – to provide visitors to the station a visceral sense of the anxiety-filled 8 minutes awaiting emergency response versus the same 8-minutes washing a car, skateboarding or barbecuing. \r\nDistrict: 8\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    8 Minutes (Fire Station 24) - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Permanent Artworks\r\n    (Public Art) Public Safety - Police & Fire Stations",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2477/1396",
-      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
-    },
-    "id": "art_adecde87320141fd9bbe26ee81daa004c5a1a5455ea73211fa20ebb97df03dbc"
+    "id": "art_f7c8bfbf956fc698ec398317943bcf71d97601ad4a1b2085214fbad031136ec5"
   },
   {
     "type": "Feature",
@@ -326,18 +266,18 @@
       "coordinates": null
     },
     "properties": {
-      "title": "Cambrian BeeLine",
-      "artist": "Andrea Myklebust & Stanton Sears",
-      "address": "1780 Hillsdale Avenue",
+      "title": "Chronos and Kairos",
+      "artist": "Banny Banerjee, Matt Gorbet, Susan LK Gorbet and Margaret Orth",
+      "address": "1701 Airport Boulevard",
       "city": "San Jose",
       "state": "CA",
-      "postalCode": "95124",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4978/636715226534870000",
-      "description": ")\r\n\r\nThis 80' artwork elegantly details the staircase and second floor balcony of this library. Each of the 21 water-jet cut stainless steel panels is unique with 74 unique cast glass and bronze sculptures, some with gold leaf, mounted along its length.\r\nThe narrative elements within the length of the artwork are drawn from the natural and social histories of the site. Themes of exploration and discovery are emphasized in a variety of ways, including the creation of a sight line game related to the title of the work. The repeated use of weaving (in representational forms, and in more abstract renderings of roadways and paths) is intended to suggest the complexity and organization of human knowledge. Likewise, the illustration of locally-cultivated fruits in grid patterns refers not only to the agricultural history of orchards near the site, but also to the gathering and categorization of information as it occurs in a library. Pastoral imagery dominates the work, remembering and celebrating ways of life which have largely vanished from the area. \r\nDistrict: 9\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Cambrian BeeLine - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Libraries\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2501/1396",
+      "postalCode": "95110",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5024/636715232760970000",
+      "description": ")\r\n\r\nExplore time through the movement of this suspended sculpture that breathes, ripples and reacts to passengers while maintaining its abacus-like counting pattern.  As each row completes its count, the movement is marked by the closing of a single element.  The counting then resumes until the total array closes; time stands still until the counting begins again.\r\nDistrict: 3\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2511/1396",
       "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
     },
-    "id": "art_59717584f90397fd8d22f2b077f35ededcbe5c2dc7c96e3cc89d7abf6fed2868"
+    "id": "art_023c60c9769bcd354725f16145a04edb9dd47813d2de70999fec98f67e54623f"
   },
   {
     "type": "Feature",
@@ -366,78 +306,18 @@
       "coordinates": null
     },
     "properties": {
-      "title": "Wall of Wonder & Blossom Hill Vine",
-      "artist": "Deborah Mersky",
-      "address": "1450 Blossom Hill Road",
+      "title": "Cambrian BeeLine",
+      "artist": "Andrea Myklebust & Stanton Sears",
+      "address": "1780 Hillsdale Avenue",
       "city": "San Jose",
       "state": "CA",
-      "postalCode": "95118",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4970/636715224446770000",
-      "description": ")\r\n\r\nBlossom Hill Vine is two large glass windows at the library’s Marketplace. The glass is decorated with a series of images of local plants and historic artifacts painted in silver-leaf. The grapevine is a reminder of an earlier use of the neighboring land and the specific flowers were chosen on the basis of their geographic origin, a reference to the international nature of San José.\r\nThe Wall of Wonder is a cut steel mural in the Children's Area, suggesting the limitless potential of a child's imagination and the role the library can play in encouraging exploration.\r\nDistrict: 10\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Wall of Wonder & Blossom Hill Vine - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Libraries\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2499/1396",
+      "postalCode": "95124",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4978/636715226534870000",
+      "description": ")\r\n\r\nThis 80' artwork elegantly details the staircase and second floor balcony of this library. Each of the 21 water-jet cut stainless steel panels is unique with 74 unique cast glass and bronze sculptures, some with gold leaf, mounted along its length.\r\nThe narrative elements within the length of the artwork are drawn from the natural and social histories of the site. Themes of exploration and discovery are emphasized in a variety of ways, including the creation of a sight line game related to the title of the work. The repeated use of weaving (in representational forms, and in more abstract renderings of roadways and paths) is intended to suggest the complexity and organization of human knowledge. Likewise, the illustration of locally-cultivated fruits in grid patterns refers not only to the agricultural history of orchards near the site, but also to the gathering and categorization of information as it occurs in a library. Pastoral imagery dominates the work, remembering and celebrating ways of life which have largely vanished from the area. \r\nDistrict: 9\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Cambrian BeeLine - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Libraries\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2501/1396",
       "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
     },
-    "id": "art_80236bcfc3ad507d16012bb5a66f248a74e99022bc39d46568a0e75d5d57c79a"
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": null
-    },
-    "properties": {
-      "title": "Beaver-Splash-Jump-Dog",
-      "artist": "Gerald Heffernon",
-      "address": "806 W Home Street",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95126",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4958/636714314497730000",
-      "description": ")\r\n\r\nThis fun and exuberant sculpture links the themes of wild animal and domestic dog. A bronze beaver in the creek slaps the water with its tail and creates an over-sized splash of stainless steel.  An extension of the splash sends a bright yellow ball in a high-arcing trajectory ten feet high.  Fifteen feet away, a bronze dog leaps ten feet in the air and in visual time lapse sequence catches the ball, completing the connection between the two sculptural elements and the two worlds.\r\nDistrict: 6\r\nReport a Concern: (408) 793-04330 or publicart@sanjoseca.gov.\r\nFeatures\r\n\r\n    (Public Art) Parks & Trails\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2493/1396",
-      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
-    },
-    "id": "art_87ec062d352d4491d68a07470ae192820e60447aae2aa88fbbe3e8288b5cefe2"
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": null
-    },
-    "properties": {
-      "title": "Alviso & Alviso Mandalas",
-      "artist": "Donna Billick",
-      "address": "5050 North First Street",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95002",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4928/636714302560600000",
-      "description": ")\r\n\r\nThis project was inspired by the rich natural landscape of Alviso including the wetlands of the National Wildlife Refuge, some of the last open space in the region. Working with the community, the artist created the artwork's three tile mosaic elements: Alviso, a bench in the form of a book that is standing on its side with images depicting indigenous plant life and the wetlands on its “covers”; and the two Alviso Mandalas, each 6’ in diameter. Together these elements create a visual welcome to the library and offer the community a place to pause and enjoy the setting.\r\nDistrict: 4\r\nReport a Concern:  (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Alviso Bench & Mandalas - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Libraries\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2487/1396",
-      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
-    },
-    "id": "art_02f7e1a7313a14420405e79ac907935281cef1c61d014b15bbc5a321768375a1"
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": null
-    },
-    "properties": {
-      "title": "Another World",
-      "artist": "Tom Otterness",
-      "address": "1300 Senter Road",
-      "city": "San Jose",
-      "state": "CA",
-      "postalCode": "95112",
-      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4940/636714309658870000",
-      "description": ")\r\n\r\nThe Public Art Program collaborated with Happy Hollow to select internationally recognized artist Tom Otterness to create an artwork for the new entry plaza. The artwork consists of 17 bronze pieces each reflecting an element of the Park or the Zoo. As the artist has said: \r\nFor me the sculptures at HHPZ serve to launch an experience, not to mimic anything inside HHPZ; it’s a fairy tale — animals drive cars and money is food.\r\nSome characteristic motifs seen in other Otterness works are found in Another World — including manipulation of human and animal scale, depictions of coins and bills, use of clothing — to add humorous and thought-provoking aspects to the artwork. These unifying motifs allow the viewer to explore a central theme of this artwork: what is the relationship between humans and the rest of the animal kingdom?\r\nDistrict: 7\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\t\r\n\r\n    Another World - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Parks & Trails\r\n    (Public Art) Permanent Artworks",
-      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2491/1396",
-      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
-    },
-    "id": "art_b37308b2d9d44e82feda9eeedbb9d8b5d6a04a0dc1e76e59aa7ea3a2ed44c8a0"
+    "id": "art_59717584f90397fd8d22f2b077f35ededcbe5c2dc7c96e3cc89d7abf6fed2868"
   },
   {
     "type": "Feature",
@@ -466,8 +346,68 @@
       "coordinates": null
     },
     "properties": {
+      "title": "Capiz",
+      "artist": "Peter Molica",
+      "address": "488 North 6th",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95112",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4992/636715227865900000",
+      "description": ")\r\nCapiz, a series of stained-glass artisan windows welcome all visitors entering the main foyer of the JTC Northside Community Center in San Jose.  Kaleidoscopic and delicate, the artwork references the rich history of the intricate art of stained glass making.  The tradition of colored glass can be traced back to ancient times: both the Egyptians and the Romans were skillful masters at the manufacture of small colored glass objects.  Early Christians inherited the ancient art form which consequently reached its height during the Romanesque and Gothic periods in Medieval Europe.\r\nDistrict: 3\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\t\r\n\r\n    Capiz - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Community & Youth Centers\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2503/1396",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_8a60e31c38f07375481a4144693e2883f50727acc8e1d702e527034aaa50b544"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": null
+    },
+    "properties": {
+      "title": "Another World",
+      "artist": "Tom Otterness",
+      "address": "1300 Senter Road",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95112",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4940/636714309658870000",
+      "description": ")\r\n\r\nThe Public Art Program collaborated with Happy Hollow to select internationally recognized artist Tom Otterness to create an artwork for the new entry plaza. The artwork consists of 17 bronze pieces each reflecting an element of the Park or the Zoo. As the artist has said: \r\nFor me the sculptures at HHPZ serve to launch an experience, not to mimic anything inside HHPZ; it’s a fairy tale — animals drive cars and money is food.\r\nSome characteristic motifs seen in other Otterness works are found in Another World — including manipulation of human and animal scale, depictions of coins and bills, use of clothing — to add humorous and thought-provoking aspects to the artwork. These unifying motifs allow the viewer to explore a central theme of this artwork: what is the relationship between humans and the rest of the animal kingdom?\r\nDistrict: 7\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\t\r\n\r\n    Another World - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Parks & Trails\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2491/1396",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_b37308b2d9d44e82feda9eeedbb9d8b5d6a04a0dc1e76e59aa7ea3a2ed44c8a0"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": null
+    },
+    "properties": {
+      "title": "Beaver-Splash-Jump-Dog",
+      "artist": "Gerald Heffernon",
+      "address": "806 W Home Street",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95126",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4958/636714314497730000",
+      "description": ")\r\n\r\nThis fun and exuberant sculpture links the themes of wild animal and domestic dog. A bronze beaver in the creek slaps the water with its tail and creates an over-sized splash of stainless steel.  An extension of the splash sends a bright yellow ball in a high-arcing trajectory ten feet high.  Fifteen feet away, a bronze dog leaps ten feet in the air and in visual time lapse sequence catches the ball, completing the connection between the two sculptural elements and the two worlds.\r\nDistrict: 6\r\nReport a Concern: (408) 793-04330 or publicart@sanjoseca.gov.\r\nFeatures\r\n\r\n    (Public Art) Parks & Trails\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2493/1396",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_87ec062d352d4491d68a07470ae192820e60447aae2aa88fbbe3e8288b5cefe2"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": null
+    },
+    "properties": {
       "title": "Animal Spiral and Butterfly Dreams",
-      "artist": "Therese May ( and 1993)",
+      "artist": "Therese May (1991 and 1993)",
       "address": "3590 Cas Drive",
       "city": "San Jose",
       "state": "CA",
@@ -477,7 +417,67 @@
       "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2489/1396",
       "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
     },
-    "id": "art_03c3d846d503d845140d6d506fe149ab4ca8ff3d423b749df90f7dde6cc05764"
+    "id": "art_73cd768c57170cc9b42ffe041ecc72c37d2e215f98d0d3bbea2e5a882db92a45"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": null
+    },
+    "properties": {
+      "title": "Alviso & Alviso Mandalas",
+      "artist": "Donna Billick",
+      "address": "5050 North First Street",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95002",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4928/636714302560600000",
+      "description": ")\r\n\r\nThis project was inspired by the rich natural landscape of Alviso including the wetlands of the National Wildlife Refuge, some of the last open space in the region. Working with the community, the artist created the artwork's three tile mosaic elements: Alviso, a bench in the form of a book that is standing on its side with images depicting indigenous plant life and the wetlands on its “covers”; and the two Alviso Mandalas, each 6’ in diameter. Together these elements create a visual welcome to the library and offer the community a place to pause and enjoy the setting.\r\nDistrict: 4\r\nReport a Concern:  (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Alviso Bench & Mandalas - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Libraries\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2487/1396",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_02f7e1a7313a14420405e79ac907935281cef1c61d014b15bbc5a321768375a1"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": null
+    },
+    "properties": {
+      "title": "Carpet of Leaves",
+      "artist": "Cynthia Handel",
+      "address": "1865 Monrovia Drive",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95121",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4998/636715228920830000",
+      "description": ")\r\nThe artwork is a commemoration of the black walnut trees that once covered the area. The artwork, five cast concrete vessel seats with bronze leaf and seed elements cast into the top of each, creates a contemplative space within the park.  Inset bronze leaves, spirals and black walnut centers are placed at junctions along the pathways in the park.\r\nCynthia Handel participated in the City of San José Public Art Program’s Artist’s Training Project in 1997. Following the workshop series, participants were invited to submit proposals for upcoming City-funded public art projects. Cynthia’s proposal for the upgrading of Meadowfair Park was one of the accepted proposals.\r\nDistrict: 8\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Meadowfair Park - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Parks & Trails\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2505/1396",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_ac5f934a6270c1cbd28aff45b811068344668f4f6c8515a5330e5b5bb5b0af4d"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": null
+    },
+    "properties": {
+      "title": "Wall of Wonder & Blossom Hill Vine",
+      "artist": "Deborah Mersky",
+      "address": "1450 Blossom Hill Road",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95118",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4970/636715224446770000",
+      "description": ")\r\n\r\nBlossom Hill Vine is two large glass windows at the library’s Marketplace. The glass is decorated with a series of images of local plants and historic artifacts painted in silver-leaf. The grapevine is a reminder of an earlier use of the neighboring land and the specific flowers were chosen on the basis of their geographic origin, a reference to the international nature of San José.\r\nThe Wall of Wonder is a cut steel mural in the Children's Area, suggesting the limitless potential of a child's imagination and the role the library can play in encouraging exploration.\r\nDistrict: 10\r\nReport a Concern: (408) 793-4330 or publicart@sanjoseca.gov.\r\nDocuments\r\n\r\n    Wall of Wonder & Blossom Hill Vine - Fact Sheet\r\n\r\nFeatures\r\n\r\n    (Public Art) Libraries\r\n    (Public Art) Permanent Artworks",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2499/1396",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_80236bcfc3ad507d16012bb5a66f248a74e99022bc39d46568a0e75d5d57c79a"
   },
   {
     "type": "Feature",
