@@ -107,7 +107,6 @@
     if (typeof linkId !== "undefined") {
       setTimeout(() => { window.location.hash = "#" + linkId; }, 250);
     }
-
     console.log("showing popup for ", currentFeature.properties.title);
     new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: "top" })
       .setLngLat(currentFeature.geometry.coordinates)
@@ -127,7 +126,17 @@
           " " +
           currentFeature.properties.postalCode +
           "<br/><br/>" +
-          currentFeature.properties.description +
+            `
+            <input type='checkbox' id="toggleDescription">
+            <span class='description'>
+              ${currentFeature.properties.description}
+            </span>
+            <br/>
+            <label for='toggleDescription' class='readMore'><a>...Read More</a></label>
+            <label for='toggleDescription' class='readLess'><a>...Read Less</a></label>
+            
+            ` 
+          +
           "<br/><br/> Source: " +
           currentFeature.properties.sourceURL +
           "</p>"
