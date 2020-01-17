@@ -133,36 +133,52 @@ a:hover {
   padding: 0 10px;
 }
 
-.listings {
+#listings {
   height: 88%;
   overflow: auto;
   padding-bottom: 60px;
 }
 
-.listings .item {
+#listings .item {
   display: block;
   border-bottom: 1px solid #eee;
   padding: 10px;
   text-decoration: none;
 }
 
-.listings .item:last-child { border-bottom: none; }
+/* #listings .item:last-child { border-bottom: none; } */
 
-.listings .item .title {
+#listings .item .entry { 
   display: block;
-  padding-top: 25px;
+}
+
+#listings .item .entry:hover { 
+  color: blue;
+  text-decoration: none;
+}
+
+.artist {
+  color: black;
+  text-decoration: none;
+}
+
+#listings .item .title {
+  display: block;
   color: darkorchid;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
 }
 
-.listings .item .title small { font-weight: 400; }
+#listings .item .title small { font-weight: 400; }
 
-.listings .item.active .title,
-.listings .item .title:hover { color: blue; }
+#listings .item.active .title,
+#listings .item .title:hover { 
+  color: blue;
+  text-decoration: none;
+}
 
-.listings .item.active {
+#listings .item.active {
   background-color: lightgrey;
 }
 
@@ -307,3 +323,70 @@ a:hover {
     display: none;
   }
 }
+
+
+/* expand-contract controls for description */
+
+input[type=checkbox] ~ span.description {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+  /* line-height x lines to show = max-height */
+  max-height: 3.6em;
+  
+}
+
+input[type=checkbox]:checked ~ span.description {
+  display: inline;
+}
+
+input[type=checkbox] ~ label.readMore {
+  display: inline;
+}
+
+input[type=checkbox]:checked ~ label.readMore {
+  display: none;
+}
+
+input[type=checkbox] ~ label.readLess {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ label.readLess {
+  display: inline;
+}
+
+
+input[type=checkbox]#toggleDescription {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+}
+
+/* expand-contract controls for description */
+
+
+.full {
+  display: none;
+}
+
+.thumbnails {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.thumbnails img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+}
+

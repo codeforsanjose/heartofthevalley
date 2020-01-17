@@ -1550,29 +1550,6 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.873408112245,
-          37.3642676122449
-        ]
-      },
-      "properties": {
-        "title": "FOGWASTE",
-        "artist": "Brett Snyder and Claire NapawanFOGWASTE is a public art installation and community outreach effort. The original pilot project targeted communities with a three-phase approach that together reinforce the important work of Department of Transportation’s sewer maintenance staff, the importance of the community in understanding of FOG (Fat Oil and Grease) and the sanitary sewer infrastructure. The project also featured the potential actions that residents can take to achieve a positive impact on the sewer system, the environment, and their communities. The project elements work together to stimulate community curiosity, encourage participation in best household practices, and promote environmental stewardship:Doorhanger:  Addressing the issue directly at the household, a bold graphic poster is distributed as a door hanger by DOT crews in the vicinity of recent sanitary sewer maintenance activity. The graphic features simple icons to educate about various FOG wastes and common household products not to be put in sinks. The poster also brings awareness to features of the infrastructure system. Printed in the project’s signature electric green color, the door hanger connects to the other art elements described below. Multi-lingual text provides explanation and vocabulary for a more informed community. Manhole Marker: Bringing attention to the infrastructure below the streets, manholes of recently serviced sewer lines were painted in the project’s signature electric green color, creating awareness of this largely unnoticed infrastructure. Painting of the manholes coincided with the distribution of door hangers creating a connection from the front door to the system under the street. Maintenance Truck Graphic: A bold vinyl graphic was applied to select sewer maintenance trucks traveling to the target neighborhoods that features a design that calls out the 24/7 sewer maintenance service provided by the City. The vinyl graphic will be rendered in the project’s signature electric green color reinforcing the connection between the truck, door hangers and manhole markers and the workforce that is constantly on the move to manage the system.In 2018 the City launched the second phase of the project that includes wrapping the entire DOT truck fleet, and the door hangers. DistrictCity Wide Report a concern (408) 793-4330 or publicart@sanjoseca.go",
-        "address": "1404 Mabury Road",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95133",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6774%2fIMG_0516.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "FOGWASTE is a public art installation and community outreach effort. The original pilot project targeted communities with a three-phase approach that together reinforce the important work of Department of Transportation’s sewer maintenance staff, the importance of the community in understanding of FOG (Fat Oil and Grease) and the sanitary sewer infrastructure. The project also featured the potential actions that residents can take to achieve a positive impact on the sewer system, the environment, and their communities. The project elements work together to stimulate community curiosity, encourage participation in best household practices, and promote environmental stewardship:Doorhanger:  Addressing the issue directly at the household, a bold graphic poster is distributed as a door hanger by DOT crews in the vicinity of recent sanitary sewer maintenance activity. The graphic features simple icons to educate about various FOG wastes and common household products not to be put in sinks. The poster also brings awareness to features of the infrastructure system. Printed in the project’s signature electric green color, the door hanger connects to the other art elements described below. Multi-lingual text provides explanation and vocabulary for a more informed community. Manhole Marker: Bringing attention to the infrastructure below the streets, manholes of recently serviced sewer lines were painted in the project’s signature electric green color, creating awareness of this largely unnoticed infrastructure. Painting of the manholes coincided with the distribution of door hangers creating a connection from the front door to the system under the street. Maintenance Truck Graphic: A bold vinyl graphic was applied to select sewer maintenance trucks traveling to the target neighborhoods that features a design that calls out the 24/7 sewer maintenance service provided by the City. The vinyl graphic will be rendered in the project’s signature electric green color reinforcing the connection between the truck, door hangers and manhole markers and the workforce that is constantly on the move to manage the system.In 2018 the City launched the second phase of the project that includes wrapping the entire DOT truck fleet, and the door hangers. DistrictCity Wide Report a concern (408) 793-4330 or publicart@sanjoseca.gov",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-FOGWASTE-CityWide-564",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_016e42b8459e696603b3c20369ada130a1923c0e921bb7ffd8ffe4a29c30c705"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -121.85570887639,
           37.3459656
         ]
@@ -2027,29 +2004,6 @@ const art = {
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
       },
       "id": "art_52e44c0881f8aa0cb3b9675b862ca5c111ec31ec38bbfcf92649bcf0d346b5f2"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.8894128,
-          37.3270474
-        ]
-      },
-      "properties": {
-        "title": "Hilton Hotel Collection*",
-        "artist": "Various",
-        "address": "300 South Almaden Blvd",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2631%2fBora+Bora_Alexander_201403251606247949.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Title\r\n            \r\n             Artist\r\n        \r\n        \r\n            Over the Guadalupe\r\n            \r\n            Barbara Kasten\r\n            \r\n        \r\n        \r\n            Obor\r\n            \r\n            Ed Moses\r\n            \r\n        \r\n        \r\n            Wanderers\r\n            Selina Trieff\r\n            \r\n        \r\n        \r\n            Honolulu Hay Dos\r\n            \r\n            Rupert Garcia\r\n            \r\n        \r\n        \r\n            Scissors, Paper, Stone\r\n            \r\n            Katherine Levin-Lau\r\n            \r\n        \r\n    \r\n\r\n       \r\n    .telerik-reTable-1\r\n    {\r\n    border-width: 0px;\r\n    border-style: none;\r\n    border-collapse: collapse;\r\n    font-family: Tahoma;\r\n    }\r\n    .telerik-reTable-1 tr.telerik-reTableHeaderRow-1\r\n    {\r\n    margin: 10px;\r\n    padding: 10px;\r\n    color: #3F4D6B;\r\n    background: #D6E8FF;\r\n    text-align: center;\r\n    font-style: normal;\r\n    text-transform: capitalize;\r\n    font-weight: bold;\r\n    border-spacing: 10px;\r\n    line-height: 14pt;\r\n    vertical-align: top;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableHeaderFirstCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    color: #3a4663;\r\n    line-height: 14pt;\r\n    font-weight: bold;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableHeaderLastCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    color: #3a4663;\r\n    line-height: 14pt;\r\n    font-weight: bold;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableHeaderOddCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    color: #3a4663;\r\n    line-height: 14pt;\r\n    font-weight: bold;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableHeaderEvenCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    color: #3a4663;\r\n    line-height: 14pt;\r\n    font-weight: bold;\r\n    }\r\n    .telerik-reTable-1 tr.telerik-reTableOddRow-1\r\n    {\r\n    color: #666666;\r\n    background-color: #F2F3F4;\r\n    font-size: 10pt;\r\n    vertical-align: top;\r\n    }\r\n    .telerik-reTable-1 tr.telerik-reTableEvenRow-1\r\n    {\r\n    color: #666666;\r\n    background-color: #E7EBF7;\r\n    font-size: 10pt;\r\n    vertical-align: top;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFirstCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableLastCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableOddCol-1\r\n    {\r\n    /*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableEvenCol-1\r\n    {\r\n    /*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    }\r\n    .telerik-reTable-1 tr.telerik-reTableFooterRow-1\r\n    {\r\n    background-color: #D6E8FF;\r\n    color: #4A5A80;\r\n    font-weight: 500;\r\n    font-size: 10pt;\r\n    font-family: Tahoma;\r\n    line-height: 11pt;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFooterFirstCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    border-top: solid gray 1.0pt;\r\n    text-align: left;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFooterLastCol-1\r\n    {\r\n    /*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    border-top: solid gray 1.0pt;\r\n    text-align: left;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFooterOddCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    text-align: left;\r\n    border-top: solid gray 1.0pt;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFooterEvenCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    text-align: left;\r\n    border-top: solid gray 1.0pt;\r\n    }",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Hilton-Hotel-Collection-474",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_b8b0570061fb0ebf11c0bb381d9d96c6560239be41cda169044cccadf3301897"
     },
     {
       "type": "Feature",
@@ -2572,26 +2526,6 @@ const art = {
         "sourceURL": "https://www.carlosrodriguezart.com/"
       },
       "id": "art_252453b940b9ddeefcc18cdd98c5d37e8274ea022e2e882ac44c8ccb2641d6f1"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": null
-      },
-      "properties": {
-        "title": "Lupe the Mammoth",
-        "artist": "Freya Bardell and Brian Howe (Greenmeme Studio)",
-        "address": "Guadalupe River at Trimble",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6754%2fLupe%2c+2015-93.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "One July Saturday in 2005, a San Jose resident took a walk with his dog along the Guadalupe River, just north of the San Jose International Airport. He recognized that the objects poking out of the ground that day were clearly unusual -- he had discovered the tusks and skeleton of a mammoth. \"Lupe the Mammoth\" was inspired by this discovery. \r\n\r\nThe artwork is a technology-driven design with hand-crafted sensibilities. While the actual mammoth was a juvenile and about 8’ tall, the sculpture measures 12.5’ in height and is made of galvanized steel. The artwork was painstakingly fabricated at Paramount Roll & Forming; bent piece by piece and fit into a notched support structure after which it was galvanized for its final finish. The artwork is titled “Lupe,” but has quickly assumed the nickname Lupe the Mammoth as a popular post on social media; #LupeTheMammoth.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Lupe-the-Mammoth-Guadalupe-Tr-559",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_e4ba6e9e83ce8480e58aa94885bca229ad1583e0748cc602cea648ab5fe952f7"
     },
     {
       "type": "Feature",
@@ -3823,49 +3757,6 @@ const art = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": null
-      },
-      "properties": {
-        "title": "Remembering Agriculture*",
-        "artist": "Tony May",
-        "address": "W. Santa Clara St. and Guadalupe Parkway",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2625%2fAgriculture+2_201403211435409173.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Remembering Agriculture recalls the rich agricultural history that was the driving force in San Jose’s economy for more than 150 years. The project recreates the distinctive shapes of those once familiar archetypal clusters of farm buildings that are seen less and less frequently in the Santa Clara Valley. Once prolific, they are now most often decaying and abandoned, glimpsed only briefly from a distance by motorists on the freeway. The structures, a water tank tower, a windmill, a barn and a small shed, are intended to be somewhat ghost-like in their transparent appearance. The structures also function as arbors for a carefully chosen selection of ivies and other perennial climbing plants.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Remembering-Agriculture-521",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_c84d2002a5277850b1d3aa3accb476617e34e1dadcee02771c5886954fb69adb"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.6937992,
-          38.4002755
-        ]
-      },
-      "properties": {
-        "title": "Ripple Effect and Run River Run",
-        "artist": "Deborah Kennedy and Diana Pumpelly Bates",
-        "address": "Levee Road",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95134",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2854%2fIMG_2365_201406091938309485.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Ripple Effect, by artist Deborah Kennedy, is a blue concrete platform shaped with naturalistic curves and embedded with quartz boulders designed to suggest a pond. Two bronze inlays represent the ripples formed by throwing a rock into a pond.  Run River Run, by artist Diana Pumpelly Bates, is a gate fabricated from stainless steel water jet cut panels that reference Coyote Creek and its by-pass channel at Montague Expressway. The asymmetrical flowing lines and shapes created by the surface finish references the fork where Coyote Creek overflows into the by-pass channel. The abundance of water, potentially on the cusp of flooding, is meant to inspire in viewers a reverential respect for the unknown power of this life-sustaining resource.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Ripple-Effect-and-Run-River-R-448",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_b960b1e410b14a2e4ad4b9353ee3bcdac8298ff1f366b2572c7855352913ab27"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [
           -121.929514,
           37.406643
@@ -4045,26 +3936,6 @@ const art = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": null
-      },
-      "properties": {
-        "title": "San Carlos Street Lantern Relay",
-        "artist": "Steve Durie & Bruce GardnerDecember",
-        "address": "San Carlos at 4th Street",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6738%2flantern-5463.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "San Carlos Lantern Relay is comprised on eight 6' tall lanterns along E. San Carlos Street between the San Jose State University campus and the downtown cultural and events district. The lanterns are programmed to \"play\" a range of lighting programs and respond to pedestrian traffic. Interrupting the programmed lighting, people are invited to activate the lanterns via a button on the support pole.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-San-Carlos-Street-Lantern-Rel-557",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_e9a469336235aaae0516958260f815b6727dcc71cea43bac052383951d89c824"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [
           -121.88887,
           37.32718
@@ -4128,29 +3999,6 @@ const art = {
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
       },
       "id": "art_5a50c8dbd1f4ab12524306f7aafaad86aec6228af4f6f5b6a56efff71708aec2"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.889178504024,
-          37.3302931166692
-        ]
-      },
-      "properties": {
-        "title": "San Jose McEnery Convention Center Collection*",
-        "artist": "Various",
-        "address": "150 W San Carlos St",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2856%2fConvention+Center+Artworks+Buck+-+Copy_201406092000458889.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Title\r\n             Artist\r\n             Location\r\n        \r\n        \r\n            San Jose Mural\r\n            \r\n            Liz Utson\r\n            \r\n            Exterior Facade\r\n            \r\n        \r\n        \r\n            Winged Guardians\r\n            \r\n            Stephen DeStabler\r\n            \r\n            Entrance Lobby\r\n            \r\n        \r\n        \r\n            Egrets\r\n            Tom Aidala\r\n            Entrance Lobby\r\n        \r\n        \r\n            Lucca No. 2\r\n            \r\n            Manuel Neri\r\n            \r\n            Concourse\r\n        \r\n        \r\n            Figure Four\r\n            \r\n            Nathan Oliviera\r\n            \r\n            Concourse\r\n            \r\n        \r\n        \r\n            Sentinel\r\n            Sam Hernandez\r\n            \r\n            Concourse\r\n            \r\n        \r\n        \r\n            Father and Son\r\n            \r\n            John Buck\r\n            \r\n            Concourse\r\n        \r\n        \r\n             Cupid and Psyche or Narcissus and Eco\r\n            \r\n            A.D.M. Cooper\r\n            VIP Conference Room\r\n            \r\n        \r\n        \r\n             Allegory of California\r\n            \r\n            A.D.M. Cooper\r\n            \r\n            VIP Conference Room\r\n            \r\n        \r\n        \r\n             Three Classical Beauties\r\n            \r\n             A.D.M. Cooper\r\n            VIP Conference Room\r\n            \r\n        \r\n        \r\n             Tropical Landscape\r\n            \r\n             A.D.M. Cooper\r\n            \r\n            VIP Conference Room\r\n            \r\n        \r\n        \r\n             Giselle Ou Le Willis (Giselle)\r\n            \r\n             Julia Lord\r\n            \r\n            VIP Conference Room\r\n            \r\n        \r\n        \r\n             Giselle Ou Le Willis (Albrecht)\r\n            \r\n             Julia Lord\r\n            \r\n            VIP Conference Room\r\n            \r\n        \r\n    \r\n\r\n   \r\n    .telerik-reTable-1\r\n    {\r\n    border-width: 0px;\r\n    border-style: none;\r\n    border-collapse: collapse;\r\n    font-family: Tahoma;\r\n    }\r\n    .telerik-reTable-1 tr.telerik-reTableHeaderRow-1\r\n    {\r\n    margin: 10px;\r\n    padding: 10px;\r\n    color: #3F4D6B;\r\n    background: #D6E8FF;\r\n    text-align: center;\r\n    font-style: normal;\r\n    text-transform: capitalize;\r\n    font-weight: bold;\r\n    border-spacing: 10px;\r\n    line-height: 14pt;\r\n    vertical-align: top;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableHeaderFirstCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    color: #3a4663;\r\n    line-height: 14pt;\r\n    font-weight: bold;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableHeaderLastCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    color: #3a4663;\r\n    line-height: 14pt;\r\n    font-weight: bold;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableHeaderOddCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    color: #3a4663;\r\n    line-height: 14pt;\r\n    font-weight: bold;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableHeaderEvenCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    color: #3a4663;\r\n    line-height: 14pt;\r\n    font-weight: bold;\r\n    }\r\n    .telerik-reTable-1 tr.telerik-reTableOddRow-1\r\n    {\r\n    color: #666666;\r\n    background-color: #F2F3F4;\r\n    font-size: 10pt;\r\n    vertical-align: top;\r\n    }\r\n    .telerik-reTable-1 tr.telerik-reTableEvenRow-1\r\n    {\r\n    color: #666666;\r\n    background-color: #E7EBF7;\r\n    font-size: 10pt;\r\n    vertical-align: top;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFirstCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableLastCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableOddCol-1\r\n    {\r\n    /*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableEvenCol-1\r\n    {\r\n    /*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    }\r\n    .telerik-reTable-1 tr.telerik-reTableFooterRow-1\r\n    {\r\n    background-color: #D6E8FF;\r\n    color: #4A5A80;\r\n    font-weight: 500;\r\n    font-size: 10pt;\r\n    font-family: Tahoma;\r\n    line-height: 11pt;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFooterFirstCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    border-top: solid gray 1.0pt;\r\n    text-align: left;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFooterLastCol-1\r\n    {\r\n    /*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    border-top: solid gray 1.0pt;\r\n    text-align: left;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFooterOddCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    text-align: left;\r\n    border-top: solid gray 1.0pt;\r\n    }\r\n    .telerik-reTable-1 td.telerik-reTableFooterEvenCol-1\r\n    {\r\n    /*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n    text-align: left;\r\n    border-top: solid gray 1.0pt;\r\n    }",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-San-Jose-McEnery-Convention-C-471",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_9d53039ad836d2e2ce91ad0e3d244c5c36020475a9da5d062467c200ee0c25a7"
     },
     {
       "type": "Feature",
@@ -4449,29 +4297,6 @@ const art = {
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
       },
       "id": "art_f59b136d1eb5b7486f3fb976571c839cf3c047457f519b0681a0d44bc20f40dd"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.887258850227,
-          37.3351357522387
-        ]
-      },
-      "properties": {
-        "title": "Show Your Stripes *",
-        "artist": "Jim Conti  Show Your Stripes follows the  Not all combinations are programmed – yet",
-        "address": "88 E. San Fernando Street",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2862%2f_22T9251_201406110103295662.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Show Your Stripes follows the artist’s interest in the use of patterns. The phrase “show your stripes” has long been used to indicate social or political position; show what you’re made of, which side are you on. At one point in history, stripes were relegated to the margins of society: jugglers, courtesans, and in Medieval paintings the devil is often shown wearing stripes. Over time, stripes have taken on a more positive connotation: freedom, playfulness, or with banker’s pinstripes – taste and status. The artwork is not simply a light show. For the changes to be activated, it takes viewer participation, as the activation phone number above indicates. A quiet reflector of the changing sky during the day, at night the piece transforms into San Jose’s shared secret – the phone number a pass code to control the changing patterns. In 2015, launching the first of a series of light-based artworks that will appear throughout downtown San José as part of the “Illuminating Downtown Project,” the artist was invited to develop a new series of interactive programs based on community input. After completing a simple and fun survey, the Mr. Conti choreographed a sequence of unique stripes based on participants’ answers.  Some number sequences relate to a community member’s favorite song or color, others are simply employed for their dynamism or beauty. A menu of over 300 codes is available in the document section above.   Artwork Activation:  Call 408.287.0128After The Tone, Enter any 3 digit combination from 1 - 9 Press “0” (Zero), Then Hang UpNote: Not all combinations are programmed – yet",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Show-Your-Stripes-522",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_7e4327f63a67c367853455c79ebd3df5e5a2f9babba1a04d9ff5d4e80660e894"
     },
     {
       "type": "Feature",
@@ -4777,29 +4602,6 @@ const art = {
       },
       "properties": {
         "title": "Swimmers",
-        "artist": null,
-        "address": "3369 Union Avenue",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95124",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2869%2fP1110502_201406111415162892.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "This piece expands the space of the pool area by transforming the 10-foot property-line wall into an illusion of water. The fanciful silhouettes of swimmers, half submerged, swim across the blue wall surrounding the Camden Community Center's pool,",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Swimmers-Camden-Lifetime-Acti-426",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_a474e5bccfe972bef78720d8b85ba1266c1f627de6ffd243450bfd34ca58a2d0"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.9312634,
-          37.2513184
-        ]
-      },
-      "properties": {
-        "title": "Swimmers",
         "artist": "Anne Lamborn and Ceevah F.Sobel",
         "address": "3369 Union Avenue",
         "city": "San Jose",
@@ -4856,29 +4658,6 @@ const art = {
         "sourceURL": "http://jtownartwalk.com/wp-content/uploads/2016/06/jtown-artwalk-map-1.pdf"
       },
       "id": "art_892801277faac6ff27d960d91b7b28f913866e64816cc119230c777cb13e6ee1"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.865548826801,
-          37.2207169102402
-        ]
-      },
-      "properties": {
-        "title": "Teaching Stones",
-        "artist": null,
-        "address": "6445 Camden Ave.",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95120",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2870%2f+DDM+text+close+up_201406111449094350.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Teaching Stones is a tribute to Doris Dillon, a beloved teacher and community member. Doris Dillon was known for her generous spirit and passion for teaching.  She engaged students through games, and it was often said that she could “teach a rock to read.”  Teaching Stones consists of two primary elements. The first is a reading/sitting area, inspired by one of Doris’ favorite activities: story telling. The reading area provides a place to sit and share stories in the traditional manner of gathering in a circle. The decomposed granite interior of the circle extends outward to the sidewalk forming the overall shape of a keyhole, a reflection of Doris’ belief that reading is a key to learning and knowledge, which she shared through teaching.The second element is a series of nine large smooth-surfaced granite stones that are placed throughout the Liquid Amber Tree grove where the project is sited.  Each stone is inscribed with a ribbon containing words from one of the elements of language: nouns, verbs, etc. The words chosen and sandblasted into the stones were collected inspired by Doris Dillon’s life and work. In the same spirit in which Doris fostered learning through play, the stones can serve as a playful learning tool for future generations: rubbings can be done on the stones with pencil and paper, with students moving from stone to stone, gathering a noun from one, a verb from another and onward until a full sentence is collected.This commemorative artwork honors Doris Dillon’s legacy of mixing learning with pleasure in the form of a gift to the community she loved so well.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Teaching-Stones-Almaden-Commu-480",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_19af2edb1a8d21fa6fca434ba8276cf0c03908df651202bfdac2da26e486ded3"
     },
     {
       "type": "Feature",
@@ -4954,29 +4733,6 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.946445595626,
-          37.43423905
-        ]
-      },
-      "properties": {
-        "title": "The Waste Water Treatment Plant Collection*",
-        "artist": "Robert Dawson",
-        "address": "700 Los Esteros Rd",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95134",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2877%2fGreen+dot+in+foam_201406111617228876.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Robert Dawson worked for six months with the City of San Jose's Cultural Affairs Office and the Environmental Services Department. He is the City's first Photographer-in-Residence at their Wastewater Treatment Facility. Like ancient Rome our contemporary culture was made possible by a vast system of water delivery and sewage treatment to maintain a large and healthy population. Most of us are generally unaware of this system until it doesn't work. Dawson's photographs of this infrastructure depict a huge, complex but delicate machine. The entire system is estimated to be valued at $2 billion. Approximately $1 billion will be needed to repair or replace parts over the next ten years. Dawson's work is intended to bring attention to this invisible part of our local government and to help generate awareness of when government works.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-The-Waste-Water-Treatment-Pla-440",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_b851540468a6009cba6b69c02e35340603019681cc04ba2524b84ba829ab0f6e"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -121.896110527667,
           37.333632931596
         ]
@@ -5017,26 +4773,6 @@ const art = {
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
       },
       "id": "art_f70bcab94a139a1bb89e50298f4996d1d01c8a5c7fc8c78d7e086ca217b1c5b6"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": null
-      },
-      "properties": {
-        "title": "Thomas Fallon Statue*",
-        "artist": "Robert Glen",
-        "address": "W. Julian St. at W. St James St.",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2876%2ffallonstatue_201406111556505138.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "This statue of Captain Thomas Fallon was commissioned in 1988.  It memorializes the raising of the U.S. flag in San Jose in 1846, when California was still a part of Mexico.  Scheduled to be installed in 1990, the statue generated an intense controversy.  Supporters of the artwork believed that it commemorated an important historical event in San Jose's history.  Opponents of the statue responded that it represented a troubling moment in American history, when the United States used the Mexican -American War as a reason to annex California from Mexico. To address the issues arising from the controversy, the City appointed a Historic Art Advisory Committee.     The committee recommended that the City's public art must represent all perspectives of the City's history.  Four additional projects were recommended - artworks commemorating the Ohlone Way of Life, the life of Dr. Ernesto Galarza, the Founding of the Pueblo, and the Agricultural History of the Valley.  These works have been installed in various locations around the city.  This artwork is a reminder that a community's historic events can be interpreted in many ways, depending upon one's perspective.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Thomas-Fallon-Statue-496",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_05e8534c14fa8b258b19d274b0d6a35b0ddf34ccaee340d991e186bec890537b"
     },
     {
       "type": "Feature",
@@ -5202,110 +4938,23 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.881887,
-          37.324251
+          -121.88209,
+          37.32574
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "123KLAN",
-        "address": "785 S 1st Street",
+        "description": "Mural by <a href='https://instagram.com/theartofskinner' target='_blank'>Skinner</a>, and <a href='https://instagram.com/urbanaztec' target='_blank'>Jesse Hernandez</a>. Produced by Empire Seven Studios, in collaboration with <a href='https://instagram.com/mightydesign.io' target='_blank'>MightyDesign.io</a>, UnGramr, and POW! WOW! San Jose 2018. It is located on Margaret Street, behind Camino Brewery Company.<br/><br/>Image Source: Lanny Nguyen",
+        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/dbf5d26bc62c7b5cb71ceeb9ba0eb5ab/5DD37FF8/t51.2885-15/sh0.08/e35/s750x750/43985967_195540588024035_5264609171699583481_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
+        "artist": "Skinner and Jesse Hernandez",
+        "address": "718 S 1st St",
         "city": "San José",
-        "state": "CA",
-        "postalCode": "95110",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_123klan_final_Lannysphotos-1-e1550947063664.jpg",
-        "description": "123KLAN based in Montreal, Canada, is a graffiti crew founded in 1992 by the French duo Scien and Mrs. Klor. Influenced by various 90’s graffiti art expressed in Europe and New York, 123KLAN crafted a hybrid style that mixes graffiti art and graphic design, and gives rise to a new synthesis forming their motto, “When street knowledge meets technology, and graffiti art melts wit graphic design.” Their first works were enriched by huge, sharped- angled letters in acid colors and characters with futuristic manga features posed alongside experimental types. Far from confining themselves to urban walls with the aerosol, the vector allows them to land on multiple media, like record sleeves, posters, stickers, toy designs, posters, skateboards, canvas, shoes, and t-shirts.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/123klan/"
-      },
-      "id": "art_2be6296896010f7b8f25efd02d2694cac64795a3e665ced0baaefc0ff8b3900e"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.882476,
-          37.325584
-        ]
-      },
-      "properties": {
-        "title": "Untitled",
-        "artist": "Roan Victor and Sean Boyles",
-        "address": "702 S 1st Street",
-        "city": "San José",
-        "state": "CA",
+        "country": "United States",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/SeanRoan_Final.jpg",
-        "description": "Co-owning and operating The Arsenal with her husband, artist Sean Boyles, Roan Victor is utterly dedicated to her art. Sublime, ethereal paintings in oil, and lately watercolor, her work expresses—often through flowers, linens, and obscured faces—the camouflage or privacy we all seek in an increasingly changing world. “I’m a painter. I work in watercolor, oil and latex paint. Watercolors keep me in order and oil painting is a party. When I paint walls, encountering various scales, proportions and settings excite me. I revel in the different ways I can present a figure in such a large format.” Sean mostly draws and paints. His day job is teaching others to do the same whether at Mission College, CSU Monterey Bay or at The Arsenal, which Sean opened with his wife Roan Victor in 2011. The aesthetic of Sean’s work comes from watching cartoons, playing video games, painting graffiti, collecting garbage pail kids, reading comic books, watching Star Wars, kung fu, ninja, sci-fi, and giant monster movies. Sean creates his work between his heart and head; between what he knows and what he feels. Sean tries to be both detailed and gestural, clean and messy, smooth and gritty, fluid and structured, soft subtleties with loud splattery edges.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/roanvictor/"
-      },
-      "id": "art_8362bca37ed5a95cc0b5ff5840e969f5ddbc123c643fc4b2288f2a4829855340"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.884334,
-          37.328176
-        ]
-      },
-      "properties": {
-        "title": "Untitled",
-        "artist": "Knits for Life – Lorna & Jill Watt",
-        "address": "520 S 1st Street",
-        "city": "San José",
         "state": "CA",
-        "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_POWWOW_SJ_Day9_lannysphotos-102-683x1024.jpg",
-        "description": "Born and raised in San Jose, Lorna and Jill Watt, famously known as Knits For Life, draw inspiration for their art from the Gold Rush showing off their Northern California roots. Award-winning installation artists, yarnbombers, and knitting & crochet designers the self-taught sisters began their journey one winter in Michigan while Lorna was attending state. Together the two took up knitting and crocheting. 'We embrace innovation and entrepreneurship but choose to work as a small hands-on team of two.' Now residing in San Mateo at Claremont Art Studios together they pursue their dreams of bringing imagination to life with yarn.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/knitsforlife/"
+        "sourceURL": "https://www.empiresevenstudios.com"
       },
-      "id": "art_9c9a4d415891302f4cb0ef1defe546e03c508937296950635c8b8623b189417a"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.911039,
-          37.331279
-        ]
-      },
-      "properties": {
-        "title": "Untitled",
-        "artist": "Frances Marin",
-        "address": "1068 The Alameda",
-        "city": "San José",
-        "state": "CA",
-        "postalCode": "95126",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_frances_final_lannysphotos.jpg",
-        "description": "Frances Marin Lopez is a visual artist and illustrator living in San Jose. The mysterious nature of life, both real and imagined, lead her to explore everyday familiarities, dreams, memory, the subconscious, and humor in her work. These ideas are explored primarily through drawing and painting with water media. Recurring themes include escape, nature, our preoccupation with objects, and the absurdity of life. Her art has been exhibited in the US and Spain and lives in homes in the US and around the world including New Zealand, Australia, South Africa, Canada, Mexico, and throughout Europe. She has worked on illustration projects for Casper, Chromatic Coffee, Content Magazine, and Washington Square Magazine.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/francesmarin/"
-      },
-      "id": "art_08290042b8332600bf33f7626f4d62f6ad1ed6b66406bf477b4bf1d4a32cdafd"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.898013,
-          37.325866
-        ]
-      },
-      "properties": {
-        "title": "Untitled",
-        "artist": "Shrine",
-        "address": "490 W San Carlos Street",
-        "city": "San José",
-        "state": "CA",
-        "postalCode": "95110",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/shrine2_final.jpg",
-        "description": "Shrine, aka Brent Spears, is a self-taught artist who has painted over sixty interactive murals around the world, and over fifty murals in Los Angeles. He has painted numerous restaurants and retail store interiors and exteriors including La Luz De Jesus Gallery, The Soap Plant, the first five Houses of Blues and many others. Shrine also paints cars, furniture, and shoes, and creates paintings on wood-framed glass windows. He has created two large-scale temples made from trash at Burning Man, and sculptures at Coachella, Boom Festival, Symbiosis Gathering, and Bonnaroo.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/shrine/"
-      },
-      "id": "art_e87d0a17d1e685951578ac051bc9ca8a0e96fd5ba9ac1a8b3ff672c0fa01ed70"
+      "id": "art_518bfbd95bcec600c7537c9a3cf72dfab579fd389f647dd68feedbf9260a39cb"
     },
     {
       "type": "Feature",
@@ -5334,66 +4983,88 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.81094,
-          37.327346
+          -121.898013,
+          37.325866
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "Felicia Gabaldon",
-        "address": "VTA Eastridge Transit Center",
+        "artist": "Shrine",
+        "address": "490 W San Carlos Street",
         "city": "San José",
         "state": "CA",
-        "postalCode": "95122",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_felicia_lannysphotos.jpg",
-        "description": "Felicia Gabaldon’s work draws from the imagination, both a mythical and mystic part of human experience in the natural world. Her work is experienced through cultural and folkloric content, expressing the wonders of nature realized through iconic symbols and tradition.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/feliciagabaldon/"
+        "postalCode": "95110",
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/shrine2_final.jpg",
+        "description": "Shrine, aka Brent Spears, is a self-taught artist who has painted over sixty interactive murals around the world, and over fifty murals in Los Angeles. He has painted numerous restaurants and retail store interiors and exteriors including La Luz De Jesus Gallery, The Soap Plant, the first five Houses of Blues and many others. Shrine also paints cars, furniture, and shoes, and creates paintings on wood-framed glass windows. He has created two large-scale temples made from trash at Burning Man, and sculptures at Coachella, Boom Festival, Symbiosis Gathering, and Bonnaroo.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/shrine/"
       },
-      "id": "art_15a4d813cee360d3585a941308bf5baca449f940b4b3b4bd56984d1e690ad315"
+      "id": "art_e87d0a17d1e685951578ac051bc9ca8a0e96fd5ba9ac1a8b3ff672c0fa01ed70"
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.893654,
-          37.334513
+          -121.911039,
+          37.331279
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "Harumo Sato",
-        "address": "194 W Santa Clara Street",
+        "artist": "Frances Marin",
+        "address": "1068 The Alameda",
         "city": "San José",
         "state": "CA",
-        "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/Harumo_Final.jpg",
-        "description": "Harumo Sato is a California based Japanese visual artist who graduated from University at Buffalo in 2015. In questioning our busy and highly industrialized daily lives, she translates old mythological analogy and allegory imagery into the modern, colorful, and unique visual images. She has a strong interest in pattern design which has traveled through many cultures and contexts over the centuries. With the various colorful materials like screen prints, Japanese watercolor, Sumi ink, and acrylic she seeks visual pleasure and vivacious energy to open the viewer’s mind.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/harumosato/"
+        "postalCode": "95126",
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_frances_final_lannysphotos.jpg",
+        "description": "Frances Marin Lopez is a visual artist and illustrator living in San Jose. The mysterious nature of life, both real and imagined, lead her to explore everyday familiarities, dreams, memory, the subconscious, and humor in her work. These ideas are explored primarily through drawing and painting with water media. Recurring themes include escape, nature, our preoccupation with objects, and the absurdity of life. Her art has been exhibited in the US and Spain and lives in homes in the US and around the world including New Zealand, Australia, South Africa, Canada, Mexico, and throughout Europe. She has worked on illustration projects for Casper, Chromatic Coffee, Content Magazine, and Washington Square Magazine.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/francesmarin/"
       },
-      "id": "art_df87e4383d05dd71b214b5c7ff50750ec0dcd8dc869763461f7e465213ce4031"
+      "id": "art_08290042b8332600bf33f7626f4d62f6ad1ed6b66406bf477b4bf1d4a32cdafd"
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.885959,
-          37.328556
+          -121.884334,
+          37.328176
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "Sixcoin",
-        "address": "477 S Market Street",
+        "artist": "Knits for Life – Lorna & Jill Watt",
+        "address": "520 S 1st Street",
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/6coin_pwsj2_final_lannysphotos.jpg",
-        "description": "SIXCOIN is an artist based out of Seoul who was born in Korea. He has been painting on the streets since 2004. Currently working on creating an original character based on the story of a ghost in Korean folklore. Through his work, he aims to deliver positive energy and spark the imagination. Most artwork is a reflection of the artist and their stories.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/sixcoin/"
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_POWWOW_SJ_Day9_lannysphotos-102-683x1024.jpg",
+        "description": "Born and raised in San Jose, Lorna and Jill Watt, famously known as Knits For Life, draw inspiration for their art from the Gold Rush showing off their Northern California roots. Award-winning installation artists, yarnbombers, and knitting & crochet designers the self-taught sisters began their journey one winter in Michigan while Lorna was attending state. Together the two took up knitting and crocheting. 'We embrace innovation and entrepreneurship but choose to work as a small hands-on team of two.' Now residing in San Mateo at Claremont Art Studios together they pursue their dreams of bringing imagination to life with yarn.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/knitsforlife/"
       },
-      "id": "art_aceb7f0e6f0bfff981a4dc5aa5d2a8f7d7792a188726c8cd566e095c54168a12"
+      "id": "art_9c9a4d415891302f4cb0ef1defe546e03c508937296950635c8b8623b189417a"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.882476,
+          37.325584
+        ]
+      },
+      "properties": {
+        "title": "Untitled",
+        "artist": "Roan Victor and Sean Boyles",
+        "address": "702 S 1st Street",
+        "city": "San José",
+        "state": "CA",
+        "postalCode": "95113",
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/SeanRoan_Final.jpg",
+        "description": "Co-owning and operating The Arsenal with her husband, artist Sean Boyles, Roan Victor is utterly dedicated to her art. Sublime, ethereal paintings in oil, and lately watercolor, her work expresses—often through flowers, linens, and obscured faces—the camouflage or privacy we all seek in an increasingly changing world. “I’m a painter. I work in watercolor, oil and latex paint. Watercolors keep me in order and oil painting is a party. When I paint walls, encountering various scales, proportions and settings excite me. I revel in the different ways I can present a figure in such a large format.” Sean mostly draws and paints. His day job is teaching others to do the same whether at Mission College, CSU Monterey Bay or at The Arsenal, which Sean opened with his wife Roan Victor in 2011. The aesthetic of Sean’s work comes from watching cartoons, playing video games, painting graffiti, collecting garbage pail kids, reading comic books, watching Star Wars, kung fu, ninja, sci-fi, and giant monster movies. Sean creates his work between his heart and head; between what he knows and what he feels. Sean tries to be both detailed and gestural, clean and messy, smooth and gritty, fluid and structured, soft subtleties with loud splattery edges.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/roanvictor/"
+      },
+      "id": "art_8362bca37ed5a95cc0b5ff5840e969f5ddbc123c643fc4b2288f2a4829855340"
     },
     {
       "type": "Feature",
@@ -5422,22 +5093,66 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.886042,
-          37.333439
+          -121.885959,
+          37.328556
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "t.w. five",
-        "address": "108 Paseo De San Antonio",
+        "artist": "Sixcoin",
+        "address": "477 S Market Street",
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/ian_twFive2.jpg",
-        "description": "t.w. five is an international artist duo based in San Francisco, California. They work with adhesive backed vinyl focusing largely on the process. All shapes are hand-cut into strips from larger rolls of solid color vinyl and then carefully applied to the surface of the work. 'We usually create massive scale installations and integrate the gallery space with our art.'",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/twfive/"
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/6coin_pwsj2_final_lannysphotos.jpg",
+        "description": "SIXCOIN is an artist based out of Seoul who was born in Korea. He has been painting on the streets since 2004. Currently working on creating an original character based on the story of a ghost in Korean folklore. Through his work, he aims to deliver positive energy and spark the imagination. Most artwork is a reflection of the artist and their stories.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/sixcoin/"
       },
-      "id": "art_2326b2670d2dd91915104a6dcf1f2ec236ebd0f66b007718e15d5869c099a465"
+      "id": "art_aceb7f0e6f0bfff981a4dc5aa5d2a8f7d7792a188726c8cd566e095c54168a12"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.893654,
+          37.334513
+        ]
+      },
+      "properties": {
+        "title": "Untitled",
+        "artist": "Harumo Sato",
+        "address": "194 W Santa Clara Street",
+        "city": "San José",
+        "state": "CA",
+        "postalCode": "95113",
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/Harumo_Final.jpg",
+        "description": "Harumo Sato is a California based Japanese visual artist who graduated from University at Buffalo in 2015. In questioning our busy and highly industrialized daily lives, she translates old mythological analogy and allegory imagery into the modern, colorful, and unique visual images. She has a strong interest in pattern design which has traveled through many cultures and contexts over the centuries. With the various colorful materials like screen prints, Japanese watercolor, Sumi ink, and acrylic she seeks visual pleasure and vivacious energy to open the viewer’s mind.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/harumosato/"
+      },
+      "id": "art_df87e4383d05dd71b214b5c7ff50750ec0dcd8dc869763461f7e465213ce4031"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.81094,
+          37.327346
+        ]
+      },
+      "properties": {
+        "title": "Untitled",
+        "artist": "Felicia Gabaldon",
+        "address": "VTA Eastridge Transit Center",
+        "city": "San José",
+        "state": "CA",
+        "postalCode": "95122",
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_felicia_lannysphotos.jpg",
+        "description": "Felicia Gabaldon’s work draws from the imagination, both a mythical and mystic part of human experience in the natural world. Her work is experienced through cultural and folkloric content, expressing the wonders of nature realized through iconic symbols and tradition.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/feliciagabaldon/"
+      },
+      "id": "art_15a4d813cee360d3585a941308bf5baca449f940b4b3b4bd56984d1e690ad315"
     },
     {
       "type": "Feature",
@@ -5466,69 +5181,22 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.8194551,
-          37.2593775
+          -121.892926,
+          37.326789
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "Anna Valentina Murch",
-        "address": "300 Edenvale Ave",
-        "city": "San Jose",
+        "artist": "Nikkea Takagi",
+        "address": "Auzerais Avenue and Woz Way",
+        "city": "San José",
         "state": "CA",
-        "postalCode": "95136",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2883%2fedenvale0001_201406111814128639.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Anna Valentina Murch’s Garden Park is situated in Edenvale Park next to the historic Hayes Mansion. Through public meetings, Murch discovered that the community wanted an artwork that was inspired by the vast history of the site. They asked for the piece to incorporate elements of the indigenous people of the valley, the agricultural era, Frontier Village - the 1960s era amusement park located on the site, the Hayes family orchards, and the garden of Mary Hayes. They also desired an artwork that revolved around a theme of transition, both physically and symbolically, to represent the transformation of the park through the master plan and the restoration of wildlife. Lastly, they hoped that Murch’s artwork would be a place of contemplation and peace. Murch’s artwork features a stone circle in the middle of the garden covered in round holes, reminiscent of Native American pounding holes, which function as waterholes for wildlife. To the north of the stone circle is an oak grove, which also references indigenous people who were dependent upon acorns as a staple of their diet. Ornamental cherry trees are planted to the west and east of the circle in remembrance of the Hayes’s orchard and the valley’s agricultural past. A bridge leads away from the circle towards the mansion over a moat of wildflowers in honor of Frontier Village. Lavender is found on the far edge of the oak grove, creating a rich scent nostalgic of Mary Hayes’ healing garden. This peaceful artwork provides an area for quiet meditation on the transition of the seasons and the transformation of the park’s historic value. Students from neighboring elementary, middle and high schools participated in the creation of the artwork and, in the past, used it as a touchstone for a curriculum about the community.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Edenvale-Garden-Park-502",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
+        "postalCode": "95110",
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/Nikkea_final3.jpg",
+        "description": "Nikkea Takagi, a biracial Japanese artist, raised in San Jose, explores the process of personal healing within her brightly colored paintings. Most of her work depicts familiar characters submerged in their own tiny eco-systems, surrounded by teapots, plants, and lanterns. Nikkea’s work is deeply rooted in the process of self-discovery and healing. To Nikkea, art is a practice of self-care and is deeply personal. “My art is constantly changing and evolving, as am I. This work does not exclusively represent me, but it is a reflection of my ever-expanding experience.” Nikkea values that we all relate to imagery uniquely according to our individual narratives. Through the use of playful colors, body-positivity, and small tokens of comfort, she hopes to invoke a sense of empowerment and empathy to all of those who view her work. Nikkea Takagi is a budding artist in the Bay Area. Her goal is to more vulnerable present her own experiences as a personal act of energy clearing and as an offering to anyone in need of some compassion or connection.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/nikkeatakagi/"
       },
-      "id": "art_06b4cdbac9874e13b262477ae05f9e2fc21cd7eceaa6084ce396281fef56d68f"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.854239101028,
-          37.3526997
-        ]
-      },
-      "properties": {
-        "title": "Untitled",
-        "artist": "Anne Chamberlain and Victor Maria Zaballa",
-        "address": "1700 Alum Rock Ave",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95116",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2886%2ffence+and+mosaic+2_201406111825370689.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "The main theme of the artwork is Cemanahuac: the location of the individual within his/her community as well as within the cosmos. According to Mesoamerican indigenous cultures and oral traditions, each of the four cardinal directions (north, south, east, and west) corresponds to an element, a community memory of value, a time of day, and a color of corn  a fundamental agricultural symbol:    East is fire, family, sunrise, and red corn  West is wind, local heroes, sunset, and yellow corn  South is earth, work, noon, and blue corn  North is water, history, night, and white corn.  These symbols honor the Mexican community in various forms throughout the plaza: Four patterned metal grilles in the windows of the tower introduce traditional ironwork with pre-Columbian designs.  Metal work is continued in each of the gates into the plaza.  Mosaic thresholds inside the gates explore the theme of location and direction. The thresholds were inspired by mosaics commonly seen in Mexican colonial cities such as Taxco, Puebla and Tlaxcala and mosaic work in San Jose.    The garden alcoves are offering places linked by thematic press tiles to the cardinal directions and dedicated to a community value. The tiles were created by community members during a series of public workshops. The photographic tiles were translated from family albums and personal collections contributed by the local community.    A recurring image of the hummingbird, derived from Mesoamerican motifs, can be seen at the water fountain and on two accent walls at the south and east entrances. The hummingbird, an ancient Mesoamerican talisman, is a symbol of love and the warrior spirit. It is common in San Jose, a tiny but tenacious bird that migrates thousands of miles from Mexico to California every year and plays a role in shaping the landscape by pollinating the plants from which it drinks nectar. The hummingbird motif is intended to speak to the spirit of immigrant citizens, their endurance, strength, tenacity, and their contributions to the culture and nature of California. The choices of planting materials in the garden were selected to attract hummingbirds.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Mexican-Heritage-Sch-428",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_4eb254568151364788353ed0698ed44861da382f0914aafc71c113591504d56d"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.8612014,
-          37.3500441
-        ]
-      },
-      "properties": {
-        "title": "Untitled",
-        "artist": "Roberto Delgado",
-        "address": "2949 Alum Rock Avenue",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2885%2fIMG_0023_201406111821409066.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "A\r\nlarge exterior tile mural contains multiple layers of imagery from fire\r\nfighting. The images, culled from historic photographs of\r\nfirefighters at work, have a visual complexity that reveals itself over\r\ntime.  On\r\nthe station's interior there is a mural on canvas in the glass enclosed\r\nfire pole tower. Lit from within, the artwork provides a night presence\r\nto the building and a dramatic backdrop when the firefighters descend\r\nthe fire pole. This mural also combines images from of fire fighters in\r\naction.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Fire-Station-2-437",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_b331630b37d30fb4cfa4a8abe9df0baba964af63a5f6c089a06159cb943e977d"
+      "id": "art_1451f6a0f7ddf01bcc4ebea7ef1789a270551c399f842b00f66a9d9ba60faf24"
     },
     {
       "type": "Feature",
@@ -5557,29 +5225,6 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.88209,
-          37.32574
-        ]
-      },
-      "properties": {
-        "title": "Untitled",
-        "description": "Mural by <a href='https://instagram.com/theartofskinner' target='_blank'>Skinner</a>, and <a href='https://instagram.com/urbanaztec' target='_blank'>Jesse Hernandez</a>. Produced by Empire Seven Studios, in collaboration with <a href='https://instagram.com/mightydesign.io' target='_blank'>MightyDesign.io</a>, UnGramr, and POW! WOW! San Jose 2018. It is located on Margaret Street, behind Camino Brewery Company.<br/><br/>Image Source: Lanny Nguyen",
-        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/dbf5d26bc62c7b5cb71ceeb9ba0eb5ab/5DD37FF8/t51.2885-15/sh0.08/e35/s750x750/43985967_195540588024035_5264609171699583481_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
-        "artist": "Skinner and Jesse Hernandez",
-        "address": "718 S 1st St",
-        "city": "San José",
-        "country": "United States",
-        "postalCode": "95113",
-        "state": "CA",
-        "sourceURL": "https://www.empiresevenstudios.com"
-      },
-      "id": "art_518bfbd95bcec600c7537c9a3cf72dfab579fd389f647dd68feedbf9260a39cb"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -121.891167,
           37.336592
         ]
@@ -5602,42 +5247,44 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.892926,
-          37.326789
+          -121.881887,
+          37.324251
         ]
       },
       "properties": {
         "title": "Untitled",
-        "artist": "Nikkea Takagi",
-        "address": "Auzerais Avenue and Woz Way",
+        "artist": "123KLAN",
+        "address": "785 S 1st Street",
         "city": "San José",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/Nikkea_final3.jpg",
-        "description": "Nikkea Takagi, a biracial Japanese artist, raised in San Jose, explores the process of personal healing within her brightly colored paintings. Most of her work depicts familiar characters submerged in their own tiny eco-systems, surrounded by teapots, plants, and lanterns. Nikkea’s work is deeply rooted in the process of self-discovery and healing. To Nikkea, art is a practice of self-care and is deeply personal. “My art is constantly changing and evolving, as am I. This work does not exclusively represent me, but it is a reflection of my ever-expanding experience.” Nikkea values that we all relate to imagery uniquely according to our individual narratives. Through the use of playful colors, body-positivity, and small tokens of comfort, she hopes to invoke a sense of empowerment and empathy to all of those who view her work. Nikkea Takagi is a budding artist in the Bay Area. Her goal is to more vulnerable present her own experiences as a personal act of energy clearing and as an offering to anyone in need of some compassion or connection.",
-        "sourceURL": "https://www.powwowsanjose.com/2018-artists/nikkeatakagi/"
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_123klan_final_Lannysphotos-1-e1550947063664.jpg",
+        "description": "123KLAN based in Montreal, Canada, is a graffiti crew founded in 1992 by the French duo Scien and Mrs. Klor. Influenced by various 90’s graffiti art expressed in Europe and New York, 123KLAN crafted a hybrid style that mixes graffiti art and graphic design, and gives rise to a new synthesis forming their motto, “When street knowledge meets technology, and graffiti art melts wit graphic design.” Their first works were enriched by huge, sharped- angled letters in acid colors and characters with futuristic manga features posed alongside experimental types. Far from confining themselves to urban walls with the aerosol, the vector allows them to land on multiple media, like record sleeves, posters, stickers, toy designs, posters, skateboards, canvas, shoes, and t-shirts.",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/123klan/"
       },
-      "id": "art_1451f6a0f7ddf01bcc4ebea7ef1789a270551c399f842b00f66a9d9ba60faf24"
+      "id": "art_2be6296896010f7b8f25efd02d2694cac64795a3e665ced0baaefc0ff8b3900e"
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": null
+        "coordinates": [
+          -121.886042,
+          37.333439
+        ]
       },
       "properties": {
-        "title": "Untitled -",
-        "artist": null,
-        "address": "1500 South Tenth Street",
-        "city": "San Jose",
+        "title": "Untitled",
+        "artist": "t.w. five",
+        "address": "108 Paseo De San Antonio",
+        "city": "San José",
         "state": "CA",
-        "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2887%2fIce+Center+5_201406111829170433.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Sharks-Ice-at-San-Jo-425",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
+        "postalCode": "95113",
+        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/ian_twFive2.jpg",
+        "description": "t.w. five is an international artist duo based in San Francisco, California. They work with adhesive backed vinyl focusing largely on the process. All shapes are hand-cut into strips from larger rolls of solid color vinyl and then carefully applied to the surface of the work. 'We usually create massive scale installations and integrate the gallery space with our art.'",
+        "sourceURL": "https://www.powwowsanjose.com/2018-artists/twfive/"
       },
-      "id": "art_e947ebfa24c7c80db59822c6ae88cc127ca14293486b2a8676248fde05e5cd9a"
+      "id": "art_2326b2670d2dd91915104a6dcf1f2ec236ebd0f66b007718e15d5869c099a465"
     },
     {
       "type": "Feature",
@@ -5694,6 +5341,96 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.93194,
+          37.32262
+        ]
+      },
+      "properties": {
+        "title": "Untitled Mural",
+        "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>, Alexander Flores and Ana Gonzalez",
+        "description": "The mural features hummingbirds, gears, chuparosa, yarn, industrialization, and dandelions. This mural is located behind Time Deli near Bascom and San Carlos St. <br/> Source: Franciso Ramirez.",
+        "address": "349 S Bascom Ave",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95128",
+        "state": "CA",
+        "sourceURL": "https://www.instagram.com/fco1980/"
+      },
+      "id": "art_91715d33dfd95a42d01ca24d2f9bc3655216fb8d1136dbcd68372830efe6922e"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.90828,
+          37.32002
+        ]
+      },
+      "properties": {
+        "title": "Untitled Mural",
+        "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
+        "description": "This mural is located at Good Karma Bikes. Source: Franciso Ramirez, https://www.instagram.com/fco1980/.",
+        "website": "https://www.instagram.com/fco1980/",
+        "address": "460 Lincoln Ave #25",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95126",
+        "state": "CA",
+        "sourceURL": "https://www.instagram.com/fco1980/"
+      },
+      "id": "art_1a3dab009dd184e28039ecb3a031a8d741fe21d8961dedffc3adc71d21b1c1aa"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.90051,
+          37.32971
+        ]
+      },
+      "properties": {
+        "title": "Untitled Mural",
+        "description": "This mural was painted by <a href='http://www.jetromartinez.com/' target='_blank'>Jet Martinez</a> and exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. It is located on the exterior wall of Poor House Bistro, on the side facing Montgomery Street. <br/> Source: POW! WOW! San José, 2017 Mural & Event Locations https://www.powwowsanjose.com/2017-locations/",
+        "website": "http://www.jetromartinez.com/",
+        "artist": "<a href='http://www.jetromartinez.com/' target='_blank'>Jet Martinez</a>",
+        "address": "87 S Autumn St",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95110",
+        "state": "CA",
+        "sourceURL": "https://www.powwowsanjose.com/"
+      },
+      "id": "art_3d157e141f819d07e3a04d92dcc9c10e1147d67598accb1308b93b0f16bd9150"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.89389,
+          37.33281
+        ]
+      },
+      "properties": {
+        "title": "Untitled Mural",
+        "description": "This mural was painted by pro_gress ural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. <br/> Source: POW! WOW! San José, 2017 Mural & Event Locations https://www.powwowsanjose.com/2017-locations/",
+        "artist": "pro_gress",
+        "address": "44 S Almaden Blvd",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95113",
+        "state": "CA",
+        "sourceURL": "https://www.powwowsanjose.com/"
+      },
+      "id": "art_e9e7b4c7123f1a2b548fe212f718a9f267c2273629d3ebeffe8fe8003c29dc99"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.90028,
           37.32966
         ]
@@ -5711,6 +5448,72 @@ const art = {
         "sourceURL": "https://www.powwowsanjose.com/"
       },
       "id": "art_c34b28c09e30fe5ef79716267ac83f9170cb5e502fd01f982fd650b2f871cddc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.88453,
+          37.32851
+        ]
+      },
+      "properties": {
+        "title": "Untitled Mural",
+        "description": "This mural was painted by <a href='https://www.instagram.com/aarondelacruz/' target='_blank'>Aaron De La Cruz</a>; it is located on the exterior wall of <a href='http://maclaarte.org/' target='_blank'>MACLA.</a> <br/> Source: Lakey, Cherri. “Find Beauty in the Streets of San Jose This Summer.” KQED, KQED, 5 July 2016, http://www.kqed.org/arts/11741855/find-beauty-in-the-streets-of-san-jose-this-summer",
+        "artist": "<a href='https://www.instagram.com/aarondelacruz/' target='_blank'>Aaron De La Cruz</a>",
+        "address": "510 S 1st St.",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95113",
+        "state": "CA",
+        "sourceURL": "http://www.kqed.org/arts/11741855/find-beauty-in-the-streets-of-san-jose-this-summer"
+      },
+      "id": "art_22bf7da14da1de50335ae7225913dcc9a8ca24e2eccefececd09765ace43c552"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.91176,
+          37.33177
+        ]
+      },
+      "properties": {
+        "title": "Untitled Mural",
+        "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a> and Rick Aswell",
+        "description": "This mural of the fruits and Southern Pacific Railroad train car is located on the exterior of Crema Coffee Roasting, near its parking lot, on  The Alameda in San José.",
+        "address": "1202 The Alameda",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95126",
+        "state": "CA",
+        "sourceURL": "https://www.instagram.com/fco1980/"
+      },
+      "id": "art_b3e1eb1329c40fef0b281a125b116dcfc9243c6f5ba39185cfca421646a0f471"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.89095,
+          37.33652
+        ]
+      },
+      "properties": {
+        "title": "Untitled Mural",
+        "description": "Mural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. <br/> Source: POW!WOW! San José, https://www.powwowsanjose.com/2017-locations/",
+        "artist": "Ricky Watts",
+        "address": "45 N 1st Street",
+        "city": "San José",
+        "country": "United States",
+        "postalCode": "95113",
+        "state": "CA",
+        "sourceURL": "https://www.powwowsanjose.com/"
+      },
+      "id": "art_8b0cd592d12deb8f527644ae515ae841f37ba131c03695c683e6daf9dc6a31be"
     },
     {
       "type": "Feature",
@@ -5735,51 +5538,6 @@ const art = {
         "sourceURL": "https://www.empiresevenstudios.com"
       },
       "id": "art_a860f8f10df231dbbd8a36a681cc5d7d63c2082f141bb4cd2e8baacb179b2341"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.88584,
-          37.33021
-        ]
-      },
-      "properties": {
-        "title": "Untitled Mural",
-        "artist": "<a href='http://poesiatranscend.com/' target='_blank'>Poesia</a>",
-        "website": "http://poesiatranscend.com/",
-        "description": "There are three murals side-by-side on the exterior wall of The Studio Gym, on the San Salvador St side of the building. The mural on the left side is by <a href='http://poesiatranscend.com/' target='_blank'>Poesia</a>. The murals were supported by <a href='http://www.phantomgalleries.com/' target='_blank'>Phantom Galleries</a>  and the SubZERO Festival. <br/> Source: Lakey, Cherri. “Find Beauty in the Streets of San Jose This Summer.” KQED, KQED, 5 July 2016, http://www.kqed.org/arts/11741855/find-beauty-in-the-streets-of-san-jose-this-summer.",
-        "address": "396 S 1st St.",
-        "city": "San José",
-        "country": "United States",
-        "postalCode": "95113",
-        "state": "CA",
-        "sourceURL": "http://www.kqed.org/arts/11741855/find-beauty-in-the-streets-of-san-jose-this-summer"
-      },
-      "id": "art_9f185324789fdcc5d909e97c6cae695b55270fc3527e6a4ff5402720f429e851"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.93194,
-          37.32262
-        ]
-      },
-      "properties": {
-        "title": "Untitled Mural",
-        "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>, Alexander Flores and Ana Gonzalez",
-        "description": "The mural features hummingbirds, gears, chuparosa, yarn, industrialization, and dandelions. This mural is located behind Time Deli near Bascom and San Carlos St. <br/> Source: Franciso Ramirez.",
-        "address": "349 S Bascom Ave",
-        "city": "San José",
-        "country": "United States",
-        "postalCode": "95128",
-        "state": "CA",
-        "sourceURL": "https://www.instagram.com/fco1980/"
-      },
-      "id": "art_91715d33dfd95a42d01ca24d2f9bc3655216fb8d1136dbcd68372830efe6922e"
     },
     {
       "type": "Feature",
@@ -5830,112 +5588,23 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.89389,
-          37.33281
+          -121.88584,
+          37.33021
         ]
       },
       "properties": {
         "title": "Untitled Mural",
-        "description": "This mural was painted by pro_gress ural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. <br/> Source: POW! WOW! San José, 2017 Mural & Event Locations https://www.powwowsanjose.com/2017-locations/",
-        "artist": "pro_gress",
-        "address": "44 S Almaden Blvd",
-        "city": "San José",
-        "country": "United States",
-        "postalCode": "95113",
-        "state": "CA",
-        "sourceURL": "https://www.powwowsanjose.com/"
-      },
-      "id": "art_e9e7b4c7123f1a2b548fe212f718a9f267c2273629d3ebeffe8fe8003c29dc99"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.90828,
-          37.32002
-        ]
-      },
-      "properties": {
-        "title": "Untitled Mural",
-        "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a>",
-        "description": "This mural is located at Good Karma Bikes. Source: Franciso Ramirez, https://www.instagram.com/fco1980/.",
-        "website": "https://www.instagram.com/fco1980/",
-        "address": "460 Lincoln Ave #25",
-        "city": "San José",
-        "country": "United States",
-        "postalCode": "95126",
-        "state": "CA",
-        "sourceURL": "https://www.instagram.com/fco1980/"
-      },
-      "id": "art_1a3dab009dd184e28039ecb3a031a8d741fe21d8961dedffc3adc71d21b1c1aa"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.91176,
-          37.33177
-        ]
-      },
-      "properties": {
-        "title": "Untitled Mural",
-        "artist": "<a href='https://www.instagram.com/fco1980/' target='_blank'>Francisco Ramirez</a> and Rick Aswell",
-        "description": "This mural of the fruits and Southern Pacific Railroad train car is located on the exterior of Crema Coffee Roasting, near its parking lot, on  The Alameda in San José.",
-        "address": "1202 The Alameda",
-        "city": "San José",
-        "country": "United States",
-        "postalCode": "95126",
-        "state": "CA",
-        "sourceURL": "https://www.instagram.com/fco1980/"
-      },
-      "id": "art_b3e1eb1329c40fef0b281a125b116dcfc9243c6f5ba39185cfca421646a0f471"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.90051,
-          37.32971
-        ]
-      },
-      "properties": {
-        "title": "Untitled Mural",
-        "description": "This mural was painted by <a href='http://www.jetromartinez.com/' target='_blank'>Jet Martinez</a> and exhibited at 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. It is located on the exterior wall of Poor House Bistro, on the side facing Montgomery Street. <br/> Source: POW! WOW! San José, 2017 Mural & Event Locations https://www.powwowsanjose.com/2017-locations/",
-        "website": "http://www.jetromartinez.com/",
-        "artist": "<a href='http://www.jetromartinez.com/' target='_blank'>Jet Martinez</a>",
-        "address": "87 S Autumn St",
-        "city": "San José",
-        "country": "United States",
-        "postalCode": "95110",
-        "state": "CA",
-        "sourceURL": "https://www.powwowsanjose.com/"
-      },
-      "id": "art_3d157e141f819d07e3a04d92dcc9c10e1147d67598accb1308b93b0f16bd9150"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.88453,
-          37.32851
-        ]
-      },
-      "properties": {
-        "title": "Untitled Mural",
-        "description": "This mural was painted by <a href='https://www.instagram.com/aarondelacruz/' target='_blank'>Aaron De La Cruz</a>; it is located on the exterior wall of <a href='http://maclaarte.org/' target='_blank'>MACLA.</a> <br/> Source: Lakey, Cherri. “Find Beauty in the Streets of San Jose This Summer.” KQED, KQED, 5 July 2016, http://www.kqed.org/arts/11741855/find-beauty-in-the-streets-of-san-jose-this-summer",
-        "artist": "<a href='https://www.instagram.com/aarondelacruz/' target='_blank'>Aaron De La Cruz</a>",
-        "address": "510 S 1st St.",
+        "artist": "<a href='http://poesiatranscend.com/' target='_blank'>Poesia</a>",
+        "website": "http://poesiatranscend.com/",
+        "description": "There are three murals side-by-side on the exterior wall of The Studio Gym, on the San Salvador St side of the building. The mural on the left side is by <a href='http://poesiatranscend.com/' target='_blank'>Poesia</a>. The murals were supported by <a href='http://www.phantomgalleries.com/' target='_blank'>Phantom Galleries</a>  and the SubZERO Festival. <br/> Source: Lakey, Cherri. “Find Beauty in the Streets of San Jose This Summer.” KQED, KQED, 5 July 2016, http://www.kqed.org/arts/11741855/find-beauty-in-the-streets-of-san-jose-this-summer.",
+        "address": "396 S 1st St.",
         "city": "San José",
         "country": "United States",
         "postalCode": "95113",
         "state": "CA",
         "sourceURL": "http://www.kqed.org/arts/11741855/find-beauty-in-the-streets-of-san-jose-this-summer"
       },
-      "id": "art_22bf7da14da1de50335ae7225913dcc9a8ca24e2eccefececd09765ace43c552"
+      "id": "art_9f185324789fdcc5d909e97c6cae695b55270fc3527e6a4ff5402720f429e851"
     },
     {
       "type": "Feature",
@@ -5961,28 +5630,6 @@ const art = {
         "sourceURL": "https://www.exhibitiondistrict.com/"
       },
       "id": "art_a38f353992e9a17c98996a40be4bcd8f80460dc970e919edf8791ccba1dc5b07"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.89095,
-          37.33652
-        ]
-      },
-      "properties": {
-        "title": "Untitled Mural",
-        "description": "Mural exhibited at the 2017 <a href='https://www.powwowsanjose.com/' target='_blank'>POW! WOW! San José</a> in collaboration with <a href='https://www.empiresevenstudios.com' target='_blank'>Empire Seven Studios</a>. <br/> Source: POW!WOW! San José, https://www.powwowsanjose.com/2017-locations/",
-        "artist": "Ricky Watts",
-        "address": "45 N 1st Street",
-        "city": "San José",
-        "country": "United States",
-        "postalCode": "95113",
-        "state": "CA",
-        "sourceURL": "https://www.powwowsanjose.com/"
-      },
-      "id": "art_8b0cd592d12deb8f527644ae515ae841f37ba131c03695c683e6daf9dc6a31be"
     },
     {
       "type": "Feature",
@@ -6243,29 +5890,6 @@ const art = {
       },
       "properties": {
         "title": "Veterans Memorial of San José ~ Santa Clara Valley",
-        "artist": null,
-        "address": "350 Park Avenue",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2890%2fCRW_1374_201406111837464157.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "Located on Park Avenue at the Guadalupe River, the Veterans Memorial is an enduring tribute to the men and women who have served our country in peacetime and in times of war. The artwork is comprised of 76 white flags on stainless steel poles in formation beyond a wall of glass imprinted with photos of local soldiers and communications sent back home during times of service; the threshold in front of the glass is inlaid with military insignias.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Veterans-Memorial-of-San-Jos--417",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_275b7a0d54dba272ca8c965b981d6468279f4dfd4cea8197ab72cc591face5cf"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.895537862069,
-          37.3292420517241
-        ]
-      },
-      "properties": {
-        "title": "Veterans Memorial of San José ~ Santa Clara Valley",
         "artist": "Manhattan Projects",
         "address": "350 Park Avenue",
         "city": "San Jose",
@@ -6350,29 +5974,6 @@ const art = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9149771,
-          37.3571484
-        ]
-      },
-      "properties": {
-        "title": "Wall of Recognition",
-        "artist": null,
-        "address": "1701 Airport Blvd.",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2891%2fminetacompfin_201406111912324378.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "This illustrated wall installation recognizes three prime-movers behind San Jose’s airport: Ernie Renzel, James Nissen and Norman Y. Mineta.",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wall-of-Recognition-Norman-Y--411",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_569387594164647f8ae1582309dc30dd2c220cdc1c14cd799b5bbcdeee0b2af9"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -121.9139669,
           37.3522017
         ]
@@ -6413,29 +6014,6 @@ const art = {
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
       },
       "id": "art_b837b6d93031acf38df37560c3d787281e78bec85064314529c48cf01de35172"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -119.039050370715,
-          35.4212433534728
-        ]
-      },
-      "properties": {
-        "title": "Wave Matter Tessellation",
-        "artist": "Gregory Kucera Integrated within  columns located at the south end of the Concourse, are pixelated panels composed of thousands of holes, interpreting various waves – ripples in a pond, electromagnetic, radio, sound, radar, and gravitational.  District3  Report a concern 1-408-793-55101-408-793-5510 or email a concern",
-        "address": "1701 Airport Drive",
-        "city": "San Jose",
-        "state": "CA",
-        "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2487%2fWave+Matter_1_photo+by+Kucera_201401301702281764.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
-        "description": "-408-793-5510 or email a concern  \r\n\t.telerik-reTable-1\r\n\t{\r\n\t\tborder-width: 0px;\r\n\t\tborder-style: none;\r\n\t\tborder-collapse: collapse;\r\n\t\tfont-family: Tahoma;\r\n\t}\r\n\t.telerik-reTable-1 tr.telerik-reTableHeaderRow-1\r\n\t{\r\n\t\tmargin: 10px;\r\n\t\tpadding: 10px;\r\n\t\tcolor: #3F4D6B;\r\n\t\tbackground: #D6E8FF;\r\n\t\ttext-align: center;\r\n\t\tfont-style: normal;\r\n\t\ttext-transform: capitalize;\r\n\t\tfont-weight: bold;\r\n\t\tborder-spacing: 10px;\r\n\t\tline-height: 14pt;\r\n\t\tvertical-align: top;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableHeaderFirstCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t\tcolor: #3a4663;\r\n\t\tline-height: 14pt;\r\n\t\tfont-weight: bold;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableHeaderLastCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t\tcolor: #3a4663;\r\n\t\tline-height: 14pt;\r\n\t\tfont-weight: bold;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableHeaderOddCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t\tcolor: #3a4663;\r\n\t\tline-height: 14pt;\r\n\t\tfont-weight: bold;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableHeaderEvenCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t\tcolor: #3a4663;\r\n\t\tline-height: 14pt;\r\n\t\tfont-weight: bold;\r\n\t}\r\n\t.telerik-reTable-1 tr.telerik-reTableOddRow-1\r\n\t{\r\n\t\tcolor: #666666;\r\n\t\tbackground-color: #F2F3F4;\r\n\t\tfont-size: 10pt;\r\n\t\tvertical-align: top;\r\n\t}\r\n\t.telerik-reTable-1 tr.telerik-reTableEvenRow-1\r\n\t{\r\n\t\tcolor: #666666;\r\n\t\tbackground-color: #E7EBF7;\r\n\t\tfont-size: 10pt;\r\n\t\tvertical-align: top;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableFirstCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableLastCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableOddCol-1\r\n\t{\r\n\t\t/*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableEvenCol-1\r\n\t{\r\n\t\t/*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t}\r\n\t.telerik-reTable-1 tr.telerik-reTableFooterRow-1\r\n\t{\r\n\t\tbackground-color: #D6E8FF;\r\n\t\tcolor: #4A5A80;\r\n\t\tfont-weight: 500;\r\n\t\tfont-size: 10pt;\r\n\t\tfont-family: Tahoma;\r\n\t\tline-height: 11pt;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableFooterFirstCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t\tborder-top: solid gray 1.0pt;\r\n\t\ttext-align: left;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableFooterLastCol-1\r\n\t{\r\n\t\t/*padding:5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t\tborder-top: solid gray 1.0pt;\r\n\t\ttext-align: left;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableFooterOddCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t\ttext-align: left;\r\n\t\tborder-top: solid gray 1.0pt;\r\n\t}\r\n\t.telerik-reTable-1 td.telerik-reTableFooterEvenCol-1\r\n\t{\r\n\t\t/*padding: 5.4pt 5.4pt 5.4pt 5.4pt;*/\r\n\t\ttext-align: left;\r\n\t\tborder-top: solid gray 1.0pt;\r\n\t}\r\nCallSend SMSAdd to SkypeYou'll need Skype CreditFree via Skype",
-        "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wave-Matter-Tessellation-Norm-410",
-        "sourceOfInformation": "https://sanjoseca.gov/Facilities"
-      },
-      "id": "art_e58d5cd7fbdc4af166f34c0f2a697a88f86e404ef99bec5ca9628f3d5b9da8ac"
     },
     {
       "type": "Feature",
