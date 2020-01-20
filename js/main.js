@@ -137,11 +137,29 @@
             
             ` 
           +
-          "<br/><br/> Source: " +
-          currentFeature.properties.sourceURL +
-          "</p>"
+          "<br/><br/>" +
+          "<a href='" + currentFeature.properties.sourceURL + "'>Source</a>"
       )
       .addTo(map);
+      
+      let toggleDescription = document.getElementById('toggleDescription');
+      toggleDescription.onclick = function() { 
+        let offset = document.getElementsByClassName('mapboxgl-popup')[0].clientHeight/2*-1;
+        if( this.checked) {
+          console.log();
+          map.flyTo({
+            center: currentFeature.geometry.coordinates,
+            offset: [0, offset],
+            zoom: 15
+          });
+        } else {
+          map.flyTo({
+            center: currentFeature.geometry.coordinates,
+            zoom: 15
+          });
+        }
+      }
+      
   }
 
   function buildLocationList(data) {
@@ -195,8 +213,6 @@
     displayArtist(listing, prop);
     displayAddress(listing, prop);
 
-    // TODO: Pagination so we don't overload external servers
-    // TODO: Scrapper needs to be updated due to changes to the San Jose government's website.
     if (prop.image) { 
       var artImage = listing.appendChild(document.createElement("div"));
       artImage.style.display = "none";
@@ -312,7 +328,7 @@ function selectListing(node) {
   for(let i = 0; i < hiddenProps.length; i++) {
     hiddenProps[i].style.display = "block";
   }
-  console.log(node.getElementsByClassName("thumbnails"));
+  
   if(node.getElementsByClassName("thumbnails").length > 0) {
     node.getElementsByClassName("thumbnails")[0].style.display = "none";
   }
