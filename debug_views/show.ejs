@@ -4,65 +4,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Document</title>
 
-   <!-- Include style CSS and JavaScript -->
-   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Include the Mapbox GL JS library -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Include style CSS and JavaScript -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
   <% 
-    var {title, artist, description} = artwork.properties
+    var 
+      {
+        title, 
+        artist, 
+        description,
+        address,
+        city, 
+        state,
+        postalCode,
+        image,
+        sourceURL,
+        sourceOfInformation,
+      } = artwork.properties;
+    var latitude, longitude;
+    if (artwork.geometry.coordinates) {
+      var [latitude, longitude] = artwork.geometry.coordinates;
+    }
+    
   %>
-  
-    
-    
-        
-        <!-- <div class="form-group">
-          
-          <label for="Title">Title</label>
-          <br>
-          <input type="text" class="form-control poi-edit-input" id="Title" value="<%-title%>">
-        </div>
-        <div class="form-group">
-          <label for="Artist">Artist</label>
-          <br>
-          <input type="text" class="form-control poi-edit-input" id="Artist" value="<%-artist%>">
-        </div>
-        
-      </div>
-      <div class="col">
-        <h2>Dummy</h2>
-      </div> -->
    
   <div class="container">
     <h2>Edit POI</h2>
     <div class="row">
-      <form class="col-md-6">  
-        <div class="form-group">
+      <form class="poi-details-form col-md-6">
+        <h3>POI details</h3>
+        <div class="poi-coordinates alert" style="background-color: <%= (latitude&&longitude) ? "lightgreen" : "lightcoral"%>;">
+          <div>
+            <span>
+              <label for="Latitude">Latitude</label>
+              <span id="Latitude">
+                <%- latitude ? latitude : "N/A"%>
+              </span>
+              
+            </span>
+            <span>
+              <label for="Longitude">Longitude</label>
+              <span id="Longitude">
+                <%- longitude ? longitude : "N/A"%>
+              </span>
+            </span>
+          </div>
+          <button>
+            Generate Coordinates from Address
+          </button>
+        </div>  
+        <div>
           <label for="Title">Title</label>
           <br>
           <input type="text" class="form-control poi-edit-input" id="Title" value="<%-title%>">
         </div>
-        <div class="form-group">
+        <div>
           <label for="Artist">Artist</label>
           <br>
           <input type="text" class="form-control poi-edit-input" id="Artist" value="<%-artist%>">
         </div>
-        <div class="form-group">
+        <div>
+          <label for="Address">Address</label>
+          <br>
+          <input type="text" class="form-control poi-edit-input" id="Address" value="<%-address%>">
+        </div>
+        <div>
+          <label for="City">City</label>
+          <br>
+          <input type="text" class="form-control poi-edit-input" id="City" value="<%-city%>">
+        </div>
+        <div class="state-postal-code" style="display:inline-block; width: 100%">
+          <span>
+            <label for="State">State</label>
+            <input type="text" class="poi-edit-input" id="State" value="<%-state%>">
+          </span>
+          <span>
+            <label for="Postal Code">Postal Code</label>
+            <input type="text" class="poi-edit-input" id="Postal-Code" value="<%-postalCode%>">
+          </span>
+        </div>
+        <div>
+          <label for="Image URL">Image URL</label>
+          <br>
+          <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="Image-URL" value="<%-image%>">
+        </div>
+        <div>
+          <label for="Source URL">Source URL</label>
+          <br>
+          <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="Source-URL" value="<%-sourceURL%>">
+        </div>
+        
+        <div>
           <label for="Description">Description</label>
           <br>
-          <textarea class="w-100" id="Description"></textarea>
+          <textarea 
+            class="w-100" 
+            id="Description"
+            style="max-width: 100%; width: 100%; height: 200px;"
+          >
+            <%= description%>
+          </textarea>
         </div>
+        
       </form>
       <div class="col-md-6"> 
-          <h3>MAP</h3>
+          <h3>POI Mapping</h3>
+          <div>
+            <span>
+              Latitude: <%- latitude ? latitude : "N/A"%>
+            </span>
+            <span> + </span>
+            <span>
+              Longitude: <%- longitude ? longitude : "N/A"%>
+            </span>
+          </div>
+          <div id='map' class='map' style="width: 100%; height: 80vh;">
+          </div>
       </div>
     </div>
   </div>
+  <script>
+    var title = document.getElementById("Title").value;
+    var latitude = document.getElementById("Latitude").innerText;
+    var longitude = document.getElementById("Longitude").innerText;
+
+    mapboxgl.accessToken = "pk.eyJ1IjoieWNob3kiLCJhIjoiY2pmOTYwdzZ5MG52dDJ3b2JycXY4ZDU5ciJ9.m9H_Mqu1b42AObg_u_tjpA";
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/light-v9",
+      center: [-121.893028, 37.33548], // position in long, lat format
+      zoom: 10,
+      dragPan: true, // If true , the "drag to pan" interaction is enabled (see DragPanHandler)
+      trackResize: true, // If true, the map will automatically resize when the browser window resizes.
+      doubleClickZoom: true, //If true double click will zoom
+      keyboard: true //If true will enable keyboard shortcuts
+    });
+
+    map.on("load", function(e) {
+      if (latitude === "N/A" || longitude === "N/A") {
+        // missing coordinates
+      } else {
+        // coordinates are present
+        map.flyTo({
+          center: [latitude, longitude],
+          zoom: 15
+        });
+
+        new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: "top" })
+        .setLngLat([latitude, longitude])
+        .setHTML(
+        `<h3>${title}</h3>`
+      )
+      .addTo(map);
+      }
+    });
+  </script>
 </body>
 </html>

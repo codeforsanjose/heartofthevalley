@@ -6,6 +6,7 @@ const fs = require('fs');
 
 const PORT = 3000;
 const scrapedArtworks = require(PATH_SCRAPED_ARTWORKS);
+const checkedPOIs = require(PATH_CHECKED_POIs);
 const scrapedArtworksObj = {};
 
 scrapedArtworks.forEach(artwork => {
@@ -13,11 +14,14 @@ scrapedArtworks.forEach(artwork => {
 })
 
 app.get('/', (req, res) => 
-  res.render('../debug_views/index.ejs', {scrapedArtworks})
+  res.render('../debug_views/index.ejs', {scrapedArtworks, checkedPOIs})
 );
 
 app.get('/POI/:id', (req, res) => 
-  res.render('../debug_views/show.ejs', {artwork: scrapedArtworksObj[req.params.id]})
+  res.render('../debug_views/show.ejs', {artwork: 
+    //scrapedArtworksObj[req.params.id]
+    checkedPOIs[0]
+  })
 );
 
 

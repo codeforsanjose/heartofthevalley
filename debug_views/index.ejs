@@ -17,23 +17,43 @@
 <body>
   
   <div class="instructions-area w-100">
-    <h1>Check POIs</h1>
-    <p>Please check details of each POI / Artwork</p>
+    <h1>POIs Index</h1>
+    <p>Please check details of each POI / Artwork. Use responsibly.</p>
   </div>
-  <div class="artworks">
-    <h2>Artworks</h2>
-    <ul class="scraped-artworks">
-      <% scrapedArtworks.forEach((artwork) => { %>
-        <li>
-        <a href=<%="/POI/" + artwork.id%> >
-          <%= artwork.properties.title%>
-          
-        </a>
-        </li>
-      <% }) %>
-
-    </ul>
-
+  
+  <div class="container">
+    <h2>Edit POI</h2>
+    <div class="row">
+      <div class="col-md-6">  
+          <h4>Scraped Artworks</h4>
+          <ol class="scraped-artworks list-group">
+            <% scrapedArtworks.forEach((artwork) => { %>
+              
+              <li style="border: 1px solid gray; margin-bottom: 1px;">
+              <a href=<%="/POI/" + artwork.id%> >
+                <%= artwork.properties.title%>
+                
+              </a>
+              </li>
+            <% }) %>
+      
+          </ol>
+      </div>
+      <div class="col-md-6"> 
+          <h4>Checked POIs</h4>
+          <ol class="scraped-artworks list-group">
+            <% checkedPOIs.forEach((artwork) => { %>
+              <li style="border: 1px solid gray; margin-bottom: 1px;">
+              <a href=<%="/POI/" + artwork.id%> >
+                <%= artwork.properties.title%>
+                
+              </a>
+              </li>
+            <% }) %>
+      
+          </ol>
+      </div>
+    </div>
   </div>
 </body>
   

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-121.893028, 37.33548]
+    },
+    "properties": {
+      "title": "Sample Web of Native Botanicals",
+      "artist": "Troy Corliss",
+      "address": "101 Branham Lane",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95111",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5984/636716859993470000",
+      "description": "Entering the Library the glass and steel plant forms reveal themselves as a canopy suspended overhead and floats like a huge bouquet cascading into the upper vaulted space of the building. Four different California native plants are represented: redbud, purple needle grass, California buckwheat and black walnut. The artist hopes the artwork will generate curiosity and create an incentive to go outside and investigate the surrounding local environment that is so much a part of the City’s visual landscape.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2777/1396?npage=5",
+      "sourceOfInformation": "https://sanjoseca.gov/your-government/departments/office-of-cultural-affairs/public-art/collections"
+    },
+    "id": "art_abf93ba33c61836315fe7dbaee61afd7b24afd28592e4df101b4a5b00ddbb3f2"
+  }
+]
