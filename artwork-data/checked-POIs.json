@@ -3,7 +3,7 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-121.893028, 37.33548]
+      "coordinates": null
     },
     "properties": {
       "title": "Sample Web of Native Botanicals",

@@ -36,112 +36,128 @@
       } = artwork.properties;
     var latitude, longitude;
     if (artwork.geometry.coordinates) {
-      var [latitude, longitude] = artwork.geometry.coordinates;
+      var [longitude, latitude] = artwork.geometry.coordinates;
     }
-    
   %>
    
   <div class="container">
     <h2>Edit POI</h2>
     <div class="row">
-      <form class="poi-details-form col-md-6">
+      <div class="col-md-6">
         <h3>POI details</h3>
-        <div class="poi-coordinates alert" style="background-color: <%= (latitude&&longitude) ? "lightgreen" : "lightcoral"%>;">
-          <div>
-            <span>
-              <label for="Latitude">Latitude</label>
-              <span id="Latitude">
-                <%- latitude ? latitude : "N/A"%>
+        <button onclick="queryNominatim()">
+          Generate Coordinates from Nominatim
+        </button>
+        <form class="poi-details-form col">
+          
+          <div class="poi-coordinates alert" style="background-color: lightgrey;">
+            <div>
+              <span>
+                <label for="longitude">Longitude</label>
+                <input 
+                  disabled 
+                  type="text"  
+                  id="longitude" 
+                  value="<%-longitude%>">
+              </span>
+              <span>
+                <label for="latitude">Latitude</label>
+                <input 
+                  disabled 
+                  type="text"  
+                  id="latitude" 
+                  value="<%-latitude%>">
               </span>
               
+            </div>
+          </div>  
+          <div>
+            <label for="title">Title</label>
+            <br>
+            <input type="text" class="form-control poi-edit-input" id="title" value="<%-title%>">
+          </div>
+          <div>
+            <label for="artist">Artist</label>
+            <br>
+            <input type="text" class="form-control poi-edit-input" id="artist" value="<%-artist%>">
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <br>
+            <input type="text" class="form-control poi-edit-input" id="address" value="<%-address%>">
+          </div>
+          <div>
+            <label for="city">City</label>
+            <br>
+            <input type="text" class="form-control poi-edit-input" id="city" value="<%-city%>">
+          </div>
+          <div class="state-postal-code" style="display:inline-block; width: 100%">
+            <span>
+              <label for="state">State</label>
+              <input type="text" class="poi-edit-input" id="state" value="<%-state%>">
             </span>
             <span>
-              <label for="Longitude">Longitude</label>
-              <span id="Longitude">
-                <%- longitude ? longitude : "N/A"%>
-              </span>
+              <label for="postalCode">Postal Code</label>
+              <input type="text" class="poi-edit-input" id="postalCode" value="<%-postalCode%>">
             </span>
           </div>
-          <button>
-            Generate Coordinates from Address
-          </button>
-        </div>  
-        <div>
-          <label for="Title">Title</label>
-          <br>
-          <input type="text" class="form-control poi-edit-input" id="Title" value="<%-title%>">
-        </div>
-        <div>
-          <label for="Artist">Artist</label>
-          <br>
-          <input type="text" class="form-control poi-edit-input" id="Artist" value="<%-artist%>">
-        </div>
-        <div>
-          <label for="Address">Address</label>
-          <br>
-          <input type="text" class="form-control poi-edit-input" id="Address" value="<%-address%>">
-        </div>
-        <div>
-          <label for="City">City</label>
-          <br>
-          <input type="text" class="form-control poi-edit-input" id="City" value="<%-city%>">
-        </div>
-        <div class="state-postal-code" style="display:inline-block; width: 100%">
-          <span>
-            <label for="State">State</label>
-            <input type="text" class="poi-edit-input" id="State" value="<%-state%>">
-          </span>
-          <span>
-            <label for="Postal Code">Postal Code</label>
-            <input type="text" class="poi-edit-input" id="Postal-Code" value="<%-postalCode%>">
-          </span>
-        </div>
-        <div>
-          <label for="Image URL">Image URL</label>
-          <br>
-          <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="Image-URL" value="<%-image%>">
-        </div>
-        <div>
-          <label for="Source URL">Source URL</label>
-          <br>
-          <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="Source-URL" value="<%-sourceURL%>">
-        </div>
-        
-        <div>
-          <label for="Description">Description</label>
-          <br>
-          <textarea 
-            class="w-100" 
-            id="Description"
-            style="max-width: 100%; width: 100%; height: 200px;"
-          >
-            <%= description%>
-          </textarea>
-        </div>
-        
-      </form>
+          <div>
+            <label for="image">Image URL</label>
+            <br>
+            <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="image" value="<%-image%>">
+          </div>
+          <div>
+            <label for="sourceUrl">Source URL</label>
+            <br>
+            <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="sourceUrl" value="<%-sourceURL%>">
+          </div>
+          
+          <div>
+            <label for="description">Description</label>
+            <br>
+            <textarea 
+              class="w-100" 
+              id="description"
+              style="max-width: 100%; width: 100%; height: 200px;"
+            >
+              <%= description%>
+            </textarea>
+          </div>
+          
+        </form>
+        <button>Submit this POI</button>
+      </div>
+      
       <div class="col-md-6"> 
-          <h3>POI Mapping</h3>
           <div>
             <span>
-              Latitude: <%- latitude ? latitude : "N/A"%>
+              <h3>POI Mapping</h3>
             </span>
-            <span> + </span>
             <span>
-              Longitude: <%- longitude ? longitude : "N/A"%>
+              <button onclick="mapFlyToCurrent()">
+                Refresh Map
+              </button>
             </span>
           </div>
+          
           <div id='map' class='map' style="width: 100%; height: 80vh;">
           </div>
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="/static/debug-helper.js">
+    
+  </script>
+  <script type="text/javascript" src="/modules/axios/dist/axios.js" ></script>
   <script>
-    var title = document.getElementById("Title").value;
-    var latitude = document.getElementById("Latitude").innerText;
-    var longitude = document.getElementById("Longitude").innerText;
+    var title, artist, description, city, state, postalCode, image, sourceUrl, sourceOfInformation; 
+    var latitude, longitude;
+    var popup;
 
     mapboxgl.accessToken = "pk.eyJ1IjoieWNob3kiLCJhIjoiY2pmOTYwdzZ5MG52dDJ3b2JycXY4ZDU5ciJ9.m9H_Mqu1b42AObg_u_tjpA";
+
+    refreshVariables();
+    
     var map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/mapbox/light-v9",
@@ -154,23 +170,15 @@
     });
 
     map.on("load", function(e) {
-      if (latitude === "N/A" || longitude === "N/A") {
+      if (!latitude || !longitude) {
         // missing coordinates
+        console.log("artwork has missing coordinates")
       } else {
         // coordinates are present
-        map.flyTo({
-          center: [latitude, longitude],
-          zoom: 15
-        });
-
-        new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: "top" })
-        .setLngLat([latitude, longitude])
-        .setHTML(
-        `<h3>${title}</h3>`
-      )
-      .addTo(map);
+        mapFlyToCurrent();
       }
     });
+
   </script>
 </body>
 </html>
