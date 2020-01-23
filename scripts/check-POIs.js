@@ -49,7 +49,7 @@ app.post('/POI/:id', (req, res) => {
       submittedPOI = new Artwork({
       title,
       artist,
-      address,
+      streetAddress: address,
       city,
       state,
       postalCode,
@@ -57,9 +57,9 @@ app.post('/POI/:id', (req, res) => {
       description,
       sourceURL: sourceUrl,
       sourceOfInformation: "created",
-      coordinates: [-121.8868169997836, 37.337850953735156]
+      coordinates: [longitude, latitude]
     });
-    console.log(submittedPOI)
+    console.log(submittedPOI);
   } catch {
     res.status(400).json({message: "missing details"})
   }
