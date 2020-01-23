@@ -59,7 +59,9 @@ app.post('/POI/:id', (req, res) => {
       sourceOfInformation: "created",
       coordinates: [longitude, latitude]
     });
-    console.log(submittedPOI);
+    if (!submittedPOI.id) {submittedPOI.generateID()}
+    
+    console.log(submittedPOI.id);
   } catch {
     res.status(400).json({message: "missing details"})
   }
