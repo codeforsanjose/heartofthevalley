@@ -43,8 +43,31 @@ app.get('/POI/:id', (req, res) =>
 );
 
 app.post('/POI/:id', (req, res) => {
-  var {title, artist, address, city, state, postalCode, image, sourceURL, id, latitude, longitude} = req.body
-  res.json({title, artist, address, city, state, postalCode, image, sourceURL, id, latitude, longitude});
+  var {title, artist, address, city, state, postalCode, image, description, sourceUrl, id, latitude, longitude} = req.body
+  var submittedPOI;
+  try {
+      submittedPOI = new Artwork({
+      title,
+      artist,
+      address,
+      city,
+      state,
+      postalCode,
+      image,
+      description,
+      sourceURL: sourceUrl,
+      sourceOfInformation: "created",
+      coordinates: [-121.8868169997836, 37.337850953735156]
+    });
+    console.log(submittedPOI)
+  } catch {
+    res.status(400).json({message: "missing details"})
+  }
+
+  res.status(201).json({title, artist, address, city, state, postalCode, image, id, latitude, longitude});
+  
+  
+  
 })
 
 // serve static files
