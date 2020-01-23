@@ -4,17 +4,31 @@ const { PATH_SCRAPED_ARTWORKS, PATH_CHECKED_POIs } = require('../config/file-pat
 const Artwork = require('../lib/artwork.js');
 const fs = require('fs');
 const path = require('path');
-const { getGeolocationForArtwork } = require('../lib/geocoding-service.js');
-
+const bodyParser = require("body-parser");
 
 
 const PORT = 3000;
 const scrapedArtworks = require(PATH_SCRAPED_ARTWORKS);
 const checkedPOIs = require(PATH_CHECKED_POIs);
-const scrapedArtworksObj = {};
+
+app.use(express.json());
+
+var allArtworksObj = {};
 
 scrapedArtworks.forEach(artwork => {
-  scrapedArtworksObj[artwork.id] = artwork;
+  allArtworksObj[artwork.id] = artwork;
+});
+
+scrapedArtworks.sort((artA, artB) => {
+  if(artA.properties.title < artB.properties.title) { return -1; }
+  if(artA.properties.title > artB.properties.title) { return 1; }
+  return 0;
+});
+
+
+
+checkedPOIs.forEach(artwork => {
+  allArtworksObj[artwork.id] = artwork;
 });
 
 app.get('/', (req, res) => 
@@ -23,10 +37,15 @@ app.get('/', (req, res) =>
 
 app.get('/POI/:id', (req, res) => 
   res.render('../debug_views/show.ejs', {artwork: 
-    //scrapedArtworksObj[req.params.id]
-    checkedPOIs[0], getGeolocationForArtwork
+    allArtworksObj[req.params.id]
+    //checkedPOIs[0], getGeolocationForArtwork
   })
 );
+
+app.post('/POI/:id', (req, res) => {
+  var {title, artist, address, city, state, postalCode, image, sourceURL, id, latitude, longitude} = req.body
+  res.json({title, artist, address, city, state, postalCode, image, sourceURL, id, latitude, longitude});
+})
 
 // serve static files
 app.use('/modules', express.static(path.join(__dirname, '/../node_modules')));
