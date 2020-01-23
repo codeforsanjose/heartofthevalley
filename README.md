@@ -36,6 +36,14 @@ The following steps are involved in updating the artwork data:
 4. **Lookup addresses with [OSM/Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim)** - Run `npm run lookupAddresses`. This will use the artwork address field to attempt to get the geolocation (latitude and longitude). The output of this command will indicate if there are failures to lookup the address. If you know the location, then add an override for it in the `artworks-overrides.json` and re-run step 2, then re-run step 4.
 5. **Copy the artwork JSON data into art.js** - Finally, run `npm run moveArtToOutputDir` to copy the contents of `artwork-data/consolidated-artworks.json` into `js/art.js`, prefixing the content with `const art = `. This is the final step and is needed before the changes can be visible in the web application.
 
+#### Running the POI Manager
+1. open POI Manager
+```ssh
+npm run managePOIs
+```
+2. Go to http://localhost:3000
+
+
 #### Running the project locally
 This project is completely static, so simply open `index.html` in Chrome or Firefox.
 

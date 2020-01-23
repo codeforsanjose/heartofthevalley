@@ -1,4 +1,32 @@
+mapboxgl.accessToken = "pk.eyJ1IjoieWNob3kiLCJhIjoiY2pmOTYwdzZ5MG52dDJ3b2JycXY4ZDU5ciJ9.m9H_Mqu1b42AObg_u_tjpA";
+
+window.onload = (event) => {
+  refreshVariables();
+};
+
+var map = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox://styles/mapbox/light-v9",
+  center: [-121.893028, 37.33548], // position in long, lat format
+  zoom: 10,
+  dragPan: true, // If true , the "drag to pan" interaction is enabled (see DragPanHandler)
+  trackResize: true, // If true, the map will automatically resize when the browser window resizes.
+  doubleClickZoom: true, //If true double click will zoom
+  keyboard: true //If true will enable keyboard shortcuts
+});
+
+map.on("load", function(e) {
+  if (!latitude || !longitude) {
+    // missing coordinates
+    console.log("artwork has missing coordinates")
+  } else {
+    // coordinates are present
+    mapFlyToCurrent();
+  }
+});
+
 function queryNominatim() {
+  refreshVariables();
   var nominatimAPI = `https://nominatim.openstreetmap.org/?`;
   var query = { 
     params:{
@@ -25,27 +53,38 @@ function queryNominatim() {
 
 function submitPOI() {
   refreshVariables();
-  axios.post(`/POI/${id}`, {
-    title, artist, address, city, state, postalCode, image, sourceUrl, id, latitude, longitude
+  if (!latitude || !longitude) {
+    alert("Missing Coordinates. Cannot Submit");
+    return
+  }
+  if (!title || !artist || !description) {
+    alert("Missing Details. Cannot Submit")
+    return
+  }
+
+  var pathTo = "/POI";
+  if (pageType === "Edit") {pathTo = `/POI/${id}`}
+  axios.post(pathTo, {
+    title, artist, address, description, city, state, postalCode, image, sourceURL, id, latitude, longitude
   })
   .then( response => {
-    console.log(response.data);
-    alert(`Success: created\n${response.data.title}\nby: ${response.data.artist}\nAddress: ${address}`);
+    const data = response.data
+    alert(`Successfully submitted artwork`);
     window.location = "/";
   }).catch(error => {
-    alert('POI submission unsuccessful')
+    alert(error)
   })
 }
 
 function mapFlyToCurrent() {
   refreshVariables();
-  if (!latitude || !longitude) { alert("You are missing coordinates"); return }
+  if (!latitude || !longitude) { console.log("Unable to fly to artwork. Missing coordinates"); return }
   map.flyTo({
     center: [longitude, latitude],
     zoom: 15
   });
   if (popup) {popup.remove()}
-  popup = new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: "top" })
+  var popup = new mapboxgl.Popup({ closeOnClick: true, closeButton: true, anchor: "top" })
   .setLngLat([longitude, latitude])
   .setHTML(
   `<div style="width: 300px;">
@@ -69,8 +108,9 @@ function refreshVariables() {
   state = document.getElementById("state").value;
   postalCode = document.getElementById("postalCode").value;
   image = document.getElementById("image").value;
-  sourceUrl = document.getElementById("sourceUrl").value;
+  sourceURL = document.getElementById("sourceURL").value;
   id = document.getElementById("artworkId").value;
   latitude = document.getElementById("latitude").value;
   longitude = document.getElementById("longitude").value;
+  pageType = document.getElementById("pageType").innerText;
 }

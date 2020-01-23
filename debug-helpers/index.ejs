@@ -16,13 +16,12 @@
 </head>
 <body>
   
-  <div class="instructions-area w-100">
+  <div class="container instructions-area w-100">
     <h1>POIs Index</h1>
     <p>Please check details of each POI / Artwork. Use responsibly.</p>
   </div>
   
   <div class="container">
-    <h2>Edit POI</h2>
     <div class="row">
       <div class="col-md-6">  
           <h4>Scraped Artworks</h4>
@@ -40,9 +39,15 @@
           </ol>
       </div>
       <div class="col-md-6"> 
-          <h4>Checked POIs</h4>
+          <div style="display: flex; justify-content: space-between;">
+            <h4 style="display:inline">Managed POIs</h4>
+            <form action="/POI/new" method="get">
+              <button class="btn" style="border: 1px solid black; margin-left: 5px;">Create New POI</button>
+            </form>
+          </div>
+          
           <ol class="scraped-artworks list-group">
-            <% checkedPOIs.forEach((artwork) => { %>
+            <% managedArtworks.forEach((artwork) => { %>
               <li style="border: 1px solid gray; margin-bottom: 1px;">
               <a href=<%="/POI/" + artwork.id%> >
                 <%= artwork.properties.title%>

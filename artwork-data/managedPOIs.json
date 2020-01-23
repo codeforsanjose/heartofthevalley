@@ -1,0 +1,25 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.80158876559241",
+        "37.2992397"
+      ]
+    },
+    "properties": {
+      "title": "8 Minutes",
+      "artist": "Merge Conceptual Design",
+      "address": "1924 Yerba Buena Road",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95121",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4878/636714226994330000",
+      "description": "The National Fire Protection Association recommends a target of 8 minutes as “standard response time” for emergency calls. The artwork 8 Minutes approaches the topic of the 8-minute response in three ways:\n\n    A visual measurement of 8 minutes,\n    A conveyor of Fire Station 24th continuous efforts on behalf of the community, and\n    Connecting the community to the station via the eight minute duration.\n\nAll the elements complement each other to create a rich understanding of time in the context of Fire Station 24.\nThe first element is the LED Countdown Timer placed over the apparatus bay. The timer is connected to the fire pager system; when a response call is received it automatically starts an 8-minute counter that travels as a light across the sign. After the 8-minute light completes its travel across the sign, the \"call time\" is added to a list of the 8 most recent call times displayed on the sign. The second and third components of the artwork are a series of tiles in the fire station entryway. One set of tiles is a compilation of text about the number 8 and 8-minute duration. For example: “A fallen or lying down 8 is used to represent infinity in mathematics.” The third component is a series of 8-minute time-lapsed community photographs that depict every day activities to the same time frame of the recommended standard response time – to provide visitors to the station a visceral sense of the anxiety-filled 8 minutes awaiting emergency response versus the same 8-minutes washing a car, skateboarding or barbecuing.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2477/1396",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_fb3517580c972354c2b65afcba98c0aa0174184a4b77b1204b870e41046d1b05"
+  }
+]
