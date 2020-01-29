@@ -16,8 +16,10 @@ class POIManager {
     scrapedArr.forEach( (artwork) => {
       if (!this.managedArtworks[artwork.id]) {
         this.scrapedArtworks[artwork.id] = artwork;
+      } else if (this.managedArtworks[artwork.id]) {
+        delete this.scrapedArtworks[artwork.id]
       }
-    })
+    });
   }
 
   writeArtworkToFile(artworkToSubmit) {

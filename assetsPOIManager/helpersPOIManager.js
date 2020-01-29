@@ -12,12 +12,18 @@ let map = new mapboxgl.Map({
 });
 
 map.on("load", function(e) {
-  if (!document.getElementById('latitude').value || !document.getElementById('longitude').value) {
-    // missing coordinates
-    console.log("artwork has missing coordinates")
-  } else {
+  let current = getCurrentVariables();
+  let {longitude, latitude, address, city, state, postalCode} = current;
+  if (longitude && latitude) {
     // coordinates are present
     mapFlyToCurrent();
+  } else {
+    // coordinates are not present.
+    if (address && city && state && postalCode) {
+      queryNominatim();
+    } else {
+      console.log("artwork does not have coordinates or a valid address")
+    }
   }
 });
 
@@ -42,7 +48,7 @@ function queryNominatim() {
       })
     .catch(
       function(error) {
-        alert("Error getting coordinates from Nominatim. Please try a different address.")
+        alert("Error getting coordinates from Nominatim.\nPlease make sure to have a legitimate address, city, and state.")
     });
 }
 
@@ -53,7 +59,7 @@ function submitPOI() {
     alert("Missing Coordinates. Cannot Submit");
     return
   }
-  if (!title || !artist || !description) {
+  if (!title || !artist || !description ) {
     alert("Missing Details. Cannot Submit")
     return
   }
@@ -70,7 +76,7 @@ function submitPOI() {
       alert(
         "successfully submitted artwork\n" + 
         response.data.artwork.properties.title + 
-        "by \n" + 
+        "\nby\n" + 
         response.data.artwork.properties.artist);
     }
     else {
