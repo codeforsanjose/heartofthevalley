@@ -22,25 +22,14 @@
 </head>
 <body>
   <%
-    var title, artist, address, description, city, state, postalCode, image, sourceURL, sourceOfInformation, id; 
-    var latitude, longitude;
-    var pageType;
+    let properties;
+    let coordinates = ["", ""];
+    let pageType;
     if (artwork) {
-      var prop = artwork.properties;
-      title = prop.title;
-      artist = prop.artist;
-      address = prop.address;
-      description = prop.description;
-      city = prop.city;
-      state = prop.state;
-      postalCode = prop.postalCode;
-      image = prop.image;
-      sourceURL = prop.sourceURL;
-      sourceOfInformation = prop.sourceOfInformation;
-      id = artwork.id;
+      properties = artwork.properties;
       if (artwork.geometry.coordinates) {
-        longitude = artwork.geometry.coordinates[0]
-        latitude = artwork.geometry.coordinates[1]
+        coordinates[0] = artwork.geometry.coordinates[0];
+        coordinates[1] = artwork.geometry.coordinates[1];
       }
       pageType = "Edit";
     } else {
@@ -67,7 +56,7 @@
                   disabled 
                   type="text"  
                   id="longitude" 
-                  value="<%- longitude%>">
+                  value="<%- pageType === `Edit` ? coordinates[0] : ``%>">
               </span>
               <span>
                 <label for="latitude">Latitude</label>
@@ -75,7 +64,7 @@
                   disabled 
                   type="text"  
                   id="latitude" 
-                  value="<%- latitude%>">
+                  value="<%- pageType === `Edit` ? coordinates[1] : ``%>">
               </span>
               
             </div>
@@ -83,37 +72,37 @@
           <div>
             <label for="title">Title</label>
             <br>
-            <input type="text" class="form-control poi-edit-input" id="title" value="<%-title%>">
+            <input type="text" class="form-control poi-edit-input" id="title" value="<%- pageType === `Edit` ? properties.title : ``%>">
           </div>
           <div>
             <label for="artist">Artist</label>
             <br>
-            <input type="text" class="form-control poi-edit-input" id="artist" value="<%-artist%>">
+            <input type="text" class="form-control poi-edit-input" id="artist" value="<%- pageType === `Edit` ? properties.artist : ``%>">
           </div>
           <div>
             <label for="address">Address</label>
             <br>
-            <input type="text" class="form-control poi-edit-input" id="address" value="<%-address%>">
+            <input type="text" class="form-control poi-edit-input" id="address" value="<%- pageType === `Edit` ? properties.address : ``%>">
           </div>
           <div>
             <label for="city">City</label>
             <br>
-            <input type="text" class="form-control poi-edit-input" id="city" value="<%-city%>">
+            <input type="text" class="form-control poi-edit-input" id="city" value="<%- pageType === `Edit` ? properties.city : ``%>">
           </div>
           <div class="state-postal-code" style="display:inline-block; width: 100%">
             <span>
               <label for="state">State</label>
-              <input type="text" class="poi-edit-input" id="state" value="<%-state%>">
+              <input type="text" class="poi-edit-input" id="state" value="<%- pageType === `Edit` ? properties.state : ``%>">
             </span>
             <span>
               <label for="postalCode">Postal Code</label>
-              <input type="text" class="poi-edit-input" id="postalCode" value="<%-postalCode%>">
+              <input type="text" class="poi-edit-input" id="postalCode" value="<%- pageType === `Edit` ? properties.postalCode : ``%>">
             </span>
           </div>
           <div>
             <label for="image">Image URL</label>
             <br>
-            <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="image" value="<%-image%>">
+            <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="image" value="<%- pageType === `Edit` ? properties.image : ``%>">
           </div>
           
           
@@ -125,20 +114,20 @@
               id="description"
               style="max-width: 100%; width: 100%; height: 200px; text-indent: 0;"
             >
-              <%= description%>
+            <%- pageType === `Edit` ? properties.description : ``%>
             </textarea>
           </div>
           <div>
             <label for="sourceURL">Source URL</label>
             <br>
-            <a target="_blank" href=<%- sourceURL%>>
-              <input disabled type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="sourceURL" value="<%-sourceURL%>">
+            <a target="_blank" href=<%- pageType === `Edit` ? properties.sourceURL : ``%>>
+              <input disabled type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="sourceURL" value="<%- pageType === `Edit` ? properties.sourceURL : ``%>">
             </a>
           </div>
           <div>
             <label for="artworkId">Artwork ID</label>
             <br>
-            <input disabled type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="artworkId" value="<%-id%>">
+            <input disabled type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="artworkId" value="<%- pageType === `Edit` ? artwork.id : ``%>">
           </div>
           
         </form>
@@ -154,7 +143,7 @@
             </span>
             <span>
               <button onclick="mapFlyToCurrent()">
-                Refresh Map
+                Refresh Map & Popup
               </button>
             </span>
           </div>
@@ -166,7 +155,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="/static/debug-helper.js"></script>
+  <script type="text/javascript" src="/static/helpersPOIManager.js"></script>
   <script type="text/javascript" src="/modules/axios/dist/axios.js" ></script>
 </body>
 </html>

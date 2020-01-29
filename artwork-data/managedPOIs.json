@@ -21,5 +21,327 @@
       "sourceOfInformation": "Created by POI Manager"
     },
     "id": "art_fb3517580c972354c2b65afcba98c0aa0174184a4b77b1204b870e41046d1b05"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.8868169997836",
+        "37.337850953735156"
+      ]
+    },
+    "properties": {
+      "title": "1737 Trees",
+      "artist": "Angela Buenning Filo",
+      "address": "200 E. Santa Clara Street",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95113",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4870/636714218021570000",
+      "description": "1737 Trees is a grid of photographic portraits of every tree in one of San Jose’s last orchards.\nAngela Buenning Filo was inspired to photograph these trees by a November 10th, 2002 newspaper article that described a San Jose prune orchard as the last in Silicon Valley. She drove in search of it and found the strip of trees alongside the IBM campus on Cottle Road and photographed the trees. When, in the following months Filo's thoughts kept returning to the trees, she decided to document the orchard before it was destroyed. It was then she set out to make an individual portrait of each of the orchard’s 1,737 trees with the intention of arranging the finished photographs in the same grid in which the trees were planted in the orchard.\nBy this time IBM, which had preserved the orchard on its property for decades, had sold the land, and a large billboard announced that the 42 acres were up for sale again. Filo worked over the next three years, choosing to photograph the trees’ leafless branches in winter under overcast skies. With the orchard still standing, but the land slated for development, she photographed the final tree in 2006.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2475/1396",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_e8a52d6a08d0b7f28999b3ce7203d40359c63a007ce3986ba7cbbf8bdfb582a1"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.8688938",
+        "37.2213081"
+      ]
+    },
+    "properties": {
+      "title": "Amaden Sphere",
+      "artist": "Ray King",
+      "address": "6445 Camden Avenue",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95120",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4904/636714293808630000",
+      "description": "Sphere is a celestial shower of light and color suspended from a web of stainless steel cables in the entry lobby of the Community Center and Library. Designed to interact with both the natural sunlight and the interior lights, the sculpture is a modern interpretation of the tradition of grand crystal chandeliers that adorned great halls. Comprised of 5,000 dichroic glass prisms Sphere measures 18’ diameter and 23’ high and weighs approximately 800 pounds.\nThe artist desired to create a sculpture that evokes a sense of fascination, stimulation, beauty, contemplation, and intrigue.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2483/1396",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_2f60914229d184ac0977b856938b191aaf8bd3bf0b9e59416a54996e310dca73"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.002",
+        "14"
+      ]
+    },
+    "properties": {
+      "title": "Sample Title",
+      "artist": "gabr",
+      "address": "22272Cupertino Rd",
+      "city": "Cupertino",
+      "state": "CA",
+      "postalCode": "95014",
+      "image": "",
+      "description": "description",
+      "sourceURL": "",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_570605d4abda396b438babf9793dbbe8808d55345d3dc2f23b63b204b25e2dd5"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.8455008066795",
+        "37.342202729331966"
+      ]
+    },
+    "properties": {
+      "title": "A Monument to the Last Barn",
+      "artist": "Gloria Bornstein",
+      "address": "647 South King Road",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95122",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4880/636714234658400000",
+      "description": "A native of San Jose, Emma Prusch bequeathed her 47 acre dairy farm to the City in 1962. The deed to the City specified that the City “will make said park a place of relaxation, recreation, and enjoyment for the people of the City of San Jose, and in such a manner as will, to extent that such can be reasonably done, give to said park a rural county character and atmosphere.” Emma Prusch Farm Park includes heritage, high density, and rare fruit orchards, a Plant Science Center, two community gardens, pollinator and butterfly gardens, as well as acres of lush green lawns for picnics and playing. It also has one of the largest free standing wooden barns in California, home to 4H large animals including beef cattle, sheep, and swine.\nThe artist was inspired by the story of Emma Prusch, San Jose's rich agricultural history and the continuing traditions. A Monument to the Last Barn draws upon this influence: the form is a four-sided metal structure derived from traditional Santa Clara barns, but stripped of outer cladding to reveal the essential framework. This iconic linkage to early barns is further underscored by the rich, deep barn red color of the piece. The barn’s corrugated galvanized steel roof is topped with three golden wind vanes depicting a rooster, a windmill and an apple. The gables and railings are inset with filigree screens in a bold “fruits and leaves” pattern, representing the orchards that were so vital to the region. Benches placed inside the barn create an inviting and reflective atmosphere amidst the lively park grounds. The artist conceived of this work as homage to the last great large barn on the site at Prusch Farm Park.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2479/1396",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_70a150d15a3e6bc8917be2e058e8b780879a1d1d8e24f635b8abacd44dcc2ca3"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.89497188089172",
+        "37.33922210739995"
+      ]
+    },
+    "properties": {
+      "title": "A Small Part of What We Do",
+      "artist": "Tad Savinar",
+      "address": "255 North Market Street",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95110",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/4896/636714288701970000",
+      "description": "The work consists of 29 cast bronze panels of varying sizes set into shallow niches that surround the building exterior on Market and Devine Streets.  The plaques contain text based on interviews conducted by the artist with firefighters, their families and the people they have served.\nExamples of Quotes:\n\n    I will never forget the taste of that infant’s last dying breath as it lingered in my mouth.\n    \n    Fires are really just a small part of what we do.\n    \n    It’s a pretty good feeling to bring back someone’s pulse.\n    \n    We go running into a burning building, when most people’s sense tells them to run out.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2481/1396",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_7590a9d76666e0d2c9f2f7be9f92db8b717df8be703d00b7271c89a2400b6030"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.88898998100069",
+        "37.331812117557604"
+      ]
+    },
+    "properties": {
+      "title": "Civic Stage Set",
+      "artist": "David Bottini",
+      "address": "201 South Market Street ",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95113",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5052/636715758100770000",
+      "description": "This bright geometric abstract piece is located by the Tech Museum on Park Avenue. It was created by contemporary Northern California sculptor David Bottini who works in the styles of pure abstraction and neo-constructivism.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2517/1396",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_0c63535c002a70d6d020129f9c45a8c203986da15fddb44414b63ece67a5b82a"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.9194898",
+        "37.3624371"
+      ]
+    },
+    "properties": {
+      "title": "Connected: Silicon Valley + Bangalore",
+      "artist": "Angela Buenning Filo",
+      "address": "1701 Airport Boulevard",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95110",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5084/636715765138530000",
+      "description": "Bangalore and Silicon Valley are distant yet interconnected.  This photographic installation explores how each landscape has been transformed by technology booms and global economic trends.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2525/1396?npage=2",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_8d965319aa1a53064762ac216d3f2d0db67153fb8e5e277662ac44d160224660"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.886883",
+        "37.331383"
+      ]
+    },
+    "properties": {
+      "title": "Japanese American Internment Memorial",
+      "artist": "Ruth Asawa",
+      "address": "300 South 1st Street ",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95113",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5320/636716031576800000",
+      "description": "This bronze bas-relief, located outside the Federal Building, is a reminder of the injustices committed against the Japanese American people and of their strength of spirit. On one side of the memorial the panels depict life prior to the internment, showing a robust, prosperous community. The other side portrays various aspects of the history and reality of life in the internment camps. There are images of Franklin Roosevelt signing Executive Order 9066 issuing the internment policy, notices for internment being sent to people of Japanese ancestry, the daily of life of the camps, and adjustment after the war. The final panel portrays the 1988 Redress in which a formal apology and compensation was issued to every survivor. In a column at the end of the wall, many \"mon\" (traditional family crests) sent in by community members are also displayed.\nThe memorial visualizes the inhumanity and strife of the internment camps and reminds the public that fear of the “other” can lead to broad spread racism, prejudice, and discrimination.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2575/1396?npage=3",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_d615024d5b9043d1903c801f6879dcc4774ee5e6b249d64f2e9606c6ad4ba64a"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.93166613186447",
+        "37.30779270469608"
+      ]
+    },
+    "properties": {
+      "title": "Stratigraphy",
+      "artist": "Ron Baron",
+      "address": "1000 South Bascom Avenue",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95111",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5776/636716819640530000",
+      "description": "Located on the face of the elevator bay and wrapping around onto the second floor landing, Stratigraphy is a major focal element at the Bascom Library and Community Center.  It is a vertical timeline of the areas culture and history, telling the story through a vast array of representative objects; as if a cutaway at an archaeological site that reveals a social history through actual objects such as balls and athletic items for the community center and books that could be found in the library.  Baskets and acorns pay homage to the original Ohlone inhabitants; the region’s agricultural and canning era are conveyed through fruit, cans and canning jars, which then transitions into the electronics and technology era.  At the top is a tree with figures from trophies dangling from its branches.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2729/1396?npage=4",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_474eb7bdd4737da235b8b8f861282002cd276e1cc15dcfef551833bc41c744a2"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.9194898",
+        "37.3624371"
+      ]
+    },
+    "properties": {
+      "title": "Space Observer",
+      "artist": "Björn Schülke",
+      "address": "1701 Airport Boulevard",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95110",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5764/636716819617700000",
+      "description": "Reminiscent of a space craft, this glossy white 26’ tall sculpture standing on eight-foot tripod legs, explores the interactivity between humans and modern technology.   Engage with this elaborate, yet delicate object and it will quietly rotate with the help of two propeller-tipped arms, using its kinetic cameras to reveal live images.\nSponsored by Microsoft",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2723/1396?npage=4",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_c67274ab41f43122b4c90e7d53c84b6c697045756c4ac0d63993f542d405e5b7"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.888254",
+        "37.331094"
+      ]
+    },
+    "properties": {
+      "title": "Plumed Serpent",
+      "artist": "Robert Graham",
+      "address": "298 S market street",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95113",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5554/636716079429630000",
+      "description": "Plumed Serpent is a stylized image of Quetzalcóatl, one of the most important mythological deities of the Mesoamerican pantheon. It was created for the City of San Jose to symbolize the spirit of social harmony and diversity.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2625/1396?npage=4",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_a09b4497fccde3ba97e955ea1cc78e12ce5f89426a98a7b9951389746058b10f"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.93153838161848",
+        "37.2638524742266"
+      ]
+    },
+    "properties": {
+      "title": "Swimmers",
+      "artist": "Artists; Anne Lamborn and Ceevah F.Sobel",
+      "address": "3369 Union Avenue",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95124",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5788/636716819872100000",
+      "description": "Swimmers\nArtists; Anne Lamborn and Ceevah F.Sobel (2000)\nThis piece expands the space of the pool area by transforming the 10-foot property-line wall into an illusion of water. The fanciful silhouettes of swimmers, half submerged, swim across the blue wall surrounding the Camden Community Center's pool.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2731/1396?npage=4",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_5b78c4d89cf707bcbc587cd47b0a14ac689436285b1705c87e1b253e0c7cd116"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.87340811224489",
+        "37.364267612244895"
+      ]
+    },
+    "properties": {
+      "title": "FOGWASTE",
+      "artist": "Brett Snyder and Claire Napawan",
+      "address": "1404 Mabury Road",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95133",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5188/636715839376370000",
+      "description": "FOGWASTE is a public art installation and community outreach effort. The project targets communities with a three-phase approach that together reinforce the important work of DOT’s sewer maintenance staff, the importance of the community in understanding of FOG (Fat Oil and Grease), the sanitary sewer infrastructure, and the potential actions that residents can take to achieve a positive impact on the sewer system, the environment, and their communities. The project elements work together to stimulate community curiosity, encourage participation in best household practices, and promote environmental stewardship:\n\n    Doorhanger:  Addressing the issue directly at the household, a bold graphic poster is distributed as a door hanger by DOT crews in the vicinity of recent sanitary sewer maintenance activity. The poster features simple and engaging icons to educate about various FOG wastes and common household products not to be put in sinks; the poster also brings awareness to features of the infrastructure system. Printed in the project’s signature electric green color, the door hanger connects to the other art elements described below. Multi-lingual text provides explanation and vocabulary for a more informed community. \n    Manhole Marker: Bringing attention to the infrastructure below the streets, manholes of recently serviced sewer lines were painted in the project’s signature electric green color, creating awareness of this largely unnoticed infrastructure. Painting of the manholes coincided with the distribution of door hangers creating a connection from the front door to the system under the street. \n    Maintenance Truck Graphic: A bold vinyl graphic was applied to select sewer maintenance trucks traveling to the target neighborhoods that features a design that calls out the 24/7 sewer maintenance service provided by the City. The vinyl graphic will be rendered in the project’s signature electric green color reinforcing the connection between the truck, door hangers and manhole markers and the workforce that is constantly on the move to manage the system.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2551/1396?npage=2",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_d6bab38da1b24105323d6994161f5832db470f1205786448600a074b4ae54ad9"
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "-121.87375854519351",
+        "37.32311360007508"
+      ]
+    },
+    "properties": {
+      "title": "South Fished Street",
+      "artist": "Tony May with Art in Community Class - SJSU",
+      "address": "1035 South 6th Street",
+      "city": "San Jose",
+      "state": "CA",
+      "postalCode": "95112",
+      "image": "https://sanjoseca.gov/Home/ShowPublishedImage/5760/636716819611470000",
+      "description": "South Fished Street features 36 bronze and stainless steel elements depicting fish embedded in the concrete sidewalk. 13 students from the Art in Community class under the direction of Professor Tony May were responsible for design, fabrication, and installation of the public art.\nThe design for the installation was developed through discussion among Art in Community class members who were inspired by a visit to the koi pond in the Japanese Friendship Garden in San Jose’s Kelley Park. The design uses the park sidewalk as a “meandering stream” populated by a variety of fish. The fish represent the diversity of individuals from many cultures that live in the Martha Gardens neighborhood. The fish are also a playful reference to elaborate water features and ornamental fishponds.",
+      "sourceURL": "https://sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2721/1396?npage=4",
+      "sourceOfInformation": "Created by POI Manager"
+    },
+    "id": "art_ab195d9e1776af3a5aaf71f0178aac8c27a9f32ea27b990cb2f0324710a0c77c"
   }
 ]

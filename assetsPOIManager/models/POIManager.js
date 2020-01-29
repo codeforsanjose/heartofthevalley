@@ -1,4 +1,4 @@
-const { PATH_SCRAPED_ARTWORKS, PATH_MANAGED_POIs } = require('../config/file-paths');
+const { PATH_SCRAPED_ARTWORKS, PATH_MANAGED_POIs } = require('../../config/file-paths');
 const fs = require('fs');
 
 class POIManager {
@@ -8,14 +8,16 @@ class POIManager {
   }
 
   refreshArtworks() {
-    const scrapedArr = require(PATH_SCRAPED_ARTWORKS);
     const managedArr = require(PATH_MANAGED_POIs);
-    scrapedArr.forEach((artwork) => {
-      this.scrapedArtworks[artwork.id] = artwork;
-    });
+    const scrapedArr = require(PATH_SCRAPED_ARTWORKS);
     managedArr.forEach((artwork) => {
       this.managedArtworks[artwork.id] = artwork;
     });
+    scrapedArr.forEach( (artwork) => {
+      if (!this.managedArtworks[artwork.id]) {
+        this.scrapedArtworks[artwork.id] = artwork;
+      }
+    })
   }
 
   writeArtworkToFile(artworkToSubmit) {
