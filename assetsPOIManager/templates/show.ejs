@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+
+  <!-- Include the Mapbox GL JS library -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Include style CSS and JavaScript -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  <%
+    let properties;
+    let coordinates = ["", ""];
+    let pageType;
+    if (artwork) {
+      properties = artwork.properties;
+      if (artwork.geometry.coordinates) {
+        coordinates[0] = artwork.geometry.coordinates[0];
+        coordinates[1] = artwork.geometry.coordinates[1];
+      }
+      pageType = "Edit";
+    } else {
+      pageType = "New";
+    }
+  %>
+  
+  
+  <div class="container">
+    <h2><span id="pageType"><%- pageType%></span>&nbsp;POI</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>POI Details</h3>
+        <button onclick="queryNominatim()">
+          Generate Coordinates from Nominatim
+        </button>
+        <form class="poi-details-form col">
+          
+          <div class="poi-coordinates alert" style="background-color: lightgrey;">
+            <div>
+              <span>
+                <label for="longitude">Longitude</label>
+                <input 
+                  disabled 
+                  type="text"  
+                  id="longitude" 
+                  value="<%- pageType === `Edit` ? coordinates[0] : ``%>">
+              </span>
+              <span>
+                <label for="latitude">Latitude</label>
+                <input 
+                  disabled 
+                  type="text"  
+                  id="latitude" 
+                  value="<%- pageType === `Edit` ? coordinates[1] : ``%>">
+              </span>
+              
+            </div>
+          </div>  
+          <div>
+            <label for="title">Title</label>
+            <br>
+            <input type="text" class="form-control poi-edit-input" id="title" value="<%- pageType === `Edit` ? properties.title : ``%>">
+          </div>
+          <div>
+            <label for="artist">Artist</label>
+            <br>
+            <input type="text" class="form-control poi-edit-input" id="artist" value="<%- pageType === `Edit` ? properties.artist : ``%>">
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <br>
+            <input type="text" class="form-control poi-edit-input" id="address" value="<%- pageType === `Edit` ? properties.address : ``%>">
+          </div>
+          <div>
+            <label for="city">City</label>
+            <br>
+            <input type="text" class="form-control poi-edit-input" id="city" value="<%- pageType === `Edit` ? properties.city : ``%>">
+          </div>
+          <div class="state-postal-code" style="display:inline-block; width: 100%">
+            <span>
+              <label for="state">State</label>
+              <input type="text" class="poi-edit-input" id="state" value="<%- pageType === `Edit` ? properties.state : ``%>">
+            </span>
+            <span>
+              <label for="postalCode">Postal Code</label>
+              <input type="text" class="poi-edit-input" id="postalCode" value="<%- pageType === `Edit` ? properties.postalCode : ``%>">
+            </span>
+          </div>
+          <div>
+            <label for="image">Image URL</label>
+            <br>
+            <input type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="image" value="<%- pageType === `Edit` ? properties.image : ``%>">
+          </div>
+          
+          
+          <div>
+            <label for="description">Description</label>
+            <br>
+            <textarea 
+              class="w-100" 
+              id="description"
+              style="max-width: 100%; width: 100%; height: 200px; text-indent: 0;"
+            >
+            <%- pageType === `Edit` ? properties.description : ``%>
+            </textarea>
+          </div>
+          <div>
+            <label for="sourceURL">Source URL</label>
+            <br>
+            <a target="_blank" href=<%- pageType === `Edit` ? properties.sourceURL : ``%>>
+              <input disabled type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="sourceURL" value="<%- pageType === `Edit` ? properties.sourceURL : ``%>">
+            </a>
+          </div>
+          <div>
+            <label for="artworkId">Artwork ID</label>
+            <br>
+            <input disabled type="text" style="font-size: 11px;" class="form-control poi-edit-input" id="artworkId" value="<%- pageType === `Edit` ? artwork.id : ``%>">
+          </div>
+          
+        </form>
+        <br>
+        <button onclick="submitPOI()">Submit POI</button>
+        <br>
+      </div>
+      
+      <div class="col-md-6"> 
+          <div>
+            <span>
+              <h3>POI Mapping</h3>
+            </span>
+            <span>
+              <button onclick="mapFlyToCurrent()">
+                Refresh Map & Popup
+              </button>
+            </span>
+          </div>
+          
+          <div id='map' class='map' style="width: 100%; height: 80vh;">
+          </div>
+
+          <a class="btn" href="/">Back to Index</a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/helpersPOIManager.js"></script>
+  <script type="text/javascript" src="/modules/axios/dist/axios.js" ></script>
+</body>
+</html>

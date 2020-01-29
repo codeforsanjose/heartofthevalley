@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+   <!-- Include style CSS and JavaScript -->
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.min.js"
+   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div class="container instructions-area w-100">
+    <h1>POIs Index</h1>
+    <p>Please check details of each POI / Artwork. Use responsibly.</p>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">  
+          <h4>Scraped Artworks</h4>
+          <ol class="scraped-artworks list-group">
+            <% scrapedArtworks.forEach((artwork) => { %>
+              
+              <li style="border: 1px solid gray; margin-bottom: 1px; padding-left: 2px;">
+              <a href=<%="/POI/" + artwork.id%> >
+                <%= artwork.properties.title%>
+                
+              </a>
+              </li>
+            <% }) %>
+      
+          </ol>
+      </div>
+      <div class="col-md-6"> 
+          <div style="display: flex; justify-content: space-between;">
+            <h4 style="display:inline">Managed POIs</h4>
+            <form action="/POI/new" method="get">
+              <button class="btn" style="border: 1px solid black; margin-left: 5px;">Create New POI</button>
+            </form>
+          </div>
+          
+          <ol class="scraped-artworks list-group">
+            <% managedArtworks.forEach((artwork) => { %>
+              <li style="border: 1px solid gray; margin-bottom: 1px;">
+              <a href=<%="/POI/" + artwork.id%> >
+                <%= artwork.properties.title%>
+                
+              </a>
+              </li>
+            <% }) %>
+      
+          </ol>
+      </div>
+    </div>
+  </div>
+</body>
+  
+</html>
