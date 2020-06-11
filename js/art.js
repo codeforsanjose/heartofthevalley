@@ -17,7 +17,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2635%2forchard+installationcropped_201403261639078805.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4870/636714218021570000",
         "description": "Trees\r\nArtist: Angela Buenning Filo\r\n2006\r\n\r\n\r\n\r\n1737 Trees is a grid of photographic portraits of every tree in one of San Jose’s last orchards. \r\n\r\nAngela Buenning Filo was inspired to photograph these trees by a November 10th, 2002 newspaper article that described a San Jose prune orchard as the last in Silicon Valley. She drove in search of it and found the strip of trees alongside the IBM campus on Cottle Road and photographed the trees. When, in the following months Filo's thoughts kept returning to the trees, she decided to document the orchard before it was destroyed. It was then she set out to make an individual portrait of each of the orchard’s 1,737 trees with the intention of arranging the finished photographs in the same grid in which the trees were planted in the orchard. \r\n\r\nBy this time IBM, which had preserved the orchard on its property for decades, had sold the land, and a large billboard announced that the 42 acres were up for sale again. Filo worked over the next three years, choosing to photograph the trees’ leafless branches in winter under overcast skies. With the orchard still standing, but the land slated for development, she photographed the final tree in 2006.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-1737-Trees-City-Hall-Lobby-445",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -62,7 +62,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95121",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2467%2f8-minutes_201401271356110263.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4878/636714226994330000",
         "description": "The National Fire Protection Association recommends a target of 8 minutes as “standard response time” for emergency calls. The artwork 8 Minutes approaches the topic of the 8-minute response in three ways:\r\n\r\n1. A visual measurement of 8 minutes,\r\n2. A conveyor of Fire Station 24th continuous efforts on behalf of the community, and\r\n3. Connecting the community to the station via the eight minute duration.\r\n\r\nAll the elements complement each other to create a rich understanding of time in the context of Fire Station 24.\r\n\r\nThe first element is the LED Countdown Timer placed over the apparatus bay. The timer is connected to the fire pager system; when a response call is received it automatically starts an 8-minute counter that travels as a light across the sign. After the 8-minute light completes its travel across the sign, the \"call time\" is added to a list of the 8 most recent call times displayed on the sign. The second and third components of the artwork are a series of tiles in the fire station entryway. One set of tiles is a compilation of text about the number 8 and 8-minute duration. For example: “A fallen or lying down 8 is used to represent infinity in mathematics.” The third component is a series of 8-minute time-lapsed community photographs that depict every day activities to the same time frame of the recommended standard response time – to provide visitors to the station a visceral sense of the anxiety-filled 8 minutes awaiting emergency response versus the same 8-minutes washing a car, skateboarding or barbecuing.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-8-Minutes-Fire-Station-Number-366",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -85,7 +85,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95122",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2636%2flastBarn3_201403261703159864.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4880/636714234658400000",
         "description": "A native of San Jose, Emma Prusch bequeathed her 47 acre dairy farm to the City in 1962. The deed to the City specified that the City “will make said park a place of relaxation, recreation, and enjoyment for the people of the City of San Jose, and in such a manner as will, to extent that such can be   reasonably done, give to said park a rural county character and atmosphere.” Emma Prusch Farm Park includes heritage, high density, and rare fruit orchards, a Plant Science Center, two community gardens, pollinator and butterfly gardens, as well as acres of lush green lawns for picnics and playing. It also has one of the largest free standing wooden barns in California, home to 4H large animals including beef cattle, sheep, and swine. \r\n\r\nThe artist was inspired by the story of Emma Prusch, San Jose's rich agricultural history and the continuing traditions. A Monument to the Last Barn draws upon this influence: the form is a four-sided metal structure derived from traditional Santa Clara barns, but stripped of outer cladding to reveal the essential framework. This iconic linkage to early barns is further underscored by the rich, deep barn red color of the piece. The barn’s corrugated galvanized steel roof is topped with three golden wind vanes depicting a rooster, a windmill and an apple. The gables and railings are inset with filigree screens in a bold “fruits and leaves” pattern, representing the orchards that were so vital to the region. Benches placed inside the barn create an inviting and reflective atmosphere amidst the lively park grounds. The artist conceived of this work as homage to the last great large barn on the site at Prusch Farm Park.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-A-Monument-to-the-Last-Barn-E-442",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -131,7 +131,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2473%2fA+Small+Part+4_201401271756108857.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4896/636714288701970000",
         "description": "The work consists of 29 cast bronze panels of varying sizes set into shallow niches that surround the building exterior on Market and Devine Streets.  The plaques contain text based on interviews conducted by the artist with firefighters, their families and the people they have served. \r\n\r\nExamples of quotes: \r\n  - I will never forget the taste of that infant’s last dying breath as it lingered in my mouth.\r\n  - Fires are really just a small part of what we do.\r\n  - It’s a pretty good feeling to bring back someone’s pulse.\r\n  - We go running into a burning building, when most people’s sense tells them to run out.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-A-Small-Part-of-What-We-Do-Fi-367",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -178,7 +178,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95120",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2706%2fIMG_8406_201404251920507972.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4904/636714293808630000",
         "description": "Sphere is a celestial shower of light and color suspended from a web of stainless steel cables in the entry lobby of the Community Center and Library. Designed to interact with both the natural sunlight and the interior lights, the sculpture is a modern interpretation of the tradition of grand crystal chandeliers that adorned great halls.  Comprised of 5,000 dichroic glass prisms Sphere measures 18’ diameter and 23’ high and weighs approximately 800 pounds. \r\n\r\nThe artist desired to create a sculpture that evokes a sense of fascination, stimulation, beauty, contemplation, and intrigue.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Almaden-Sphere-Almaden-Commun-462",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -201,7 +201,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95127",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2707%2fAlum+Rock_2_201404251944575217.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4914/636714298349170000",
         "description": "The artwork consists of four terrazzo mandalas (ritualistic geometric designs symbolic of the universe), each 8’ in diameter, inset in the floor. The pieces commemorate and metaphorically articulate the community’s agricultural history, strong multicultural history, as well as the region’s distinctive geological features and their influence on the area’s history and development. These themes are also echoed within the skylights installed above the terrazzo elements.  The artwork is placed beneath four 8’ diameter skylights within the library with corresponding colors.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Alum-Rock-Garden-Dr-Roberto-C-464",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -224,7 +224,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95002",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2727%2fIMG_4359_201404292312501574.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4928/636714302560600000",
         "description": "This project was inspired by the rich natural landscape of Alviso including the wetlands of the National Wildlife Refuge, some of the last open space in the region. Working with the community, the artist created the artwork's three tile mosaic elements: Alviso, a bench in the form of a book that is standing on its side with images depicting indigenous plant life and the wetlands on its “covers”; and the two Alviso Mandalas, each 6’ in diameter. Together these elements create a visual welcome to the library and offer the community a place to pause and enjoy the setting.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Alviso-Bench-Mandalas-Alviso--454",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -247,7 +247,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95111",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2728%2fConvention+Center+Artworks+1.27.09+003_201404292325190204.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4934/636714304607670000",
         "description": "and 1993\r\n\r\n\r\nThe two 14-foot square quilts originally created for the San Jose Convention Center moved to a new home at Seven Trees Community Center (2013). Both quilts speak to the theme of transformation.  Butterfly Dreams, presents a universal symbol of transformation.  Animal Spiral focuses on the journey home in a spiral with a pathway to the center.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Animal-Spiral-and-Butterfly-D-510",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -293,7 +293,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2708%2fHHPZ+collection+documentation+019_201404252011320313.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4940/636714309658870000",
         "description": "The Public Art Program collaborated with Happy Hollow to select internationally recognized artist Tom Otterness to create an artwork for the new entry plaza. The artwork consists of 17 bronze pieces each reflecting an element of the Park or the Zoo. As the artist has said: For me the sculptures at HHPZ serve to launch an experience, not to mimic anything inside HHPZ; it’s a fairy tale—animals drive cars and money is food.Some characteristic motifs seen in other Otterness works are found in Another World—including manipulation of human and animal scale, depictions of coins and bills, use of clothing—to add humorous and thought-provoking aspects to the artwork. These unifying motifs allow the viewer to explore a central theme of this artwork: what is the relationship between humans and the rest of the animal kingdom?",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Another-World-Happy-Hollow-Pa-461",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -382,7 +382,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95126",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6756%2fJumping+Dog+edit+-dogcrop+.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4958/636714314497730000",
         "description": "This fun and exuberant sculpture links the themes of wild animal and domestic dog. A bronze beaver in the creek slaps the water with its tail and creates an over-sized splash of stainless steel.  An extension of the splash sends a bright yellow ball in a high-arcing trajectory ten feet high.   Fifteen feet away, a bronze dog leaps ten feet in the air and in visual time lapse sequence catches the ball, completing the connection between the two sculptural elements and the two worlds.  District6 Report a concern (408) 793-04330 or publicart@sanjoseca.gov",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-BeaverSplashJumpDog-Del-Monte-560",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -405,7 +405,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2729%2fP1110433_201404292333355643.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4962/636715220485530000",
         "description": "The San José Public Art Program in association with Adobe Systems, commissioned artist Whitesavge and Lyle in the creation of artwork for the loading dock at Adobe's new Amaden Tower. Big Flowers is a fence scaled to screen the Adobe loading dock as viewed from McEnery Park. The fence is of hand-forged steel depicting native California flora. The botanical elements are larger than life, finished in a red color, and read clearly from a distance. The lower half of the panels are intended to act as a trellis for the vine growing on portions of the wall below.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Big-Flowers-Adobe-Headquarter-514",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -450,7 +450,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95136",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2730%2fbirdseye_1_201404292348303216.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4964/636715222635700000",
         "description": "Birds Eye View is designed to highlight and emphasize the natural topography of the the park, following its shape without alteration. It is composed of two adjoining stairways, each ascending adjacent hills and terminating at the apex of each hill in a small plaza; the stairways join together in a larger plaza at the floor of the piece between the two hills. The steps rise in increments to form terracing that appears completely natural to its setting. The installation creates a fluid motion in stone, commencing at the top of one hill, flowing down to the base and then back up the second hill. The title of this artwork suggests the view from above: as seen from a bird’s eye view, the work references the shadow of a bird in flight as cast on the earth below. It is constructed with a local stone.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Birds-Eye-View-Edenvale-Park-507",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -473,7 +473,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95118",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2731%2fWindows+3_201404292354299558.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4970/636715224446770000",
         "description": "Blossom Hill Vine is two large glass windows at the library’s Marketplace. The glass is decorated with a series of images of local plants and historic artifacts painted in silver-leaf. The grapevine is a reminder of an earlier use of the neighboring land and the specific flowers were chosen on the basis of their geographic origin, a reference to the international nature of San José.\r\nThe Wall of Wonder is a cut steel mural in the Children's Area, suggesting the limitless potential of a child's imagination and the role the library can play in encouraging exploration.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Blossom-Hill-Vine-and-Wonder--459",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -518,7 +518,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95124",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2732%2fFull+staircase_201404300000192616.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4978/636715226534870000",
         "description": "This 80' artwork elegantly details the staircase and second floor balcony of this library. Each of the 21 water-jet cut stainless steel panels is unique with 74 unique cast glass and bronze sculptures, some with gold leaf, mounted along its length.  The narrative elements within the length of the artwork are drawn from the natural and social histories of the site. Themes of exploration and discovery are emphasized in a variety of ways, including the creation of a sight line game related to the title of the work. The repeated use of weaving (in representational forms, and in more abstract renderings of roadways and paths) is intended to suggest the complexity and organization of human knowledge. Likewise, the illustration of locally-cultivated fruits in grid patterns refers not only to the agricultural history of orchards near the site, but also to the gathering and categorization of information as it occurs in a library. Pastoral imagery dominates the work, remembering and celebrating ways of life which have largely vanished from the area.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Cambrian-BeeLine-Cambrian-Bra-477",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -541,7 +541,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2733%2fNorthside+2_201404300004522217.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4992/636715227865900000",
         "description": "Capiz, a series of stained-glass artisan windows welcome all visitors entering the main foyer of the JTC Northside Community Center in San Jose.  Kaleidoscopic and delicate, the artwork references the rich history of the intricate art of stained glass making.  The tradition of colored glass can be traced back to ancient times: both the Egyptians and the Romans were skillful masters at the manufacture of small colored glass objects.  Early Christians inherited the ancient art form which consequently reached its height during the Romanesque and Gothic periods in Medieval Europe.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Capiz-JTS-Northside-Community-457",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -564,7 +564,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95121",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2734%2fmeadowfair+repair+007_201404300011281694.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/4998/636715228920830000",
         "description": "The artwork is a commemoration of the black walnut trees that once covered the area. The artwork, five cast concrete vessel seats with bronze leaf and seed elements cast into the top of each, creates a contemplative space within the park.  Inset bronze leaves, spirals and black walnut centers are placed at junctions along the pathways in the park.Cynthia Handel participated in the City of San José Public Art Program’s Artist’s Training Project in 1997. Following the workshop series, participants were invited to submit proposals for upcoming City-funded public art projects. Cynthia’s proposal for the upgrading of Meadowfair Park was one of the accepted proposals.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Carpet-of-Leaves-Meadowfair-P-452",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -609,7 +609,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2791%2fP1100659_201405131944524677.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5004/636715230181230000",
         "description": "<table class='telerik-reTable-1' style='width: 100%;' cellpadding='2' cellspacing='1'><tbody><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'><b>Title</b><br></td><td class='telerik-reTableOddCol-1'>&nbsp;<b>Artist</b></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1' style=''>California Bear<br></td><td class='telerik-reTableOddCol-1'>Benjamino Bufano<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Dance Synthesis<br></td><td class='telerik-reTableOddCol-1'>Brian Holt<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Momotaro (Peach Boy)<br></td><td class='telerik-reTableOddCol-1'>Donated by sister city Okayama, Japan</td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>&nbsp;Untitled</td><td class='telerik-reTableOddCol-1'>&nbsp;<font style='background-color: rgb(242, 243, 244);'>Kenneth Matsumoto</font><br></td></tr></tbody></table>",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Center-for-Performing-Arts-Co-470",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -676,7 +676,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95127",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2735%2fChand_201404300016295052.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5012/636715231694800000",
         "description": "This work features drawings by youth from the surrounding middle and high schools rendered as metal panels decorating the opening gate, front doorway, and walls of the youth center. While the artist translated some of the drawings for a cohesive style, the artwork is still distinctively based on the youths’ artwork.  The shape of the chandelier, hanging in the oculus of the lobby, celebrate the themes of life with sculptural elements that look like DNA strands or plant forms.  The use of colored mirrors and gems, reflected by the embedded mirrors, change due to sunlight, thus causing the impact of the piece to shift throughout the day.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Chandelier-and-Collaboration--438",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -743,7 +743,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2480%2fChronos_and_Kairos_02_credit_James_Lin_201401281431442198.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5024/636715232760970000",
         "description": "Explore time through the movement of this suspended sculpture that breathes, ripples and reacts to passengers while maintaining its abacus-like counting pattern.  As each row completes its count, the movement is marked by the closing of a single element.  The counting then resumes until the total array closes; time stands still until the counting begins again.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Chronos-and-Kairos-San-Jose-A-406",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -766,7 +766,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95125",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2736%2fIMG_5801_201404300024014230.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5036/636715234653630000",
         "description": "In collaboration with the members of the Gardner community, artist Stephen Farley developed and completed 18 photographic panels that celebrate past, present and future heroes of the Gardner neighborhood. The twelve 3’ x 10’ panels encircle the plaza and six flank the entry to the community center. The artist invited community members to share their photographs with him in order to create the artwork.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Circle-of-Heroes-Gardner-Comm-456",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -789,7 +789,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95117",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2737%2fStarbird+Youth+Center_Square_201404300032474209.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5044/636715756941770000",
         "description": "This artwork is a series of colorful metal figures of neighborhood kids balancing on the entryway trellis in a composition of circles and shadows. The work energizes and enlivens the Starbird Youth Center. The installation depicts the youth engaged in a range of timeless activities: reading, playing music, skateboarding, soccer, hula hooping, and more. Additional hoops are scattered over the entryway trellis, casting shadow patterns that move with the sun.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Circles-and-Stars-Starbird-Yo-468",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -812,7 +812,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2738%2fP1100650_201404300040495738.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5052/636715758100770000",
         "description": "This bright geometric abstract piece is located by the Tech Museum on Park Avenue. It was created by contemporary Northern California sculptor David Bottini who works in the styles of pure abstraction and neo-constructivism.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Civic-Stage-Set-Park-Ave-Lawn-465",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -857,7 +857,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95122",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2739%2fTulasSite_201404301312430358.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5054/636715760655500000",
         "description": "The San José Public Art Program in association with project developer Blake Hunt Ventures, commissioned Einar and Jamex de la Torre to collaborate with the community in the creation of artwork for the Story & King Development. The artists created three different artworks, positioned in locations throughout the shopping center parking lot and also on the front and side wall of the Target store. The three distinct works make reference to historic Mexican art forms while integrating the artists' distinct and often humorous take on contemporary culture.  The de la Torre brothers incorporate time-honored styles such as Mexican folk art and  symbols of Catholicism as well as universal subjects such gender roles and cultural integration. As a result, viewers of their work are able to place one foot in the worlds of pre-Columbian Mexico while the other is planted firmly in contemporary society",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Coatlique-Shopping-Tula-Sentr-515",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -880,7 +880,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2740%2f6-11-09+004_201404301322244172.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5068/636715763099270000",
         "description": "The founding of the Pueblo San José de Guadalupe on November 29, 1777 established San José as California’s first civil community, supplying necessary agricultural products for the presidios and missions of San Francisco and Monterey. This project honors a pioneer settlement and its founders and the beginnings of a continuous migration of people who have come to this region from north, south, east, and west. The migration is represented through four columns placed at each point of the compass. Each triangle shaped column has cast relief images on the outside walls and a tile mural on the inner face. Polished granite slabs top each of the columns with a descriptive title for the art on the face of the column. A tile floor map depicts the trek of the original settlers from the Sonora desert to what is today the city of San José.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Commemoration-of-the-Founding-415",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -903,7 +903,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95129",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2741%2fMurdock+park_0002_201404301330383826.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5074/636715764271570000",
         "description": "This artwork can be found near the South entryway of the Murdock Park.  The artist created a group of tree guards and a bench, all made of cast bronze with a light green patina.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Commemoration-to-Carol-Murdoc-504",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -926,7 +926,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2484%2fBangalore+Art+Window+Low+Res_201401281519338448.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5084/636715765138530000",
         "description": "Bangalore and Silicon Valley are distant yet interconnected.  This photographic installation explores how each landscape has been transformed by technology booms and global economic trends.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-CONNECTED-Silicon-Valley-Bang-409",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -949,7 +949,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2742%2fKaneko_63_201404301344087749.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5090/636715766872070000",
         "description": "The artist, Jun Kaneko, calls these curvilinear ceramic pieces “dangos,” meaning dumplings in Japanese. These dangos are made of thick clay and covered in decorative glazes. When constructing these massive ceramic pieces, Kaneko starts building from the bottom up. He layers slabs of clay to shape the walls allowing the bottom to dry as he builds up to the top. Then he must fire the whole structure in a kiln without cracking or breaking it. Kaneko hopes that his sculptures will spark a dialogue around what he refers to as “spiritual space.” He uses the analogy of comparing a 70 story skyscraper to a 3000 meter high mountain to explain how understanding of scale changes based on environment. The public will observe this relationship between scale and environment when standing next to these grand seven foot tall sculptures.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Convergence-San-Jose-Repertor-418",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -972,7 +972,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95121",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2743%2fLos+Lagos_201404301358333283.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5098/636715768212770000",
         "description": "The Los Lagos Golf Course is an eighteen-hole course located along fourteen miles of the Coyote Creek. Corriente de Agua (Water Current) is intended as a transitional piece between landscapes and recalls the history of the Coyote Creek. The installation is comprised of several parts including three water features, a covered seating area, and a unique golf ball washer.  Water from the creek flows into a series of water features starting with a circular pool in which water continuously drips from a bamboo pipe disturbing the tranquil surface of the water. A second pool is at the center of this feature formed by a weir (a small overflow dam used to alter the flow of a river or stream). Water flows over the edge of the weir to a natural pond below decorated  with mud-like imprints of animal tracks, plant impressions, and human marks.  A bench made of concrete, sandstone, and granite sits next to the water features and is decorated with the image of ripples in a pool. The steel canopy’s leaf and animal silhouettes cast a dappled light effect on the bench.  The ball washer is activated like a drinking fountain. The spiral motion of the golf ball as it is washed acts as a meditative and focusing activity for golfers.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Corriente-de-Agua-Los-Lagos-G-505",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1039,7 +1039,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95119",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2744%2fDSC04445GlassLgFullView_V.2_201404301423539610.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5114/636715769788830000",
         "description": "The artwork consists of three separate artwork:The Tree of Knowledge includes three glass panes in the window wall that runs the length of the Library's main lobby. The artwork builds on the idea of age rings in the cross-section of a tree trunk: images in each concentric ring speak to a specific period of history and growth in the region, from the earliest period of indigenous inhabitants to the present. Bibliotree is sculptural element in the form of a tall flourishing tree made of water jet cut steel. The cut outs in the trunk are letters from the alphabets of the many languages contained in the Library's collection. On the lower branches of the tree are books and objects associated with reading; these continue onto the higher branches, which also contain objects representing newer forms of media. In this way the work suggests a developmental progression: the roots of language in letters and alphabets flourish into literature and on into other media. Orchard Walk, 26 thematic sidewalk insets made of stainless steel and flamed granite, are embedded in the concrete along the walkway that runs between Santa Teresa Blvd. and the Library entrance. The insets each feature the title of a literary, media or music reference, each with a different fruit in the title along with the author’s, director’s or composer’s name and a corresponding fruit image. The titles were drawn from world literature and media as well as items in the Library collection. Orchard Walk also includes a \"welcome mat\" in the main entrance to the Library. It contains whimsical images of two people, male and female, tending a garden and framed in the words \"Cultivate Your Mind in the Orchard of Knowledge,\" the artist’s unifying theme for the group of artworks.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Cultivate-Your-Mind-in-the-Or-490",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1059,7 +1059,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95122",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2745%2fImages+CANON+01302012+025_201404301457224655.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5118/636715771011100000",
         "description": "Cultivating Community was created in partnership with Don Imwalle and Imwalle Stegner Development, the property developer and the San Jose Redevelopment Agency.  The artwork is part of a larger, comprehensive project, the Alum Rock Cultural History Corridor (ARCHC), which seeks to celebrate the rich cultural history of east San Jose through artworks and other elements. Raps’ sculpture is in the form of a life size 'spring-tooth harrow', an iconic piece of farm equipment used to cultivate the land by aerating the soil with curved ‘tines’ that turn the soil as the harrow is pulled along. The sculpture depicts ten human arms cast in bronze replace the harrow’s curved 'tines', miming the harrow’s purpose but with human hands turning the soil. The sculpture thus symbolically depicts the many human hands that worked the fields and speaks to the agricultural work and hard physical labor that has been such an important part of the community. It further suggests the idea of cultural diversity and the power of people working together to build community.  The arms in the artwork are castings of real community members, underscoring the artwork’s connection to the area and to this community (see fact sheet for detail). Each person has a real connection to the idea represented in the work.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Cultivating-Community-Tropica-458",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1104,7 +1104,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95121",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2746%2fUntitled-5_201404301502308953.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5122/636715826940270000",
         "description": "Located in the viewing garden that spans the northeast facade of the library, Larry Kirkland’s sculpture speaks of the human potential for learning and exploration through our senses. According to the artist: “What unites all people is our search to understand our world and existence.  From the moment we are born we begin the process of discovery that continues throughout our lives.  For that reason I have decided to title the sculptures Discoveries.\"The concept of the pieces was to suggest the universal human potential for exploration and learning through our senses.The three large white marble stones were found in Carrara, Italy in the same place where Michelangelo sourced stone for his carvings over 500 years ago. The carving of the stones into an ear, mouth, and eye, show the human forms emerging out of the rough hewn boulders. It is a balance of the beauty of the natural stone and the beautiful carving of the human forms.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Discoveries-Evergreen-Branch--476",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1127,7 +1127,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95136",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2747%2fH.M.+Installation+View+3+-+Copy_201406111932027022.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5130/636715828670530000",
         "description": "<div class='editorContent'>The paintings selected for Hayes Mansion feature Bay Area artists who either explore abstraction and pattern, or who celebrate California’s landscape. Several forces, not least of which are the region’s qualities of light, mood and atmosphere, have combined to give Northern California its unique importance in landscape and abstract painting.<br><br><table class='telerik-reTable-1' cellpadding='3' cellspacing='1' height='240' width='423'><tbody><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'><b>Installation</b><br></td><td class='telerik-reTableEvenCol-1'>&nbsp;<b>Artist</b></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Ornamental Iron Work Fencing<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Mike Bondi<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Stained Glass<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Alan Masaoka<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Stained Glass<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Tom Stanton<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Ornamental niches<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Penelope Fried<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Exterior Lighting<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Pam Morris<br></td></tr></tbody></table><br><br><br> During its renovation in 2006, funds&nbsp;were&nbsp;allocated to&nbsp;acquire&nbsp;artwork that would enhance the enjoymentof the&nbsp;facility by visitors and local community alike.&nbsp; The paintings selected for Hayes Mansion feature BayArea artists who either explore abstraction and pattern, or who celebrate California’s landscape. Several forces, not leastof which are the region’s qualities of light, mood and atmosphere, have combined to give Northern California its uniqueimportance in landscape and abstract painting.<br><br><table class='telerik-reTable-1' cellpadding='3' cellspacing='1' height='240' width='423'><tbody><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'><b>Title</b></td><td class='telerik-reTableEvenCol-1'>&nbsp;<b>Artist</b></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1' style=''>Labor Theory of Value<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Rick Arnitz<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Hayes Green<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Brian Blood<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Rolling Meadows<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Jamie Brunson<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Olema Hills<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Willard Dixon<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Westering (Littorialis)<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Wade Hoefer<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Tropic Fruit </td><td class='telerik-reTableEvenCol-1'>&nbsp;Amy Kaufman<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Orchard 4<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Jeff Long<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Summer Storm<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Carloe Pierce<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Ochre Without Window<br></td><td class='telerik-reTableEvenCol-1'>&nbsp;Silvia Poloto<br></td></tr></tbody></table></div>",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Dolce-Hayes-Mansion-Collectio-421",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1194,7 +1194,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2481%2fDrmingFIDS++3_201401281449203761.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5150/636715830256600000",
         "description": "Airport information and security systems animate a dynamic aquatic ecosystem of schooling fish, underwater cameras and video screens. This artwork is both a celebration of the beauty of complex technological and organic systems and a statement about the ubiquitous prevalence of surveillance in our lives.   \r\n\r\nThis project was developed in collaboration with aquatic specialists and the ongoing welfare of the fish is monitored regularly.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Dreaming-FIDS-San-Jose-Airpor-408",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1335,7 +1335,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2748%2f4th++SF+Garage+SF+facade+compressed+photo+credit+gregory+case_201404301606284310.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5150/636715830256600000",
         "description": "The design of Echo grew out of discussions between the artist and architect and their desire to define the nighttime identity of the building and enliven the nighttime identity of the downtown. On San Fernando Street, the vertical spaces of the elevator towers read as monolithic volumes of light in three colors. As one color slowly dims another color is brought up in intensity to fill the volume of space. The elevators themselves have standard incandescent lights and are visible traveling through the volume of color.Centered within the nine foot by six foot bays of the building, behind the perforated metal façade, are 24 three-foot squares of neon light controlled by individual random fading transformers. The rectangular mass created by the 24 boxes illuminates the building façade. The squares of light float, change color, and fade constantly, but subtly, create new patterns and compositions.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-ECHO-4th-and-San-Fernando-Gar-424",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1358,7 +1358,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2479%2feCloud_photo-ben.blackwell_201401281407112198.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5164/636715833897330000",
         "description": "In this dynamic artwork, thousands of switchable glass squares suspended from the ceiling continuously change from opaque to transparent with the transmission of real-time weather data.  Explore current weather conditions around the world on the artwork’s dynamic display.      \r\n\r\nSponsored by: (Adobe Foundation)",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-eCLOUD-Noman-Y-Mineta-San-Jos-404",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1374,7 +1374,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95136",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2883%2fedenvale0001_201406111814128639.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5886/636716840427030000",
         "description": "Anna Valentina Murch’s Garden Park is situated in Edenvale Park next to the historic Hayes Mansion. Through public meetings, Murch discovered that the community wanted an artwork that was inspired by the vast history of the site. They asked for the piece to incorporate elements of the indigenous people of the valley, the agricultural era, Frontier Village - the 1960s era amusement park located on the site, the Hayes family orchards, and the garden of Mary Hayes. They also desired an artwork that revolved around a theme of transition, both physically and symbolically, to represent the transformation of the park through the master plan and the restoration of wildlife. Lastly, they hoped that Murch’s artwork would be a place of contemplation and peace. Murch’s artwork features a stone circle in the middle of the garden covered in round holes, reminiscent of Native American pounding holes, which function as waterholes for wildlife. To the north of the stone circle is an oak grove, which also references indigenous people who were dependent upon acorns as a staple of their diet. Ornamental cherry trees are planted to the west and east of the circle in remembrance of the Hayes’s orchard and the valley’s agricultural past. A bridge leads away from the circle towards the mansion over a moat of wildflowers in honor of Frontier Village. Lavender is found on the far edge of the oak grove, creating a rich scent nostalgic of Mary Hayes’ healing garden. This peaceful artwork provides an area for quiet meditation on the transition of the seasons and the transformation of the park’s historic value. Students from neighboring elementary, middle and high schools participated in the creation of the artwork and, in the past, used it as a touchstone for a curriculum about the community.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Edenvale-Garden-Park-502",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1423,7 +1423,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95120",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2749%2fIMG_8431_201404301840299332.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5174/636715835704670000",
         "description": "Almaden Valley is a two panel mural that flanks the stage in the community room. The left panel is a representation of the agrarian past of the Almaden Valley. The image depicts a man carrying a bushel basket. In the background is an oak tree symbolizing the eternal quality of the natural world. The right panel depicts a female figure with children dancing around her. She faces the children with her arms stretched upward seeming to hold a transparent sphere. The sphere symbolizes the limitless possibilities of the future.   Both panels are painted on a gilt silver background (gold over silver). A limited palette of cinnabar-colored pigment is used. The silver and cinnabar reference the local mercury mines that played an important part in the development of the Almaden area. The mural has a stylistic affinity to the murals created through the federal WPA program in the 1930’s and 40’s. The connection to this rich heritage is important to artists’ vision for the work.  Evans and Brown also created two decorative murals for the Children’s Areas in the Library and Community wings of the building. As its name conveys, Enchanted Forest suggests themes of a whimsical enchanted forest.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Enchanted-Forest-and-Almaden--466",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1441,7 +1441,6 @@ const art = {
       },
       "properties": {
         "title": "Enlightenment Mural at Washington Elementary School",
-        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/216e146f9259f45dcc80330b4780e95a/5DE8413E/t51.2885-15/e35/s480x480/65188860_113761009710791_6216448838859168977_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
         "artist": "Carlos Rodriguez",
         "description": "This mural was painted by artist <a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>, and produced in collaboration with Santa Clara University and Washington Elementary School. It is located at Washington Elementary School. View a <a href='https://www.instagram.com/p/BSIlGvDA3tF/?taken-by=carlosrmk' target='_blank'>picture of the mural.</a> Source: Carlos Rodriguez",
         "address": "100 Oak St",
@@ -1492,7 +1491,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2792%2fFigure+Holding+the+Sun+1.5+in+slide_201405141742301785.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5176/636715836701300000",
         "description": "Figure Holding the Sun is one of only a few public pieces created by artist Italo Scanga. An innovative neo-Dadaist, neo-Expressionist and neo-Cubist multimedia artist, Scanga made sculptures of ordinary objects and created prints, glass and ceramic works. This scupture was created at a time when the artist talked about his work being “very colorful, very joyous, happy work. It was about the good things in life, not about the horrible things.”",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Figure-Holding-the-Sun-Circle-443",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1515,7 +1514,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2618%2fJune+2004+161_201405141813360388.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5180/636715837985170000",
         "description": "Five Skaters commemorates the San Jose region’s unique concentration of professional figure skating champions: Brian Boitano, Peggy Fleming-Jenkins, Rudy Galindo, Debi Thomas and Kristi Yamaguchi. Five Skaters honors the art and sport of figure skating, San Jose’s local champions and others who have contributed to its vitality, tradition and popularity. The artwork consists of three parts: five monumental columns, a large terrazzo ice rink, and three winners' podiums. The 20 foot-tall columns are clad with mosaics of black, white and gray ceramic tiles featuring photographic images of the five San Jose Area champions and convey the spirit of championship, including the pressures of competition, the scrutiny of the judges, the presence of the live audience, and the watchful eye of the press.The oval-shaped terrazzo rink is surrounded by built-in seating. Thin metal strips are embedded in the terrazzo curve throughout the rink creating patterns like those etched in ice by skate blades. Complementing these curves, text conveying the personal recollections of each champion swirl about the ice. The surface of the rink also features five recessed niches; these contain display photographs and personal memorabilia of the San Jose area figure skating champions. The final element of the work is a set of three winners' circles, cylindrical disks of varying heights; these reference the award podiums for medalists. They are designed so that anyone can stand on them and experience a personal moment of championship.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Five-Skaters-Arena-Green-416",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1538,7 +1537,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95133",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6774%2fIMG_0516.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5188/636715839376370000",
         "description": "FOGWASTE is a public art installation and community outreach effort. The project targets communities with a three-phase approach that together reinforce the important work of DOT’s sewer maintenance staff, the importance of the community in understanding of FOG (Fat Oil and Grease), the sanitary sewer infrastructure, and the potential actions that residents can take to achieve a positive impact on the sewer system, the environment, and their communities. The project elements work together to stimulate community curiosity, encourage participation in best household practices, and promote environmental stewardship:Doorhanger:  Addressing the issue directly at the household, a bold graphic poster is distributed as a door hanger by DOT crews in the vicinity of recent sanitary sewer maintenance activity. The poster features simple and engaging icons to educate about various FOG wastes and common household products not to be put in sinks; the poster also brings awareness to features of the infrastructure system. Printed in the project’s signature electric green color, the door hanger connects to the other art elements described below. Multi-lingual text provides explanation and vocabulary for a more informed community. Manhole Marker: Bringing attention to the infrastructure below the streets, manholes of recently serviced sewer lines were painted in the project’s signature electric green color, creating awareness of this largely unnoticed infrastructure. Painting of the manholes coincided with the distribution of door hangers creating a connection from the front door to the system under the street. Maintenance Truck Graphic: A bold vinyl graphic was applied to select sewer maintenance trucks traveling to the target neighborhoods that features a design that calls out the 24/7 sewer maintenance service provided by the City. The vinyl graphic will be rendered in the project’s signature electric green color reinforcing the connection between the truck, door hangers and manhole markers and the workforce that is constantly on the move to manage the system. DistrictCity Wide Report a concern (408) 793-4330 or publicart@sanjoseca.gov",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-FOGWASTE-CityWide-564",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1561,7 +1560,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95116",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2793%2ffour_tokens_201405141818544376.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5200/636715840438970000",
         "description": "Foretokens is a series of cast bronze amulets attached to sculptural bases placed at every tee at the Rancho Del Pueblo Golf Course. The idea of icons of power (lucky tokens) affecting fate is a universal concept, inspired the artist to create nine bronze talismans for the nine-hole golf course including: a lucky penny, a horseshoe, a wishbone, a four-leaf clover, a hand milagro, a scarab, a rabbit’s foot, a bat, and a Zuni bear fetish.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Foretokens-Rancho-Del-Pueblo--492",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1629,7 +1628,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95136",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2794%2fBirdhouse_3+(Photo+Credit+Gregory+Case)_201405141826117144.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5216/636715925026570000",
         "description": "Edenvale Park is the former location of Frontier Village, a western-themed amusement park that thrived before closing in 1980. To demarcate the site of Frontier Village, artist Jon Rubin created bird houses in five locations in the current park that geographically correspond to buildings and amusements that once existed during Frontier Village's heyday: the Railroad Station; the Main Entrance Log Tower Structures; the Mine Ride; the Old School House; and Main Street. Attached to each pole is a plaque that depicts historical photos and text providing context for the amusement park buildings that once existed. The interpretive plaque also describes the species of birds most likely to occupy this new house.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Frontier-Village-Birdhouses-E-451",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1652,7 +1651,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95119",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2795%2f10-15-08+FS+17+004_201405141840079233.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5222/636715927187200000",
         "description": "Fuel Tank brings together a mirror-polished aluminum recycled jet fuel tank and pieces of dichroic glass to create a 20' sculpture that suggests an abstracted flame. The sculpture is highly reflective, both in the sheen of the aluminum and the colored reflection of the dichroic glass. Dichroic glass is highly light sensitive and shifts in color dependent on the angle of viewing and direction of light. Through the day, sunlight interacts with the glass to create moving patterns of colored light across the ground; by night, lit from within, the artwork glows.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Fuel-Tank-Fire-Station-17-434",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1675,7 +1674,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95116",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2796%2fImg0221_201405141852552554.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5228/636715929521970000",
         "description": "This work was inspired by the diversity, and the rich cultural history, of the Mayfair area and by the spirit of growth and renewal embodied in the flourishing Mayfair Community Garden adjacent to the site, one of the City's oldest community gardens. Garden of Strength is comprised of three distinct artwork elements, Bienvenidos, Garden of Life, and The Three Sisters.Bienvenidos is an installation of art glass windows with infused photographic images that form an archway in the Center's entrance. Garden of Life is a richly textured group of elements in the Center's tower and utilizes nichos to present a series of objects. The elements include a glass mosaic niche patterned in celestial designs; a bronze apricot branch with glass apricots; a timeline of Mayfair historic images on glass; and a video installation featuring images of local history and culture. The Three Sisters are three stone sculptures that depict the trilogy of squash, beans and corn, fundamental and sustaining food elements in many cultures.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Garden-of-Strength-Mayfair-Co-487",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1767,7 +1766,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95122",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2798%2fGroundwork1cropped_201405141912295667.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5248/636715931329730000",
         "description": "Addressing the mid-century agricultural labor history in East San José, the artist worked with the project architects to design the shape of the rotunda, the columns, the terrazzo flooring and window openings. Each of the eight free-standing structural columns is composed of a stack of tractor tires; curved staves milled from recycled old-growth redwood, which are evocative of a harvest basket; the stainless steel can that pays homage to the canneries; and madrone branches, an indigenous tree revered by the local Ohlone Indians. Trachtenberg was also captivated by the intrinsic beauty of the farmed landscape, inspiration which she captured and reflected in the other component of Groundwork: a series of twenty-six paintings called The Shadow Frieze. The paintings that encircle the rotunda below the window openings evoke the aerial views of tilled earth, orchards, and crop rows.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Groundwork-and-The-Shadow-Fri-478",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1813,7 +1812,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95132",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2797%2ffinal+installation+image_201405141854188201.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5258/636715933155200000",
         "description": "The artwork creates iconic columns at the entrance to the Fire Station 19. The concept for the columns was influenced by the multi-functional role each firefighter plays on the team. Also it was influenced by the community and its diversity, as well as how the community relates to and perceives the firefighters (and vice versa). The 8’ tall columns bases are articulated like the equipment fittings found on the rigs and hydrants. On the stainless steel columns are etched images of firefighters and historic firefighters from cultures from throughout history: 1) Wildland firefighter, 2) Explorers (youth firefighter program), 3) Vigiles Urbani (the first organized fire brigade of Europe), 4) Knight of Malta (where the current Maltese cross on firefighters emblem originated), 5) Edo Firefighter (early Japanese firefighter) and 6) Sapeurs-Pompiers (the first professional firefighters from the French Army of the 19th century). Each column is divided into three parts that can be turned individually, like a section of a mix ‘n match puzzle so that the figures can be morphed into any number of combinations.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Guardians-of-the-Garden-City--436",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1859,7 +1858,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95124",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2799%2fCamden+Community+Center+Images_0013_201405141918455764.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5268/636715934335900000",
         "description": "The work depicts a small hand in the middle of a large hand, suggesting relationship between adult and child, large and small.  Located atop of a small mound at the entryway into the community center and adjacent to the playing fields, it serves to greet people as they come to the facility. Viewers regularly see children waving at the artwork from cars as they enter the community facility.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Hand-in-Hand-Camden-Community-447",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1882,7 +1881,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2476%2fhands+early+morning+by+mathesmeir_201401281303050323.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5274/636715935863230000",
         "description": "On the east side of the Airport's Consolidated Rental Car Garage, the hands of 53 Silicon Valley residents\r\ngreet the world from a mural created with plastic pixels affixed to\r\narchitectural metal mesh, spanning 1,200 feet and standing seven stories\r\nhigh.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Hands-Norman-Y-Mineta-San-Jos-402",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -1998,7 +1997,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2631%2fBora+Bora_Alexander_201403251606247949.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5282/636715937951200000",
         "description": "<table class='telerik-reTable-1' style='width: 100%;' cellpadding='2' cellspacing='1'><tbody><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'><b>Title</b><br></td><td class='telerik-reTableOddCol-1'>&nbsp;<b>Artist</b></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1' style=''>Over the Guadalupe<br></td><td class='telerik-reTableOddCol-1'>Barbara Kasten<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Obor<br></td><td class='telerik-reTableOddCol-1'>Ed Moses<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Wanderers</td><td class='telerik-reTableOddCol-1'>Selina Trieff<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Honolulu Hay Dos<br></td><td class='telerik-reTableOddCol-1'>Rupert Garcia<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Scissors, Paper, Stone<br></td><td class='telerik-reTableOddCol-1'>Katherine Levin-Lau<br></td></tr></tbody></table>",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Hilton-Hotel-Collection-474",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2045,7 +2044,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2800%2fjs_ice_play_201405141930438291.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5306/636715938760970000",
         "description": "The word “ICE” painted in colorful letters on the corrugated metal façade, creates a vivid backdrop to the 7 aluminum figures, painted in brilliant colors and reflecting San Jose’s cultural diversity. These figures range in height from 15 - 18 feet, represent ice dancing, skating and playing hockey, and illustrate the fun and excitement of ice skating. Two of the figures represent enthusiastic spectators. Artist JoeSam stated that this piece is about warmth, color, and humor as seen through these playful figures.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Ice-Play-Sharks-Ice-at-San-Jo-423",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2068,7 +2067,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2801%2fIdeaTree-Photo17_byShin+Kyungsub__201405141948585759.jpeg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5318/636715941054570000",
         "description": "Creating a social space bringing together Convention Center event goers and the general public, the project’s central element is a 40’ diameter canopy, supported by three groups of columns. The canopy is created with six interlocking steel rings intricately held in tension by steel cables, covered by translucent polycarbonates 'leaves.'Critical to Yang’s concept for the artwork is the gathering of spoken ideas. Adjacent to the Tree is the project’s sculptural sound “booth” (the “Seed”) where a sensor activated, audible prompt, encourages community to leave a short voice message.  Once a day before morning, messages are wirelessly transmitted to sound equipment housed at the center of the canopy (the “Fruit”), where audio messages are reassembled to create the haiku-like whispers within the Tree. Some whispers remain over time; others fall away into an ever-evolving ambient music-like soundscape that the artist describes as a “self-sustaining ecology of ideas",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Idea-Tree-McEnery-San-Jose-Co-527",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2155,7 +2154,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2802%2fJAIM+2_201405141956508536.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5320/636716031576800000",
         "description": "This bronze bas-relief, located outside the Federal Building, is a reminder of the injustices committed against the Japanese American people and of their strength of spirit. On one side of the memorial the panels depict life prior to the internment, showing a robust, prosperous community. The other side portrays various aspects of the history and reality of life in the internment camps. There are images of Franklin Roosevelt signing Executive Order 9066 issuing the internment policy, notices for internment being sent to people of Japanese ancestry, the daily of life of the camps, and adjustment after the war. The final panel portrays the 1988 Redress in which a formal apology and compensation was issued to every survivor. In a column at the end of the wall, many \"mon\" (traditional family crests) sent in by community members are also displayed. The memorial visualizes the inhumanity and strife of the internment camps and reminds the public that fear of the “other” can lead to broad spread racism, prejudice, and discrimination.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Japanese-American-Internment--516",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2197,7 +2196,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95120",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2803%2fImages6.8.11+206_201405142003236762.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5328/636716032424870000",
         "description": "This artwork was commissioned to commemorate Jeffrey Fontana, the young San Jose police officer killed in the line of duty.  Mr. Fontana was a 24-year-old Woodside resident and rookie police officer patrolling the upscale Almaden Valley neighborhood when he was fatally shot during a routine stop.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Jeffrey-Fontana-Memorial-Font-506",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2224,7 +2223,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2804%2fJumpcuts+1_201405142023510826.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5340/636716033734330000",
         "description": "The movie marquee became a familiar downtown architectural feature with the popularization of cinema in the 1920's and 1930's. Its objective of transmitting information to the street was fully realized at night with illuminated displays as a form of urban seduction.  A contemporary interpretation of the marquee suggests not only technical revision for this transmission of information, but a rethinking of urban communication. Jump Cuts reinterprets the mechanism of the marquee through sculptural, electronic and video elements, broadcasting images and texts, both informational and contemplative, to the street. The artwork transforms the visual accessibility of the lobby by alternating between the actual view from the street and live video views from within, thus flipping the building inside-out and back, electronically.  The project includes twelve 5' by 6'- 8\" liquid-crystal display panels mounted on the outside of the glass facade of the building. By day, viewers see text permanently etched onto the surface of the glass panels.  From the outside, the text reads, \"Truth is stranger than fiction is stranger than truth...\"  From inside the lobby, the text reads, \"Life imitates art imitates life...\" In the evening, the LCD panels  are transformed into video screens.  Images projected onto the screens sequence between movie trailers and live feed from video cameras mounted inside the lobby.  In between these sequences, the screens become transparent, allowing full view of the interior lobby.  A computer controls all of the dynamic elements of the marquee, including activating the panels, turning them translucent and providing the surface upon which images can be projected.  The image sequencing is preprogrammed for the twelve months of the year to begin operation at dusk and continue through midnight.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Jump-Cuts-Camera-Cinemas-419",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2314,7 +2313,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2623%2fdichos_pilar_2_201403211341232297.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5342/636716034986130000",
         "description": "Five murals composed of numerous panels of various sizes, put\r\ntogether like a puzzle. The themes of each mural relate to San Jose: the land and\r\nvalley; education; heroes and history; love and art; and ancestors, legacy and\r\nfuture. Images are woven together thematically by Spanish dichos, popular\r\nSpanish proverbs and sayings that communicate simple wisdom. The dichos\r\nare translated into English through 3-dimensional text mounted on the adjacent\r\nwalls.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-La-Vida-en-Dichos-Biblioteca--420",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2383,7 +2382,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95116",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2805%2f8-27-09+003_201405152009442382.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5350/636716036424500000",
         "description": "Text",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Lightlines-and-Wall-of-Birds--488",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2406,7 +2405,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95119",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%2fBeacon+Light_201405152109127514.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5364/636716037938370000",
         "description": "Lineage is composed of three sculptural elements creating a connective line that joins Fire Station 35 with the Southside Community Center: Water and light activate the Strata Wall, Tule Reed Drain, and Community Beacons. The art connects the viewer with the community’s history from past to future through forms, artifacts, and imagery. From early stories celebrating the healing power of local springs, to the sustenance of the community through agriculture, and as a key element in the service of fire fighters, water is the essential component to life in the valley. Water flows from the Tule Reed Drain into a runnel on top of the Strata Wall, and then cascades onto a splash stone and into the landscape. Like water, light sustains the community from plant growth to the flow of electric energy essential to high tech. Sunlight reveals the rich colors of the art and brings the solar-powered Community Beacons to life at night, while electric light illuminates layers in the Strata Wall.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Lineage-Fire-Station-35-512",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2498,7 +2497,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2806%2f000016_273994_031165_0511_201405152128175776.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5376/636716038824070000",
         "description": "The work is a story of two travelers on a yellow horse visiting San Jose. The rest of the mural illustrates different venues, most particularly the Freedom Train. The travelers departing from the Freedom Train illustrate the vast ethnic groups that live in the City.In 2010, this work was moved from its original location at the San Jose International Airport to installed at the Biblioteca Latinoamericana Branch Library.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Los-Viajeros-Vienen-a-San-Jos-432",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2564,7 +2563,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2615%2fgalarza.fullview1_201405152135598082.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5384/636716041403030000",
         "description": "The design of this commemorative artwork connects San Jose State University with Plaza de Cesar Chavez, in the heart of the City's downtown.  The artwork references Dr. Ernesto Galarza’s life-long pursuit of bridging academic and civil life and referencing the many facets of his work, including academia, poetry, education and labor organizing.  The work is composed of three elements:\r\n\r\nLibrary Table:\r\nThe surface of the cast-concrete library table is inlaid with bronze farm tools, a cast-bronze field-worker's hat, photo-etched black granite portraits, photo-etched ceramic tiles and bronze text.  The relief surface of the table is designed to encourage pedestrians to view and touch the inlaid elements.\r\n\r\nCast Bronze Chair\r\nAt the west end of the table, facing Plaza de Cesar Chavez, an empty cast-bronze chair with a wooden seat serves as a metaphor for Dr. Galarza as the field worker who took his scholarly practice into the world.  The chair is a functional element, and is intended to encourage visitors to stop, sit and explore the information contained in the table surface.\r\n\r\nRibbons of Terrazzo\r\nThe ribbons of terrazzo are 11\" wide and of varying length, and lace through the existing Paseo paving in each of the four blocks.  Designed to have a subtle physical and visual impact upon the Paseo, these ribbons are intended to draw the pedestrian through the length of the walkway.  The terrazzo is inlaid with bronze text, in both English and Spanish, introducing the commemoration through personal recollections about Dr. Galarza's life and work from his family, friends and colleagues.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Man-of-Fire-Paseo-de-San-Anto-414",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2671,7 +2670,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95148",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2808%2fwebsite+image_201405152148019829.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5394/636716042042470000",
         "description": "Meditation Bench is a sculptural chair that is placed on a hill overlooking the park. From afar, the bench appears to be a sculpture, but upon further exploration, one discovers that it is also a private bench to contemplate the view. The inspiration for the form of the bench is drawn from nature, such as a seed pod or leaf. The spiral designs represents a spirit of renewal and the cycle of life. Thus,  Meditation Bench is intended to connect the sitter to the environment of Groesbeck Hill Park, and the beauty of the natural forms found in nature. This piece reflects the artist’s study of archetypal symbols from nature and ancient art. She considers shapes such the sprial, circle, and cresent a part of a universal visual language. Inspiration for these geometric forms also comes from ancient pottery and cave walls, which the artist has explored extensively. For the artist, Meditation Bench is both a reference to nature and to past artistic forms.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Meditation-Bench-Groesbeck-Hi-517",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2694,7 +2693,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2809%2fMetamorphosis_201405152156581529.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5396/636716043756200000",
         "description": "All over the world, trees have figured in ancient myths, and rituals, and many trees of legend are also a source of knowledge. The artist inspired by this and further intrigued by the transformation of butterflies, and that as a metaphor for the human life process from childhood to maturity. With these ideas in mind Ms. Liew created Trees of Knowledge: two \"trees\" formed by integrating painted elements, positioned to suggest treetops, onto columns of the building. Their shape also echoes that of butterfly wings and each is painted with rich, colorful mythological imagery. Ms. Liew suggests that these, \"serve as a gateway to the world of imagination and learning that await the visitors to the Children's section of the library.\"   Ms. Liew's Metamorphosis - Transformation in the Woods is a painting in the form of butterfly wings. Located in the Storytelling Corner, these are positioned so as to frame the storyteller. Colorful imagery on the wings references characters from classic fairytales, nursery rhymes set in the forest, and folklore and is intended to inspire positive themes for young readers.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Metamorphosis-Transformation--484",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -2980,7 +2979,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95125",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2899%2f8-13-08+082_201406112009476039.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5402/636716044550630000",
         "description": "This tile mural in the courtyard, was created with donated community funding by artist Nina\r\nKoepcke and children from Willow Glen Library in memory of Helen Clair\r\nOwen.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-My-Rabbits-Stories-in-Clay-Wi-433",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3003,7 +3002,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2904%2ffossildetail_201406122023558777.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5414/636716046105470000",
         "description": "This multi-element project is designed as an integral part of the school environment, so that art and life are harmoniously fused together.  Each piece responds to a particular aspect of the school's physical, social or historical environment.   Alphabet Windows: twenty six of the small classroom windows feature an animal or a bird whose name corresponds with one of the letters of the alphabet.Animal Footprints: Animal foot prints are impressed into the plaza around the water fountain near the Administrative building.  They are placed in such a way as to appear that the animals have come to drink at the \"watering hole.\"Fossil Wall: The wall between the Kindergarten and Multi-use room, presents a geological fossil, a replica of actual an actual fossil.  Students are exposed to the concept of geological time and the fossil record.Classroom Name Plaques: Each of the three floors of the school building are given a classification category of Animal, Vegetable or Mineral.  The ground floor is named for rocks and minerals, the second floor for plant life and the third floor for animal life. Each room is given a name as a layer of identity beyond the usual room numbers. The progression upward in the building represents greater complexity of life.   Banner Mural: Historic murals from the original school have been documented and photographically reproduced on screen mesh fabric, which is hung as 2' X 5' banners in the mulit-use room. The project seeks to celebrate the identity of the school by preserving the past and contributing new identity to inspire the imagination of its student body.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Nature-of-Life-Horace-Mann-Sc-539",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3026,7 +3025,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95133",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2897%2f_MG_0398_201406111949375729.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5432/636716047676700000",
         "description": "Internationally-recognized photographer Catherine Wagner created a dynamic architectural frieze that investigates ideas about knowledge, nature, wonder and discovery. This frieze is installed on the clerestory walls of the library entrance, and consists of printed images laminated to aluminum panels. Source material for the photos includes trees, rocks and plants from Overfelt Gardens, as well as Chinese Scholars’ Rocks from some of the preeminent collections in the United States.Integrated into the installation at the west end of the building is the signage for the Library’s “Tech Connect” area. This sign is comprised of two parts—the practical wayfinding text, and the surrounding cellular image forms. The cellular pattern was made using Voronoi diagrams for points that are algorithmically distributed through the panel and concentrated within the letter forms. So, abstractly the cells are defined by the letters and the surrounding images themselves. The “Tech Connect” sign was designed by Michael Thompson of Coded Meaning, a frequent collaborator with Ms. Wagner.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-NatureKnowledge-Educational-P-500",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3049,7 +3048,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95111",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2906%2fcorner+ECC_201406171300290720.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5458/636716049420430000",
         "description": "The title of this work came from the community's aspirations for each child in Edenvale to find success in life. The artwork consists of two elements: bronze sculptures inset into the exterior walls at each of the three entrances to the building, and vinyl drawings on the large gymnasium windows that face Branham. All the elements are based on objects, images and ideas cultivated by the artists from the community. The artists engaged in extensive interaction with the Edenvale community in the creation of the artwork. They went out to schools, neighborhood and community gatherings, youth centers and the library to encourage community members to \"Be a Part of the Art\" by contributing objects, stories, photos and memorabilia that represented their own lives.   The window drawings depict a series of doors, many photographed in the adjacent neighborhood. The doors become an entry point to different ideas the artists wanted to convey, based on the community outreach and their own research.   Sculptures are set in boxes that are inset in the façade of the building. The sculptures are hybrids of many of the donated and discovered items from a very diverse community brought together in a way to inspire new thinking about everyday objects, as well as the long and interesting history of the area. The bronzes are accompanied by quotes from A Spiritual Thought for Each Day, a book of inspirational thoughts by Mary Hayes- Chynoweth, an early settler in the Edenvale, and builder of Hayes Mansion.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Not-If-But-When-Edenvale-Comm-520",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3162,7 +3161,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95120",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2898%2fImages+031_201406112006057076.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5460/636716050526470000",
         "description": "The courtyard artwork is a life size image of a native Californian: an Ohlone woman in a tulle reed boat. For the artist this image honors the roots of our humanity and those who lived here in a world of unimaginable natural beauty.The bronze sculpture is 6’ x 7’-5” x 2’-5”(h x w x d). The bas-relief supporting the boat depicts a visual narrative of the history of the local region and of California. The images depicted on the bas-relief represent an integrated view across time:Landscape depicting the area pre-European settlement: oak trees, hills, a stream, a view to the distant ocean, and native flora and fauna including poppies, lupine, redwood trees, deer and birdsIn the view to the ocean bay is a Spanish Galleon signaling their arrival to the regionCircling around the front is a packing mule and miner, referencing the quicksilver mines and the Gold Rush eraThe miner stands on a precipice overlooking an orchardIn the far right there is a highway that curves away taking the viewers eye to a cityscape of the modern San José regionThe visual narrative ends with an image of a young woman gazing at a computer screen.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Ohlone-Woman-Almaden-Communit-479",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3185,7 +3184,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2492%2foinois_2_201402041413212225.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5468/636716051955630000",
         "description": "Oionos is a Greek name for a large mythical soaring bird, as well as a series of experimental kites designed by Alexander Graham Bell. The artwork references text, language, and writing – the tools which poets and playwrights have used throughout history. It is a metaphor for the technology of the written word and for the flight of imagination.  \r\n\r\nThe artwork is composed of two main elements: a 24-foot illuminated quill and a circular element which supports a perforated steel screen with cut-out text. Both the quill and the circle are supported by a 16-foot tapered mast. The quill is mounted on bearings allowing it to rotate in the wind. The structure of both elements is composed of stainless steel tubing. \r\n\r\nThe artwork also features text from William Shakespeare’s The Tempest, and reads “We are such stuff as dreams are made on...” This piece celebrates language as a triumph of human ingenuity. As Douglas Hollis said, “Birds fly in air, fish swim in water and humans live in language.”",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Oionos-San-Jose-Repertory-The-413",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3233,7 +3232,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95126",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2812%2fRose+Garden+Library+Disc_201405160030234511.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5474/636716056323770000",
         "description": "The artwork is comprised of two parts: Aton and Floribunda. Aton by definition is the disk of the sun, regarded as a deity in ancient Egyptian mythology. A 5’ diameter aluminum disc frames glass roses that shoot out from the surface like solar flares. Each rose is attached to a pipe stem threaded through hieroglyphic punctures cut in the surface of the disc. The stems continue through the disc and braid into a 12 foot long ‘stream’ trailing through the lobby space. Roses, leaves and thorns adorn this ‘stem stream’. The inspiration for Aton is from two sources and the meanings prompted by their overlay are multifaceted. Framed by the disc, the rose may represent passion & friendship (red & yellow), solar flares (blossoms framed by the disc), streams of thought (intertwined stems), problems & challenges (thorns), and, perhaps, as the mystic poet Rumi might ascribe—an inner luminosity essential to the rose itself. The second piece of Olé is Floribunda (a popular rose cultivar group) located on fireplace chimney. This element is a metal piece with water jet cut hieroglyphics mounted on the chimney with a stream of glass roses randomly placed from mantle to ceiling. The blown glass and aluminum artwork explores the natural world in the context of the world of knowledge and reason – historic and contemporary.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Ol-Rose-Garden-Branch-Library-475",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3279,7 +3278,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2018/11/cory-taum-after.jpg",
         "description": "Cory Kamehanaokala Taum has been a life-long student and avid participant in the Oceanic art movement, in both traditional and contemporary forms ranging from large-scale public murals to traditional Hawaiian tattooing and carving. In his youth, he made a name for himself creating graffiti that echoed the ancient styles and philosophies of his mother land Hawai’i. Since then, he has been able to delve deeper into the forms of his ancestors and hopes to present them to the world thru his surreal and iconic paintings that reflect both the tales of his ancestors, juxtaposed with his experience being born raised in the concrete jungle of Honolulu. 'One Ocean, One People': A celebration of Oceanic peoples and our great legacy of voyaging around the earth. Inspired by the idea that the ocean is something that unites us, not seperate us. 'There are no more suitable people on earth to be guardians of the worldʻs largest ocean than those for whom it has been home for generations'- Epeli Hauʻofa. The composition of patterns and manaʻo were shared with me thru our teacher, Suluʻape Keone Nunes, and reference different aspects of Hawaiian spirituallity in regards to navigation and voyaging. The 'above the clouds' scene represents the view for the migratory sea birds and the idea that as human beings we must strive for the zenith in every choice and action.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/cory-taum/"
       },
@@ -3301,7 +3299,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2811%2fvendome-final+Converted_201405160024360515.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5482/636716057200870000",
         "description": "One Perfect Morning is a digitally-printed banner inspired by the residents, landscape and history of the Vendome neighborhood.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-One-Perfect-Morning-Ryland-Do-449",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3324,7 +3322,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2447%2fIMG_5289_201403202041344468.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5488/636716063425970000",
         "description": "Origin is a sculptural installation located  in the museum’s lower level south atrium. The artwork explores the relationship between art and technology, and celebrates the earth’s basic natural resources as the foundation of technological innovation. \r\n\r\nOrigin is comprised of several integral elements. A gilded, nine-foot diameter tower rises 45’ from the lower level’s terrazzo floor. The terrazzo floor design, which can easily be seen from the upper levels and the staircase as one descends, is derived from the pattern of an early integrated circuit. Natural granite boulders placed within the floor space provide informal seating. Upon further exploration the viewer looks up to a suspended tree-root system covered in gold leaf. An elegant spectrum of ever unfolding colored lights play across the interior surfaces of the tower and interact\r\nwith the suspended gilded root system. This play of light patterns is\r\nthe result of a solar light sculpture at the roof level which gathers\r\nsunlight and projects it through a series of mirrors to an imaging\r\nmechanism inside the tower.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Origin-The-Tech-Museum-422",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3344,7 +3342,6 @@ const art = {
         "title": "Owl's Nest Mural",
         "artist": "<a href='https://www.carlosrodriguezart.com//' target='_blank'>Carlos Rodriguez</a>",
         "description": "This mural is located at Olinder Elementary School. It is inspired by Coyote Creek San Jose and the energy of the students learning there. This mural is funded by Catholic Charities USA, and painted in collaboration with the after school program children. Source: Carlos Rodriguez",
-        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/c0f01afc0b74c8addb6a14c6dadf1041/5DD273E0/t51.2885-15/sh0.08/e35/s750x750/59375917_1613514172146171_782394753876307404_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
         "address": "890 E William St",
         "city": "San José",
         "country": "United States",
@@ -3370,7 +3367,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2810%2fSheedy+8-28-08+011_201405160015015056.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5494/636716071924830000",
         "description": "The artwork is a stylized, 50' tall, cut-metal umbrella mounted in a colorful, ceramic tile mosaic base that features images and remembrances of Padre Sheedy. The umbrella form of the artwork is an analogy for Padre Sheedy's protective influence in the community through the many programs he undertook with such joy. The umbrella also suggests Padre Sheedy's high aspirations of service and the sense of welcome that he extended towards everyone.Padre Sheedy's Umbrella was created by San Jose State University art professor Tony May and the students in his Art in Community class in commemoration of Father Mateo Sheedy. The SJSU artists engaged in a thoughtful process of developing the public art to ensure that it would serve as a fitting tribute to Padre Sheedy's vision and legacy.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Padre-Sheedys-Umbrella-Parque-499",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3393,7 +3390,7 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95126",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/JDuh_ariel_Final.jpg",
+        "image": "http://www.jduhdesigns.com/uploads/6/9/7/4/69748741/powwow-mural-2018-sj_orig.png",
         "description": "Whether Switching between a commission and personal work or signs and illustrations, artist J. Duh is most content when he’s experimenting. Influenced by everything from skating boarding to his city, the San Jose based J. Duh expresses the little wonders of life through sharp but explosive linework. With a cool sense of composition and a keen eye for social forces, J. Duh’s art is bold, clever, and always in step with the zeitgeist.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/jduh/"
       },
@@ -3432,7 +3429,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2850%2fParade+of+Animals+(Eagle)_201406091818274406.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5506/636716072976630000",
         "description": "A set of bronze animals represents creatures that might be found along the Guadalupe River. The animals are arranged so that the owl, hawk, and fox are eyeing the rabbit and frog as food sources. The raccoon is placed as an observer, watching all the other animals.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Parade-of-Animals-Discovery-M-497",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3455,7 +3452,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2437%2fAgriculture_Overcast_201401171626187741.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5514/636716076636600000",
         "description": "Parade of Floats is a procession of 16 sculptural \"floats\" along 5th Street between St. John and San Fernando Streets. These sculptures recall parades that are an expression of a community coming together in celebration. Each of these 16 floats are titled with themes that convey a vision of San Jose's historic and contemporary identity, as well as community priorities and values:\r\n\r\n    \r\n        \r\n            Environment \r\n            Gold Rush\r\n        \r\n        \r\n            Neighborhoods \r\n            High Technology\r\n        \r\n        \r\n            Families  \r\n            Innovation\r\n        \r\n        \r\n            Arts & Creativity\r\n            Diversity\r\n        \r\n        \r\n            Education \r\n            Overcoming Adversity\r\n        \r\n        \r\n            Trailblazers \r\n            Recreation\r\n        \r\n        \r\n            Pueblo \r\n            Children\r\n        \r\n        \r\n            Agriculture \r\n            Future\r\n        \r\n    \r\n\r\n\r\nThe pre-cast concrete bases for the floats are shaped as cars or chariots. The sculptures are ceramic tile over concrete and vary in shape and size. Seven of the themes have been developed in the form of columns, approximately 30 feet tall.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Parade-of-Floats-North-and-So-365",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3497,7 +3494,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95132",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2851%2fCataldi+Park_201406091830406724.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5542/636716077733070000",
         "description": "The fishing –fire;      The waves lapping,           Falling tinted leaves.                         -Keishi This haiku is embossed in English and Japanese on the edge of the cement circle at the center of the Path of a Ten Thousand Leaves. It captures the spirit of the path meant to highlight the passage of the seasons and give homage to the site’s agricultural past.The Path of Ten Thousand Leaves meanders through the 32-acre park with a large circular seating area at the center of the path. The 1800 foot path is embossed with black walnut and apricrot leaves, thus making the emphemereal process of leaves falling permanent. The embossed leaves also have a fossil-like design nostalgic of the fruit orchards that used to inhabit the site.  Community participation was an integral part of the design of this project. Members of the neighborhood around Cataldi Park were invited to emboss the leaves into the cement over a two day period. In doing so, this project hoped to encourage a greater sense of community, a sentiment of shared property, and a feeling of involvement in the process.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Path-of-10000-Leaves-Cataldi--501",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3565,7 +3562,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95122",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2852%2f3-6-08+011_201406091846200246.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5550/636716078501430000",
         "description": "The piece is a playful testament to the young children, families, and sports teams that use the park in their daily lives.  The dog is a noble friend, playful, and happy and it is the artist’s intent to portray these characteristics in this artwork.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Perro-Feliz-Welsh-Park-509",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3612,7 +3609,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2656%2fPlumed+Serpent+2_201404072215123669.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5554/636716079429630000",
         "description": "Plumed Serpent is a stylized image of Quetzalcóatl, one of the most important mythological deities of the Mesoamerican pantheon. It was created for the City of San Jose to symbolize the spirit of social harmony and diversity.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Plumed-Serpent-Plaza-de-Csar--498",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3635,7 +3632,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95111",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2853%2fSolariFinal2_201406091909131222.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5556/636716081505270000",
         "description": "The project consists of multiple panels, each one containing parts that might be found in a \"low rider bicycle\" model kit. The design is presented  as  if  the  parts could be snapped out of their frame and reassembled.  Small  portraits, reflective of faces found in the community, are embedded within the artwork. The artwork is intended to serve as a colorful “bridge” between the Library’s entrance and the Children’s area.  Potential  also suggests a metaphor for the process  of  transformation.  It  demonstrates how, in the creation of a low rider bicycle, an old junk  bicycle frame is modified,restored and transformed into something new and beautiful.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Potential-Seven-Trees-Branch--494",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3658,7 +3655,7 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/Hownsom_Final.jpg",
+        "image": "https://scontent-ort2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/69869245_444725152814610_9013814013914149661_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com&_nc_cat=106&_nc_ohc=byv3qf9qCBEAX9G0Bj_&oh=2800622a094c215bc750a8949579f001&oe=5EFB0E47",
         "description": "Born in Spain, German in heritage, and residing in New York since 1999, the identical twin brothers How and Nosm (Raoul and Davide Perre) are best known internationally for their large-scale murals that adorn city walls. The twins first encountered graffiti art as young teenagers making aerosol paramount in all their public works. Utilizing limiting palettes and complex compositions make their work visually mesmerizing. As you peel back one layer, another story reveals itself further complicating the message and meaning. Ongoing themes of alcoholism, betrayal, and abuse of power intertwine with positive elements as though a mirror is being held up to society; a dizzying effect that requires patience and time to unwind. 'Qualities of Life': Our latest mural focuses on the general well-being of individuals and societies, outlining negative and positive features of life. It reflects on life satisfaction, including everything from physical health, family, education, employment, wealth, safety, security to freedom, religious beliefs, and the environment. Quality of life should not be confused with the concept of standard of living, which is based primarily on income.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/howandnosm/"
       },
@@ -3680,7 +3677,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2655%2fSkeptacle+photo+credit+gregory+case_201404072037229811.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5562/636716084051870000",
         "description": "This collection of 34 artworks is sited throughout the MLK Library. These site-specific artworks are designed to provoke viewers' interest and curiosity, while encouraging exploration and circulation throughout the Library. The artworks vary from large and dramatic statements to intimate and subtle insertions that may require numerous visits to discover. Recolecciones include functional installations such as chairs, tables and shelves, as well as wall paneling, sculptural ceilings, curious light projections, and more traditional sculpture.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Recolecciones-MLK-Jr-Library-455",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3746,7 +3743,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2625%2fAgriculture+2_201403211435409173.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5600/636716085834070000",
         "description": "Remembering Agriculture recalls the rich agricultural history that was the driving force in San Jose’s economy for more than 150 years. The project recreates the distinctive shapes of those once familiar archetypal clusters of farm buildings that are seen less and less frequently in the Santa Clara Valley. Once prolific, they are now most often decaying and abandoned, glimpsed only briefly from a distance by motorists on the freeway. The structures, a water tank tower, a windmill, a barn and a small shed, are intended to be somewhat ghost-like in their transparent appearance. The structures also function as arbors for a carefully chosen selection of ivies and other perennial climbing plants.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Remembering-Agriculture-521",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3852,7 +3849,6 @@ const art = {
       },
       "properties": {
         "title": "Sacred Land, Cosmic People",
-        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/2ea022c0e5fdffd771c986c5edde4736/5DE38E70/t51.2885-15/sh0.08/e35/s750x750/57883128_436280103612283_2656074219356986584_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
         "description": "Produced by August Boeger Middle School in collaboration with City Year San Jose. Part of the mural was created with over 60 members of the community during Martin Luther King, Jr. Service Day 2019. Source: Carlos Rodriguez",
         "artist": "<a href='https://www.carlosrodriguezart.com/' target='_blank'>Carlos Rodriguez</a>",
         "address": "1944 Flint Ave",
@@ -3925,7 +3921,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6738%2flantern-5463.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5638/636716808733370000",
         "description": "San Carlos Lantern Relay is comprised on eight 6' tall lanterns along E. San Carlos Street between the San Jose State University campus and the downtown cultural and events district. The lanterns are programmed to \"play\" a range of lighting programs and respond to pedestrian traffic. Interrupting the programmed lighting, people are invited to activate the lanterns via a button on the support pole.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-San-Carlos-Street-Lantern-Rel-557",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3970,7 +3966,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%2finstalling+hands2_photo-dave.mathiasmeier_201406092016379914.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5640/636716808736670000",
         "description": ", the team of Gorbet + Banerjee (Matt and Susan LK Gorbet + Banny Banerjee) developed an Activation Plan for the airport public art program that defines a series of platforms for artwork throughout the airport. Platforms are defined by location, data and power provisions, equipment space, and physical attachments. Artists are given the unique opportunity to work with these platforms in designing their artworks. \r\n\r\nSupporting research report and schematic strategy documents for the Art + Technology Program’s Art Activation are available under Plans & Documents.\r\n\r\nArt Activation Infrastructure\r\nArtists: Banny Banerjee · Matt Gorbet · Susan LK Gorbet \r\n\r\nThe Art + Technology Program is built on a foundation of flexible ‘platforms’ for artists to use in creating technology and data-driven art.  The multi-disciplinary team of Gorbet+Banerjee designed art program infrastructure, determining appropriate locations, data, power and structure for artists to employ now and in the future. The infrastructure accommodates projection based, digital and data-driven artworks, and can be changed over time in keeping with the inevitable technological changes of the future.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-San-Jose-Airport-Art-Technolo-412",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -3993,7 +3989,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2856%2fConvention+Center+Artworks+Buck+-+Copy_201406092000458889.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5642/636716808739800000",
         "description": "<table class='telerik-reTable-1' style='width: 100%;' cellpadding='2' cellspacing='1'><tbody><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>&nbsp;<b>Title</b></td><td class='telerik-reTableOddCol-1'><b>&nbsp;Artist</b></td><td class='telerik-reTableEvenCol-1'><b>&nbsp;Location</b></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>San Jose Mural<br></td><td class='telerik-reTableOddCol-1'>Liz Utson<br></td><td class='telerik-reTableEvenCol-1'>Exterior Facade<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Winged Guardians<br></td><td class='telerik-reTableOddCol-1'>Stephen DeStabler<br></td><td class='telerik-reTableEvenCol-1'>Entrance Lobby<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Egrets</td><td class='telerik-reTableOddCol-1'>Tom Aidala</td><td class='telerik-reTableEvenCol-1'>Entrance Lobby</td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1' style=''>Lucca No. 2<br></td><td class='telerik-reTableOddCol-1'>Manuel Neri<br></td><td class='telerik-reTableEvenCol-1'>Concourse</td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Figure Four<br></td><td class='telerik-reTableOddCol-1'>Nathan Oliviera<br></td><td class='telerik-reTableEvenCol-1'>Concourse<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>Sentinel</td><td class='telerik-reTableOddCol-1'>Sam Hernandez<br></td><td class='telerik-reTableEvenCol-1'>Concourse<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>Father and Son<br></td><td class='telerik-reTableOddCol-1'>John Buck<br></td><td class='telerik-reTableEvenCol-1'>Concourse</td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>&nbsp;Cupid and Psyche or Narcissus and Eco<br></td><td class='telerik-reTableOddCol-1'>A.D.M. Cooper</td><td class='telerik-reTableEvenCol-1'>VIP Conference Room<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>&nbsp;Allegory of California<br></td><td class='telerik-reTableOddCol-1'>A.D.M. Cooper<br></td><td class='telerik-reTableEvenCol-1'>VIP Conference Room<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>&nbsp;Three Classical Beauties<br></td><td class='telerik-reTableOddCol-1'>&nbsp;A.D.M. Cooper</td><td class='telerik-reTableEvenCol-1'>VIP Conference Room<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>&nbsp;Tropical Landscape<br></td><td class='telerik-reTableOddCol-1'>&nbsp;A.D.M. Cooper<br></td><td class='telerik-reTableEvenCol-1'>VIP Conference Room<br></td></tr><tr class='telerik-reTableEvenRow-1'><td class='telerik-reTableEvenCol-1'>&nbsp;Giselle Ou Le Willis (Giselle)<br></td><td class='telerik-reTableOddCol-1'>&nbsp;Julia Lord<br></td><td class='telerik-reTableEvenCol-1'>VIP Conference Room<br></td></tr><tr class='telerik-reTableOddRow-1'><td class='telerik-reTableEvenCol-1'>&nbsp;Giselle Ou Le Willis (Albrecht)<br></td><td class='telerik-reTableOddCol-1'>&nbsp;Julia Lord<br></td><td class='telerik-reTableEvenCol-1'>VIP Conference Room<br></td></tr></tbody></table>",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-San-Jose-McEnery-Convention-C-471",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4016,7 +4012,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2726%2fone-wheel_201404292306289445.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5658/636716808767600000",
         "description": "The San José Public Art Program in association with Adobe Systems, commissioned artist Ben Rubin in the creation of artwork for Adobe's Amaden Tower.  Not unlike the Semaphore Telegraphs of the 18th century,each wheel of the San José Semaphore can assume four distinct positions and together, the four wheels have a vocabulary of 256 possible combinations that turn into new positions every 7.2 seconds pulsing out a coded message, the content of which is a mystery left as a challenge for the viewers to decipher. As of October 2012, a new code is being displayed; cracking the encryption technique and deciphering the message is posed as a challenge for the public. To the first person or group to successfully crack the new code, Adobe will award bragging rights and acknowledgment on both the Adobe website and the San José Semaphore website.Adobe's Almaden Tower is situated directly beneath the flight path for aircraft landing at the Mineta San José International Airport, and the San José Semaphore is sensitive to the passage of aircraft above it. When a plane flies overhead, the wheels react visibly to the disturbance, and its steady rhythm is broken. After the plane has passed, the disks resume their steady, purposeful transmission. San José Semaphore functions as a beacon in the San José skyline. It is a large and beautiful machine for communication, a slow-motion magnifier for digital communications. Unlike digital transmissions that pass invisibly through the air and through microscopic circuitry, the San José Semaphore’s communication efforts are visible for all to see.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-San-Jose-Semaphore-Adobe-Head-513",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4086,7 +4082,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95117",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2857%2fArtichoke+4_201406092022296254.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5662/636716808774970000",
         "description": "The three elements of the artwork at West Valley Branch Library weave together stories about searches through the forest, fantastic larger-than life vegetables, and objects with magical qualities. The first element, Waterfeature, is a giant-sized artichoke, a  sculpture captures rainwater from the roof of the building and cascades it down though the leaves into a drain.  The second artwork, Seating Transformed, is a group of three lettuce-leaf sculptures placed inside the library stacks. These provide children with perfect places to curl up and read a book.  The third element, The Tree, recalls a magical tree in a fairy tale. Composed of a collection of suspended colorful everyday objects, the sculpture is interwoven with sparkling lights and creates a canopy over the children’s reading area.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Seats-Secrets-Stories-and-Sea-446",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4132,7 +4128,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6736%2fsensing+you+Adrian.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5672/636716809033870000",
         "description": "Sensing YOU and Sensing WATER are two artworks geographically and conceptually linked but distinctly\r\ndifferent. The projects are part of the “Illuminating Downtown Project (IDP).” The intent of IDP is to visually reinforce downtown\r\nSan Jose as the Capital of Silicon Valley, and that this energy would be transmitted at a number of scales\r\n– building tops, gateways, on the street and as one passes through the downtown. It is a way to engage art,\r\nlight and technology in a larger vision of the downtown, while considering ways of making the downtown\r\na more livable, enjoyable, engaging place.\r\nSensing YOU is an interactive artwork defined by over 1000 painted circles and 81 individually controlled illuminated rings that play a variety of patterns and low-resolution mapped video over the ceiling surface of the I-87 highway underpass at Santa Clara Street. The patterns are activated by pedestrians and bicyclists moving through the space- setting off pre-programmed sequences.Sensing WATER, a weather-responding and interactive artwork utilizing light and paint to define the downtown gateway at Highway 87 and San Fernando St. The project is composed of 2 elements, the massive painted sloped wall that abstractly references flowing water, and the overhead evening lighting that illuminates with rippling patterns of light the underpass. The project uses real-time NOAA weather data to compose different patterns of light on the ceiling. (e.g.: 0-5mph winds vs thunderstorms)",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Sensing-YOU-Sensing-WATER-Hwy-555",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4177,7 +4173,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95116",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2860%2fspiritual_s_78_201406110029273577.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5712/636716809384070000",
         "description": "Shapeshifters 1, 2 & 3 are a trio of hand-painted murals on the 2nd floor. The rich colors, lines and forms in these murals flow up the stairway and wrap around corners, providing interplay with the architectural lines and fields of light.   Spiritual Stonehenge is a vinyl mural on the ground floor that creates a vibrant field of color as it wraps around the Center’s juice bar, extending into the community room. Mural work is included on the juice bar’s sliding door so that the mural’s appearance changes depending on the position of that door. Spiritual Stonehenge continues to the outside of the building on the north entrance, providing colorful backdrop to Jackie Brookner’s exterior public art. Martinez’s untitled chromed and painted steel sculpture is in the 2nd floor art room. The artist intends for the imagery in the artwork to suggest elements of the history of the park, the area, and the street culture of the area’s youth so that it might function as a new type of urban folk art.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Shapeshifters-Spiritual-Stone-486",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4245,7 +4241,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95111",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2861%2ffrieze.dog.2_201406110041400327.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5724/636716809402330000",
         "description": "Shelter at the San Jose Animal Care Center consists of three parts: a frieze, sentinel statues, and a “Gallery of Myths.” The artist considered this project as a homage to our relationship with our beloved pets. The 104 foot long aluminum frieze covers a long arc over the entrance to the center. The frieze is decorated with cutouts of cats and dogs emphasizing their curious and jovial natures. At night the frieze it lit from behind, highlighting the cutouts. Two sentinel statues of a dog and a cat stand on either side of the entrance; heraldic figures guarding the center. These free standing engravings of granite and steel are placed upon models of the animal care center accentuating the purpose of the center as an animal care facility.  The “Gallery of Myths” is a series of eight granite tablets along the portico of the building, which describe stories, myths, or aphorisms about cats and dogs connecting humanity with the mythos of pets.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Shelter-San-Jose-Animal-Care--430",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4268,7 +4264,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2482%2fShifting+Time_montgomery_01_201401281456555323.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5732/636716809414070000",
         "description": "Approach the screen of this interactive installation and manipulate time; juxtapose video images of San Jose past and present through your body movement.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Shifting-Time-Norman-Y-Mineta-407",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4291,7 +4287,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2862%2f_22T9251_201406110103295662.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5734/636716811696770000",
         "description": "Show Your Stripes follows the artist’s interest in the use of patterns. The phrase “show your stripes” has long been used to indicate social or political position; show what you’re made of, which side are you on. At one point in history, stripes were relegated to the margins of society: jugglers, courtesans, and in Medieval paintings the devil is often shown wearing stripes. Over time, stripes have taken on a more positive connotation: freedom, playfulness, or with banker’s pinstripes – taste and status. The artwork is not simply a light show. For the changes to be activated, it takes viewer participation, as the activation phone number above indicates. A quiet reflector of the changing sky during the day, at night the piece transforms into San Jose’s shared secret – the phone number a pass code to control the changing patterns. In 2015, launching the first of a series of light-based artworks that will appear throughout downtown San José as part of the “Illuminating Downtown Project,” the artist was invited to develop a new series of interactive programs based on community input. After completing a simple and fun survey, the Mr. Conti choreographed a sequence of unique stripes based on participants’ answers.  Some number sequences relate to a community member’s favorite song or color, others are simply employed for their dynamism or beauty. A menu of over 300 codes is available in the document section above.   Artwork Activation:  Call 408.287.0128After The Tone, Enter any 3 digit combination from 1 - 9 Press “0” (Zero), Then Hang UpNote: Not all combinations are programmed – yet",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Show-Your-Stripes-522",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4311,7 +4307,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95135",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2864%2fIMG_5163_201406110127267593.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5738/636716819578330000",
         "description": "Soaring Flight commemorates flight pioneer John J. Montgomery. The artwork consists of two elements: a vertical 30’ sculptural representation of a glider wing formed of tubular steel and covered in steel mesh, and the colored concrete plaza textured with linear patterns that flow around the wing element in an airflow pattern similar to that around an ascending plane wing. Soaring Flight is positioned with Montgomery Hill as a backdrop, the site of many of his pioneering flights. \r\n\r\nPhrases and quotes associated with Montgomery’s work are sandblasted into the plaza; benches are placed around the perimeter of the plaza. Together these elements create, in Roberts’ words, “A haven where visitors may learn about local history and Montgomery specifically, as well as reflect upon human invention...a subject so significantly linked to San Jose.\"",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Soaring-Flight-Evergreen-Park-441",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4356,7 +4352,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95136",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2865%2f01+INT+CORNER+Lucas+Fladzinski+photographer+3x5_201406110134236450.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5750/636716819596930000",
         "description": "This work includes four art glass windows located in the children's area and a suspended glass lamp near the library entrance.The artwork's visual imagery refers to ancient alphabets as the foundation of the written word, which in turn is fundamental to libraries and illumination of the mind. Each pane contains characters in different scripts that are the basis for written Latin, Russian, Vietnamese and some Indian languages. These are lineages of the languages that presently are predominant in the Pearl Avenue Branch Library collection. The lamp is inscribed with ancient Sumerian cuneiform script which repeats the text \"We are all one.\"  The lamp is lit with color changing LEDs, programmed to cycle on 30-minute intervals through the color spectrum. In this way the lamp also functions as a timepiece. Another critical but unseen aspect to the artwork are photovoltaic cells that are embedded in the four glass panes. These collect solar energy that then provides power to light the lamp. Through this work the artist is seeking to awaken people to the miracle of language and writing as the key to understanding the past, expressing the present and imagining the future. The artist also wants to raise awareness of the real possibilities of harnessing available energy to provide for basic needs.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Solar-Illumination-I-Evolutio-482",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4426,7 +4422,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2868%2fCompleted+Fish+1_201406110203427212.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5760/636716819611470000",
         "description": "South Fished Street features 36 bronze and stainless steel elements depicting fish embedded in the concrete sidewalk. 13 students from the Art in Community class under the direction of Professor Tony May were responsible for design, fabrication, and installation of the public art. The design for the installation was developed through discussion among Art in Community class members who were inspired by a visit to the koi pond in the Japanese Friendship Garden in San Jose’s Kelley Park. The design uses the park sidewalk as a “meandering stream” populated by a variety of fish. The fish represent the diversity of individuals from many cultures that live in the Martha Gardens neighborhood. The fish are also a playful reference to elaborate water features and ornamental fishponds.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-South-Fished-Street-Bestor-Ar-508",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4449,7 +4445,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2477%2fSJC_0031_201401281317581417.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5764/636716819617700000",
         "description": "Reminiscent of a space craft, this glossy white 26’ tall sculpture standing on eight-foot tripod legs, explores the interactivity between humans and modern technology.   Engage with this elaborate, yet delicate object and it will quietly rotate with the help of two propeller-tipped arms, using its kinetic cameras to reveal live images.   \r\n\r\nSponsored by Microsoft",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Space-Observer-Norman-Y-Minet-403",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4494,7 +4490,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95126",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2863%2fSpirit+Gate+2_201406110119541227.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5770/636716819629130000",
         "description": "Spirit Gate creates an entry transition between The Alameda and the school building. The artists worked with 4th graders from Hester, who choose \"power words\" such as Honor, Inspire and Dream, which were then cut into the steel of the gateway.Local historian Rev. Nancy Schell, who grew up on The Alameda, gave a presentation to students about local history as inspiration for their work. The students drew scenes reflecting this history and worked with Lincoln High School students to translate the drawings into mosaics spiraling around the gate's columns.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Spirit-Gate-Hester-Elementary-444",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4539,7 +4535,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95123",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2866%2f7-16-08+FS+12+004_201406110141195619.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5800/636716819889470000",
         "description": "The Spring-Tailed Dalmatian appears to be descending a fire pole, but with a twist: the dog's tail is coiled like a spring to soften the landing. The sculpture speculates whimsically on a specialized breed of fire dog, one that is particularly well-suited for its fire station duties.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Springtailed-Dalmatian-Fire-S-435",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4562,7 +4558,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95111",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2871%2fSJ_PublicArt_RBaron_4_201406111459527483.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5776/636716819640530000",
         "description": "Located on the face of the elevator bay and wraping around onto the second floor landing, Stratigraphy is a major focal element at the Bascom Library and Community Center.  It is a vertical timeline of the areas culture and history, telling the story through a vast array of representative objects; as if a cutaway at an archaeological site that reveals a social history through actual objects such as balls and athletic items for the community center and books that could be found in the library.  Baskets and acorns pay homage to the original Ohlone inhabitants; the region’s agricultural and canning era are conveyed through fruit, cans and canning jars, which then transitions into the electronics and technology era.  At the top is a tree with figures from trophies dangling from its branches.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Stratigraphy-Bascom-Library-C-491",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4607,7 +4603,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95124",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2869%2fP1110502_201406111415162892.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5788/636716819872100000",
         "description": "This piece expands the space of the pool area by transforming the 10-foot property-line wall into an illusion of water. The fanciful silhouettes of swimmers, half submerged, swim across the blue wall surrounding the Camden Community Center's pool,",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Swimmers-Camden-Lifetime-Acti-426",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4675,7 +4671,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95120",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2870%2f+DDM+text+close+up_201406111449094350.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5820/636716839891370000",
         "description": "Teaching Stones is a tribute to Doris Dillon, a beloved teacher and community member. Doris Dillon was known for her generous spirit and passion for teaching.  She engaged students through games, and it was often said that she could “teach a rock to read.”  Teaching Stones consists of two primary elements. The first is a reading/sitting area, inspired by one of Doris’ favorite activities: story telling. The reading area provides a place to sit and share stories in the traditional manner of gathering in a circle. The decomposed granite interior of the circle extends outward to the sidewalk forming the overall shape of a keyhole, a reflection of Doris’ belief that reading is a key to learning and knowledge, which she shared through teaching.The second element is a series of nine large smooth-surfaced granite stones that are placed throughout the Liquid Amber Tree grove where the project is sited.  Each stone is inscribed with a ribbon containing words from one of the elements of language: nouns, verbs, etc. The words chosen and sandblasted into the stones were collected inspired by Doris Dillon’s life and work. In the same spirit in which Doris fostered learning through play, the stones can serve as a playful learning tool for future generations: rubbings can be done on the stones with pencil and paper, with students moving from stone to stone, gathering a noun from one, a verb from another and onward until a full sentence is collected.This commemorative artwork honors Doris Dillon’s legacy of mixing learning with pleasure in the form of a gift to the community she loved so well.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Teaching-Stones-Almaden-Commu-480",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4698,7 +4694,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95129",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2874%2fCalabazas+Sculpture+Installation+013_201406111537325261.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5826/636716839901830000",
         "description": "The focal point The Singing Stone is a square granite column in the library courtyard. On each of its four sides are figurative images that depict a man, woman, elderly woman and child carved in negative relief.  The sculpture is gently animated by a sound element created by the interplay between recorded voices and electronic data related to the library. A data stream, such as the traffic of people in and out of the library throughout the day, the library’s collection, or circulation of library materials, will utilize specially-designed software to interface with vocal tones to create unique musical patterns, generating a “sound portrait” of the library. The sound of this will softly emanate from the granite sculpture, audible when one is nearby.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-The-Singing-Stone-Calabazas-B-495",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4721,7 +4717,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95134",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2877%2fGreen+dot+in+foam_201406111617228876.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5828/636716839905130000",
         "description": "Robert Dawson worked for six months with the City of San Jose's Cultural Affairs Office and the Environmental Services Department. He is the City's first Photographer-in-Residence at their Wastewater Treatment Facility. Like ancient Rome our contemporary culture was made possible by a vast system of water delivery and sewage treatment to maintain a large and healthy population. Most of us are generally unaware of this system until it doesn't work. Dawson's photographs of this infrastructure depict a huge, complex but delicate machine. The entire system is estimated to be valued at $2 billion. Approximately $1 billion will be needed to repair or replace parts over the next ten years. Dawson's work is intended to bring attention to this invisible part of our local government and to help generate awareness of when government works.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-The-Waste-Water-Treatment-Pla-440",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4744,7 +4740,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2875%2fIMG_6533_201406111542271518.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5838/636716839923270000",
         "description": "The Weavers' Gifts commemorates and celebrates the indigenous Costanoan-Ohlone Peoples, especially the Tamien Ohlone Indians who inhabited the land along the Guadalupe River where the sculpture is located. The sculpture is composed of four elements:The names of the 54 Ohlone tribal groups who inhabited California into the late eighteenth century, these are inscribed on pre-existing granite seat walls A 4’ high carved-granite basket representing a functional and creative part of the Ohlone culture A 5’ high carved granite mortar, broken to represent broken tradition; and A stone representation of an unfinished coiled basket inlaid into the paving with inscribed text that speaks to the history and future of the Ohlone people.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-The-Weavers-Gift-Guadalupe-Ri-489",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4767,7 +4763,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2876%2ffallonstatue_201406111556505138.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5842/636716839931070000",
         "description": "This statue of Captain Thomas Fallon was commissioned in 1988.  It memorializes the raising of the U.S. flag in San Jose in 1846, when California was still a part of Mexico.  Scheduled to be installed in 1990, the statue generated an intense controversy.  Supporters of the artwork believed that it commemorated an important historical event in San Jose's history.  Opponents of the statue responded that it represented a troubling moment in American history, when the United States used the Mexican -American War as a reason to annex California from Mexico. To address the issues arising from the controversy, the City appointed a Historic Art Advisory Committee.     The committee recommended that the City's public art must represent all perspectives of the City's history.  Four additional projects were recommended - artworks commemorating the Ohlone Way of Life, the life of Dr. Ernesto Galarza, the Founding of the Pueblo, and the Agricultural History of the Valley.  These works have been installed in various locations around the city.  This artwork is a reminder that a community's historic events can be interpreted in many ways, depending upon one's perspective.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Thomas-Fallon-Statue-496",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4812,7 +4808,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95124",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2872%2fCamden+Connections+with+model_201406111505236318.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5846/636716839939200000",
         "description": "Time Capsules is a multi-faceted public artwork designed and produced for the Camden Community Center by the Art in the Community class at San Jose State University.  The artworks honor and celebrate the spirit of the Camden area.  Each piece captures a different aspect of life in a distinctive way, representing everything from its pastoral past, to mementos of high school, to personal perspectives gathered from residents.The individual artworks vary in media and concept, reflecting the diverse talents and aesthetics of the group of artists whose specialties include sculpture, photography, painting, printmaking and new media.\r\n\r\nPlease see Fact Sheet for more information on both the artworks and artists.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Time-Capsules-Camden-Communit-467",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4835,7 +4831,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2878%2fMvc-002l_201406111803009248.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5862/636716840383300000",
         "description": "The artwork for the Northside Community Center celebrates life and struggle. The ascending and descending bird-like forms of the sculpture suggest transition and represent flight from one location to another and is intended to designate space for building community.The sculpture is an abstraction of three characteristic elements employed in two dances from the Philippines. The larger forms affixed to the poles references both a tikling bird – a reference to the Tinikling dance; as well as a fan which appears in the Singkil dance. The two poles reference the bamboo poles used in both dances.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Transcendance-Northside-Commu-453",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4881,7 +4877,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95116",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2881%2ftriumph2_201406111806234456.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5868/636716840392970000",
         "description": "The artwork is inspired by historic images from the P.A.L collection and based on the photo of a skinny young boy with over-sized gloves supported by stick-thing arms raised over his head in triumph. Mentorship, healthy competition and community - these are for-grounded in the art project.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Triumph-San-Jose-Police-Athle-431",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4904,7 +4900,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95121",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2882%2fResize+of+men_det21_11_201406111809546854.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5878/636716840411570000",
         "description": "Artist Cliff Garten collaborated with the community to create two cloud-like suspended sculptures positioned over the foyer and the Internet cafe. One “cloud” is cast aluminum branches reminiscent of orchard trees in blossom that also alludes to a technological network. The second “cloud” is created from hundreds of cast aluminum apricots and doll-sized human figures that form a topography evocative of the hills surrounding the city. The juxtaposition of agricultural and technological references addresses the ambiguity of an agricultural past and technological future.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Two-Clouds-Tully-Branch-Libra-460",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -4945,7 +4941,6 @@ const art = {
       "properties": {
         "title": "Untitled",
         "description": "Mural by <a href='https://instagram.com/theartofskinner' target='_blank'>Skinner</a>, and <a href='https://instagram.com/urbanaztec' target='_blank'>Jesse Hernandez</a>. Produced by Empire Seven Studios, in collaboration with <a href='https://instagram.com/mightydesign.io' target='_blank'>MightyDesign.io</a>, UnGramr, and POW! WOW! San Jose 2018. It is located on Margaret Street, behind Camino Brewery Company.<br/><br/>Image Source: Lanny Nguyen",
-        "image": "https://scontent-sjc3-1.cdninstagram.com/vp/dbf5d26bc62c7b5cb71ceeb9ba0eb5ab/5DD37FF8/t51.2885-15/sh0.08/e35/s750x750/43985967_195540588024035_5264609171699583481_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com",
         "artist": "Skinner and Jesse Hernandez",
         "address": "718 S 1st St",
         "city": "San José",
@@ -4972,7 +4967,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/Abel_final2.jpg",
         "description": "Abel Gonzalez is a San Jose local artist who creates sculptures consisting of an assemblage of woodworking with minimal paint and wood finishes. By uniting small pieces of wood, he achieves a chiseled composition, giving his sculptures an organic anatomy. His background in graffiti is perceived through the jagged edges and ridges of each individual piece of wood.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/abelgonzalez/"
       },
@@ -4994,7 +4988,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/shrine2_final.jpg",
         "description": "Shrine, aka Brent Spears, is a self-taught artist who has painted over sixty interactive murals around the world, and over fifty murals in Los Angeles. He has painted numerous restaurants and retail store interiors and exteriors including La Luz De Jesus Gallery, The Soap Plant, the first five Houses of Blues and many others. Shrine also paints cars, furniture, and shoes, and creates paintings on wood-framed glass windows. He has created two large-scale temples made from trash at Burning Man, and sculptures at Coachella, Boom Festival, Symbiosis Gathering, and Bonnaroo.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/shrine/"
       },
@@ -5016,7 +5009,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95126",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_frances_final_lannysphotos.jpg",
         "description": "Frances Marin Lopez is a visual artist and illustrator living in San Jose. The mysterious nature of life, both real and imagined, lead her to explore everyday familiarities, dreams, memory, the subconscious, and humor in her work. These ideas are explored primarily through drawing and painting with water media. Recurring themes include escape, nature, our preoccupation with objects, and the absurdity of life. Her art has been exhibited in the US and Spain and lives in homes in the US and around the world including New Zealand, Australia, South Africa, Canada, Mexico, and throughout Europe. She has worked on illustration projects for Casper, Chromatic Coffee, Content Magazine, and Washington Square Magazine.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/francesmarin/"
       },
@@ -5038,7 +5030,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_POWWOW_SJ_Day9_lannysphotos-102-683x1024.jpg",
         "description": "Born and raised in San Jose, Lorna and Jill Watt, famously known as Knits For Life, draw inspiration for their art from the Gold Rush showing off their Northern California roots. Award-winning installation artists, yarnbombers, and knitting & crochet designers the self-taught sisters began their journey one winter in Michigan while Lorna was attending state. Together the two took up knitting and crocheting. 'We embrace innovation and entrepreneurship but choose to work as a small hands-on team of two.' Now residing in San Mateo at Claremont Art Studios together they pursue their dreams of bringing imagination to life with yarn.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/knitsforlife/"
       },
@@ -5060,7 +5051,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/SeanRoan_Final.jpg",
         "description": "Co-owning and operating The Arsenal with her husband, artist Sean Boyles, Roan Victor is utterly dedicated to her art. Sublime, ethereal paintings in oil, and lately watercolor, her work expresses—often through flowers, linens, and obscured faces—the camouflage or privacy we all seek in an increasingly changing world. “I’m a painter. I work in watercolor, oil and latex paint. Watercolors keep me in order and oil painting is a party. When I paint walls, encountering various scales, proportions and settings excite me. I revel in the different ways I can present a figure in such a large format.” Sean mostly draws and paints. His day job is teaching others to do the same whether at Mission College, CSU Monterey Bay or at The Arsenal, which Sean opened with his wife Roan Victor in 2011. The aesthetic of Sean’s work comes from watching cartoons, playing video games, painting graffiti, collecting garbage pail kids, reading comic books, watching Star Wars, kung fu, ninja, sci-fi, and giant monster movies. Sean creates his work between his heart and head; between what he knows and what he feels. Sean tries to be both detailed and gestural, clean and messy, smooth and gritty, fluid and structured, soft subtleties with loud splattery edges.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/roanvictor/"
       },
@@ -5082,7 +5072,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/2E2A4056.jpg",
         "description": "ICY and SOT are artists from Tabriz, Iran, who currently reside in Brooklyn, New York. The two brothers started doing stencils back in 2006, and have contributed to Iranian and international urban art culture through their murals and installations that depict capitalism, ecological justice, human rights, and social and political issues. Their work appears on walls and galleries throughout China, Germany, Iran, Norway, the United States and globally. They transcend their histories of artistic and political censorship by using public art to envision a world freed from borders, war, and violence. LET HER BE FREE was the first ICY and SOT art collection and covers nearly a decade of their career with more than 200 full-color pictures. The collection offers a retrospective of their art in their early Iranian years, follows the brothers’ journey to New York City and depicts their work all over the world.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/icyandsot/"
       },
@@ -5104,7 +5093,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/6coin_pwsj2_final_lannysphotos.jpg",
         "description": "SIXCOIN is an artist based out of Seoul who was born in Korea. He has been painting on the streets since 2004. Currently working on creating an original character based on the story of a ghost in Korean folklore. Through his work, he aims to deliver positive energy and spark the imagination. Most artwork is a reflection of the artist and their stories.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/sixcoin/"
       },
@@ -5126,7 +5114,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/Harumo_Final.jpg",
         "description": "Harumo Sato is a California based Japanese visual artist who graduated from University at Buffalo in 2015. In questioning our busy and highly industrialized daily lives, she translates old mythological analogy and allegory imagery into the modern, colorful, and unique visual images. She has a strong interest in pattern design which has traveled through many cultures and contexts over the centuries. With the various colorful materials like screen prints, Japanese watercolor, Sumi ink, and acrylic she seeks visual pleasure and vivacious energy to open the viewer’s mind.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/harumosato/"
       },
@@ -5148,7 +5135,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95122",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_felicia_lannysphotos.jpg",
         "description": "Felicia Gabaldon’s work draws from the imagination, both a mythical and mystic part of human experience in the natural world. Her work is experienced through cultural and folkloric content, expressing the wonders of nature realized through iconic symbols and tradition.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/feliciagabaldon/"
       },
@@ -5170,7 +5156,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/drew_final_lannysphotos.jpg",
         "description": "Drew Flores, an artist from San Jose, interests range in various traditional cultural forms within areas of American traditional, Japanese, and Aztec/Mayan styles. Drew’s cross-cultural influence reinterprets Mexico’s ancient imagery as he blends together with Japanese bold compositions. The mural is on the outside wall of La Peñita Restaurant.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/drewflores/"
       },
@@ -5192,7 +5177,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/Nikkea_final3.jpg",
         "description": "Nikkea Takagi, a biracial Japanese artist, raised in San Jose, explores the process of personal healing within her brightly colored paintings. Most of her work depicts familiar characters submerged in their own tiny eco-systems, surrounded by teapots, plants, and lanterns. Nikkea’s work is deeply rooted in the process of self-discovery and healing. To Nikkea, art is a practice of self-care and is deeply personal. “My art is constantly changing and evolving, as am I. This work does not exclusively represent me, but it is a reflection of my ever-expanding experience.” Nikkea values that we all relate to imagery uniquely according to our individual narratives. Through the use of playful colors, body-positivity, and small tokens of comfort, she hopes to invoke a sense of empowerment and empathy to all of those who view her work. Nikkea Takagi is a budding artist in the Bay Area. Her goal is to more vulnerable present her own experiences as a personal act of energy clearing and as an offering to anyone in need of some compassion or connection.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/nikkeatakagi/"
       },
@@ -5214,7 +5198,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/SNDLOT_homie_final.jpg",
         "description": "Born in Shiga, Japan, Dragon76 is a Japanese artist who specializes in large-scale live painting at galleries, music events and alternative spaces world-wide. His intricate and complex style is rooted in a combination of Graffiti, Manga, and Ukiyo-e. Working fast, in classic graffiti “throw up” style, Dragon76 paints with acrylic and marker pen as well as using stenciling techniques. His art is described by many as passionate and energetic and the concept of his art style is the co-existence of two opposites such as the past and future, stillness and motion, evil and justice. Be it music, dance, bathing in sunshine or marching against injustice, his talent lies in capturing an energy that conveys action, Dragon76 creates stunning works that feel as well as look wonderful. Dragon76 also performs improvised and dynamic live painting shows around the world, which always attracts large audiences. Dragon76 lives and works in New York, where his art and style continue to progress. He is a two-time winner of the 2017 New York Art Battle. Woes was born on the Hawaiian Island of Oahu, but spent most of his childhood growing up and moving from Southern California to Nevada before finally landing back into Hawaii during his Junior year in high school. In 1998 a car accident changed everything; this life-threatening experience inspired him to leave the island once again, this time to Seattle, Washington. Inspired by the people, rain and being indoors, he started playing around with different art mediums again. Woes then left back to Hawaii with a new perspective. Having roots in graffiti, Woes started rocking his iconic Panda characters to leave a mark in different cities, countries around the world and became addicted leaving his character of a species in jeopardy. Woes has shown in galleries and been published in magazines across the US mainland to Asia , South East Asia, South Pacific and all over Europe. Woes has worked on project swith companies & collective such as Mind Style toys, Disney, Flab Slab, Kidrobot, Fitted Hawaii /New Era, Kicks Hawaii.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/dragon76/"
       },
@@ -5236,7 +5219,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_apex_final_lannysphotos.jpg",
         "description": "APEXER is a street artist who creates colorful abstract patterns through the use of spray paint. Part of the Gestalt Collective that engages in collaborative murals in San Francisco, Apexer curated mural projects on Bluxome Alley, other districts of San Francisco and the SFMOMA display windows in association with St. Johns Community Center (San Francisco, 2002). His work has been shown extensively both in the Bay Area and abroad. He was also featured in documentaries and publications regarding the Mission District in San Francisco.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/apexer/"
       },
@@ -5258,7 +5240,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/lanny_123klan_final_Lannysphotos-1-e1550947063664.jpg",
         "description": "123KLAN based in Montreal, Canada, is a graffiti crew founded in 1992 by the French duo Scien and Mrs. Klor. Influenced by various 90’s graffiti art expressed in Europe and New York, 123KLAN crafted a hybrid style that mixes graffiti art and graphic design, and gives rise to a new synthesis forming their motto, “When street knowledge meets technology, and graffiti art melts wit graphic design.” Their first works were enriched by huge, sharped- angled letters in acid colors and characters with futuristic manga features posed alongside experimental types. Far from confining themselves to urban walls with the aerosol, the vector allows them to land on multiple media, like record sleeves, posters, stickers, toy designs, posters, skateboards, canvas, shoes, and t-shirts.",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/123klan/"
       },
@@ -5280,7 +5261,6 @@ const art = {
         "city": "San José",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://www.powwowsanjose.com/wp-content/uploads/2019/01/ian_twFive2.jpg",
         "description": "t.w. five is an international artist duo based in San Francisco, California. They work with adhesive backed vinyl focusing largely on the process. All shapes are hand-cut into strips from larger rolls of solid color vinyl and then carefully applied to the surface of the work. 'We usually create massive scale installations and integrate the gallery space with our art.'",
         "sourceURL": "https://www.powwowsanjose.com/2018-artists/twfive/"
       },
@@ -5295,7 +5275,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2887%2fIce+Center+5_201406111829170433.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5918/636716850967400000",
         "description": "",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Sharks-Ice-at-San-Jo-425",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -5311,7 +5291,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2885%2fIMG_0023_201406111821409066.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5894/636716842127170000",
         "description": "A\r\nlarge exterior tile mural contains multiple layers of imagery from fire\r\nfighting. The images, culled from historic photographs of\r\nfirefighters at work, have a visual complexity that reveals itself over\r\ntime.  On\r\nthe station's interior there is a mural on canvas in the glass enclosed\r\nfire pole tower. Lit from within, the artwork provides a night presence\r\nto the building and a dramatic backdrop when the firefighters descend\r\nthe fire pole. This mural also combines images from of fire fighters in\r\naction.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Fire-Station-2-437",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -5328,7 +5308,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95116",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2886%2ffence+and+mosaic+2_201406111825370689.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5904/636716850942570000",
         "description": "The main theme of the artwork is Cemanahuac: the location of the individual within his/her community as well as within the cosmos. According to Mesoamerican indigenous cultures and oral traditions, each of the four cardinal directions (north, south, east, and west) corresponds to an element, a community memory of value, a time of day, and a color of corn  a fundamental agricultural symbol:    East is fire, family, sunrise, and red corn  West is wind, local heroes, sunset, and yellow corn  South is earth, work, noon, and blue corn  North is water, history, night, and white corn.  These symbols honor the Mexican community in various forms throughout the plaza: Four patterned metal grilles in the windows of the tower introduce traditional ironwork with pre-Columbian designs.  Metal work is continued in each of the gates into the plaza.  Mosaic thresholds inside the gates explore the theme of location and direction. The thresholds were inspired by mosaics commonly seen in Mexican colonial cities such as Taxco, Puebla and Tlaxcala and mosaic work in San Jose.    The garden alcoves are offering places linked by thematic press tiles to the cardinal directions and dedicated to a community value. The tiles were created by community members during a series of public workshops. The photographic tiles were translated from family albums and personal collections contributed by the local community.    A recurring image of the hummingbird, derived from Mesoamerican motifs, can be seen at the water fountain and on two accent walls at the south and east entrances. The hummingbird, an ancient Mesoamerican talisman, is a symbol of love and the warrior spirit. It is common in San Jose, a tiny but tenacious bird that migrates thousands of miles from Mexico to California every year and plays a role in shaping the landscape by pollinating the plants from which it drinks nectar. The hummingbird motif is intended to speak to the spirit of immigrant citizens, their endurance, strength, tenacity, and their contributions to the culture and nature of California. The choices of planting materials in the garden were selected to attract hummingbirds.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Untitled-Mexican-Heritage-Sch-428",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -5806,7 +5786,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95116",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2888%2fBrookner+Studio-054588-91_REV+lr_201406111831386875.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5922/636716850973830000",
         "description": "Jackie Brookner’s site-integrated artwork for Roosevelt Community Center serves as a functional filtration system that assists in diminishing the Center’s environmental impact on nearby Coyote Creek and the City’s storm water system. The artwork, which consists of multiple elements, slows and filters storm water run-off from the building’s roof.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Urban-Rain-Roosevelt-Communit-485",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -5826,7 +5806,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6740%2fjpg1+(1+of+1).jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5928/636716850984900000",
         "description": "Urban Rooms is a new identity to Parque de los Pobladores and a gateway to SoFA and Downtown. Artist Estudio Teddy Cruz + Forman designed the small park as a dynamic platform for cultural programs and event productions. Artist-designed shade structures, urban furniture and curtain walls accommodate many different community interactions for artists, performers, and entrepreneurs – as well as everyday uses of this important public space.  More about the elements of Urban Rooms: The Pavilion-Tiendas are simple steel structures that are distributed across the open plaza to configure four ‘urban rooms,’ which together form a series of shading zones and areas for activity. Each steel armature is clad in brightly colored vinyl-coated chain-link systems, to provide shade and texture. Additional shading is provided by a removable triangular fabric canopy that can be suspended under each of the pavilions. The Urban Art Platform is an open stage that will allow for variety of arts and cultural performances and activities. The platform is constructed from a steel frame clad in a vibrant yellow durable, nautical-grade fiberglass grating.To further activate the plaza, custom curtains have been provided to ‘enclose’ the spaces beneath the pavilions. These drapes can be configured in various ways to direct pedestrian circulation in the plaza enabling the transformation of the plaza across time, becoming a market, a gallery, a classroom, or performance space, etc.The surface of the plaza is painted to mitigate the heat produced by the large, previously untreated concrete-slab surface, while demarcating activity and functional areas. The project was funded by a $200,000 National Endowment of the Arts Our Town Grant with additional support provided by ArtPlace America. The City of San José’s Office of Cultural Affairs Public Art Program and Movimiento de Arte y Cultura Latino Americana (MACLA) collaborated in its creation. District3 Report a concern (408) 793-4330 or publicart@sanjoseca.gov",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Urban-Rooms-Parque-de-los-Pob-565",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -5849,7 +5829,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95132",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2889%2fleft+side+of+mural_201406111833234090.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5936/636716850996470000",
         "description": "The Valley of Heart’s Delight is a trompe l’oeil mural (French for “trick of the eye), a style of painting that uses realistic imagery to appear three dimensional on a flat surface, a style that is one of the oldest known in painting, and is the specialty of artist John Pugh. The mural depicts scenes of San Jose’s rich agricultural past before the development of the Silicon Valley.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Valley-of-the-Hearts-Delight--439",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -5895,7 +5875,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2890%2fCRW_1374_201406111837464157.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5948/636716851437130000",
         "description": "Located on Park Avenue at the Guadalupe River, the Veterans Memorial is an enduring tribute to the men and women who have served our country in peacetime and in times of war. The artwork is comprised of 76 white flags on stainless steel poles in formation beyond a wall of glass imprinted with photos of local soldiers and communications sent back home during times of service; the threshold in front of the glass is inlaid with military insignias.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Veterans-Memorial-of-San-Jos--417",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -5962,7 +5942,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c6759%2fVoxel-with-plane.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5952/636716851452930000",
         "description": "Voxel Cloud is visible to thousands of commuters, residents and visitors driving on Interstate 280, as well as aircraft utilizing Mineta San José International Airport.  Draping across the roof line of The Pierce, a residential apartment building in Downtown San Jose, Voxel Cloud serves as a gateway marker for San José’s SoFA Art District, The dynamic, illuminated, data-driven LED sculpture takes its visual cues from natural forms as varied as water particles, interstellar star systems, the crystalline aggregates of silicon carbide, and the multi-chromatic raw materials of semiconductor wafers. Voxel Cloud was made possible through a partnership between the project owner/developer, Sares Regis Group of Northern California, Pritzker Realty Group, and the City of San José Public Art Program. It was supported in part by an ArtPlace grant (www.artplaceamerica.org). It is the fifth of six Illuminating Downtown Project (IDP) grants awarded for creative placemaking projects in San José, bringing artists and arts organizations together to enrich the city and its communities. IDP combines art and technology to physically manifest San José’s aspiration for creating a more engaging downtown—whether someone is approaching from the surrounding freeways or walking its streets.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Voxel-Cloud-Pierce-Building-562",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -5985,7 +5965,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2891%2fminetacompfin_201406111912324378.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5958/636716851481970000",
         "description": "This illustrated wall installation recognizes three prime-movers behind San Jose’s airport: Ernie Renzel, James Nissen and Norman Y. Mineta.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wall-of-Recognition-Norman-Y--411",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6008,7 +5988,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2419%2fAriel+8-9-05+3_201401271457449794.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5968/636716851515270000",
         "description": "Waterscape\r\nArtists: Anna Valentina Murch and Doug Hollis\r\n\r\nThis water sculpture was inspired by the natural geological and artesian conditions underlying the San Jose region. \r\n\r\nThe specific design of Waterscape is composed of two topographic fields of monumental granite slabs. The fields slope from Santa Clara Street toward the City Hall plaza allowing the water to flow down the surface of the fields onto the plaza in subtle ripples. Water also flows over the vertical stone on the fountain edges, disappearing beneath the plaza, creating walls of water that define the perimeter along Santa Clara Street. The water within the field is programmed to respond to changes in time of day, temperature, season and availability of water to create different visual, sonic and atmospheric qualities. The piece is illuminated at night for a distinctive evening identity.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Waterscape-San-Jose-City-Hall-364",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6031,7 +6011,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95110",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2475%5c2487%2fWave+Matter_1_photo+by+Kucera_201401301702281764.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5974/636716859979100000",
         "description": "Integrated within 8 columns located at the south end of the Concourse, are pixelated panels composed of thousands of holes, interpreting various waves – ripples in a pond, electromagnetic, radio, sound, radar, and gravitational.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wave-Matter-Tessellation-Norm-410",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6077,7 +6057,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2892%2fP1110192_201406111846331792.JPG&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5978/636716859984730000",
         "description": "We Live Here\r\nis a community-generated public art project located at the Alma/Almaden\r\nmedian. This stainless steel open frame column was created by artist\r\nRies Niemi. The base of the column is layered with images of\r\nthe indigenous topography and local architectural elements found\r\nthroughout the neighborhood. Wrapping around the layers is a simple\r\ndeclarative statement, “We\r\nLive Here” in the Ohlone, English and Spanish languages.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-We-Live-Here-Median-Alma-Alma-429",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6122,7 +6102,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95111",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2893%2fcomplete+detail+(Credit+Troy+Corliss)_201406111852471263.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5984/636716859993470000",
         "description": "Entering the Library the glass and steel plant forms reveal themselves as a canopy suspended overhead and floats like a huge bouquet cascading into the upper vaulted space of the building. Four different California native plants are represented: redbud, purple needle grass, California buckwheat and black walnut. The artist hopes the artwork will generate curiosity and create an incentive to go outside and investigate the surrounding local environment that is so much a part of the City’s visual landscape.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Web-of-Native-Botanicals-Eden-481",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6169,7 +6149,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95112",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2896%2fYuki+1_201406111921246858.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/5998/636716860020070000",
         "description": "Mr. Nagase describes his concept of a tree as metaphor for the body and soul of the earliest inhabitants. Trees encompass an iconic role in community life. Throughout time trees have served as gathering places, and learning takes place beneath their branches. Such trees become part of a community’s sense of self and even when they disappear, they remain in the community’s collective sense of place. These ideas inspired this 6’ diameter granite seating element. Handprints on the side of the tree were collected from local community members and children at the Grant Elementary School, and in the center is an abbreviated history of the site – echoing the role rings play in marking the age of a tree. Incised in the ground are “shadows” of branches overhead.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Where-the-Tree-is-Born-Joyce--469",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6192,7 +6172,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95113",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2873%2fSJMcEnery2_201406111528546434.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/6014/636716860266630000",
         "description": "The 12 sculptures reflect the wildlife of the river. One of the repeated elements in the series, the dragonfly, is considered to be one of the most ancient species that survived from the Jurassic period. The dragonfly references the element of water, as well as the health of the river and its ecological systems. The sculptural insects are of various sizes, heights and locations attached to posts on ball bearings that allow the sculptures to move with the wind. Sunlight creates additional interest by casting shadows through the laser cut wings and reflections off the colorful glass eyes.  The sculptures are intended to reawaken the relationship to the wind, sun, and water, fundamental elements of nature in this urban park. The sculptures also celebrate the Guadalupe River that gives life to flora and fauna and people of San Jose.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wildlife-of-the-Guadalupe-Riv-503",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6215,7 +6195,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95125",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2884%2f8-13-08+095_201406111820365612.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/6018/636716860286470000",
         "description": "Wind in the Willows, created by Oakland artist David Ruth, is a group of 54 handcrafted and unique art glass windows that vary in size from 6\" to 27\" square and are installed in an asymmetrical pattern across the west wall of the library. Ruth's windows are intended to capture the feeling of light as it filters through tree branches, particularly through willow tree branches. The windows are a striking feature viewed from either the interior or exterior. During the afternoon they create colorful patterns reminiscent of light through leaves on the inside of the library; while in the evening, light from the library emanates outward through the windows.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wind-in-the-Willows-Willow-Gl-483",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6238,7 +6218,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95132",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2725%2fUntitled-1_201404292252359076.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/6030/636716860322730000",
         "description": "In collaboration with the Berryessa community, artist Joe Saxe created a mural for children’s area depicting daytime and evening in a very bold graphic style. In addition, he created two large window boxes: one located over the fireplace in the community room (Window Box #1) the other in the foyer (Window Box #2). \r\n\r\nThe compartments of the window boxes bring together objects and images related to reading, learning and the local community. The colorful style is combination of realist and fantastical imagery that reflects the influence of cartoons, film noir, and graphics.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Window-Box-1-2-Childrens-Wing-463",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
@@ -6258,7 +6238,7 @@ const art = {
         "city": "San Jose",
         "state": "CA",
         "postalCode": "95132",
-        "image": "https://sanjoseca.gov/ImageRepository/Path?filePath=%2fdocuments%5c00000000-0000-0000-0000-000000000000%5c1760%5c2418%5c2724%2fwand1_201404292242341891.jpg&thumbnailSize=Thumb400X400&preserveAspect=true",
+        "image": "https://www.sanjoseca.gov/Home/ShowPublishedImage/6094/636717983710300000",
         "description": "Wishing Wands\r\nevoke the childhood tradition of making a wish by blowing on a dandelion\r\nseed head. These interactive sculptures are designed to be accessible\r\nto children of all physical capabilities: each seed head features 38 2\r\n1/2\"\" Austrian Crystals that catch the light, refracting sunlight in\r\nprismatic rainbows children can \"catch\" and play in. The three\r\nsculptures are sited near an accessible playground in a public park.\r\nSchoolchildren participated in making wishes on each of the crystals\r\nbefore they were incorporated into the sculptures.",
         "sourceURL": "https://sanjoseca.gov/Facilities/Facility/Details/Public-Art-Wishing-Wands-Berryessa-Creek-450",
         "sourceOfInformation": "https://sanjoseca.gov/Facilities"
