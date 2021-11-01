@@ -11,3 +11,20 @@
   width: 250px;
   margin: 10px;
 }
+
+.sub-title{
+  font-size: 12px;
+  text-align: left;
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right:10px;
+}
