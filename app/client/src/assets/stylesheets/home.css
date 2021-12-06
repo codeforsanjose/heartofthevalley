@@ -1,0 +1,21 @@
+.herobanner{
+    height:50vh;
+    width: 100vw;
+    background-color: #fff;
+    
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 96px;
+}
+
+.mapbox {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}

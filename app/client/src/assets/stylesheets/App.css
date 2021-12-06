@@ -17,6 +17,7 @@
   text-align: left;
 }
 
+/* Navbar */
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
@@ -27,4 +28,23 @@
 .nav-item {
   padding-left: 10px;
   padding-right:10px;
+  color: #fff !important;
+}
+
+
+#nav {
+  background-color: #F04A00 !important;
+}
+
+#navItem {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/*Footer */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0px;
 }
