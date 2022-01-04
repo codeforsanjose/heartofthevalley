@@ -16,7 +16,7 @@ function loadData() {
         ...data,
         id: id++,
         title: data.title ? removeWhiteSpaces(data.title) : '',
-        latLong: data.latLong ? removeWhiteSpaces(data.latLong) : '',
+        latLong: data.latLong ? removeWhiteSpaces(data.latLong).split(',') : '',
         imagePath: data.imagePath ? removeWhiteSpaces(data.imagePath) : DEFAULT_FEATURE_IMAGE,
         enabled: data.enabled && data.enabled === 'false' ? false : true,
       })),
