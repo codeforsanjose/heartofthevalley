@@ -3,7 +3,7 @@ const cors = require('cors')
 const app = express()
 const router = express.Router()
 const featureRoutes = require('./routes/feature_routes')
-
+const PORT = process.env.PORT || 3001
 // Enable cors security headers
 app.use(cors())
 
@@ -11,10 +11,15 @@ app.use(cors())
 app.use(express.json())
 app.use(router)
 app.use(express.urlencoded({ extended: true }))
+app.use(express.static('public'))
 
 // Connect feature routes
 app.use('/v1/heartofvalley', featureRoutes)
 
-app.listen('3001', () => {
-  console.log('')
+// Load Data into Cache
+const loadData = require('./data')
+loadData()
+
+app.listen(PORT, () => {
+  console.log('Listening on: ', PORT)
 })
