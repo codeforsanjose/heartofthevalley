@@ -37,7 +37,7 @@ function Mapbox() {
   return (
     <ReactMapGL
       {...viewport}
-      mapStyle="mapbox://styles/umapreethi/ckwl7yfkq2fvp14uq290s5ewp"
+      mapStyle="mapbox://styles/umapreethi/ckxz6deec9a3z14t88tqso5rb"
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
       mapboxApiAccessToken={MAPBOX_TOKEN}
     >

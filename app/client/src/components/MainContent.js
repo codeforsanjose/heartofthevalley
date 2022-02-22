@@ -11,7 +11,7 @@ function MainContent(){
                 <Home />
             </Route>
            
-            <Route path="/contactus">
+            <Route path="/contact">
                 <Contact />
             </Route>
         </div>

@@ -1,21 +1,27 @@
 .herobanner{
     height:50vh;
-    width: 100vw;
-    background-color: #fff;
     
+    background-color: #fff;
     color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 30px;
 }
 
 .title {
     font-size: 96px;
 }
 
-.mapbox {
+/* .mapbox {
    display: flex;
    justify-content: center;
    align-items: center;
    
+} */
+
+.home {
+    background-image: linear-gradient(white 50%, #E5E5E5 50%);
+}
+
+.categories {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }

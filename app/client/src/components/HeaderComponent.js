@@ -5,7 +5,7 @@ import { FaSistrix } from "react-icons/fa";
 function Header() {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-      <div class="container-fluid">
+      <div class="container">
         
         <span class="navbar-brand" id="navItem">HEART OF THE VALLEY<p className="sub-title" id="navItem">Mapping Public arts</p> </span>
         <button
