@@ -3,7 +3,7 @@ import React from 'react'
 function Contact() {
     return (
         <div>
-            Welcome home
+            Contact Page
         </div>
     )
 }

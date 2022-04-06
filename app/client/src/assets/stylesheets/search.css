@@ -1,0 +1,36 @@
+.search-body {
+    background-color:  #BF3B00;
+    width:100%;
+}
+
+.search-header {
+    padding: 10% 0%;
+    background-color:  #BF3B00;
+    color: #fff;
+}
+
+.search {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #EEB399;
+    margin-top: 20px;
+    border-bottom: 1px solid #fff;
+}
+.search::placeholder {
+    color: #EEB399;
+    font-size: 20px;
+}
+.search-result {
+    padding:5% 0%;
+}
+
+.search-category {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.result-icons {
+    margin: 0px 10px;
+}

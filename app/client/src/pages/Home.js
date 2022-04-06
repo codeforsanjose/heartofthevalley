@@ -1,95 +1,64 @@
 import React from 'react'
 import Mapbox from '../components/Mapbox'
+import Features from '../components/Features'
 import '../assets/stylesheets/home.css'
+import featureData from '../components/FeatureData'
+import { FaLongArrowAltRight } from 'react-icons/fa'
+import { FaSistrix } from 'react-icons/fa'
+import LocalArts from '../components/LocalArts'
 
 function Home() {
+  const feature = featureData.map((data) => {
+    return <Features key={data.id} img={data.img} title={data.title} description={data.content} />
+  })
+
   return (
     <div className="home">
-      <div className="container">
+      <div className="container-fluid">
         <div className="herobanner">
           <div className="row">
-          <div className="col-lg-6">
-          <h1 className="title">
-            Explore Art<br></br> in Sanjose
-          </h1>
-          </div>
-          <div className="col-lg-6">
-          <div ><a href="#">Browse all </a></div>
-          <div> <a href="#">Checkout our new spots <br></br> in the area </a></div>
-         
-          </div>
+            <div className="col-lg-8">
+              <h1 className="title">
+                Explore Art<br></br> in the Bay Area
+              </h1>
+            </div>
+
+            <div className="search-home">
+              <input
+                type="text"
+                placeholder="Search by art, artist, or zipcode"
+                className="home-input"
+              ></input>
+              <button type="submit" className="search-btn">
+                Search <FaSistrix />
+              </button>
+            </div>
+            <div className="local-fav">
+              <h3>Local favorites near San Jose</h3>
+              <div className="row">
+                <LocalArts />
+                <LocalArts />
+                <LocalArts />
+                <LocalArts />
+              </div>
+            </div>
           </div>
         </div>
         <div className="mapbox">
+          <h3>Explore nearby Public Arts</h3>
           <Mapbox />
         </div>
-        <div className="categories">
-          <h2>Featured Categories</h2>
-          <div className="row">
-            <div className="col-lg-3 col-md-2">
-              <div className="card">
-                <img
-                  src="https://images.unsplash.com/photo-1552596828-4e48cd784320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h3>Sculptures</h3>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                </div>
-              </div>
+      </div>
+      <div className="features">
+        <div className="container-fluid">
+          <div className="categories">
+            <div className="feature-title">
+              <h2>Featured Categories</h2>
+              <a href="#" className="feature-link">
+                Browse all <FaLongArrowAltRight />
+              </a>
             </div>
-            <div className="col-lg-3 col-md-2">
-              <div className="card">
-                <img
-                  src="https://images.unsplash.com/photo-1552596828-4e48cd784320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h3>Grafitti</h3>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-2">
-              <div className="card">
-                <img
-                  src="https://images.unsplash.com/photo-1552596828-4e48cd784320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h3>Murals</h3>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-2">
-              <div className="card">
-                <img
-                  src="https://images.unsplash.com/photo-1552596828-4e48cd784320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h3>Architecture</h3>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div className="row ">{feature}</div>
           </div>
         </div>
       </div>

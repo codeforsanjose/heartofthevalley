@@ -1,44 +1,51 @@
-.App {
-  text-align: center; 
+/* Font */
+@font-face {
+  font-family: 'Gotham Black';
+  src: local('Gotham Black'), url('../Fonts/Gotham-Font/Gotham-Black.otf') format('truetype');
 }
-
-.form{
-  display: inline-block;
-  justify-content: center;
+@font-face {
+  font-family: 'Arial Th';
+  src: local('Arial Th'), url('../Fonts/arial_th/ArialTh.ttf') format('truetype');
 }
-
-.form input{
-  width: 250px;
-  margin: 10px;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Gotham Black', Sans-Serif !important;
 }
-
-.sub-title{
-  font-size: 12px;
-  text-align: left;
+p {
+  font-family: 'Arial Th', Sans-Serif !important;
 }
-
 /* Navbar */
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-collapse {
-  justify-content: flex-end;
-  padding-right: 20px;
+.container-fluid {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
 }
 
 .nav-item {
   padding-left: 10px;
-  padding-right:10px;
+  padding-right: 10px;
   color: #fff !important;
 }
 
-
 #nav {
-  background-color: #F04A00 !important;
+  background-color: #d44100 !important;
 }
 
 #navItem {
   color: #fff !important;
   text-decoration: none;
+  font-family: 'Arial Th', Sans-Serif !important;
+}
+.nav-item:hover {
+  background-color: #bf3b00;
 }
 
 /*Footer */
@@ -47,4 +54,22 @@
   background-color: #000;
   color: #fff;
   padding: 40px 0px;
+  /* position:absolute;
+  bottom: 0;
+  width:100%; */
+}
+
+.footer-link {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: flex-end;
+}
+
+.social-icon {
+  margin: 5px;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  
 }
