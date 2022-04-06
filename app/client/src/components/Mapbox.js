@@ -71,35 +71,6 @@ function Mapbox() {
       mapboxApiAccessToken={MAPBOX_TOKEN}
     >
       {markers}
-      
-      {/* {showPopup && (
-        <Popup
-          key={showPopup.id}
-          latitude={parseFloat(showPopup.latLong[1])}
-          longitude={parseFloat(showPopup.latLong[0])}
-          closeButton={true}
-          closeOnClick={false}
-          onClose={setShowpopup}
-          anchor="top"
-          className="popup-mapbox"
-        >
-           <div className="card popup-card" style={{width: "15rem"}}>
-                <img
-                  src="https://images.unsplash.com/photo-1552596828-4e48cd784320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                  className="card-img-top popup-img"
-                  alt={showPopup.title}
-                  width="200" height="200"
-                />
-                <div className="card-body">
-                  <h4 className="popup-title">{showPopup.title}</h4>
-                  <p>ARTIST</p>
-                  <p className="card-text"  dangerouslySetInnerHTML={description()}></p>
-                  <a href="#" class="btn btn-primary popup-button">Get Directions</a>
-                </div>
-              </div>
-        
-        </Popup>
-      )} */}
       <div id="info-box">
         <div className="card popup-card" style={{ width: '16rem' }}>
           <img
@@ -120,7 +91,6 @@ function Mapbox() {
         </div>
       </div>
       <NavigationControl position="bottom-right" />
-      {/* <FullscreenControl /> */}
     </ReactMapGL>
   )
 }

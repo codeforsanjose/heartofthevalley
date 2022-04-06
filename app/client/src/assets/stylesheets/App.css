@@ -39,11 +39,12 @@ p {
   background-color: #d44100 !important;
 }
 
-#navItem {
+.nav-item-1 {
   color: #fff !important;
   text-decoration: none;
   font-family: 'Arial Th', Sans-Serif !important;
 }
+
 .nav-item:hover {
   background-color: #bf3b00;
 }
@@ -54,9 +55,6 @@ p {
   background-color: #000;
   color: #fff;
   padding: 40px 0px;
-  /* position:absolute;
-  bottom: 0;
-  width:100%; */
 }
 
 .footer-link {
@@ -71,5 +69,4 @@ p {
   border-radius: 50%;
   color: rgb(0, 0, 0);
   background-color: #fff;
-  
 }
