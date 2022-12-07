@@ -1,0 +1,25 @@
+
+.descriptionSection{
+    width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    .detailsSection{
+        flex-direction: column;
+    }
+    .locationSection{
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    .descriptionSection{
+        width: 100%;
+    }
+    .artDetailsPage{
+        padding: 2rem
+    }
+    .directions{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}

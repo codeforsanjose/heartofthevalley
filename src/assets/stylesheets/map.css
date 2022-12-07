@@ -1,0 +1,68 @@
+.pop-description {
+  max-width: 200px;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+}
+marker {
+  height: 60px;
+  width: 40px;
+}
+
+.mapboxgl-map {
+  border-radius: 20px;
+}
+
+
+/* Popup card */
+.popup-card {
+  padding: 0px;
+  background-color: #dfdfdf !important;
+  border: none !important;
+  margin: 0px !important;
+  border-radius: 25px !important;
+}
+.popup-title {
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.popup-button {
+  background-color: #0f4c64 !important;
+  border: 1px solid #0f4c64 !important;
+  border-radius: 30px !important;
+  width: 100%;
+}
+
+.popup-img {
+  height: 500px;
+  border-radius: 25px !important;
+}
+
+#info-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 1100px) {
+  #info-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1100px) {
+  #info-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

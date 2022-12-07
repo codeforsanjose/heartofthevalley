@@ -1,0 +1,32 @@
+.featureCard{
+    width: 276px;
+    height: 276px;
+    position: relative;
+}
+.box{
+    position: absolute;
+    width:260px;
+    bottom: 3.5vh;
+    
+}
+.title{
+    color:white;
+    font-size: 22px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 600px) {
+    .featureCard{
+        width: 210px;
+        height: 210px;
+    }
+    .title{
+        font-size: 22px;
+        width:200px !important;
+        position: relative;
+        top: 15px;
+        left:5px;
+        font-weight: 550;
+        letter-spacing: 0;
+    }
+  }
