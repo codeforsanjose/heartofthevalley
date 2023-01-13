@@ -4,6 +4,9 @@ const app = express()
 const router = express.Router()
 const featureRoutes = require('./routes/feature_routes')
 const PORT = process.env.PORT || 3001
+
+const ArtDB = require('./models/ArtDB')
+const artDB = new ArtDB()
 // Enable cors security headers
 app.use(cors())
 

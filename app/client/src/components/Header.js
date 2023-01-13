@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaSistrix } from 'react-icons/fa'
 
+
 function Header() {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">

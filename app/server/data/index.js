@@ -12,10 +12,10 @@ let id = 1
 function loadData() {
   fs.createReadStream(path.resolve(__dirname, '', DATA_FILE_NAME))
     .pipe(
-      csv.parse({ headers: true, skipLines: 2 }).transform((data) => ({
+      csv.parse({ headers: true, skipLines: 0 }).transform((data) => ({
         ...data,
         id: id++,
-        title: data.title ? removeWhiteSpaces(data.title) : '',
+        title: data.title ? data.Title : '',
         latLong: data.latLong ? removeWhiteSpaces(data.latLong).split(',') : '',
         imagePath: data.imagePath ? removeWhiteSpaces(data.imagePath) : DEFAULT_FEATURE_IMAGE,
         enabled: data.enabled && data.enabled === 'false' ? false : true,
@@ -32,6 +32,7 @@ function loadData() {
       logger.info(FILENAME, `Parsed: ${rowCount} rows`)
       logger.info(FILENAME, `Cache: ${data.length} rows`)
     })
+    console.log(artDB.getAllFeatures()) 
 }
 
 function removeWhiteSpaces(value) {

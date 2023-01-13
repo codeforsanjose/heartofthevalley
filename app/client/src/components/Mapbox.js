@@ -2,8 +2,9 @@ import * as React from 'react'
 import '../assets/stylesheets/map.css'
 import ReactMapGL, { Marker, Popup, FullscreenControl, NavigationControl } from 'react-map-gl'
 import { Component } from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import 'mapbox-gl/dist/mapbox-gl.css'
+import axios from "axios";
 import mapImg from "../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg"
 
 import { FaMapMarkerAlt } from 'react-icons/fa'
@@ -20,38 +21,55 @@ function Mapbox() {
   })
 
   // Calling MapData API to get data
-  const [apiData, setApiData] = React.useState([])
-  React.useEffect(() => {
-    fetch('http://localhost:3001/v1/heartofvalley/features')
-      .then((res) => res.json())
-      .then((data) => setApiData(data))
-  }, [])
+  
 
-  const mapData = apiData.slice(0, 11)
   
+
+  const ArtData = (url) => {
+    const [artData, setArtData] = useState(null);
+    const [error, setError] = useState("");
+    const [loaded, setLoaded] = useState(false);
   
+    useEffect(() => {
+      axios
+        .get(url)
+        .then((response) => setArtData(response.data))
+        .catch((error) => setError(error.message))
+        .finally(() => setLoaded(true));
+    }, []);
+  
+    return { artData, error, loaded };
+  };
+ 
+  const {artData,error,loaded} = ArtData('http://localhost:3001/v1/heartofvalley/features')
+ /*  if(loaded === true){
+    artData
+      .map((data) => {console.log(data)})
+  }
+   */
   // Creating markers for the map
-  const markers = mapData
-    .filter((location) => {
-      return !!location.latLong
-    })
-    .map((location) => (
+  let id = 0
+   const markers = (loaded===true) && artData
+  .slice(1,50)
+   .map((data) => (
       <Marker
-        key={location.id}
-        latitude={parseFloat(location.latLong[1])}
-        longitude={parseFloat(location.latLong[0])}
+        key={data.id}
+        latitude={parseFloat(data.latLong[1])}
+        longitude={parseFloat(data.latLong[0])}
       >
         <button
           className="button"
           onClick={(e) => {
             e.preventDefault()
-            setShowpopup(location)
+            setShowpopup(data)
+            console.log(data)
           }}
         >
           <FaMapMarkerAlt className="marker" />
         </button>
       </Marker>
-    ))
+    ))  
+   
 
   // creating popup state for the marker
   const [showPopup, setShowpopup] = React.useState(false)
@@ -64,25 +82,27 @@ function Mapbox() {
   return (
     <ReactMapGL
       {...viewport}
-      width="80vw"
-      height="70vh"
-      mapStyle="mapbox://styles/umapreethi/ckxz6deec9a3z14t88tqso5rb"
+      width="100%"
+      height="80vh"
+      style={{marginTop:"2vh", marginBottom:"2vh"}}
+      mapStyle="mapbox://styles/mapbox/streets-v11"
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
       mapboxApiAccessToken={MAPBOX_TOKEN}
+      
     >
-      {markers}
-      <div id="info-box">
-        <div className="card popup-card" style={{ width: '16rem' }}>
+       {markers}   
+      <div className = "mt-3" id="info-box">
+        <div className="card popup-card" style={{ width: '20rem' }}>
           <img
-            src={mapImg}
+            src={showPopup.imagePath}
             className="card-img-top popup-img"
-            alt={showPopup.title}
+            alt={showPopup.Title}
             width="200"
             height="200"
           />
           <div className="card-body">
-            <h4 className="popup-title">{showPopup.title}</h4>
-            <p>ARTIST</p>
+            <h4 className="popup-title">{showPopup.Title}</h4>
+            <p>{showPopup.Artist}</p>
             <p className="card-text" dangerouslySetInnerHTML={description()}></p>
             <a href="#" class="btn btn-primary popup-button">
               Get Directions

@@ -7,6 +7,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Search from './pages/Search'
+import ArtDetails from './components/ArtDetails'
+
 
 const App = () => (
   <div>
@@ -22,6 +24,9 @@ const App = () => (
       </Route>
       <Route path="/search">
         <Search />
+      </Route>
+      <Route path="/artDetails">
+        <ArtDetails/>
       </Route>
       <Route path="/">
         <Home />
