@@ -8,6 +8,8 @@ import mapImg from "../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJos
 
 import { FaMapMarkerAlt } from 'react-icons/fa'
 
+// const { API_URL } = process.env;
+
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzlyeTl5eDhhIn0.01MGUHXlsnSkJbv1u-mbmw' // Set your mapbox token here
 
@@ -22,7 +24,7 @@ function Mapbox() {
   // Calling MapData API to get data
   const [apiData, setApiData] = React.useState([])
   React.useEffect(() => {
-    fetch('http://localhost:3001/v1/heartofvalley/features')
+    fetch(`${process.env.REACT_APP_API_SERVER}/features`)
       .then((res) => res.json())
       .then((data) => setApiData(data))
   }, [])

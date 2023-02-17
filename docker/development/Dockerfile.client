@@ -1,0 +1,10 @@
+ARG NODE_VERSION
+
+FROM node:${NODE_VERSION}-alpine
+
+# Create app directory
+WORKDIR /usr/src/app
+
+RUN apk add curl
+
+CMD ["npm", "run", "start"]
