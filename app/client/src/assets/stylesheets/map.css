@@ -1,18 +1,30 @@
-.pop-description {
+/* .pop-description {
   max-width: 200px;
-}
+} */
 
 .button {
   border: none;
   background-color: transparent;
 }
-marker {
-  height: 60px;
+.marker {
+  height: 30px;
+  width: 30px;
+}
+
+.button.active .marker {
+  color: #0f4c64;
+  height: 40px;
   width: 40px;
 }
 
 .mapboxgl-map {
   border-radius: 20px;
+}
+
+#info-box {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: auto;
 }
 
 
@@ -23,13 +35,60 @@ marker {
   border: none !important;
   margin: 0px !important;
   border-radius: 25px !important;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  pointer-events: auto;
 }
-.popup-title {
+
+
+/* .popup-title {
   position: absolute;
   top: 0;
   color: #ffffff;
   padding-top: 10px;
+} */
+
+.popup-title {
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  padding-top: 10px;
+  z-index: 10000;
+  margin: 25px;
+  text-align: left;
+  padding-right: 55px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  
 }
+
+
+.circle {
+  background-color: #0f4c64;
+  border-radius: 100% !important;
+  width: 50px; 
+  height: 50px;
+  z-index: 10000;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+}
+
+.circle:hover {
+  background-color: #195d78;
+}
+
+.circle:active {
+  background-color: #0b384a;
+}
+
+.map-svg {
+  color: white;
+  margin: auto;
+}
+
 
 .popup-button {
   background-color: #0f4c64 !important;
@@ -38,31 +97,62 @@ marker {
   width: 100%;
 }
 
-.popup-img {
-  height: 500px;
+
+
+/* .popup-img {
+  max-height: 500px;
   border-radius: 25px !important;
+} */
+
+.popup-img {
+  height: 300px;
+  width: 500px;
+  border-radius: 25px !important;
+  position: relative;
+  z-index: 999;
 }
 
-#info-box {
+#img-gradient {
+  position:relative;
+}
+
+#img-gradient::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  z-index: 1000;
+  border-radius: 25px !important;
+
+  /* gradient with max compatibility */
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+/* #info-box {
   position: absolute;
   top: 0;
   right: 0;
-}
+} */
 
 /* Medium Screens */
-@media (min-width: 600px) and (max-width: 1100px) {
+/* @media (min-width: 600px) and (max-width: 1100px) {
   #info-box {
     position: absolute;
     top: 0;
     right: 0;
   }
-}
+} */
 
 /* Large Screens */
-@media (min-width: 1100px) {
+/* @media (min-width: 1100px) {
   #info-box {
     position: absolute;
     top: 0;
     right: 0;
   }
-}
+} */
+
