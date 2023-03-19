@@ -2145,7 +2145,10 @@ const art = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": null
+        "coordinates": [
+          -121.9182157,
+          37.3733939
+        ]
       },
       "properties": {
         "title": "Japanese American Internment Memorial",
@@ -4298,7 +4301,10 @@ const art = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": null
+        "coordinates": [
+          -121.770388,
+          37.2998421
+        ]
       },
       "properties": {
         "title": "Soaring Flight",
