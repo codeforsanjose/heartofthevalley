@@ -8,9 +8,9 @@ import { FaSistrix } from 'react-icons/fa'
 import LocalArts from '../components/LocalArts'
 
 function Home() {
-  const feature = featureData.map((data) => {
-    return <Features key={data.id} img={data.img} title={data.title} description={data.content} />
-  })
+  // const feature = featureData.map((data) => {
+  //   return <Features key={data.id} img={data.img} title={data.title} description={data.content} />
+  // })
 
   return (
     <div className="home">
@@ -18,7 +18,7 @@ function Home() {
         <div className="herobanner">
           <div className="row">
             <div className="col-lg-8">
-              <h1 className="title">
+              <h1 className="hero-text">
                 Explore Art<br></br> in the Bay Area
               </h1>
             </div>
@@ -37,9 +37,9 @@ function Home() {
               <h3>Local favorites near San Jose</h3>
               <div className="row">
                 <LocalArts />
+                {/* <LocalArts />
                 <LocalArts />
-                <LocalArts />
-                <LocalArts />
+                <LocalArts /> */}
               </div>
             </div>
           </div>
@@ -54,11 +54,11 @@ function Home() {
           <div className="categories">
             <div className="feature-title">
               <h2>Featured Categories</h2>
-              <a href="#" className="feature-link">
+              <a href="/search" className="feature-link">
                 Browse all <FaLongArrowAltRight />
               </a>
             </div>
-            <div className="row ">{feature}</div>
+            <div className="row "><Features /></div>
           </div>
         </div>
       </div>

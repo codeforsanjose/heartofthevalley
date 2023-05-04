@@ -63,6 +63,11 @@
   
 }
 
+.popup-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 .circle {
   background-color: #0f4c64;

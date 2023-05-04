@@ -6,7 +6,8 @@ import { useState, useEffect } from 'react'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import axios from "axios";
 import mapImg from "../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg"
-
+import { useHistory } from "react-router-dom"
+ 
 
 import { FaMapMarkerAlt } from 'react-icons/fa'
 
@@ -15,6 +16,9 @@ const MAPBOX_TOKEN =
 
 
 function Mapbox() {
+
+  const history = useHistory()
+
   const [viewport, setViewport] = useState({
     latitude: 37.33829,
     longitude: -121.88382,
@@ -108,7 +112,29 @@ function Mapbox() {
                 className="card-img-top popup-img"
                 alt={showPopup.Title}
               />
-              <h4 className="popup-title">{showPopup.Title}</h4> 
+              
+              <h4 
+                className="popup-title" 
+                onClick={() => {
+                  history.push({
+                    pathname: '/artDetails',
+                    // state: showPopup
+                    state: {
+                      facility: showPopup.Facility,
+                      artist: showPopup.Artist,
+                      address: showPopup.Address,
+                      description: showPopup.Description,
+                      imgAddr: showPopup.imagePath, 
+                      title: showPopup.Title,
+                      artType: showPopup.ArtType,
+                      latLong: showPopup.latLong
+                    }
+                  })
+                }}
+              >
+                  {showPopup.Title}
+              </h4>
+              
               <button className="circle" onClick={()=>{console.log('coming here'),window.location.replace(`https://www.google.com/maps/search/?api=1&query=${showPopup.latLong[1]}%2C${showPopup.latLong[0]}`);}}>
               <svg
                     class="map-svg"

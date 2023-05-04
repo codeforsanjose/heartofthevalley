@@ -49,6 +49,19 @@ p {
   background-color: #bf3b00;
 }
 
+
+/* Title Link: to Home ("/") */
+
+.header-title-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-title-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*Footer */
 
 .footer {

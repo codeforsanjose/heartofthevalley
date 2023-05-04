@@ -7,13 +7,37 @@ import SearchGrid from './SearchGrid'
 import SearchList from './SearchList'
 import axios from "axios";
 import { useState, useEffect } from 'react'
-
+import { useHistory, useLocation } from "react-router-dom"
+import Features from '../components/Features'
 
 
 function Search() {
 
   const [ displayType, setDisplayType ] = useState('grid')
-  const [ filterType, setFilterType ] = useState('All')
+
+
+
+  const history = useHistory();
+  const location = useLocation();
+  const [ filterType, setFilterType ] = useState('All');
+
+  useEffect(() => {
+    if (location.state && location.state.setFilterType) {
+      setFilterType(location.state.setFilterType);
+    }
+  }, [location.state]);
+
+  const handleClick = (newFilterType) => {
+    if (newFilterType !== filterType) {
+      setFilterType(newFilterType);
+      history.push({
+        pathname: "/search",
+        state: { setFilterType: newFilterType }
+      });
+    }
+  };
+
+
   const ArtData = (url) => {
     const [artData, setArtData] = useState(null);
     const [error, setError] = useState("");
@@ -27,7 +51,7 @@ function Search() {
         .finally(() => setLoaded(true));
     }, []);
   
-    return { artData, error, loaded };
+    return { artData: artData || [] , error, loaded };
   };
  
   const {artData,error,loaded} = ArtData('http://localhost:3001/v1/heartofvalley/features')
@@ -55,13 +79,13 @@ function Search() {
       <div className="container">
         <div className="search-category mt-4">
           <div className="d-flex justify-content-between mr-3 search-name">
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1 " onClick={()=>{setFilterType('All')}}>All</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Mural')}}>Mural</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Interactive')}}>Interactive</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Architechture')}}>Architecture</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Sculpture')}}>Sculpture</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Painting')}}>Painting</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Photography')}}>Photography</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1 " onClick={()=>{handleClick('All')}}>All</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Mural')}}>Mural</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Interactive')}}>Interactive</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Architecture')}}>Architecture</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Sculpture')}}>Sculpture</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Painting')}}>Painting</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Photography')}}>Photography</button>
           </div>
           <div className="result-views">
           <button type="button" class="btn" onClick={()=>{setDisplayType('grid')}}><BsGrid3X3 className="result-icons"/></button>

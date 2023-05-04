@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaSistrix } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 
 function Header() {
@@ -8,9 +9,9 @@ function Header() {
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
       <div class="container-fluid">
         <span class="navbar-brand nav-item-1">
-          HEART OF THE VALLEY
+          <Link className="header-title-link" to="/">HEART OF THE VALLEY</Link>
           <p className="sub-title nav-item-1">
-            Mapping Public arts
+            Mapping Public Arts
           </p>{' '}
         </span>
         <button

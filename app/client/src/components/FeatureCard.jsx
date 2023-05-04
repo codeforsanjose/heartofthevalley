@@ -21,7 +21,7 @@ function FeatureCard({imgAddr,title, description, address, artist, facility, art
           artType: artType,
           latLong: latLong
       })}}>
-        <img className='imgSrc' src={imgAddr} alt="Image unvailable" />
+        <img className='imgSrc' src={imgAddr} alt="Image unavailable" />
         <div className='box'>
         <h5 className="title">{title}</h5>
         </div>

@@ -23,3 +23,8 @@
     }
 
 }
+
+
+.art-img-fit {
+    object-fit: cover;
+}
