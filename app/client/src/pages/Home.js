@@ -6,11 +6,13 @@ import featureData from '../components/FeatureData'
 import { FaLongArrowAltRight } from 'react-icons/fa'
 import { FaSistrix } from 'react-icons/fa'
 import LocalArts from '../components/LocalArts'
+import { useHistory } from "react-router-dom";
+import { useState } from 'react'
 
 function Home() {
-  // const feature = featureData.map((data) => {
-  //   return <Features key={data.id} img={data.img} title={data.title} description={data.content} />
-  // })
+  const feature = featureData.map((data) => {
+    return <Features key={data.id} img={data.img} title={data.title} description={data.content} />
+  })
 
   return (
     <div className="home">
@@ -18,7 +20,7 @@ function Home() {
         <div className="herobanner">
           <div className="row">
             <div className="col-lg-8">
-              <h1 className="hero-text">
+              <h1 className="title">
                 Explore Art<br></br> in the Bay Area
               </h1>
             </div>
@@ -26,12 +28,13 @@ function Home() {
             <div className="search-home">
               <input
                 type="text"
-                placeholder="Search by art, artist, or zipcode"
+                placeholder="Search by art or zipcode"
                 className="home-input"
+                onChange={(e)=>setSearchText(e.target.value)}
               ></input>
-              <button type="submit" className="search-btn">
-                Search <FaSistrix />
-              </button>
+              <button type="submit" onClick={()=>{history.push("/search",{find_art: searchText})}} className="search-btn">
+                <FaSistrix />
+              </button> 
             </div>
             <div className="local-fav">
               <h3>Local favorites near San Jose</h3>
