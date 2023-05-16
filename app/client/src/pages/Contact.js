@@ -12,36 +12,10 @@ const schema = yup.object().shape({
     fullName: yup.string().required(),
     email: yup.string().email().required(),
     message: yup.string().required(),
-    /* terms: yup.bool().required().oneOf([true], 'Terms must be accepted'), */
   });
 
 function ContactUs() {
-
- /*  useEffect(()=>{
-
-    (function(){
-      emailjs.init('user_pwAyORzW3693DfoHy74Bq');
-      })();
-
-      
-      
-      
-      function contactEmail() {
-          document.getElementById('contact').addEventListener('submit', function(event) {
-              event.preventDefault();
-              template_params = {
-              "user_name": getInputValue('name'),
-              "message": getInputValue('msg'),
-              "user_email": getInputValue('email')
-              }
-              emailjs.send('gmail', 'client_mail', template_params);
-              document.querySelector('.alert').style.display = 'flex';
-              setTimeout(()=>{document.querySelector('.alert').style.display = 'none'},3000);
-          });
-      }
-      contactEmail();
-  },[]) */
-   
+  
   return (
       <div className="container pt-4 d-flex main" >
           <div className=' headerTitle'>
@@ -51,14 +25,15 @@ function ContactUs() {
         
       validationSchema={schema}
       onSubmit={(values)=>{
-      
-        emailjs.init('7ISP2uI3t5qQHQE3H');
+
+        
+        emailjs.init('dAqk2Q4K45-wCglGe');
        
-          emailjs.send('gmail', 'client_mail', 
+          emailjs.send('service_iyj7see', 'client_mail', 
           {"user_name": values.fullName,
           "message": values.message,
           "user_email": values.email
-          });
+          }); 
       
       }}
       initialValues={{
@@ -70,13 +45,12 @@ function ContactUs() {
       {({
         handleSubmit,
         handleChange,
-        handleBlur,
         values,
         touched,
         isValid,
         errors,
       }) => (
-        <Form className='container-fluid' noValidate onSubmit={handleSubmit}>
+        <Form className='container-fluid' noValidate  onSubmit={handleSubmit}  method="GET">
           
           <Row className="mt-2">
             <Form.Group as={Col} md="12" controlId="validationFormik03">

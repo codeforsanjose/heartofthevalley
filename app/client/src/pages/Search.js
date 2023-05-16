@@ -7,43 +7,20 @@ import SearchGrid from './SearchGrid'
 import SearchList from './SearchList'
 import axios from "axios";
 import { useState, useEffect } from 'react'
-import { useHistory, useLocation } from "react-router-dom"
-import Features from '../components/Features'
+
 
 
 function Search() {
 
   const [ displayType, setDisplayType ] = useState('grid')
-
-
-
-  const history = useHistory();
-  const location = useLocation();
-  const [ filterType, setFilterType ] = useState('All');
-
-  useEffect(() => {
-    if (location.state && location.state.setFilterType) {
-      setFilterType(location.state.setFilterType);
-    }
-  }, [location.state]);
-
-  const handleClick = (newFilterType) => {
-    if (newFilterType !== filterType) {
-      setFilterType(newFilterType);
-      history.push({
-        pathname: "/search",
-        state: { setFilterType: newFilterType }
-      });
-    }
-  };
-
-
+  const [ filterType, setFilterType ] = useState('All')
   const ArtData = (url) => {
     const [artData, setArtData] = useState(null);
     const [error, setError] = useState("");
     const [loaded, setLoaded] = useState(false);
   
     useEffect(() => {
+      
       axios
         .get(url)
         .then((response) => setArtData(response.data))
@@ -53,14 +30,20 @@ function Search() {
   
     return { artData: artData || [] , error, loaded };
   };
+   
  
   const {artData,error,loaded} = ArtData('http://localhost:3001/v1/heartofvalley/features')
   
   let displayArtData = Object.assign({},artData)
   filterType !== 'All' ? displayArtData = Object.assign({},artData.filter(data => data['Art Type']=== filterType)): displayArtData = Object.assign({},artData)
+  let searchArtData = Object.assign({},artData)
+   if(searchText != '' && artData != null){
+  searchArtData = Object.assign({},artData.filter((data)=> data['Postal Code']=== searchText || data['Title']=== searchText ))
+ } 
+ if(artData != null && location.state!= null){
+  searchArtData = Object.assign({},artData.filter((data)=> data['Postal Code']=== (location.state.find_art) || data['Title']=== (location.state.find_art) ))
+ } 
  
-  console.log(displayArtData, loaded)
-
 
   return (
     <div>
@@ -71,6 +54,8 @@ function Search() {
             <input
               type="text"
               className="search"
+              value={searchText}
+              /* onChange={(e)=>{setSearchText(e.target.value)}} */
               placeholder="Search by art,artist or zipcode"
             ></input>
           </div>
@@ -94,7 +79,7 @@ function Search() {
           </div>
         </div>
         <div>
-          {( loaded === true )? ((displayType === 'grid')? <SearchGrid artData={displayArtData}/>: (displayType === 'list')? <SearchList artData={displayArtData}/>: <Mapbox/>):<h4>Loading data</h4>}
+          {( loaded === true )? ((displayType === 'grid')? ((searchText != '' || location.state.find_art!= null)?<SearchGrid artData={searchArtData}/>:<SearchGrid artData={displayArtData}/>): (displayType === 'list')?((searchText!='' || location.state.find_art!= null)?<SearchList artData={searchArtData}/>:<SearchList artData={displayArtData}/>) : <Mapbox/>):<h4>Loading data</h4>}
         </div>
           
       </div>

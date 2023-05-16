@@ -16,13 +16,14 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-map-gl": "^6.1.17",
-    "react-router-dom": "^5.3.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "request": "^2.79.0",
     "web-vitals": "^1.1.2",
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "react-scripts test --watchAll=false",
@@ -40,7 +41,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "http://127.0.0.1:3000",
   "devDependencies": {
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-react-hooks": "^4.2.0",
