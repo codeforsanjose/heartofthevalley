@@ -7,6 +7,8 @@ import SearchGrid from './SearchGrid'
 import SearchList from './SearchList'
 import axios from "axios";
 import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
+
 
 
 
@@ -14,6 +16,10 @@ function Search() {
 
   const [ displayType, setDisplayType ] = useState('grid')
   const [ filterType, setFilterType ] = useState('All')
+  const [ searchText, setSearchText ] = useState('')
+  const location = useLocation();
+    
+
   const ArtData = (url) => {
     const [artData, setArtData] = useState(null);
     const [error, setError] = useState("");
@@ -28,7 +34,7 @@ function Search() {
         .finally(() => setLoaded(true));
     }, []);
   
-    return { artData: artData || [] , error, loaded };
+    return { artData, error, loaded };
   };
    
  
@@ -64,13 +70,13 @@ function Search() {
       <div className="container">
         <div className="search-category mt-4">
           <div className="d-flex justify-content-between mr-3 search-name">
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1 " onClick={()=>{handleClick('All')}}>All</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Mural')}}>Mural</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Interactive')}}>Interactive</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Architecture')}}>Architecture</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Sculpture')}}>Sculpture</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Painting')}}>Painting</button>
-          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{handleClick('Photography')}}>Photography</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1 " onClick={()=>{setFilterType('All')}}>All</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Mural')}}>Mural</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Interactive')}}>Interactive</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Architechture')}}>Architecture</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Sculpture')}}>Sculpture</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Painting')}}>Painting</button>
+          <button type="button" href="#" className="btn btn-light btn-rounded border mr-1" onClick={()=>{setFilterType('Photography')}}>Photography</button>
           </div>
           <div className="result-views">
           <button type="button" class="btn" onClick={()=>{setDisplayType('grid')}}><BsGrid3X3 className="result-icons"/></button>
@@ -79,7 +85,7 @@ function Search() {
           </div>
         </div>
         <div>
-          {( loaded === true )? ((displayType === 'grid')? ((searchText != '' || location.state.find_art!= null)?<SearchGrid artData={searchArtData}/>:<SearchGrid artData={displayArtData}/>): (displayType === 'list')?((searchText!='' || location.state.find_art!= null)?<SearchList artData={searchArtData}/>:<SearchList artData={displayArtData}/>) : <Mapbox/>):<h4>Loading data</h4>}
+          {( loaded === true )? ((displayType === 'grid')? ((searchText != '' || location.state!= null)?<SearchGrid artData={searchArtData}/>:<SearchGrid artData={displayArtData}/>): (displayType === 'list')?((searchText!='' || location.state!= null)?<SearchList artData={searchArtData}/>:<SearchList artData={displayArtData}/>) : <Mapbox/>):<h4>Loading data</h4>}
         </div>
           
       </div>

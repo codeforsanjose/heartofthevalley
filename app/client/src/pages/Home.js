@@ -13,7 +13,9 @@ function Home() {
   const feature = featureData.map((data) => {
     return <Features key={data.id} img={data.img} title={data.title} description={data.content} />
   })
-
+  const [ searchText, setSearchText ] = useState('')
+  const history = useHistory()
+  
   return (
     <div className="home">
       <div className="container-fluid">
