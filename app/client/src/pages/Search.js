@@ -62,7 +62,7 @@ function Search() {
               className="search"
               value={searchText}
               /* onChange={(e)=>{setSearchText(e.target.value)}} */
-              placeholder="Search by art,artist or zipcode"
+              placeholder="Search by art or zipcode"
             ></input>
           </div>
         </div>

@@ -111,6 +111,10 @@
   .feature-title {
     display: block;
   }
+
+  .home-input {
+    width: 90%;
+  }
 }
 
 .feature-card {
