@@ -44,11 +44,11 @@ function Search() {
   filterType !== 'All' ? displayArtData = Object.assign({},artData.filter(data => data['Art Type']=== filterType)): displayArtData = Object.assign({},artData)
   let searchArtData = Object.assign({},artData)
    if(searchText != '' && artData != null){
-  searchArtData = Object.assign({},artData.filter((data)=> data['Postal Code']=== searchText || data['Title']=== searchText ))
+  searchArtData = Object.assign({},artData.filter((data)=> data['Postal Code']=== searchText || (data['Title']).toLowerCase() === (searchText).toLowerCase() ))
  } 
- if(artData != null && location.state!= null){
-  searchArtData = Object.assign({},artData.filter((data)=> data['Postal Code']=== (location.state.find_art) || data['Title']=== (location.state.find_art) ))
- } 
+  if (artData != null && location.state != null) {
+    searchArtData = Object.assign ({} , artData.filter((data)=> data['Postal Code']=== location.state.find_art || (data['Title']).toLowerCase()=== (location.state.find_art).toLowerCase() ))
+  }
  
 
   return (
@@ -61,7 +61,7 @@ function Search() {
               type="text"
               className="search"
               value={searchText}
-              /* onChange={(e)=>{setSearchText(e.target.value)}} */
+              onChange={(e)=>{setSearchText(e.target.value)}} 
               placeholder="Search by art or zipcode"
             ></input>
           </div>

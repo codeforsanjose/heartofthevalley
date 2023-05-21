@@ -1,23 +1,20 @@
-import {useEffect, useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-import "./ContactUs.css"  
+import './ContactUs.css'
 
 const schema = yup.object().shape({
-    fullName: yup.string().required(),
-    email: yup.string().email().required(),
-    message: yup.string().required(),
-  });
+  fullName: yup.string().required(),
+  email: yup.string().email().required(),
+  message: yup.string().required(),
+});
 
 function ContactUs() {
-  
   return (
-      <div className="container pt-4 d-flex main" >
+    <div className="container pt-4 d-flex main" >
           <div className=' headerTitle'>
               <h1>We'd love to hear from you</h1>
           </div>
@@ -47,7 +44,6 @@ function ContactUs() {
         handleChange,
         values,
         touched,
-        isValid,
         errors,
       }) => (
         <Form className='container-fluid' noValidate  onSubmit={handleSubmit}  method="GET">
@@ -109,19 +105,7 @@ function ContactUs() {
             </Form.Group>
             
           </Row>
-          <Form.Group className="mb-5 labelAlign">
-            <Form.Check
-              required
-              name="terms"
-              label="I want to receive a copy of this message to my email"
-              onChange={handleChange}
-              isInvalid={!!errors.terms}
-              feedback={errors.terms}
-              /* feedbackType="invalid" */
-              id="validationFormik0"
-              
-            />
-          </Form.Group >
+          
           <div className="container-fluid mt-4 text-center">
           <Button className="fs-5  px-5 rounded-pill" style={{backgroundColor:'#0F4C64'}}type="submit">Submit</Button>
           </div>
