@@ -7,13 +7,16 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 import { FaSistrix } from 'react-icons/fa'
 import LocalArts from '../components/LocalArts'
 import { useHistory } from "react-router-dom";
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { FeatureContext, SearchContext } from '../App'
 
 function Home() {
   const feature = featureData.map((data) => {
     return <Features key={data.id} img={data.img} title={data.title} description={data.content} />
   })
-  const [ searchText, setSearchText ] = useState('')
+  const [filterType, setFilterType] = useContext(FeatureContext)
+  const [searchText,setSearchText] = useContext(SearchContext)
+
   const history = useHistory()
   
   return (
@@ -32,7 +35,7 @@ function Home() {
                 type="text"
                 placeholder="Search by art or zipcode"
                 className="home-input"
-                onChange={(e)=>setSearchText(e.target.value)}
+                onChange={(e)=>{setSearchText(e.target.value)}}
               ></input>
               <button type="submit" onClick={()=>{history.push("/search",{find_art: searchText})}} className="search-btn">
                 <FaSistrix />

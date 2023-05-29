@@ -32,9 +32,12 @@
 import { useHistory } from "react-router-dom";
 import '../assets/stylesheets/home.css';
 import featureData from "../components/FeatureData";
+import { FeatureContext } from "../App";
+import { useContext } from "react";
 
 function Features() {
   const history = useHistory();
+  const [filterType, setFilterType] = useContext(FeatureContext)
 
   return (
     featureData.map((data) => (
@@ -42,13 +45,12 @@ function Features() {
       
       <div 
       className="card feature-card" 
-      // style={{ height: "440px"}} 
       style={{ minHeight: "440px"}} 
       onClick={() => {
         history.push({
           pathname: "/search",
-          state: { setFilterType: data.title }
-        })
+        }), 
+        setFilterType(data.title)
       }}
       >
           <img
