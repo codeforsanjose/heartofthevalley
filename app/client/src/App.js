@@ -20,29 +20,31 @@ const App = () => {
   <FeatureContext.Provider value={[filterType, setFilterType]}>
     <SearchContext.Provider value={[searchText,setSearchText]}>
       
-  <div>
-    <Header />
-
-    <Switch>
-      <Route path="/about">
-        <About />
-      </Route>
-
-      <Route path="/contact">
-        <Contact />
-      </Route>
-      <Route path="/search">
-        <Search />
-      </Route>
-      <Route path="/artDetails">
-        <ArtDetails/>
-      </Route>
-      <Route path="/">
-        <Home />
-      </Route>
-    </Switch>
-
-    <Footer />
+  <div id="appRoot">
+    <div className="appContent">
+      <Header />
+  
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+  
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/search">
+          <Search />
+        </Route>
+        <Route path="/artDetails">
+          <ArtDetails/>
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+  
+      <Footer />
+    </div>
   </div>
    </SearchContext.Provider>
   </FeatureContext.Provider>

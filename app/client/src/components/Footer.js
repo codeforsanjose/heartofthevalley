@@ -12,11 +12,11 @@ function Footer() {
             Made with love by Code for San Jose
           </div>
           <div className="col-lg-4 footer-link">
-            <NavLink activeClassName="active" class="nav-link nav-item-1" to="/contact">
+            <NavLink activeClassName="active" class="nav-item-1" to="/contact">
               Contact Us &#8594;
             </NavLink>
             <br></br>
-            <NavLink activeClassName="active" class="nav-link nav-item-1" to="/about">
+            <NavLink activeClassName="active" class=" nav-item-1" to="/about">
               About &#8594;
             </NavLink>
           </div>
