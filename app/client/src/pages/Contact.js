@@ -5,6 +5,10 @@ import Row from 'react-bootstrap/Row';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import './ContactUs.css'
+import React, { useState } from 'react';
+import '../assets/stylesheets/submissionStatus.css'
+import SubmissionStatus from '../components/SubmissionStatus';
+
 
 const schema = yup.object().shape({
   fullName: yup.string().required(),
@@ -13,6 +17,30 @@ const schema = yup.object().shape({
 });
 
 function ContactUs() {
+
+  // handle the submission status
+  const [submissionStatus, setSubmissionStatus] = useState('');
+
+  // handle the submission form
+  // moved the OnSubmit values to here
+  const handleSubmit = (values, { resetForm }) => {
+    emailjs.init('dAqk2Q4K45-wCglGe');
+ 
+    emailjs.send('service_iyj7see', 'client_mail', {
+      user_name: values.fullName,
+      message: values.message,
+      user_email: values.email,
+    })
+      .then(() => {
+        setSubmissionStatus('success');
+        resetForm(); // Reset the form fields after successful submission
+      })
+      .catch(() => {
+        setSubmissionStatus('error');
+      });
+  };
+
+
   return (
     <div className="container pt-4 d-flex main" >
           <div className=' headerTitle'>
@@ -21,18 +49,22 @@ function ContactUs() {
     <Formik
         
       validationSchema={schema}
-      onSubmit={(values)=>{
+      onSubmit={handleSubmit}
+
+      // moved the below into the handleSubmit function above
+      // ----------------------------------------------------
+      // onSubmit={(values)=>{
 
         
-        emailjs.init('dAqk2Q4K45-wCglGe');
+      //   emailjs.init('dAqk2Q4K45-wCglGe');
        
-          emailjs.send('service_iyj7see', 'client_mail', 
-          {"user_name": values.fullName,
-          "message": values.message,
-          "user_email": values.email
-          }); 
+      //     emailjs.send('service_iyj7see', 'client_mail', 
+      //     {"user_name": values.fullName,
+      //     "message": values.message,
+      //     "user_email": values.email
+      //     }); 
       
-      }}
+      // }}
       initialValues={{
         fullName: '',
         email: '',
@@ -109,6 +141,7 @@ function ContactUs() {
           <div className="container-fluid mt-4 text-center">
           <Button className="fs-5  px-5 rounded-pill" style={{backgroundColor:'#0F4C64'}}type="submit">Submit</Button>
           </div>
+          <SubmissionStatus status={submissionStatus} /> {/* Use the SubmissionStatus component */}
         </Form>
       )}
     </Formik>

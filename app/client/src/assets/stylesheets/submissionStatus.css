@@ -1,0 +1,16 @@
+.submission-status {
+   text-align: center;
+   padding: 10px;
+   margin: 40px 0px;
+   font-size: 14px;
+}
+
+.success {
+    color: white;
+    background-color: green;
+    border-radius: 16px;
+}
+
+.error {
+    color: red;
+}
