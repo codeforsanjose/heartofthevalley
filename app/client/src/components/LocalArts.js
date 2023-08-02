@@ -35,8 +35,8 @@ export default function LocalArts() {
                 style={{ borderRadius: "25px" }}
               />
             
-            <div className="card-img-overlay ">
-              <h3 className="card-title local-title">{data.Title}</h3>
+            <div className="">
+              <h3 className="local-title">{data.Title}</h3>
             </div>
           </div>
         </div>
