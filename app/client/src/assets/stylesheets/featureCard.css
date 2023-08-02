@@ -47,7 +47,7 @@
 
 
   
-.card-img-overlay {
+/*.card-img-overlay {
     position:relative;
 }
   
@@ -59,11 +59,11 @@
     z-index: 1000;
     border-radius: 25px !important;
   
-    /* gradient with max compatibility */
-    background: rgb(0,0,0);
+    
+     background: rgb(0,0,0);
     background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
     background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
 }
-
+*/
