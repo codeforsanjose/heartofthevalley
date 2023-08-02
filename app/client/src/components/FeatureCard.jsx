@@ -22,9 +22,9 @@ function FeatureCard({imgAddr,title, description, address, artist, facility, art
           latLong: latLong
       })}}>
         <img className='imgSrc' src={imgAddr} alt="Image unavailable" />
-        <div className=' card-img-overlay'>
+        <div className=''>
    
-          <h5 className="card-title art-title">{title}</h5>
+          <h5 className="art-title">{title}</h5>
         
         </div>
       
