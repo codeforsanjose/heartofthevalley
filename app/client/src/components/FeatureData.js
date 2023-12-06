@@ -1,7 +1,7 @@
 import Mural from '../assets/img/Mural-home.jpg'
-import Interactive from "../assets/img/Interactive-home.jpg"
-import Architecture from "../assets/img/monument-of-the-last-barn.jpg"
-import Sculpture from "../assets/img/Hand-in-hand.jpg"
+import Interactive from '../assets/img/Interactive-home.jpg'
+import Architecture from '../assets/img/monument-of-the-last-barn.jpg'
+import Sculpture from '../assets/img/Hand-in-hand.jpg'
 
 const featureData = [
   {
