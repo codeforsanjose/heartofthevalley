@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import React, { useState } from 'react'
 import { FaArrowDown, FaArrowRight } from 'react-icons/fa'
 import PropTypes from 'prop-types'
 

@@ -1,11 +1,10 @@
-import { React, useState } from 'react'
+import React, { useState } from 'react'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import ReactMapGL, { Marker, NavigationControl } from 'react-map-gl'
 
 import '../assets/stylesheets/map.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import mapImg from '../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg'
-
 
 // TODO: from process.env ?
 const MAPBOX_TOKEN = 'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzlyeTl5eDhhIn0.01MGUHXlsnSkJbv1u-mbmw'

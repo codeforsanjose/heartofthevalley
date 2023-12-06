@@ -1,11 +1,12 @@
 SHELL := /bin/bash -e -o pipefail
 
-PWD := $(shell echo $$(pwd))
+# PWD := $(shell echo $$(pwd))
 NODE_VERSION := $(shell echo $$( cat ${PWD}/.nvmrc))
+
+.EXPORT_ALL_VARIABLES:
 
 build: ## Build all docker containers
 build:
-	NODE_VERSION=${NODE_VERSION} \
 	docker compose build
 
 npm-i: ## install npm packages
