@@ -14,7 +14,7 @@ function Footer() {
             <NavLink activeClassName="active" class="nav-link nav-item-1" to="/contact">
               Contact Us &#8594;
             </NavLink>
-            <br></br>
+            <br />
             <NavLink activeClassName="active" class="nav-link nav-item-1" to="/about">
               About &#8594;
             </NavLink>

@@ -1,16 +1,13 @@
-import * as React from 'react'
-import '../assets/stylesheets/map.css'
-import ReactMapGL, { Marker, Popup, FullscreenControl, NavigationControl } from 'react-map-gl'
-import { Component } from 'react'
-import { useState } from 'react'
-import 'mapbox-gl/dist/mapbox-gl.css'
-import mapImg from "../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg"
-
+import { React, useState } from 'react'
 import { FaMapMarkerAlt } from 'react-icons/fa'
+import ReactMapGL, { Marker, NavigationControl } from 'react-map-gl'
 
-const MAPBOX_TOKEN =
-  'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzlyeTl5eDhhIn0.01MGUHXlsnSkJbv1u-mbmw' // Set your mapbox token here
+import '../assets/stylesheets/map.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
+import mapImg from '../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg'
 
+// TODO: from process.env ?
+const MAPBOX_TOKEN = 'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzlyeTl5eDhhIn0.01MGUHXlsnSkJbv1u-mbmw'
 
 function Mapbox() {
   const [viewport, setViewport] = useState({
@@ -28,13 +25,15 @@ function Mapbox() {
   }, [])
 
   const mapData = apiData.slice(0, 11)
-  
-  
+
+  // creating popup state for the marker
+  const [showPopup, setShowpopup] = React.useState(false)
+
   // Creating markers for the map
   const markers = mapData
-    .filter((location) => {
-      return !!location.latLong
-    })
+    .filter((location) => (
+      !!location.latLong
+    ))
     .map((location) => (
       <Marker
         key={location.id}
@@ -43,6 +42,8 @@ function Mapbox() {
       >
         <button
           className="button"
+          type="button"
+          aria-label="show-location"
           onClick={(e) => {
             e.preventDefault()
             setShowpopup(location)
@@ -53,17 +54,14 @@ function Mapbox() {
       </Marker>
     ))
 
-  // creating popup state for the marker
-  const [showPopup, setShowpopup] = React.useState(false)
-
- // Description
+  // Description
   function description() {
     return { __html: showPopup?.artistName }
   }
 
   return (
     <ReactMapGL
-      {...viewport}
+      {...viewport} // eslint-disable-line react/jsx-props-no-spreading
       width="80vw"
       height="70vh"
       mapStyle="mapbox://styles/umapreethi/ckxz6deec9a3z14t88tqso5rb"
@@ -83,8 +81,11 @@ function Mapbox() {
           <div className="card-body">
             <h4 className="popup-title">{showPopup.title}</h4>
             <p>ARTIST</p>
-            <p className="card-text" dangerouslySetInnerHTML={description()}></p>
-            <a href="#" class="btn btn-primary popup-button">
+            <p className="card-text" dangerouslySetInnerHTML={description()} />
+            <a // eslint-disable-line jsx-a11y/anchor-is-valid
+              href="#"
+              className="btn btn-primary popup-button"
+            >
               Get Directions
             </a>
           </div>

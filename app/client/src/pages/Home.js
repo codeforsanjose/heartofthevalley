@@ -1,16 +1,16 @@
 import React from 'react'
-import Mapbox from '../components/Mapbox'
-import Features from '../components/Features'
+import { FaLongArrowAltRight, FaSistrix } from 'react-icons/fa'
+
 import '../assets/stylesheets/home.css'
-import featureData from '../components/FeatureData'
-import { FaLongArrowAltRight } from 'react-icons/fa'
-import { FaSistrix } from 'react-icons/fa'
+import Features from '../components/Features'
 import LocalArts from '../components/LocalArts'
+import Mapbox from '../components/Mapbox'
+import featureData from '../components/FeatureData'
 
 function Home() {
-  const feature = featureData.map((data) => {
-    return <Features key={data.id} img={data.img} title={data.title} description={data.content} />
-  })
+  const feature = featureData.map((data) => (
+    <Features img={data.img} title={data.title} description={data.content} />
+  ))
 
   return (
     <div className="home">
@@ -19,7 +19,9 @@ function Home() {
           <div className="row">
             <div className="col-lg-8">
               <h1 className="title">
-                Explore Art<br></br> in the Bay Area
+                Explore Art
+                <br />
+                in the Bay Area
               </h1>
             </div>
 
@@ -28,9 +30,10 @@ function Home() {
                 type="text"
                 placeholder="Search by art, artist, or zipcode"
                 className="home-input"
-              ></input>
+              />
               <button type="submit" className="search-btn">
-                Search <FaSistrix />
+                Search
+                <FaSistrix />
               </button>
             </div>
             <div className="local-fav">
@@ -54,11 +57,15 @@ function Home() {
           <div className="categories">
             <div className="feature-title">
               <h2>Featured Categories</h2>
-              <a href="#" className="feature-link">
-                Browse all <FaLongArrowAltRight />
+              <a // eslint-disable-line jsx-a11y/anchor-is-valid
+                href="#"
+                className="feature-link"
+              >
+                Browse all
+                <FaLongArrowAltRight />
               </a>
             </div>
-            <div className="row ">{feature}</div>
+            <div className="row">{feature}</div>
           </div>
         </div>
       </div>
