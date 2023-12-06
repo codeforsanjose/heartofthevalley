@@ -6,7 +6,6 @@ NODE_VERSION := $(shell echo $$( cat ${PWD}/.nvmrc))
 .EXPORT_ALL_VARIABLES:
 
 build: ## Build all docker containers
-build:
 	docker compose build
 
 npm-i: ## install npm packages
