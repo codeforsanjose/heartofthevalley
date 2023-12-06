@@ -31,7 +31,7 @@ Run `npm i` inside the server directory
 ## Run App with Docker
 - Run `make build`
 - Run `make run`
-- Access the app using URL `http://localhost:3002/`.
+- Access the app using URL `http://localhost:3000/`.
 
 ## Directory Structure
 - Root Folder of App: `heartofvalley/app`
