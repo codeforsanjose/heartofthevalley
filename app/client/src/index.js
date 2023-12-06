@@ -2,7 +2,6 @@ import React from 'react'
 import { createRoot } from 'react-dom/client';
 
 import "./assets/Fonts/Gotham-Font/Gotham-Black.otf"
-import "./assets/Fonts/Roboto/Roboto-Thin.ttf"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import 'jquery/dist/jquery.min.js'
