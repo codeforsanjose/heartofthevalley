@@ -27,7 +27,7 @@ function Header() {
         <div className="navbar-collapse collapse  " id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink exact className="nav-link nav-item-1 active" to="/">
+              <NavLink className="nav-link nav-item-1 active" to="/">
                 Home
               </NavLink>
             </li>

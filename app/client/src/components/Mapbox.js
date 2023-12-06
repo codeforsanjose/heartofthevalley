@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import React, { useState } from 'react'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import ReactMapGL, { Marker, NavigationControl } from 'react-map-gl'
 
@@ -19,7 +19,7 @@ function Mapbox() {
   // Calling MapData API to get data
   const [apiData, setApiData] = React.useState([])
   React.useEffect(() => {
-    fetch('http://localhost:3001/v1/heartofvalley/features')
+    fetch(`${process.env.REACT_APP_API_SERVER}/features`)
       .then((res) => res.json())
       .then((data) => setApiData(data))
   }, [])
@@ -67,6 +67,7 @@ function Mapbox() {
       mapStyle="mapbox://styles/umapreethi/ckxz6deec9a3z14t88tqso5rb"
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
       mapboxApiAccessToken={MAPBOX_TOKEN}
+      mapboxAccessToken={MAPBOX_TOKEN}
     >
       {markers}
       <div id="info-box">

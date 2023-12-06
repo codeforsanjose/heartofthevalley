@@ -9,7 +9,7 @@ import featureData from '../components/FeatureData'
 
 function Home() {
   const feature = featureData.map((data) => (
-    <Features img={data.img} title={data.title} description={data.content} />
+    <Features key={data.id} img={data.img} title={data.title} description={data.content} />
   ))
 
   return (
