@@ -1,27 +1,26 @@
 # Heart of the Valley
 Our Valley of Heart's Delight (Santa Clara Valley, or the South Bay Area) has so many incredible murals and public art. This open source project visualizes and maps data about local public art and murals. We hope that this will help community members discover the beautiful murals and public art that make our communities vibrant. We also hope the map can help community members discover local artists and creatives in the South Bay.
 
-This is an open source project.
+This is a Free and Open Source Project.
 
-It is maintained by [Code for San José](http://codeforsanjose.com) volunteers.
+It is maintained by [Code for San José](https://codeforsanjose.org) volunteers.
 
-Questions about forking or using this project? Read our [license](https://github.com/codeforsanjose/heartofthevalley/blob/master/license).
+Questions about forking or using this project? Read our [license](https://github.com/codeforsanjose/heartofthevalley/blob/develop/license).
 
 ## Technologies:
 - Mapbox GL JS
 - Open Street Maps
-- JavaScript
-- Bootstrap
-- HTML
-- CSS
+- React
+- Express
 
 ## How to contribute
 Want to contribute data about local public art/murals? Submit the data as an issue, or in our [contact form](http://www.codeforsanjose.com/heartofthevalley/about.html)
 
-Contribute your research, development or design skills. Check out our list of issues on GitHub, and join our discussion on [Slack](https://slackin-c4sj.herokuapp.com/): #public-art channel.
+Contribute your research, development or design skills. Check out our list of issues on GitHub, and join our discussion on [Discord](https://discord.gg/hjSVPBsEhf): #heart-of-the-valley channel.
 
 ### Development
-This project uses Node.js and works with the latest [Node.js LTS version 10.15.3](https://nodejs.org/en/). If you don't already have a preferred Node.JS IDE, it is recommended to use [Visual Studio Code](https://code.visualstudio.com/) with this project.
+This project uses Node.js [Node.js LTS version 18](https://nodejs.org/en/). If you don't already have a preferred Node.JS IDE, it is recommended to use [Visual Studio Code](https://code.visualstudio.com/) with this project.
+Node version is pinned in `.nvmrc`
 
 #### Project setup:
 Fork, then clone the project and run `npm install` to install the required packages listed in `package.json`.
@@ -57,12 +56,6 @@ The POI Manager exists to better assist with the creation and management of all 
 3. Once on the Edit/New POI page, include all details. You can view how the artwork will appear on the map area to the right. Click on the "Refresh Map & Popup" button to see any changes that have been made.
 ![New/Edit Page](/img/POIManagerEdit.png)
 4. Click "Submit POI" to have this sent to the **artwork-data/managedPOIs.json** file to be consumed by the [heartOfTheValley](https://www.codeforsanjose.com/heartofthevalley/) application.
-
-
-#### Running the project locally
-This project is completely static, so simply open `index.html` in Chrome or Firefox.
-
-You can also run the project in a local web server on the project directory. One way to do this is to use the `ws` command, which can be installed using `npm install -g local-web-server`, then start the webserver by running `ws --http2` in the project folder and going to `https://127.0.0.1:8000` in your web browser. [See the documentation for this program for more information](https://www.npmjs.com/package/local-web-server).
 
 #### Running unit tests
 Unit tests use the testing framework [Jest](https://jestjs.io/docs/en/getting-started). To run the unit tests, run `npm run test` from the command line.
