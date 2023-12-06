@@ -6,7 +6,8 @@ FROM docker.io/library/node:${NODE_VERSION} as node_modules_cache
 LABEL org.opensourcesanjose.app="heartofthevalley"
 WORKDIR /opt
 COPY ./app/client/package*.json ./
-RUN npm install
+RUN npm update --global npm \
+ && npm install
 
 FROM docker.io/library/node:${NODE_VERSION} as dev
 LABEL org.opensourcesanjose.app="heartofthevalley"
