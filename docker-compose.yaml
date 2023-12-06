@@ -16,11 +16,8 @@ services:
       interval: 10s
       timeout: 15s
     ports:
-      - "3002:3000"
+      - "3000:3000"
     environment:
-      SKIP_PREFLIGHT_CHECK: true
-      DISABLE_ESLINT_PLUGIN: true
-      DANGEROUSLY_DISABLE_HOST_CHECK: true
       REACT_APP_API_SERVER: "http://localhost:3001/v1/heartofvalley"
 
   backend:
