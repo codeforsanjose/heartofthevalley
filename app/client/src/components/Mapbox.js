@@ -67,6 +67,7 @@ function Mapbox() {
       mapStyle="mapbox://styles/umapreethi/ckxz6deec9a3z14t88tqso5rb"
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
       mapboxApiAccessToken={MAPBOX_TOKEN}
+      mapboxAccessToken={MAPBOX_TOKEN}
     >
       {markers}
       <div id="info-box">

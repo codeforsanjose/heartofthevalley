@@ -5,7 +5,6 @@ import AboutContent from '../components/AboutAccordion'
 import data from '../components/AboutData'
 
 function About() {
-  console.log(data)
   const aboutData = data.map((item) => (
     <AboutContent
       key={item.id}

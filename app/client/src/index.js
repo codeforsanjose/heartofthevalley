@@ -1,16 +1,13 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
+import { createRoot } from 'react-dom/client';
+
+import "./assets/Fonts/Gotham-Font/Gotham-Black.otf"
+import "./assets/Fonts/Roboto/Roboto-Thin.ttf"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import 'jquery/dist/jquery.min.js'
-import { BrowserRouter } from 'react-router-dom'
-import "./assets/Fonts/Gotham-Font/Gotham-Black.otf"
-import "./assets/Fonts/arial_th/ArialTh.ttf"
+import App from './App'
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root'),
-)
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);
