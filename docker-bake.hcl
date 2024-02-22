@@ -103,6 +103,9 @@ target "frontend" {
     dockerfile = "docker/frontend/Dockerfile"
     context = "./"
     target = "local"
+    args = {
+        NODE_VERSION = "${NODE_VERSION}"
+    }
     inherits = ["_common"]
     tags = dockerTag("${PROJECT_NAME}", "${DOCKER_TAG}", "frontend")
     cache-from = [dockerS3Cache("${CACHE_ID}-frontend")]
@@ -112,6 +115,9 @@ target "frontend" {
 target "backend" {
     dockerfile = "docker/backend/Dockerfile"
     context = "./"
+    args = {
+        NODE_VERSION = "${NODE_VERSION}"
+    }
     inherits = ["_common"]
     tags = dockerTag("${PROJECT_NAME}", "${DOCKER_TAG}", "backend")
     cache-from = [dockerS3Cache("${CACHE_ID}-backend")]
