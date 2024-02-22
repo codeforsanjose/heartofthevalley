@@ -1,0 +1,51 @@
+---
+name: deploy
+run-name: ${{ github.event.inputs.env }} deploy ${{ github.ref_name }}
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        type: environment
+        description: 'ArgoCD Deployed environment'
+      ref:
+        description: 'Branch, Tag, or Full SHA'
+        required: true
+        default: 'main'
+
+concurrency:
+  group: ${{ github.event.inputs.env }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: ${{ github.event.inputs.env }}
+      url: ${{ vars.PUBLIC_URL }}
+    env:
+      ENVIRONMENT: ${{ github.event.inputs.env }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref }}
+      - uses: clowdhaus/argo-cd-action/@main
+        with:
+          version: 2.10.0
+          command: version
+          options: --client
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r .github/scripts/requirements.txt
+      - name: deploy
+        run: |-
+          python .github/scripts/argocd_deploy.py \
+          --application=heartofthevalley-${{ env.ENVIRONMENT }} \
+          --docker_tag=$(git rev-parse HEAD)
+        env:
+          ARGO_CD_SERVER: ${{ secrets.ARGO_CD_SERVER }}
+          ARGO_CD_USERNAME: ${{ secrets.ARGO_CD_USERNAME }}
+          ARGO_CD_PASSWORD: ${{ secrets.ARGO_CD_PASSWORD }}
