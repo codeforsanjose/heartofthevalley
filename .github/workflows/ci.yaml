@@ -21,7 +21,7 @@ jobs:
       contents: read
     strategy:
       matrix:
-        image: [build, backend]
+        image: [frontend, backend]
     steps:
       - uses: actions/checkout@v4
         with:
