@@ -102,7 +102,7 @@ variable "REACT_APP_GRAPHQL_URL" { default = "http://localhost" }
 target "frontend" {
     dockerfile = "docker/frontend/Dockerfile"
     context = "./"
-    target = "local"
+    target = "dev"
     args = {
         NODE_VERSION = "${NODE_VERSION}"
     }
