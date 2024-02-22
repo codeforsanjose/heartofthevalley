@@ -18,7 +18,7 @@ function hostArch {
  * Local development: "latest"
  * Github Actions: "$(git rev-parse --short HEAD)" -> "abc1234"
  */
-variable "NODE_VERSION" {}
+variable "NODE_VERSION" { default = "18.19.0" }
 variable "AWS_ACCOUNT_ID" {}
 variable "PRIVATE_REGISTRY" { default = "${AWS_ACCOUNT_ID}.dkr.ecr.us-west-2.amazonaws.com" }
 variable "REFERENCE" { default = "latest" }
