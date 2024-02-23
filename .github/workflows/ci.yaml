@@ -39,10 +39,5 @@ jobs:
       - run: make build-${{ matrix.image }}
         env:
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
-          REACT_APP_GRAPHQL_URL: ${{ vars.REACT_APP_GRAPHQL_URL }}
-          PUBLIC_URL: ${{ vars.PUBLIC_URL }}
-          REACT_APP_JWT_ISSUER: ${{ secrets.REACT_APP_JWT_ISSUER }}
-          REACT_APP_RECAPTCHAS_SITE_KEY: ${{ secrets.REACT_APP_RECAPTCHAS_SITE_KEY }}
-          REACT_APP_MICROSOFT_ID: ${{ secrets.REACT_APP_MICROSOFT_ID }}
-          REACT_APP_GOOGLE_ID: ${{ secrets.REACT_APP_GOOGLE_ID }}
-          MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
+          LOG_LEVEL: ${{ vars.SERVER_LOG_LEVEL }}
+          REACT_APP_API_SERVER: ${{ vars.REACT_APP_API_SERVER }}
