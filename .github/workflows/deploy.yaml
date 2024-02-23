@@ -17,6 +17,7 @@ concurrency:
 
 env:
   REFERENCE: ${{ github.event.pull_request.head.sha || github.event.push.head_commit.id }}
+  REACT_APP_API_SERVER: ${{ env.REACT_APP_API_SERVER != '' && env.REACT_APP_API_SERVER || vars.REACT_APP_API_SERVER }}
 
 jobs:
   build:
@@ -26,7 +27,7 @@ jobs:
       contents: read
     strategy:
       matrix:
-        image: [build, backend]
+        image: [backend]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,10 +45,10 @@ jobs:
       - run: make build-${{ matrix.image }}
         env:
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
-          LOG_LEVEL: ${{ vars.SERVER_LOG_LEVEL }}
-          REACT_APP_API_SERVER: ${{ vars.REACT_APP_API_SERVER }}
-          PUBLIC_URL: ${{ vars.PUBLIC_URL }}
-          API_BASE_URL: ${{ vars.API_BASE_URL }}
+          LOG_LEVEL: ${{ env.SERVER_LOG_LEVEL != '' && env.SERVER_LOG_LEVEL || vars.SERVER_LOG_LEVEL }}
+          REACT_APP_API_SERVER: ${{ env.REACT_APP_API_SERVER }}
+          PUBLIC_URL: ${{ env.PUBLIC_URL != '' && env.PUBLIC_URL || vars.PUBLIC_URL }}
+          API_BASE_URL: ${{ env.API_BASE_URL != '' && env.API_BASE_URL || vars.API_BASE_URL }}
           
 
   deploy:
@@ -58,7 +59,7 @@ jobs:
       contents: read
     environment:
       name: ${{ github.event.inputs.env }}
-      url: ${{ vars.PUBLIC_URL }}
+      url: ${{ env.PUBLIC_URL != '' && env.PUBLIC_URL || vars.PUBLIC_URL }}
     env:
       ENVIRONMENT: ${{ github.event.inputs.env }}
     steps:
@@ -84,4 +85,4 @@ jobs:
           ARGO_CD_SERVER: ${{ secrets.ARGO_CD_SERVER }}
           ARGO_CD_USERNAME: ${{ secrets.ARGO_CD_USERNAME }}
           ARGO_CD_PASSWORD: ${{ secrets.ARGO_CD_PASSWORD }}
-          API_BASE_URL: ${{ vars.API_BASE_URL }}
+          API_BASE_URL: ${{ env.API_BASE_URL != '' && env.API_BASE_URL || vars.API_BASE_URL }}
