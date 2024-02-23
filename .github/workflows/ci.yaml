@@ -2,9 +2,10 @@
 name: ci
 run-name: ci ${{ github.event_name }} ${{ github.ref_name }}
 on:
-  pull_request:
-  push:
-    branches: ['main']
+  workflow_dispatch:
+  # pull_request:
+  # push:
+  #   branches: ['main']
 
 concurrency:
   group: ci-${{ github.head_ref || github.run_id }}
