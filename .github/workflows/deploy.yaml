@@ -10,7 +10,7 @@ on:
       ref:
         description: 'Branch, Tag, or Full SHA'
         required: true
-        default: 'main'
+        default: 'master'
 
 concurrency:
   group: ${{ github.event.inputs.env }}
