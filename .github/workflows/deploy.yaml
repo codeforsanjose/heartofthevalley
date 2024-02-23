@@ -2,6 +2,8 @@
 name: deploy
 run-name: ${{ github.event.inputs.env }} deploy ${{ github.ref_name }}
 on:
+  push:
+    branches: ['gh-actions']
   workflow_dispatch:
     inputs:
       env:
