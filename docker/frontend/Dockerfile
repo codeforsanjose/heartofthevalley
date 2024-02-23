@@ -33,7 +33,7 @@ ARG PUBLIC_URL
 ARG REACT_APP_API_SERVER
 RUN npm run build
 
-FROM nginx as dev
+FROM nginx as nginx-build
 LABEL org.opensourcesanjose.app="heartofthevalley"
 COPY docker/frontend/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /usr/src/app/build /usr/share/nginx/html
