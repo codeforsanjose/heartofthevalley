@@ -5,7 +5,7 @@ import ReactMapGL, { Marker, NavigationControl } from 'react-map-gl'
 import '../assets/stylesheets/map.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import mapImg from '../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg'
-
+import { API_URL } from '../utils/API_URL';
 // TODO: from process.env ?
 const MAPBOX_TOKEN = 'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzlyeTl5eDhhIn0.01MGUHXlsnSkJbv1u-mbmw'
 
@@ -19,7 +19,7 @@ function Mapbox() {
   // Calling MapData API to get data
   const [apiData, setApiData] = React.useState([])
   React.useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_SERVER}/features`)
+    fetch(`${API_URL}/features`)
       .then((res) => res.json())
       .then((data) => setApiData(data))
   }, [])
