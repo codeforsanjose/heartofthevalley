@@ -75,6 +75,7 @@ target "_common" {
  * different dependent targets.
  */
 // This builds the frontend bundle and serves using nginx
+variable "API_BASE_URL" { default = "/v1/heartofvalley" }
 variable "PUBLIC_URL" { default = "http://localhost" }
 variable "REACT_APP_API_SERVER" { default = "http://localhost" }
 
@@ -86,6 +87,7 @@ target "build" {
         NODE_VERSION = "${NODE_VERSION}"
         PUBLIC_URL = "${PUBLIC_URL}"
         REACT_APP_API_SERVER = "${REACT_APP_API_SERVER}"
+        API_BASE_URL = "${API_BASE_URL}"
     }
     inherits = ["_common"]
     tags = dockerTag("${PROJECT_NAME}", "${DOCKER_TAG}", "frontend")
@@ -99,6 +101,8 @@ target "frontend" {
     target = "dev"
     args = {
         NODE_VERSION = "${NODE_VERSION}"
+        REACT_APP_API_SERVER = "${REACT_APP_API_SERVER}"
+        API_BASE_URL = "${API_BASE_URL}"
     }
     inherits = ["_common"]
     tags = dockerTag("${PROJECT_NAME}", "${DOCKER_TAG}", "frontend")
@@ -111,6 +115,7 @@ target "backend" {
     context = "./"
     args = {
         NODE_VERSION = "${NODE_VERSION}"
+        API_BASE_URL = "${API_BASE_URL}"
     }
     inherits = ["_common"]
     tags = dockerTag("${PROJECT_NAME}", "${DOCKER_TAG}", "backend")
@@ -124,5 +129,5 @@ target "backend" {
  * "docker buildx bake" == "docker buildx bake default"
  */
 group "default" {
-    targets = ["frontend", "backend"]
+    targets = ["build", "backend"]
 }

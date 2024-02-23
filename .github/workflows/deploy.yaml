@@ -47,6 +47,7 @@ jobs:
           LOG_LEVEL: ${{ vars.SERVER_LOG_LEVEL }}
           REACT_APP_API_SERVER: ${{ vars.REACT_APP_API_SERVER }}
           PUBLIC_URL: ${{ vars.PUBLIC_URL }}
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
           
 
   deploy:
@@ -83,3 +84,4 @@ jobs:
           ARGO_CD_SERVER: ${{ secrets.ARGO_CD_SERVER }}
           ARGO_CD_USERNAME: ${{ secrets.ARGO_CD_USERNAME }}
           ARGO_CD_PASSWORD: ${{ secrets.ARGO_CD_PASSWORD }}
+          API_BASE_URL: ${{ vars.API_BASE_URL }}

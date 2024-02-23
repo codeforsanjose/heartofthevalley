@@ -31,6 +31,7 @@ FROM local as build
 LABEL org.opensourcesanjose.app="heartofthevalley"
 ARG PUBLIC_URL
 ARG REACT_APP_API_SERVER
+ARG API_BASE_URL
 RUN npm run build
 
 FROM nginx as nginx-build
