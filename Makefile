@@ -104,21 +104,3 @@ help: ## Show this help.
 	sed -E 's/(.*)(EX:)(.*)/\1$(YELLOW)\2\3$(END_COLOR)/' | \
 	column -s '~' -t
 
-
-# build: ## Build all docker containers
-# 	docker compose build
-
-# npm-i: ## install npm packages
-# 	docker run -v "${PWD}/app/client:/app" node:16-alpine npm install
-# 	docker run -v "${PWD}/app/server:/app" node:16-alpine npm install
-
-# run: ## Start all containers.
-# 	docker compose up
-
-# shell-web: ## Shell into the reactapp container
-# 	docker compose run --rm hotv-client sh
-
-# shell-api: ## Shell into the express server container
-# 	docker compose run --rm hotv-client sh
-
-
