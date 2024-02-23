@@ -87,7 +87,7 @@ target "build" {
         NODE_VERSION = "${NODE_VERSION}"
         PUBLIC_URL = "${PUBLIC_URL}"
         REACT_APP_API_SERVER = "${REACT_APP_API_SERVER}"
-        API_BASE_URL = "${API_BASE_URL}"
+        REACT_APP_API_BASE_URL = "${API_BASE_URL}"
     }
     inherits = ["_common"]
     tags = dockerTag("${PROJECT_NAME}", "${DOCKER_TAG}", "frontend")
@@ -102,7 +102,7 @@ target "frontend" {
     args = {
         NODE_VERSION = "${NODE_VERSION}"
         REACT_APP_API_SERVER = "${REACT_APP_API_SERVER}"
-        API_BASE_URL = "${API_BASE_URL}"
+        REACT_APP_API_BASE_URL = "${API_BASE_URL}"
     }
     inherits = ["_common"]
     tags = dockerTag("${PROJECT_NAME}", "${DOCKER_TAG}", "frontend")

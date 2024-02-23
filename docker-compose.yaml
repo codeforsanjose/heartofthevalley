@@ -19,7 +19,7 @@ services:
       - "3000:3000"
     environment:
       REACT_APP_API_SERVER: "http://localhost:3001"
-      API_BASE_URL: '/v1/heartofvalley'
+      REACT_APP_API_BASE_URL: '/v1/heartofvalley'
 
   backend:
     build:
