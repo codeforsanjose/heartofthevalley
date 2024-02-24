@@ -10,13 +10,10 @@ on:
       ref:
         description: 'Branch, Tag, or Full SHA'
         required: true
-        default: 'master'
+        default: 'develop'
 
 concurrency:
   group: ${{ github.event.inputs.env }}
-
-env:
-  REFERENCE: ${{ github.event.pull_request.head.sha || github.event.push.head_commit.id }}
 
 jobs:
   build:
@@ -33,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ env.REFERENCE }}
+          ref: ${{ github.event.inputs.ref }}
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github-actions
