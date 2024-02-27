@@ -6,7 +6,8 @@ import SearchGrid from './SearchGrid'
 import SearchList from './SearchList'
 import axios from "axios";
 import { useState, useEffect,useContext } from 'react'
-import { SearchContext, FeatureContext } from '../App'
+import { SearchContext } from '../contexts/SearchContext'
+import { FeatureContext } from '../contexts/FeatureContext'
 
 import '../assets/stylesheets/search.css'
 

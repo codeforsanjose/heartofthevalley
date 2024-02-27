@@ -1,8 +1,5 @@
 import React from 'react'
-import ArtData from '../assets/_legacy-art.json'
 import FeatureList from '../components/FeatureList'
-import { useState, useEffect } from 'react'
-import axios from "axios";
 
 function SearchList({artData}) {
 

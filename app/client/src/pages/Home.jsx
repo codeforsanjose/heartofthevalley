@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { useNavigate } from "react-router-dom";
 import Mapbox from '../components/Mapbox'
-import { FeatureContext, SearchContext } from '../App'
+import { FeatureContext } from '../contexts/FeatureContext'
+import { SearchContext } from '../contexts/SearchContext'
 import { FaLongArrowAltRight, FaSistrix } from 'react-icons/fa'
 
 import '../assets/stylesheets/home.css'

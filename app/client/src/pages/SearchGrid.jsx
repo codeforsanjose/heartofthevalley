@@ -1,7 +1,6 @@
 import React from 'react'
 import FeatureCard from '../components/FeatureCard'
-import { useState, useEffect } from 'react'
-import axios from "axios";
+
 
 
 function SearchGrid({artData}) {
