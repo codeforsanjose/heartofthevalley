@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ReactMapGL, { Marker, Popup, FullscreenControl, NavigationControl } from 'react-map-gl'
 import axios from "axios";
-import { useHistory } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
  
 import { FaMapMarkerAlt } from 'react-icons/fa'
 
@@ -14,7 +14,7 @@ const MAPBOX_TOKEN = 'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzl
 
 function Mapbox() {
 
-  const history = useHistory()
+  const history = useNavigate()
 
   const [viewport, setViewport] = useState({
     latitude: 37.33829,

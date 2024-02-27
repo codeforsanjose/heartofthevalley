@@ -1,6 +1,5 @@
-import React from 'react'
-import { useHistory } from "react-router-dom";
-import { useState, useContext } from 'react'
+import React, { useState, useContext } from 'react'
+import { useNavigate } from "react-router-dom";
 import Mapbox from '../components/Mapbox'
 import { FeatureContext, SearchContext } from '../App'
 import { FaLongArrowAltRight, FaSistrix } from 'react-icons/fa'
@@ -9,7 +8,7 @@ import '../assets/stylesheets/home.css'
 import Features from '../components/Features'
 import LocalArts from '../components/LocalArts'
 //<<<<<<< HEAD
-// import { useHistory } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import { useState, useContext } from 'react'
 // import { FeatureContext, SearchContext } from '../App'
 
@@ -29,7 +28,7 @@ function Home() {
 //   ))
 // >>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8
 
-  const history = useHistory()
+  const history = useNavigate()
   
   return (
     <div className="home">
@@ -84,23 +83,11 @@ function Home() {
           <div className="categories">
             <div className="feature-title">
               <h2>Featured Categories</h2>
-{/* <<<<<<< HEAD */}
               <a href="/search" className="feature-link">
                 Browse all <FaLongArrowAltRight />
               </a>
             </div>
             <div className="row "><Features /></div>
-{/* =======
-              <a // eslint-disable-line jsx-a11y/anchor-is-valid
-                href="#"
-                className="feature-link"
-              >
-                Browse all
-                <FaLongArrowAltRight />
-              </a>
-            </div>
-            <div className="row">{feature}</div>
->>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8 */}
           </div>
         </div>
       </div>

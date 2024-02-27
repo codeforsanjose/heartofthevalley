@@ -1,11 +1,11 @@
 import React from 'react'
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import localFavoritesData from "./LocalFavoritesData";
 import '../assets/stylesheets/localArts.css'
 import PalmTrees from '../assets/img/Palm-Trees-Downtown-SanJose.jpg'
 
 export default function LocalArts() {
-  const history = useHistory();
+  const history = useNavigate();
 
   return (
 //<<<<<<< HEAD

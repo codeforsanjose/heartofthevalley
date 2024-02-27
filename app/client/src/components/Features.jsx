@@ -1,12 +1,12 @@
 
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import '../assets/stylesheets/home.css';
 import featureData from "./FeatureData";
 import { FeatureContext } from "../App";
 import { useContext } from "react";
 
 function Features() {
-  const history = useHistory();
+  const history = useNavigate();
   const [filterType, setFilterType] = useContext(FeatureContext)
 
   return (

@@ -1,10 +1,10 @@
 import React from 'react'
 import '../assets/stylesheets/featureCard.css'
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function FeatureCard({imgAddr,title, description, address, artist, facility, artType,latLong}) {
    
-  const history = useHistory()
+  const history = useNavigate()
 
   return (
     

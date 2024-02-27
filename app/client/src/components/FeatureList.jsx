@@ -1,10 +1,10 @@
 import React from 'react'
 import '../assets/stylesheets/featureList.css'
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function FeatureList({imgAddr,title, description, address, artist, facility, artType}) {
 
-  const history = useHistory()
+  const history = useNavigate()
   return (
     <div style={{ borderRadius:"30px"}} className='conatainer d-flex flex-row m-3 bg-light w-90 featureListContainer'
     onClick={()=>{history.push("/artDetails",{
