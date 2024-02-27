@@ -1,6 +1,5 @@
 import React from 'react'
 import '../assets/stylesheets/featureCard.css'
-import ArtDetails from './ArtDetails'
 import { useHistory } from "react-router-dom";
 
 function FeatureCard({imgAddr,title, description, address, artist, facility, artType,latLong}) {

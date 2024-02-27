@@ -1,15 +1,9 @@
-import React, { useState } from 'react'
-import '../assets/stylesheets/map.css'
+import React, { useState, useEffect } from 'react'
 import ReactMapGL, { Marker, Popup, FullscreenControl, NavigationControl } from 'react-map-gl'
-import { Component } from 'react'
-import { useState, useEffect } from 'react'
-import 'mapbox-gl/dist/mapbox-gl.css'
 import axios from "axios";
-import mapImg from "../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg"
 import { useHistory } from "react-router-dom"
  
 import { FaMapMarkerAlt } from 'react-icons/fa'
-import ReactMapGL, { Marker, NavigationControl } from 'react-map-gl'
 
 import '../assets/stylesheets/map.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
