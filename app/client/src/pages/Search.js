@@ -1,15 +1,14 @@
-import '../assets/stylesheets/search.css'
+import React from 'react'
+import { BsGrid3X3, BsListUl, BsMapFill } from 'react-icons/bs'
+
 import Mapbox from '../components/Mapbox'
-import { BsGrid3X3 } from 'react-icons/bs'
-import { BsListUl } from 'react-icons/bs'
-import { BsMapFill } from 'react-icons/bs'
 import SearchGrid from './SearchGrid'
 import SearchList from './SearchList'
 import axios from "axios";
 import { useState, useEffect,useContext } from 'react'
 import { SearchContext, FeatureContext } from '../App'
 
-
+import '../assets/stylesheets/search.css'
 
 function Search() {
 

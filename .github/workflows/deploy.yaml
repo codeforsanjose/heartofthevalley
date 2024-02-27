@@ -1,0 +1,89 @@
+---
+name: deploy
+run-name: ${{ github.event.inputs.env }} deploy ${{ github.ref_name }}
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        type: environment
+        description: 'ArgoCD Deployed environment'
+      ref:
+        description: 'Branch, Tag, or Full SHA'
+        required: true
+        default: 'develop'
+
+concurrency:
+  group: ${{ github.event.inputs.env }}
+
+jobs:
+  build:
+    environment:
+      name: ${{ github.event.inputs.env }}
+      url: ${{ vars.PUBLIC_URL }}
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    strategy:
+      matrix:
+        image: [build, backend]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref }}
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github-actions
+          role-session-name: gha
+          aws-region: us-west-2
+      - uses: docker/setup-buildx-action@v3
+      - id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+        with:
+          mask-password: 'true'
+      - run: make build-${{ matrix.image }}
+        env:
+          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+          LOG_LEVEL: ${{ vars.SERVER_LOG_LEVEL }}
+          REACT_APP_API_SERVER: ${{ vars.REACT_APP_API_SERVER }}
+          PUBLIC_URL: ${{ vars.PUBLIC_URL }}
+          REACT_APP_API_BASE_URL: ${{ vars.API_BASE_URL }}
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
+          
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    environment:
+      name: ${{ github.event.inputs.env }}
+      url: ${{ vars.PUBLIC_URL }}
+    env:
+      ENVIRONMENT: ${{ github.event.inputs.env }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref }}
+      - uses: clowdhaus/argo-cd-action/@main
+        with:
+          version: 2.10.0
+          command: version
+          options: --client
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r .github/scripts/requirements.txt
+      - name: deploy
+        run: |-
+          python .github/scripts/argocd_deploy.py \
+          --application=heartofthevalley-${{ env.ENVIRONMENT }} \
+          --docker_tag=$(git rev-parse HEAD)
+        env:
+          ARGO_CD_SERVER: ${{ secrets.ARGO_CD_SERVER }}
+          ARGO_CD_USERNAME: ${{ secrets.ARGO_CD_USERNAME }}
+          ARGO_CD_PASSWORD: ${{ secrets.ARGO_CD_PASSWORD }}
+          REACT_APP_API_BASE_URL: ${{ vars.API_BASE_URL }}
+          API_BASE_URL: ${{ vars.API_BASE_URL }}

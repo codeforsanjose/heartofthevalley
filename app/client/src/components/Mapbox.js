@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import '../assets/stylesheets/map.css'
 import ReactMapGL, { Marker, Popup, FullscreenControl, NavigationControl } from 'react-map-gl'
 import { Component } from 'react'
@@ -8,12 +8,15 @@ import axios from "axios";
 import mapImg from "../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg"
 import { useHistory } from "react-router-dom"
  
-
 import { FaMapMarkerAlt } from 'react-icons/fa'
+import ReactMapGL, { Marker, NavigationControl } from 'react-map-gl'
 
-const MAPBOX_TOKEN =
-  'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzlyeTl5eDhhIn0.01MGUHXlsnSkJbv1u-mbmw' // Set your mapbox token here
-
+import '../assets/stylesheets/map.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
+import mapImg from '../assets/img/UntitledMural_LocatedAtVeggielutionFarm_SanJose_photoby_YanYinChoy.jpg'
+import { API_URL } from '../utils/API_URL';
+// TODO: from process.env ?
+const MAPBOX_TOKEN = 'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzlyeTl5eDhhIn0.01MGUHXlsnSkJbv1u-mbmw'
 
 function Mapbox() {
 
@@ -27,6 +30,7 @@ function Mapbox() {
   })
 
   // Calling MapData API to get data
+// <<<<<<< HEAD
 
   const ArtData = (url) => {
     const [artData, setArtData] = useState(null);
@@ -59,6 +63,39 @@ function Mapbox() {
           key={data.id}
           latitude={parseFloat(data.latLong[1])}
           longitude={parseFloat(data.latLong[0])}
+// =======
+//   const [apiData, setApiData] = React.useState([])
+//   React.useEffect(() => {
+//     fetch(`${API_URL}/features`)
+//       .then((res) => res.json())
+//       .then((data) => setApiData(data))
+//   }, [])
+
+//   const mapData = apiData.slice(0, 11)
+
+//   // creating popup state for the marker
+//   const [showPopup, setShowpopup] = React.useState(false)
+
+//   // Creating markers for the map
+//   const markers = mapData
+//     .filter((location) => (
+//       !!location.latLong
+//     ))
+//     .map((location) => (
+//       <Marker
+//         key={location.id}
+//         latitude={parseFloat(location.latLong[1])}
+//         longitude={parseFloat(location.latLong[0])}
+//       >
+//         <button
+//           className="button"
+//           type="button"
+//           aria-label="show-location"
+//           onClick={(e) => {
+//             e.preventDefault()
+//             setShowpopup(location)
+//           }}
+// >>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8
         >
           
           <button
@@ -74,12 +111,7 @@ function Mapbox() {
         </Marker>
       )
     })
-
-
-
-
-    
-
+//<<<<<<< HEAD
   return (
     <ReactMapGL
       {...viewport}
@@ -89,9 +121,7 @@ function Mapbox() {
       mapStyle="mapbox://styles/mapbox/streets-v11"
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
       mapboxApiAccessToken={MAPBOX_TOKEN}
-      
     >
-
          {markers}
          {showPopup && (
         <Popup
@@ -102,7 +132,6 @@ function Mapbox() {
           closeOnMove = {false}
           anchor = "top"
           onClose={() => setShowpopup(null)}
-
         >
           <div className = "mt-3" id="info-box">
           <div className="card popup-card" style={{ width: '20rem' }}>
@@ -112,7 +141,7 @@ function Mapbox() {
                 className="card-img-top popup-img"
                 alt={showPopup.Title}
               />
-              
+
               <h4 
                 className="popup-title" 
                 onClick={() => {
@@ -148,6 +177,43 @@ function Mapbox() {
               </button>
             </div >
   
+{/* =======
+  // Description
+  function description() {
+    return { __html: showPopup?.artistName }
+  }
+
+  return (
+    <ReactMapGL
+      {...viewport} // eslint-disable-line react/jsx-props-no-spreading
+      width="80vw"
+      height="70vh"
+      mapStyle="mapbox://styles/umapreethi/ckxz6deec9a3z14t88tqso5rb"
+      onViewportChange={(nextViewport) => setViewport(nextViewport)}
+      mapboxApiAccessToken={MAPBOX_TOKEN}
+      mapboxAccessToken={MAPBOX_TOKEN}
+    >
+      {markers}
+      <div id="info-box">
+        <div className="card popup-card" style={{ width: '16rem' }}>
+          <img
+            src={mapImg}
+            className="card-img-top popup-img"
+            alt={showPopup.title}
+            width="200"
+            height="200"
+          />
+          <div className="card-body">
+            <h4 className="popup-title">{showPopup.title}</h4>
+            <p>ARTIST</p>
+            <p className="card-text" dangerouslySetInnerHTML={description()} />
+            <a // eslint-disable-line jsx-a11y/anchor-is-valid
+              href="#"
+              className="btn btn-primary popup-button"
+            >
+              Get Directions
+            </a>
+>>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8 */}
           </div>
         </div>
         </Popup>

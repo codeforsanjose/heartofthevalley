@@ -1,5 +1,7 @@
 const express = require('express')
 const cors = require('cors')
+
+const config = require('./config');
 const app = express()
 const router = express.Router()
 const featureRoutes = require('./routes/feature_routes')
@@ -17,7 +19,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
 
 // Connect feature routes
-app.use('/v1/heartofvalley', featureRoutes)
+app.use(config.baseUrl, featureRoutes)
 
 // Load Data into Cache
 const loadData = require('./data')

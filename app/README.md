@@ -1,7 +1,8 @@
 # HeartOfValley-Full-stack-React-app-with-Node.js-MySQL-and-Nginx-for-reverse-proxy
 
 ## Prerequisites
-- Have [Node.js](Node.js) version 10 and above and [Docker](https://www.docker.com/products/docker-desktop) (optional) installed on your system.
+- Have [Node.js](Node.js) with version located in `.nvmrc`
+- [Docker](https://www.docker.com/products/docker-desktop) (optional) installed on your system.
 - A good understanding of using ReactJS.
 - Understand how to create API services using the Node.js framework.
 - (OPTIONAL) Prior knowledge on how to use Docker and Docker-compose to run and manage Docker containers.
@@ -28,8 +29,9 @@ Run `npm i` inside the server directory
 - Access the app using route `http://localhost:3000/`.
 
 ## Run App with Docker
-- Run `docker-compose up --build` inside the main project directory `/app`
-- Access the app using route `http://localhost:3000/`.
+- Run `make build`
+- Run `make run`
+- Access the app using URL `http://localhost:3000/`.
 
 ## Directory Structure
 - Root Folder of App: `heartofvalley/app`

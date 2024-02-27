@@ -151,3 +151,14 @@ function ContactUs() {
 }
 
 export default ContactUs;
+// =======
+// function Contact() {
+//   return (
+//     <div>
+//       Contact Page
+//     </div>
+//   )
+// }
+
+// export default Contact
+// >>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8

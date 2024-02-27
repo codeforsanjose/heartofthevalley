@@ -15,7 +15,7 @@ function Header() {
           </p>{' '}
         </span>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -23,28 +23,29 @@ function Header() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
-        <div class="navbar-collapse collapse  " id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <NavLink exact className="nav-link nav-item-1 active" to="/">
+        <div className="navbar-collapse collapse  " id="navbarSupportedContent">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <NavLink className="nav-link nav-item-1 active" to="/">
                 Home
               </NavLink>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <NavLink className="nav-link nav-item-1" to="/about">
                 About
               </NavLink>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <NavLink className="nav-link nav-item-1" to="/contact">
                 Contact Us
               </NavLink>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <NavLink className="nav-link nav-item-1" to="/search">
-                Search <FaSistrix />
+                Search
+                <FaSistrix />
               </NavLink>
             </li>
           </ul>

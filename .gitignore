@@ -1,11 +1,7 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-app/server/node_modules/*
-app/client/node_modules/*
-app/client/package-lock.json
-app/server/package-lock.json
+node_modules
 package-lock.json
 
 # testing
@@ -31,3 +27,4 @@ app/server/database/dbconfig.js
 
 .idea
 app/client/build/*
+.vscode

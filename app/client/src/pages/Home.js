@@ -1,14 +1,17 @@
 import React from 'react'
-import Mapbox from '../components/Mapbox'
-import Features from '../components/Features'
-import '../assets/stylesheets/home.css'
-import featureData from '../components/FeatureData'
-import { FaLongArrowAltRight } from 'react-icons/fa'
-import { FaSistrix } from 'react-icons/fa'
-import LocalArts from '../components/LocalArts'
 import { useHistory } from "react-router-dom";
 import { useState, useContext } from 'react'
+import Mapbox from '../components/Mapbox'
 import { FeatureContext, SearchContext } from '../App'
+import { FaLongArrowAltRight, FaSistrix } from 'react-icons/fa'
+
+import '../assets/stylesheets/home.css'
+import Features from '../components/Features'
+import LocalArts from '../components/LocalArts'
+//<<<<<<< HEAD
+// import { useHistory } from "react-router-dom";
+// import { useState, useContext } from 'react'
+// import { FeatureContext, SearchContext } from '../App'
 
 function Home() {
   const feature = featureData.map((data) => {
@@ -16,6 +19,15 @@ function Home() {
   })
   const [filterType, setFilterType] = useContext(FeatureContext)
   const [searchText,setSearchText] = useContext(SearchContext)
+// =======
+
+// import featureData from '../components/FeatureData'
+
+// function Home() {
+//   const feature = featureData.map((data) => (
+//     <Features key={data.id} img={data.img} title={data.title} description={data.content} />
+//   ))
+// >>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8
 
   const history = useHistory()
   
@@ -26,7 +38,9 @@ function Home() {
           <div className="row">
             <div className="col-lg-8">
               <h1 className="title">
-                Explore Art<br></br> in the Bay Area
+                Explore Art
+                <br />
+                in the Bay Area
               </h1>
             </div>
 
@@ -35,11 +49,19 @@ function Home() {
                 type="text"
                 placeholder="Search by art or zipcode"
                 className="home-input"
+//<<<<<<< HEAD
                 onChange={(e)=>{setSearchText(e.target.value)}}
               ></input>
               <button type="submit" onClick={()=>{history.push("/search",{find_art: searchText})}} className="search-btn">
                 <FaSistrix />
               </button> 
+{/* =======
+              />
+              <button type="submit" className="search-btn">
+                Search
+                <FaSistrix />
+              </button>
+>>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8 */}
             </div>
             <div className="local-fav">
               <h3>Local favorites near San Jose</h3>
@@ -62,11 +84,23 @@ function Home() {
           <div className="categories">
             <div className="feature-title">
               <h2>Featured Categories</h2>
+{/* <<<<<<< HEAD */}
               <a href="/search" className="feature-link">
                 Browse all <FaLongArrowAltRight />
               </a>
             </div>
             <div className="row "><Features /></div>
+{/* =======
+              <a // eslint-disable-line jsx-a11y/anchor-is-valid
+                href="#"
+                className="feature-link"
+              >
+                Browse all
+                <FaLongArrowAltRight />
+              </a>
+            </div>
+            <div className="row">{feature}</div>
+>>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8 */}
           </div>
         </div>
       </div>
