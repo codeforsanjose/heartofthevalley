@@ -39,23 +39,5 @@ const App = () => {
    </SearchContext.Provider>
   </FeatureContext.Provider>
 )}
-// =======
-// function App() {
-//   return (
-//     <div>
-//       <BrowserRouter>
-//         <Header />
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/about" element={<About />} />
-//           <Route path="/contact" element={<Contact />} />
-//           <Route path="/search" element={<Search />} />
-//         </Routes>
-//         <Footer />
-//       </BrowserRouter>
-//     </div>
-//   )
-// }
-// >>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8
 
 export default App

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from "react-router-dom";
-import localFavoritesData from "../components/LocalFavoritesData";
+import localFavoritesData from "./LocalFavoritesData";
 import '../assets/stylesheets/localArts.css'
 import PalmTrees from '../assets/img/Palm-Trees-Downtown-SanJose.jpg'
 

@@ -1,7 +1,7 @@
 
 import { useHistory } from "react-router-dom";
 import '../assets/stylesheets/home.css';
-import featureData from "../components/FeatureData";
+import featureData from "./FeatureData";
 import { FeatureContext } from "../App";
 import { useContext } from "react";
 
