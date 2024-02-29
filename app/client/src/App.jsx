@@ -15,9 +15,15 @@ import './assets/stylesheets/App.css'
 function App() {
   const [searchText, setSearchText] = useState('')
   const [filterType, setFilterType] = useState('All')
+  const featureContextValue = React.useMemo(() => {
+    return [filterType, setFilterType]
+  }, [filterType])
+  const searchContextValue = React.useMemo(() => {
+    return [searchText, setFilterType]
+  }, [searchText])
   return (
-    <FeatureContext.Provider value={[filterType, setFilterType]}>
-      <SearchContext.Provider value={[searchText, setSearchText]}>
+    <FeatureContext.Provider value={featureContextValue}>
+      <SearchContext.Provider value={searchContextValue}>
 
         <div id="appRoot">
           <div className="appContent">

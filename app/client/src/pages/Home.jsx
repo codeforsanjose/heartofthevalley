@@ -6,6 +6,8 @@ import { SearchContext } from '../contexts/SearchContext'
 import { FaLongArrowAltRight, FaSistrix } from 'react-icons/fa'
 
 import '../assets/stylesheets/home.css'
+import featureData from '../components/FeatureData'
+
 import Features from '../components/Features'
 import LocalArts from '../components/LocalArts'
 //<<<<<<< HEAD
