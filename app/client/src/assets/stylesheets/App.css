@@ -54,6 +54,19 @@ p {
   background-color: #bf3b00;
 }
 
+
+/* Title Link: to Home ("/") */
+
+.header-title-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-title-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*Footer */
 
 .footer {
@@ -67,6 +80,18 @@ p {
  flex-direction: column;
  justify-content: flex-end;
  align-items: flex-end;
+ text-decoration: underline !important;
+ font-size: 14px !important;
+ letter-spacing: 0.6px;
+}
+
+.footer a, 
+.footer a:active {
+  color: white;
+}
+
+.footer a:hover {
+  color: #d44100;
 }
 
 .social-icon {
@@ -74,4 +99,24 @@ p {
   border-radius: 50%;
   color: rgb(0, 0, 0);
   background-color: #fff;
+}
+
+
+/* stick footer to the bottom of the page */
+
+#appRoot {
+  position: relative;
+  min-height: 100vh;
+}
+
+.appContent{
+  padding-bottom: 200px;    /* Footer height */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;            /* Footer height */
+  z-index: 10000 !important;
 }

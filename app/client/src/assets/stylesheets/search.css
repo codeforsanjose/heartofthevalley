@@ -8,7 +8,6 @@
     background-color:  #BF3B00;
     color: #fff;
 }
-
 .search {
     width: 100%;
     background-color: transparent;
@@ -25,12 +24,37 @@
     padding:5% 0%;
 }
 
-.search-category {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-}
+
 
 .result-icons {
     margin: 0px 10px;
+}
+.btn-shape{
+    border-radius: 16px;
+}
+@media screen and (max-width: 700px) {
+    .search-name{
+        overflow-x: scroll;
+    }
+    .search-name::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .search-name {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .result-views{
+        position: relative;
+        left: 60vw;
+    }
+}
+@media screen and (min-width: 700px) {
+    .search-category {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    
 }

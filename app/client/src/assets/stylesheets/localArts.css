@@ -1,0 +1,13 @@
+.local-title {
+    font-size: 20px;
+}
+
+.square-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.feature-card {
+  width: 100%;
+}
+

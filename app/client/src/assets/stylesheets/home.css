@@ -12,13 +12,13 @@
 }
 
 .hero-text {
-  font-size: 20px;
+  font-size: 40px;
   color: #000000;
 }
-
-.title {
+/* .title {
   font-size: 40px;
-}
+  color: #000 !important;
+} */
 /* Search */
 .search-home {
   padding: 4% 0%;
@@ -48,6 +48,23 @@
   padding: 10px;
 }
 
+.local-fav {
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px;
+}
+
+.local-fav .row {
+  margin:0px;
+  padding: 0px;
+}
+
+.local-fav .feature-card {
+  margin-left: 0px;
+}
+
+
+
 /* Mapbox */
 .mapbox {
   border-radius: 20px;
@@ -64,6 +81,15 @@
   /* background-color: #E5E5E5; */
 }
 
+.features .row {
+  padding: 0px;
+}
+
+.features .feature-card {
+  margin-left: 0px;
+  padding: 0px;
+}
+
 .feature-title {
   display: flex;
   justify-content: space-between;
@@ -73,6 +99,22 @@
 .feature-link {
   font-size: 25px;
   color: #000;
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .feature-link {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+  }
+  .feature-title {
+    display: block;
+  }
+
+  .home-input {
+    width: 90%;
+  }
 }
 
 .feature-card {
@@ -88,21 +130,41 @@
 }
 .feature-image {
   border-radius: 25px 25px 0px 0px !important;
+  object-fit: cover;
 }
 .feature-content {
   padding: 20px 40px !important;
 }
 
+.feature-content h3 {
+  font-size: 21px;
+  padding-bottom: 5px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+/* .overlay {
+  background: rgba(212, 65, 0, 0.2);
+  border-radius: 0px 0px 25px 25px;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+  height: auto;
+} */
+
 /* Medium Screens */
 @media (min-width: 600px) and (max-width: 1100px) {
-  .title {
-    font-size: 80px;
+  .hero-text {
+    font-size: 60px;
   }
 }
 
 /* Large Screens */
 @media (min-width: 1100px) {
-  .title {
-    font-size: 100px;
+  .hero-text {
+    font-size: 75px;
   }
 }
+
+

@@ -3,6 +3,14 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "formik": "^2.2.9",
+    "load-json-file": "^7.0.1",
+    "react-scripts": "4.0.3",
+    "request": "^2.79.0",
+    "yup": "^0.32.11",
     "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
     "jquery": "^3.7.1",
@@ -35,7 +43,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "http://127.0.0.1:3000",
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
