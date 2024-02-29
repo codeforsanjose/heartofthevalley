@@ -5,6 +5,7 @@ import Mapbox from '../components/Mapbox'
 import SearchGrid from './SearchGrid'
 import SearchList from './SearchList'
 import axios from "axios";
+import { API_URL } from '../utils/API_URL'
 import { useState, useEffect,useContext } from 'react'
 import { SearchContext } from '../contexts/SearchContext'
 import { FeatureContext } from '../contexts/FeatureContext'
@@ -35,7 +36,7 @@ function Search() {
   };
    
  
-  const {artData,error,loaded} = ArtData('http://localhost:3001/v1/heartofvalley/features')
+  const {artData,error,loaded} = ArtData(`${API_URL}/features`)
   
   let displayArtData = Object.assign({},artData)
   artData != null && filterType !== 'All' ? displayArtData = Object.assign({},artData.filter(data => data['Art Type']=== filterType)): displayArtData = Object.assign({},artData)

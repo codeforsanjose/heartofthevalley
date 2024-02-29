@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactMapGL, { Marker, Popup, FullscreenControl, NavigationControl } from 'react-map-gl'
 import axios from "axios";
 import { useNavigate } from "react-router-dom"
- 
+import { API_URL } from '../utils/API_URL';
 import { FaMapMarkerAlt } from 'react-icons/fa'
 
 import '../assets/stylesheets/map.css'
@@ -41,8 +41,8 @@ function Mapbox() {
   
     return { artData, error, loaded };
   };
- 
-  const {artData,error,loaded} = ArtData('http://localhost:3001/v1/heartofvalley/features')
+
+  const {artData,error,loaded} = ArtData(`${API_URL}/features`)
 
     // creating popup state for the marker
     const [showPopup, setShowpopup] = useState(null)
