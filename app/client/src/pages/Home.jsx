@@ -31,7 +31,7 @@ function Home() {
 //   ))
 // >>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8
 
-  const history = useNavigate()
+  const navigate = useNavigate()
   
   return (
     <div className="home">
@@ -54,7 +54,7 @@ function Home() {
 //<<<<<<< HEAD
                 onChange={(e)=>{setSearchText(e.target.value)}}
               ></input>
-              <button type="submit" onClick={()=>{history.push("/search",{find_art: searchText})}} className="search-btn">
+              <button type="submit" onClick={()=>{navigate("/search",{find_art: searchText})}} className="search-btn">
                 <FaSistrix />
               </button> 
 {/* =======

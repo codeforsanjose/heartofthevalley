@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function FeatureCard({ imgAddr, title, description, address, artist, facility, artType, latLong }) {
 
-  const history = useNavigate()
+  const navigate = useNavigate()
 
   return (
 
@@ -12,7 +12,7 @@ function FeatureCard({ imgAddr, title, description, address, artist, facility, a
       marginBottom: "40px",
       borderRadius: '25px'
     }} onClick={() => {
-      history.push("/artDetails", {
+      navigate("/artDetails", {
         facility: facility,
         artist: artist,
         address: address,

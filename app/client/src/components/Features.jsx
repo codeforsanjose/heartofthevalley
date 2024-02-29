@@ -6,7 +6,7 @@ import { FeatureContext } from "../contexts/FeatureContext";
 import '../assets/stylesheets/home.css';
 
 function Features() {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const [filterType, setFilterType] = useContext(FeatureContext)
 
   return (
@@ -17,7 +17,7 @@ function Features() {
           className="card feature-card"
           style={{ minHeight: "440px" }}
           onClick={() => {
-            history.push({
+            navigate({
               pathname: "/search",
             }),
               setFilterType(data.title)

@@ -13,7 +13,7 @@ const MAPBOX_TOKEN = 'pk.eyJ1IjoidW1hcHJlZXRoaSIsImEiOiJja3diNm5wN3RnZWhsMnZwZzl
 
 function Mapbox() {
 
-  const history = useNavigate()
+  const navigate = useNavigate()
 
   const [viewport, setViewport] = useState({
     latitude: 37.33829,
@@ -139,7 +139,7 @@ function Mapbox() {
               <h4 
                 className="popup-title" 
                 onClick={() => {
-                  history.push({
+                  navigate({
                     pathname: '/artDetails',
                     // state: showPopup
                     state: {

@@ -5,7 +5,7 @@ import '../assets/stylesheets/localArts.css'
 import PalmTrees from '../assets/img/Palm-Trees-Downtown-SanJose.jpg'
 
 export default function LocalArts() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   return (
 //<<<<<<< HEAD
@@ -15,7 +15,7 @@ export default function LocalArts() {
           <div
             className="card feature-card"
             onClick={() => {
-              history.push({
+              navigate({
                 pathname: "/artDetails",
                 state: {
                   facility: data.Facility,

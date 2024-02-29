@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 function FeatureList({ imgAddr, title, description, address, artist, facility, artType }) {
 
-  const history = useNavigate()
+  const navigate = useNavigate()
   return (
     <div style={{ borderRadius: "30px" }} className='conatainer d-flex flex-row m-3 bg-light w-90 featureListContainer'
       onClick={() => {
-        history.push("/artDetails", {
+        navigate("/artDetails", {
           facility: facility,
           artist: artist,
           address: address,
