@@ -50,45 +50,11 @@ function Mapbox() {
   const markers = (loaded===true) && artData
    .slice(1,50)
    .map((data) => {
-      // const selectedData = artData.find((data) => data.id === showPopup);
       return (
         <Marker
           key={data.id}
           latitude={parseFloat(data.latLong[1])}
           longitude={parseFloat(data.latLong[0])}
-// =======
-//   const [apiData, setApiData] = React.useState([])
-//   React.useEffect(() => {
-//     fetch(`${API_URL}/features`)
-//       .then((res) => res.json())
-//       .then((data) => setApiData(data))
-//   }, [])
-
-//   const mapData = apiData.slice(0, 11)
-
-//   // creating popup state for the marker
-//   const [showPopup, setShowpopup] = React.useState(false)
-
-//   // Creating markers for the map
-//   const markers = mapData
-//     .filter((location) => (
-//       !!location.latLong
-//     ))
-//     .map((location) => (
-//       <Marker
-//         key={location.id}
-//         latitude={parseFloat(location.latLong[1])}
-//         longitude={parseFloat(location.latLong[0])}
-//       >
-//         <button
-//           className="button"
-//           type="button"
-//           aria-label="show-location"
-//           onClick={(e) => {
-//             e.preventDefault()
-//             setShowpopup(location)
-//           }}
-// >>>>>>> 4c9154ef3b7d5d6def6765867814061cd94ab2d8
         >
           
           <button
@@ -104,12 +70,11 @@ function Mapbox() {
         </Marker>
       )
     })
-//<<<<<<< HEAD
   return (
     <ReactMapGL
       {...viewport}
       width="100%"
-      height="80vh"
+      height="300px"
       style={{marginTop:"2vh", marginBottom:"2vh"}}
       mapStyle="mapbox://styles/mapbox/streets-v11"
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
