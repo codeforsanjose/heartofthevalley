@@ -114,6 +114,7 @@ function Mapbox() {
       mapStyle="mapbox://styles/mapbox/streets-v11"
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
       mapboxApiAccessToken={MAPBOX_TOKEN}
+      mapboxAccessToken={MAPBOX_TOKEN}
     >
          {markers}
          {showPopup && (
