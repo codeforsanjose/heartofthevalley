@@ -1,10 +1,12 @@
 {
-  "extends": ["airbnb"],
+  "extends": [],
   "ignorePatterns": ["index.js", "*.test.js"],
   "rules": {
     "react/no-array-index-key": "off",
     "reacthooks/exhaustive-deps": "off",
     "react/jsx-filename-extension": "off",
-    "semi": "off"
+    "semi": "off",
+    "arrow-body-style": "warn",
+    "no-unused-expressions": "warn"
   }
 }
