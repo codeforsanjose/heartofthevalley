@@ -2,16 +2,16 @@
 
 ARG NODE_VERSION
 
-FROM docker.io/library/node:${NODE_VERSION} as node_modules_cache
+FROM docker.io/library/node:18 AS node_modules_cache
 LABEL org.opensourcesanjose.app="heartofthevalley"
 WORKDIR /opt
 COPY ./app/client/package*.json ./
 RUN npm update --global npm \
- && npm install
+  && npm install
 
 
 
-FROM docker.io/library/node:${NODE_VERSION} as local
+FROM docker.io/library/node:18 AS local
 LABEL org.opensourcesanjose.app="heartofthevalley"
 WORKDIR /usr/src/app
 COPY ./app/client ./
