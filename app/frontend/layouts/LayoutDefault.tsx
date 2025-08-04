@@ -1,27 +1,10 @@
 import "./style.css";
-
 import "./tailwind.css";
-import logoUrl from "../assets/logo.svg";
-import { Link } from "../components/Link.js";
 
 export default function LayoutDefault({ children }: { children: React.ReactNode }) {
   return (
-    <div className={"flex max-w-5xl m-auto"}>
-      <Sidebar>
-        <Logo />
-        <Link href="/">Welcome</Link>
-        <Link href="/todo">Todo</Link>
-        <Link href="/star-wars">Data Fetching</Link>
-      </Sidebar>
+    <div className={"flex"}>
       <Content>{children}</Content>
-    </div>
-  );
-}
-
-function Sidebar({ children }: { children: React.ReactNode }) {
-  return (
-    <div id="sidebar" className={"p-5 flex flex-col shrink-0 border-r-2 border-r-gray-200"}>
-      {children}
     </div>
   );
 }
@@ -29,19 +12,31 @@ function Sidebar({ children }: { children: React.ReactNode }) {
 function Content({ children }: { children: React.ReactNode }) {
   return (
     <div id="page-container">
-      <div id="page-content" className={"p-5 pb-12 min-h-screen"}>
+      <div id="page-content" className="h-screen w-screen">
+        <nav className="bg-[#d44100] w-screen py-2 px-[10%] flex justify-between text-xl text-white">
+          <div className="pb-1.5">
+            <a href="/">HEART OF THE VALLEY</a>
+            <p className="mb-4">Mapping Public Arts</p>
+          </div>
+          <ul className="flex self-center">
+            <NavBarListItem href="/" text="Home" />
+            <NavBarListItem href="/about" text="About" />
+            <NavBarListItem href="/contact" text="Contact Us" />
+            <NavBarListItem href="/search" text="Search" />
+          </ul>
+        </nav>
         {children}
       </div>
     </div>
   );
 }
 
-function Logo() {
+function NavBarListItem({ href, text }: { href: string; text: string }) {
   return (
-    <div className={"p-5 mb-2"}>
-      <a href="/">
-        <img src={logoUrl} height={64} width={64} alt="logo" />
+    <li className="ml-4">
+      <a href={href} className="text-white hover:text-gray-300">
+        {text}
       </a>
-    </div>
+    </li>
   );
 }
