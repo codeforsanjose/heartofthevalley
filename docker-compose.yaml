@@ -2,6 +2,8 @@ services:
   frontend:
     build:
       context: app/frontend
+    environment:
+      - NODE_ENV=development
     volumes:
       - ./app/frontend:/app
       - /app/node_modules
