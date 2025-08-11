@@ -14,9 +14,9 @@ export default function LayoutDefault({ children }: { children: React.ReactNode 
 function Content({ children }: { children: React.ReactNode }) {
   return (
     <div id="page-container">
-      <div id="page-content" className="h-screen w-screen">
-        <nav className="bg-[#d44100] w-screen py-4 px-[10%] flex justify-between text-xl text-white">
-          <div>
+      <div id="page-content" className="w-auto">
+        <nav className="bg-grenadier w-screen py-2 px-[10%] flex justify-between text-xl text-white">
+          <div className="pb-1.5">
             <a href="/">HEART OF THE VALLEY</a>
             <p className="mb-4">Mapping Public Arts</p>
           </div>

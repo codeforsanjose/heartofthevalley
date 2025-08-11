@@ -27,3 +27,4 @@ app/server/database/dbconfig.js
 .idea
 app/client/build/*
 .vscode
+tmp
