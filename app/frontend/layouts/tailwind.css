@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
 @theme {
+  --color-dark-cyan: rgb(15, 76, 100);
   --color-grenadier: #d44100;
 }

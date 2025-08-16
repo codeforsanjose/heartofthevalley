@@ -12,7 +12,7 @@ export default function LayoutDefault({ children }: { children: React.ReactNode 
 function Content({ children }: { children: React.ReactNode }) {
   return (
     <div id="page-container">
-      <div id="page-content" className="w-auto">
+      <div id="page-content">
         <nav className="bg-grenadier w-screen py-2 px-[10%] flex justify-between text-xl text-white">
           <div className="pb-1.5">
             <a href="/">HEART OF THE VALLEY</a>

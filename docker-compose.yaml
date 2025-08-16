@@ -3,6 +3,7 @@ services:
     build:
       context: app/frontend
     environment:
+      - VITE_API_URL=http://localhost:8080
       - NODE_ENV=development
     volumes:
       - ./app/frontend:/app
