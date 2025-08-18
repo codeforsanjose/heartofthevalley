@@ -11,6 +11,10 @@
    cd heartofthevalley
    ```
 3. **Run in Docker**:
+
    ```bash
    docker compose watch
    ```
+
+4. **Open in Browser**:
+   - Navigate to `http://localhost:3000` to view the application.
