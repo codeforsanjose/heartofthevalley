@@ -10,8 +10,8 @@ import (
 )
 
 type DynamoConfig struct {
-	TableName string
-	Client    dynamodb.Client
+	TableName *string
+	Client    *dynamodb.Client
 }
 
 func NewDefault() *DynamoConfig {
@@ -26,8 +26,8 @@ func NewDefault() *DynamoConfig {
 	}
 
 	return &DynamoConfig{
-		TableName: tableName,
-		Client: *dynamodb.NewFromConfig(cfg, func(o *dynamodb.Options) {
+		TableName: &tableName,
+		Client: dynamodb.NewFromConfig(cfg, func(o *dynamodb.Options) {
 			// Set the endpoint URL for local development
 			if endpoint, ok := os.LookupEnv("DYNAMODB_ENDPOINT"); ok {
 				o.BaseEndpoint = &endpoint

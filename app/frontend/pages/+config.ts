@@ -16,4 +16,8 @@ export default {
   extends: vikeReact,
 
   prerender: true,
+
+  redirects: {
+    "/features": "/search",
+  },
 } satisfies Config;

@@ -1,0 +1,9 @@
+FROM oven/bun:1.2
+
+WORKDIR /app
+
+COPY ./app/frontend . 
+
+COPY ./openapi.yaml .
+
+RUN API_SPEC=./openapi.yaml bun i
