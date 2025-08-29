@@ -14,4 +14,10 @@ export default {
   description: "Demo showcasing Vike",
 
   extends: vikeReact,
+
+  prerender: true,
+
+  redirects: {
+    "/features": "/search",
+  },
 } satisfies Config;

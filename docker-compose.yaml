@@ -1,12 +1,25 @@
 services:
   frontend:
     build:
-      context: app/frontend
+      dockerfile: Dockerfile.frontend
     environment:
+      - API_SPEC=./openapi.yaml
+      - VITE_API_URL=http://localhost:8080
       - NODE_ENV=development
-    volumes:
-      - ./app/frontend:/app
-      - /app/node_modules
+    depends_on:
+      backend:
+        condition: service_healthy
+    develop:
+      watch:
+        - path: app/frontend
+          action: sync
+          target: /app
+        - path: app/frontend/node_modules
+          action: rebuild
+          target: /app/node_modules
+        - path: openapi.yaml
+          action: rebuild
+          target: /app/openapi.yaml
     ports:
       - "3000:3000"
     command: >
@@ -14,17 +27,51 @@ services:
 
   backend:
     build:
-      context: app/backend
-    # environment:
-    #   API_BASE_URL: "/v1/heartofvalley"
-    volumes:
-      - ./app/backend:/app
-      - /app/node_modules
+      dockerfile: Dockerfile.backend
     ports:
       - "8080:8080"
-    # healthcheck:
-    #   test: curl localhost:3001/v1/heartofvalley/ping
-    #   interval: 10s
-    #   timeout: 15s
+    develop:
+      watch:
+        - path: app/backend
+          action: sync
+          target: /app
+    depends_on:
+      db_init:
+        condition: service_completed_successfully
+    environment:
+      - API_SPEC=./openapi.yaml
+      - TABLE_NAME=MyTable
+      - AWS_ACCESS_KEY_ID=local
+      - AWS_SECRET_ACCESS_KEY=local
+      - AWS_REGION=us-west-2
+      - DYNAMODB_ENDPOINT=http://db:8000
     command: >
-      sh -c "cd dev-server && air ."
+      sh -c "air"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/ping"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
+  db:
+    image: amazon/dynamodb-local
+    command: "-jar DynamoDBLocal.jar -sharedDb"
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "http://localhost:8000"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  db_init:
+    build:
+      context: app/seed
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - AWS_ACCESS_KEY_ID=local
+      - AWS_SECRET_ACCESS_KEY=local
+      - AWS_REGION=us-west-2
+      - DYNAMODB_ENDPOINT=http://db:8000
+    entrypoint: >
+      bun seed.ts

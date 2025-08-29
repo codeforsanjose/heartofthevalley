@@ -140,3 +140,5 @@ dist
 # aws-cdk
 .cdk.staging
 cdk.out
+
+lib/api-client.ts
