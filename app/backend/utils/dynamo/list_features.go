@@ -3,6 +3,8 @@ package dynamo
 import (
 	"backend/api"
 	"context"
+	"log"
+	"strings"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue"
@@ -11,17 +13,13 @@ import (
 )
 
 type ListFeaturesInput struct {
-	LastEvaluatedSK      *string
+	LastFeatureId        *string
 	ProjectionExpression *string
-}
-
-type FeatureLister interface {
-	ListFeatures(c context.Context, input *ListFeaturesInput) (*api.ListFeaturesResponse, error)
 }
 
 func (dc *DynamoConfig) ListFeatures(ctx context.Context, input *ListFeaturesInput) (*api.ListFeaturesResponse, error) {
 	proj, exprAttrNames := sanitizeProjectionExpression(input.ProjectionExpression)
-	exclusiveStartKey := makeExclusiveStartKey(input.LastEvaluatedSK)
+	exclusiveStartKey := makeExclusiveStartKey(input.LastFeatureId)
 
 	queryIn := &dynamodb.QueryInput{
 		TableName:                 dc.TableName,
@@ -30,6 +28,8 @@ func (dc *DynamoConfig) ListFeatures(ctx context.Context, input *ListFeaturesInp
 		ProjectionExpression:      proj,
 		ExpressionAttributeNames:  exprAttrNames,
 		ExclusiveStartKey:         exclusiveStartKey,
+		ReturnConsumedCapacity:    types.ReturnConsumedCapacityTotal,
+		Limit:                     aws.Int32(25),
 	}
 	result, err := dc.Client.Query(ctx, queryIn)
 	if err != nil {
@@ -40,31 +40,35 @@ func (dc *DynamoConfig) ListFeatures(ctx context.Context, input *ListFeaturesInp
 	if err != nil {
 		return nil, err
 	}
+	log.Printf("ConsumedCapacity: %f", *result.ConsumedCapacity.CapacityUnits)
 
-	lastEvaluatedSK := extractLastEvaluatedSK(result.LastEvaluatedKey)
+	lastFeatureId := extractLastFeatureId(result.LastEvaluatedKey)
 	return &api.ListFeaturesResponse{
-		Features:        &features,
-		LastEvaluatedSK: lastEvaluatedSK,
+		Features:      features,
+		LastFeatureId: lastFeatureId,
 	}, nil
 }
 
-func makeExclusiveStartKey(lastEvaluatedSK *string) map[string]types.AttributeValue {
-	if lastEvaluatedSK == nil {
+func makeExclusiveStartKey(lastFeatureId *string) map[string]types.AttributeValue {
+	if lastFeatureId == nil {
 		return nil
 	}
 	return map[string]types.AttributeValue{
 		"PK": &types.AttributeValueMemberS{Value: "FEATURE"},
-		"SK": &types.AttributeValueMemberS{Value: *lastEvaluatedSK},
+		"SK": &types.AttributeValueMemberS{Value: "FEATURE#" + *lastFeatureId},
 	}
 }
 
-func extractLastEvaluatedSK(lastEvaluatedKey map[string]types.AttributeValue) *string {
+func extractLastFeatureId(lastEvaluatedKey map[string]types.AttributeValue) *string {
 	if lastEvaluatedKey == nil {
 		return nil
 	}
 	if skAttr, ok := lastEvaluatedKey["SK"]; ok {
 		if sk, ok := skAttr.(*types.AttributeValueMemberS); ok {
-			return &sk.Value
+			parts := strings.SplitN(sk.Value, "#", 2)
+			if len(parts) == 2 {
+				return &parts[1]
+			}
 		}
 	}
 	return nil

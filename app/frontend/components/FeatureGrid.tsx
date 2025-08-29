@@ -1,28 +1,60 @@
-import { useListFeatures } from "../lib/api-client";
+import { useEffect } from "react";
+import { useListFeaturesInfinite } from "../lib/api-client";
 import { FeatureCard } from "./FeatureCard";
 
+import { useInView } from "react-intersection-observer";
+
 export const FeatureGrid = () => {
-  const { data, error, isPending } = useListFeatures({
-    projectionExpression: "SK,title,imagePath",
-  });
+  const { data, status, fetchNextPage, hasNextPage, isFetchingNextPage } = useListFeaturesInfinite(
+    {
+      projectionExpression: "SK,title,imagePath",
+    },
+    {
+      query: {
+        getNextPageParam: (lastPage) => lastPage.data.lastFeatureId,
+      },
+    },
+  );
+  const { ref, inView } = useInView();
 
-  if (isPending) {
-    return <h1 className="text-3xl flex justify-center">Loading...</h1>;
+  useEffect(() => {
+    if (inView && hasNextPage) {
+      fetchNextPage();
+    }
+  }, [inView, hasNextPage, fetchNextPage]);
+
+  if (status === "pending") {
+    return <div>Loading...</div>;
   }
 
-  if (error) {
-    return <h1 className="text-3xl flex justify-center">Error: {error.message}</h1>;
+  if (status === "error" || !data) {
+    return <div>There was an error loading features.</div>;
   }
 
-  const { features } = data.data;
+  // Combine all pages of features into a single array
+  const allFeatures = data.pages.flatMap((page) => page.data.features);
+  const dataWithAllFeatures = { data: { features: allFeatures } };
+  const {
+    data: { features },
+  } = dataWithAllFeatures;
 
   return (
     <section className="w-[80%] mx-auto p-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 place-items-center">
-      {features?.map(({ imagePath, SK, title }) => {
+      {features.map(({ imagePath, SK, title }) => {
         if (!imagePath || !SK || !title) throw new Error("There was an error retreiving or rendering feature data.");
         const id = SK.split("#")[1];
         return <FeatureCard key={id} imgSrc={imagePath} title={title} id={id} />;
       })}
+      {hasNextPage && (
+        <button
+          onClick={() => fetchNextPage()}
+          className="col-span-full bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition"
+          ref={ref}
+          disabled={!!hasNextPage || isFetchingNextPage}
+        >
+          Load More
+        </button>
+      )}
     </section>
   );
 };

@@ -4,7 +4,6 @@ services:
       dockerfile: Dockerfile.frontend
     environment:
       - API_SPEC=./openapi.yaml
-      - VITE_API_URL=http://localhost:8080
       - NODE_ENV=development
     depends_on:
       backend:

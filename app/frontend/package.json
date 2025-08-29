@@ -11,10 +11,15 @@
     "@tanstack/react-query": "^5.85.5",
     "@vitejs/plugin-react": "^4.7.0",
     "axios": "^1.11.0",
+    "hono": "^4.9.8",
+    "leaflet": "^1.9.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-leaflet": "^5.0.0",
     "vike": "^0.4.236",
-    "vike-react": "^0.6.5"
+    "vike-react": "^0.6.5",
+    "vike-server": "^1.0.23"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
