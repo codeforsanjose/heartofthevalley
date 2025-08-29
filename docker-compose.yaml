@@ -1,8 +1,9 @@
 services:
   frontend:
     build:
-      context: app/frontend
+      dockerfile: Dockerfile.frontend
     environment:
+      - API_SPEC=./openapi.yaml
       - VITE_API_URL=http://localhost:8080
       - NODE_ENV=development
     depends_on:
@@ -16,6 +17,9 @@ services:
         - path: app/frontend/node_modules
           action: rebuild
           target: /app/node_modules
+        - path: openapi.yaml
+          action: rebuild
+          target: /app/openapi.yaml
     ports:
       - "3000:3000"
     command: >
@@ -23,7 +27,7 @@ services:
 
   backend:
     build:
-      context: app/backend
+      dockerfile: Dockerfile.backend
     ports:
       - "8080:8080"
     develop:
@@ -35,18 +39,19 @@ services:
       db_init:
         condition: service_completed_successfully
     environment:
+      - API_SPEC=./openapi.yaml
       - TABLE_NAME=MyTable
       - AWS_ACCESS_KEY_ID=local
       - AWS_SECRET_ACCESS_KEY=local
       - AWS_REGION=us-west-2
       - DYNAMODB_ENDPOINT=http://db:8000
     command: >
-      sh -c "air ."
+      sh -c "air"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
+      interval: 5s
+      timeout: 2s
+      retries: 5
   db:
     image: amazon/dynamodb-local
     command: "-jar DynamoDBLocal.jar -sharedDb"
@@ -54,8 +59,8 @@ services:
       - "8000:8000"
     healthcheck:
       test: ["CMD", "curl", "http://localhost:8000"]
-      interval: 5s
-      timeout: 3s
+      interval: 10s
+      timeout: 5s
       retries: 5
   db_init:
     build:

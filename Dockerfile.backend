@@ -1,0 +1,15 @@
+FROM golang:1.24-alpine3.22
+
+WORKDIR /app
+
+RUN go install github.com/air-verse/air@latest
+
+COPY ./app/backend .
+
+COPY ./openapi.yaml .
+
+RUN apk add --no-cache curl
+
+RUN API_SPEC=./openapi.yaml go generate ./...
+
+RUN go mod tidy

@@ -1,5 +1,8 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./style.css";
 import "./tailwind.css";
+
+const client = new QueryClient();
 
 export default function LayoutDefault({ children }: { children: React.ReactNode }) {
   return (
@@ -11,23 +14,25 @@ export default function LayoutDefault({ children }: { children: React.ReactNode 
 
 function Content({ children }: { children: React.ReactNode }) {
   return (
-    <div id="page-container">
-      <div id="page-content">
-        <nav className="bg-grenadier w-screen py-2 px-[10%] flex justify-between text-xl text-white">
-          <div className="pb-1.5">
-            <a href="/">HEART OF THE VALLEY</a>
-            <p className="mb-4">Mapping Public Arts</p>
-          </div>
-          <ul className="flex self-center">
-            <NavBarListItem href="/" text="Home" />
-            <NavBarListItem href="/about" text="About" />
-            <NavBarListItem href="/contact" text="Contact Us" />
-            <NavBarListItem href="/search" text="Search" />
-          </ul>
-        </nav>
-        {children}
+    <QueryClientProvider client={client}>
+      <div id="page-container">
+        <div id="page-content">
+          <nav className="bg-grenadier w-screen py-2 px-[10%] flex justify-between text-xl text-white">
+            <div className="pb-1.5">
+              <a href="/">HEART OF THE VALLEY</a>
+              <p className="mb-4">Mapping Public Arts</p>
+            </div>
+            <ul className="flex self-center">
+              <NavBarListItem href="/" text="Home" />
+              <NavBarListItem href="/about" text="About" />
+              <NavBarListItem href="/contact" text="Contact Us" />
+              <NavBarListItem href="/search" text="Search" />
+            </ul>
+          </nav>
+          {children}
+        </div>
       </div>
-    </div>
+    </QueryClientProvider>
   );
 }
 

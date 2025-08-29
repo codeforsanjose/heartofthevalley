@@ -1,13 +1,16 @@
 {
   "scripts": {
-    "dev": "vike dev",
+    "dev": "bun run scripts/dev.ts",
     "build": "vike build",
     "preview": "vike preview",
+    "postinstall": "bun run scripts/postinstall.ts",
     "lint": "eslint ."
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@tanstack/react-query": "^5.85.5",
     "@vitejs/plugin-react": "^4.7.0",
+    "axios": "^1.11.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "vike": "^0.4.236",
@@ -19,11 +22,13 @@
     "@types/node": "^24.2.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "ajv": "^8.17.1",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.3",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.3.0",
+    "orval": "^7.11.2",
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
