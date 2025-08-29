@@ -48,7 +48,7 @@ services:
     command: >
       sh -c "air"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/ping"]
+      test: [ "CMD", "curl", "-f", "http://localhost:8080/ping" ]
       interval: 5s
       timeout: 2s
       retries: 5
@@ -58,10 +58,10 @@ services:
     ports:
       - "8000:8000"
     healthcheck:
-      test: ["CMD", "curl", "http://localhost:8000"]
+      test: [ "CMD", "curl", "http://localhost:8000" ]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 15
   db_init:
     build:
       context: app/seed

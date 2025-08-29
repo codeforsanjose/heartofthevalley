@@ -80,6 +80,12 @@ paths:
           required: false
           schema:
             type: string
+        - name: limit
+          in: query
+          description: An int limiting the number of features to get
+          required: false
+          schema: 
+            type: integer 
       responses:
         "200":
           description: A list of features
