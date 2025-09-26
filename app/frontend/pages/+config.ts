@@ -1,5 +1,4 @@
 import vikeReact from "vike-react/config";
-import vikeServer from "vike-server/config";
 import type { Config } from "vike/types";
 import Layout from "../layouts/LayoutDefault";
 
@@ -14,7 +13,7 @@ export default {
   title: "My Vike App",
   description: "Demo showcasing Vike",
 
-  extends: [vikeReact, ...(process.env.NODE_ENV === "production" ? [vikeServer] : [])],
+  extends: [vikeReact],
 
   redirects: {
     "/features": "/search",
@@ -23,10 +22,4 @@ export default {
   prerender: true,
 
   clientRouting: false,
-
-  ...(process.env.NODE_ENV === "production"
-    ? {
-        server: "index.ts",
-      }
-    : {}),
 } satisfies Config;

@@ -30,7 +30,7 @@ jobs:
         run: |
           cd app/deployment
           bun install
-          bun run deploy --require-approval never
+          bun run deploy --verbose
 
 permissions:
   id-token: write
