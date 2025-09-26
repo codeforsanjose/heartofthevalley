@@ -6,8 +6,6 @@ info:
 servers:
   - url: https://s06hks51dl.execute-api.us-west-2.amazonaws.com
     description: Production Server
-  - url: http://localhost:8080
-    description: Development Server
 components:
   schemas:
     Feature:

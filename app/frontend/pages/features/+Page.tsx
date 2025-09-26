@@ -1,21 +1,12 @@
-import { usePageContext } from "vike-react/usePageContext";
-import { useGetFeatureById } from "../../../lib/api-client";
+import { useData } from "vike-react/useData";
+import { Data } from "./+onBeforePrerenderStart";
 
 export default function FeatureDetails() {
-  const pageContext = usePageContext();
-  const { featureId } = pageContext.routeParams;
+  const feature = useData<Data>();
 
-  const { data: response, isPending, error } = useGetFeatureById(featureId);
-
-  if (isPending) {
+  if (!feature) {
     return <div>Loading...</div>;
   }
-
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
-
-  const feature = response.data;
   return (
     <div className="mx-15 bg-white rounded-xl shadow-md p-6 mt-8 flex gap-8">
       <div className="flex-shrink-0 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">

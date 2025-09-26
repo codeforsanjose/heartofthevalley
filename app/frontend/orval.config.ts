@@ -9,10 +9,11 @@ export default defineConfig({
     input: { target: process.env.API_SPEC },
     output: {
       target: "./lib/api-client.ts",
-      baseUrl: {
-        getBaseUrlFromSpecification: true,
-        index: process.env.NODE_ENV === "production" ? 0 : 1,
-      },
+      baseUrl: process.env.API_URL
+        ? process.env.API_URL
+        : {
+            getBaseUrlFromSpecification: true, // Use production server from OpenAPI spec
+          },
       client: "react-query",
       mode: "split",
       override: {

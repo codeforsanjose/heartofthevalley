@@ -51,23 +51,49 @@ export class HeartOfTheValleyStack extends cdk.Stack {
 
     table.grantReadWriteData(apiHandler);
 
-    const frontendHandler = new cdk.aws_lambda.Function(
+    // const frontendHandler = new cdk.aws_lambda.Function(
+    //   this,
+    //   "HeartOfValleyFrontendHandler",
+    //   {
+    //     runtime: cdk.aws_lambda.Runtime.NODEJS_22_X,
+    //     code: cdk.aws_lambda.Code.fromAsset(
+    //       path.resolve(__dirname, "../dist/frontend")
+    //     ),
+    //     handler: "server/index.handler",
+    //     memorySize: 512,
+    //     timeout: cdk.Duration.seconds(10),
+    //   }
+    // );
+
+    // const url = frontendHandler.addFunctionUrl({
+    //   authType: cdk.aws_lambda.FunctionUrlAuthType.NONE,
+    // });
+
+    const frontendBucket = new cdk.aws_s3.Bucket(
       this,
-      "HeartOfValleyFrontendHandler",
+      "HeartOfValleyFrontendBucket",
       {
-        runtime: cdk.aws_lambda.Runtime.NODEJS_22_X,
-        code: cdk.aws_lambda.Code.fromAsset(
-          path.resolve(__dirname, "../dist/frontend")
-        ),
-        handler: "server/index.handler",
-        memorySize: 512,
-        timeout: cdk.Duration.seconds(10),
+        removalPolicy: cdk.RemovalPolicy.DESTROY,
+        autoDeleteObjects: true,
+        websiteIndexDocument: "index.html",
+        publicReadAccess: true,
+        blockPublicAccess: cdk.aws_s3.BlockPublicAccess.BLOCK_ACLS_ONLY,
       }
     );
 
-    const url = frontendHandler.addFunctionUrl({
-      authType: cdk.aws_lambda.FunctionUrlAuthType.NONE,
-    });
+    const cdn = new cdk.aws_cloudfront.Distribution(
+      this,
+      "HeartOfValleyFrontendCdn",
+      {
+        defaultBehavior: {
+          origin: new cdk.aws_cloudfront_origins.S3StaticWebsiteOrigin(
+            frontendBucket
+          ),
+          viewerProtocolPolicy:
+            cdk.aws_cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        },
+      }
+    );
 
     new cdk.aws_apigatewayv2.HttpApi(this, "HeartOfValleyApi", {
       defaultIntegration:
@@ -89,6 +115,8 @@ export class HeartOfTheValleyStack extends cdk.Stack {
           StringLike: {
             "token.actions.githubusercontent.com:sub": [
               `repo:codeforsanjose/heartofthevalley:ref:refs/heads/main`, // TODO: change main to dynamic value
+              `repo:codeforsanjose/heartofthevalley:ref:refs/heads/infinite-scroll`,
+              `repo:codeforsanjose/heartofthevalley:ref:refs/heads/staging`,
             ],
           },
           "ForAllValues:StringEquals": {
@@ -127,8 +155,12 @@ export class HeartOfTheValleyStack extends cdk.Stack {
       },
     });
 
-    new cdk.CfnOutput(this, "FrontendUrl", {
-      value: url.url,
+    // new cdk.CfnOutput(this, "FrontendUrl", {
+    //   value: url.url,
+    // });
+
+    new cdk.CfnOutput(this, "FrontendBucketName", {
+      value: frontendBucket.bucketName,
     });
   }
 }

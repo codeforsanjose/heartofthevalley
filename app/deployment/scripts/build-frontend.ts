@@ -79,18 +79,18 @@ export const buildFrontend = async (cfgOverride: BuildFrontendConfig) => {
     console.log("Frontend build completed successfully.");
   }
 
-  // Copy node_modules to dist for server-side rendering
-  const nodeModulesSrc = path.resolve(__dirname, "../../frontend/node_modules");
-  const nodeModulesDest = path.resolve(
-    __dirname,
-    "../dist/frontend/node_modules"
-  );
-  if (existsSync(nodeModulesDest))
-    rmSync(nodeModulesDest, { force: true, recursive: true });
-  cpSync(nodeModulesSrc, nodeModulesDest, { recursive: true });
-  if (verbose) {
-    console.log(`node_modules moved to ${nodeModulesDest}`);
-  }
+  // // Copy node_modules to dist for server-side rendering
+  // const nodeModulesSrc = path.resolve(__dirname, "../../frontend/node_modules");
+  // const nodeModulesDest = path.resolve(
+  //   __dirname,
+  //   "../dist/frontend/node_modules"
+  // );
+  // if (existsSync(nodeModulesDest))
+  //   rmSync(nodeModulesDest, { force: true, recursive: true });
+  // cpSync(nodeModulesSrc, nodeModulesDest, { recursive: true });
+  // if (verbose) {
+  //   console.log(`node_modules moved to ${nodeModulesDest}`);
+  // }
 };
 
 if (require.main === module) {

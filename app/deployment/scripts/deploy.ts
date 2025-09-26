@@ -2,6 +2,7 @@ import yargs from "yargs";
 import { build } from "./build";
 import { hideBin } from "yargs/helpers";
 import { deployBackend } from "./deploy-backend";
+import { deployStaticSite } from "./deploy-static-site";
 
 type DeploymentOptions = {
   build: boolean;
@@ -21,8 +22,8 @@ export const deploy = async (opts: DeploymentOptions) => {
     console.log("Starting deployment...");
   }
 
-  await deployBackend({ verbose });
-
+  const frontendBucketUrl = await deployBackend({ verbose });
+  await deployStaticSite(frontendBucketUrl, { verbose });
   if (verbose) {
     console.log("Deployment completed successfully.");
   }

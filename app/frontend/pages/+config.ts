@@ -20,6 +20,10 @@ export default {
     "/features": "/search",
   },
 
+  prerender: true,
+
+  clientRouting: false,
+
   ...(process.env.NODE_ENV === "production"
     ? {
         server: "index.ts",
