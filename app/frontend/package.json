@@ -11,8 +11,10 @@
     "@tanstack/react-query": "^5.85.5",
     "@vitejs/plugin-react": "^4.7.0",
     "axios": "^1.11.0",
+    "leaflet": "^1.9.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-leaflet": "^5.0.0",
     "vike": "^0.4.236",
     "vike-react": "^0.6.5"
   },
@@ -20,6 +22,7 @@
     "@eslint/js": "^9.32.0",
     "@tailwindcss/vite": "^4.1.11",
     "@types/bun": "^1.2.22",
+    "@types/leaflet": "^1.9.20",
     "@types/node": "^24.2.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",

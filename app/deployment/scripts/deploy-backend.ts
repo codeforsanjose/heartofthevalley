@@ -34,7 +34,7 @@ export const deployBackend = async ({
       "aws",
       "cloudformation",
       "describe-stacks",
-      "--stack-name=HeartOfTheValleyStack",
+      `--stack-name=HeartOfTheValleyStack${process.env.DEPLOYMENT_SUFFIX}`,
     ],
     { stdout: "pipe", stderr: "pipe" }
   );

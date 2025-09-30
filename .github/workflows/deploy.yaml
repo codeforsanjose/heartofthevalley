@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - infinite-scroll
       - staging
 
 jobs:
@@ -25,6 +24,14 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::253016134262:role/HeartOfTheValleyStack-HeartOfTheValleyGithubActions-f5vUJwlfoLFr
           aws-region: us-west-2
+
+      - name: Set DEPLOYMENT_SUFFIX
+        run: |
+          if [[ "${GITHUB_REF_NAME}" == "staging" ]]; then
+            echo "DEPLOYMENT_SUFFIX=Staging" >> $GITHUB_ENV
+          else
+            echo "DEPLOYMENT_SUFFIX=" >> $GITHUB_ENV
+          fi
 
       - name: Deploy
         run: |

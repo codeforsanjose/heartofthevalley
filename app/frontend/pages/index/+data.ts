@@ -6,6 +6,6 @@ export type SearchData = {
 };
 
 export const data = async (): Promise<SearchData> => {
-  const features = await getAllFeatures("SK,imagePath,title,description");
+  const features = await getAllFeatures("title,latLong,description");
   return { features };
 };
