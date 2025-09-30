@@ -1,2 +1,5 @@
-node_modules
-package-lock.json
+app/backend/api/
+
+node_modules/
+app/frontend/lib/api-client*
+app/frontend/dist/

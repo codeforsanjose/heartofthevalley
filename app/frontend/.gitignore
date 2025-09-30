@@ -141,4 +141,4 @@ dist
 .cdk.staging
 cdk.out
 
-lib/api-client.ts
+lib/api-client*.ts

@@ -9,11 +9,23 @@ export default defineConfig({
     input: { target: process.env.API_SPEC },
     output: {
       target: "./lib/api-client.ts",
-      baseUrl: process.env.VITE_API_URL!,
+      baseUrl: process.env.API_URL
+        ? process.env.API_URL
+        : {
+            getBaseUrlFromSpecification: true, // Use production server from OpenAPI spec
+          },
       client: "react-query",
-    },
-    hooks: {
-      afterAllFilesWrite: "prettier --write",
+      mode: "split",
+      override: {
+        operations: {
+          listFeatures: {
+            query: {
+              useInfinite: true,
+              useInfiniteQueryParam: "lastFeatureId",
+            },
+          },
+        },
+      },
     },
   },
 });

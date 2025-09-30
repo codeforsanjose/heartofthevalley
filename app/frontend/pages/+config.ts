@@ -1,6 +1,6 @@
 import vikeReact from "vike-react/config";
 import type { Config } from "vike/types";
-import Layout from "../layouts/LayoutDefault.js";
+import Layout from "../layouts/LayoutDefault";
 
 // Default config (can be overridden by pages)
 // https://vike.dev/config
@@ -13,11 +13,13 @@ export default {
   title: "My Vike App",
   description: "Demo showcasing Vike",
 
-  extends: vikeReact,
-
-  prerender: true,
+  extends: [vikeReact],
 
   redirects: {
     "/features": "/search",
   },
+
+  prerender: true,
+
+  clientRouting: false,
 } satisfies Config;

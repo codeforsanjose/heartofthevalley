@@ -1,28 +1,21 @@
-import { useListFeatures } from "../lib/api-client";
 import { FeatureCard } from "./FeatureCard";
+import { Feature } from "../lib/api-client.schemas";
 
-export const FeatureGrid = () => {
-  const { data, error, isPending } = useListFeatures({
-    projectionExpression: "SK,title,imagePath",
-  });
+type FeatureGridProps = {
+  features: Feature[];
+  searchTerm: string;
+};
 
-  if (isPending) {
-    return <h1 className="text-3xl flex justify-center">Loading...</h1>;
-  }
-
-  if (error) {
-    return <h1 className="text-3xl flex justify-center">Error: {error.message}</h1>;
-  }
-
-  const { features } = data.data;
-
+export const FeatureGrid = ({ features, searchTerm }: FeatureGridProps) => {
   return (
     <section className="w-[80%] mx-auto p-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 place-items-center">
-      {features?.map(({ imagePath, SK, title }) => {
-        if (!imagePath || !SK || !title) throw new Error("There was an error retreiving or rendering feature data.");
-        const id = SK.split("#")[1];
-        return <FeatureCard key={id} imgSrc={imagePath} title={title} id={id} />;
-      })}
+      {features
+        .filter(({ title }) => title?.toLowerCase().includes(searchTerm.toLowerCase()))
+        .map(({ imagePath, SK, title }) => {
+          if (!imagePath || !SK || !title) throw new Error("There was an error retreiving or rendering feature data.");
+          const id = SK.split("#")[1]; // Ex: "FEATURE#123" -> "123"
+          return <FeatureCard key={id} imgSrc={imagePath} title={title} id={id} />;
+        })}
     </section>
   );
 };

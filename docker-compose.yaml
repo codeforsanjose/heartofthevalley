@@ -4,26 +4,26 @@ services:
       dockerfile: Dockerfile.frontend
     environment:
       - API_SPEC=./openapi.yaml
-      - VITE_API_URL=http://localhost:8080
-      - NODE_ENV=development
+      - API_URL=http://backend:8080
+      - NODE_ENV=production
     depends_on:
       backend:
         condition: service_healthy
     develop:
       watch:
         - path: app/frontend
-          action: sync
+          action: sync+restart
           target: /app
         - path: app/frontend/node_modules
           action: rebuild
           target: /app/node_modules
         - path: openapi.yaml
-          action: rebuild
+          action: sync+restart
           target: /app/openapi.yaml
     ports:
       - "3000:3000"
     command: >
-      bun dev
+      bun run dev
 
   backend:
     build:

@@ -4,9 +4,7 @@ info:
   description: API for Heart of the Valley
   version: 0.0.1
 servers:
-  - url: http://localhost:8080
-    description: Development Server
-  - url: https://st4s0w4in7.execute-api.us-west-2.amazonaws.com
+  - url: https://s06hks51dl.execute-api.us-west-2.amazonaws.com
     description: Production Server
 components:
   schemas:
@@ -60,8 +58,10 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/Feature"
-        lastEvaluatedSK:
+        lastFeatureId:
           type: string
+      required:
+        - features
 paths:
   /features:
     get:
