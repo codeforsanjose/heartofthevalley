@@ -49,7 +49,7 @@ export default function Page() {
         <ul className="space-y-2">
           {filtered.map((feature) => {
             if (!feature.latLong || feature.latLong.length !== 2) return null;
-            const pos: [number, number] = [parseFloat(feature.latLong[0]), parseFloat(feature.latLong[1])];
+            const pos: [number, number] = fixLatLong(feature.latLong, feature.title)!;
             return (
               <li key={feature.SK}>
                 <button onClick={() => setSelected(pos)} className="w-full text-left p-2 rounded hover:bg-gray-200">
