@@ -11,10 +11,10 @@ RUN cargo install cargo-watch
 
 RUN apk add --no-cache curl
 
-COPY ./app/rust-backend /app/rust-backend
+COPY ./app/backend /app/backend
 
-COPY --from=generate /local/openapi /app/rust-backend/openapi
+COPY --from=generate /local/openapi /app/backend/openapi
 
-WORKDIR /app/rust-backend
+WORKDIR /app/backend
 
 CMD ["cargo", "watch", "-x", "run"]

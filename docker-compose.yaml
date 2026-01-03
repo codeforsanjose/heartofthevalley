@@ -32,9 +32,9 @@ services:
       - "8080:8080"
     develop:
       watch:
-        - path: app/rust-backend
+        - path: app/backend
           action: sync
-          target: /app/rust-backend
+          target: /app/backend
     depends_on:
       db_init:
         condition: service_completed_successfully
