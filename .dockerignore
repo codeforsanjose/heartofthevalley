@@ -1,4 +1,5 @@
-app/backend/api/
+app/rust-backend/openapi/
+app/rust-backend/target/
 
 node_modules/
 app/frontend/lib/api-client*
