@@ -1,3 +1,5 @@
+import { spawnSync } from "child_process";
+import { mkdirSync, copyFileSync } from "fs";
 import path from "path";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
@@ -13,57 +15,66 @@ const defaultConfig: Required<BuildBackendConfig> = {
 export const buildBackend = async (cfgOverride: BuildBackendConfig) => {
   const cfg = { ...defaultConfig, ...cfgOverride };
   const { verbose } = cfg;
+
   if (verbose) {
     console.log("Starting backend build with configuration:", cfg);
   }
 
-  // Generate the Go client from the OpenAPI spec
-  const genProcess = Bun.spawnSync({
-    cmd: ["go", "generate", "./..."],
-    stdout: "pipe",
-    stderr: "pipe",
-    cwd: path.resolve(__dirname, "../../backend"),
-    env: {
-      ...process.env,
-      API_SPEC: path.resolve(__dirname, "../../../openapi.yaml"),
-    },
-  });
+  // Set up paths
+  const projectRoot = path.resolve(__dirname, "../../..");
+  const backendScriptDir = path.join(projectRoot, "app/backend/scripts");
+  const distDir = path.join(projectRoot, "app/deployment/dist");
+  const backendBuildScript = path.join(backendScriptDir, "build.sh");
+  const sourceBinary = path.join(
+    projectRoot,
+    "app/backend/target/release/backend"
+  );
+  const targetBinary = path.join(distDir, "backend/bootstrap");
+
+  // Ensure dist directories exist
+  mkdirSync(path.join(distDir, "backend"), { recursive: true });
 
   if (verbose) {
-    console.log("Generate process output:", genProcess.stdout.toString());
+    console.log("Building backend...");
   }
-  if (genProcess.exitCode !== 0) {
-    console.error(
-      "Client generation failed with error:",
-      genProcess.stderr.toString()
+
+  // Call the backend build script
+  const buildArgs = verbose ? ["--verbose"] : [];
+  const buildResult = spawnSync(backendBuildScript, buildArgs, {
+    stdio: verbose ? "inherit" : "pipe",
+    encoding: "utf8",
+  });
+
+  if (buildResult.error) {
+    throw new Error(
+      `Failed to execute backend build script: ${buildResult.error.message}`
     );
-    throw new Error("Backend build failed");
   }
 
-  // Build the backend
-  const buildProcess = Bun.spawnSync({
-    cmd: [
-      "go",
-      "build",
-      "-tags",
-      "lambda.norpc",
-      "-o",
-      path.resolve(__dirname, `../dist/backend/bootstrap`),
-      path.resolve(__dirname, `../../backend/main.go`),
-    ],
-    stdout: "pipe",
-    stderr: "pipe",
-    cwd: path.resolve(__dirname, "../../backend"),
-  });
+  if (buildResult.status !== 0) {
+    const errorOutput =
+      buildResult.stderr || buildResult.stdout || "Unknown error";
+    throw new Error(
+      `Backend build script failed with status ${buildResult.status}: ${errorOutput}`
+    );
+  }
 
   if (verbose) {
-    console.log("Build process output:", buildProcess.stdout.toString());
+    console.log("Copying backend binary to dist directory...");
   }
 
-  if (buildProcess.exitCode !== 0) {
-    console.error("Build failed with error:", buildProcess.stderr.toString());
-    throw new Error("Backend build failed");
+  // Copy the backend binary to the dist directory
+  try {
+    copyFileSync(sourceBinary, targetBinary);
+  } catch (error) {
+    throw new Error(
+      `Failed to copy backend binary: ${
+        error instanceof Error ? error.message : String(error)
+      }`
+    );
   }
+
+  console.log("✅ Backend deployment build completed successfully");
 };
 
 if (require.main === module) {
@@ -75,5 +86,5 @@ if (require.main === module) {
     })
     .parseSync();
 
-  await buildBackend(argv);
+  await buildBackend({ verbose: argv.verbose });
 }

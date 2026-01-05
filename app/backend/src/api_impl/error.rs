@@ -6,6 +6,11 @@
 
 use std::{error::Error, fmt::Debug};
 
+use aws_sdk_dynamodb::{
+    error::SdkError,
+    operation::{get_item::GetItemError, query::QueryError},
+};
+
 /// Main error type for API operations
 ///
 /// This enum consolidates different categories of errors that can occur during
@@ -53,4 +58,9 @@ impl std::fmt::Display for ApiError {
             ApiError::DynamoError(error) => write!(f, "SDK Error {}", error),
         }
     }
+}
+
+pub enum DynamoServiceError {
+    QueryError(SdkError<QueryError>),
+    GetItemError(SdkError<GetItemError>),
 }
