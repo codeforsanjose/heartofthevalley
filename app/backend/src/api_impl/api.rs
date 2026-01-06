@@ -15,7 +15,12 @@ use openapi::{
     models,
 };
 
-use crate::api_impl::error::ApiError;
+use crate::api_impl::{
+    dynamo::features::get_by_id::{GetFeatureByIdError, get_feature_by_id},
+    error::ApiError,
+};
+
+use super::error::DynamoServiceError;
 
 /// Main API implementation struct containing shared resources
 ///
@@ -62,7 +67,7 @@ impl Default<ApiError> for ApiImpl {
             return Err(ApiError::IncorrectMethodError);
         }
 
-        let feature = crate::api_impl::dynamo::features::get_by_id::get_feature_by_id(
+        let feature = get_feature_by_id(
             &self.client,
             &path_params.feature_id,
             &query_params.projection_expression,
@@ -70,10 +75,10 @@ impl Default<ApiError> for ApiImpl {
         )
         .await
         .map_err(|e| match e {
-            crate::api_impl::dynamo::features::get_by_id::GetFeatureByIdError::RequestError(sdk_err) => {
-                ApiError::DynamoError(Box::new(sdk_err))
+            GetFeatureByIdError::RequestError(sdk_err) => {
+                ApiError::DynamoError(DynamoServiceError::GetItemError(sdk_err))
             }
-            crate::api_impl::dynamo::features::get_by_id::GetFeatureByIdError::DataIntegrityError => ApiError::DataIntegrityError,
+            GetFeatureByIdError::DataIntegrityError => ApiError::DataIntegrityError,
         })?;
 
         match feature {
@@ -115,7 +120,7 @@ impl Default<ApiError> for ApiImpl {
         .await
         .map_err(|e| match e {
             crate::api_impl::dynamo::features::list_features::ListFeaturesError::RequestError(sdk_err) => {
-                ApiError::DynamoError(Box::new(sdk_err))
+                ApiError::DynamoError(DynamoServiceError::QueryError(sdk_err))
             }
             crate::api_impl::dynamo::features::list_features::ListFeaturesError::DataIntegrityError => ApiError::DataIntegrityError,
         })?;
