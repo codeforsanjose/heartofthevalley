@@ -34,7 +34,7 @@ services:
       watch:
         - path: app/backend
           action: sync
-          target: /app
+          target: /app/backend
     depends_on:
       db_init:
         condition: service_completed_successfully
@@ -45,13 +45,12 @@ services:
       - AWS_SECRET_ACCESS_KEY=local
       - AWS_REGION=us-west-2
       - DYNAMODB_ENDPOINT=http://db:8000
-    command: >
-      sh -c "air"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/ping"]
       interval: 5s
       timeout: 2s
       retries: 5
+      start_period: 150s
   db:
     image: amazon/dynamodb-local
     command: "-jar DynamoDBLocal.jar -sharedDb"

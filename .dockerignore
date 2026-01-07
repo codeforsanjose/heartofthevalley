@@ -1,4 +1,5 @@
-app/backend/api/
+app/backend/openapi/
+app/backend/target/
 
 node_modules/
 app/frontend/lib/api-client*

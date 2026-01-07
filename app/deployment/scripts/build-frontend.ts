@@ -1,11 +1,4 @@
-import {
-  copyFileSync,
-  cpSync,
-  existsSync,
-  mkdirSync,
-  renameSync,
-  rmSync,
-} from "fs";
+import { existsSync, mkdirSync, renameSync, rmSync } from "fs";
 import path from "path";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
