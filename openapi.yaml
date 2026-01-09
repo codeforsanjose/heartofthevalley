@@ -17,6 +17,8 @@ components:
           type: string
         address:
           type: string
+        approved:
+          type: boolean
         artist:
           type: string
         artistUrl:
@@ -27,13 +29,9 @@ components:
           type: string
         description:
           type: string
-        enabled:
-          type: boolean
         facility:
           type: string
         imagePath:
-          type: string
-        isActive:
           type: string
         latLong:
           type: array
@@ -62,6 +60,31 @@ components:
           type: string
       required:
         - features
+    SubmitFeatureRequestBody:
+      type: object
+      properties:
+        artist:
+          type: string
+        artistUrl:
+          type: string
+        artType:
+          type: string
+        description:
+          type: string
+        latLong:
+          type: array
+          items:
+            type: string
+        partnership:
+          type: string
+        title:
+          type: string
+      required:
+        - artist
+        - artType
+        - description
+        - latLong
+        - title
 paths:
   /features:
     get:
@@ -87,6 +110,19 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ListFeaturesResponse"
+    # post:
+    #   summary: Submit a new feature for approval
+    #   operationId: submitFeature
+    #   requestBody:
+    #     description: Feature object that needs to be added
+    #     required: true
+    #     content:
+    #       application/json:
+    #         schema:
+    #           $ref: "#/components/schemas/SubmitFeatureRequestBody"
+    #   responses:
+    #     "201":
+    #       description: Feature submitted successfully
   /features/{featureId}:
     get:
       summary: Get a feature by ID

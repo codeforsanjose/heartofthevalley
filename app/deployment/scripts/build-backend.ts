@@ -37,8 +37,6 @@ export const buildBackend = async (cfgOverride: BuildBackendConfig) => {
   if (verbose) {
     console.log("Building backend...");
   }
-
-  // Call the backend build script
   const buildArgs = verbose ? ["--verbose"] : [];
   const buildResult = spawnSync(backendBuildScript, buildArgs, {
     stdio: verbose ? "inherit" : "pipe",

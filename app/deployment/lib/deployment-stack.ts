@@ -2,7 +2,6 @@ import * as cdk from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { HeartOfTheValleyBucket } from "./HeartOfTheValleyBucket";
 import path from "path";
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
 
 export class HeartOfTheValleyStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -51,24 +50,6 @@ export class HeartOfTheValleyStack extends cdk.Stack {
 
     table.grantReadWriteData(apiHandler);
 
-    // const frontendHandler = new cdk.aws_lambda.Function(
-    //   this,
-    //   "HeartOfValleyFrontendHandler",
-    //   {
-    //     runtime: cdk.aws_lambda.Runtime.NODEJS_22_X,
-    //     code: cdk.aws_lambda.Code.fromAsset(
-    //       path.resolve(__dirname, "../dist/frontend")
-    //     ),
-    //     handler: "server/index.handler",
-    //     memorySize: 512,
-    //     timeout: cdk.Duration.seconds(10),
-    //   }
-    // );
-
-    // const url = frontendHandler.addFunctionUrl({
-    //   authType: cdk.aws_lambda.FunctionUrlAuthType.NONE,
-    // });
-
     const frontendBucket = new cdk.aws_s3.Bucket(
       this,
       "HeartOfValleyFrontendBucket",
@@ -81,21 +62,18 @@ export class HeartOfTheValleyStack extends cdk.Stack {
       }
     );
 
-    const cdn = new cdk.aws_cloudfront.Distribution(
-      this,
-      "HeartOfValleyFrontendCdn",
-      {
-        defaultBehavior: {
-          origin: new cdk.aws_cloudfront_origins.S3StaticWebsiteOrigin(
-            frontendBucket
-          ),
-          viewerProtocolPolicy:
-            cdk.aws_cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-        },
-      }
-    );
+    new cdk.aws_cloudfront.Distribution(this, "HeartOfValleyFrontendCdn", {
+      defaultBehavior: {
+        origin: new cdk.aws_cloudfront_origins.S3StaticWebsiteOrigin(
+          frontendBucket
+        ),
+        viewerProtocolPolicy:
+          cdk.aws_cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        cachePolicy: cdk.aws_cloudfront.CachePolicy.CACHING_DISABLED,
+      },
+    });
 
-    new cdk.aws_apigatewayv2.HttpApi(this, "HeartOfValleyApi", {
+    const api = new cdk.aws_apigatewayv2.HttpApi(this, "HeartOfValleyApi", {
       defaultIntegration:
         new cdk.aws_apigatewayv2_integrations.HttpLambdaIntegration(
           "HeartOfValleyIntegration",
@@ -114,7 +92,7 @@ export class HeartOfTheValleyStack extends cdk.Stack {
         {
           StringLike: {
             "token.actions.githubusercontent.com:sub": [
-              `repo:codeforsanjose/heartofthevalley:ref:refs/heads/main`, // TODO: change main to dynamic value
+              `repo:codeforsanjose/heartofthevalley:ref:refs/heads/main`,
               `repo:codeforsanjose/heartofthevalley:ref:refs/heads/infinite-scroll`,
               `repo:codeforsanjose/heartofthevalley:ref:refs/heads/staging`,
             ],
@@ -155,12 +133,12 @@ export class HeartOfTheValleyStack extends cdk.Stack {
       },
     });
 
-    // new cdk.CfnOutput(this, "FrontendUrl", {
-    //   value: url.url,
-    // });
-
     new cdk.CfnOutput(this, "FrontendBucketName", {
       value: frontendBucket.bucketName,
+    });
+
+    new cdk.CfnOutput(this, "ApiUrl", {
+      value: api.apiEndpoint,
     });
   }
 }

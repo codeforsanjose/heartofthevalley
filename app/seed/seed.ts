@@ -41,31 +41,7 @@ try {
     await dynamo.send(
       new BatchWriteCommand({
         RequestItems: {
-          MyTable: chunk.map((item) => ({
-            PutRequest: {
-              Item: {
-                PK: `FEATURE`,
-                SK: `FEATURE#${Bun.randomUUIDv7()}`,
-                title: item.Title,
-                artType: item["Art Type"],
-                facility: item.Facility,
-                artist: item.Artist,
-                artistUrl: item["Artist Profile URL"],
-                partnership: item.Partnership,
-                description: item.Description,
-                address: item.Address,
-                city: item.City,
-                state: item.State,
-                postalCode: item["Postal Code"],
-                sourceUrlText: item["Source URL Text"],
-                sourceUrl: item["Source URL "],
-                latLong: item.latLong,
-                isActive: item.isActive,
-                imagePath: item.imagePath,
-                enabled: item.enabled,
-              },
-            },
-          })),
+          MyTable: chunk.map((Item) => ({ PutRequest: { Item } })),
         },
       })
     );

@@ -1,7 +1,5 @@
 import { existsSync, mkdirSync, renameSync, rmSync } from "fs";
 import path from "path";
-import yargs from "yargs";
-import { hideBin } from "yargs/helpers";
 
 type BuildFrontendConfig = {
   verbose?: boolean;
@@ -11,14 +9,16 @@ const defaultConfig: Required<BuildFrontendConfig> = {
   verbose: false,
 };
 
-export const buildFrontend = async (cfgOverride: BuildFrontendConfig) => {
+export const buildFrontend = async (
+  apiUrl: string,
+  cfgOverride: BuildFrontendConfig
+) => {
   const cfg = { ...defaultConfig, ...cfgOverride };
   const { verbose } = cfg;
   if (verbose) {
     console.log("Starting frontend build with configuration:", cfg);
   }
 
-  // Install dependencies
   const installProcess = Bun.spawnSync({
     cmd: ["bun", "install"],
     cwd: path.resolve(__dirname, "../../frontend"),
@@ -27,6 +27,7 @@ export const buildFrontend = async (cfgOverride: BuildFrontendConfig) => {
     env: {
       ...process.env,
       API_SPEC: path.resolve(__dirname, "../../../openapi.yaml"),
+      API_URL: apiUrl,
       NODE_ENV: "production",
     },
   });
@@ -50,6 +51,7 @@ export const buildFrontend = async (cfgOverride: BuildFrontendConfig) => {
     env: {
       ...process.env,
       API_SPEC: path.resolve(__dirname, "../../../openapi.yaml"),
+      API_URL: apiUrl,
       NODE_ENV: "production",
     },
   });
@@ -71,30 +73,4 @@ export const buildFrontend = async (cfgOverride: BuildFrontendConfig) => {
     console.log(`Built frontend moved to ${outPath}`);
     console.log("Frontend build completed successfully.");
   }
-
-  // // Copy node_modules to dist for server-side rendering
-  // const nodeModulesSrc = path.resolve(__dirname, "../../frontend/node_modules");
-  // const nodeModulesDest = path.resolve(
-  //   __dirname,
-  //   "../dist/frontend/node_modules"
-  // );
-  // if (existsSync(nodeModulesDest))
-  //   rmSync(nodeModulesDest, { force: true, recursive: true });
-  // cpSync(nodeModulesSrc, nodeModulesDest, { recursive: true });
-  // if (verbose) {
-  //   console.log(`node_modules moved to ${nodeModulesDest}`);
-  // }
 };
-
-if (require.main === module) {
-  const argv = yargs(hideBin(process.argv))
-    .option("verbose", {
-      type: "boolean",
-      description: "Enable verbose output",
-      default: false,
-      alias: "v",
-    })
-    .parseSync();
-
-  await buildFrontend(argv);
-}
