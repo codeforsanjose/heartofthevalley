@@ -76,6 +76,10 @@ pub fn try_map_item_to_feature(
             .map(|av| av.as_s())
             .transpose()?
             .map(|s| s.to_string()),
+        approved: item
+            .get("approved")
+            .map(|av| av.as_bool().copied())
+            .transpose()?,
         art_type: item
             .get("artType")
             .map(|av| av.as_s())
@@ -96,10 +100,6 @@ pub fn try_map_item_to_feature(
             .map(|av| av.as_s())
             .transpose()?
             .map(|s| s.to_string()),
-        enabled: item
-            .get("enabled")
-            .map(|av| av.as_bool().copied())
-            .transpose()?,
         facility: item
             .get("facility")
             .map(|av| av.as_s())
@@ -147,11 +147,6 @@ pub fn try_map_item_to_feature(
             .map(|s| s.to_string()),
         source_url_text: item
             .get("sourceUrlText")
-            .map(|av| av.as_s())
-            .transpose()?
-            .map(|s| s.to_string()),
-        is_active: item
-            .get("isActive")
             .map(|av| av.as_s())
             .transpose()?
             .map(|s| s.to_string()),

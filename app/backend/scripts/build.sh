@@ -17,8 +17,8 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-if ! command -v cargo >/dev/null 2>&1; then
-  echo "❌ cargo is required but not installed."
+if ! command -v docker >/dev/null 2>&1; then
+  echo "❌ docker is required but not installed."
   exit 1
 fi
 
@@ -29,10 +29,27 @@ if [ "$VERBOSE" = true ]; then
   echo "Generating OpenAPI code..."
   "$SCRIPT_DIR/openapi-generate.sh" --verbose
   echo "Building Rust project..."
-  cargo build --release --manifest-path "$CARGO_TOML_PATH"
+  # cargo build --release --manifest-path "$CARGO_TOML_PATH" --target "$TARGET"
+  docker run --rm \
+  -v "$SCRIPT_DIR/..":/app \
+  -w /app \
+  amazonlinux:2023 \
+  bash -c "
+    dnf install -y gcc gcc-c++ openssl-devel rust cargo &&
+    cargo build --release
+  "
 else
   "$SCRIPT_DIR/openapi-generate.sh"
-  cargo build --release --manifest-path "$CARGO_TOML_PATH" > /dev/null 2>&1
+  # cargo build --release --manifest-path "$CARGO_TOML_PATH" --target "$TARGET" > /dev/null 2>&1
+  docker run --rm \
+  -v "$SCRIPT_DIR/..":/app \
+  -w /app \
+  amazonlinux:2023 \
+  bash -c "
+    dnf install -y gcc gcc-c++ openssl-devel rust cargo &&
+    cargo build --release
+  " > /dev/null 2>&1
 fi
 
 echo "✅ Build completed successfully"
+exit 0

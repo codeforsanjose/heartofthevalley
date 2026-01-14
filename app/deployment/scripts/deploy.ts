@@ -6,16 +6,20 @@ import { deployBackend } from "./deploy-backend";
 import { deployStaticSite } from "./deploy-static-site";
 
 type DeploymentOptions = {
+  requireApproval: boolean;
   verbose: boolean;
 };
 
 export const deploy = async (opts: DeploymentOptions) => {
-  const { verbose } = opts;
+  const { requireApproval, verbose } = opts;
 
   await buildBackend({ verbose });
-  const frontendBucketUrl = await deployBackend({ verbose });
-  await buildFrontend({ verbose });
-  await deployStaticSite(frontendBucketUrl, { verbose });
+  const { apiUrl, s3BucketUri } = await deployBackend({
+    requireApproval,
+    verbose,
+  });
+  await buildFrontend(apiUrl, { verbose });
+  await deployStaticSite(s3BucketUri, { verbose });
 
   if (verbose) {
     console.log("Deployment completed successfully.");
@@ -24,6 +28,11 @@ export const deploy = async (opts: DeploymentOptions) => {
 
 if (require.main === module) {
   const argv = yargs(hideBin(process.argv))
+    .option("require-approval", {
+      type: "boolean",
+      description: "Require approval for security-related changes",
+      default: true,
+    })
     .option("verbose", {
       type: "boolean",
       description: "Enable verbose output",

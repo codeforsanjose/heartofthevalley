@@ -1,26 +1,32 @@
-export const deployBackend = async ({
-  verbose,
-}: {
+type BackendDeploymentConfig = {
+  requireApproval: boolean;
   verbose: boolean;
-}): Promise<`s3://${string}`> => {
+};
+
+export const deployBackend = async ({
+  requireApproval,
+  verbose,
+}: BackendDeploymentConfig): Promise<{
+  s3BucketUri: `s3://${string}`;
+  apiUrl: string;
+}> => {
   if (verbose) {
     console.log("Deploying backend...");
   }
 
-  // Use AWS CDK to deploy the backend infrastructure
-
-  const deployProcess = Bun.spawn(
-    ["cdk", "deploy", "--require-approval=never"],
-    {
-      stdout: "inherit",
-      stderr: "inherit",
-    }
-  );
-
-  // Wait for the deployment process to complete
+  const deployArgs = ["cdk", "deploy"];
+  if (!requireApproval) {
+    deployArgs.push("--require-approval=never");
+  }
+  if (verbose) {
+    deployArgs.push("--verbose");
+  }
+  const deployProcess = Bun.spawn(deployArgs, {
+    stdout: verbose ? "inherit" : "pipe",
+    stderr: verbose ? "inherit" : "pipe",
+  });
   const exitCode = await deployProcess.exited;
 
-  // Check if the deployment was successful
   if (exitCode !== 0) {
     throw new Error(`Deployment failed with exit code ${exitCode}`);
   }
@@ -28,7 +34,6 @@ export const deployBackend = async ({
     console.log("Backend deployed successfully.");
   }
 
-  // Get stack oututs
   const stackOutputsProcess = Bun.spawn(
     [
       "aws",
@@ -47,9 +52,13 @@ export const deployBackend = async ({
   const outputsJson = await stackOutputsProcess.stdout.text();
   const outputs = JSON.parse(outputsJson);
 
-  return `s3://${
-    outputs.Stacks[0].Outputs.find(
-      (o: any) => o.OutputKey === "FrontendBucketName"
-    ).OutputValue
-  }`;
+  return {
+    s3BucketUri: `s3://${
+      outputs.Stacks[0].Outputs.find(
+        (o: any) => o.OutputKey === "FrontendBucketName"
+      ).OutputValue
+    }`,
+    apiUrl: outputs.Stacks[0].Outputs.find((o: any) => o.OutputKey === "ApiUrl")
+      .OutputValue,
+  };
 };
