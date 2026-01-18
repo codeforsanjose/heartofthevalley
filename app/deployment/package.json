@@ -5,7 +5,6 @@
     "deployment": "bin/deployment.js"
   },
   "scripts": {
-    "build": "bun run scripts/build.ts",
     "deploy": "bun run scripts/deploy.ts",
     "test": "jest",
     "cdk": "cdk"

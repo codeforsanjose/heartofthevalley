@@ -22,12 +22,14 @@ export const buildBackend = async (cfgOverride: BuildBackendConfig) => {
 
   // Set up paths
   const projectRoot = path.resolve(__dirname, "../../..");
-  const backendScriptDir = path.join(projectRoot, "app/backend/scripts");
   const distDir = path.join(projectRoot, "app/deployment/dist");
-  const backendBuildScript = path.join(backendScriptDir, "build.sh");
+  const backendBuildScript = path.join(
+    projectRoot,
+    "app/backend/xtask/build_project.rs",
+  );
   const sourceBinary = path.join(
     projectRoot,
-    "app/backend/target/release/backend"
+    "app/backend/target/release/backend",
   );
   const targetBinary = path.join(distDir, "backend/bootstrap");
 
@@ -38,14 +40,19 @@ export const buildBackend = async (cfgOverride: BuildBackendConfig) => {
     console.log("Building backend...");
   }
   const buildArgs = verbose ? ["--verbose"] : [];
-  const buildResult = spawnSync(backendBuildScript, buildArgs, {
-    stdio: verbose ? "inherit" : "pipe",
-    encoding: "utf8",
-  });
+  const buildResult = spawnSync(
+    "cargo",
+    ["run", "--bin", "build_project", "--", ...buildArgs],
+    {
+      cwd: path.join(projectRoot, "app/backend/xtask"),
+      stdio: verbose ? "inherit" : "pipe",
+      encoding: "utf8",
+    },
+  );
 
   if (buildResult.error) {
     throw new Error(
-      `Failed to execute backend build script: ${buildResult.error.message}`
+      `Failed to execute backend build script: ${buildResult.error.message}`,
     );
   }
 
@@ -53,7 +60,7 @@ export const buildBackend = async (cfgOverride: BuildBackendConfig) => {
     const errorOutput =
       buildResult.stderr || buildResult.stdout || "Unknown error";
     throw new Error(
-      `Backend build script failed with status ${buildResult.status}: ${errorOutput}`
+      `Backend build script failed with status ${buildResult.status}: ${errorOutput}`,
     );
   }
 
@@ -68,7 +75,7 @@ export const buildBackend = async (cfgOverride: BuildBackendConfig) => {
     throw new Error(
       `Failed to copy backend binary: ${
         error instanceof Error ? error.message : String(error)
-      }`
+      }`,
     );
   }
 
