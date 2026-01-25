@@ -1,0 +1,40 @@
+type: object
+properties:
+  PK:
+    type: string
+  SK:
+    type: string
+  address:
+    type: string
+  approved:
+    type: boolean
+  artist:
+    type: string
+  artistUrl:
+    type: string
+  artType:
+    type: string
+  city:
+    type: string
+  description:
+    type: string
+  facility:
+    type: string
+  imagePath:
+    type: string
+  latLong:
+    type: array
+    items:
+      type: string
+  partnership:
+    type: string
+  postalCode:
+    type: string
+  sourceUrl:
+    type: string
+  sourceUrlText:
+    type: string
+  state:
+    type: string
+  title:
+    type: string

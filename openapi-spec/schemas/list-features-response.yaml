@@ -1,0 +1,10 @@
+type: object
+properties:
+  features:
+    type: array
+    items:
+      $ref: "./feature.yaml"
+  lastFeatureId:
+    type: string
+required:
+  - features

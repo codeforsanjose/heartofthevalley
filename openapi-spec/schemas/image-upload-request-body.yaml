@@ -1,0 +1,7 @@
+type: object
+properties:
+  contentType:
+    type: string
+    description: The MIME type of the file
+required:
+  - contentType

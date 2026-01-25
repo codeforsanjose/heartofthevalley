@@ -1,0 +1,38 @@
+get:
+  summary: List features
+  operationId: listFeatures
+  parameters:
+    - name: lastFeatureId
+      in: query
+      description: The ID of the last evaluated feature for pagination.
+      required: false
+      schema:
+        type: string
+    - name: projectionExpression
+      in: query
+      description: A comma-separated list of attributes to include in the response.
+      required: false
+      schema:
+        type: string
+  responses:
+    "200":
+      description: A list of features
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/list-features-response.yaml"
+# post:
+#   summary: Submit a new feature for approval
+#   operationId: submitFeature
+#   requestBody:
+#     description: Feature object that needs to be added
+#     required: true
+#     content:
+#       application/json:
+#         schema:
+#           $ref: "#/components/schemas/SubmitFeatureRequestBody"
+#   responses:
+#     "201":
+#       description: Feature submitted successfully
+#     "400":
+#       description: Invalid input
