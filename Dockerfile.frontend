@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY ./app/frontend . 
 
-COPY ./openapi.yaml .
+COPY ./openapi-spec ./openapi-spec
 
-RUN API_SPEC=./openapi.yaml bun i
+RUN API_SPEC=./openapi-spec/openapi.yaml API_URL=backend:8080 bun i

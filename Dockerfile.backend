@@ -1,9 +1,9 @@
 
 FROM openapitools/openapi-generator-cli:v7.18.0 AS generate
 
-COPY ./openapi.yaml .
+COPY ./openapi-spec ./openapi-spec
 
-RUN openapi-generator-cli generate -i openapi.yaml -g rust-axum -o /local/openapi
+RUN openapi-generator-cli generate -i ./openapi-spec/openapi.yaml -g rust-axum -o /local/openapi
 
 FROM rust:1.92.0-alpine3.23
 
@@ -17,4 +17,4 @@ COPY --from=generate /local/openapi /app/backend/openapi
 
 WORKDIR /app/backend
 
-CMD ["cargo", "watch", "-x", "run"]
+CMD ["cargo", "run"]

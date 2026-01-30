@@ -11,7 +11,7 @@ const defaultConfig: Required<BuildFrontendConfig> = {
 
 export const buildFrontend = async (
   apiUrl: string,
-  cfgOverride: BuildFrontendConfig
+  cfgOverride: BuildFrontendConfig,
 ) => {
   const cfg = { ...defaultConfig, ...cfgOverride };
   const { verbose } = cfg;
@@ -22,22 +22,20 @@ export const buildFrontend = async (
   const installProcess = Bun.spawnSync({
     cmd: ["bun", "install"],
     cwd: path.resolve(__dirname, "../../frontend"),
-    stdout: "pipe",
-    stderr: "pipe",
+    stdout: verbose ? "inherit" : "pipe",
+    stderr: verbose ? "inherit" : "pipe",
     env: {
       ...process.env,
-      API_SPEC: path.resolve(__dirname, "../../../openapi.yaml"),
+      API_SPEC: path.resolve(__dirname, "../../../openapi-spec/openapi.yaml"),
       API_URL: apiUrl,
       NODE_ENV: "production",
     },
   });
-  if (verbose) {
-    console.log("Install process output:", installProcess.stdout.toString());
-  }
+
   if (installProcess.exitCode !== 0) {
     console.error(
       "Dependency installation failed with error:",
-      installProcess.stderr.toString()
+      installProcess.stderr?.toString(),
     );
     throw new Error("Frontend build failed");
   }
@@ -46,20 +44,17 @@ export const buildFrontend = async (
   const buildProcess = Bun.spawnSync({
     cmd: ["bun", "run", "build"],
     cwd: path.resolve(__dirname, "../../frontend"),
-    stdout: "pipe",
-    stderr: "pipe",
+    stdout: verbose ? "inherit" : "pipe",
+    stderr: verbose ? "inherit" : "pipe",
     env: {
       ...process.env,
-      API_SPEC: path.resolve(__dirname, "../../../openapi.yaml"),
+      API_SPEC: path.resolve(__dirname, "../../../openapi-spec/openapi.yaml"),
       API_URL: apiUrl,
       NODE_ENV: "production",
     },
   });
-  if (verbose) {
-    console.log("Build process output:", buildProcess.stdout.toString());
-  }
   if (buildProcess.exitCode !== 0) {
-    console.error("Build failed with error:", buildProcess.stderr.toString());
+    console.error("Build failed with error:", buildProcess.stderr?.toString());
     throw new Error("Frontend build failed");
   }
 
@@ -71,6 +66,7 @@ export const buildFrontend = async (
   renameSync(currentPath, outPath);
   if (verbose) {
     console.log(`Built frontend moved to ${outPath}`);
-    console.log("Frontend build completed successfully.");
   }
+
+  console.log("Frontend build completed successfully.");
 };

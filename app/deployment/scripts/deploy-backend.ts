@@ -21,13 +21,16 @@ export const deployBackend = async ({
   if (verbose) {
     deployArgs.push("--verbose");
   }
-  const deployProcess = Bun.spawn(deployArgs, {
+  const deployProcess = Bun.spawnSync(deployArgs, {
     stdout: verbose ? "inherit" : "pipe",
     stderr: verbose ? "inherit" : "pipe",
   });
-  const exitCode = await deployProcess.exited;
+  const exitCode = deployProcess.exitCode;
 
   if (exitCode !== 0) {
+    console.error(
+      deployProcess.stderr?.toString() || deployProcess.stdout?.toString(),
+    );
     throw new Error(`Deployment failed with exit code ${exitCode}`);
   }
   if (verbose) {
@@ -41,21 +44,22 @@ export const deployBackend = async ({
       "describe-stacks",
       `--stack-name=HeartOfTheValleyStack${process.env.DEPLOYMENT_SUFFIX}`,
     ],
-    { stdout: "pipe", stderr: "pipe" }
+    { stdout: "pipe", stderr: "pipe" },
   );
   const outputsExitCode = await stackOutputsProcess.exited;
   if (outputsExitCode !== 0) {
     throw new Error(
-      `Failed to get stack outputs with exit code ${outputsExitCode}`
+      `Failed to get stack outputs with exit code ${outputsExitCode}`,
     );
   }
   const outputsJson = await stackOutputsProcess.stdout.text();
   const outputs = JSON.parse(outputsJson);
 
+  console.log("✅ Backend deployment completed successfully");
   return {
     s3BucketUri: `s3://${
       outputs.Stacks[0].Outputs.find(
-        (o: any) => o.OutputKey === "FrontendBucketName"
+        (o: any) => o.OutputKey === "FrontendBucketName",
       ).OutputValue
     }`,
     apiUrl: outputs.Stacks[0].Outputs.find((o: any) => o.OutputKey === "ApiUrl")
