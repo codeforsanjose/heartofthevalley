@@ -3,8 +3,6 @@ services:
     build:
       dockerfile: Dockerfile.frontend
     environment:
-      - API_SPEC=./openapi.yaml
-      - API_URL=http://backend:8080
       - NODE_ENV=production
     depends_on:
       backend:
@@ -17,9 +15,9 @@ services:
         - path: app/frontend/node_modules
           action: rebuild
           target: /app/node_modules
-        - path: openapi.yaml
+        - path: openapi-spec/openapi.yaml
           action: sync+restart
-          target: /app/openapi.yaml
+          target: /app/openapi-spec/openapi.yaml
     ports:
       - "3000:3000"
     command: >
@@ -33,8 +31,10 @@ services:
     develop:
       watch:
         - path: app/backend
-          action: sync
+          action: sync+restart
           target: /app/backend
+        - path: openapi-spec/openapi.yaml
+          action: rebuild
     depends_on:
       db_init:
         condition: service_completed_successfully
