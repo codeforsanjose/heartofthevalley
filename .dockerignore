@@ -1,6 +1,7 @@
 app/backend/openapi/
 app/backend/target/
 app/backend/xtask/target/
+app/backend/.env
 
 node_modules/
 app/frontend/lib/api-client*

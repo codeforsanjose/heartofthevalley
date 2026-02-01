@@ -3,9 +3,9 @@ properties:
   presignedUrl:
     type: string
     description: The presigned URL for uploading the image to S3
-  imageKey:
-    type: string
-    description: The S3 key where the image will be stored
+  # imageKey:
+  #   type: string
+  #   description: The S3 key where the image will be stored
 required:
   - presignedUrl
   - imageKey

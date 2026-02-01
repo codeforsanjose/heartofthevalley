@@ -1,0 +1,19 @@
+post:
+  summary: Request a presigned URL for image upload
+  operationId: requestImageUploadUrl
+  # requestBody:
+  #   description: Image upload request details
+  #   required: true
+  #   content:
+  #     application/json:
+  #       schema:
+  #         $ref: "../schemas/image-upload-request-body.yaml"
+  responses:
+    "200":
+      description: Presigned URL generated successfully
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/image-upload-response.yaml"
+    "400":
+      description: Invalid request

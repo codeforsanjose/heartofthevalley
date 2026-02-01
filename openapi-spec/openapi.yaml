@@ -67,23 +67,5 @@ paths:
                 $ref: "#/components/schemas/Feature"
         "404":
           description: Feature not found
-  # /features/image-url:
-  #   post:
-  #     summary: Request a presigned URL for image upload
-  #     operationId: requestImageUploadUrl
-  #     requestBody:
-  #       description: Image upload request details
-  #       required: true
-  #       content:
-  #         application/json:
-  #           schema:
-  #             $ref: "#/components/schemas/ImageUploadRequestBody"
-  #     responses:
-  #       "200":
-  #         description: Presigned URL generated successfully
-  #         content:
-  #           application/json:
-  #             schema:
-  #               $ref: "#/components/schemas/ImageUploadResponse"
-  #       "400":
-  #         description: Invalid request
+  /features/image-url:
+    $ref: "./paths/features-image-url.yaml"

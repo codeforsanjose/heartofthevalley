@@ -1,33 +1,38 @@
 //! API implementation for Heart of the Valley features service
 //!
-//! This module provides the concrete implementation of the OpenAPI-generated
-//! traits, handling HTTP requests and delegating to appropriate data layer
-//! operations. It serves as the bridge between HTTP transport and business logic.
+//! Concrete implementation of OpenAPI-generated traits that handles HTTP requests
+//! and delegates to data layer operations.
 
 use async_trait::async_trait;
 use axum_extra::extract::{CookieJar, Host};
 use http::Method;
 use openapi::{
-    apis::default::{Default, GetFeatureByIdResponse, ListFeaturesResponse},
-    models,
+    apis::default::{
+        Default, GetFeatureByIdResponse, ListFeaturesResponse, RequestImageUploadUrlResponse,
+    },
+    models::{self, ImageUploadResponse},
 };
 
-use crate::api_impl::{
-    dynamo::features::get_by_id::{GetFeatureByIdError, get_feature_by_id},
-    error::ApiError,
-};
+use crate::api_impl::s3::PresignedUploadUrlError;
 
-use super::error::DynamoServiceError;
+use super::dynamo::features::get_by_id::{GetFeatureByIdError, get_feature_by_id};
+use super::dynamo::features::list_features::ListFeaturesError;
+use super::error::ApiError;
+use super::error::aws_sdk_error::AWSSdkError;
+use super::s3::presigned_url;
 
-/// Main API implementation struct containing shared resources
-///
-/// This struct holds the dependencies needed across all API endpoints,
-/// including the DynamoDB client and configuration. It implements the
-/// OpenAPI-generated traits to provide actual business logic.
+/// API implementation with shared DynamoDB client and configuration
 #[derive(Clone)]
 pub struct ApiImpl {
     /// DynamoDB client for database operations
-    pub client: aws_sdk_dynamodb::Client,
+    pub dynamo_db_client: aws_sdk_dynamodb::Client,
+
+    /// Name of the S3 bucket for image uploads
+    pub image_bucket_name: String,
+
+    /// S3 client for image upload operations
+    pub s3_client: aws_sdk_s3::Client,
+
     /// Name of the DynamoDB table storing features data
     pub table_name: String,
 }
@@ -35,37 +40,20 @@ pub struct ApiImpl {
 /// Implementation of the Default trait providing the core API endpoints
 #[async_trait]
 impl Default<ApiError> for ApiImpl {
-    /// Retrieves a single feature by its unique identifier
+    /// Retrieves a feature by ID with optional field projection
     ///
-    /// This endpoint provides efficient single-item lookup using DynamoDB's
-    /// primary key access pattern. It supports optional field projection
-    /// to minimize data transfer and improve performance.
-    ///
-    /// # HTTP Method Validation
-    ///
-    /// Only GET requests are accepted. Other HTTP methods return 405 Method Not Allowed
-    /// to comply with REST conventions and prevent unintended operations.
-    ///
-    /// # Error Handling
-    ///
-    /// - DynamoDB errors are wrapped and logged for debugging while returning generic 500 responses
-    /// - Data integrity issues (malformed data) result in 500 Internal Server Error
-    /// - Missing features return 404 Not Found as expected by REST conventions
+    /// Returns 404 if not found, 405 for non-GET methods, 500 for DynamoDB/data errors
     async fn get_feature_by_id(
         &self,
 
-        method: &Method,
+        _method: &Method,
         _host: &Host,
         _cookies: &CookieJar,
         path_params: &models::GetFeatureByIdPathParams,
         query_params: &models::GetFeatureByIdQueryParams,
     ) -> Result<GetFeatureByIdResponse, ApiError> {
-        if method != &Method::GET {
-            return Err(ApiError::IncorrectMethodError);
-        }
-
         let feature = get_feature_by_id(
-            &self.client,
+            &self.dynamo_db_client,
             &path_params.feature_id,
             &query_params.projection_expression,
             &self.table_name,
@@ -73,7 +61,7 @@ impl Default<ApiError> for ApiImpl {
         .await
         .map_err(|e| match e {
             GetFeatureByIdError::RequestError(sdk_err) => {
-                ApiError::DynamoError(DynamoServiceError::GetItemError(sdk_err))
+                ApiError::AWSSdkError(AWSSdkError::DynamoGetItemError(sdk_err))
             }
             GetFeatureByIdError::DataIntegrityError => ApiError::DataIntegrityError,
         })?;
@@ -84,47 +72,58 @@ impl Default<ApiError> for ApiImpl {
         }
     }
 
-    /// Lists features with pagination and optional field projection
-    ///
-    /// This endpoint provides efficient paginated access to the features collection.
-    /// It supports cursor-based pagination for consistent results even as the
-    /// underlying data changes, and optional field projection for performance optimization.
-    ///
-    /// # Pagination Strategy
-    ///
-    /// Uses cursor-based pagination rather than offset-based to ensure:
-    /// - Consistent results when data is modified during browsing
-    /// - Better performance for large datasets
-    /// - No missing or duplicate items across page boundaries
+    /// Lists features with cursor-based pagination and optional field projection
     async fn list_features(
         &self,
 
-        method: &Method,
+        _method: &Method,
         _host: &Host,
         _cookies: &CookieJar,
         query_params: &models::ListFeaturesQueryParams,
     ) -> Result<ListFeaturesResponse, ApiError> {
-        if method != &Method::GET {
-            return Err(ApiError::IncorrectMethodError);
-        }
-
         let list_response = crate::api_impl::dynamo::features::list_features::list_features(
-            &self.client,
+            &self.dynamo_db_client,
             &query_params.projection_expression,
             &query_params.last_feature_id,
             &self.table_name,
         )
         .await
         .map_err(|e| match e {
-            crate::api_impl::dynamo::features::list_features::ListFeaturesError::RequestError(sdk_err) => {
-                ApiError::DynamoError(DynamoServiceError::QueryError(sdk_err))
+            ListFeaturesError::RequestError(sdk_err) => {
+                ApiError::AWSSdkError(AWSSdkError::DynamoQueryError(sdk_err))
             }
-            crate::api_impl::dynamo::features::list_features::ListFeaturesError::DataIntegrityError => ApiError::DataIntegrityError,
+            ListFeaturesError::DataIntegrityError => ApiError::DataIntegrityError,
         })?;
 
         Ok(ListFeaturesResponse::Status200_AListOfFeatures(
             list_response,
         ))
+    }
+
+    async fn request_image_upload_url(
+        &self,
+
+        _method: &Method,
+        _host: &Host,
+        _cookies: &CookieJar,
+    ) -> Result<RequestImageUploadUrlResponse, ApiError> {
+        let presigned_url = presigned_url(&self.s3_client, &self.image_bucket_name)
+            .await
+            .map_err(|e| match e {
+                PresignedUploadUrlError::PresigningConfigError(presigning_config_err) => panic!(
+                    "Presigning config error should not occur: {:?}",
+                    presigning_config_err
+                ),
+                PresignedUploadUrlError::RequestError(sdk_err) => {
+                    ApiError::AWSSdkError(AWSSdkError::S3PresigningError(sdk_err))
+                }
+            })?;
+
+        Ok(
+            RequestImageUploadUrlResponse::Status200_PresignedURLGeneratedSuccessfully(
+                ImageUploadResponse { presigned_url },
+            ),
+        )
     }
 }
 
