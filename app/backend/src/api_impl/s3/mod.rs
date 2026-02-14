@@ -1,28 +1,21 @@
-use aws_sdk_s3::{
-    error::SdkError,
-    operation::put_object::PutObjectError,
-    presigning::{PresigningConfig, PresigningConfigError},
-};
+use aws_sdk_s3::presigning::PresigningConfig;
 
-pub enum PresignedUploadUrlError {
-    RequestError(SdkError<PutObjectError>),
-    PresigningConfigError(PresigningConfigError),
-}
+use anyhow::Result;
+use uuid::Uuid;
 
 pub async fn presigned_url(
     s3_client: &aws_sdk_s3::Client,
     bucket_name: &str,
-) -> Result<String, PresignedUploadUrlError> {
+    image_key: &Uuid,
+) -> Result<String> {
     let presigning_config = PresigningConfig::builder()
         .expires_in(std::time::Duration::from_secs(900))
-        .build()
-        .map_err(PresignedUploadUrlError::PresigningConfigError)?;
+        .build()?;
     let presigned = s3_client
         .put_object()
         .bucket(bucket_name)
-        .key(uuid::Uuid::new_v4())
+        .key(*image_key)
         .presigned(presigning_config)
-        .await
-        .map_err(PresignedUploadUrlError::RequestError)?;
+        .await?;
     Ok(presigned.uri().to_string())
 }

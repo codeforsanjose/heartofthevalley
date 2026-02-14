@@ -26,7 +26,7 @@ async fn main() {
     let s3_client = S3Client::new(&built_config);
 
     let api_impl = ApiImpl {
-        dynamo_db_client: dynamo_client,
+        dynamodb_client: dynamo_client,
         image_bucket_name: var("IMAGE_BUCKET_NAME")
             .map_err(|e| format!("Error getting IMAGE_BUCKET_NAME: {}", e))
             .unwrap(),

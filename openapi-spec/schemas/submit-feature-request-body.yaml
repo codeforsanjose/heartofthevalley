@@ -1,0 +1,11 @@
+type: object
+properties:
+  latlong:
+    type: array
+    items:
+      type: string
+  imageKey:
+    type: string
+required:
+  - imageKey
+  - latlong

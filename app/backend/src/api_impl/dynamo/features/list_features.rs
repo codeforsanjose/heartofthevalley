@@ -1,16 +1,13 @@
 //! Features listing functionality for DynamoDB operations
 
-use aws_sdk_dynamodb::{
-    config::http::HttpResponse,
-    error::SdkError,
-    operation::query::QueryError,
-    types::AttributeValue::{self, S},
-};
+use aws_sdk_dynamodb::config::http::HttpResponse;
+use aws_sdk_dynamodb::error::SdkError;
+use aws_sdk_dynamodb::operation::query::QueryError;
+use aws_sdk_dynamodb::types::AttributeValue::{self, S};
 use openapi::models::{Feature, ListFeaturesResponse};
 
-use crate::api_impl::{
-    dynamo::features::sanitize_projection_expression, mapping::try_map_item_to_feature,
-};
+use crate::api_impl::dynamo::features::sanitize_projection_expression;
+use crate::api_impl::mapping::try_map_item_to_feature;
 
 /// Error types that can occur during feature listing operations
 #[derive(Debug)]

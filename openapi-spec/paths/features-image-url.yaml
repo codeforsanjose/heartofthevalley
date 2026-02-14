@@ -1,19 +1,23 @@
 post:
-  summary: Request a presigned URL for image upload
+  summary: Request image upload URL from S3
+  description: Generate a presigned URL for uploading an image to S3
   operationId: requestImageUploadUrl
-  # requestBody:
-  #   description: Image upload request details
-  #   required: true
-  #   content:
-  #     application/json:
-  #       schema:
-  #         $ref: "../schemas/image-upload-request-body.yaml"
   responses:
     "200":
-      description: Presigned URL generated successfully
+      description: Presigned S3 upload URL generated successfully
       content:
         application/json:
           schema:
-            $ref: "../schemas/image-upload-response.yaml"
-    "400":
-      description: Invalid request
+            type: object
+            properties:
+              uploadUrl:
+                type: string
+                description: Presigned S3 URL for uploading the image
+              imageKey:
+                type: string
+                description: S3 object key where the image will be stored
+            required:
+              - uploadUrl
+              - imageKey
+    "500":
+      description: Server error

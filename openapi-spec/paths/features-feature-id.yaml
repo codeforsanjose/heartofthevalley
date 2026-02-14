@@ -1,0 +1,25 @@
+get:
+  summary: Get a feature by ID
+  operationId: getFeatureById
+  parameters:
+    - name: featureId
+      in: path
+      description: The ID of the feature to retrieve.
+      required: true
+      schema:
+        type: string
+    - name: projectionExpression
+      in: query
+      description: A comma-separated list of attributes to include in the response.
+      required: false
+      schema:
+        type: string
+  responses:
+    "200":
+      description: A single feature
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/feature.yaml"
+    "404":
+      description: Feature not found

@@ -9,31 +9,6 @@ components:
       $ref: "./schemas/feature.yaml"
     ListFeaturesResponse:
       $ref: "./schemas/list-features-response.yaml"
-    SubmitFeatureRequestBody:
-      type: object
-      properties:
-        artist:
-          type: string
-        artistUrl:
-          type: string
-        artType:
-          type: string
-        description:
-          type: string
-        latLong:
-          type: array
-          items:
-            type: string
-        partnership:
-          type: string
-        title:
-          type: string
-      required:
-        - artist
-        - artType
-        - description
-        - latLong
-        - title
     ImageUploadRequestBody:
       $ref: "./schemas/image-upload-request-body.yaml"
     ImageUploadResponse:
@@ -42,30 +17,6 @@ paths:
   /features:
     $ref: "./paths/features.yaml"
   /features/{featureId}:
-    get:
-      summary: Get a feature by ID
-      operationId: getFeatureById
-      parameters:
-        - name: featureId
-          in: path
-          description: The ID of the feature to retrieve.
-          required: true
-          schema:
-            type: string
-        - name: projectionExpression
-          in: query
-          description: A comma-separated list of attributes to include in the response.
-          required: false
-          schema:
-            type: string
-      responses:
-        "200":
-          description: A single feature
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Feature"
-        "404":
-          description: Feature not found
+    $ref: "./paths/features-feature-id.yaml"
   /features/image-url:
     $ref: "./paths/features-image-url.yaml"

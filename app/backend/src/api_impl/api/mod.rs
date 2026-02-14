@@ -3,29 +3,27 @@
 //! Concrete implementation of OpenAPI-generated traits that handles HTTP requests
 //! and delegates to data layer operations.
 
+use std::collections::HashMap;
+
 use async_trait::async_trait;
+use aws_sdk_dynamodb::types::AttributeValue;
 use axum_extra::extract::{CookieJar, Host};
 use http::Method;
-use openapi::{
-    apis::default::{
-        Default, GetFeatureByIdResponse, ListFeaturesResponse, RequestImageUploadUrlResponse,
-    },
-    models::{self, ImageUploadResponse},
-};
+use openapi::apis::default::{Default, GetFeatureByIdResponse, ListFeaturesResponse};
+use openapi::models;
 
-use crate::api_impl::s3::PresignedUploadUrlError;
+use crate::api_impl::s3::presigned_url;
 
 use super::dynamo::features::get_by_id::{GetFeatureByIdError, get_feature_by_id};
 use super::dynamo::features::list_features::ListFeaturesError;
 use super::error::ApiError;
 use super::error::aws_sdk_error::AWSSdkError;
-use super::s3::presigned_url;
 
 /// API implementation with shared DynamoDB client and configuration
 #[derive(Clone)]
 pub struct ApiImpl {
     /// DynamoDB client for database operations
-    pub dynamo_db_client: aws_sdk_dynamodb::Client,
+    pub dynamodb_client: aws_sdk_dynamodb::Client,
 
     /// Name of the S3 bucket for image uploads
     pub image_bucket_name: String,
@@ -41,8 +39,6 @@ pub struct ApiImpl {
 #[async_trait]
 impl Default<ApiError> for ApiImpl {
     /// Retrieves a feature by ID with optional field projection
-    ///
-    /// Returns 404 if not found, 405 for non-GET methods, 500 for DynamoDB/data errors
     async fn get_feature_by_id(
         &self,
 
@@ -53,7 +49,7 @@ impl Default<ApiError> for ApiImpl {
         query_params: &models::GetFeatureByIdQueryParams,
     ) -> Result<GetFeatureByIdResponse, ApiError> {
         let feature = get_feature_by_id(
-            &self.dynamo_db_client,
+            &self.dynamodb_client,
             &path_params.feature_id,
             &query_params.projection_expression,
             &self.table_name,
@@ -82,7 +78,7 @@ impl Default<ApiError> for ApiImpl {
         query_params: &models::ListFeaturesQueryParams,
     ) -> Result<ListFeaturesResponse, ApiError> {
         let list_response = crate::api_impl::dynamo::features::list_features::list_features(
-            &self.dynamo_db_client,
+            &self.dynamodb_client,
             &query_params.projection_expression,
             &query_params.last_feature_id,
             &self.table_name,
@@ -111,24 +107,66 @@ impl Default<ApiError> for ApiImpl {
         _method: &Method,
         _host: &Host,
         _cookies: &CookieJar,
-    ) -> Result<RequestImageUploadUrlResponse, ApiError> {
-        let presigned_url = presigned_url(&self.s3_client, &self.image_bucket_name)
+    ) -> Result<openapi::apis::default::RequestImageUploadUrlResponse, ApiError> {
+        let image_key = uuid::Uuid::new_v4();
+
+        let url = presigned_url(&self.s3_client, &self.image_bucket_name, &image_key)
             .await
-            .map_err(|e| match e {
-                PresignedUploadUrlError::PresigningConfigError(presigning_config_err) => panic!(
-                    "Presigning config error should not occur: {:?}",
-                    presigning_config_err
-                ),
-                PresignedUploadUrlError::RequestError(sdk_err) => {
-                    ApiError::AWSSdkError(AWSSdkError::S3PresigningError(sdk_err))
-                }
-            })?;
+            .map_err(|e| ApiError::AWSSdkError(AWSSdkError::S3PresigningError(e)))?;
 
         Ok(
-            RequestImageUploadUrlResponse::Status200_PresignedURLGeneratedSuccessfully(
-                ImageUploadResponse { presigned_url },
+            openapi::apis::default::RequestImageUploadUrlResponse::Status200_PresignedS(
+                models::RequestImageUploadUrl200Response {
+                    upload_url: url,
+                    image_key: image_key.to_string(),
+                },
             ),
         )
+    }
+
+    async fn submit_feature(
+        &self,
+
+        _method: &Method,
+        _host: &Host,
+        _cookies: &CookieJar,
+        body: &models::SubmitFeatureRequestBody,
+    ) -> Result<openapi::apis::default::SubmitFeatureResponse, ApiError> {
+        // Use uuid crate to generate a unique feature ID
+        let feature_id = uuid::Uuid::new_v4().to_string();
+
+        let latlong = &body.latlong;
+        let lat = &latlong[0];
+        let long = &latlong[1];
+        let lattribute_value = AttributeValue::S(lat.to_string());
+        let longttribute_value = AttributeValue::S(long.to_string());
+
+        // Define a feature
+        let feature_submission = HashMap::<String, AttributeValue>::from([
+            (
+                "pk".to_string(),
+                AttributeValue::S("FEATURE_SUBMISSION".to_string()),
+            ),
+            ("sk".to_string(), AttributeValue::S(feature_id)),
+            (
+                "latlong".to_string(),
+                AttributeValue::L(vec![lattribute_value, longttribute_value]),
+            ),
+            (
+                "imageKey".to_string(),
+                AttributeValue::S(body.image_key.clone()),
+            ),
+        ]);
+
+        self.dynamodb_client
+            .put_item()
+            .table_name(&self.table_name)
+            .set_item(Some(feature_submission))
+            .send()
+            .await
+            .unwrap(); // TODO: Handle errors properly instead of unwrapping
+
+        Ok(openapi::apis::default::SubmitFeatureResponse::Status201_FeatureSubmittedSuccessfully)
     }
 }
 
