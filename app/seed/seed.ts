@@ -1,51 +1,30 @@
-import { CreateTableCommand, DynamoDB } from "@aws-sdk/client-dynamodb";
-import {
-  BatchWriteCommand,
-  DynamoDBDocumentClient,
-} from "@aws-sdk/lib-dynamodb";
+import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import { S3Client } from "@aws-sdk/client-s3";
+import { DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
-import data from "./heartofvalley-data-updated.json";
+import data from "./heartofvalley-data.json";
+import { batchWriteData } from "./lib/batch-write-data";
+import { createDynamoTable } from "./lib/create-dynamo-table";
+import { createS3Bucket } from "./lib/create-s3-bucket";
+
+const dynamo = DynamoDBDocumentClient.from(
+  new DynamoDBClient({
+    endpoint: process.env.AWS_ENDPOINT,
+  }),
+);
+
+const s3 = new S3Client({
+  endpoint: process.env.AWS_ENDPOINT,
+  forcePathStyle: true,
+});
+
+const seedDynamoDB = async () => {
+  await createDynamoTable(dynamo);
+  await batchWriteData(dynamo, data);
+};
 
 try {
-  const dynamo = DynamoDBDocumentClient.from(
-    new DynamoDB({
-      endpoint: process.env.DYNAMODB_ENDPOINT,
-    })
-  );
-
-  // Ensure the table exists before seeding
-  await dynamo.send(
-    new CreateTableCommand({
-      TableName: "MyTable",
-      KeySchema: [
-        { AttributeName: "PK", KeyType: "HASH" },
-        { AttributeName: "SK", KeyType: "RANGE" },
-      ],
-      AttributeDefinitions: [
-        { AttributeName: "PK", AttributeType: "S" },
-        { AttributeName: "SK", AttributeType: "S" },
-      ],
-      BillingMode: "PAY_PER_REQUEST",
-    })
-  );
-
-  // Split data into chunks of 25 items each
-  const chunkSize = 25;
-  const chunks = [];
-  for (let i = 0; i < data.length; i += chunkSize) {
-    chunks.push(data.slice(i, i + chunkSize));
-  }
-
-  // Process each chunk sequentially
-  for (const chunk of chunks) {
-    await dynamo.send(
-      new BatchWriteCommand({
-        RequestItems: {
-          MyTable: chunk.map((Item) => ({ PutRequest: { Item } })),
-        },
-      })
-    );
-  }
+  await Promise.all([seedDynamoDB(), createS3Bucket(s3)]);
 } catch (error) {
-  console.error("Error seeding data:", error);
+  console.error("Error seeding data:\n", error);
 }

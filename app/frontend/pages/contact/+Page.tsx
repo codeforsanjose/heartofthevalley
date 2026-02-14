@@ -1,38 +1,27 @@
 import { useId } from "react";
-import { Input } from "../../components/Input";
 
 export default function ContactPage() {
-  const fullNameId = useId();
-  const emailId = useId();
-  const messageId = useId();
+  const fileUploadId = useId();
 
   return (
     <main className="mt-[10%] mx-auto w-[70%] lg:w-[50%]">
-      <h1 className="text-3xl flex justify-center">We&apos;d love to hear from you</h1>
+      <h1 className="text-3xl flex justify-center">Upload a file</h1>
       <form className="mt-4">
         <div className="my-4">
-          <label className="mx-4" htmlFor={fullNameId}>
-            Full Name
+          <label className="mx-4" htmlFor={fileUploadId}>
+            Choose File
           </label>
-          <Input placeholder="Full Name" id={fullNameId} />
-        </div>
-        <div className="my-4">
-          <label className="mx-4" htmlFor={emailId}>
-            Email
-          </label>
-          <Input placeholder="Email" id={emailId} />
-        </div>
-        <div className="my-4">
-          <label className="mx-4" htmlFor={messageId}>
-            Message
-          </label>
-          <Input placeholder="Message" id={messageId} long />
+          <input
+            type="file"
+            id={fileUploadId}
+            className="mx-4 mt-2 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-dark-cyan file:text-white hover:file:bg-opacity-80"
+          />
         </div>
         <button
           type="submit"
           className="mt-4 mx-auto rounded-4xl bg-dark-cyan text-white p-4 focus:outline-none w-[20%] flex justify-center cursor-pointer"
         >
-          Submit
+          Upload
         </button>
       </form>
     </main>

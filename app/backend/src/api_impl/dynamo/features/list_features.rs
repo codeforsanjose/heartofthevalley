@@ -18,7 +18,7 @@ pub enum ListFeaturesError {
     /// Error occurred during DynamoDB query operation
     RequestError(SdkError<QueryError, HttpResponse>),
     /// Error occurred when mapping DynamoDB items to Feature models
-    DataIntegrityError,
+    DataIntegrityError(AttributeValue),
 }
 
 impl From<SdkError<QueryError, HttpResponse>> for ListFeaturesError {
@@ -28,8 +28,8 @@ impl From<SdkError<QueryError, HttpResponse>> for ListFeaturesError {
 }
 
 impl From<&AttributeValue> for ListFeaturesError {
-    fn from(_av: &AttributeValue) -> Self {
-        ListFeaturesError::DataIntegrityError
+    fn from(av: &AttributeValue) -> Self {
+        ListFeaturesError::DataIntegrityError(av.clone())
     }
 }
 

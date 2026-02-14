@@ -17,4 +17,6 @@ COPY --from=generate /local/openapi /app/backend/openapi
 
 WORKDIR /app/backend
 
-CMD ["cargo", "run"]
+RUN cargo build --release
+
+CMD ["cargo", "watch", "-x", "run --release"]

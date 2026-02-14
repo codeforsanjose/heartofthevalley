@@ -27,9 +27,13 @@ async fn main() {
 
     let api_impl = ApiImpl {
         dynamo_db_client: dynamo_client,
-        image_bucket_name: var("IMAGE_BUCKET_NAME").unwrap(),
+        image_bucket_name: var("IMAGE_BUCKET_NAME")
+            .map_err(|e| format!("Error getting IMAGE_BUCKET_NAME: {}", e))
+            .unwrap(),
         s3_client,
-        table_name: var("TABLE_NAME").unwrap(),
+        table_name: var("TABLE_NAME")
+            .map_err(|e| format!("Error getting TABLE_NAME: {}", e))
+            .unwrap(),
     };
     let app = openapi::server::new(api_impl).route("/ping", get(|| async { "pong" }));
     let addr = std::net::SocketAddr::from(([0, 0, 0, 0], 8080));

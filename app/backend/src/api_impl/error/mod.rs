@@ -56,7 +56,7 @@ impl ErrorHandler<ApiError> for ApiImpl {
             ApiError::AWSSdkError(inner_error) => {
                 // Log detailed error information for debugging
                 tracing::error!(
-                    "\nDynamoDB Error:\n-------\n{}\n-------\n{:?}\n-------\n",
+                    "\nDynamoDB Error:\n-------\n{:?}\n-------\n{:?}\n-------\n",
                     error,
                     inner_error
                 );

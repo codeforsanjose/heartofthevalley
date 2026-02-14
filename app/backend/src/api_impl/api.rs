@@ -92,7 +92,12 @@ impl Default<ApiError> for ApiImpl {
             ListFeaturesError::RequestError(sdk_err) => {
                 ApiError::AWSSdkError(AWSSdkError::DynamoQueryError(sdk_err))
             }
-            ListFeaturesError::DataIntegrityError => ApiError::DataIntegrityError,
+            ListFeaturesError::DataIntegrityError(av) => {
+                tracing::error!(
+                    "\nData integrity error while mapping DynamoDB item to Feature model:\n-------\n{:?}\n-------\n",
+                    av
+                );
+                ApiError::DataIntegrityError},
         })?;
 
         Ok(ListFeaturesResponse::Status200_AListOfFeatures(

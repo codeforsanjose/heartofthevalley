@@ -154,3 +154,13 @@ pub fn try_map_item_to_feature(
 
     Ok(feature)
 }
+
+// pub fn get_string_from_item(
+//     item: &HashMap<String, AttributeValue>,
+//     key: &str,
+// ) -> Result<Option<String>, &AttributeValue> {
+//     Ok(item
+//         .get(key)
+//         .and_then(|av| av.as_s().ok())
+//         .map(|s| s.to_string()))
+// }
