@@ -2,14 +2,13 @@
   "name": "seed",
   "private": true,
   "devDependencies": {
-    "@aws-sdk/client-dynamodb": "^3.868.0",
-    "@aws-sdk/lib-dynamodb": "^3.868.0",
+    "@aws-sdk/client-dynamodb": "^3.989.0",
+    "@aws-sdk/client-s3": "^3.989.0",
+    "@aws-sdk/lib-dynamodb": "^3.989.0",
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.2"
   },
-  "dependencies": {
-    "csvtojson": "^2.0.14"
-  }
+  "dependencies": {}
 }
