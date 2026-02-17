@@ -3,6 +3,8 @@ services:
     build:
       dockerfile: Dockerfile.frontend
     environment:
+      - API_SPEC=./openapi-spec/openapi.yaml
+      - API_URL=http://backend:8080
       - NODE_ENV=production
     depends_on:
       backend:
@@ -16,7 +18,7 @@ services:
           action: rebuild
           target: /app/node_modules
         - path: openapi-spec/openapi.yaml
-          action: sync+restart
+          action: rebuild
           target: /app/openapi-spec/openapi.yaml
     ports:
       - "3000:3000"
@@ -31,7 +33,7 @@ services:
     develop:
       watch:
         - path: app/backend
-          action: sync+restart
+          action: sync
           target: /app/backend
         - path: openapi-spec/openapi.yaml
           action: rebuild
@@ -39,38 +41,47 @@ services:
       db_init:
         condition: service_completed_successfully
     environment:
-      - API_SPEC=./openapi.yaml
-      - TABLE_NAME=MyTable
+      - API_SPEC=./openapi-spec/openapi.yaml
+      - TABLE_NAME=LocalDevTable
       - AWS_ACCESS_KEY_ID=local
       - AWS_SECRET_ACCESS_KEY=local
       - AWS_REGION=us-west-2
-      - DYNAMODB_ENDPOINT=http://db:8000
+      - DYNAMODB_ENDPOINT=http://localstack:4566
+      - IMAGE_BUCKET_NAME=my-bucket
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/ping"]
       interval: 5s
       timeout: 2s
       retries: 5
       start_period: 150s
-  db:
-    image: amazon/dynamodb-local
-    command: "-jar DynamoDBLocal.jar -sharedDb"
+  localstack:
+    image: localstack/localstack:stable
     ports:
-      - "8000:8000"
+      - "4566:4566"
+    environment:
+      - SERVICES=dynamodb,s3
+      - PERSISTENCE=1
+    volumes:
+      - localstack_data:/var/lib/localstack
     healthcheck:
-      test: ["CMD", "curl", "http://localhost:8000"]
-      interval: 10s
-      timeout: 5s
+      test: ["CMD", "curl", "-f", "http://localhost:4566/_localstack/health"]
+      interval: 5s
+      timeout: 2s
       retries: 5
+      start_period: 20s
   db_init:
     build:
       context: app/seed
     depends_on:
-      db:
+      localstack:
         condition: service_healthy
     environment:
       - AWS_ACCESS_KEY_ID=local
       - AWS_SECRET_ACCESS_KEY=local
       - AWS_REGION=us-west-2
-      - DYNAMODB_ENDPOINT=http://db:8000
+      - AWS_ENDPOINT=http://localstack:4566
     entrypoint: >
       bun seed.ts
+
+volumes:
+  localstack_data:

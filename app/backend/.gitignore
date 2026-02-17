@@ -1,3 +1,4 @@
 target/
 openapi/
 ./openapi.yaml
+.env

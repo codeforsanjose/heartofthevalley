@@ -22,7 +22,7 @@ pub fn generate_openapi(verbose: bool) -> Result<()> {
         .parent() // project_root
         .context("Expected to run from `project_root/app/backend/xtask`, but could not ascend to project root")?.to_path_buf());
     let source_dir = project_root.join("openapi-spec");
-    let outdir = project_root.join("app/backend/src/openapi");
+    let outdir = project_root.join("app/backend/openapi");
 
     if verbose {
         println!("Deleting existing OpenAPI directory: {}", outdir.display());
