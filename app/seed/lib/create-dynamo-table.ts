@@ -5,7 +5,7 @@ export const createDynamoTable = async (dynamo: DynamoDBDocumentClient) => {
   try {
     await dynamo.send(
       new CreateTableCommand({
-        TableName: "MyTable",
+        TableName: "LocalDevTable",
         KeySchema: [
           { AttributeName: "PK", KeyType: "HASH" },
           { AttributeName: "SK", KeyType: "RANGE" },

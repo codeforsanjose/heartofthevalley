@@ -19,7 +19,7 @@ export const batchWriteData = async (
         dynamo.send(
           new BatchWriteCommand({
             RequestItems: {
-              MyTable: chunk.map((Item) => ({ PutRequest: { Item } })),
+              LocalDevTable: chunk.map((Item) => ({ PutRequest: { Item } })),
             },
           }),
         ),

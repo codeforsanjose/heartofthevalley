@@ -6,7 +6,8 @@
   },
   "scripts": {
     "deploy": "bun run scripts/deploy.ts",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "test": "bun test tests/**/*.test.ts --concurrent"
   },
   "devDependencies": {
     "@types/bun": "^1.2.20",
