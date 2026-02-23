@@ -21,7 +21,7 @@ export class HeartOfTheValleyStack extends cdk.Stack {
       {
         runtime: cdk.aws_lambda.Runtime.PROVIDED_AL2023,
         code: cdk.aws_lambda.Code.fromAsset(
-          path.resolve(__dirname, "../dist/backend")
+          path.resolve(__dirname, "../dist/backend"),
         ),
         handler: "bootstrap",
         layers: [
@@ -38,14 +38,14 @@ export class HeartOfTheValleyStack extends cdk.Stack {
                 resourceName: "LambdaAdapterLayerX86:25",
                 arnFormat: cdk.ArnFormat.COLON_RESOURCE_NAME,
               },
-              cdk.Stack.of(this)
-            )
+              cdk.Stack.of(this),
+            ),
           ),
         ],
         environment: {
           TABLE_NAME: table.tableName,
         },
-      }
+      },
     );
 
     table.grantReadWriteData(apiHandler);
@@ -59,13 +59,13 @@ export class HeartOfTheValleyStack extends cdk.Stack {
         websiteIndexDocument: "index.html",
         publicReadAccess: true,
         blockPublicAccess: cdk.aws_s3.BlockPublicAccess.BLOCK_ACLS_ONLY,
-      }
+      },
     );
 
     new cdk.aws_cloudfront.Distribution(this, "HeartOfValleyFrontendCdn", {
       defaultBehavior: {
         origin: new cdk.aws_cloudfront_origins.S3StaticWebsiteOrigin(
-          frontendBucket
+          frontendBucket,
         ),
         viewerProtocolPolicy:
           cdk.aws_cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
@@ -82,7 +82,7 @@ export class HeartOfTheValleyStack extends cdk.Stack {
             payloadFormatVersion:
               cdk.aws_apigatewayv2.PayloadFormatVersion.VERSION_2_0,
             timeout: cdk.Duration.seconds(29),
-          }
+          },
         ),
     });
 
@@ -102,11 +102,11 @@ export class HeartOfTheValleyStack extends cdk.Stack {
             "token.actions.githubusercontent.com:iss":
               "https://token.actions.githubusercontent.com",
           },
-        }
+        },
       ),
       managedPolicies: [
         cdk.aws_iam.ManagedPolicy.fromAwsManagedPolicyName(
-          "AdministratorAccess"
+          "AdministratorAccess",
         ),
       ],
       inlinePolicies: {
@@ -131,6 +131,20 @@ export class HeartOfTheValleyStack extends cdk.Stack {
           ],
         }),
       },
+    });
+
+    const adminUserPool = new cdk.aws_cognito.UserPool(
+      this,
+      "HeartOfValleyAdminUserPool",
+      {
+        selfSignUpEnabled: false,
+        signInAliases: {
+          email: true,
+        },
+      },
+    );
+    adminUserPool.addClient("AdminUserPoolClient", {
+      disableOAuth: true,
     });
 
     new cdk.CfnOutput(this, "FrontendBucketName", {
