@@ -6,19 +6,30 @@ import { deployBackend } from "./deploy-backend";
 import { deployStaticSite } from "./deploy-static-site";
 
 type DeploymentOptions = {
-  requireApproval: boolean;
+  build: boolean;
+  buildBackend: boolean;
+  buildFrontend: boolean;
   verbose: boolean;
 };
 
 export const deploy = async (opts: DeploymentOptions) => {
-  const { requireApproval, verbose } = opts;
+  const {
+    build: buildFlag,
+    buildBackend: buildBackendFlag,
+    buildFrontend: buildFrontendFlag,
+    verbose,
+  } = opts;
 
-  await buildBackend({ verbose });
+  if (buildBackendFlag && buildFlag) {
+    await buildBackend({ verbose });
+  }
+
   const { apiUrl, s3BucketUri } = await deployBackend({
-    requireApproval,
     verbose,
   });
-  await buildFrontend(apiUrl, { verbose });
+  if (buildFrontendFlag && buildFlag) {
+    await buildFrontend(apiUrl, { verbose });
+  }
   await deployStaticSite(s3BucketUri, { verbose });
 
   if (verbose) {
@@ -28,9 +39,24 @@ export const deploy = async (opts: DeploymentOptions) => {
 
 if (require.main === module) {
   const argv = yargs(hideBin(process.argv))
-    .option("require-approval", {
+    .option("aws-profile", {
+      type: "string",
+      description: "AWS CLI profile to use for deployment",
+    })
+    .option("build", {
       type: "boolean",
-      description: "Require approval for security-related changes",
+      description:
+        "Build both backend and frontend. If set to false, overrides individual build flags and skips the build step.",
+      default: true,
+    })
+    .option("build-backend", {
+      type: "boolean",
+      description: "Build the backend",
+      default: true,
+    })
+    .option("build-frontend", {
+      type: "boolean",
+      description: "Build the frontend",
       default: true,
     })
     .option("verbose", {

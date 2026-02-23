@@ -1,10 +1,8 @@
 type BackendDeploymentConfig = {
-  requireApproval: boolean;
   verbose: boolean;
 };
 
 export const deployBackend = async ({
-  requireApproval,
   verbose,
 }: BackendDeploymentConfig): Promise<{
   s3BucketUri: `s3://${string}`;
@@ -15,15 +13,18 @@ export const deployBackend = async ({
   }
 
   const deployArgs = ["cdk", "deploy"];
-  if (!requireApproval) {
-    deployArgs.push("--require-approval=never");
-  }
+  deployArgs.push("--require-approval=never");
   if (verbose) {
     deployArgs.push("--verbose");
+
+    console.log("Running CDK deploy with arguments:", deployArgs);
   }
   const deployProcess = Bun.spawnSync(deployArgs, {
     stdout: verbose ? "inherit" : "pipe",
     stderr: verbose ? "inherit" : "pipe",
+    env: {
+      ...process.env,
+    },
   });
   const exitCode = deployProcess.exitCode;
 
