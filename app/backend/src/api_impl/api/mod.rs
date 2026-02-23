@@ -19,6 +19,8 @@ use crate::api_impl::{
 
 use super::error::DynamoServiceError;
 
+mod auth;
+
 /// Main API implementation struct containing shared resources
 ///
 /// This struct holds the dependencies needed across all API endpoints,
