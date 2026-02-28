@@ -1,5 +1,6 @@
 use std::env::var;
 
+use anyhow::Result;
 use aws_sdk_dynamodb::Client as DynamoDbClient;
 use axum::routing::get;
 
@@ -8,7 +9,7 @@ use crate::api_impl::api::ApiImpl;
 mod api_impl;
 
 #[tokio::main]
-async fn main() {
+async fn main() -> Result<()> {
     tracing_subscriber::fmt()
         .with_max_level(tracing::Level::ERROR)
         .init();
@@ -33,9 +34,10 @@ async fn main() {
     };
     let app = openapi::server::new(api_impl).route("/ping", get(|| async { "pong" }));
     let addr = std::net::SocketAddr::from(([0, 0, 0, 0], 8080));
-    let listener = tokio::net::TcpListener::bind(addr).await.unwrap();
+    let listener = tokio::net::TcpListener::bind(addr).await?;
     println!("Listening on http://{}", addr);
-    axum::serve(listener, app).await.unwrap();
+    axum::serve(listener, app).await?;
+    Ok(())
 }
 
 async fn build_config() -> aws_config::SdkConfig {
