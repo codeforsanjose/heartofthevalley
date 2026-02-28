@@ -15,6 +15,23 @@ export class HeartOfTheValleyStack extends cdk.Stack {
       deletionProtection: true,
     });
 
+    const adminUserPool = new cdk.aws_cognito.UserPool(
+      this,
+      "HeartOfValleyAdminUserPool",
+      {
+        selfSignUpEnabled: false,
+        signInAliases: {
+          email: true,
+        },
+      },
+    );
+    const cognitoClient = adminUserPool.addClient("AdminUserPoolClient", {
+      disableOAuth: true,
+      authFlows: {
+        adminUserPassword: true,
+      },
+    });
+
     const apiHandler = new cdk.aws_lambda.Function(
       this,
       "HeartOfValleyApiHandler",
@@ -44,11 +61,14 @@ export class HeartOfTheValleyStack extends cdk.Stack {
         ],
         environment: {
           TABLE_NAME: table.tableName,
+          COGNITO_USER_POOL_ID: adminUserPool.userPoolId,
+          COGNITO_CLIENT_ID: cognitoClient.userPoolClientId,
         },
       },
     );
 
     table.grantReadWriteData(apiHandler);
+    adminUserPool.grant(apiHandler, "cognito-idp:AdminInitiateAuth");
 
     const frontendBucket = new cdk.aws_s3.Bucket(
       this,
@@ -131,20 +151,6 @@ export class HeartOfTheValleyStack extends cdk.Stack {
           ],
         }),
       },
-    });
-
-    const adminUserPool = new cdk.aws_cognito.UserPool(
-      this,
-      "HeartOfValleyAdminUserPool",
-      {
-        selfSignUpEnabled: false,
-        signInAliases: {
-          email: true,
-        },
-      },
-    );
-    adminUserPool.addClient("AdminUserPoolClient", {
-      disableOAuth: true,
     });
 
     new cdk.CfnOutput(this, "FrontendBucketName", {

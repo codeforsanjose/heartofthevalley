@@ -11,6 +11,7 @@ mod api_impl;
 #[tokio::main]
 async fn main() -> Result<()> {
     tracing_subscriber::fmt()
+        .with_ansi(false)
         .with_max_level(tracing::Level::ERROR)
         .init();
 
