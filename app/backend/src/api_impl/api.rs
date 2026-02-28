@@ -4,6 +4,7 @@
 //! traits, handling HTTP requests and delegating to appropriate data layer
 //! operations. It serves as the bridge between HTTP transport and business logic.
 
+use anyhow::Result;
 use async_trait::async_trait;
 use axum_extra::extract::{CookieJar, Host};
 use http::Method;
@@ -12,12 +13,7 @@ use openapi::{
     models,
 };
 
-use crate::api_impl::{
-    dynamo::features::get_by_id::{GetFeatureByIdError, get_feature_by_id},
-    error::ApiError,
-};
-
-use super::error::DynamoServiceError;
+use crate::api_impl::dynamo::features::get_by_id::get_feature_by_id;
 
 /// Main API implementation struct containing shared resources
 ///
@@ -34,7 +30,7 @@ pub struct ApiImpl {
 
 /// Implementation of the Default trait providing the core API endpoints
 #[async_trait]
-impl Default<ApiError> for ApiImpl {
+impl Default<anyhow::Error> for ApiImpl {
     /// Retrieves a single feature by its unique identifier
     ///
     /// This endpoint provides efficient single-item lookup using DynamoDB's
@@ -59,9 +55,9 @@ impl Default<ApiError> for ApiImpl {
         _cookies: &CookieJar,
         path_params: &models::GetFeatureByIdPathParams,
         query_params: &models::GetFeatureByIdQueryParams,
-    ) -> Result<GetFeatureByIdResponse, ApiError> {
+    ) -> Result<GetFeatureByIdResponse> {
         if method != &Method::GET {
-            return Err(ApiError::IncorrectMethodError);
+            return Err(anyhow::anyhow!("Incorrect HTTP method"));
         }
 
         let feature = get_feature_by_id(
@@ -71,12 +67,7 @@ impl Default<ApiError> for ApiImpl {
             &self.table_name,
         )
         .await
-        .map_err(|e| match e {
-            GetFeatureByIdError::RequestError(sdk_err) => {
-                ApiError::DynamoError(DynamoServiceError::GetItemError(sdk_err))
-            }
-            GetFeatureByIdError::DataIntegrityError => ApiError::DataIntegrityError,
-        })?;
+        .map_err(|e| anyhow::anyhow!("DynamoDB request error: {:?}", e))?;
 
         match feature {
             None => Ok(GetFeatureByIdResponse::Status404_FeatureNotFound),
@@ -103,9 +94,9 @@ impl Default<ApiError> for ApiImpl {
         _host: &Host,
         _cookies: &CookieJar,
         query_params: &models::ListFeaturesQueryParams,
-    ) -> Result<ListFeaturesResponse, ApiError> {
+    ) -> Result<ListFeaturesResponse> {
         if method != &Method::GET {
-            return Err(ApiError::IncorrectMethodError);
+            return Err(anyhow::anyhow!("Incorrect HTTP method"));
         }
 
         let list_response = crate::api_impl::dynamo::features::list_features::list_features(
@@ -114,13 +105,7 @@ impl Default<ApiError> for ApiImpl {
             &query_params.last_feature_id,
             &self.table_name,
         )
-        .await
-        .map_err(|e| match e {
-            crate::api_impl::dynamo::features::list_features::ListFeaturesError::RequestError(sdk_err) => {
-                ApiError::DynamoError(DynamoServiceError::QueryError(sdk_err))
-            }
-            crate::api_impl::dynamo::features::list_features::ListFeaturesError::DataIntegrityError => ApiError::DataIntegrityError,
-        })?;
+        .await?;
 
         Ok(ListFeaturesResponse::Status200_AListOfFeatures(
             list_response,
