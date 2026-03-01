@@ -41,6 +41,10 @@ components:
 paths:
   /auth/login:
     $ref: "./paths/auth/login.yaml"
+  /auth/refresh:
+    $ref: "./paths/auth/refresh.yaml"
+  /auth/signout:
+    $ref: "./paths/auth/signout.yaml"
   /features:
     $ref: "./paths/features.yaml"
   /features/{featureId}:

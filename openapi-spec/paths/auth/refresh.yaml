@@ -1,0 +1,42 @@
+post:
+  summary: Refresh authentication token
+  description: Get a new authentication token using a valid refresh token
+  tags:
+    - auth
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            refreshToken:
+              type: string
+              description: Valid refresh token
+          required:
+            - refreshToken
+  responses:
+    "200":
+      description: Token refresh successful
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              accessToken:
+                type: string
+                description: New JWT access token for authenticated requests
+              refreshToken:
+                type: string
+                description: New JWT refresh token for obtaining new access tokens
+            required:
+              - accessToken
+              - refreshToken
+    "401":
+      description: Invalid or expired refresh token
+      content:
+        text/plain:
+          schema:
+            type: string
+    "500":
+      description: Internal server error
