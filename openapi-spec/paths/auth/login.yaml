@@ -1,0 +1,54 @@
+post:
+  summary: User login
+  description: Authenticate a user with email and password
+  tags:
+    - auth
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            email:
+              type: string
+              format: email
+              description: User email address
+            password:
+              type: string
+              format: password
+              description: User password
+          required:
+            - email
+            - password
+  responses:
+    "200":
+      description: Login successful
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              token:
+                type: string
+                description: Authentication token
+              userId:
+                type: string
+                description: ID of the authenticated user
+            required:
+              - token
+              - userId
+    "400":
+      description: Bad request
+      content:
+        text/plain:
+          schema:
+            type: string
+    "401":
+      description: Invalid credentials
+      content:
+        text/plain:
+          schema:
+            type: string
+    "500":
+      description: Internal server error

@@ -15,6 +15,8 @@ use openapi::{
 
 use crate::api_impl::dynamo::features::get_by_id::get_feature_by_id;
 
+mod auth;
+
 /// Main API implementation struct containing shared resources
 ///
 /// This struct holds the dependencies needed across all API endpoints,
@@ -22,9 +24,10 @@ use crate::api_impl::dynamo::features::get_by_id::get_feature_by_id;
 /// OpenAPI-generated traits to provide actual business logic.
 #[derive(Clone)]
 pub struct ApiImpl {
-    /// DynamoDB client for database operations
-    pub client: aws_sdk_dynamodb::Client,
-    /// Name of the DynamoDB table storing features data
+    pub cognito_client: aws_sdk_cognitoidentityprovider::Client,
+    pub cognito_user_pool_id: String,
+    pub cognito_client_id: String,
+    pub dynamodb_client: aws_sdk_dynamodb::Client,
     pub table_name: String,
 }
 
@@ -61,7 +64,7 @@ impl Default<anyhow::Error> for ApiImpl {
         }
 
         let feature = get_feature_by_id(
-            &self.client,
+            &self.dynamodb_client,
             &path_params.feature_id,
             &query_params.projection_expression,
             &self.table_name,
@@ -100,7 +103,7 @@ impl Default<anyhow::Error> for ApiImpl {
         }
 
         let list_response = crate::api_impl::dynamo::features::list_features::list_features(
-            &self.client,
+            &self.dynamodb_client,
             &query_params.projection_expression,
             &query_params.last_feature_id,
             &self.table_name,

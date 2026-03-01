@@ -7,9 +7,11 @@ edition = "2024"
 anyhow = "1.0.102"
 async-trait = "0.1"
 aws-config = { version = "1.8.12", features = ["behavior-version-latest"] }
+aws-sdk-cognitoidentityprovider = "1.110.0"
 aws-sdk-dynamodb = "1.101.0"
 axum = "0.8.8"
 axum-extra = { version = "0.12", features = ["cookie", "query"] }
+dotenvy = "0.15.7"
 http = "1"
 openapi = { path = "./openapi" }
 tokio = { version = "1.48.0", features = ["full"] }

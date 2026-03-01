@@ -39,6 +39,8 @@ components:
     ImageUploadResponse:
       $ref: "./schemas/image-upload-response.yaml"
 paths:
+  /auth/login:
+    $ref: "./paths/auth/login.yaml"
   /features:
     $ref: "./paths/features.yaml"
   /features/{featureId}:
