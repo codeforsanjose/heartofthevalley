@@ -30,6 +30,7 @@ export class HeartOfTheValleyStack extends cdk.Stack {
       authFlows: {
         adminUserPassword: true,
       },
+      refreshTokenRotationGracePeriod: cdk.Duration.seconds(0),
     });
 
     const apiHandler = new cdk.aws_lambda.Function(
@@ -69,6 +70,7 @@ export class HeartOfTheValleyStack extends cdk.Stack {
 
     table.grantReadWriteData(apiHandler);
     adminUserPool.grant(apiHandler, "cognito-idp:AdminInitiateAuth");
+    adminUserPool.grant(apiHandler, "cognito-idp:AdminUserGlobalSignOut");
 
     const frontendBucket = new cdk.aws_s3.Bucket(
       this,

@@ -29,21 +29,19 @@ post:
           schema:
             type: object
             properties:
-              token:
+              accessToken:
                 type: string
-                description: Authentication token
+                description: JWT access token for authenticated requests
+              refreshToken:
+                type: string
+                description: JWT refresh token for obtaining new access tokens
               userId:
                 type: string
                 description: ID of the authenticated user
             required:
-              - token
+              - accessToken
+              - refreshToken
               - userId
-    "400":
-      description: Bad request
-      content:
-        text/plain:
-          schema:
-            type: string
     "401":
       description: Invalid credentials
       content:

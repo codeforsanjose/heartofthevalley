@@ -1,0 +1,25 @@
+post:
+  summary: User sign out
+  description: Sign out the current user and invalidate their authentication tokens
+  tags:
+    - auth
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            email:
+              type: string
+              format: email
+              description: User email address to sign out
+          required:
+            - email
+    required: true
+  responses:
+    "200":
+      description: Sign out successful
+    "401":
+      description: Unauthorized
+    "500":
+      description: Internal server error
