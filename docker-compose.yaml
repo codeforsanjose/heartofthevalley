@@ -4,7 +4,6 @@ services:
       dockerfile: Dockerfile.frontend
     environment:
       - API_SPEC=./openapi-spec/openapi.yaml
-      - API_URL=http://backend:8080
       - NODE_ENV=production
     depends_on:
       backend:
@@ -41,19 +40,19 @@ services:
       db_init:
         condition: service_completed_successfully
     environment:
-      - API_SPEC=./openapi-spec/openapi.yaml
       - TABLE_NAME=LocalDevTable
       - AWS_ACCESS_KEY_ID=local
       - AWS_SECRET_ACCESS_KEY=local
       - AWS_REGION=us-west-2
       - DYNAMODB_ENDPOINT=http://localstack:4566
       - IMAGE_BUCKET_NAME=my-bucket
+      - COGNITO_USER_POOL_ID=us-west-2_XXXXXXXXX
+      - COGNITO_CLIENT_ID=XXXXXXXXXXXXXXXX
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/ping"]
       interval: 5s
       timeout: 2s
       retries: 5
-      start_period: 150s
   localstack:
     image: localstack/localstack:stable
     ports:

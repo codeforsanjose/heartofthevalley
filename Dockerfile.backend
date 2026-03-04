@@ -1,22 +1,46 @@
-
 FROM openapitools/openapi-generator-cli:v7.18.0 AS generate
 
 COPY ./openapi-spec ./openapi-spec
 
-RUN openapi-generator-cli generate -i ./openapi-spec/openapi.yaml -g rust-axum -o /local/openapi
+RUN openapi-generator-cli generate \
+    -i ./openapi-spec/openapi.yaml \
+    -g rust-axum \
+    -o /local/openapi
 
-FROM rust:1.92.0-alpine3.23
-
-RUN cargo install cargo-watch
-
-RUN apk add --no-cache curl
-
-COPY ./app/backend /app/backend
-
-COPY --from=generate /local/openapi /app/backend/openapi
-
+FROM lukemathwalker/cargo-chef:0.1.75-rust-1.93.1 AS chef
 WORKDIR /app/backend
 
-RUN cargo build --release
 
-CMD ["cargo", "watch", "-x", "run --release"]
+FROM chef AS planner
+
+COPY ./app/backend .
+COPY --from=generate /local/openapi ./openapi
+
+RUN cargo chef prepare --recipe-path recipe.json
+
+
+FROM chef AS builder
+
+COPY --from=planner /app/backend/recipe.json recipe.json
+
+COPY --from=generate /local/openapi ./openapi
+
+RUN cargo chef cook --recipe-path recipe.json
+
+COPY ./app/backend .
+
+RUN cargo build --bin backend
+
+FROM debian:trixie-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY --from=builder /app/backend/target/debug/backend /usr/local/bin/backend
+
+ENTRYPOINT ["/usr/local/bin/backend"]
+
