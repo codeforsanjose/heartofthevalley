@@ -13,4 +13,11 @@ To generate the code, run:
 API_SPEC=../../openapi.yaml bun i
 ```
 
-This will install dependencies and generate the API client code.
+This will install dependencies.
+Then, run:
+
+```bash
+API_SPEC=../../openapi.yaml bun run setup
+```
+
+This will generate the code from the OpenAPI spec and set up any necessary configuration.

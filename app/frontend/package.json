@@ -3,14 +3,14 @@
     "dev": "bun run scripts/dev.ts",
     "build": "bun run scripts/build.ts",
     "preview": "vike preview",
-    "postinstall": "bun run scripts/postinstall.ts",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "setup": "bun run scripts/setup.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@tanstack/react-query": "^5.85.5",
     "@vitejs/plugin-react": "^4.7.0",
-    "axios": "^1.11.0",
+    "axios": "^1.13.6",
     "leaflet": "^1.9.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

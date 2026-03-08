@@ -4,10 +4,6 @@ if (!process.env.API_SPEC) {
   throw new Error("API_SPEC environment variable is not set");
 }
 
-if (!process.env.API_URL) {
-  throw new Error("API_URL environment variable is not set");
-}
-
 export default defineConfig({
   api: {
     input: { target: process.env.API_SPEC },
@@ -25,7 +21,14 @@ export default defineConfig({
             },
           },
         },
+        ...(!process.env.API_URL && {
+          mutator: {
+            path: "./lib/dev-axios-config.ts",
+            name: "myAxios",
+          },
+        }),
       },
+      ...(process.env.API_URL && { baseUrl: process.env.API_URL }),
     },
   },
 });
